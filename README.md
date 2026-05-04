@@ -22,3 +22,4 @@ Welcome to the **Reading Development Web Application**! This application is desi
   - Frontend: GitHub Pages
   - Backend: Azure App Service
   - Database: Azure PostgreSQL
+
