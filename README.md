@@ -13,13 +13,4 @@ Welcome to the **Reading Development Web Application**! This application is desi
 
 ## Tech Stack
 
-- **Frontend**: React, Vite
-- **Backend**: Express.js, Node.js
-- **Database**: PostgreSQL (hosted on Azure)
-- **Authentication**: Clerk (for user management)
-- **AI Integration**: OpenAI (for generating reading assessments and personalized feedback)
-- **Deployment**:
-  - Frontend: GitHub Pages
-  - Backend: Azure App Service
-  - Database: Azure PostgreSQL
-
+in progress . . .
