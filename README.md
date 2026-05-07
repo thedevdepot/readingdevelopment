@@ -14,3 +14,12 @@ Welcome to the **Reading Development Web Application**! This application is desi
 ## Tech Stack
 
 in progress . . .
+
+primary https://thedevdepotreadingapp.z19.web.core.windows.net/
+secondary https://thedevdepotreadingapp-secondary.z19.web.core.windows.net/
+
+# My Azure Deployment
+
+Here’s a screenshot of my storage setup:
+
+![Azure Storage setup screenshot](azure_hosed.png)
