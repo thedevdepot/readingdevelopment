@@ -22,4 +22,4 @@ secondary https://thedevdepotreadingapp-secondary.z19.web.core.windows.net/
 
 Here’s a screenshot of my storage setup:
 
-![Azure Storage setup screenshot](azure_hosed.png)
+![Azure Storage setup screenshot](https://github.com/thedevdepot/readingdevelopment/blob/main/azure_hosted.png)
