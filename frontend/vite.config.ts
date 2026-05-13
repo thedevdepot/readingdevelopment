@@ -1,25 +1,30 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 5173, // default Vite dev server port
-    open: true, // automatically open in browser
+    port: 5173,
+    open: true,
+    // This ensures all routes fallback to index.html for React Router
+    fs: {
+      strict: false, // optional: helps with symlinked directories
+    },
   },
   build: {
-    outDir: "dist",      // output folder for production build
-    sourcemap: true,     // optional: generates source maps
+    outDir: "dist",
+    sourcemap: true,
     rollupOptions: {
       output: {
-        manualChunks: undefined, // optional: keep single bundle if desired
+        manualChunks: undefined,
       },
     },
   },
   resolve: {
     alias: {
-      "@": "/src", // allows imports like "@/components/Quiz"
+      "@": path.resolve(__dirname, "src"), // more robust alias
     },
   },
 });

@@ -50,13 +50,39 @@ The application includes a **dynamic, adaptive question system**:
 - Open-ended answer evaluation  
 - Hints and explanations  
 
----
-
-# My Azure Deployment
-
-Here’s a screenshot of my storage setup:
-
-![Azure Storage setup screenshot](https://github.com/thedevdepot/readingdevelopment/blob/main/azure_hosted.png)
 
 
+<details>
+<summary>Project Structure</summary>
+
+.
+├── frontend
+│ ├── package.json
+│ ├── public
+│ │ └── index.html
+│ ├── src
+│ │ ├── api
+│ │ │ └── quiz.ts
+│ │ ├── app.tsx
+│ │ ├── components
+│ │ │ ├── ProgressBar.tsx
+│ │ │ ├── QuestionCard.tsx
+│ │ │ └── Quiz.tsx
+│ │ ├── index.css
+│ │ ├── main.tsx
+│ │ └── pages
+│ │ ├── Dashboard.tsx
+│ │ └── Home.tsx
+│ ├── tsconfig.json
+│ └── vite.config.ts
+├── old_frontend
+│ ├── azure_hosted_old.png
+│ ├── index.html
+│ ├── script.js
+│ └── styles.css
+├── README.md
+└── tree.txt
+
+
+</details>
 

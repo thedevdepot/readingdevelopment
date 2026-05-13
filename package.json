@@ -1,0 +1,39 @@
+{
+  "name": "reading_level_tracker",
+  "version": "1.0.0",
+  "description": "Welcome to the Reading Development Web Application! This platform helps students track and improve their reading level.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedevdepot/readingdevelopment.git"
+  },
+  "keywords": ["reading", "education", "react", "typescript", "vite"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thedevdepot/readingdevelopment/issues"
+  },
+  "homepage": "https://github.com/thedevdepot/readingdevelopment#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.7",
+    "typescript": "^5.2.2",
+    "vite": "^4.3.9",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.50.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0"
+  }
+}
+
