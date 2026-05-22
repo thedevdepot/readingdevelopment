@@ -1,9 +1,6 @@
 # Node modules
 node_modules/
 
-# Vite / React build output
-dist/
-build/
 
 # Local environment files
 .env
