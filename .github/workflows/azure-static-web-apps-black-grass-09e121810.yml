@@ -5,15 +5,13 @@ on:
     branches:
       - main
       - master
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
 
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
-    name: Build and deploy job
+
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v5
@@ -36,17 +34,14 @@ jobs:
           ls -la frontend
           echo "-- frontend/dist --"
           ls -la frontend/dist
-          echo "-- frontend/dist/index.html (first 50 lines) --"
-          sed -n '1,50p' frontend/dist/index.html || true
-          echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"
-          echo "GITHUB_REF=$GITHUB_REF"
+          echo "-- frontend/dist/index.html --"
+          ls -la frontend/dist/index.html || true
 
       - name: Deploy to Azure Static Web Apps
         uses: azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZUREAPPSERVICE_CLIENTID_60C5C872CFC148A9973DB5C09CDA741C }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "frontend"
-          api_location: ""
           output_location: "dist"
