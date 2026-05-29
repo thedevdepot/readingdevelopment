@@ -18,6 +18,8 @@ Welcome to the **Reading Development Web Application**! This platform helps stud
 
 ![MVP Running](./mvp_running.png)
 
+Live demo: https://happy-meadow-0c1a27010.7.azurestaticapps.net/
+
 ---
 
 ## Adaptive Assessment Workflow
