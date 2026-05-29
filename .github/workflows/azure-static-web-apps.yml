@@ -28,6 +28,19 @@ jobs:
         working-directory: frontend
         run: npm run build
 
+      - name: Debug: list build output
+        run: |
+          echo "-- repo root --"
+          ls -la
+          echo "-- frontend --"
+          ls -la frontend
+          echo "-- frontend/dist --"
+          ls -la frontend/dist
+          echo "-- frontend/dist/index.html (first 50 lines) --"
+          sed -n '1,50p' frontend/dist/index.html || true
+          echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"
+          echo "GITHUB_REF=$GITHUB_REF"
+
       - name: Deploy to Azure Static Web Apps
         uses: azure/static-web-apps-deploy@v1
         with:
