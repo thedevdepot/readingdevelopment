@@ -1,35 +1,32 @@
-# Node modules
+# Node dependencies
 node_modules/
+frontend/node_modules/
 
+# Lockfiles
+package-lock.json
+frontend/package-lock.json
 
-# Local environment files
+# Build outputs
+dist/
+build/
+
+# Environment
 .env
 .env.local
-.env.*.local
 
-# OS generated files
+# OS files
 .DS_Store
 Thumbs.db
 
-# IDE / Editor files
+# Editor
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
 # Logs
-logs/
-*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # TypeScript
 *.tsbuildinfo
 
-# Optional: ignore npm cache files
-.npm/
-
-# Optional: ignore temporary files
-*.tmp
-*.temp

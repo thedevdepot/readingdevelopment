@@ -2,15 +2,25 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Reading Development Web App</title>
-	<link rel="icon" type="image/png" href="/favicon.png" />
+	<meta charset="UTF-8">
+	<title>Reading Level Quiz</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<div id="root"></div>
-	<script type="module" src="/src/main.tsx"></script>
+
+	<div class="container">
+		<h1>Reading Level Quiz</h1>
+		<p id="question"></p>
+
+		<div id="choices"></div>
+
+		<button id="nextBtn">Next</button>
+
+		<div id="result" class="hidden"></div>
+	</div>
+
+	<script src="script.js"></script>
 </body>
 
 </html>
