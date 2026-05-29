@@ -4,9 +4,9 @@
   "description": "Welcome to the Reading Development Web Application! This platform helps students track and improve their reading level.",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
   },
   "repository": {
