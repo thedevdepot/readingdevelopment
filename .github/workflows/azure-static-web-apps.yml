@@ -28,7 +28,7 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-      - name: Debug: list build output
+      - name: "Debug: list build output"
         run: |
           echo "-- repo root --"
           ls -la
@@ -47,7 +47,6 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          # App source is in the frontend folder; build output is in frontend/dist
           app_location: "frontend"
           api_location: ""
           output_location: "dist"
