@@ -1,71 +1,79 @@
-const questions = [
-  {
-    text: "“The cat sat on the mat.” What is the cat doing?",
-    choices: ["Running", "Sitting", "Flying", "Sleeping"],
-    answer: 1,
-    level: 1
-  },
-  {
-    text: "“He ran quickly to catch the bus.” What does 'quickly' mean?",
-    choices: ["Slowly", "Fast", "Carefully", "Sadly"],
-    answer: 1,
-    level: 2
-  },
-  {
-    text: "“The sun dipped below the horizon.” What time is it?",
-    choices: ["Morning", "Noon", "Evening", "Midnight"],
-    answer: 2,
-    level: 3
-  },
-  {
-    text: "“She spoke in a trembling voice.” What does trembling suggest?",
-    choices: ["Anger", "Fear", "Joy", "Excitement"],
-    answer: 1,
-    level: 3
-  },
-  {
-    text: "“The wind whispered through the trees.” This is an example of?",
-    choices: ["Metaphor", "Simile", "Personification", "Hyperbole"],
-    answer: 2,
-    level: 4
-  },
-  {
-    text: "“He carried the weight of the world on his shoulders.” Meaning?",
-    choices: ["Physically strong", "Very stressed", "Happy", "Lazy"],
-    answer: 1,
-    level: 4
-  },
-  {
-    text: "“It was the best of times, it was the worst of times.” What device?",
-    choices: ["Irony", "Alliteration", "Oxymoron", "Repetition"],
-    answer: 3,
-    level: 5
-  },
-  {
-    text: "“Her smile was a ray of sunshine.” This suggests?",
-    choices: ["She is bright", "She is happy and uplifting", "She is loud", "She is quiet"],
-    answer: 1,
-    level: 5
-  },
-  {
-    text: "“Call me Ishmael.” What is this?",
-    choices: ["Dialogue", "Narration", "Metaphor", "Conflict"],
-    answer: 1,
-    level: 6
-  },
-  {
-    text: "“All animals are equal, but some are more equal than others.” Meaning?",
-    choices: ["Equality exists", "Contradiction/irony", "Animals are fair", "Confusion"],
-    answer: 1,
-    level: 6
-  }
-];
-
+let allQuestions = [];
+let quizQuestions = [];
 let current = 0;
 let score = 0;
 let correctCount = 0;
 let selected = null;
 let answered = false;
+
+function parseCSV(text) {
+  const rows = [];
+  const lines = text.trim().split(/\r?\n/);
+  const headers = lines.shift().split(",");
+
+  lines.forEach(line => {
+    const values = [];
+    let field = "";
+    let inQuotes = false;
+
+    for (let i = 0; i < line.length; i++) {
+      const char = line[i];
+      if (char === '"') {
+        if (inQuotes && line[i + 1] === '"') {
+          field += '"';
+          i += 1;
+        } else {
+          inQuotes = !inQuotes;
+        }
+      } else if (char === "," && !inQuotes) {
+        values.push(field);
+        field = "";
+      } else {
+        field += char;
+      }
+    }
+    values.push(field);
+    rows.push(values);
+  });
+
+  return rows.map(row => {
+    const entry = {};
+    headers.forEach((header, index) => {
+      entry[header.trim()] = row[index] ? row[index].trim() : "";
+    });
+    return entry;
+  });
+}
+
+function shuffle(array) {
+  const copy = array.slice();
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function loadQuestionsFromCSV() {
+  fetch("questions.csv")
+    .then(response => response.text())
+    .then(text => {
+      allQuestions = parseCSV(text).map(row => ({
+        text: row.text,
+        choices: [row.choice1, row.choice2, row.choice3, row.choice4],
+        answer: Number(row.answer),
+        level: Number(row.level)
+      }));
+
+      const sampleCount = Math.min(10, allQuestions.length);
+      quizQuestions = shuffle(allQuestions).slice(0, sampleCount);
+      loadQuestion();
+    })
+    .catch(error => {
+      questionEl.textContent = "Unable to load questions. Please refresh the page.";
+      console.error("Question load error:", error);
+    });
+}
 
 const questionEl = document.getElementById("question");
 const choicesEl = document.getElementById("choices");
@@ -82,7 +90,7 @@ function loadQuestion() {
   nextBtn.textContent = "Submit Answer";
   nextBtn.disabled = false;
 
-  const q = questions[current];
+  const q = quizQuestions[current];
   questionEl.textContent = q.text;
   choicesEl.innerHTML = "";
   choicesEl.classList.remove("hidden");
@@ -108,7 +116,7 @@ function loadQuestion() {
 
 function showFeedback(isCorrect) {
   feedbackEl.classList.remove("hidden");
-  const correctText = questions[current].choices[questions[current].answer];
+  const correctText = quizQuestions[current].choices[quizQuestions[current].answer];
 
   if (isCorrect) {
     feedbackEl.textContent = "Correct! Great job. Press Continue to move on.";
@@ -123,11 +131,11 @@ function showResult() {
   nextBtn.classList.add("hidden");
   feedbackEl.classList.add("hidden");
 
-  const grade = Math.max(1, Math.min(6, Math.ceil((correctCount / questions.length) * 6)));
+  const grade = Math.max(1, Math.min(6, Math.ceil((correctCount / quizQuestions.length) * 6)));
   resultEl.classList.remove("hidden");
   resultEl.innerHTML = `
     <h2>Quiz Complete</h2>
-    <p>Correct answers: ${correctCount} / ${questions.length}</p>
+    <p>Correct answers: ${correctCount} / ${quizQuestions.length}</p>
     <p>Your estimated reading level: Grade ${grade}</p>
   `;
 }
@@ -137,19 +145,19 @@ nextBtn.onclick = () => {
 
   if (!answered) {
     answered = true;
-    const isCorrect = selected === questions[current].answer;
+    const isCorrect = selected === quizQuestions[current].answer;
     if (isCorrect) {
-      score += questions[current].level;
+      score += quizQuestions[current].level;
       correctCount += 1;
     }
     showFeedback(isCorrect);
-    nextBtn.textContent = current < questions.length - 1 ? "Continue" : "See Score";
+    nextBtn.textContent = current < quizQuestions.length - 1 ? "Continue" : "See Score";
     document.querySelectorAll(".choice").forEach(c => c.classList.add("disabled"));
     return;
   }
 
   current += 1;
-  if (current < questions.length) {
+  if (current < quizQuestions.length) {
     loadQuestion();
   } else {
     showResult();
@@ -163,7 +171,10 @@ restartBtn.onclick = () => {
   selected = null;
   answered = false;
   resultEl.classList.add("hidden");
+
+  const sampleCount = Math.min(10, allQuestions.length);
+  quizQuestions = shuffle(allQuestions).slice(0, sampleCount);
   loadQuestion();
 };
 
-loadQuestion();
+loadQuestionsFromCSV();
