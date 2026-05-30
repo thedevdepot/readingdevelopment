@@ -12,12 +12,47 @@ body {
   background: #f4efe6;
   padding: 20px;
   border-radius: 10px;
-  width: 400px;
+  width: 480px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 h1 {
   text-align: center;
+}
+
+/* Top menu styled to resemble HP-12C calculator colors */
+.top {
+  margin-bottom: 8px;
+}
+
+.top-menu {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  background: #111; /* dark calculator body */
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.top-menu a {
+  background: #d9822b; /* gold/orange key */
+  color: #080808;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.top-menu a:hover {
+  background: #e6a25a;
+}
+
+.desc {
+  text-align: center;
+  font-size: 14px;
+  margin: 8px 0 12px 0;
+  color: #333;
 }
 
 button {
@@ -31,7 +66,7 @@ button {
 }
 
 button:hover {
-  background-color: #666;
+  background-color: #677;
 }
 
 .choice {
@@ -72,6 +107,21 @@ button:hover {
 button.secondary {
   background-color: #888;
   margin-top: 8px;
+}
+
+.small-footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.small-link {
+  font-size: 11px;
+  color: #666;
+  text-decoration: none;
+}
+
+.small-link:hover {
+  text-decoration: underline;
 }
 
 .hidden {

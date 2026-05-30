@@ -10,7 +10,18 @@
 <body>
 
 	<div class="container">
-		<h1>Reading Level Quiz</h1>
+		<header class="top">
+			<h1>Reading Level Quiz</h1>
+			<nav class="top-menu">
+				<a href="https://www.gutenberg.org" target="_blank" rel="noopener">Project Gutenberg</a>
+				<a href="https://www.overdrive.com/apps/libby/" target="_blank" rel="noopener">Libby</a>
+				<a href="https://github.com/thedevdepot/readingdevelopment" target="_blank" rel="noopener">My GitHub</a>
+				<a href="https://www.poetryfoundation.org" target="_blank" rel="noopener">Poetry Foundation</a>
+			</nav>
+		</header>
+
+		<p class="desc">This short quiz estimates a student's reading level between Grade 1 and Grade 6. The app will not place anyone above 6th grade.</p>
+
 		<p id="progress"></p>
 		<p id="question"></p>
 
@@ -22,6 +33,10 @@
 		<button id="restartBtn" class="secondary">Start Over</button>
 
 		<div id="result" class="hidden"></div>
+
+		<footer class="small-footer">
+			<a class="small-link" href="https://github.com/thedevdepot/readingdevelopment" target="_blank" rel="noopener">View on GitHub</a>
+		</footer>
 	</div>
 
 	<script src="script.js"></script>
