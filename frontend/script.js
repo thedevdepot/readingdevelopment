@@ -66,7 +66,7 @@ function loadQuestionsFromCSV() {
       allQuestions = parseCSV(text).map((row, index) => ({
         id: index,
         text: row.text,
-        choices: [row.choice1, row.choice2, row.choice3, row.choice4].filter(choice => choice && choice.trim()),
+        choices: [row.choice1, row.choice2, row.choice3].filter(choice => choice && choice.trim()),
         answer: Number(row.answer) - 1,
         level: Number(row.level)
       }));

@@ -1,11 +1,151 @@
-text,choice1,choice2,choice3,choice4,answer,level
-"“The cat sat on the mat.” What is the cat doing?","Running","Sitting","Flying","Sleeping",1,1
-"“He ran quickly to catch the bus.” What does 'quickly' mean?","Slowly","Fast","Carefully","Sadly",1,2
-"“The sun dipped below the horizon.” What time is it?","Morning","Noon","Evening","Midnight",2,3
-"“She spoke in a trembling voice.” What does trembling suggest?","Anger","Fear","Joy","Excitement",1,3
-"“The wind whispered through the trees.” This is an example of?","Metaphor","Simile","Personification","Hyperbole",2,4
-"“He carried the weight of the world on his shoulders.” Meaning?","Physically strong","Very stressed","Happy","Lazy",1,4
-"“It was the best of times, it was the worst of times.” What device?","Irony","Alliteration","Oxymoron","Repetition",3,5
-"“Her smile was a ray of sunshine.” This suggests?","She is bright","She is happy and uplifting","She is loud","She is quiet",1,5
-"“Call me Ishmael.” What is this?","Dialogue","Narration","Metaphor","Conflict",1,6
-"“All animals are equal, but some are more equal than others.” Meaning?","Equality exists","Contradiction/irony","Animals are fair","Confusion",1,6
+text,choice1,choice2,choice3,answer,level
+“The dog barked.” What did the dog do?,Barked,Slept,Ate,1,1
+“The boy has a red ball.” What color is the ball?,Blue,Red,Green,2,1
+“The bird can fly.” What can the bird do?,Swim,Fly,Drive,2,1
+“Mom made a cake.” What did Mom make?,Cake,Pizza,Soup,1,1
+“The fish is in the water.” Where is the fish?,Tree,Water,House,2,1
+“Sam wears a hat.” What does Sam wear?,Shoes,Hat,Coat,2,1
+“The sun is hot.” What is hot?,Moon,Sun,Rain,2,1
+“The girl reads a book.” What is she reading?,Book,Letter,Map,1,1
+“Tom has two cats.” How many cats does Tom have?,One,Two,Three,2,1
+“The apple is green.” What color is the apple?,Green,Red,Yellow,1,1
+“The baby is sleeping.” What is the baby doing?,Running,Sleeping,Eating,2,1
+“We ride the bus to school.” What do we ride?,Bike,Bus,Train,2,1
+“The cow says moo.” Which animal says moo?,Cow,Dog,Duck,1,1
+“Jen drinks milk.” What does Jen drink?,Juice,Water,Milk,3,1
+“The tree is tall.” What is tall?,Tree,Flower,Rock,1,1
+“The frog jumps.” What does the frog do?,Jumps,Sleeps,Reads,1,1
+“Dad drives a car.” What does Dad drive?,Boat,Car,Plane,2,1
+“The duck is yellow.” What color is the duck?,Yellow,Black,Brown,1,1
+“The boy is happy.” How does the boy feel?,Sad,Happy,Angry,2,1
+“The cat drinks milk.” What does the cat drink?,Milk,Juice,Tea,1,1
+“Sue has a blue kite.” What does Sue have?,Ball,Kite,Bike,2,1
+“The horse runs fast.” What animal runs fast?,Horse,Fish,Bird,1,1
+“It is raining outside.” What is the weather like?,Sunny,Snowy,Rainy,3,1
+“The children play at the park.” Where do the children play?,School,Park,Store,2,1
+“The rabbit eats a carrot.” What does the rabbit eat?,Apple,Carrot,Bread,2,1
+“Lily planted a seed in the garden.” What did Lily plant?,A flower,A seed,A tree,2,2
+“The rabbit hopped across the field.” How did the rabbit move?,Hopped,Flew,Swam,1,2
+“Jake wore a jacket because it was cold outside.” Why did Jake wear a jacket?,It was raining,It was cold,It was hot,2,2
+“The children laughed at the funny clown.” Why did the children laugh?,The clown was funny,The clown was sad,The clown was sleeping,1,2
+“Emma put her books on the shelf.” Where did Emma put her books?,On the desk,On the shelf,In a box,2,2
+“The squirrel gathered nuts for winter.” Why did the squirrel gather nuts?,To play a game,For winter,To give away,2,2
+“Ben finished his homework before dinner.” What did Ben finish?,His game,His homework,His lunch,2,2
+“The ice cream melted in the sun.” Why did the ice cream melt?,It was frozen,It was in the sun,It was in a bowl,2,2
+“Sara shared her crayons with her friend.” What did Sara share?,Her lunch,Her crayons,Her book,2,2
+“The puppy wagged its tail when it saw its owner.” How did the puppy feel?,Happy,Scared,Sleepy,1,2
+“The boy used an umbrella during the storm.” Why did he use an umbrella?,To stay dry,To stay warm,To play baseball,1,2
+“Mia arrived early to school.” When did Mia arrive?,Late,Early,At night,2,2
+“The farmer fed the chickens every morning.” Who fed the chickens?,The teacher,The farmer,The doctor,2,2
+“The boat floated on the lake.” Where was the boat?,On the lake,In the sky,On the road,1,2
+“Noah carefully carried the glass of water.” Why was Noah careful?,The glass could break,The water was hot,He was running,1,2
+“The library was quiet.” What was the library like?,Loud,Quiet,Crowded,2,2
+“Olivia drew a picture of her family.” What did Olivia draw?,A map,A picture,A letter,2,2
+“The fire truck rushed to help.” Why did the fire truck rush?,To help,To race,To park,1,2
+“The boy was tired after playing soccer.” Why was the boy tired?,He was reading,He was playing soccer,He was sleeping,2,2
+“A caterpillar changes into a butterfly.” What does a caterpillar become?,A bird,A butterfly,A bee,2,2
+“The baker made fresh bread.” What did the baker make?,Cookies,Bread,Cake,2,2
+“The class took a trip to the zoo.” Where did the class go?,The park,The zoo,The beach,2,2
+“The girl whispered so she would not wake the baby.” Why did she whisper?,She was angry,She did not want to wake the baby,She was outside,2,2
+“The snow covered the ground.” What covered the ground?,Rain,Snow,Leaves,2,2
+“The clock showed 3:00.” What time was it?,2:00,3:00,4:00,2,2
+“Max rode his bike to the park.” How did Max get to the park?,Car,Bike,Bus,2,3
+“The leaves turned orange in the fall.” When did the leaves turn orange?,Spring,Summer,Fall,3,3
+“Anna found a lost puppy and gave it water.” What did Anna give the puppy?,Food,Water,A toy,2,3
+“The river flowed quickly after the rain.” How did the river flow?,Slowly,Quickly,Calmly,2,3
+“Leo read a long story to his class.” What did Leo read?,Poem,Story,Letter,2,3
+“The wind blew the kite high in the sky.” What did the wind move?,Tree,Kite,Ball,2,3
+“Sofia saved her allowance to buy a book.” What did she save for?,A toy,A book,Candy,2,3
+“The birds built nests in the trees.” Where did the birds build nests?,On the ground,In trees,In water,2,3
+“Jake washed his hands before dinner.” Why did Jake wash his hands?,To play,To eat,To sleep,2,3
+“The sun set behind the mountains.” What time of day is it?,Morning,Evening,Noon,2,3
+“Maya put on her raincoat when it rained.” What did Maya wear?,Hat,Raincoat,Gloves,2,3
+“The kids cheered when their team scored a goal.” How did the kids react?,Cried,Cheered,Slept,2,3
+“Tom put the puzzle pieces together.” What did Tom do?,Read a book,Did a puzzle,Ate lunch,2,3
+“The baby smiled at her mother.” Who did the baby smile at?,Father,Mother,Friend,2,3
+“The dog dug a hole in the yard.” What did the dog do?,Ran,Dug,Slept,2,3
+“The train arrived at the station on time.” What arrived at the station?,Bus,Train,Plane,2,3
+“Lucy planted flowers in the garden.” What did Lucy plant?,Flowers,Trees,Grass,1,3
+“The cat chased the mouse.” Who chased whom?,Mouse chased cat,Cat chased mouse,Dog chased cat,2,3
+"“It was windy, so the leaves fell off the trees.” Why did the leaves fall?",Because it rained,Because it was windy,Because it snowed,2,3
+“Ben put his toys away before bed.” What did Ben do?,Played,Put away toys,Read a book,2,3
+“The chef cooked soup for the customers.” What did the chef cook?,Bread,Soup,Cake,2,3
+“The children listened carefully to the teacher.” How did they listen?,Carefully,Quickly,Noisy,1,3
+“Emma rode the bus to school.” How did Emma go to school?,Walked,Bus,Car,2,3
+“The lightning lit up the sky.” What lit up the sky?,Stars,Lightning,Moon,2,3
+“Tommy wore boots because it was muddy.” Why did he wear boots?,It was hot,It was muddy,It was raining,2,3
+“The magician pulled a rabbit out of the hat.” What did the magician pull out?,Rabbit,Bird,Hat,1,4
+“The boy found a map in the attic.” Where did he find the map?,Basement,Attic,Garage,2,4
+“The river overflowed after the heavy rain.” Why did the river overflow?,It was raining,It was sunny,It was windy,1,4
+“Lila wrote a letter to her grandmother.” Who received the letter?,Friend,Grandmother,Teacher,2,4
+“The wind howled through the trees at night.” What did the wind do?,Blew gently,Howled,Stopped,2,4
+“The scientist studied the stars through a telescope.” What did the scientist study?,Stars,Planets,Rocks,1,4
+“The children built a sandcastle on the beach.” What did the children build?,House,Sandcastle,Boat,2,4
+“Sam opened the window to let in fresh air.” Why did Sam open the window?,To shout,To let in fresh air,To close it,2,4
+“The firemen rescued the kitten from the tree.” Who did the firemen rescue?,Dog,Kitten,Bird,2,4
+“Mia put a bandage on her cut finger.” Why did she use a bandage?,To protect it,To decorate it,To hide it,1,4
+“The clock struck twelve at midnight.” What time was it?,Noon,Midnight,Morning,2,4
+“The farmer milked the cows every morning.” What did the farmer do?,Fed chickens,Milked cows,Planted corn,2,4
+“The children painted a colorful mural on the wall.” What did they paint?,Mural,Poster,Sign,1,4
+“The explorer discovered a hidden cave.” What did the explorer find?,Cave,Treasure,Island,1,4
+“The leaves rustled in the autumn breeze.” What made the sound?,Wind,Rain,Birds,1,4
+“Liam practiced the piano for an hour.” What did Liam practice?,Violin,Piano,Guitar,2,4
+“The dog barked loudly at the stranger.” How did the dog bark?,Quietly,Loudly,Softly,2,4
+“A rainbow appeared after the storm.” What appeared?,Rainbow,Cloud,Sun,1,4
+“The children waited patiently for their turn.” How did the children wait?,Patiently,Angrily,Quickly,1,4
+“The ice on the pond began to melt in spring.” Why did the ice melt?,It was cold,It was warm,It was windy,2,4
+“The teacher explained the rules of the game.” What did the teacher explain?,Rules,Stories,Jokes,1,4
+“The lighthouse guided ships safely to shore.” What did the lighthouse do?,Lit the way,Blocked ships,Sank ships,1,4
+“The children enjoyed a picnic in the park.” Where did they have a picnic?,Beach,Park,School,2,4
+“The scientist measured the temperature with a thermometer.” What did the scientist measure?,Rainfall,Temperature,Speed,2,4
+“The girl tied her shoelaces before running.” Why did she tie her shoelaces?,To run safely,To sleep,To sit,1,4
+“The scientist recorded her observations in a notebook.” What did the scientist record?,Observations,Recipes,Directions,1,5
+"“After weeks of practice, Marcus finally mastered the difficult piano piece.” What helped Marcus succeed?",Luck,Practice,Advice,2,5
+“The hikers carried extra water because the trail was long.” Why did the hikers bring extra water?,The trail was long,It was raining,They were swimming,1,5
+“The teacher praised Ava for her perseverance.” What does perseverance mean?,Giving up easily,Keeping trying,Being noisy,2,5
+“The storm knocked down several tree branches.” What happened during the storm?,Trees grew taller,Branches fell,Flowers bloomed,2,5
+“The museum displayed artifacts from ancient civilizations.” What was displayed?,Paintings,Artifacts,Animals,2,5
+“Jamal compared prices before buying a new bicycle.” Why did Jamal compare prices?,To save money,To waste time,To sell bicycles,1,5
+“The author included details about the setting to help readers imagine the scene.” Why were the details included?,To confuse readers,To help readers visualize,To shorten the story,2,5
+“The community organized a cleanup day for the local park.” What was the purpose of the event?,To clean the park,To build a road,To plant crops,1,5
+“The owl is a nocturnal animal.” When is a nocturnal animal most active?,During the day,At night,At noon,2,5
+“The inventor created a prototype before building the final product.” What is a prototype?,A finished product,An early model,A repair tool,2,5
+“The team celebrated after winning the championship.” Why did the team celebrate?,They finished practice,They won,They found a field,2,5
+“The character felt relieved when the missing dog returned home.” How did the character feel?,Angry,Relieved,Confused,2,5
+“The mayor announced plans to improve public transportation.” What did the mayor announce?,A holiday,Transportation improvements,A concert,2,5
+“The bee transferred pollen between flowers.” What did the bee transfer?,Seeds,Pollen,Leaves,2,5
+“The students researched renewable energy sources.” What topic did they research?,Weather,Renewable energy,Sports,2,5
+“The glacier moved slowly across the landscape.” How did the glacier move?,Quickly,Slowly,Randomly,2,5
+“The coach encouraged players to work together.” What was the coach promoting?,Competition,Teamwork,Rest,2,5
+“The article explained how volcanoes form.” What was the article mainly about?,Earthquakes,Volcano formation,Ocean currents,2,5
+“Sophia budgeted her allowance to save for a tablet.” Why did Sophia make a budget?,To buy snacks,To save money,To lend money,2,5
+“The judge listened carefully before making a decision.” Why did the judge listen carefully?,To make a fair decision,To tell a joke,To leave early,1,5
+"“The ecosystem includes plants, animals, and their environment.” What is an ecosystem?",A single animal,Living things and their environment,A type of weather,2,5
+“The inventor received a patent for her design.” What does a patent protect?,A vacation,An invention,A building,2,5
+“The narrator describes events from his own point of view.” Which point of view is used?,First person,Second person,Third person,1,5
+“The factory reduced waste by recycling materials.” How did the factory reduce waste?,By recycling,By expanding,By hiring workers,1,5
+“The protagonist struggled with a difficult decision throughout the novel.” Who is the protagonist?,The main character,The author,The villain,1,6
+“The drought had severe consequences for local farmers.” What does severe mean in this sentence?,Minor,Serious,Unexpected,2,6
+“The speaker used statistics to support her argument.” Why did the speaker use statistics?,To entertain,To provide evidence,To tell a story,2,6
+"“Although the journey was exhausting, the explorers remained determined.” How did the explorers feel?",Determined,Bored,Relaxed,1,6
+“The author contrasts the busy city with the quiet countryside.” What is being contrasted?,Two characters,Two settings,Two animals,2,6
+“The invention revolutionized communication across long distances.” What does revolutionized mean?,Slightly changed,Greatly changed,Destroyed,2,6
+“The article presents both advantages and disadvantages of social media.” What is the author's purpose?,To show different perspectives,To advertise a product,To tell a fictional story,1,6
+“The ancient civilization developed an advanced irrigation system.” What did the civilization develop?,A transportation network,An irrigation system,A government,2,6
+“The character's actions revealed her generosity.” What trait did the character show?,Courage,Generosity,Patience,2,6
+“Researchers analyzed the data before drawing conclusions.” What did the researchers do first?,Published results,Analyzed data,Conducted interviews,2,6
+“The memoir recounts the author's childhood experiences.” What is a memoir?,A fictional story,A personal account,A scientific report,2,6
+“The evidence suggests that climate patterns are changing.” What does the evidence suggest?,Patterns are stable,Patterns are changing,Patterns are unknown,2,6
+“The conflict between the two groups escalated over time.” What happened to the conflict?,It decreased,It intensified,It disappeared,2,6
+“The engineer designed a bridge capable of supporting heavy loads.” What was the bridge designed to do?,Float on water,Support heavy loads,Generate electricity,2,6
+“The author's tone becomes more optimistic near the end of the passage.” How does the tone change?,More negative,More optimistic,More humorous,2,6
+“The committee evaluated several proposals before making a recommendation.” What did the committee evaluate?,Budgets,Proposals,Employees,2,6
+“The metaphor compares time to a river that never stops flowing.” What is being compared to a river?,Life,Time,Nature,2,6
+“The historian examined primary sources to verify the facts.” Why did the historian examine primary sources?,To verify facts,To write fiction,To create maps,1,6
+“The entrepreneur took a financial risk when starting the company.” What risk did the entrepreneur take?,Financial risk,Physical risk,Medical risk,1,6
+“The passage implies that cooperation leads to better outcomes.” What idea is implied?,Competition is best,Cooperation helps,Failure is unavoidable,2,6
+“The scientist proposed a theory based on years of research.” What was the theory based on?,A guess,Years of research,One experiment,2,6
+“The character overcame numerous obstacles to achieve her goal.” What did the character overcome?,Obstacles,Friends,Rewards,1,6
+“The editorial argues for stricter environmental protections.” What is the editorial mainly doing?,Entertaining readers,Arguing a position,Describing a vacation,2,6
+“The audience applauded enthusiastically after the performance.” How did the audience respond?,They left quietly,They applauded,They complained,2,6
+“The economic downturn affected businesses across the region.” What was affected by the downturn?,Businesses,Rivers,Schools,1,6
