@@ -63,18 +63,32 @@ const questions = [
 
 let current = 0;
 let score = 0;
+let correctCount = 0;
 let selected = null;
+let answered = false;
 
 const questionEl = document.getElementById("question");
 const choicesEl = document.getElementById("choices");
 const nextBtn = document.getElementById("nextBtn");
+const restartBtn = document.getElementById("restartBtn");
+const feedbackEl = document.getElementById("feedback");
 const resultEl = document.getElementById("result");
 
 function loadQuestion() {
   selected = null;
+  answered = false;
+  feedbackEl.classList.add("hidden");
+  feedbackEl.textContent = "";
+  nextBtn.textContent = "Submit Answer";
+  nextBtn.disabled = false;
+
   const q = questions[current];
   questionEl.textContent = q.text;
   choicesEl.innerHTML = "";
+  choicesEl.classList.remove("hidden");
+  questionEl.classList.remove("hidden");
+  resultEl.classList.add("hidden");
+  nextBtn.classList.remove("hidden");
 
   q.choices.forEach((choice, index) => {
     const div = document.createElement("div");
@@ -82,6 +96,7 @@ function loadQuestion() {
     div.classList.add("choice");
 
     div.onclick = () => {
+      if (answered) return;
       document.querySelectorAll(".choice").forEach(c => c.classList.remove("selected"));
       div.classList.add("selected");
       selected = index;
@@ -91,15 +106,49 @@ function loadQuestion() {
   });
 }
 
-nextBtn.onclick = () => {
-  if (selected === null) return alert("Please select an answer!");
+function showFeedback(isCorrect) {
+  feedbackEl.classList.remove("hidden");
+  const correctText = questions[current].choices[questions[current].answer];
 
-  if (selected === questions[current].answer) {
-    score += questions[current].level;
+  if (isCorrect) {
+    feedbackEl.textContent = "Correct! Great job. Press Continue to move on.";
+  } else {
+    feedbackEl.textContent = `Incorrect. The right answer is: ${correctText}. Press Continue to move on.`;
+  }
+}
+
+function showResult() {
+  questionEl.classList.add("hidden");
+  choicesEl.classList.add("hidden");
+  nextBtn.classList.add("hidden");
+  feedbackEl.classList.add("hidden");
+
+  const grade = Math.max(1, Math.min(6, Math.ceil((correctCount / questions.length) * 6)));
+  resultEl.classList.remove("hidden");
+  resultEl.innerHTML = `
+    <h2>Quiz Complete</h2>
+    <p>Correct answers: ${correctCount} / ${questions.length}</p>
+    <p>Your estimated reading level: Grade ${grade}</p>
+  `;
+}
+
+nextBtn.onclick = () => {
+  if (selected === null) return alert("Please select an answer before continuing.");
+
+  if (!answered) {
+    answered = true;
+    const isCorrect = selected === questions[current].answer;
+    if (isCorrect) {
+      score += questions[current].level;
+      correctCount += 1;
+    }
+    showFeedback(isCorrect);
+    nextBtn.textContent = current < questions.length - 1 ? "Continue" : "See Score";
+    document.querySelectorAll(".choice").forEach(c => c.classList.add("disabled"));
+    return;
   }
 
-  current++;
-
+  current += 1;
   if (current < questions.length) {
     loadQuestion();
   } else {
@@ -107,15 +156,14 @@ nextBtn.onclick = () => {
   }
 };
 
-function showResult() {
-  document.getElementById("question").classList.add("hidden");
-  choicesEl.classList.add("hidden");
-  nextBtn.classList.add("hidden");
-
-  let grade = Math.round(score / questions.length);
-
-  resultEl.classList.remove("hidden");
-  resultEl.innerHTML = `<h2>Your estimated reading level: Grade ${grade}</h2>`;
-}
+restartBtn.onclick = () => {
+  current = 0;
+  score = 0;
+  correctCount = 0;
+  selected = null;
+  answered = false;
+  resultEl.classList.add("hidden");
+  loadQuestion();
+};
 
 loadQuestion();

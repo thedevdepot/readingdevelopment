@@ -46,9 +46,32 @@ button:hover {
   background: #c9c1b0;
 }
 
+.choice.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
 .selected {
   background: #d9822b; /* orange accent */
   color: white;
+}
+
+#feedback {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff5d6;
+  color: #333;
+  border: 1px solid #e3d3a1;
+}
+
+#feedback.hidden {
+  display: none;
+}
+
+button.secondary {
+  background-color: #888;
+  margin-top: 8px;
 }
 
 .hidden {
