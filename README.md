@@ -91,13 +91,3 @@ The application includes a **dynamic, adaptive question system**:
 
 </details>
 
----
-
-## Setup
-
-### Prerequisites
-
-- Node.js >= 18  
-- npm  
-- Git  
-
