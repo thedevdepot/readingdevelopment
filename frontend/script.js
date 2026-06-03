@@ -190,6 +190,40 @@ function showResult() {
     <p>Highest grade level answered correctly: Grade ${highestCorrectLevel}</p>
     <p>Weighted estimated reading level: Grade ${grade}</p>
   `;
+  // Load recommendations for the achieved grade and display links
+  fetch('recommendations.csv')
+    .then(res => res.text())
+    .then(text => {
+      try {
+        const recs = parseCSV(text);
+        const gradeRecs = recs.filter(r => Number(r['Grade']) === grade);
+        if (gradeRecs.length > 0) {
+          const section = document.createElement('div');
+          section.classList.add('recommendations');
+          const h3 = document.createElement('h3');
+          h3.textContent = `Recommended reading for Grade ${grade}`;
+          section.appendChild(h3);
+          const list = document.createElement('ul');
+          gradeRecs.forEach(r => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = r['Free Read Link'] || r['Free Read link'] || r['Free Read'] || r['Free Read Link '];
+            a.target = '_blank';
+            a.rel = 'noopener';
+            const title = r['Title'] || r['title'] || 'Recommended Title';
+            const author = r['Author'] ? ` — ${r['Author']}` : '';
+            a.textContent = `${title}${author}`;
+            li.appendChild(a);
+            list.appendChild(li);
+          });
+          section.appendChild(list);
+          resultEl.appendChild(section);
+        }
+      } catch (e) {
+        console.error('Failed to parse recommendations:', e);
+      }
+    })
+    .catch(err => console.error('Failed to load recommendations.csv:', err));
 }
 
 nextBtn.onclick = () => {
