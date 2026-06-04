@@ -104,6 +104,77 @@ button:hover {
   display: none;
 }
 
+.grade-select {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.grade-select label {
+  font-weight: 700;
+}
+
+.sentence-container {
+  margin: 16px 0;
+  min-height: 56px;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #d8d2c3;
+}
+
+.sentence-text {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.blank-zone {
+  display: inline-block;
+  min-width: 90px;
+  padding: 8px 12px;
+  border: 2px dashed #888;
+  border-radius: 8px;
+  background: #f7f2e8;
+  text-align: center;
+  font-weight: 700;
+  color: #333;
+}
+
+.choice-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.choice-option {
+  width: 100%;
+  background: #d9d2c3;
+  border: 1px solid #b5a78b;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: grab;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+.choice-option:hover,
+.choice-option.selected,
+.choice-option.dragged {
+  background: #d9822b;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
 button.secondary {
   background-color: #888;
   margin-top: 8px;

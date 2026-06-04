@@ -1,0 +1,20 @@
+[
+  {"grade": 1, "textBefore": "The dog likes to", "textAfter": "in the yard.", "choices": ["run", "read", "sleep"], "answer": 0},
+  {"grade": 1, "textBefore": "We see a", "textAfter": "in the sky.", "choices": ["bird", "car", "table"], "answer": 0},
+  {"grade": 1, "textBefore": "Mom will", "textAfter": "the cake.", "choices": ["cook", "drive", "write"], "answer": 0},
+  {"grade": 2, "textBefore": "The frog can", "textAfter": "very high.", "choices": ["jump", "type", "paint"], "answer": 0},
+  {"grade": 2, "textBefore": "She will", "textAfter": "a letter tomorrow.", "choices": ["send", "listen", "count"], "answer": 0},
+  {"grade": 2, "textBefore": "The sun is", "textAfter": "in the sky.", "choices": ["bright", "quiet", "heavy"], "answer": 0},
+  {"grade": 3, "textBefore": "The train moves along the", "textAfter": "to the city.", "choices": ["tracks", "garden", "kitchen"], "answer": 0},
+  {"grade": 3, "textBefore": "A scientist will", "textAfter": "an experiment.", "choices": ["perform", "sing", "jump"], "answer": 0},
+  {"grade": 3, "textBefore": "The blanket is very", "textAfter": "on a cold night.", "choices": ["warm", "fast", "loud"], "answer": 0},
+  {"grade": 4, "textBefore": "The librarian told us to", "textAfter": "the book carefully.", "choices": ["read", "sell", "throw"], "answer": 0},
+  {"grade": 4, "textBefore": "They traveled across the", "textAfter": "to see the museum.", "choices": ["country", "building", "window"], "answer": 0},
+  {"grade": 4, "textBefore": "Flowers begin to", "textAfter": "in the spring.", "choices": ["bloom", "sleep", "listen"], "answer": 0},
+  {"grade": 5, "textBefore": "The author decided to", "textAfter": "the novel tonight.", "choices": ["edit", "jump", "run"], "answer": 0},
+  {"grade": 5, "textBefore": "Students must", "textAfter": "their homework before class.", "choices": ["complete", "listen", "watch"], "answer": 0},
+  {"grade": 5, "textBefore": "The weather forecast said it would", "textAfter": "this afternoon.", "choices": ["rain", "fly", "swim"], "answer": 0},
+  {"grade": 6, "textBefore": "Her explanation made the idea", "textAfter": "clear.", "choices": ["sound", "color", "move"], "answer": 0},
+  {"grade": 6, "textBefore": "The committee will", "textAfter": "the new plan tomorrow.", "choices": ["review", "jump", "paint"], "answer": 0},
+  {"grade": 6, "textBefore": "He discovered the book was", "textAfter": "than he expected.", "choices": ["longer", "faster", "darker"], "answer": 0}
+]
