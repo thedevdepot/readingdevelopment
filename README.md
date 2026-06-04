@@ -1,52 +1,104 @@
-# Reading Development Web Application
 
-Welcome to the **Reading Development Web Application**! This repository contains a lightweight static web app for estimating elementary reading levels using simple, adaptive quiz interactions.
+# Reading Development
 
----
+An adaptive reading assessment application designed to help educators better understand student reading comprehension through engaging, interactive activities.
 
-## Features
-
-- Adaptive Reading Level Assessment: 10-question quiz that uses grade-level questions and adjusts feedback based on correct answers.
-- Multiple Choice Quiz: Core question type served from `frontend/questions.csv`.
-- Experimental Missing Word Activity: A separate page with drag-and-drop sentence completion questions loaded from `frontend/missing-word-questions.json`.
-- Grade-specific content: The experimental page shows only questions for the student's selected grade.
-- Recommendations: After completing the main quiz, the app loads recommended reading links from `frontend/recommendations.csv`.
-- Simple static deployment: Works from `frontend/index.html` and can be hosted on Azure Static Web Apps or any static web host.
+As a high school ELA teacher who works with special education students, I've seen how difficult it can be to gather meaningful assessment data when students are not genuinely engaged. This project is inspired by tools such as Pear Deck, Edpuzzle, Quizizz, Gimkit, and MagicSchool, with the goal of creating reading assessments that feel more interactive while providing actionable insights for teachers.
 
 ---
 
-## New Experimental Page
+## Current Features
 
-The project now includes an experimental sentence completion activity at:
+### Adaptive Reading Assessment
 
-- `frontend/missing-word.html`
+Students complete a reading assessment that adjusts feedback based on performance and estimates an appropriate reading level.
 
-This experimental page:
+### Multiple Choice Questions
 
-- asks students to drag the best word into a sentence blank
-- presents 3 options per question
-- selects 3 random questions from the user’s current grade level
-- is styled consistently with the main quiz
+The current application uses grade-level multiple-choice reading comprehension questions loaded from a CSV file.
 
----
+### Experimental Missing Word Activity
 
-## How to Run
+An experimental drag-and-drop sentence completion activity allows students to select the best word to complete a sentence.
 
-From the `frontend` folder, open `index.html` or `missing-word.html` in a browser. For local development, serve the `frontend` directory with a static file server.
+Features include:
 
----
+* Grade-level question filtering
+* Randomized question selection
+* Drag-and-drop interactions
+* Consistent styling with the main assessment
 
-## Architecture & Tech Stack
+### Reading Recommendations
 
-- **Frontend:** Static HTML, CSS, and JavaScript
-- **Data:** CSV for main quiz questions and recommendations; JSON for the experimental missing-word questions
-- **Deployment:** Static site hosting (Azure Static Web Apps or similar)
+After completing an assessment, students receive recommended reading resources aligned to their estimated reading level.
 
 ---
 
-<details>
-<summary>Current Project Structure</summary>
+## Screenshot
 
+![MVP Screenshot](./mvp.png)
+
+---
+
+## Vision
+
+Reading comprehension is more than selecting the correct answer from a list of choices. Future versions of this project will incorporate additional assessment types that allow students to demonstrate understanding in multiple ways.
+
+Planned question types include:
+
+* Multiple choice
+* Sentence completion
+* Text annotation
+* Vocabulary-in-context responses
+* Written response evaluation
+* Author's purpose and intent analysis
+* Paragraph writing activities
+* Visual comprehension and drawing activities
+
+The goal is to create a richer picture of student comprehension while maintaining high levels of engagement.
+
+---
+
+## Future AI Integration
+
+A future phase of this project will integrate Large Language Models (LLMs) through REST APIs to evaluate open-ended student responses.
+
+Potential use cases include:
+
+* Evaluating text annotations
+* Scoring written responses
+* Providing feedback on vocabulary usage in context
+* Assessing short paragraph responses
+* Analyzing student-generated visual descriptions and drawings
+* Generating personalized feedback and instructional recommendations
+
+The focus will be on using AI to support educators, not replace teacher judgment.
+
+---
+
+## Technology Stack
+
+### Current Implementation
+
+* HTML
+* CSS
+* JavaScript
+* CSV-based question and recommendation data
+* CSV-based activity content
+* Azure Static Web Apps
+
+### Future Exploration
+
+* LLM-powered response evaluation
+* Agentic API workflows
+* Learning analytics and engagement insights
+* Expanded adaptive assessment models
+
+---
+
+## Project Structure
+
+```text
 .
 ├── frontend
 │   ├── index.html
@@ -61,5 +113,11 @@ From the `frontend` folder, open `index.html` or `missing-word.html` in a browse
 ├── package.json
 ├── README.md
 └── staticwebapp.config.json
+```
 
-</details>
+---
+
+## Project Status
+
+This project is currently an active prototype focused on reading assessment and student engagement. New activity types, AI-assisted evaluation, and additional adaptive learning features are planned for future development.
+

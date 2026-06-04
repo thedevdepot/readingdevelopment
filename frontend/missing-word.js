@@ -1,4 +1,4 @@
-const questionDataPath = 'missing-word-questions.json';
+const questionDataPath = 'missing-word-questions.csv';
 const questionCount = 3;
 let allQuestions = [];
 let currentGrade = 1;
@@ -27,11 +27,57 @@ function shuffle(array) {
   return copy;
 }
 
+function parseCSV(text) {
+  const rows = [];
+  const lines = text.trim().split(/\r?\n/);
+  const headers = lines.shift().split(",");
+
+  lines.forEach(line => {
+    const values = [];
+    let field = "";
+    let inQuotes = false;
+
+    for (let i = 0; i < line.length; i++) {
+      const char = line[i];
+      if (char === '"') {
+        if (inQuotes && line[i + 1] === '"') {
+          field += '"';
+          i += 1;
+        } else {
+          inQuotes = !inQuotes;
+        }
+      } else if (char === "," && !inQuotes) {
+        values.push(field);
+        field = "";
+      } else {
+        field += char;
+      }
+    }
+
+    values.push(field);
+    rows.push(values);
+  });
+
+  return rows.map(row => {
+    const entry = {};
+    headers.forEach((header, index) => {
+      entry[header.trim()] = row[index] ? row[index].trim() : "";
+    });
+    return entry;
+  });
+}
+
 function loadQuestions() {
   return fetch(questionDataPath)
-    .then(response => response.json())
-    .then(data => {
-      allQuestions = data;
+    .then(response => response.text())
+    .then(text => {
+      allQuestions = parseCSV(text).map(row => ({
+        grade: Number(row.grade),
+        textBefore: row.textBefore,
+        textAfter: row.textAfter,
+        choices: [row.choice1, row.choice2, row.choice3].filter(choice => choice && choice.trim()),
+        answer: Number(row.answer) - 1
+      }));
     });
 }
 
@@ -120,7 +166,8 @@ function showQuestion() {
 
 function showFeedback(isCorrect) {
   feedbackEl.classList.remove('hidden');
-  const correctWord = questions[currentIndex - 1].answer;
+  const question = questions[currentIndex - 1];
+  const correctWord = question.choices[question.answer];
   if (isCorrect) {
     feedbackEl.textContent = 'Correct! Press Continue to move on.';
   } else {
