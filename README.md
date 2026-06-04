@@ -1,93 +1,65 @@
 # Reading Development Web Application
 
-Welcome to the **Reading Development Web Application**! This platform helps students track and improve their reading level through personalized strategies. Students can sign in, take adaptive assessments, receive feedback, and monitor their progress over time.
+Welcome to the **Reading Development Web Application**! This repository contains a lightweight static web app for estimating elementary reading levels using simple, adaptive quiz interactions.
 
 ---
 
 ## Features
 
-- **Reading Level Assessment:** 10-question adaptive assessment based on classic novel passages (grades 1–6).
-- **Personalized Feedback:** Results highlighting strengths, growth areas, and next steps.
-- **Progress Tracking:** Dashboard showing growth over time with reassessment options.
-- **Mobile-Responsive UI:** Fully responsive for both mobile and desktop devices.
-- **Current MVP:** JSON-backed storage for data (PostgreSQL planned for future).
+- Adaptive Reading Level Assessment: 10-question quiz that uses grade-level questions and adjusts feedback based on correct answers.
+- Multiple Choice Quiz: Core question type served from `frontend/questions.csv`.
+- Experimental Missing Word Activity: A separate page with drag-and-drop sentence completion questions loaded from `frontend/missing-word-questions.json`.
+- Grade-specific content: The experimental page shows only questions for the student's selected grade.
+- Recommendations: After completing the main quiz, the app loads recommended reading links from `frontend/recommendations.csv`.
+- Simple static deployment: Works from `frontend/index.html` and can be hosted on Azure Static Web Apps or any static web host.
 
 ---
 
-## Screenshot
+## New Experimental Page
 
-![MVP Running](./mvp_running.png)
+The project now includes an experimental sentence completion activity at:
 
-Live demo: https://happy-meadow-0c1a27010.7.azurestaticapps.net/
+- `frontend/missing-word.html`
+
+This experimental page:
+
+- asks students to drag the best word into a sentence blank
+- presents 3 options per question
+- selects 3 random questions from the user’s current grade level
+- is styled consistently with the main quiz
 
 ---
 
-## Adaptive Assessment Workflow
+## How to Run
 
-The application includes a **dynamic, adaptive question system**:
-
-1. **Initial Assessment:** First 3 questions at estimated starting grade level.
-2. **Performance-Based Adjustment:** Next 3 questions adjust difficulty based on student performance.
-3. **Progressive Adaptation:** Subsequent questions continue adjusting up or down to fine-tune reading level.
-4. **Final Scoring:** After 10 questions, the system calculates an estimated reading level.
-
-**Supported Question Types (expandable):**
-
-- Multiple Choice (MCQ)
-- Fill-in-the-blank
-- True/False
-- Short Answer (AI scoring)
-- Future: Matching, Drag & Drop, Audio/Video comprehension
+From the `frontend` folder, open `index.html` or `missing-word.html` in a browser. For local development, serve the `frontend` directory with a static file server.
 
 ---
 
 ## Architecture & Tech Stack
 
-- **Frontend:** React + Vite (modular, mobile-friendly UI)  
-- **Backend:** Python + Django API (currently JSON storage)  
-- **Deployment:** Azure Static Web Apps (frontend)  
-- **Database:** JSON for MVP; PostgreSQL planned for future integration  
-
-**Planned AI Features:**
-
-- Dynamic question generation  
-- Open-ended answer evaluation  
-- Hints and explanations  
+- **Frontend:** Static HTML, CSS, and JavaScript
+- **Data:** CSV for main quiz questions and recommendations; JSON for the experimental missing-word questions
+- **Deployment:** Static site hosting (Azure Static Web Apps or similar)
 
 ---
 
 <details>
-<summary>Project Structure</summary>
-
+<summary>Current Project Structure</summary>
 
 .
 ├── frontend
-│ ├── package.json
-│ ├── public
-│ │ └── index.html
-│ ├── src
-│ │ ├── api
-│ │ │ └── quiz.ts
-│ │ ├── app.tsx
-│ │ ├── components
-│ │ │ ├── ProgressBar.tsx
-│ │ │ ├── QuestionCard.tsx
-│ │ │ └── Quiz.tsx
-│ │ ├── index.css
-│ │ ├── main.tsx
-│ │ └── pages
-│ │ ├── Dashboard.tsx
-│ │ └── Home.tsx
-│ ├── tsconfig.json
-│ └── vite.config.ts
-├── old_frontend
-│ ├── azure_hosted_old.png
-│ ├── index.html
-│ ├── script.js
-│ └── styles.css
+│   ├── index.html
+│   ├── missing-word.html
+│   ├── script.js
+│   ├── missing-word.js
+│   ├── styles.css
+│   ├── questions.csv
+│   ├── missing-word-questions.json
+│   ├── recommendations.csv
+│   └── staticwebapp.config.json
+├── package.json
 ├── README.md
-└── tree.txt
-
+└── staticwebapp.config.json
 
 </details>
-
