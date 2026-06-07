@@ -24,7 +24,16 @@
 
 		<p class="desc">This short quiz estimates a student’s reading level from Grade 1 up to Grade 6. If your reading level is above 6th grade, you’re already well on your way in your reading journey!</p>
 
-		<p id="progress"></p>
+		<div class="progress-wrapper">
+			<div class="progress-topline">
+				<span id="progressLabel">Question 1 of 10</span>
+				<span id="progressType">multiple choice</span>
+			</div>
+			<div class="progress-bar-bg">
+				<div id="progressBar" class="progress-bar-fill"></div>
+			</div>
+		</div>
+
 		<p id="question"></p>
 
 		<div id="choices"></div>

@@ -151,7 +151,9 @@ function pickNextQuestion() {
 }
 
 const questionEl = document.getElementById("question");
-const progressEl = document.getElementById("progress");
+const progressLabelEl = document.getElementById("progressLabel");
+const progressTypeEl = document.getElementById("progressType");
+const progressBarEl = document.getElementById("progressBar");
 const choicesEl = document.getElementById("choices");
 const nextBtn = document.getElementById("nextBtn");
 const restartBtn = document.getElementById("restartBtn");
@@ -167,7 +169,9 @@ function loadQuestion() {
   nextBtn.disabled = false;
 
   const q = currentQuestion;
-  progressEl.textContent = `Question ${questionsAsked} of ${questionCount} • Level ${currentLevel} • ${currentQuestionType.replace(/-/g, ' ')}`;
+  progressLabelEl.textContent = `Question ${questionsAsked} of ${questionCount}`;
+  progressTypeEl.textContent = currentQuestionType.replace(/-/g, ' ');
+  progressBarEl.style.width = `${Math.round((questionsAsked / questionCount) * 100)}%`;
   questionEl.textContent = q.text;
   choicesEl.innerHTML = "";
   choicesEl.classList.remove("hidden");
@@ -207,7 +211,9 @@ function showResult() {
   choicesEl.classList.add("hidden");
   nextBtn.classList.add("hidden");
   feedbackEl.classList.add("hidden");
-  progressEl.textContent = "";
+  progressLabelEl.textContent = "Quiz complete";
+  progressTypeEl.textContent = "";
+  progressBarEl.style.width = "100%";
 
   const weightedRatio = totalQuestionLevels > 0 ? score / totalQuestionLevels : 0;
   const grade = Math.max(1, Math.min(6, Math.round(1 + weightedRatio * 5)));

@@ -1,23 +1,28 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #e6dccf; /* beige */
-  color: #222;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1f2a44 0%, #3a4d7c 55%, #6b8cd6 100%);
+  color: #f7f9ff;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .container {
-  background: #f4efe6;
-  padding: 20px;
-  border-radius: 10px;
-  width: 480px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background: rgba(18, 31, 58, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 24px;
+  border-radius: 28px;
+  width: min(520px, calc(100% - 32px));
+  box-shadow: 0 30px 80px rgba(14, 23, 52, 0.45);
 }
 
 h1 {
   text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 /* Top menu styled to resemble HP-12C calculator colors */
@@ -27,77 +32,125 @@ h1 {
 
 .top-menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  background: #111; /* dark calculator body */
-  padding: 8px;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
 }
 
 .top-menu a {
-  background: #d9822b; /* gold/orange key */
-  color: #080808;
-  padding: 6px 10px;
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #f5f9ff;
+  padding: 8px 14px;
+  border-radius: 12px;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 13px;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .top-menu a:hover {
-  background: #e6a25a;
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
 }
 
 .desc {
   text-align: center;
-  font-size: 14px;
-  margin: 8px 0 12px 0;
-  color: #333;
+  font-size: 0.98rem;
+  margin: 10px 0 18px 0;
+  color: #d7e4ff;
+  line-height: 1.6;
+}
+
+.progress-wrapper {
+  margin-bottom: 18px;
+}
+
+.progress-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+  color: #a8c3ff;
+  text-transform: capitalize;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #8be0ff 0%, #5f78ff 100%);
+  box-shadow: inset 0 0 14px rgba(91, 156, 255, 0.4);
+  transition: width 0.35s ease;
 }
 
 button {
-  background-color: #444;
-  color: white;
+  background: linear-gradient(135deg, #6d8cff 0%, #4b6ddb 100%);
+  color: #fff;
   border: none;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 14px;
+  margin-top: 14px;
   width: 100%;
   cursor: pointer;
+  border-radius: 14px;
+  box-shadow: 0 14px 30px rgba(31, 76, 189, 0.18);
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 button:hover {
-  background-color: #677;
+  background: linear-gradient(135deg, #5a7af7 0%, #3d5fd3 100%);
 }
 
 .choice {
-  background: #d9d2c3;
-  margin: 5px 0;
-  padding: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 8px 0;
+  padding: 14px 16px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f7f9ff;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
 }
 
 .choice:hover {
-  background: #c9c1b0;
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
 }
 
 .choice.disabled {
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 .selected {
-  background: #d9822b; /* orange accent */
+  background: #4e78f8;
   color: white;
+  border-color: rgba(115, 159, 255, 0.65);
 }
 
 #feedback {
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  background: #fff5d6;
-  color: #333;
-  border: 1px solid #e3d3a1;
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(50, 73, 135, 0.85);
+  color: #e8efff;
+  border: 1px solid rgba(108, 141, 255, 0.35);
 }
 
 #feedback.hidden {
@@ -176,18 +229,43 @@ button:hover {
 }
 
 button.secondary {
-  background-color: #888;
-  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f7f9ff;
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+button.secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .small-footer {
-  margin-top: 10px;
+  margin-top: 18px;
   text-align: center;
+}
+
+.quote-footer {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  color: #d5defe;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.quote-footer p {
+  margin: 0;
+}
+
+.quote-footer strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #f4f8ff;
 }
 
 .small-link {
   font-size: 11px;
-  color: #666;
+  color: #a9c2ff;
   text-decoration: none;
 }
 
