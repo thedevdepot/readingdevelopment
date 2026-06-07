@@ -107,6 +107,8 @@ function startNewQuiz() {
   usedQuestionIds = new Set();
   usedQuestionTypes = new Set();
   resultEl.classList.add("hidden");
+  progressBarEl.classList.add("shimmer");
+  progressBarEl.addEventListener('animationend', () => progressBarEl.classList.remove('shimmer'), { once: true });
   pickNextQuestion();
 }
 

@@ -32,38 +32,45 @@ body {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  margin: 0;
+  flex: 1;
 }
 
-/* Top menu styled to resemble HP-12C calculator colors */
+/* Top menu styled to stack vertically on the left side */
 .top {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .top-menu {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
   background: rgba(255, 255, 255, 0.12);
-  padding: 12px;
-  border-radius: 18px;
+  padding: 14px;
+  border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(10px);
+  min-width: 150px;
 }
 
 .top-menu a {
-  background: linear-gradient(135deg, #ff6f3e 0%, #ffd15e 100%);
-  color: #381900;
-  padding: 10px 16px;
-  border-radius: 14px;
+  background: linear-gradient(135deg, #ff8f2a 0%, #ffd86f 100%);
+  color: #351b00;
+  padding: 12px 16px;
+  border-radius: 16px;
   text-decoration: none;
   font-weight: 700;
   font-size: 13px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
   text-transform: uppercase;
   transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
@@ -72,7 +79,7 @@ h1 {
 .top-menu a:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
-  filter: brightness(1.04);
+  filter: brightness(1.07);
 }
 
 .desc {
@@ -100,20 +107,36 @@ h1 {
 
 .progress-bar-bg {
   width: 100%;
-  height: 14px;
-  background: rgba(255, 255, 255, 0.1);
+  height: 16px;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   overflow: hidden;
 }
-
 .progress-bar-fill {
   width: 0%;
   height: 100%;
   border-radius: 999px;
-  background: linear-gradient(90deg, #8be0ff 0%, #5f78ff 100%);
-  box-shadow: inset 0 0 14px rgba(91, 156, 255, 0.4);
+  background: linear-gradient(90deg, #e1b148 0%, #f4d16c 35%, #c28b1a 65%, #f9d86f 100%);
+  background-size: 200% 100%;
+  box-shadow: inset 0 0 16px rgba(255, 238, 149, 0.5), 0 0 18px rgba(255, 214, 110, 0.25);
   transition: width 0.35s ease;
+}
+
+.progress-bar-fill.shimmer {
+  animation: goldShimmer 1.8s ease-out 1;
+}
+
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  50% {
+    background-position: 150% 0;
+  }
+  100% {
+    background-position: 150% 0;
+  }
 }
 
 button {
