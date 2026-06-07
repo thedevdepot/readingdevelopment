@@ -1,21 +1,34 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
 body {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #1f2a44 0%, #3a4d7c 55%, #6b8cd6 100%);
+  background: linear-gradient(135deg, #8f1d1d 0%, #d84315 50%, #f1b718 100%);
   color: #f7f9ff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0;
+  padding: 12px;
 }
 
 .container {
-  background: rgba(18, 31, 58, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 24px;
+  background: rgba(18, 22, 39, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 18px;
   border-radius: 28px;
-  width: min(520px, calc(100% - 32px));
-  box-shadow: 0 30px 80px rgba(14, 23, 52, 0.45);
+  width: min(540px, calc(100vw - 28px));
+  max-height: calc(100vh - 24px);
+  overflow: hidden;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1 {
@@ -35,39 +48,43 @@ h1 {
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
   padding: 12px;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
 }
 
 .top-menu a {
-  background: rgba(255, 255, 255, 0.14);
-  color: #f5f9ff;
-  padding: 8px 14px;
-  border-radius: 12px;
+  background: linear-gradient(135deg, #ff6f3e 0%, #ffd15e 100%);
+  color: #381900;
+  padding: 10px 16px;
+  border-radius: 14px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 13px;
-  transition: transform 0.2s ease, background 0.2s ease;
+  letter-spacing: 0.02em;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  text-transform: uppercase;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
 }
 
 .top-menu a:hover {
-  background: rgba(255, 255, 255, 0.22);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+  filter: brightness(1.04);
 }
 
 .desc {
   text-align: center;
-  font-size: 0.98rem;
-  margin: 10px 0 18px 0;
-  color: #d7e4ff;
-  line-height: 1.6;
+  font-size: 0.94rem;
+  margin: 10px 0 14px 0;
+  color: #f1f5ff;
+  line-height: 1.55;
 }
 
 .progress-wrapper {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .progress-topline {
@@ -103,14 +120,15 @@ button {
   background: linear-gradient(135deg, #6d8cff 0%, #4b6ddb 100%);
   color: #fff;
   border: none;
-  padding: 14px;
-  margin-top: 14px;
+  padding: 12px;
+  margin-top: 12px;
   width: 100%;
   cursor: pointer;
   border-radius: 14px;
-  box-shadow: 0 14px 30px rgba(31, 76, 189, 0.18);
+  box-shadow: 0 12px 26px rgba(31, 76, 189, 0.18);
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
+  min-height: 50px;
 }
 
 button:hover {
@@ -229,14 +247,15 @@ button:hover {
 }
 
 button.secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: #f7f9ff;
+  background: rgba(255, 255, 255, 0.14);
+  color: #2b2b2b;
   margin-top: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 button.secondary:hover {
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.22);
 }
 
 .small-footer {
