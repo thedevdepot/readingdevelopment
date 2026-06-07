@@ -1,5 +1,10 @@
-let allQuestions = [];
+let allQuestionsByType = {
+  'multiple-choice': [],
+  'sentence-completion': [],
+  'vocabulary-in-context': []
+};
 let currentQuestion = null;
+let currentQuestionType = null;
 let currentLevel = 1;
 let questionsAsked = 0;
 let score = 0;
@@ -9,7 +14,9 @@ let totalQuestionLevels = 0;
 let selected = null;
 let answered = false;
 let usedQuestionIds = new Set();
+let usedQuestionTypes = new Set();
 const questionCount = 10;
+const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context'];
 
 function parseCSV(text) {
   const rows = [];
@@ -59,28 +66,33 @@ function shuffle(array) {
   return copy;
 }
 
-function loadQuestionsFromCSV() {
-  fetch("questions.csv")
-    .then(response => response.text())
-    .then(text => {
-      allQuestions = parseCSV(text).map((row, index) => ({
-        id: index,
-        text: row.text,
-        choices: [row.choice1, row.choice2, row.choice3].filter(choice => choice && choice.trim()),
-        answer: Number(row.answer) - 1,
-        level: Number(row.level)
-      }));
+function loadAllQuestions() {
+  let loadedCount = 0;
 
-      if (allQuestions.length === 0) {
-        throw new Error("No questions loaded from CSV.");
-      }
-
-      startNewQuiz();
-    })
-    .catch(error => {
-      questionEl.textContent = "Unable to load questions. Please refresh the page.";
-      console.error("Question load error:", error);
-    });
+  questionTypes.forEach(type => {
+    const fileName = `${type}-questions.csv`;
+    fetch(fileName)
+      .then(response => response.text())
+      .then(text => {
+        allQuestionsByType[type] = parseCSV(text).map((row, index) => ({
+          id: `${type}-${index}`,
+          type: type,
+          text: row.text,
+          choices: [row.choice1, row.choice2, row.choice3].filter(choice => choice && choice.trim()),
+          answer: Number(row.answer) - 1,
+          level: Number(row.level)
+        }));
+        
+        loadedCount += 1;
+        if (loadedCount === questionTypes.length) {
+          startNewQuiz();
+        }
+      })
+      .catch(error => {
+        console.error(`Error loading ${fileName}:`, error);
+        questionEl.textContent = `Unable to load ${type} questions. Please refresh the page.`;
+      });
+  });
 }
 
 function startNewQuiz() {
@@ -93,6 +105,7 @@ function startNewQuiz() {
   selected = null;
   answered = false;
   usedQuestionIds = new Set();
+  usedQuestionTypes = new Set();
   resultEl.classList.add("hidden");
   pickNextQuestion();
 }
@@ -103,9 +116,24 @@ function pickNextQuestion() {
     return;
   }
 
-  let candidates = allQuestions.filter(q => q.level === currentLevel && !usedQuestionIds.has(q.id));
+  let typeToUse = null;
+  
+  if (usedQuestionTypes.size === questionTypes.length) {
+    usedQuestionTypes = new Set();
+  }
+  
+  const unusedTypes = questionTypes.filter(t => !usedQuestionTypes.has(t));
+  typeToUse = unusedTypes[Math.floor(Math.random() * unusedTypes.length)];
+  usedQuestionTypes.add(typeToUse);
+
+  let candidates = allQuestionsByType[typeToUse].filter(
+    q => q.level === currentLevel && !usedQuestionIds.has(q.id)
+  );
+  
   if (candidates.length === 0) {
-    candidates = allQuestions.filter(q => !usedQuestionIds.has(q.id));
+    candidates = allQuestionsByType[typeToUse].filter(
+      q => !usedQuestionIds.has(q.id)
+    );
   }
 
   if (candidates.length === 0) {
@@ -115,6 +143,7 @@ function pickNextQuestion() {
 
   const randomIndex = Math.floor(Math.random() * candidates.length);
   currentQuestion = candidates[randomIndex];
+  currentQuestionType = typeToUse;
   usedQuestionIds.add(currentQuestion.id);
   questionsAsked += 1;
   totalQuestionLevels += currentQuestion.level;
@@ -138,7 +167,7 @@ function loadQuestion() {
   nextBtn.disabled = false;
 
   const q = currentQuestion;
-  progressEl.textContent = `Question ${questionsAsked} of ${questionCount} • Level ${currentLevel}`;
+  progressEl.textContent = `Question ${questionsAsked} of ${questionCount} • Level ${currentLevel} • ${currentQuestionType.replace(/-/g, ' ')}`;
   questionEl.textContent = q.text;
   choicesEl.innerHTML = "";
   choicesEl.classList.remove("hidden");
@@ -190,7 +219,6 @@ function showResult() {
     <p>Highest grade level answered correctly: Grade ${highestCorrectLevel}</p>
     <p>Weighted estimated reading level: Grade ${grade}</p>
   `;
-  // Load recommendations for the achieved grade and display links
   fetch('recommendations.csv')
     .then(res => res.text())
     .then(text => {
@@ -239,6 +267,10 @@ nextBtn.onclick = () => {
       if (currentLevel < 6) {
         currentLevel += 1;
       }
+    } else {
+      if (currentLevel > 1) {
+        currentLevel -= 1;
+      }
     }
     showFeedback(isCorrect);
     nextBtn.textContent = questionsAsked < questionCount ? "Continue" : "See Score";
@@ -254,11 +286,7 @@ nextBtn.onclick = () => {
 };
 
 restartBtn.onclick = () => {
-  if (allQuestions.length === 0) {
-    loadQuestionsFromCSV();
-  } else {
-    startNewQuiz();
-  }
+  startNewQuiz();
 };
 
-loadQuestionsFromCSV();
+loadAllQuestions();
