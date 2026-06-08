@@ -166,26 +166,23 @@ h1,
   width: 0%;
   height: 100%;
   border-radius: 999px;
-  background: linear-gradient(90deg, #e1b148 0%, #f4d16c 35%, #c28b1a 65%, #f9d86f 100%);
-  background-size: 200% 100%;
-  box-shadow: inset 0 0 16px rgba(255, 238, 149, 0.5), 0 0 18px rgba(255, 214, 110, 0.25);
-  transition: width 0.35s ease;
+  /* Metallic gold gradient with shimmering animation */
+  background: linear-gradient(90deg, #f8e7a2 0%, #f4d16c 18%, #e1b148 33%, #c28b1a 50%, #f9d86f 68%, #fff3b8 100%);
+  background-size: 300% 100%;
+  box-shadow: inset 0 0 18px rgba(255, 238, 149, 0.6), 0 0 18px rgba(255, 200, 80, 0.18);
+  transition: width 0.35s ease, background-position 2.5s linear;
+  animation: goldShimmer 2.8s linear infinite;
 }
 
 .progress-bar-fill.shimmer {
+  /* keep the shimmer class for one-off heightened shimmer */
   animation: goldShimmer 1.8s ease-out 1;
 }
 
 @keyframes goldShimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  50% {
-    background-position: 150% 0;
-  }
-  100% {
-    background-position: 150% 0;
-  }
+  0% { background-position: -150% 0; }
+  50% { background-position: 150% 0; }
+  100% { background-position: -150% 0; }
 }
 
 button {
