@@ -26,7 +26,13 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npm run build --if-present
+          # If frontend has its own package.json, run its install and build there.
+          if [ -f frontend/package.json ]; then
+            echo "Found frontend/package.json — installing and building frontend"
+            (cd frontend && npm install && npm run build --if-present)
+          else
+            echo "No frontend/package.json — skipping frontend build"
+          fi
           npm run test --if-present
 
       - name: Upload artifact for deployment job
