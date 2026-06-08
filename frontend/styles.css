@@ -85,8 +85,7 @@ h1 {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
   text-transform: uppercase;
   transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
-  white-space: normal;
-  word-break: break-word;
+  white-space: nowrap;
   text-align: center;
   min-height: 48px;
   display: inline-flex;
