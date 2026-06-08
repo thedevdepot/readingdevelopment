@@ -83,8 +83,13 @@ h1 {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
   text-transform: uppercase;
   transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word;
   text-align: center;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .side-menu a:hover {
@@ -291,10 +296,10 @@ button:hover {
 }
 
 button.secondary {
-  background: rgba(255, 255, 255, 0.14);
-  color: #2b2b2b;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffe47a;
   margin-top: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
