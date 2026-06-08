@@ -9,10 +9,38 @@
 
 <body>
 
-	<div class="container">
-		<header class="top">
-			<h1>LaunchPad Reading Application</h1>
-			<nav class="top-menu">
+	<div class="wrapper">
+		<div class="container">
+			<header class="top">
+				<h1>LaunchPad Reading Application</h1>
+			</header>
+
+			<div class="main-content">
+				<p class="desc">This short quiz estimates a student’s reading level from Grade 1 up to Grade 6. If your reading level is above 6th grade, you’re already well on your way in your reading journey!</p>
+
+				<div class="progress-wrapper">
+					<div class="progress-topline">
+						<span id="progressLabel">Question 1 of 10</span>
+						<span id="progressType">multiple choice</span>
+					</div>
+					<div class="progress-bar-bg">
+						<div id="progressBar" class="progress-bar-fill"></div>
+					</div>
+				</div>
+
+				<p id="question"></p>
+
+				<div id="choices"></div>
+
+				<div id="feedback" class="hidden"></div>
+
+				<button id="nextBtn">Submit Answer</button>
+				<button id="restartBtn" class="secondary">Start Over</button>
+
+				<div id="result" class="hidden"></div>
+			</div>
+
+			<nav class="side-menu">
 				<a href="https://www.biblegateway.com/" target="_blank" rel="noopener">Bible Gateway</a>
 				<a href="https://www.gutenberg.org" target="_blank" rel="noopener">Project Gutenberg</a>
 				<a href="https://archive.org/" target="_blank" rel="noopener">Archive.org</a>
@@ -20,38 +48,15 @@
 				<a href="https://www.overdrive.com/apps/libby/" target="_blank" rel="noopener">Libby</a>
 				<a href="https://www.bible.com/" target="_blank" rel="noopener">Bible App</a>
 			</nav>
-		</header>
 
-		<p class="desc">This short quiz estimates a student’s reading level from Grade 1 up to Grade 6. If your reading level is above 6th grade, you’re already well on your way in your reading journey!</p>
-
-		<div class="progress-wrapper">
-			<div class="progress-topline">
-				<span id="progressLabel">Question 1 of 10</span>
-				<span id="progressType">multiple choice</span>
-			</div>
-			<div class="progress-bar-bg">
-				<div id="progressBar" class="progress-bar-fill"></div>
-			</div>
+			<footer class="small-footer">
+				<a class="small-link" href="https://github.com/thedevdepot/readingdevelopment" target="_blank" rel="noopener">View on GitHub</a>
+				<div class="quote-footer">
+					<p><strong>James 1:5 (KJV)</strong><br>
+					"If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him."</p>
+				</div>
+			</footer>
 		</div>
-
-		<p id="question"></p>
-
-		<div id="choices"></div>
-
-		<div id="feedback" class="hidden"></div>
-
-		<button id="nextBtn">Submit Answer</button>
-		<button id="restartBtn" class="secondary">Start Over</button>
-
-		<div id="result" class="hidden"></div>
-
-		<footer class="small-footer">
-			<a class="small-link" href="https://github.com/thedevdepot/readingdevelopment" target="_blank" rel="noopener">View on GitHub</a>
-			<div class="quote-footer">
-				<p><strong>James 1:5 (KJV)</strong><br>
-				"If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him."</p>
-			</div>
-		</footer>
 	</div>
 
 	<script src="script.js"></script>
