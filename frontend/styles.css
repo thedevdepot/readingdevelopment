@@ -13,6 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 12px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .wrapper {
@@ -78,7 +80,7 @@ h1 {
   border-radius: 14px;
   text-decoration: none;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
   text-transform: uppercase;
@@ -90,6 +92,27 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Improve wrapping and readability for body text and UI elements */
+body,
+.main-content,
+.side-menu a,
+.choice,
+p,
+h1,
+.desc,
+.quote-footer,
+.small-link,
+.progress-topline {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  -ms-word-break: break-all;
+  hyphens: auto;
+}
+
+.desc {
+  font-size: 1rem;
 }
 
 .side-menu a:hover {
