@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility & Assistive Technology Guide — LaunchPad Reading</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .accessibility-section {
+      margin: 20px 0;
+      padding: 16px;
+      background: rgba(255,255,255,0.04);
+      border-left: 4px solid rgba(107, 91, 149, 0.4);
+      border-radius: 8px;
+    }
+
+    .accessibility-section h2 {
+      margin-top: 0;
+      color: #b0d4ff;
+      font-size: 1.4rem;
+    }
+
+    .accessibility-section h3 {
+      color: #e0c9ff;
+      margin-top: 16px;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    .feature-list {
+      margin: 12px 0;
+      padding-left: 24px;
+    }
+
+    .feature-list li {
+      margin: 8px 0;
+      line-height: 1.6;
+      color: #f1f5ff;
+    }
+
+    .feature-list strong {
+      color: #b0d4ff;
+    }
+
+    .accessibility-link {
+      color: #a9c9ff;
+      text-decoration: underline;
+      transition: color 0.2s ease;
+    }
+
+    .accessibility-link:hover {
+      color: #e0c9ff;
+    }
+
+    .tip-box {
+      margin: 12px 0;
+      padding: 12px;
+      background: rgba(107, 91, 149, 0.15);
+      border-radius: 6px;
+      border-left: 3px solid #b0d4ff;
+    }
+
+    .tip-box strong {
+      color: #e0c9ff;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: rgba(107, 91, 149, 0.8);
+      color: #e0c9ff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="wrapper">
+    <div class="container">
+      <header class="top">
+        <h1>LaunchPad Reading Application</h1>
+        <nav class="top-nav">
+          <a href="index.html">Home</a>
+          <a href="learning-strategies.html">Learning Strategies</a>
+          <a href="reading-resources.html">Reading Resources</a>
+          <a href="sign-in.html">Sign In</a>
+        </nav>
+      </header>
+
+      <main class="main-content" id="main-content">
+        <h2>Accessibility & Assistive Technology Guide</h2>
+        
+        <p>Learning should be accessible to everyone. This guide helps you discover built-in accessibility features and resources for overcoming common learning challenges.</p>
+
+        <!-- Built-in Device & Browser Features -->
+        <section class="accessibility-section">
+          <h2>Device & Browser Accessibility Features</h2>
+          <p>Most devices and browsers come with powerful built-in accessibility tools. Learn how to enable them below.</p>
+
+          <!-- Windows -->
+          <article>
+            <h3>Windows</h3>
+            <ul class="feature-list">
+              <li><strong>Narrator (Screen Reader):</strong> Press <code>Win + Ctrl + Enter</code> to enable the built-in screen reader. It reads text aloud and describes UI elements.</li>
+              <li><strong>Magnifier:</strong> Press <code>Win + Plus (+)</code> to zoom in or zoom out with <code>Win + Minus (-)</code>. Helpful for low vision users.</li>
+              <li><strong>High Contrast Mode:</strong> Go to <code>Settings > Ease of Access > High Contrast</code> for better readability.</li>
+              <li><strong>Text Size:</strong> Adjust system-wide text size in <code>Settings > Ease of Access > Display</code>.</li>
+              <li><strong>Sticky Keys & Filter Keys:</strong> Reduce key-press hold times in <code>Settings > Ease of Access > Keyboard</code>.</li>
+              <li><strong>Speech Recognition:</strong> Enable voice control in <code>Settings > Ease of Access > Speech</code>.</li>
+            </ul>
+          </article>
+
+          <!-- iOS -->
+          <article>
+            <h3>iOS (iPhone & iPad)</h3>
+            <ul class="feature-list">
+              <li><strong>VoiceOver (Screen Reader):</strong> Go to <code>Settings > Accessibility > VoiceOver</code>. Speaks screen content aloud and provides gesture controls.</li>
+              <li><strong>Magnifier:</strong> Enable in <code>Settings > Accessibility > Magnifier</code>. Use your device as a digital magnifying glass.</li>
+              <li><strong>Display & Text Size:</strong> Adjust in <code>Settings > Accessibility > Display & Text Size</code> for dyslexia-friendly fonts.</li>
+              <li><strong>Subtitles & Captions:</strong> Enable in <code>Settings > Accessibility > Captions</code> for video content.</li>
+              <li><strong>Speak Screen:</strong> Swipe down from top with two fingers to have any text read aloud.</li>
+              <li><strong>Smart Invert:</strong> Reduces eye strain with dark mode in <code>Settings > Accessibility > Display & Text Size</code>.</li>
+            </ul>
+          </article>
+
+          <!-- Android -->
+          <article>
+            <h3>Android</h3>
+            <ul class="feature-list">
+              <li><strong>TalkBack (Screen Reader):</strong> Go to <code>Settings > Accessibility > TalkBack</code>. Provides voice feedback and gesture navigation.</li>
+              <li><strong>Magnification:</strong> Enable in <code>Settings > Accessibility > Magnification</code> for zooming in on text.</li>
+              <li><strong>Text & Display Size:</strong> Adjust in <code>Settings > Accessibility > Text and display</code>.</li>
+              <li><strong>High Contrast Mode:</strong> Enable in <code>Settings > Accessibility > High contrast text</code>.</li>
+              <li><strong>Captions:</strong> Turn on <code>Settings > Accessibility > Captions</code> for video support.</li>
+              <li><strong>Voice Control:</strong> Use voice commands in <code>Settings > Accessibility > Voice Control</code>.</li>
+            </ul>
+          </article>
+
+          <!-- Chrome Browser -->
+          <article>
+            <h3>Google Chrome Browser</h3>
+            <ul class="feature-list">
+              <li><strong>ChromeVox (Screen Reader):</strong> Install from the Chrome Web Store. Provides comprehensive screen reading with keyboard shortcuts.</li>
+              <li><strong>Color Enhancement Extension:</strong> Adjust colors and contrast with extensions like "High Contrast" from the Chrome Web Store.</li>
+              <li><strong>Zoom & Text Size:</strong> Use <code>Ctrl + Plus (+)</code> to zoom or <code>Ctrl + Minus (-)</code> to zoom out.</li>
+              <li><strong>Speech-to-Text:</strong> Use voice input in Chrome Flags: enable <code>#enable-experimental-web-platform-features</code>.</li>
+              <li><strong>Reader Mode:</strong> Right-click and select "Read aloud" on any page.</li>
+              <li><strong>Dark Mode:</strong> Enable in <code>Settings > Appearance > Dark</code> to reduce eye strain.</li>
+            </ul>
+          </article>
+
+          <!-- Safari -->
+          <article>
+            <h3>Safari Browser</h3>
+            <ul class="feature-list">
+              <li><strong>VoiceOver & Screen Reader:</strong> Enable via Mac System Preferences (<code>Cmd + F5</code>) or iOS Settings.</li>
+              <li><strong>Reader View:</strong> Click the Reader button in the address bar to simplify page layout and enable read aloud.</li>
+              <li><strong>Text Size & Zoom:</strong> Use <code>Cmd + Plus (+)</code> to increase or <code>Cmd + Minus (-)</code> to decrease text size.</li>
+              <li><strong>Dyslexia-Friendly Fonts:</strong> Some websites support dyslexia-optimized fonts; look for accessibility settings on pages.</li>
+              <li><strong>Dark Mode:</strong> Enable in System Preferences for reduced eye strain.</li>
+              <li><strong>Captions & Subtitles:</strong> Automatically enabled for video content.</li>
+            </ul>
+          </article>
+
+          <!-- Firefox -->
+          <article>
+            <h3>Firefox Browser</h3>
+            <ul class="feature-list">
+              <li><strong>Screen Readers:</strong> Firefox works with NVDA (free screen reader). Download from <a href="https://www.nvaccess.org/" class="accessibility-link">NVDA Access</a>.</li>
+              <li><strong>Text Size & Zoom:</strong> Use <code>Ctrl + Plus (+)</code> to zoom or adjust text size in <code>Preferences > Fonts & Colors</code>.</li>
+              <li><strong>Contrast Enhancement:</strong> Install accessibility add-ons from Firefox Add-ons marketplace.</li>
+              <li><strong>Reader Mode:</strong> Click the book icon in the address bar to enable reading mode with adjustable fonts and colors.</li>
+              <li><strong>Dark Mode:</strong> Enable in <code>Preferences > Home > Dark</code>.</li>
+              <li><strong>Speech-to-Text:</strong> Use built-in dictation or voice extensions.</li>
+            </ul>
+          </article>
+
+          <!-- Internet Explorer -->
+          <article>
+            <h3>Internet Explorer (Legacy Browser)</h3>
+            <ul class="feature-list">
+              <li><strong>Windows Narrator:</strong> IE uses Windows' built-in accessibility features (as described above).</li>
+              <li><strong>Text Size:</strong> Use <code>Ctrl + Plus (+)</code> or go to <code>View > Text Size</code>.</li>
+              <li><strong>High Contrast Mode:</strong> Enable in Windows settings (affects IE pages).</li>
+              <li><strong>Note:</strong> Internet Explorer is no longer supported by Microsoft. We recommend switching to <strong>Microsoft Edge</strong>, which has modern accessibility features similar to Chrome.</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Neurodivergent Learning Support -->
+        <section class="accessibility-section">
+          <h2>Support for Neurodivergent Learning Differences</h2>
+          <p>Many people have neurodivergent learning differences that affect reading. Here are strategies to support common conditions:</p>
+
+          <!-- ADHD -->
+          <article>
+            <h3>ADHD (Attention Deficit Hyperactivity Disorder)</h3>
+            <ul class="feature-list">
+              <li><strong>Reduce Distractions:</strong> Use browser extensions to block notifications and limit tab opening. Try Focus or StayFocusd for Chrome.</li>
+              <li><strong>Break Content into Chunks:</strong> Read shorter passages with frequent breaks. This quiz format is perfect for ADHD learners!</li>
+              <li><strong>Use Timers:</strong> Set short study sessions (15-25 minutes) using Pomodoro apps.</li>
+              <li><strong>Enable Dark Mode:</strong> Reduces visual stimulation and eye strain, helping concentration.</li>
+              <li><strong>Audio Support:</strong> Use screen readers or text-to-speech to engage multiple senses.</li>
+            </ul>
+          </article>
+
+          <!-- Dyslexia -->
+          <article>
+            <h3>Dyslexia</h3>
+            <ul class="feature-list">
+              <li><strong>Dyslexia-Friendly Fonts:</strong> Use fonts like OpenDyslexia, Dyslexie, or sans-serif fonts. Install extensions that replace site fonts.</li>
+              <li><strong>Color Overlays:</strong> Use blue or yellow overlays to reduce visual stress. Browser extensions can apply color filters.</li>
+              <li><strong>Increase Letter Spacing:</strong> Adjust line-height and letter-spacing for better readability.</li>
+              <li><strong>Text-to-Speech:</strong> Use Narrator, VoiceOver, or TalkBack to have text read aloud while reading.</li>
+              <li><strong>High Contrast:</strong> Enable high contrast mode to make text sharper.</li>
+              <li><strong>Avoid Flashy Animations:</strong> Reduce visual distractions with prefers-reduced-motion settings.</li>
+            </ul>
+          </article>
+
+          <!-- Dyscalculia -->
+          <article>
+            <h3>Dyscalculia (Math Learning Disability)</h3>
+            <ul class="feature-list">
+              <li><strong>Number-to-Word Tools:</strong> Use tools that convert numbers to words for clarity.</li>
+              <li><strong>Color-Coded Numbers:</strong> Some apps highlight different digit places in different colors.</li>
+              <li><strong>Talking Calculator:</strong> Use speech output calculators available on all devices.</li>
+              <li><strong>Consistent Formatting:</strong> Prefer consistent, clear formatting for numerical content.</li>
+              <li><strong>Extra Time:</strong> Allow more processing time for number-based tasks.</li>
+            </ul>
+          </article>
+
+          <!-- Dysgraphia -->
+          <article>
+            <h3>Dysgraphia (Writing Difficulty)</h3>
+            <ul class="feature-list">
+              <li><strong>Speech-to-Text:</strong> Use built-in dictation (Windows Cortana, iOS Dictation, Android Voice Typing) to bypass typing difficulties.</li>
+              <li><strong>Predictive Text:</strong> Enable autocomplete and predictive typing in OS settings.</li>
+              <li><strong>Voice-Controlled Navigation:</strong> Use voice commands instead of typing passwords or inputs.</li>
+              <li><strong>Reduce Writing Requirements:</strong> Use multiple-choice questions (like in this quiz) instead of essay responses.</li>
+              <li><strong>Enlarged Cursor:</strong> Increase cursor size and pointer size in accessibility settings for better mouse/touchpad control.</li>
+            </ul>
+          </article>
+
+          <!-- Autism Spectrum -->
+          <article>
+            <h3>Autism Spectrum (Sensory & Communication Differences)</h3>
+            <ul class="feature-list">
+              <li><strong>Reduce Sensory Overload:</strong> Enable dark mode, reduce animations, and use high contrast to minimize visual overstimulation.</li>
+              <li><strong>Predictable Layouts:</strong> Consistent, organized page layouts reduce cognitive load.</li>
+              <li><strong>Clear Navigation:</strong> Straightforward menus and skip links help with wayfinding.</li>
+              <li><strong>Fewer Distractions:</strong> Disable auto-playing videos and notifications.</li>
+              <li><strong>Extra Processing Time:</strong> Allow pauses between interactions without timeout pressures.</li>
+              <li><strong>Written & Visual Instructions:</strong> Combine text, icons, and simple language for clarity.</li>
+            </ul>
+          </article>
+
+          <!-- Processing Speed -->
+          <article>
+            <h3>Slow Processing Speed</h3>
+            <ul class="feature-list">
+              <li><strong>Extra Time:</strong> Remove time limits on quizzes and reading tasks.</li>
+              <li><strong>Simplified Layouts:</strong> Reduce visual clutter and complexity.</li>
+              <li><strong>Pause Controls:</strong> Allow pausing audio and video for review.</li>
+              <li><strong>Step-by-Step Instructions:</strong> Break down complex tasks into smaller steps.</li>
+              <li><strong>Keyboard Navigation:</strong> Use Tab and arrow keys for efficient navigation without mouse movement delays.</li>
+            </ul>
+          </article>
+
+          <!-- Anxiety & Depression -->
+          <article>
+            <h3>Anxiety & Depression (Mental Health Support)</h3>
+            <ul class="feature-list">
+              <li><strong>Encourage Breaks:</strong> Take frequent breaks without guilt. Short quiz sessions are ideal.</li>
+              <li><strong>Positive Feedback:</strong> Progress indicators and success messages boost motivation.</li>
+              <li><strong>Accessible Error Messages:</strong> Clear, non-judgmental error explanations reduce frustration.</li>
+              <li><strong>Reduce Pressure:</strong> No time limits, ability to retake content, and supportive tone.</li>
+              <li><strong>Mental Health Resources:</strong> Access resources like Crisis Text Line (text HOME to 741741 in the US).</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- General Tips -->
+        <section class="accessibility-section">
+          <h2>General Accessibility Tips for Better Learning</h2>
+          
+          <div class="tip-box">
+            <strong>📱 Multi-Device Approach:</strong>
+            Use the device and screen reader combination that works best for you. Many people find mobile devices more intuitive.
+          </div>
+
+          <div class="tip-box">
+            <strong>⌨️ Keyboard Navigation:</strong>
+            Most accessibility tools work better with keyboard shortcuts. Learn Tab, Shift+Tab, Enter, Spacebar, and arrow keys.
+          </div>
+
+          <div class="tip-box">
+            <strong>🎨 Customize Your Environment:</strong>
+            Experiment with themes, fonts, colors, and text sizes until you find what's most comfortable.
+          </div>
+
+          <div class="tip-box">
+            <strong>📖 Read Actively:</strong>
+            Use text-to-speech and screen readers as reading aids, not just accessibility features. Active engagement improves retention.
+          </div>
+
+          <div class="tip-box">
+            <strong>🔗 Combine Tools:</strong>
+            Many people benefit from combining multiple tools (e.g., dyslexia-friendly font + text-to-speech + high contrast).
+          </div>
+
+          <div class="tip-box">
+            <strong>💬 Advocate for Yourself:</strong>
+            Don't hesitate to request accommodations at school or work. You have the right to learn in the way that works best for you.
+          </div>
+        </section>
+
+        <!-- Resources -->
+        <section class="accessibility-section">
+          <h2>Additional Resources</h2>
+          <ul class="feature-list">
+            <li><a href="https://www.w3.org/WAI/" class="accessibility-link">Web Accessibility Initiative (WAI)</a> – Official W3C accessibility standards</li>
+            <li><a href="https://www.nvaccess.org/" class="accessibility-link">NVDA (Free Screen Reader)</a> – Open-source screen reader for Windows</li>
+            <li><a href="https://www.freedomscientific.com/products/software/jaws/" class="accessibility-link">JAWS Screen Reader</a> – Professional screen reading software</li>
+            <li><a href="https://www.understood.org/" class="accessibility-link">Understood.org</a> – Learning disability and neurodivergence resources</li>
+            <li><a href="https://www.dyslexiahelp.umich.edu/" class="accessibility-link">Dyslexia Help at University of Michigan</a> – Dyslexia education and resources</li>
+            <li><a href="https://www.adhdadults.com/" class="accessibility-link">ADHD Adults Resources</a> – ADHD strategies for adults</li>
+            <li><a href="https://www.autism-society.org/" class="accessibility-link">Autism Society of America</a> – Autism resources and support</li>
+            <li><a href="https://www.dyscalculiainfo.org/" class="accessibility-link">Dyscalculia Information</a> – Math learning disability resources</li>
+          </ul>
+        </section>
+
+      </main>
+
+      <footer class="small-footer">
+        <a class="small-link" href="index.html">Back to Home</a>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
