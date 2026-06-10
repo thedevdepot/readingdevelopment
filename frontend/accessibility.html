@@ -105,12 +105,13 @@
       </header>
 
       <main class="main-content" id="main-content">
-        <h2>Accessibility & Assistive Technology Guide</h2>
-        
-        <p>Learning should be accessible to everyone. This guide helps you discover built-in accessibility features and resources for overcoming common learning challenges.</p>
+        <div class="page-intro">
+          <h2>Accessibility & Assistive Technology Guide</h2>
+          <p>Learning should be accessible to everyone. This guide helps you discover built-in accessibility features and resources for overcoming common learning challenges.</p>
+        </div>
 
         <!-- Built-in Device & Browser Features -->
-        <section class="accessibility-section">
+        <section class="accessibility-section" id="device-browser-features">
           <h2>Device & Browser Accessibility Features</h2>
           <p>Most devices and browsers come with powerful built-in accessibility tools. Learn how to enable them below.</p>
 
@@ -205,7 +206,7 @@
         </section>
 
         <!-- Neurodivergent Learning Support -->
-        <section class="accessibility-section">
+        <section class="accessibility-section" id="neurodivergent-support">
           <h2>Support for Neurodivergent Learning Differences</h2>
           <p>Many people have neurodivergent learning differences that affect reading. Here are strategies to support common conditions:</p>
 
@@ -347,6 +348,11 @@
         </section>
 
       </main>
+
+      <aside class="side-menu" aria-label="Section navigation">
+        <a class="side-menu-button" href="#device-browser-features">Device & Browser Accessibility Features</a>
+        <a class="side-menu-button" href="#neurodivergent-support">Support for Neurodivergent Learning Differences</a>
+      </aside>
 
       <footer class="small-footer" role="contentinfo">
         <a class="small-link" href="index.html">Back to Home</a>
