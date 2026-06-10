@@ -116,7 +116,7 @@
           <p>Most devices and browsers come with powerful built-in accessibility tools. Learn how to enable them below.</p>
 
           <!-- Windows -->
-          <article>
+          <article id="windows">
             <h3>Windows</h3>
             <ul class="feature-list">
               <li><strong>Narrator (Screen Reader):</strong> Press <code>Win + Ctrl + Enter</code> to enable the built-in screen reader. It reads text aloud and describes UI elements.</li>
@@ -129,7 +129,7 @@
           </article>
 
           <!-- iOS -->
-          <article>
+          <article id="ios">
             <h3>iOS (iPhone & iPad)</h3>
             <ul class="feature-list">
               <li><strong>VoiceOver (Screen Reader):</strong> Go to <code>Settings > Accessibility > VoiceOver</code>. Speaks screen content aloud and provides gesture controls.</li>
@@ -142,7 +142,7 @@
           </article>
 
           <!-- Android -->
-          <article>
+          <article id="android">
             <h3>Android</h3>
             <ul class="feature-list">
               <li><strong>TalkBack (Screen Reader):</strong> Go to <code>Settings > Accessibility > TalkBack</code>. Provides voice feedback and gesture navigation.</li>
@@ -155,7 +155,7 @@
           </article>
 
           <!-- Chrome Browser -->
-          <article>
+          <article id="chrome">
             <h3>Google Chrome Browser</h3>
             <ul class="feature-list">
               <li><strong>ChromeVox (Screen Reader):</strong> Install from the Chrome Web Store. Provides comprehensive screen reading with keyboard shortcuts.</li>
@@ -168,7 +168,7 @@
           </article>
 
           <!-- Safari -->
-          <article>
+          <article id="safari">
             <h3>Safari Browser</h3>
             <ul class="feature-list">
               <li><strong>VoiceOver & Screen Reader:</strong> Enable via Mac System Preferences (<code>Cmd + F5</code>) or iOS Settings.</li>
@@ -181,7 +181,7 @@
           </article>
 
           <!-- Firefox -->
-          <article>
+          <article id="firefox">
             <h3>Firefox Browser</h3>
             <ul class="feature-list">
               <li><strong>Screen Readers:</strong> Firefox works with NVDA (free screen reader). Download from <a href="https://www.nvaccess.org/" class="accessibility-link">NVDA Access</a>.</li>
@@ -194,7 +194,7 @@
           </article>
 
           <!-- Internet Explorer -->
-          <article>
+          <article id="internet-explorer">
             <h3>Internet Explorer (Legacy Browser)</h3>
             <ul class="feature-list">
               <li><strong>Windows Narrator:</strong> IE uses Windows' built-in accessibility features (as described above).</li>
@@ -211,7 +211,7 @@
           <p>Many people have neurodivergent learning differences that affect reading. Here are strategies to support common conditions:</p>
 
           <!-- ADHD -->
-          <article>
+          <article id="adhd">
             <h3>ADHD (Attention Deficit Hyperactivity Disorder)</h3>
             <ul class="feature-list">
               <li><strong>Reduce Distractions:</strong> Use browser extensions to block notifications and limit tab opening. Try Focus or StayFocusd for Chrome.</li>
@@ -223,7 +223,7 @@
           </article>
 
           <!-- Dyslexia -->
-          <article>
+          <article id="dyslexia">
             <h3>Dyslexia</h3>
             <ul class="feature-list">
               <li><strong>Dyslexia-Friendly Fonts:</strong> Use fonts like OpenDyslexia, Dyslexie, or sans-serif fonts. Install extensions that replace site fonts.</li>
@@ -236,7 +236,7 @@
           </article>
 
           <!-- Dyscalculia -->
-          <article>
+          <article id="dyscalculia">
             <h3>Dyscalculia (Math Learning Disability)</h3>
             <ul class="feature-list">
               <li><strong>Number-to-Word Tools:</strong> Use tools that convert numbers to words for clarity.</li>
@@ -248,7 +248,7 @@
           </article>
 
           <!-- Dysgraphia -->
-          <article>
+          <article id="dysgraphia">
             <h3>Dysgraphia (Writing Difficulty)</h3>
             <ul class="feature-list">
               <li><strong>Speech-to-Text:</strong> Use built-in dictation (Windows Cortana, iOS Dictation, Android Voice Typing) to bypass typing difficulties.</li>
@@ -260,7 +260,7 @@
           </article>
 
           <!-- Autism Spectrum -->
-          <article>
+          <article id="autism">
             <h3>Autism Spectrum (Sensory & Communication Differences)</h3>
             <ul class="feature-list">
               <li><strong>Reduce Sensory Overload:</strong> Enable dark mode, reduce animations, and use high contrast to minimize visual overstimulation.</li>
@@ -273,7 +273,7 @@
           </article>
 
           <!-- Processing Speed -->
-          <article>
+          <article id="processing-speed">
             <h3>Slow Processing Speed</h3>
             <ul class="feature-list">
               <li><strong>Extra Time:</strong> Remove time limits on quizzes and reading tasks.</li>
@@ -285,7 +285,7 @@
           </article>
 
           <!-- Anxiety & Depression -->
-          <article>
+          <article id="anxiety-depression">
             <h3>Anxiety & Depression (Mental Health Support)</h3>
             <ul class="feature-list">
               <li><strong>Encourage Breaks:</strong> Take frequent breaks without guilt. Short quiz sessions are ideal.</li>
@@ -298,7 +298,7 @@
         </section>
 
         <!-- General Tips -->
-        <section class="accessibility-section">
+        <section class="accessibility-section" id="general-tips">
           <h2>General Accessibility Tips for Better Learning</h2>
           
           <div class="tip-box">
@@ -333,7 +333,7 @@
         </section>
 
         <!-- Resources -->
-        <section class="accessibility-section">
+        <section class="accessibility-section" id="resources">
           <h2>Additional Resources</h2>
           <ul class="feature-list">
             <li><a href="https://www.w3.org/WAI/" class="accessibility-link">Web Accessibility Initiative (WAI)</a> – Official W3C accessibility standards</li>
@@ -350,8 +350,24 @@
       </main>
 
       <aside class="side-menu" aria-label="Section navigation">
-        <a class="side-menu-button" href="#device-browser-features">Device & Browser Accessibility Features</a>
-        <a class="side-menu-button" href="#neurodivergent-support">Support for Neurodivergent Learning Differences</a>
+        <a class="side-menu-button" href="#device-browser-features">Device & Browser Features</a>
+        <a class="side-menu-button" href="#windows">Windows</a>
+        <a class="side-menu-button" href="#ios">iOS</a>
+        <a class="side-menu-button" href="#android">Android</a>
+        <a class="side-menu-button" href="#chrome">Chrome</a>
+        <a class="side-menu-button" href="#safari">Safari</a>
+        <a class="side-menu-button" href="#firefox">Firefox</a>
+        <a class="side-menu-button" href="#internet-explorer">Internet Explorer</a>
+        <a class="side-menu-button" href="#neurodivergent-support">Neurodivergent Support</a>
+        <a class="side-menu-button" href="#adhd">ADHD</a>
+        <a class="side-menu-button" href="#dyslexia">Dyslexia</a>
+        <a class="side-menu-button" href="#dyscalculia">Dyscalculia</a>
+        <a class="side-menu-button" href="#dysgraphia">Dysgraphia</a>
+        <a class="side-menu-button" href="#autism">Autism Spectrum</a>
+        <a class="side-menu-button" href="#processing-speed">Processing Speed</a>
+        <a class="side-menu-button" href="#anxiety-depression">Anxiety & Depression</a>
+        <a class="side-menu-button" href="#general-tips">General Tips</a>
+        <a class="side-menu-button" href="#resources">Resources</a>
       </aside>
 
       <footer class="small-footer" role="contentinfo">
