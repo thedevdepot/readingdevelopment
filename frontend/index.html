@@ -3,17 +3,20 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>LaunchPad Reading Application - Formativley find reading level</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="LaunchPad Reading Application - Estimate your reading level with an accessible, interactive quiz. Supports screen readers and accessible technologies.">
+	<title>LaunchPad Reading Application - Find Your Reading Level</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+	<a href="#main-content" class="skip-link">Skip to main content</a>
 
 	<div class="wrapper">
 		<div class="container">
 			<header class="top">
 			<h1>LaunchPad Reading Application</h1>
-			<nav class="top-nav">
+			<nav class="top-nav" aria-label="Main navigation">
 				<a href="learning-strategies.html">Learning Strategies</a>
 				<a href="reading-resources.html">Reading Resources</a>
 				<a href="accessibility.html">Accessibility</a>
@@ -21,49 +24,56 @@
 			</nav>
 		</header>
 
-			<div class="main-content">
+		<main class="main-content" id="main-content">
 				<p class="desc">This short quiz estimates a student’s reading level from Grade 1 up to Grade 6. If your reading level is above 6th grade, you’re already well on your way in your reading journey!</p>
 
-				<div class="progress-wrapper">
-					<div class="progress-topline">
-						<span id="progressLabel">Question 1 of 10</span>
-						<span id="progressType">multiple choice</span>
-					</div>
-					<div class="progress-bar-bg">
-						<div id="progressBar" class="progress-bar-fill"></div>
-					</div>
+<div class="progress-wrapper" role="region" aria-label="Quiz progress">
+				<div class="progress-topline">
+					<span id="progressLabel" aria-live="polite" aria-atomic="true">Question 1 of 10</span>
+					<span id="progressType" aria-live="polite">multiple choice</span>
 				</div>
-
-				<p id="question"></p>
-
-				<div id="choices"></div>
-
-				<div id="feedback" class="hidden"></div>
-
-				<button id="nextBtn">Submit Answer</button>
-				<button id="restartBtn" class="secondary">Start Over</button>
-
-				<div id="result" class="hidden"></div>
+				<div class="progress-bar-bg">
+					<div id="progressBar" class="progress-bar-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Quiz completion progress"></div>
+				</div>
 			</div>
 
-			<nav class="side-menu">
-				<a href="https://www.biblegateway.com/" target="_blank" rel="noopener">Gateway</a>
-				<a href="https://www.gutenberg.org" target="_blank" rel="noopener">Gutenberg</a>
-				<a href="https://archive.org/" target="_blank" rel="noopener">Archive</a>
-				<a href="https://www.poetryfoundation.org" target="_blank" rel="noopener">Poetry</a>
-				<a href="https://www.overdrive.com/apps/libby/" target="_blank" rel="noopener">Libby</a>
-				<a href="https://www.bible.com/" target="_blank" rel="noopener">Bible App</a>
-			</nav>
+			<div role="region" aria-label="Current question" aria-live="polite" aria-atomic="true">
+				<p id="question" tabindex="-1"></p>
 
-			<footer class="small-footer">
-				<a class="small-link" href="https://github.com/thedevdepot/readingdevelopment" target="_blank" rel="noopener">View on GitHub</a>
-				<div class="quote-footer">
-					<p><strong>James 1:5 (KJV)</strong><br>
-					"If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him."</p>
-				</div>
-			</footer>
-		</div>
-	</div>
+				<fieldset id="choices" class="choices-container">
+					<legend class="sr-only">Choose the correct answer</legend>
+				</fieldset>
+			</div>
+
+			<div id="feedback" class="hidden" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+			<button id="nextBtn" aria-label="Submit answer or continue to next question">Submit Answer</button>
+			<button id="restartBtn" class="secondary" aria-label="Start the quiz over from the beginning">Start Over</button>
+
+			<div id="result" class="hidden" role="region" aria-label="Quiz results" aria-live="polite" aria-atomic="true"></div>
+
+		</main>
+
+		<aside class="side-menu" aria-label="Additional reading resources">
+			<nav>
+				<ul class="resource-list">
+					<li><a href="https://www.biblegateway.com/" target="_blank" rel="noopener noreferrer" title="Opens in new window">Gateway</a></li>
+					<li><a href="https://www.gutenberg.org" target="_blank" rel="noopener noreferrer" title="Opens in new window">Gutenberg</a></li>
+					<li><a href="https://archive.org/" target="_blank" rel="noopener noreferrer" title="Opens in new window">Archive</a></li>
+					<li><a href="https://www.poetryfoundation.org" target="_blank" rel="noopener noreferrer" title="Opens in new window">Poetry</a></li>
+					<li><a href="https://www.overdrive.com/apps/libby/" target="_blank" rel="noopener noreferrer" title="Opens in new window">Libby</a></li>
+					<li><a href="https://www.bible.com/" target="_blank" rel="noopener noreferrer" title="Opens in new window">Bible App</a></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<footer class="small-footer" role="contentinfo">
+			<a class="small-link" href="https://github.com/thedevdepot/readingdevelopment" target="_blank" rel="noopener noreferrer" title="Opens in new window">View on GitHub</a>
+			<div class="quote-footer">
+				<p><strong>James 1:5 (KJV)</strong><br>
+				"If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him."</p>
+			</div>
+		</footer>
 
 	<script src="script.js"></script>
 </body>

@@ -174,27 +174,49 @@ function loadQuestion() {
   progressLabelEl.textContent = `Question ${questionsAsked} of ${questionCount}`;
   progressTypeEl.textContent = currentQuestionType.replace(/-/g, ' ');
   progressBarEl.style.width = `${Math.round((questionsAsked / questionCount) * 100)}%`;
+  progressBarEl.setAttribute("aria-valuenow", Math.round((questionsAsked / questionCount) * 100));
   questionEl.textContent = q.text;
-  choicesEl.innerHTML = "";
+  choicesEl.innerHTML = '<legend class="sr-only">Choose the correct answer</legend>';
   choicesEl.classList.remove("hidden");
   questionEl.classList.remove("hidden");
   resultEl.classList.add("hidden");
   nextBtn.classList.remove("hidden");
 
   q.choices.forEach((choice, index) => {
-    const div = document.createElement("div");
-    div.textContent = choice;
-    div.classList.add("choice");
-
-    div.onclick = () => {
-      if (answered) return;
-      document.querySelectorAll(".choice").forEach(c => c.classList.remove("selected"));
-      div.classList.add("selected");
+    const radioId = `choice-${index}`;
+    
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.id = radioId;
+    input.name = "answer";
+    input.value = index;
+    input.setAttribute("aria-label", choice);
+    input.onchange = () => {
+      if (answered) {
+        input.checked = false;
+        return;
+      }
       selected = index;
     };
 
+    const label = document.createElement("label");
+    label.htmlFor = radioId;
+    label.className = "choice-label";
+    label.textContent = choice;
+
+    const div = document.createElement("div");
+    div.className = "choice-wrapper";
+    div.appendChild(input);
+    div.appendChild(label);
+
     choicesEl.appendChild(div);
   });
+
+  // Focus on the first choice for keyboard users
+  const firstInput = choicesEl.querySelector('input[type="radio"]');
+  if (firstInput) {
+    firstInput.focus();
+  }
 }
 
 function showFeedback(isCorrect) {
@@ -263,7 +285,15 @@ function showResult() {
 }
 
 nextBtn.onclick = () => {
-  if (selected === null) return alert("Please select an answer before continuing.");
+  const selectedInput = document.querySelector('input[name="answer"]:checked');
+  if (!selectedInput) {
+    feedbackEl.classList.remove("hidden");
+    feedbackEl.textContent = "Please select an answer before continuing.";
+    feedbackEl.setAttribute("role", "alert");
+    return;
+  }
+
+  selected = parseInt(selectedInput.value);
 
   if (!answered) {
     answered = true;
@@ -282,7 +312,9 @@ nextBtn.onclick = () => {
     }
     showFeedback(isCorrect);
     nextBtn.textContent = questionsAsked < questionCount ? "Continue" : "See Score";
-    document.querySelectorAll(".choice").forEach(c => c.classList.add("disabled"));
+    document.querySelectorAll("input[name='answer']").forEach(input => {
+      input.disabled = true;
+    });
     return;
   }
 
