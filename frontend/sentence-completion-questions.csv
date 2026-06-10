@@ -1,7 +1,151 @@
 text,choice1,choice2,choice3,answer,level
-"The dog likes to ___ in the yard.","run","read","sleep",1,1
-"The frog can ___ very high.","jump","type","paint",1,2
-"The train moves along the ___ to the city.","tracks","garden","kitchen",1,3
-"Flowers begin to ___ in the spring.","bloom","sleep","listen",1,4
-"The author decided to ___ the novel tonight.","edit","jump","run",1,5
-"Her explanation made the idea ___ clear.","sound","color","move",1,6
+"The cat likes to drink fresh ___ from the bowl.","rocks","milk","trees",2,1
+"A big yellow ___ stopped to let the children cross the street.","bus","fish","book",1,1
+"Birds use their soft wings to ___ high in the sky.","swim","read","fly",3,1
+"I wear a warm ___ when it is cold outside.","hat","shoe","coat",3,1
+"The shiny ___ shines bright in the night sky.","grass","moon","apple",2,1
+"The funny monkey loves to eat a yellow ___ for a snack.","banana","carrot","stone",1,1
+"We use our sharp teeth to ___ our crunchy food.","hear","chew","blink",2,1
+"My mom will ___ a delicious cake for my birthday party.","wash","draw","bake",3,1
+"The big red ___ grows sweet fruit in the garden.","tree","cloud","river",1,1
+"The little baby went to ___ in her warm crib.","dance","sleep","climb",2,1
+"Please turn on the ___ so we can see in the dark room.","water","rug","light",3,1
+"The heavy rain fell down from the dark ___ this afternoon.","cloud","floor","fire",1,1
+"The quick rabbit can ___ fast across the green grass.","sing","write","hop",3,1
+"I use a blue ___ to color a picture of the ocean.","crayon","spoon","clock",1,1
+"The brave firefighter drives a big red ___ to help people.","bike","truck","boat",2,1
+"A beautiful ___ spread its colorful wings and flew near the flowers.","butterfly","frog","puppy",1,1
+"The cold ___ felt great on my face during the hot summer day.","dirt","stove","wind",3,1
+"He used a metal shovel to dig a deep ___ in the sandbox.","wall","hole","star",2,1
+"My teacher likes to ___ an exciting story to the class every morning.","read","paint","swim",1,1
+"The giant ___ swam deep underwater and spouted water into the air.","horse","bird","whale",3,1
+"I always wash my ___ with soap before I eat dinner.","hands","shoes","books",1,1
+"The loud clock will ___ at seven o'clock to wake me up.","sleep","ring","melt",2,1
+"We built a tall ___ out of plastic blocks on the living room floor.","tower","cloud","soup",1,1
+"The sweet little honeybee landed on a colorful ___ to collect pollen.","rock","window","flower",3,1
+"Put the trash inside the grey ___ so the room stays clean.","bin","bed","hat",1,1
+"The creative artist used a thin brush to ___ a beautiful landscape.","cook","paint","drive",2,2
+"The ancient castle was built entirely out of heavy gray ___.","stone","paper","glass",1,2
+"The golden autumn leaves began to ___ gently from the tall branches.","fall","grow","shout",1,2
+"A loyal guard dog will always ___ its family from any danger.","forget","ignore","protect",3,2
+"She was so ___ after running the long race that she drank three cups of water.","sleepy","thirsty","cold",2,2
+"The massive ocean liner will ___ across the Atlantic tomorrow morning.","sail","fly","crawl",1,2
+"The farmer works hard every morning to ___ the hungry farm animals.","chase","paint","feed",3,2
+"The bright stars in the night sky began to ___ like tiny diamonds.","twinkle","melt","freeze",1,2
+"The complex puzzle was missing its very last ___.","color","piece","sound",2,2
+"The clever spider spun a sticky ___ between two green bushes.","web","nest","house",1,2
+"The experienced pilot safely landed the large ___ on the long runway.","train","truck","plane",3,2
+"The soft wool blanket kept the toddler warm and ___ all night long.","cozy","wet","afraid",1,2
+"He carefully poured the orange juice into a tall glass ___.","wallet","pitcher","ladder",2,2
+"The wild horses love to ___ freely across the open green fields.","gallop","swim","climb",1,2
+"The heavy metal anchor sank quickly to the ___ of the deep blue ocean.","bottom","surface","roof",1,2
+"The curious young explorer discovered a hidden ___ leading into the dark mountain.","cave","cloud","river",1,2
+"The music teacher showed the students how to play a beautiful ___ on the piano.","game","song","picture",2,2
+"The delicious aroma of fresh bread filled the entire ___.","bakery","library","station",1,2
+"The giant oak tree has a very thick wood ___ that protects it.","trunk","leaf","flower",1,2
+"We need to ___ our tickets at the front gate before entering the zoo.","hide","lose","show",3,2
+"The small sailboat capsized because the ocean waves were too ___.","rough","calm","smooth",1,2
+"The wise old owl sat quietly on a thick tree ___.","root","branch","leaf",2,2
+"The local library is a wonderful place to borrow interesting ___.","books","toys","clothes",1,2
+"The winter weather was so cold that the small pond started to ___.","freeze","boil","grow",1,2
+"She used a sharp pair of metal scissors to ___ the colorful paper ribbons.","glue","fold","cut",3,2
+"The bright sun was so ___ that Marcus had to shield his eyes with his hand.","freezing","blinding","distant",2,3
+"The historical museum contains many ___ artifacts that are hundreds of years old.","broken","modern","ancient",3,3
+"We had to remain completely ___ while walking through the nature reserve so we didn't scare the birds.","silent","noisy","careless",1,3
+"The recipe was so simple that even a beginner cook could ___ it perfectly.","forget","destroy","follow",3,3
+"Lila dropped the porcelain vase, causing it to ___ into dozens of tiny pieces.","bend","shatter","bounce",2,3
+"The brave explorer felt ___ that he could find the hidden path through the dense jungle.","terrified","confused","confident",3,3
+"The heavy fog made it incredibly difficult for the driver to ___ the road ahead.","see","hear","ignore",1,3
+"After the long drought, the sudden rain shower was a welcome ___ for the dry soil.","problem","relief","danger",2,3
+"The science class used a powerful microscope to ___ the structure of a leaf.","examine","ignore","drop",1,3
+"He decided to ___ his sister with a beautiful handmade card on her graduation day.","frighten","blame","surprise",3,3
+"The team celebrated their exciting ___ after winning the championship game in the final seconds.","defeat","victory","practice",2,3
+"The massive stone bridge was built to ___ the wide river safely.","span","under","hide",1,3
+"The clever detective managed to solve the mysterious ___ before the weekend.","game","lesson","case",3,3
+"The thick wool coat provided excellent ___ against the freezing winter wind.","danger","warmth","protection",3,3
+"She worked with great ___ to finish her art project before the deadline.","haste","boredom","laziness",1,3
+"The old wooden stairs would always ___ whenever someone walked up them.","sing","creak","melt",2,3
+"The energetic puppy showed its ___ by wagging its tail and jumping up and down.","anger","sadness","excitement",3,3
+"The local newspaper published an interesting ___ about the new community garden.","song","article","secret",2,3
+"The giant roller coaster looked so ___ that Kevin decided not to ride it.","frightening","boring","short",1,3
+"The bright laboratory was filled with modern scientific ___ for experiments.","equipment","furniture","toys",1,3
+"The sweet nectar of the blossoms will ___ beautiful butterflies to the garden.","scare","chase","attract",3,3
+"The chef used a sharp knife to carefully ___ the fresh vegetables into neat cubes.","dice","smash","melt",1,3
+"The map provided clear ___ on how to reach the campsite safely.","guesses","directions","obstacles",2,3
+"The smooth ice on the frozen lake made it perfect for ice ___.","skating","swimming","hiking",1,3
+"The proud author smiled when she saw her new book on the library ___.","floor","window","shelf",3,3
+"The complex math equations were so ___ that the students asked for extra help.","confusing","simple","short",1,4
+"The defense attorney argued that the evidence was completely ___ to the case.","essential","irrelevant","clear",2,4
+"With a ___ supply of fresh water left, the hikers knew they had to find a well soon.","massive","refreshing","dwindling",3,4
+"The severe thunderstorm forced the school to ___ the outdoor graduation ceremony.","postpone","celebrate","accelerate",1,4
+"The mysterious traveler spoke in a low ___ so that no one else could overhear.","shout","echo","whisper",3,4
+"The historical monument was carefully restored to ___ the town's rich heritage.","preserve","demolish","forget",1,4
+"The brilliant scientist received ___ praise from judges across the country.","negative","unanimous","scattered",2,4
+"The sudden power outage created complete ___ inside the busy subway station.","harmony","silence","chaos",3,4
+"The detective noticed a subtle ___ between the suspect's two separate statements.","agreement","contradiction","pattern",2,4
+"Because the sea turtles are highly endangered, volunteers work to ___ their nests.","protect","exploit","alter",1,4
+"The talented director used dark lighting to ___ the tragic events later in the play.","prevent","ignore","foreshadow",3,4
+"The long, detailed instructions were too ___ for the children to understand without guidance.","complicated","easy","brief",1,4
+"The majestic bald eagle extended its massive wings and soared ___ above the canyon.","clumsily","effortlessly","slowly",2,4
+"The sudden appearance of the stage magician caused the entire audience to gasp in ___.","boredom","anger","astonishment",3,4
+"The old map was so fragile that the historian had to handle it with extreme ___.","caution","carelessness","indifference",1,4
+"The dense green canopy of the rainforest blocks most of the sunlight from reaching the ___.","floor","sky","clouds",1,4
+"The ancient ruins stand as a lasting ___ to the architectural skills of the past civilization.","testament","mistake","secret",1,4
+"The innovative young engineer designed a new device to ___ solar energy more efficiently.","waste","capture","ignore",2,4
+"The athlete showed incredible ___ by continuing to run despite the heavy rain.","laziness","fear","determination",3,4
+"The smooth surface of the mountain lake provided a perfect ___ of the snow-capped peaks.","reflection","shadow","depth",1,4
+"The author's vivid descriptions allow readers to easily ___ the fictional world.","forget","visualize","ignore",2,4
+"The unexpected snowstorm caused a massive traffic ___ on the main highway.","delay","clearance","speed",1,4
+"The rare blue diamond possesses a brilliant luster that makes it incredibly ___.","cheap","common","valuable",3,4
+"The community center offers a wide ___ of activities for teenagers during the summer.","variety","shortage","boredom",1,4
+"The diligent student took thorough ___ during the history lecture to prepare for the exam.","breaks","notes","guesses",2,4
+"The scientist observed the complex chemical reaction with great ___ to see if it would change color.","boredom","curiosity","neglect",2,5
+"Although the trek up the steep mountain side was ___ the panoramic view from the summit made it worthwhile.","effortless","boring","exhausting",3,5
+"The legal contract was so ___ that the family needed a specialized attorney to help translate the terms.","complex","simple","brief",1,5
+"He chose to ___ the surprise gift behind his back so his brother wouldn't spot it early.","display","conceal","destroy",2,5
+"The environmental agency works tirelessly to ___ the natural habitats of endangered local wildlife.","preserve","demolish","neglect",1,5
+"Her persistent determination to practice every single day eventually led to an outstanding ___ at the recital.","performance","failure","postponement",1,5
+"The old engine began to emit a rhythmic ___ that signaled it was finally running smoothly.","silence","thump","leak",2,5
+"The vast desert landscape appeared completely ___ with no signs of water or plant life for miles.","barren","lush","crowded",1,5
+"The community center was established to foster a sense of ___ among the diverse neighborhoods.","isolation","unity","rivalry",2,5
+"The sudden arrival of the unexpected guest caused a brief ___ in the family's dinner routine.","disruption","agreement","continuation",1,5
+"She wore a highly ___ costume to the festival, featuring intricate embroidery and bright feathers.","plain","elaborate","heavy",2,5
+"The local council voted to ___ the old playground equipment to ensure the children's safety.","upgrade","ignore","destroy",1,5
+"The dense fog managed to completely ___ the lighthouse beam from reaching the ships at sea.","assist","obscure","brighten",2,5
+"The historical textbook provides an accurate ___ of the events leading up to the historic treaty.","account","denial","fable",1,5
+"He managed to maintain a perfectly ___ expression despite hearing the incredibly funny joke.","joyful","solemn","angry",2,5
+"The natural pipeline transfers fresh water from the mountain spring directly to the city ___.","reservoir","desert","ocean",1,5
+"The young prodigy demonstrated an extraordinary ___ for playing classical music at an early age.","dislike","aptitude","indifference",2,5
+"The team captain made a ___ decision to change strategy halfway through the tournament.","careless","pivotal","accidental",2,5
+"The ancient text was preserved in an underground vault to protect it from environmental ___.","decay","growth","improvement",1,5
+"The sudden increase in temperature caused the thick winter snowpacks to ___ rapidly.","diminish","expand","freeze",1,5
+"The new public park features an abundance of ___ greenery and vibrant flower beds.","barren","lush","artificial",2,5
+"The long-standing boundary dispute between the two farmers was finally resolved by a neutral ___.","mediator","soldier","competitor",1,5
+"The software developer created a unique program designed to ___ daily tasks for busy office workers.","complicate","streamline","ignore",2,5
+"The structural integrity of the suspension bridge was thoroughly ___ by a team of structural engineers.","verified","guessed","ignored",1,5
+"The modern solar panels are designed to efficiently ___ sunlight into clean electrical energy.","waste","convert","block",2,5
+"The governor's speech was remarkably ___ convincing even the most skeptical citizens to vote for the initiative.","eloquent","monotone","confusing",1,6
+"To compensate for the sudden economic slowdown, the corporate board decided to ___ its non-essential spending.","expand","curtail","ignore",2,6
+"The archeologist immediately recognized that the faded inscriptions on the tablet were completely ___ due to wind erosion.","illegible","vivid","valuable",1,6
+"Choosing to resign from a steady position to travel the world was an entirely ___ decision that caught his peers off guard.","spontaneous","calculated","tedious",1,6
+"The nation chose to remain strictly ___ during the international dispute, refusing to pledge military support to either side.","aggressive","neutral","victorious",2,6
+"The massive structural pillars provide essential support to minimize the building's ___ to seismic activity.","vulnerability","resistance","indifference",1,6
+"Her sudden, dramatic change in behavior caused a major rift that began to ___ her closest friendships.","strengthen","alienate","protect",2,6
+"The legal document was filled with obscure jargon that served only to ___ the true meaning of the contract.","clarify","obfuscate","expose",2,6
+"The high altitude and freezing temperatures created a highly ___ environment for the inexperienced mountain climbers.","hospitable","hazardous","pleasant",2,6
+"The historic peace treaty was intended to serve as a ___ framework for future international trade agreements.","temporary","enduring","flawed",2,6
+"A deep, rhythmic rumble from the volcano began to ___ the local villagers of an impending eruption.","reassure","warn","confuse",2,6
+"The innovative filtration system was explicitly designed to ___ harmful microscopic contaminants from the drinking supply.","introduce","eliminate","ignore",2,6
+"The administrative assistant worked diligently to ___ centuries of unorganized municipal records into a digital database.","scatter","compile","delete",2,6
+"Despite facing relentless criticism from the media, the young mayor maintained an exceptionally ___ demeanor.","anxious","composed","hostile",2,6
+"The remote laboratory relies on an array of solar panels to generate an ___ supply of electrical power.","autonomous","insufficient","expensive",1,6
+"The rare genetic mutation caused the plant's leaves to exhibit a highly ___ pattern not seen in wild varieties.","atypical","common","predictable",1,6
+"The sudden collapse of the regional bank triggered widespread economic ___ throughout the entire country.","prosperity","turmoil","stability",2,6
+"The strict enforcement of safety protocols helped to substantially ___ the number of industrial workplace accidents.","mitigate","increase","overlook",1,6
+"The long-lost journal entries provided historians with an invaluable, ___ perspective on daily life during the war.","authentic","fictional","biased",1,6
+"The supreme court justice ruled that the controversial local ordinance was completely ___ with the national constitution.","incompatible","aligned","identical",1,6
+"The detailed blueprint serves as an indispensable ___ for the entire construction crew to follow.","hindrance","guide","mystery",2,6
+"The severe drought caused the once-mighty river to rapidly ___ into a shallow stream.","diminish","overflow","surge",1,6
+"The persistent investigator refused to let the lack of physical evidence ___ her from pursuing the truth.","encourage","deter","assist",2,6
+"The museum's new security grid features a highly ___ network of motion sensors and infrared cameras.","sophisticated","primitive","flawed",1,6
+"The team of marine biologists was able to successfully ___ the unusual behavior of the pod of whales.","document","ignore","falsify",1,6
