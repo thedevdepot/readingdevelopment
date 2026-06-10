@@ -1,7 +1,151 @@
 text,choice1,choice2,choice3,answer,level
-"The bright sun was ___ overhead. What does bright mean?","Dark","Shining","Quiet",2,1
-"The children were ___ about the birthday party. What does excited mean?","Sad","Very happy","Tired",2,2
-"The hermit lived far from other people in the mountains. What does hermit mean?","A person who lives alone","A mountain guide","A type of bird",1,3
-"The professor had vast knowledge of history. What does vast mean?","Small","Very large","Interesting",2,4
-"His ambition was to become a doctor. What does ambition mean?","A strong desire to succeed","Fear of failure","Dislike of school",1,5
-"The teacher's explanation was lucid and easy to understand. What does lucid mean?","Confusing","Clear and easy to understand","Complicated",2,6
+"The puppy was very ___ and wanted to play. What does playful mean?","Likes to have fun","Sleepy","Angry",1,1
+"The baby bird was ___ in its nest. What does tiny mean?","Very loud","Very small","Very fast",2,1
+"The ice cream was ___ on a hot day. What does cold mean?","Warm","Sticky","Frozen and cool",3,1
+"The girl gave a ___ smile to her friend. What does friendly mean?","Kind and nice","Mean","Quiet",1,1
+"The rabbit was ___ as it hopped across the field. What does quick mean?","Heavy","Fast","Slow",2,1
+"The boy felt ___ after running all day. What does tired mean?","Hungry","Full of energy","Sleepy and worn out",3,1
+"The flower looked ___ in the garden. What does pretty mean?","Beautiful","Broken","Dirty",1,1
+"The dog was ___ during the thunderstorm. What does scared mean?","Happy","Frightened","Excited",2,1
+"The classroom was very ___ during the test. What does quiet mean?","Busy","Noisy","Calm and silent",3,1
+"The elephant is a ___ animal. What does large mean?","Big","Tiny","Small",1,1
+"The kitten was ___ when it heard a strange sound. What does curious mean?","Sleeping","Wanting to know more","Hungry",2,1
+"The water in the pool was very ___. What does deep mean?","Dirty","Shallow","Far down",3,1
+"The child was ___ to share his toys. What does kind mean?","Helpful and caring","Selfish","Loud",1,1
+"The old tree was ___ than the others. What does tall mean?","Wide","High","Short",2,1
+"The cookie tasted ___. What does delicious mean?","Burned","Sour","Yummy",3,1
+"The puppy was ___ after its bath. What does clean mean?","Fresh and neat","Dirty","Messy",1,1
+"The boy was ___ because he lost his toy. What does upset mean?","Excited","Sad or unhappy","Happy",2,1
+"The bird sang a ___ song. What does cheerful mean?","Scary","Quiet","Happy",3,1
+"The turtle moved very ___. What does slow mean?","Not fast","Jumping","Fast",1,1
+"The little girl was ___ when she met her teacher. What does polite mean?","Rude","Respectful","Angry",2,1
+"The basket was ___ with apples. What does full mean?","Broken","Empty","Containing a lot",3,1
+"The cat found a ___ place to sleep. What does cozy mean?","Comfortable","Cold","Crowded",1,1
+"The rain made the sidewalk ___. What does wet mean?","Dry","Covered with water","Hot",2,1
+"The boy was ___ to learn something new. What does eager mean?","Afraid","Tired","Excited and ready",3,1
+"The bear was very ___ after winter. What does hungry mean?","Wanting food","Wanting sleep","Wanting toys",1,1
+"The children were ___ about the field trip. What does excited mean?","Very happy and eager","Sleepy","Angry",1,2
+"The boy was ___ when he could not find his backpack. What does worried mean?","Hungry","Concerned","Playful",2,2
+"The kitten was ___ as it climbed the tall tree. What does brave mean?","Scared","Tired","Courageous",3,2
+"The teacher asked everyone to be ___ during the story. What does attentive mean?","Listening carefully","Running around","Talking loudly",1,2
+"The little girl felt ___ after helping her friend. What does proud mean?","Ashamed","Pleased with herself","Confused",2,2
+"The puppy was very ___ and greeted everyone at the door. What does friendly mean?","Mean","Quiet","Kind toward others",3,2
+"The family took a ___ walk through the park. What does peaceful mean?","Calm and quiet","Dangerous","Crowded",1,2
+"The boy was ___ when he finished the puzzle by himself. What does confident mean?","Nervous","Sure of himself","Sleepy",2,2
+"The squirrel was ___ as it searched for nuts. What does busy mean?","Hungry","Lazy","Active and working",3,2
+"The class worked ___ to finish the project on time. What does cooperate mean?","Work together","Compete","Rest",1,2
+"The baby was ___ after missing her nap. What does cranky mean?","Excited","Grumpy","Curious",2,2
+"The children were ___ when the magician appeared. What does amazed mean?","Bored","Angry","Very surprised",3,2
+"The student gave a ___ answer to the question. What does correct mean?","Right","Funny","Long",1,2
+"The hikers were ___ during the storm. What does cautious mean?","Fast","Careful","Happy",2,2
+"The dog was ___ after chasing the ball all afternoon. What does exhausted mean?","Hungry","Playful","Very tired",3,2
+"The teacher gave a ___ explanation of the lesson. What does simple mean?","Easy to understand","Confusing","Long",1,2
+"The girl was ___ when she met her new classmates. What does nervous mean?","Relaxed","A little scared or worried","Excited",2,2
+"The rabbit made a ___ escape from the fox. What does swift mean?","Quiet","Lucky","Very fast",3,2
+"The brothers were ___ to each other and shared their toys. What does generous mean?","Willing to give and share","Selfish","Careless",1,2
+"The child became ___ when he heard the loud noise. What does startled mean?","Sleepy","Suddenly surprised","Happy",2,2
+"The room looked ___ after everyone cleaned it. What does tidy mean?","Crowded","Colorful","Neat and organized",3,2
+"The campers sat around the fire and told ___ stories. What does amusing mean?","Funny","Scary","Long",1,2
+"The boy felt ___ after losing the game. What does disappointed mean?","Proud","Unhappy because things did not go as hoped","Excited",2,2
+"The scientist made a ___ discovery during the experiment. What does important mean?","Small","Unexpected","Significant",3,2
+"The student was ___ to answer the challenge question. What does eager mean?","Ready and excited","Confused","Angry",1,2
+"The hermit lived far from other people in the mountains. What does hermit mean?","A mountain guide","A person who lives alone","A type of bird",2,3
+"The storm caused a ___ in the river. What does flood mean?","A small bridge","A large overflow of water","A storm cloud",2,3
+"The professor had vast knowledge of history. What does vast mean?","Small","Interesting","Very large",3,3
+"The children felt ___ when they saw the puppies. What does delighted mean?","Very happy","Bored","Sleepy",1,3
+"The magician performed a ___ trick that amazed the crowd. What does clever mean?","Smart and skillful","Easy","Funny",1,3
+"The explorers set off on a ___ journey across the desert. What does perilous mean?","Dangerous","Easy","Short",1,3
+"The scientist made a ___ observation in the experiment. What does careful mean?","Thoughtful and precise","Quick","Random",1,3
+"The castle was ___ on the hill. What does majestic mean?","Grand and impressive","Small","Ugly",1,3
+"The child showed great ___ when helping his friend. What does kindness mean?","Selfishness","Politeness","Helping and caring",3,3
+"The river ___ through the valley. What does meander mean?","Flowed slowly and curved","Stopped","Jumped",1,3
+"The teacher asked for a ___ explanation of the project. What does brief mean?","Short and clear","Long","Confusing",1,3
+"The dog was very ___ when meeting new people. What does friendly mean?","Kind toward others","Mean","Quiet",1,3
+"The soldier was ___ to protect his country. What does brave mean?","Afraid","Courageous","Lazy",2,3
+"The wind made the leaves ___ across the yard. What does scatter mean?","Fall in one place","Spread around","Collect",2,3
+"The artist painted a ___ picture. What does vivid mean?","Bright and full of color","Dull","Messy",1,3
+"The team worked together to ___ the problem. What does solve mean?","Ignore","Find the answer","Make worse",2,3
+"The children were ___ when the fireworks started. What does astonished mean?","Surprised and amazed","Bored","Tired",1,3
+"The forest was ___ with tall trees. What does dense mean?","Thick and crowded","Empty","Small",1,3
+"The hiker used a map to ___ the trail. What does navigate mean?","Get lost","Find the way","Break",2,3
+"The baby laughed at the ___ clown. What does silly mean?","Funny and playful","Serious","Sad",1,3
+"The wind was so strong it could ___ the leaves. What does blow mean?","Move through the air","Sit still","Grow",1,3
+"The scientist wrote a ___ report about the experiment. What does detailed mean?","Including many facts","Short","Vague",1,3
+"The boy was ___ to finish his homework quickly. What does eager mean?","Excited and ready","Lazy","Confused",1,3
+"The magician performed a trick to ___ the audience. What does amaze mean?","Surprise and impress","Bore","Frustrate",1,3
+"The explorers found a ___ cave in the mountains. What does hidden mean?","Concealed and hard to see","Open","Dirty",1,3
+"The ancient ruins were ___ by explorers. What does ancient mean?","Very old","Modern","Hidden",1,4
+"The scientist ___ the evidence carefully before making a conclusion. What does examined mean?","Ignored","Studied closely","Destroyed",2,4
+"The hikers climbed a ___ trail up the mountain. What does steep mean?","Flat","Easy","Rising sharply",3,4
+"The teacher asked students to ___ the chapter they had read. What does summarize mean?","Memorize every detail","Tell the main points briefly","Draw a picture",2,4
+"The athlete was ___ and practiced every day. What does determined mean?","Focused and unwilling to give up","Confused","Careless",1,4
+"The inventor developed an ___ solution to the problem. What does innovative mean?","Old-fashioned","Expensive","New and creative",3,4
+"The ___ searched for clues around the crime scene. What does detective mean?","A person who solves mysteries","A teacher","A traveler",1,4
+"The audience applauded the ___ performance. What does remarkable mean?","Ordinary","Worth noticing and impressive","Quiet",2,4
+"The desert was so ___ that very few plants could survive. What does arid mean?","Cold","Windy","Very dry",3,4
+"The mayor ___ the crowd during the ceremony. What does addressed mean?","Spoke to","Ignored","Joined",1,4
+"The student ___ excellent teamwork during the project. What does demonstrated mean?","Forgot","Showed","Questioned",2,4
+"The flood caused ___ damage throughout the town. What does extensive mean?","Small","Temporary","Widespread",3,4
+"The archaeologist uncovered several ___ buried underground. What does artifacts mean?","Ancient objects made by people","Animals","Buildings",1,4
+"The coach encouraged players to ___ through difficult practices. What does persevere mean?","Give up","Continue despite difficulty","Complain",2,4
+"The author used ___ descriptions to help readers imagine the setting. What does vivid mean?","Bright and detailed","Boring","Short",1,4
+"The community worked together to ___ water during the drought. What does conserve mean?","Waste","Save and protect","Measure",2,4
+"The judge listened carefully before making a ___ decision. What does fair mean?","Quick","Popular","Just and unbiased",3,4
+"The students ___ on a science project about plants. What does collaborated mean?","Worked together","Competed","Argued",1,4
+"The witness provided ___ information about the accident. What does accurate mean?","Detailed","Correct","Interesting",2,4
+"The company experienced ___ growth over the past year. What does rapid mean?","Expensive","Steady","Very fast",3,4
+"The explorer entered an ___ region that few people had visited. What does unfamiliar mean?","Well known","Not known or recognized","Dangerous",2,4
+"The museum displayed a collection of ___ coins from around the world. What does rare mean?","Old","Valuable","Uncommon",3,4
+"The teacher praised the student's ___ effort on the project. What does exceptional mean?","Outstanding","Average","Incomplete",1,4
+"The engineer designed a ___ bridge that could hold heavy trucks. What does sturdy mean?","Decorative","Strong and durable","Narrow",2,4
+"The scientist made a ___ discovery that changed what people knew about the species. What does significant mean?","Minor","Unusual","Important",3,4
+"The scientist made a ___ observation during the experiment. What does careful mean?","Thoughtful and precise","Quick","Random",1,5
+"The author used ___ language to describe the setting. What does descriptive mean?","Giving details","Short","Boring",1,5
+"The explorers reached a ___ area of the jungle. What does remote mean?","Far away","Dangerous","Familiar",1,5
+"The teacher asked the students to ___ their essays before submitting. What does revise mean?","Change and improve","Copy","Erase",1,5
+"The storm caused ___ damage to the town. What does severe mean?","Serious and intense","Mild","Temporary",1,5
+"The engineers designed a ___ bridge that could withstand strong winds. What does sturdy mean?","Strong and durable","Decorative","Weak",1,5
+"The detective found a ___ clue at the crime scene. What does significant mean?","Unimportant","Important","Obvious",2,5
+"The company faced a ___ problem with its new product. What does complex mean?","Simple","Complicated and difficult","Easy",2,5
+"The student gave a ___ explanation of the process. What does thorough mean?","Incomplete","Detailed and complete","Quick",2,5
+"The teacher asked the class to ___ the main idea of the story. What does identify mean?","Find and name","Forget","Change",1,5
+"The hikers moved ___ through the forest to avoid making noise. What does cautiously mean?","Carefully","Quickly","Carelessly",1,5
+"The committee reached a ___ decision after hours of discussion. What does unanimous mean?","Agreed by everyone","Disagreed","Delayed",1,5
+"The archaeologist discovered an ___ artifact in the ruins. What does ancient mean?","Very old","New","Fictional",1,5
+"The student wrote a ___ summary of the article. What does concise mean?","Short and to the point","Long","Confusing",1,5
+"The scientist developed a ___ theory that explained the observations. What does logical mean?","Reasonable and sensible","Random","Impossible",1,5
+"The artist created a ___ sculpture that amazed the audience. What does elaborate mean?","Simple","Detailed and complicated","Quick",2,5
+"The teacher asked the students to ___ the evidence for the argument. What does evaluate mean?","Examine and judge","Ignore","Copy",1,5
+"The manager gave a ___ explanation of the new policy. What does clear mean?","Easy to understand","Confusing","Vague",1,5
+"The team worked together to ___ the problem quickly. What does solve mean?","Find a solution","Ignore it","Make it worse",1,5
+"The child was ___ when she heard the good news. What does thrilled mean?","Very happy","Bored","Confused",1,5
+"The scientist observed a ___ change in the experiment. What does gradual mean?","Slow and steady","Sudden","Quick",1,5
+"The explorers entered a ___ cave deep in the mountains. What does hidden mean?","Concealed and hard to see","Obvious","Large",1,5
+"The engineer used ___ calculations to ensure the bridge was safe. What does precise mean?","Exact and accurate","Rough","Wrong",1,5
+"The volunteers were ___ in helping at the shelter. What does eager mean?","Excited and ready","Lazy","Unwilling",1,5
+"The teacher asked students to ___ the main points from the chapter. What does extract mean?","Take out and summarize","Ignore","Copy",1,5
+"The scientist made a ___ observation during the experiment. What does meticulous mean?","Careful and precise","Quick and careless","Random",1,6
+"The author used ___ language to explain complex ideas. What does technical mean?","Specialized for a subject","Simple and plain","Funny",1,6
+"The explorer entered a ___ region that few had seen. What does uncharted mean?","Not mapped or explored","Known to everyone","Dangerous",1,6
+"The teacher asked the students to ___ their essays for errors. What does proofread mean?","Check for mistakes","Erase","Write quickly",1,6
+"The storm caused ___ destruction throughout the town. What does catastrophic mean?","Extremely bad and damaging","Minor","Temporary",1,6
+"The engineer designed a ___ structure to withstand earthquakes. What does resilient mean?","Strong and able to recover","Weak","Brittle",1,6
+"The detective discovered a ___ clue that solved the case. What does pivotal mean?","Crucial and essential","Unimportant","Obvious",1,6
+"The mathematician explained a ___ problem to the class. What does complex mean?","Difficult and complicated","Simple","Easy",1,6
+"The historian provided a ___ account of the event. What does comprehensive mean?","Complete and detailed","Short and vague","Confusing",1,6
+"The teacher asked students to ___ the evidence in the article. What does analyze mean?","Examine carefully","Ignore","Summarize quickly",1,6
+"The hiker moved ___ along the cliff to avoid falling. What does cautiously mean?","Carefully and with attention","Recklessly","Quickly",1,6
+"The committee reached a ___ decision after long discussion. What does unanimous mean?","Agreed by everyone","Disagreed","Delayed",1,6
+"The archaeologist discovered an ___ manuscript in the ruins. What does ancient mean?","Very old","New","Fake",1,6
+"The report was ___ and easy to understand. What does concise mean?","Brief and clear","Long and confusing","Unclear",1,6
+"The scientist proposed a ___ hypothesis to explain the results. What does logical mean?","Reasonable and rational","Illogical","Impossible",1,6
+"The engineer built an ___ bridge that impressed everyone. What does elaborate mean?","Complex and detailed","Simple","Quickly made",1,6
+"The teacher asked the students to ___ the sources for reliability. What does evaluate mean?","Judge carefully","Ignore","Copy",1,6
+"The manager gave a ___ explanation of the new rules. What does coherent mean?","Clear and logical","Confusing","Random",1,6
+"The team worked together to ___ the challenging problem. What does solve mean?","Find a solution","Ignore it","Make it worse",1,6
+"The student was ___ when receiving the award. What does ecstatic mean?","Extremely happy","Bored","Confused",1,6
+"The experiment showed a ___ change over time. What does gradual mean?","Slow and steady","Sudden","Quick",1,6
+"The cave was ___ and difficult to explore. What does obscure mean?","Hidden or unknown","Obvious","Large",1,6
+"The engineer used ___ measurements to ensure accuracy. What does precise mean?","Exact and accurate","Rough","Wrong",1,6
+"The volunteers were ___ to start the project. What does eager mean?","Excited and ready","Lazy","Unwilling",1,6
+"The teacher asked students to ___ the important points from the text. What does extract mean?","Take out and summarize","Ignore","Copy",1,6

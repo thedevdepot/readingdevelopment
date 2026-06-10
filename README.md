@@ -172,3 +172,6 @@ Research and modern reading assessments suggest that reading comprehension is be
 * Metacognitive reasoning
 
 Rather than relying on a single assessment format, this project aims to collect evidence across multiple modalities to generate a more accurate estimate of a student's reading level and provide targeted instructional recommendations.
+
+> **James 1:5 (KJV)**
+> "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him."

@@ -20,6 +20,9 @@
     "url": "https://github.com/thedevdepot/readingdevelopment/issues"
   },
   "homepage": "https://github.com/thedevdepot/readingdevelopment#readme",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

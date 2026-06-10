@@ -48,6 +48,36 @@ body {
   margin-bottom: 12px;
 }
 
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.top-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.top-nav a {
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 0.18s ease, transform 0.12s ease;
+}
+
+.top-nav a:hover {
+  background: linear-gradient(135deg, #ff8f2a 0%, #ffd86f 100%);
+  color: #351b00;
+  transform: translateY(-2px);
+}
+
 h1 {
   text-align: left;
   font-size: 2rem;
