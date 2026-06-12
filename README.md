@@ -93,6 +93,8 @@ The focus will be on using AI to support educators, not replace teacher judgment
 * CSV-based activity content
 * Azure Static Web Apps
 
+![App Architecture](./appArchitecture.png)
+
 ### Future Exploration
 
 * LLM-powered response evaluation
