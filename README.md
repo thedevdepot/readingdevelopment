@@ -11,6 +11,7 @@ This project is part of the Azure Innovation Studio Agents League hackathon.
 
 Tonight is the deadline!
 - Thank you to my students who helped demo the app.  Results will be posted here soon.  You will find out if your teacher is a hacker.
+- Results will be posted June 30th.
 
 As a high school ELA teacher who works with special education students, I've seen how difficult it can be to gather meaningful assessment data when students are not genuinely engaged. This project is inspired by tools such as Pear Deck, Edpuzzle, Quizizz, Gimkit, and MagicSchool, with the goal of creating reading assessments that feel more interactive while providing actionable insights for teachers.
 
