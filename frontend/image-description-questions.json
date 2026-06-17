@@ -1,0 +1,596 @@
+[
+  {
+    "image": "images/basketballdrink.jpg",
+    "alt": "A basketball and a water bottle rest on a sunny court",
+    "correct": {
+      "subject": "a basketball and a water bottle",
+      "detail": "on a sunny court"
+    },
+    "distractors": [
+      {
+        "subject": "a soccer ball and a lunch box",
+        "detail": "on the grass"
+      },
+      {
+        "subject": "a tennis racket and a glove",
+        "detail": "on a bench"
+      },
+      {
+        "subject": "a notebook and a pencil",
+        "detail": "on a desk"
+      }
+    ]
+  },
+  {
+    "image": "images/brushhat.jpg",
+    "alt": "A straw hat with a brush and jewelry on a beige background",
+    "correct": {
+      "subject": "a straw hat with a brush and jewelry",
+      "detail": "on a beige background"
+    },
+    "distractors": [
+      {
+        "subject": "a frying pan and a spatula",
+        "detail": "in a kitchen"
+      },
+      {
+        "subject": "a backpack and a water bottle",
+        "detail": "on the floor"
+      },
+      {
+        "subject": "a paint roller and tape",
+        "detail": "on a table"
+      }
+    ]
+  },
+  {
+    "image": "images/carrotsbeets.jpg",
+    "alt": "Carrots and beets with stems on a white surface",
+    "correct": {
+      "subject": "carrots and beets with stems",
+      "detail": "on a white surface"
+    },
+    "distractors": [
+      {
+        "subject": "apples and pears",
+        "detail": "in a bowl"
+      },
+      {
+        "subject": "flowers",
+        "detail": "in a vase"
+      },
+      {
+        "subject": "cookies",
+        "detail": "on a plate"
+      }
+    ]
+  },
+  {
+    "image": "images/catburrito.jpg",
+    "alt": "A cat wrapped like a burrito in a soft blanket",
+    "correct": {
+      "subject": "a cat wrapped like a burrito",
+      "detail": "in a soft blanket"
+    },
+    "distractors": [
+      {
+        "subject": "a dog wrapped in a towel",
+        "detail": "on a couch"
+      },
+      {
+        "subject": "a baby wrapped in a blanket",
+        "detail": "in a crib"
+      },
+      {
+        "subject": "a pillow",
+        "detail": "on a couch"
+      }
+    ]
+  },
+  {
+    "image": "images/coolsails.webp",
+    "alt": "Sailboats with bright sails on the ocean",
+    "correct": {
+      "subject": "sailboats with bright sails",
+      "detail": "on the ocean"
+    },
+    "distractors": [
+      {
+        "subject": "kites",
+        "detail": "in the sky"
+      },
+      {
+        "subject": "balloons",
+        "detail": "at a party"
+      },
+      {
+        "subject": "cars",
+        "detail": "on a road"
+      }
+    ]
+  },
+  {
+    "image": "images/ferriswheel.jpg",
+    "alt": "A Ferris wheel at an amusement park against a bright sky",
+    "correct": {
+      "subject": "a Ferris wheel at an amusement park",
+      "detail": "against a bright sky"
+    },
+    "distractors": [
+      {
+        "subject": "a windmill",
+        "detail": "in a field"
+      },
+      {
+        "subject": "a lighthouse",
+        "detail": "by the sea"
+      },
+      {
+        "subject": "a clock tower",
+        "detail": "downtown"
+      }
+    ]
+  },
+  {
+    "image": "images/flowerpond.jpg",
+    "alt": "Flowers growing around a pond in a calm garden",
+    "correct": {
+      "subject": "flowers growing around a pond",
+      "detail": "in a calm garden"
+    },
+    "distractors": [
+      {
+        "subject": "trees",
+        "detail": "beside a sidewalk"
+      },
+      {
+        "subject": "fish",
+        "detail": "in an aquarium"
+      },
+      {
+        "subject": "plants",
+        "detail": "in flower pots"
+      }
+    ]
+  },
+  {
+    "image": "images/goodcoffee.jpg",
+    "alt": "A cup of coffee with dark foam on a warm table",
+    "correct": {
+      "subject": "a cup of coffee with dark foam",
+      "detail": "on a warm table"
+    },
+    "distractors": [
+      {
+        "subject": "hot chocolate with marshmallows",
+        "detail": "on a tray"
+      },
+      {
+        "subject": "tea in a glass",
+        "detail": "on a counter"
+      },
+      {
+        "subject": "water in a cup",
+        "detail": "on a desk"
+      }
+    ]
+  },
+  {
+    "image": "images/honeycomb.jpg",
+    "alt": "A honeycomb pattern with repeating hexagons",
+    "correct": {
+      "subject": "a honeycomb pattern",
+      "detail": "with repeating hexagons"
+    },
+    "distractors": [
+      {
+        "subject": "a waffle",
+        "detail": "with syrup"
+      },
+      {
+        "subject": "a sponge",
+        "detail": "with holes"
+      },
+      {
+        "subject": "a brick wall",
+        "detail": "with neat rows"
+      }
+    ]
+  },
+  {
+    "image": "images/jellys.webp",
+    "alt": "Jellyfish floating in water under soft light",
+    "correct": {
+      "subject": "jellyfish floating in water",
+      "detail": "under soft light"
+    },
+    "distractors": [
+      {
+        "subject": "balloons",
+        "detail": "in the sky"
+      },
+      {
+        "subject": "umbrellas",
+        "detail": "in the rain"
+      },
+      {
+        "subject": "mushrooms",
+        "detail": "in a forest"
+      }
+    ]
+  },
+  {
+    "image": "images/nicedog.jpg",
+    "alt": "A friendly dog sitting outside in the sun",
+    "correct": {
+      "subject": "a friendly dog sitting outside",
+      "detail": "in the sun"
+    },
+    "distractors": [
+      {
+        "subject": "a cat",
+        "detail": "on a porch"
+      },
+      {
+        "subject": "a horse",
+        "detail": "in a field"
+      },
+      {
+        "subject": "a rabbit",
+        "detail": "in a garden"
+      }
+    ]
+  },
+  {
+    "image": "images/niceglasses.jpg",
+    "alt": "Sunglasses with earrings and rings on a tan background",
+    "correct": {
+      "subject": "sunglasses with earrings and rings",
+      "detail": "on a tan background"
+    },
+    "distractors": [
+      {
+        "subject": "a headset and microphone",
+        "detail": "on a desk"
+      },
+      {
+        "subject": "binoculars",
+        "detail": "on a shelf"
+      },
+      {
+        "subject": "goggles and a mask",
+        "detail": "on a table"
+      }
+    ]
+  },
+  {
+    "image": "images/nicemeetings.jpg",
+    "alt": "People meeting around a conference table in a glass office",
+    "correct": {
+      "subject": "people meeting around a conference table",
+      "detail": "in a glass office"
+    },
+    "distractors": [
+      {
+        "subject": "students sitting together",
+        "detail": "in a classroom"
+      },
+      {
+        "subject": "shoppers standing together",
+        "detail": "in a store"
+      },
+      {
+        "subject": "readers sitting quietly",
+        "detail": "in a library"
+      }
+    ]
+  },
+  {
+    "image": "images/nicewindow.webp",
+    "alt": "A tall window with sunlight and a garden view inside a grand room",
+    "correct": {
+      "subject": "a tall window with sunlight and a garden view",
+      "detail": "inside a grand room"
+    },
+    "distractors": [
+      {
+        "subject": "a mirror",
+        "detail": "in a hallway"
+      },
+      {
+        "subject": "a door",
+        "detail": "in a kitchen"
+      },
+      {
+        "subject": "a painting",
+        "detail": "on a wall"
+      }
+    ]
+  },
+  {
+    "image": "images/oranges.jpg",
+    "alt": "A pile of oranges with bright orange peel",
+    "correct": {
+      "subject": "a pile of oranges",
+      "detail": "with bright orange peel"
+    },
+    "distractors": [
+      {
+        "subject": "a pile of apples",
+        "detail": "with red skin"
+      },
+      {
+        "subject": "a bowl of lemons",
+        "detail": "with yellow fruit"
+      },
+      {
+        "subject": "a basket of peaches",
+        "detail": "with soft fruit"
+      }
+    ]
+  },
+  {
+    "image": "images/paints.jpg",
+    "alt": "Paint strokes in pink, purple, and red on a light background",
+    "correct": {
+      "subject": "paint strokes in pink, purple, and red",
+      "detail": "on a light background"
+    },
+    "distractors": [
+      {
+        "subject": "ribbons",
+        "detail": "in a gift box"
+      },
+      {
+        "subject": "crayons",
+        "detail": "on paper"
+      },
+      {
+        "subject": "flowers",
+        "detail": "on a card"
+      }
+    ]
+  },
+  {
+    "image": "images/peacock.jpg",
+    "alt": "A peacock showing its colorful feathers in a leafy area",
+    "correct": {
+      "subject": "a peacock showing its colorful feathers",
+      "detail": "in a leafy area"
+    },
+    "distractors": [
+      {
+        "subject": "a parrot",
+        "detail": "on a branch"
+      },
+      {
+        "subject": "a turkey",
+        "detail": "in a yard"
+      },
+      {
+        "subject": "a flamingo",
+        "detail": "by water"
+      }
+    ]
+  },
+  {
+    "image": "images/purpleroom.webp",
+    "alt": "A purple room with simple furniture and soft light",
+    "correct": {
+      "subject": "a purple room with simple furniture",
+      "detail": "and soft light"
+    },
+    "distractors": [
+      {
+        "subject": "a kitchen with white cabinets",
+        "detail": "and a sink"
+      },
+      {
+        "subject": "a garage with tools",
+        "detail": "on shelves"
+      },
+      {
+        "subject": "a bathroom with tiles",
+        "detail": "and a tub"
+      }
+    ]
+  },
+  {
+    "image": "images/seedbread.jpg",
+    "alt": "Seeded bread with a toasted crust close up",
+    "correct": {
+      "subject": "seeded bread with a toasted crust",
+      "detail": "close up"
+    },
+    "distractors": [
+      {
+        "subject": "a cake",
+        "detail": "with frosting"
+      },
+      {
+        "subject": "crackers",
+        "detail": "on a plate"
+      },
+      {
+        "subject": "pancakes",
+        "detail": "with syrup"
+      }
+    ]
+  },
+  {
+    "image": "images/spacehelmet.jpg",
+    "alt": "A space helmet on a light background",
+    "correct": {
+      "subject": "a space helmet",
+      "detail": "on a light background"
+    },
+    "distractors": [
+      {
+        "subject": "a bike helmet",
+        "detail": "on the ground"
+      },
+      {
+        "subject": "a football helmet",
+        "detail": "on a bench"
+      },
+      {
+        "subject": "a diving mask",
+        "detail": "in water"
+      }
+    ]
+  },
+  {
+    "image": "images/sunmeetings.jpg",
+    "alt": "People meeting beside bright windows in sunset light",
+    "correct": {
+      "subject": "people meeting beside bright windows",
+      "detail": "in sunset light"
+    },
+    "distractors": [
+      {
+        "subject": "students sitting in a classroom",
+        "detail": "at noon"
+      },
+      {
+        "subject": "diners eating together",
+        "detail": "at a restaurant"
+      },
+      {
+        "subject": "readers sitting quietly",
+        "detail": "in a library"
+      }
+    ]
+  },
+  {
+    "image": "images/surferdude.jpg",
+    "alt": "A surfer holding a surfboard on the beach",
+    "correct": {
+      "subject": "a surfer holding a surfboard",
+      "detail": "on the beach"
+    },
+    "distractors": [
+      {
+        "subject": "a skateboarder",
+        "detail": "at a park"
+      },
+      {
+        "subject": "a swimmer",
+        "detail": "in a pool"
+      },
+      {
+        "subject": "a hiker",
+        "detail": "on a trail"
+      }
+    ]
+  },
+  {
+    "image": "images/tennisball.jpg",
+    "alt": "A tennis ball on a bright surface",
+    "correct": {
+      "subject": "a tennis ball",
+      "detail": "on a bright surface"
+    },
+    "distractors": [
+      {
+        "subject": "a baseball",
+        "detail": "on dirt"
+      },
+      {
+        "subject": "a golf ball",
+        "detail": "on grass"
+      },
+      {
+        "subject": "a ping-pong ball",
+        "detail": "on a table"
+      }
+    ]
+  },
+  {
+    "image": "images/threecats.jpg",
+    "alt": "Three cats sitting together on a couch",
+    "correct": {
+      "subject": "three cats sitting together",
+      "detail": "on a couch"
+    },
+    "distractors": [
+      {
+        "subject": "three dogs",
+        "detail": "in a yard"
+      },
+      {
+        "subject": "two cats and a bird",
+        "detail": "on a shelf"
+      },
+      {
+        "subject": "one cat",
+        "detail": "in a basket"
+      }
+    ]
+  },
+  {
+    "image": "images/traincarinside.jpg",
+    "alt": "The inside of a train car with empty seats",
+    "correct": {
+      "subject": "the inside of a train car",
+      "detail": "with empty seats"
+    },
+    "distractors": [
+      {
+        "subject": "the inside of an airplane cabin",
+        "detail": "with small windows"
+      },
+      {
+        "subject": "the inside of a bus",
+        "detail": "with rows of seats"
+      },
+      {
+        "subject": "the inside of an office",
+        "detail": "with desks"
+      }
+    ]
+  },
+  {
+    "image": "images/videomeeting.jpg",
+    "alt": "A video meeting on a computer screen in a home office",
+    "correct": {
+      "subject": "a video meeting on a computer screen",
+      "detail": "in a home office"
+    },
+    "distractors": [
+      {
+        "subject": "a movie playing on a TV",
+        "detail": "in a living room"
+      },
+      {
+        "subject": "a game on a tablet",
+        "detail": "at a desk"
+      },
+      {
+        "subject": "a phone call on a desk",
+        "detail": "beside a lamp"
+      }
+    ]
+  },
+  {
+    "image": "images/watermelon.jpg",
+    "alt": "A watermelon with green stripes",
+    "correct": {
+      "subject": "a watermelon",
+      "detail": "with green stripes"
+    },
+    "distractors": [
+      {
+        "subject": "a pumpkin",
+        "detail": "on a table"
+      },
+      {
+        "subject": "a pineapple",
+        "detail": "on a counter"
+      },
+      {
+        "subject": "a cantaloupe",
+        "detail": "in a bowl"
+      }
+    ]
+  }
+]

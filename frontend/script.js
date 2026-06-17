@@ -1,7 +1,8 @@
 let allQuestionsByType = {
   'multiple-choice': [],
   'sentence-completion': [],
-  'vocabulary-in-context': []
+  'vocabulary-in-context': [],
+  'image-description': []
 };
 let currentQuestion = null;
 let currentQuestionType = null;
@@ -16,7 +17,13 @@ let answered = false;
 let usedQuestionIds = new Set();
 let usedQuestionTypes = new Set();
 const questionCount = 10;
-const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context'];
+const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context', 'image-description'];
+const questionSources = {
+  'multiple-choice': { file: 'multiple-choice-questions.csv', format: 'csv' },
+  'sentence-completion': { file: 'sentence-completion-questions.csv', format: 'csv' },
+  'vocabulary-in-context': { file: 'vocabulary-in-context-questions.csv', format: 'csv' },
+  'image-description': { file: 'image-description-questions.json', format: 'json' }
+};
 
 function parseCSV(text) {
   const rows = [];
@@ -66,15 +73,81 @@ function shuffle(array) {
   return copy;
 }
 
-function loadAllQuestions() {
-  let loadedCount = 0;
+function buildImageDescriptionText(subject, detail, level) {
+  const scene = detail ? `${subject} ${detail}` : subject;
 
-  questionTypes.forEach(type => {
-    const fileName = `${type}-questions.csv`;
-    fetch(fileName)
-      .then(response => response.text())
-      .then(text => {
-        allQuestionsByType[type] = parseCSV(text).map((row, index) => ({
+  switch (level) {
+    case 1:
+      return `A picture of ${scene}.`;
+    case 2:
+      return `The picture shows ${scene}.`;
+    case 3:
+      return `The picture shows ${scene}, making the scene easy to notice.`;
+    case 4:
+      return `The image shows ${scene}, creating a clear scene.`;
+    case 5:
+      return `The image shows ${scene}, and the details make it vivid.`;
+    case 6:
+      return `The image shows ${scene}, and the details help the scene feel complete.`;
+    default:
+      return `The picture shows ${scene}.`;
+  }
+}
+
+function buildImageDescriptionQuestions(records) {
+  return records.flatMap((record, recordIndex) => {
+    return [1, 2, 3, 4, 5, 6].map(level => {
+      const chosenDistractors = shuffle(record.distractors).slice(0, 2);
+      const choices = shuffle([
+        {
+          text: buildImageDescriptionText(record.correct.subject, record.correct.detail, level),
+          isCorrect: true
+        },
+        ...chosenDistractors.map(distractor => ({
+          text: buildImageDescriptionText(distractor.subject, distractor.detail, level),
+          isCorrect: false
+        }))
+      ]);
+
+      return {
+        id: `image-description-${recordIndex}-level-${level}`,
+        type: 'image-description',
+        text: 'Which description best matches the image?',
+        image: record.image,
+        imageAlt: record.alt,
+        choices: choices.map(choice => choice.text),
+        answer: choices.findIndex(choice => choice.isCorrect),
+        level: level
+      };
+    });
+  });
+}
+
+function loadAllQuestions() {
+  const loadPromises = questionTypes.map(type => {
+    const source = questionSources[type];
+
+    if (!source) {
+      return Promise.reject(new Error(`Missing question source for ${type}`));
+    }
+
+    const loader = source.format === 'json' ? 'json' : 'text';
+
+    return fetch(source.file)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Failed to load ${source.file}`);
+        }
+
+        return response[loader]();
+      })
+      .then(data => {
+        if (source.format === 'json') {
+          allQuestionsByType[type] = buildImageDescriptionQuestions(data);
+          return;
+        }
+
+        allQuestionsByType[type] = parseCSV(data).map((row, index) => ({
           id: `${type}-${index}`,
           type: type,
           text: row.text,
@@ -82,17 +155,17 @@ function loadAllQuestions() {
           answer: Number(row.answer) - 1,
           level: Number(row.level)
         }));
-        
-        loadedCount += 1;
-        if (loadedCount === questionTypes.length) {
-          startNewQuiz();
-        }
       })
       .catch(error => {
-        console.error(`Error loading ${fileName}:`, error);
+        console.error(`Error loading ${source.file}:`, error);
         questionEl.textContent = `Unable to load ${type} questions. Please refresh the page.`;
+        throw error;
       });
   });
+
+  Promise.all(loadPromises)
+    .then(() => startNewQuiz())
+    .catch(() => {});
 }
 
 function startNewQuiz() {
@@ -156,6 +229,7 @@ const questionEl = document.getElementById("question");
 const progressLabelEl = document.getElementById("progressLabel");
 const progressTypeEl = document.getElementById("progressType");
 const progressBarEl = document.getElementById("progressBar");
+const questionMediaEl = document.getElementById("questionMedia");
 const choicesEl = document.getElementById("choices");
 const nextBtn = document.getElementById("nextBtn");
 const restartBtn = document.getElementById("restartBtn");
@@ -176,6 +250,17 @@ function loadQuestion() {
   progressBarEl.style.width = `${Math.round((questionsAsked / questionCount) * 100)}%`;
   progressBarEl.setAttribute("aria-valuenow", Math.round((questionsAsked / questionCount) * 100));
   questionEl.textContent = q.text;
+  questionMediaEl.innerHTML = "";
+  if (q.image) {
+    const image = document.createElement("img");
+    image.src = q.image;
+    image.alt = q.imageAlt || q.text;
+    image.loading = "lazy";
+    questionMediaEl.appendChild(image);
+    questionMediaEl.classList.remove("hidden");
+  } else {
+    questionMediaEl.classList.add("hidden");
+  }
   choicesEl.innerHTML = '<legend class="sr-only">Choose the correct answer</legend>';
   choicesEl.classList.remove("hidden");
   questionEl.classList.remove("hidden");
