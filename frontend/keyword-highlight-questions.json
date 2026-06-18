@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "keyword-g1-1",
+    "level": 1,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Tom held a small lamp in the dark hall. He heard rain on the roof. He kept the lamp high so he could see the door.",
+    "keywords": [
+      {
+        "word": "lamp",
+        "weight": 0.3
+      },
+      {
+        "word": "dark",
+        "weight": 0.25
+      },
+      {
+        "word": "rain",
+        "weight": 0.2
+      },
+      {
+        "word": "roof",
+        "weight": 0.15
+      },
+      {
+        "word": "door",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g1-2",
+    "level": 1,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Mia found a red kite near the fence. Wind pushed the kite up. She ran fast and laughed in the field.",
+    "keywords": [
+      {
+        "word": "kite",
+        "weight": 0.3
+      },
+      {
+        "word": "wind",
+        "weight": 0.25
+      },
+      {
+        "word": "ran",
+        "weight": 0.2
+      },
+      {
+        "word": "laughed",
+        "weight": 0.15
+      },
+      {
+        "word": "field",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g1-3",
+    "level": 1,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "A tiny boat moved on the pond. Ben used a stick to guide it. The water was still and bright.",
+    "keywords": [
+      {
+        "word": "boat",
+        "weight": 0.3
+      },
+      {
+        "word": "pond",
+        "weight": 0.25
+      },
+      {
+        "word": "stick",
+        "weight": 0.2
+      },
+      {
+        "word": "water",
+        "weight": 0.15
+      },
+      {
+        "word": "bright",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g1-4",
+    "level": 1,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Lila saw tracks in fresh snow. She followed them to a tall pine tree. A rabbit jumped away.",
+    "keywords": [
+      {
+        "word": "tracks",
+        "weight": 0.3
+      },
+      {
+        "word": "snow",
+        "weight": 0.25
+      },
+      {
+        "word": "pine",
+        "weight": 0.2
+      },
+      {
+        "word": "rabbit",
+        "weight": 0.15
+      },
+      {
+        "word": "jumped",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g1-5",
+    "level": 1,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Dad read a map by the camp fire. The path to the lake was long. We packed food and walked.",
+    "keywords": [
+      {
+        "word": "map",
+        "weight": 0.3
+      },
+      {
+        "word": "camp",
+        "weight": 0.25
+      },
+      {
+        "word": "path",
+        "weight": 0.2
+      },
+      {
+        "word": "lake",
+        "weight": 0.15
+      },
+      {
+        "word": "walked",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g1-6",
+    "level": 1,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "June opened a blue book at the window. A bird sang outside. She read each page out loud.",
+    "keywords": [
+      {
+        "word": "book",
+        "weight": 0.3
+      },
+      {
+        "word": "window",
+        "weight": 0.25
+      },
+      {
+        "word": "bird",
+        "weight": 0.2
+      },
+      {
+        "word": "read",
+        "weight": 0.15
+      },
+      {
+        "word": "page",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g1-7",
+    "level": 1,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The class planted seeds in soft soil. We gave them water each day. Green shoots came up soon.",
+    "keywords": [
+      {
+        "word": "seeds",
+        "weight": 0.3
+      },
+      {
+        "word": "soil",
+        "weight": 0.25
+      },
+      {
+        "word": "water",
+        "weight": 0.2
+      },
+      {
+        "word": "green",
+        "weight": 0.15
+      },
+      {
+        "word": "shoots",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g1-8",
+    "level": 1,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Nate fixed his toy train on the rug. One wheel was loose. He pressed it back and the train rolled.",
+    "keywords": [
+      {
+        "word": "train",
+        "weight": 0.3
+      },
+      {
+        "word": "wheel",
+        "weight": 0.25
+      },
+      {
+        "word": "loose",
+        "weight": 0.2
+      },
+      {
+        "word": "pressed",
+        "weight": 0.15
+      },
+      {
+        "word": "rolled",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g1-9",
+    "level": 1,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Sara wore boots in the muddy yard. Puddles splashed her socks. She washed up before lunch.",
+    "keywords": [
+      {
+        "word": "boots",
+        "weight": 0.3
+      },
+      {
+        "word": "muddy",
+        "weight": 0.25
+      },
+      {
+        "word": "puddles",
+        "weight": 0.2
+      },
+      {
+        "word": "splashed",
+        "weight": 0.15
+      },
+      {
+        "word": "washed",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g1-10",
+    "level": 1,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "A fox looked at the moon from the hill. Night felt quiet and cool. The fox slipped into the trees.",
+    "keywords": [
+      {
+        "word": "fox",
+        "weight": 0.3
+      },
+      {
+        "word": "moon",
+        "weight": 0.25
+      },
+      {
+        "word": "night",
+        "weight": 0.2
+      },
+      {
+        "word": "quiet",
+        "weight": 0.15
+      },
+      {
+        "word": "trees",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g2-1",
+    "level": 2,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "On Monday, Eva carried a basket to the market square. She chose pears, bread, and honey for supper. When clouds gathered, she hurried home along the stone path.",
+    "keywords": [
+      {
+        "word": "basket",
+        "weight": 0.3
+      },
+      {
+        "word": "market",
+        "weight": 0.25
+      },
+      {
+        "word": "honey",
+        "weight": 0.2
+      },
+      {
+        "word": "clouds",
+        "weight": 0.15
+      },
+      {
+        "word": "path",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g2-2",
+    "level": 2,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Leo borrowed a compass from his uncle before the hike. At each turn, he checked north and marked the trail in his notebook. By sunset, he found the campsite beside the creek.",
+    "keywords": [
+      {
+        "word": "compass",
+        "weight": 0.3
+      },
+      {
+        "word": "hike",
+        "weight": 0.25
+      },
+      {
+        "word": "north",
+        "weight": 0.2
+      },
+      {
+        "word": "trail",
+        "weight": 0.15
+      },
+      {
+        "word": "campsite",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g2-3",
+    "level": 2,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "At recess, Mina noticed a hurt wing on a pigeon near the gate. She wrapped the bird in her scarf and called the nurse. Together they placed it in a quiet box.",
+    "keywords": [
+      {
+        "word": "wing",
+        "weight": 0.3
+      },
+      {
+        "word": "pigeon",
+        "weight": 0.25
+      },
+      {
+        "word": "scarf",
+        "weight": 0.2
+      },
+      {
+        "word": "nurse",
+        "weight": 0.15
+      },
+      {
+        "word": "box",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g2-4",
+    "level": 2,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The baker mixed flour and warm milk before dawn. Sweet rolls rose in the pans while the shop lights glowed. People lined up early for the first batch.",
+    "keywords": [
+      {
+        "word": "baker",
+        "weight": 0.3
+      },
+      {
+        "word": "flour",
+        "weight": 0.25
+      },
+      {
+        "word": "rolls",
+        "weight": 0.2
+      },
+      {
+        "word": "glowed",
+        "weight": 0.15
+      },
+      {
+        "word": "batch",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g2-5",
+    "level": 2,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "During the storm, thunder shook the windows in our apartment. My brother counted seconds between lightning flashes. We felt safer after the power returned.",
+    "keywords": [
+      {
+        "word": "storm",
+        "weight": 0.3
+      },
+      {
+        "word": "thunder",
+        "weight": 0.25
+      },
+      {
+        "word": "lightning",
+        "weight": 0.2
+      },
+      {
+        "word": "seconds",
+        "weight": 0.15
+      },
+      {
+        "word": "power",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g2-6",
+    "level": 2,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Rosa practiced violin in the music room every afternoon. At first, the notes sounded scratchy and thin. After weeks of practice, the melody flowed clearly.",
+    "keywords": [
+      {
+        "word": "violin",
+        "weight": 0.3
+      },
+      {
+        "word": "notes",
+        "weight": 0.25
+      },
+      {
+        "word": "scratchy",
+        "weight": 0.2
+      },
+      {
+        "word": "practice",
+        "weight": 0.15
+      },
+      {
+        "word": "melody",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g2-7",
+    "level": 2,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Grandpa told us a story about crossing the river by ferry. The boat rocked, but he stayed calm and held the rail. He said courage grows when we keep moving.",
+    "keywords": [
+      {
+        "word": "river",
+        "weight": 0.3
+      },
+      {
+        "word": "ferry",
+        "weight": 0.25
+      },
+      {
+        "word": "rocked",
+        "weight": 0.2
+      },
+      {
+        "word": "courage",
+        "weight": 0.15
+      },
+      {
+        "word": "moving",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g2-8",
+    "level": 2,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "In science class, we watched a caterpillar build a chrysalis on a branch. Days later, the shell opened and a butterfly unfolded its wings. The room went silent with wonder.",
+    "keywords": [
+      {
+        "word": "caterpillar",
+        "weight": 0.3
+      },
+      {
+        "word": "chrysalis",
+        "weight": 0.25
+      },
+      {
+        "word": "shell",
+        "weight": 0.2
+      },
+      {
+        "word": "butterfly",
+        "weight": 0.15
+      },
+      {
+        "word": "wings",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g2-9",
+    "level": 2,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "A train whistle echoed through the valley before sunrise. Farmers paused their work to watch the cars pass the bridge. Then they returned to their fields.",
+    "keywords": [
+      {
+        "word": "whistle",
+        "weight": 0.3
+      },
+      {
+        "word": "valley",
+        "weight": 0.25
+      },
+      {
+        "word": "farmers",
+        "weight": 0.2
+      },
+      {
+        "word": "bridge",
+        "weight": 0.15
+      },
+      {
+        "word": "fields",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g2-10",
+    "level": 2,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Nora cleaned the old lighthouse lens with careful hands. When dusk arrived, the bright beam swept across the water. Boats near the rocks turned safely toward harbor.",
+    "keywords": [
+      {
+        "word": "lighthouse",
+        "weight": 0.3
+      },
+      {
+        "word": "lens",
+        "weight": 0.25
+      },
+      {
+        "word": "beam",
+        "weight": 0.2
+      },
+      {
+        "word": "rocks",
+        "weight": 0.15
+      },
+      {
+        "word": "harbor",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g3-1",
+    "level": 3,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "In the first chapter, the twins discover a locked trunk beneath the attic stairs. Dust rises as they lift the lid and find a faded map. A note warns them to follow the river only at dawn.",
+    "keywords": [
+      {
+        "word": "chapter",
+        "weight": 0.3
+      },
+      {
+        "word": "locked",
+        "weight": 0.25
+      },
+      {
+        "word": "trunk",
+        "weight": 0.2
+      },
+      {
+        "word": "map",
+        "weight": 0.15
+      },
+      {
+        "word": "river",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g3-2",
+    "level": 3,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The village clock stopped at noon, and no one knew why. Mara climbed the narrow tower with a toolbox and a flashlight. Inside, she found a broken gear and a nest of straw.",
+    "keywords": [
+      {
+        "word": "clock",
+        "weight": 0.3
+      },
+      {
+        "word": "tower",
+        "weight": 0.25
+      },
+      {
+        "word": "toolbox",
+        "weight": 0.2
+      },
+      {
+        "word": "gear",
+        "weight": 0.15
+      },
+      {
+        "word": "nest",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g3-3",
+    "level": 3,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "After the game, the coach handed Eli a weathered journal from the school library. The pages described a team that played on the same field a hundred years earlier. Eli read until the gym lights blinked off.",
+    "keywords": [
+      {
+        "word": "coach",
+        "weight": 0.3
+      },
+      {
+        "word": "journal",
+        "weight": 0.25
+      },
+      {
+        "word": "library",
+        "weight": 0.2
+      },
+      {
+        "word": "field",
+        "weight": 0.15
+      },
+      {
+        "word": "pages",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g3-4",
+    "level": 3,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "A heavy fog rolled over the harbor and hid every fishing boat. Captain Inez listened for bell buoys and steered by sound. Her crew trusted her steady voice.",
+    "keywords": [
+      {
+        "word": "fog",
+        "weight": 0.3
+      },
+      {
+        "word": "harbor",
+        "weight": 0.25
+      },
+      {
+        "word": "buoys",
+        "weight": 0.2
+      },
+      {
+        "word": "steered",
+        "weight": 0.15
+      },
+      {
+        "word": "crew",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g3-5",
+    "level": 3,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "At the museum, a guide showed us a tiny key beside a bronze crown. She explained that the key opened a hidden drawer in the throne. Everyone leaned closer to see the carving.",
+    "keywords": [
+      {
+        "word": "museum",
+        "weight": 0.3
+      },
+      {
+        "word": "key",
+        "weight": 0.25
+      },
+      {
+        "word": "crown",
+        "weight": 0.2
+      },
+      {
+        "word": "drawer",
+        "weight": 0.15
+      },
+      {
+        "word": "carving",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g3-6",
+    "level": 3,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "When the bridge flooded, the mayor asked volunteers to carry sandbags. Neighbors formed a line from the truck to the riverbank. By midnight, the water finally stopped rising.",
+    "keywords": [
+      {
+        "word": "bridge",
+        "weight": 0.3
+      },
+      {
+        "word": "flooded",
+        "weight": 0.25
+      },
+      {
+        "word": "sandbags",
+        "weight": 0.2
+      },
+      {
+        "word": "neighbors",
+        "weight": 0.15
+      },
+      {
+        "word": "riverbank",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g3-7",
+    "level": 3,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Luca entered the spelling bee with shaking hands. He missed one word in round two but stayed focused. In the final round, he spelled horizon correctly and smiled.",
+    "keywords": [
+      {
+        "word": "spelling",
+        "weight": 0.3
+      },
+      {
+        "word": "shaking",
+        "weight": 0.25
+      },
+      {
+        "word": "focused",
+        "weight": 0.2
+      },
+      {
+        "word": "final",
+        "weight": 0.15
+      },
+      {
+        "word": "horizon",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g3-8",
+    "level": 3,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The old mill creaked each time the wind turned its blades. Inside, flour dust floated in pale sunlight. Tessa imagined the workers who once sang there.",
+    "keywords": [
+      {
+        "word": "mill",
+        "weight": 0.3
+      },
+      {
+        "word": "wind",
+        "weight": 0.25
+      },
+      {
+        "word": "blades",
+        "weight": 0.2
+      },
+      {
+        "word": "flour",
+        "weight": 0.15
+      },
+      {
+        "word": "workers",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g3-9",
+    "level": 3,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "Our class performed a play about explorers crossing icy seas. My role was the navigator, so I studied maps and stars. On opening night, I spoke clearly and bowed.",
+    "keywords": [
+      {
+        "word": "play",
+        "weight": 0.3
+      },
+      {
+        "word": "explorers",
+        "weight": 0.25
+      },
+      {
+        "word": "navigator",
+        "weight": 0.2
+      },
+      {
+        "word": "maps",
+        "weight": 0.15
+      },
+      {
+        "word": "opening",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g3-10",
+    "level": 3,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "At the campsite, we heard branches snap beyond the firelight. The ranger checked the tracks and said a deer had passed through. We zipped our tents and slept.",
+    "keywords": [
+      {
+        "word": "campsite",
+        "weight": 0.3
+      },
+      {
+        "word": "branches",
+        "weight": 0.25
+      },
+      {
+        "word": "ranger",
+        "weight": 0.2
+      },
+      {
+        "word": "tracks",
+        "weight": 0.15
+      },
+      {
+        "word": "tents",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g4-1",
+    "level": 4,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "By the end of the chapter, the apprentice had learned that silence can hide danger as well as peace. She crossed the ruined courtyard, counting each cracked stone to calm herself. At the far gate, a rusted emblem matched the symbol in her mentor's letter.",
+    "keywords": [
+      {
+        "word": "apprentice",
+        "weight": 0.3
+      },
+      {
+        "word": "courtyard",
+        "weight": 0.25
+      },
+      {
+        "word": "cracked",
+        "weight": 0.2
+      },
+      {
+        "word": "emblem",
+        "weight": 0.15
+      },
+      {
+        "word": "mentor",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g4-2",
+    "level": 4,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The narrator describes the city as a maze of bridges and chimneys wrapped in morning smoke. Although the market appears lively, every merchant watches the clock tower nervously. Rumors of a missing inventor spread through the crowd.",
+    "keywords": [
+      {
+        "word": "narrator",
+        "weight": 0.3
+      },
+      {
+        "word": "maze",
+        "weight": 0.25
+      },
+      {
+        "word": "chimneys",
+        "weight": 0.2
+      },
+      {
+        "word": "clock",
+        "weight": 0.15
+      },
+      {
+        "word": "inventor",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g4-3",
+    "level": 4,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "During the expedition, the team followed compass bearings through marsh grass taller than their shoulders. Their supplies grew lighter each day, but their determination grew stronger. At dusk, they reached the observatory marked on the survey map.",
+    "keywords": [
+      {
+        "word": "expedition",
+        "weight": 0.3
+      },
+      {
+        "word": "compass",
+        "weight": 0.25
+      },
+      {
+        "word": "marsh",
+        "weight": 0.2
+      },
+      {
+        "word": "determination",
+        "weight": 0.15
+      },
+      {
+        "word": "observatory",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g4-4",
+    "level": 4,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "When the orchestra lost power in the middle of rehearsal, the conductor refused to cancel. She moved the musicians near the windows and continued by daylight. The final movement sounded raw but powerful.",
+    "keywords": [
+      {
+        "word": "orchestra",
+        "weight": 0.3
+      },
+      {
+        "word": "conductor",
+        "weight": 0.25
+      },
+      {
+        "word": "musicians",
+        "weight": 0.2
+      },
+      {
+        "word": "daylight",
+        "weight": 0.15
+      },
+      {
+        "word": "movement",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g4-5",
+    "level": 4,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "In her diary entry, Naya admits she feared speaking at the council meeting. Yet when she described the polluted river, the room became still. Her evidence forced the council to fund cleanup crews.",
+    "keywords": [
+      {
+        "word": "diary",
+        "weight": 0.3
+      },
+      {
+        "word": "council",
+        "weight": 0.25
+      },
+      {
+        "word": "polluted",
+        "weight": 0.2
+      },
+      {
+        "word": "evidence",
+        "weight": 0.15
+      },
+      {
+        "word": "cleanup",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g4-6",
+    "level": 4,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The train climbed into the mountains as rain tapped against the glass. Passengers traded stories while the engineer monitored the brakes. Near the summit, lightning flashed across the ridgeline.",
+    "keywords": [
+      {
+        "word": "train",
+        "weight": 0.3
+      },
+      {
+        "word": "mountains",
+        "weight": 0.25
+      },
+      {
+        "word": "engineer",
+        "weight": 0.2
+      },
+      {
+        "word": "brakes",
+        "weight": 0.15
+      },
+      {
+        "word": "summit",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g4-7",
+    "level": 4,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "An ancient mural covered the temple wall in faded blues and golds. Professor Han traced the painted constellations and found a missing segment. That gap pointed toward a chamber beneath the altar.",
+    "keywords": [
+      {
+        "word": "mural",
+        "weight": 0.3
+      },
+      {
+        "word": "temple",
+        "weight": 0.25
+      },
+      {
+        "word": "constellations",
+        "weight": 0.2
+      },
+      {
+        "word": "segment",
+        "weight": 0.15
+      },
+      {
+        "word": "chamber",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g4-8",
+    "level": 4,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "At trial practice, the debate team split into prosecution and defense. Ava organized witness notes while Jonah prepared opening claims. Their coach praised the way they supported each argument with facts.",
+    "keywords": [
+      {
+        "word": "debate",
+        "weight": 0.3
+      },
+      {
+        "word": "prosecution",
+        "weight": 0.25
+      },
+      {
+        "word": "defense",
+        "weight": 0.2
+      },
+      {
+        "word": "claims",
+        "weight": 0.15
+      },
+      {
+        "word": "facts",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g4-9",
+    "level": 4,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The lighthouse keeper recorded wind speed, tide height, and visibility every hour. One night the foghorn failed, so she lit emergency flares from the tower balcony. The fishing fleet reached shore without collision.",
+    "keywords": [
+      {
+        "word": "keeper",
+        "weight": 0.3
+      },
+      {
+        "word": "tide",
+        "weight": 0.25
+      },
+      {
+        "word": "visibility",
+        "weight": 0.2
+      },
+      {
+        "word": "foghorn",
+        "weight": 0.15
+      },
+      {
+        "word": "flares",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g4-10",
+    "level": 4,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "After weeks of drought, the valley received a slow, steady rain. Farmers reopened irrigation channels that had turned to dust. By morning, seedlings stood upright across the terraces.",
+    "keywords": [
+      {
+        "word": "drought",
+        "weight": 0.3
+      },
+      {
+        "word": "valley",
+        "weight": 0.25
+      },
+      {
+        "word": "irrigation",
+        "weight": 0.2
+      },
+      {
+        "word": "seedlings",
+        "weight": 0.15
+      },
+      {
+        "word": "terraces",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g5-1",
+    "level": 5,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The novel's narrator reflects on how ambition can blur the line between courage and recklessness. As the crew prepared the airship for launch, each checklist item exposed a new risk they had ignored. Even so, the captain signed the manifest and ordered departure.",
+    "keywords": [
+      {
+        "word": "narrator",
+        "weight": 0.3
+      },
+      {
+        "word": "ambition",
+        "weight": 0.25
+      },
+      {
+        "word": "recklessness",
+        "weight": 0.2
+      },
+      {
+        "word": "checklist",
+        "weight": 0.15
+      },
+      {
+        "word": "manifest",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g5-2",
+    "level": 5,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "In the courtroom scene, testimony from a quiet witness shifts the entire case. Her timeline contradicts the official report and reveals who tampered with the evidence. The judge pauses before allowing cross-examination.",
+    "keywords": [
+      {
+        "word": "courtroom",
+        "weight": 0.3
+      },
+      {
+        "word": "testimony",
+        "weight": 0.25
+      },
+      {
+        "word": "timeline",
+        "weight": 0.2
+      },
+      {
+        "word": "evidence",
+        "weight": 0.15
+      },
+      {
+        "word": "cross-examination",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g5-3",
+    "level": 5,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "By chapter twelve, the settlement faces a moral dilemma over scarce water rights. The council can favor wealthy landowners or protect small farms downstream. Their decision will reshape alliances for years.",
+    "keywords": [
+      {
+        "word": "dilemma",
+        "weight": 0.3
+      },
+      {
+        "word": "scarce",
+        "weight": 0.25
+      },
+      {
+        "word": "council",
+        "weight": 0.2
+      },
+      {
+        "word": "landowners",
+        "weight": 0.15
+      },
+      {
+        "word": "alliances",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g5-4",
+    "level": 5,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The historian describes the fortress as both shelter and prison, depending on who held the keys. Beneath its towers, scribes copied treaties by candlelight while soldiers guarded the gates. Every corridor carried the echo of political fear.",
+    "keywords": [
+      {
+        "word": "historian",
+        "weight": 0.3
+      },
+      {
+        "word": "fortress",
+        "weight": 0.25
+      },
+      {
+        "word": "scribes",
+        "weight": 0.2
+      },
+      {
+        "word": "treaties",
+        "weight": 0.15
+      },
+      {
+        "word": "political",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g5-5",
+    "level": 5,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "During the expedition log, the scientist notes that instrument errors increased as temperature dropped. Instead of abandoning the mission, the team recalibrated each sensor and repeated the measurements. Their persistence produced reliable data before the storm returned.",
+    "keywords": [
+      {
+        "word": "expedition",
+        "weight": 0.3
+      },
+      {
+        "word": "instrument",
+        "weight": 0.25
+      },
+      {
+        "word": "recalibrated",
+        "weight": 0.2
+      },
+      {
+        "word": "measurements",
+        "weight": 0.15
+      },
+      {
+        "word": "persistence",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g5-6",
+    "level": 5,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The memoir passage recalls a crowded train station during wartime evacuation. Families clutched suitcases, names were shouted over whistles, and schedules changed without warning. In the confusion, the author learned to make decisions quickly.",
+    "keywords": [
+      {
+        "word": "memoir",
+        "weight": 0.3
+      },
+      {
+        "word": "evacuation",
+        "weight": 0.25
+      },
+      {
+        "word": "suitcases",
+        "weight": 0.2
+      },
+      {
+        "word": "schedules",
+        "weight": 0.15
+      },
+      {
+        "word": "confusion",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g5-7",
+    "level": 5,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "At rehearsal, the lead actor revised his monologue after noticing the audience's silence. He trimmed dramatic pauses and clarified the character's motive. On opening night, the speech finally connected.",
+    "keywords": [
+      {
+        "word": "rehearsal",
+        "weight": 0.3
+      },
+      {
+        "word": "monologue",
+        "weight": 0.25
+      },
+      {
+        "word": "audience",
+        "weight": 0.2
+      },
+      {
+        "word": "motive",
+        "weight": 0.15
+      },
+      {
+        "word": "connected",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g5-8",
+    "level": 5,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The economics chapter explains how a port city recovered after a trade embargo. Local workshops adapted by producing tools once imported from abroad. Over time, innovation replaced dependency.",
+    "keywords": [
+      {
+        "word": "economics",
+        "weight": 0.3
+      },
+      {
+        "word": "embargo",
+        "weight": 0.25
+      },
+      {
+        "word": "workshops",
+        "weight": 0.2
+      },
+      {
+        "word": "imported",
+        "weight": 0.15
+      },
+      {
+        "word": "innovation",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g5-9",
+    "level": 5,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "In the final letter, the explorer admits that maps cannot capture every danger. Hidden currents, shifting ice, and human fatigue altered each plan. What mattered most was the crew's trust in one another.",
+    "keywords": [
+      {
+        "word": "explorer",
+        "weight": 0.3
+      },
+      {
+        "word": "currents",
+        "weight": 0.25
+      },
+      {
+        "word": "shifting",
+        "weight": 0.2
+      },
+      {
+        "word": "fatigue",
+        "weight": 0.15
+      },
+      {
+        "word": "trust",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g5-10",
+    "level": 5,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "A storm surge struck just before dawn, flooding the lower district. Emergency crews coordinated boats, medical tents, and supply routes from the stadium. By evening, volunteers had restored power to three neighborhoods.",
+    "keywords": [
+      {
+        "word": "surge",
+        "weight": 0.3
+      },
+      {
+        "word": "flooding",
+        "weight": 0.25
+      },
+      {
+        "word": "emergency",
+        "weight": 0.2
+      },
+      {
+        "word": "supply",
+        "weight": 0.15
+      },
+      {
+        "word": "volunteers",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g6-1",
+    "level": 6,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The chapter frames leadership as a burden measured not by authority but by accountability. When the bridge project failed its first stress test, the director published the data instead of hiding it. That transparency restored public trust, even while delays increased costs.",
+    "keywords": [
+      {
+        "word": "leadership",
+        "weight": 0.3
+      },
+      {
+        "word": "accountability",
+        "weight": 0.25
+      },
+      {
+        "word": "stress",
+        "weight": 0.2
+      },
+      {
+        "word": "transparency",
+        "weight": 0.15
+      },
+      {
+        "word": "trust",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g6-2",
+    "level": 6,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "In the dystopian excerpt, surveillance drones hover above ration lines while officials promise stability. The protagonist recognizes that language has been engineered to soften injustice. She begins collecting banned pamphlets as evidence of resistance.",
+    "keywords": [
+      {
+        "word": "surveillance",
+        "weight": 0.3
+      },
+      {
+        "word": "ration",
+        "weight": 0.25
+      },
+      {
+        "word": "engineered",
+        "weight": 0.2
+      },
+      {
+        "word": "injustice",
+        "weight": 0.15
+      },
+      {
+        "word": "resistance",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g6-3",
+    "level": 6,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The historian argues that revolutions rarely begin with a single speech. They grow from years of unequal policy, suppressed journalism, and economic strain. By the time protests fill the square, institutions are already fragile.",
+    "keywords": [
+      {
+        "word": "revolutions",
+        "weight": 0.3
+      },
+      {
+        "word": "unequal",
+        "weight": 0.25
+      },
+      {
+        "word": "suppressed",
+        "weight": 0.2
+      },
+      {
+        "word": "protests",
+        "weight": 0.15
+      },
+      {
+        "word": "institutions",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g6-4",
+    "level": 6,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "During the ethics seminar, students debated whether scientific progress justifies risky experimentation. One group defended innovation, while another emphasized consent and long-term harm. Their instructor required each claim to be supported with primary sources.",
+    "keywords": [
+      {
+        "word": "ethics",
+        "weight": 0.3
+      },
+      {
+        "word": "progress",
+        "weight": 0.25
+      },
+      {
+        "word": "experimentation",
+        "weight": 0.2
+      },
+      {
+        "word": "consent",
+        "weight": 0.15
+      },
+      {
+        "word": "primary",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g6-5",
+    "level": 6,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "A coastal city launched a climate adaptation plan after repeated tidal flooding. Engineers elevated transit lines, restored wetlands, and redesigned drainage corridors. The report concludes that resilience depends on both infrastructure and community planning.",
+    "keywords": [
+      {
+        "word": "adaptation",
+        "weight": 0.3
+      },
+      {
+        "word": "tidal",
+        "weight": 0.25
+      },
+      {
+        "word": "wetlands",
+        "weight": 0.2
+      },
+      {
+        "word": "resilience",
+        "weight": 0.15
+      },
+      {
+        "word": "infrastructure",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g6-6",
+    "level": 6,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The memoir excerpt contrasts memory with documented fact. The author recalls a heroic rescue, yet archived interviews reveal confusion and contradiction. This tension forces readers to question how narratives are constructed.",
+    "keywords": [
+      {
+        "word": "memoir",
+        "weight": 0.3
+      },
+      {
+        "word": "documented",
+        "weight": 0.25
+      },
+      {
+        "word": "archived",
+        "weight": 0.2
+      },
+      {
+        "word": "contradiction",
+        "weight": 0.15
+      },
+      {
+        "word": "narratives",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g6-7",
+    "level": 6,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "In the legal thriller, a procedural error threatens months of investigative work. Although prosecutors possess strong evidence, the court may exclude it under constitutional protections. The case now depends on a narrower argument.",
+    "keywords": [
+      {
+        "word": "procedural",
+        "weight": 0.3
+      },
+      {
+        "word": "investigative",
+        "weight": 0.25
+      },
+      {
+        "word": "exclude",
+        "weight": 0.2
+      },
+      {
+        "word": "constitutional",
+        "weight": 0.15
+      },
+      {
+        "word": "argument",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g6-8",
+    "level": 6,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The spacecraft log records a communications blackout during orbital insertion. Mission control relied on delayed telemetry to infer engine performance and fuel burn. Those uncertain minutes defined the success of the entire launch window.",
+    "keywords": [
+      {
+        "word": "blackout",
+        "weight": 0.3
+      },
+      {
+        "word": "orbital",
+        "weight": 0.25
+      },
+      {
+        "word": "telemetry",
+        "weight": 0.2
+      },
+      {
+        "word": "engine",
+        "weight": 0.15
+      },
+      {
+        "word": "window",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g6-9",
+    "level": 6,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "An editorial on artificial intelligence warns against confusing efficiency with wisdom. Automated systems can optimize routes and budgets, but they cannot define justice for a society. The writer calls for oversight that includes citizens, not only experts.",
+    "keywords": [
+      {
+        "word": "editorial",
+        "weight": 0.3
+      },
+      {
+        "word": "efficiency",
+        "weight": 0.25
+      },
+      {
+        "word": "automated",
+        "weight": 0.2
+      },
+      {
+        "word": "justice",
+        "weight": 0.15
+      },
+      {
+        "word": "oversight",
+        "weight": 0.1
+      }
+    ]
+  },
+  {
+    "id": "keyword-g6-10",
+    "level": 6,
+    "text": "Read the excerpt and click the five most important words.",
+    "passage": "The final scene resolves the conflict through negotiation rather than victory. Former rivals draft a treaty that protects borders, trade access, and cultural rights. The narrator suggests that compromise, though imperfect, can prevent another generation of war.",
+    "keywords": [
+      {
+        "word": "negotiation",
+        "weight": 0.3
+      },
+      {
+        "word": "treaty",
+        "weight": 0.25
+      },
+      {
+        "word": "borders",
+        "weight": 0.2
+      },
+      {
+        "word": "cultural",
+        "weight": 0.15
+      },
+      {
+        "word": "compromise",
+        "weight": 0.1
+      }
+    ]
+  }
+]

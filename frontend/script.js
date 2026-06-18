@@ -2,7 +2,8 @@ let allQuestionsByType = {
   'multiple-choice': [],
   'sentence-completion': [],
   'vocabulary-in-context': [],
-  'image-description': []
+  'image-description': [],
+  'keyword-highlight': []
 };
 let currentQuestion = null;
 let currentQuestionType = null;
@@ -16,13 +17,16 @@ let selected = null;
 let answered = false;
 let usedQuestionIds = new Set();
 let usedQuestionTypes = new Set();
+let selectedPassageWords = new Set();
+const maxPassageSelections = 5;
 const questionCount = 10;
-const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context', 'image-description'];
+const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context', 'image-description', 'keyword-highlight'];
 const questionSources = {
   'multiple-choice': { file: 'multiple-choice-questions.csv', format: 'csv' },
   'sentence-completion': { file: 'sentence-completion-questions.csv', format: 'csv' },
   'vocabulary-in-context': { file: 'vocabulary-in-context-questions.csv', format: 'csv' },
-  'image-description': { file: 'image-description-questions.json', format: 'json' }
+  'image-description': { file: 'image-description-questions.json', format: 'json' },
+  'keyword-highlight': { file: 'keyword-highlight-questions.json', format: 'json' }
 };
 
 function parseCSV(text) {
@@ -123,6 +127,125 @@ function buildImageDescriptionQuestions(records) {
   });
 }
 
+function normalizeWord(value) {
+  return value
+    .toLowerCase()
+    .replace(/^[^a-z0-9']+|[^a-z0-9']+$/g, "")
+    .replace(/'s$/, "");
+}
+
+function updateSelectionStatus(message = "") {
+  const selectedCount = selectedPassageWords.size;
+  const baseMessage = `Select up to ${maxPassageSelections} words (${selectedCount}/${maxPassageSelections} selected).`;
+  const finalMessage = message ? `${baseMessage} ${message}` : baseMessage;
+
+  selectionStatusEl.textContent = finalMessage;
+  selectionStatusEl.classList.remove("hidden");
+  selectionStatusEl.classList.toggle("limit-reached", selectedCount >= maxPassageSelections);
+}
+
+function updatePassageWordStyles() {
+  choicesEl.querySelectorAll(".passage-word").forEach(button => {
+    const token = button.dataset.normalized;
+    button.classList.toggle("selected", selectedPassageWords.has(token));
+    button.setAttribute("aria-pressed", String(selectedPassageWords.has(token)));
+  });
+}
+
+function togglePassageWordSelection(token) {
+  if (!token || answered) {
+    return;
+  }
+
+  if (selectedPassageWords.has(token)) {
+    selectedPassageWords.delete(token);
+    updateSelectionStatus();
+    updatePassageWordStyles();
+    return;
+  }
+
+  if (selectedPassageWords.size >= maxPassageSelections) {
+    updateSelectionStatus("You have reached the limit. Deselect one word to choose another.");
+    return;
+  }
+
+  selectedPassageWords.add(token);
+  updateSelectionStatus();
+  updatePassageWordStyles();
+}
+
+function scoreKeywordSelections(question) {
+  const selectedWords = Array.from(selectedPassageWords);
+  const keywordEntries = question.keywords || [];
+  const totalWeight = keywordEntries.reduce((sum, keyword) => sum + Number(keyword.weight || 0), 0) || 1;
+
+  let matchedWeight = 0;
+  let matchedCount = 0;
+
+  keywordEntries.forEach(keyword => {
+    const targets = [keyword.word, ...(keyword.aliases || [])]
+      .map(normalizeWord)
+      .filter(Boolean);
+    const isMatched = selectedWords.some(word => targets.includes(normalizeWord(word)));
+
+    if (isMatched) {
+      matchedWeight += Number(keyword.weight || 0);
+      matchedCount += 1;
+    }
+  });
+
+  const weightedRecall = Math.min(1, matchedWeight / totalWeight);
+  const precision = selectedWords.length > 0 ? matchedCount / selectedWords.length : 0;
+  const weightedScore = Math.min(1, weightedRecall * 0.85 + precision * 0.15);
+
+  return {
+    weightedScore,
+    matchedCount,
+    selectedCount: selectedWords.length,
+    weightedRecall
+  };
+}
+
+function renderKeywordHighlightQuestion(question) {
+  selectedPassageWords = new Set();
+  selectionStatusEl.classList.remove("hidden");
+  updateSelectionStatus();
+
+  const legend = document.createElement("legend");
+  legend.className = "sr-only";
+  legend.textContent = "Select up to five important words from the passage";
+  choicesEl.appendChild(legend);
+
+  const paragraph = document.createElement("p");
+  paragraph.className = "passage-text";
+
+  const tokens = question.passage.split(/(\s+)/);
+  tokens.forEach(token => {
+    if (/^\s+$/.test(token)) {
+      paragraph.appendChild(document.createTextNode(token));
+      return;
+    }
+
+    const normalized = normalizeWord(token);
+    if (!normalized) {
+      paragraph.appendChild(document.createTextNode(token));
+      return;
+    }
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "passage-word";
+    button.dataset.normalized = normalized;
+    button.textContent = token;
+    button.setAttribute("aria-label", `Select word ${token}`);
+    button.setAttribute("aria-pressed", "false");
+    button.onclick = () => togglePassageWordSelection(normalized);
+    paragraph.appendChild(button);
+  });
+
+  choicesEl.appendChild(paragraph);
+}
+
 function loadAllQuestions() {
   const loadPromises = questionTypes.map(type => {
     const source = questionSources[type];
@@ -142,8 +265,19 @@ function loadAllQuestions() {
         return response[loader]();
       })
       .then(data => {
-        if (source.format === 'json') {
+        if (type === 'image-description') {
           allQuestionsByType[type] = buildImageDescriptionQuestions(data);
+          return;
+        }
+
+        if (type === 'keyword-highlight') {
+          allQuestionsByType[type] = data.map((entry, index) => ({
+            ...entry,
+            id: entry.id || `${type}-${index}`,
+            type: type,
+            text: entry.text || 'Read the passage and select the five most important words.',
+            level: Number(entry.level)
+          }));
           return;
         }
 
@@ -177,6 +311,7 @@ function startNewQuiz() {
   totalQuestionLevels = 0;
   selected = null;
   answered = false;
+  selectedPassageWords = new Set();
   usedQuestionIds = new Set();
   usedQuestionTypes = new Set();
   resultEl.classList.add("hidden");
@@ -230,6 +365,7 @@ const progressLabelEl = document.getElementById("progressLabel");
 const progressTypeEl = document.getElementById("progressType");
 const progressBarEl = document.getElementById("progressBar");
 const questionMediaEl = document.getElementById("questionMedia");
+const selectionStatusEl = document.getElementById("selectionStatus");
 const choicesEl = document.getElementById("choices");
 const nextBtn = document.getElementById("nextBtn");
 const restartBtn = document.getElementById("restartBtn");
@@ -243,6 +379,8 @@ function loadQuestion() {
   feedbackEl.textContent = "";
   nextBtn.textContent = "Submit Answer";
   nextBtn.disabled = false;
+  selectionStatusEl.classList.add("hidden");
+  selectionStatusEl.classList.remove("limit-reached");
 
   const q = currentQuestion;
   progressLabelEl.textContent = `Question ${questionsAsked} of ${questionCount}`;
@@ -266,6 +404,16 @@ function loadQuestion() {
   questionEl.classList.remove("hidden");
   resultEl.classList.add("hidden");
   nextBtn.classList.remove("hidden");
+
+  if (q.type === 'keyword-highlight') {
+    choicesEl.innerHTML = "";
+    renderKeywordHighlightQuestion(q);
+    const firstWordButton = choicesEl.querySelector(".passage-word");
+    if (firstWordButton) {
+      firstWordButton.focus();
+    }
+    return;
+  }
 
   q.choices.forEach((choice, index) => {
     const radioId = `choice-${index}`;
@@ -306,6 +454,7 @@ function loadQuestion() {
 
 function showFeedback(isCorrect) {
   feedbackEl.classList.remove("hidden");
+  selectionStatusEl.classList.add("hidden");
   const correctText = currentQuestion.choices[currentQuestion.answer];
 
   if (isCorrect) {
@@ -315,11 +464,21 @@ function showFeedback(isCorrect) {
   }
 }
 
+function showKeywordFeedback(result, isCorrect) {
+  feedbackEl.classList.remove("hidden");
+  selectionStatusEl.classList.add("hidden");
+
+  const percent = Math.round(result.weightedScore * 100);
+  const responseTone = isCorrect ? "Strong work." : "Good effort.";
+  feedbackEl.textContent = `${responseTone} You matched ${result.matchedCount} important words and earned ${percent}% credit on this question. Press Continue to move on.`;
+}
+
 function showResult() {
   questionEl.classList.add("hidden");
   choicesEl.classList.add("hidden");
   nextBtn.classList.add("hidden");
   feedbackEl.classList.add("hidden");
+  selectionStatusEl.classList.add("hidden");
   progressLabelEl.textContent = "Quiz complete";
   progressTypeEl.textContent = "";
   progressBarEl.style.width = "100%";
@@ -370,6 +529,47 @@ function showResult() {
 }
 
 nextBtn.onclick = () => {
+  if (currentQuestion.type === 'keyword-highlight') {
+    if (!answered && selectedPassageWords.size === 0) {
+      feedbackEl.classList.remove("hidden");
+      feedbackEl.textContent = "Select at least one word before continuing.";
+      feedbackEl.setAttribute("role", "alert");
+      return;
+    }
+
+    if (!answered) {
+      answered = true;
+      const result = scoreKeywordSelections(currentQuestion);
+      const isCorrect = result.weightedScore >= 0.6;
+
+      score += currentQuestion.level * result.weightedScore;
+
+      if (isCorrect) {
+        correctCount += 1;
+        highestCorrectLevel = Math.max(highestCorrectLevel, currentLevel);
+        if (currentLevel < 6) {
+          currentLevel += 1;
+        }
+      } else if (result.weightedScore < 0.35 && currentLevel > 1) {
+        currentLevel -= 1;
+      }
+
+      showKeywordFeedback(result, isCorrect);
+      nextBtn.textContent = questionsAsked < questionCount ? "Continue" : "See Score";
+      choicesEl.querySelectorAll(".passage-word").forEach(button => {
+        button.disabled = true;
+      });
+      return;
+    }
+
+    if (questionsAsked < questionCount) {
+      pickNextQuestion();
+    } else {
+      showResult();
+    }
+    return;
+  }
+
   const selectedInput = document.querySelector('input[name="answer"]:checked');
   if (!selectedInput) {
     feedbackEl.classList.remove("hidden");
