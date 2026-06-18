@@ -4,7 +4,8 @@ let allQuestionsByType = {
   'vocabulary-in-context': [],
   'image-description': [],
   'keyword-highlight': [],
-  'image-select': []
+  'image-select': [],
+  'character-emotion': []
 };
 let currentQuestion = null;
 let currentQuestionType = null;
@@ -21,14 +22,15 @@ let usedQuestionTypes = new Set();
 let selectedPassageWords = new Set();
 const maxPassageSelections = 5;
 const questionCount = 10;
-const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context', 'image-description', 'keyword-highlight', 'image-select'];
+const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context', 'image-description', 'keyword-highlight', 'image-select', 'character-emotion'];
 const questionSources = {
   'multiple-choice': { file: 'multiple-choice-questions.csv', format: 'csv' },
   'sentence-completion': { file: 'sentence-completion-questions.csv', format: 'csv' },
   'vocabulary-in-context': { file: 'vocabulary-in-context-questions.csv', format: 'csv' },
   'image-description': { file: 'image-description-questions.json', format: 'json' },
   'keyword-highlight': { file: 'keyword-highlight-questions.json', format: 'json' },
-  'image-select': { file: 'image-select-questions.json', format: 'json' }
+  'image-select': { file: 'image-select-questions.json', format: 'json' },
+  'character-emotion': { file: 'character-emotion-questions.json', format: 'json' }
 };
 
 function parseCSV(text) {
@@ -226,6 +228,45 @@ function renderImageSelectQuestion(question) {
   choicesEl.appendChild(imageGrid);
 }
 
+function buildEmotionChoiceText(emotion) {
+  const emoji = emotion.emoji || '';
+  const label = emotion.label || 'Unknown Emotion';
+  const description = emotion.description || '';
+
+  if (description) {
+    return `${emoji} ${label} - ${description}`.trim();
+  }
+
+  return `${emoji} ${label}`.trim();
+}
+
+function buildCharacterEmotionQuestions(records) {
+  return records.map((record, index) => {
+    const passage = record.passage || record.description || '';
+    const question = record.question || 'How is the character feeling?';
+    const choices = shuffle([
+      {
+        text: buildEmotionChoiceText(record.correct_emotion || {}),
+        isCorrect: true
+      },
+      ...((record.distractor_emotions || []).map(emotion => ({
+        text: buildEmotionChoiceText(emotion),
+        isCorrect: false
+      })))
+    ]);
+
+    return {
+      id: record.id || `character-emotion-${index}`,
+      type: 'character-emotion',
+      text: question,
+      promptDetail: passage,
+      choices: choices.map(choice => choice.text),
+      answer: choices.findIndex(choice => choice.isCorrect),
+      level: Number(record.grade_level)
+    };
+  });
+}
+
 function normalizeWord(value) {
   return value
     .toLowerCase()
@@ -385,6 +426,11 @@ function loadAllQuestions() {
           return;
         }
 
+        if (type === 'character-emotion') {
+          allQuestionsByType[type] = buildCharacterEmotionQuestions(data);
+          return;
+        }
+
         allQuestionsByType[type] = parseCSV(data).map((row, index) => ({
           id: `${type}-${index}`,
           type: type,
@@ -491,20 +537,22 @@ function loadQuestion() {
   progressTypeEl.textContent = currentQuestionType.replace(/-/g, ' ');
   progressBarEl.style.width = `${Math.round((questionsAsked / questionCount) * 100)}%`;
   progressBarEl.setAttribute("aria-valuenow", Math.round((questionsAsked / questionCount) * 100));
-  if (q.type === 'image-select' && q.promptDetail) {
+  if ((q.type === 'image-select' || q.type === 'character-emotion') && q.promptDetail) {
     questionEl.innerHTML = '';
+
+    const promptDetail = document.createElement('span');
+    promptDetail.textContent = q.promptDetail;
+
+    const firstLineBreak = document.createElement('br');
+    const secondLineBreak = document.createElement('br');
 
     const directions = document.createElement('span');
     directions.textContent = q.text;
 
-    const lineBreak = document.createElement('br');
-
-    const detail = document.createElement('span');
-    detail.textContent = q.promptDetail;
-
+    questionEl.appendChild(promptDetail);
+    questionEl.appendChild(firstLineBreak);
+    questionEl.appendChild(secondLineBreak);
     questionEl.appendChild(directions);
-    questionEl.appendChild(lineBreak);
-    questionEl.appendChild(detail);
   } else {
     questionEl.textContent = q.text;
   }

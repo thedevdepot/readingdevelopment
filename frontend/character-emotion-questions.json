@@ -1,0 +1,134 @@
+[
+  {
+    "grade_level": 1,
+    "passage": "Ben dropped his ice cream cone on the sidewalk and began to cry.",
+    "question": "How is Ben feeling?",
+    "correct_emotion": {
+      "emoji": "😢",
+      "label": "Sadness",
+      "description": "Feeling down, unhappy, or lonely."
+    },
+    "distractor_emotions": [
+      {
+        "emoji": "😄",
+        "label": "Happiness",
+        "description": "Feeling joyful, glad, or full of positive energy."
+      },
+      {
+        "emoji": "😡",
+        "label": "Anger",
+        "description": "Feeling deeply annoyed, mad, or frustrated."
+      }
+    ]
+  },
+  {
+    "grade_level": 2,
+    "passage": "The lightning crashed loudly outside, and Lily hid far under her heavy blankets so nothing could see her.",
+    "question": "How is Lily feeling?",
+    "correct_emotion": {
+      "emoji": "😨",
+      "label": "Fear",
+      "description": "Feeling scared, startled, or unsafe."
+    },
+    "distractor_emotions": [
+      {
+        "emoji": "😎",
+        "label": "Pride",
+        "description": "Feeling highly satisfied and confident in yourself."
+      },
+      {
+        "emoji": "😳",
+        "label": "Embarrassment",
+        "description": "Feeling self-conscious after a public mistake."
+      }
+    ]
+  },
+  {
+    "grade_level": 3,
+    "passage": "As the teacher announced that Sarah had won the spelling bee, she stood up straight with a massive smile, eager to hold up her shiny gold trophy.",
+    "question": "How is Sarah feeling?",
+    "correct_emotion": {
+      "emoji": "😎",
+      "label": "Pride",
+      "description": "Feeling highly satisfied and confident because of an achievement."
+    },
+    "distractor_emotions": [
+      {
+        "emoji": "😒",
+        "label": "Jealousy",
+        "description": "Feeling bitter because someone else has something you want."
+      },
+      {
+        "emoji": "😔",
+        "label": "Guilt",
+        "description": "Feeling deeply sorry because you did something wrong."
+      }
+    ]
+  },
+  {
+    "grade_level": 4,
+    "passage": "When Clara walked into the cafeteria, she accidentally tripped over a backpack, sending her entire tray sliding across the floor as the room went completely silent.",
+    "question": "Based on the passage, how is Clara most likely feeling?",
+    "correct_emotion": {
+      "emoji": "😳",
+      "label": "Embarrassment",
+      "description": "Feeling self-conscious or uncomfortable after an unexpected public mistake."
+    },
+    "distractor_emotions": [
+      {
+        "emoji": "😮‍💨",
+        "label": "Resignation",
+        "description": "Giving up hope and quietly accepting a bad situation."
+      },
+      {
+        "emoji": "😐",
+        "label": "Apathy",
+        "description": "Lacking interest, enthusiasm, or concern about your surroundings."
+      }
+    ]
+  },
+  {
+    "grade_level": 5,
+    "passage": "Sitting at his desk, Julian stared at the clock, his stomach twisting into tight knots. He kept tapping his pencil frantically, running through every single question that might appear on tomorrow's final exam over and over again until his hands began to sweat.",
+    "question": "Which emotion best describes Julian's state of mind?",
+    "correct_emotion": {
+      "emoji": "😰",
+      "label": "Anxiety",
+      "description": "Feeling intensely worried, uneasy, or fearful about what might happen in the future."
+    },
+    "distractor_emotions": [
+      {
+        "emoji": "😡",
+        "label": "Anger",
+        "description": "Feeling deeply annoyed, mad, or frustrated by an unfair situation."
+      },
+      {
+        "emoji": "🥹",
+        "label": "Empathy",
+        "description": "Understanding and deeply sharing the exact feelings of another person."
+      }
+    ]
+  },
+  {
+    "grade_level": 6,
+    "passage": "Elena watched from the doorway as her teammate struggled to pack her locker, tears streaming down her face after being cut from the varsity squad. Without a word, Elena walked over, sat down on the bench beside her, and gently placed a hand on her shoulder, feeling the heavy weight of her friend's heartbreak as if it were her own.",
+    "question": "Which nuanced emotional state is Elena demonstrating in this passage?",
+    "correct_emotion": {
+      "emoji": "🥹",
+      "label": "Empathy",
+      "description": "Understanding, absorbing, and deeply sharing the exact internal feelings of another person in their time of need."
+    },
+    "distractor_emotions": [
+      {
+        "emoji": "😮‍💨",
+        "label": "Resignation",
+        "description": "Giving up personal hope and quietly accepting a bad situation because it feels unchangeable."
+      },
+      {
+        "emoji": "😐",
+        "label": "Apathy",
+        "description": "Lacking any distinct interest, enthusiasm, or general concern about events occurring around you."
+      }
+    ]
+  }
+]
