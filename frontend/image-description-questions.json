@@ -4,20 +4,28 @@
     "alt": "A basketball and a water bottle rest on a sunny court",
     "correct": {
       "subject": "a basketball and a water bottle",
-      "detail": "on a sunny court"
+      "detail_1": "on a sunny court",
+      "detail_2": "on a sunny court with bright light",
+      "detail_3": "on a sunny court with bright light and sharp shadows"
     },
     "distractors": [
       {
         "subject": "a soccer ball and a lunch box",
-        "detail": "on the grass"
+        "detail_1": "on the grass",
+        "detail_2": "on the grass field",
+        "detail_3": "on the grass field with green blades"
       },
       {
         "subject": "a tennis racket and a glove",
-        "detail": "on a bench"
+        "detail_1": "on a bench",
+        "detail_2": "on a wooden bench",
+        "detail_3": "on a wooden bench in the shade"
       },
       {
         "subject": "a notebook and a pencil",
-        "detail": "on a desk"
+        "detail_1": "on a desk",
+        "detail_2": "on a desk indoors",
+        "detail_3": "on a desk indoors near a window"
       }
     ]
   },
@@ -26,20 +34,28 @@
     "alt": "A straw hat with a brush and jewelry on a beige background",
     "correct": {
       "subject": "a straw hat with a brush and jewelry",
-      "detail": "on a beige background"
+      "detail_1": "on a beige background",
+      "detail_2": "on a beige background with shine",
+      "detail_3": "on a beige background with soft shine and texture"
     },
     "distractors": [
       {
         "subject": "a frying pan and a spatula",
-        "detail": "in a kitchen"
+        "detail_1": "in a kitchen",
+        "detail_2": "in a kitchen on a counter",
+        "detail_3": "in a kitchen on a clean counter"
       },
       {
         "subject": "a backpack and a water bottle",
-        "detail": "on the floor"
+        "detail_1": "on the floor",
+        "detail_2": "on the floor inside",
+        "detail_3": "on the floor inside near a door"
       },
       {
         "subject": "a paint roller and tape",
-        "detail": "on a table"
+        "detail_1": "on a table",
+        "detail_2": "on a table ready to use",
+        "detail_3": "on a table ready to use for painting"
       }
     ]
   },
@@ -48,20 +64,28 @@
     "alt": "Carrots and beets with stems on a white surface",
     "correct": {
       "subject": "carrots and beets with stems",
-      "detail": "on a white surface"
+      "detail_1": "on a white surface",
+      "detail_2": "on a white surface with moisture",
+      "detail_3": "on a white surface with fresh moisture drops"
     },
     "distractors": [
       {
         "subject": "apples and pears",
-        "detail": "in a bowl"
+        "detail_1": "in a bowl",
+        "detail_2": "in a glass bowl",
+        "detail_3": "in a glass bowl on a counter"
       },
       {
         "subject": "flowers",
-        "detail": "in a vase"
+        "detail_1": "in a vase",
+        "detail_2": "in a tall vase",
+        "detail_3": "in a tall vase with water"
       },
       {
         "subject": "cookies",
-        "detail": "on a plate"
+        "detail_1": "on a plate",
+        "detail_2": "on a ceramic plate",
+        "detail_3": "on a ceramic plate ready to eat"
       }
     ]
   },
@@ -70,20 +94,28 @@
     "alt": "A cat wrapped like a burrito in a soft blanket",
     "correct": {
       "subject": "a cat wrapped like a burrito",
-      "detail": "in a soft blanket"
+      "detail_1": "in a soft blanket",
+      "detail_2": "in a soft blanket cozy",
+      "detail_3": "in a soft blanket cozy and warm"
     },
     "distractors": [
       {
         "subject": "a dog wrapped in a towel",
-        "detail": "on a couch"
+        "detail_1": "on a couch",
+        "detail_2": "on a soft couch",
+        "detail_3": "on a soft couch relaxing"
       },
       {
         "subject": "a baby wrapped in a blanket",
-        "detail": "in a crib"
+        "detail_1": "in a crib",
+        "detail_2": "in a wooden crib",
+        "detail_3": "in a wooden crib sleeping"
       },
       {
         "subject": "a pillow",
-        "detail": "on a couch"
+        "detail_1": "on a couch",
+        "detail_2": "on a comfortable couch",
+        "detail_3": "on a comfortable couch for resting"
       }
     ]
   },
@@ -92,20 +124,28 @@
     "alt": "Sailboats with bright sails on the ocean",
     "correct": {
       "subject": "sailboats with bright sails",
-      "detail": "on the ocean"
+      "detail_1": "on the ocean",
+      "detail_2": "on the ocean racing",
+      "detail_3": "on the ocean racing with wind"
     },
     "distractors": [
       {
         "subject": "kites",
-        "detail": "in the sky"
+        "detail_1": "in the sky",
+        "detail_2": "in the blue sky",
+        "detail_3": "in the blue sky flying high"
       },
       {
         "subject": "balloons",
-        "detail": "at a party"
+        "detail_1": "at a party",
+        "detail_2": "at a festive party",
+        "detail_3": "at a festive party celebration"
       },
       {
         "subject": "cars",
-        "detail": "on a road"
+        "detail_1": "on a road",
+        "detail_2": "on a busy road",
+        "detail_3": "on a busy road driving"
       }
     ]
   },
@@ -114,20 +154,28 @@
     "alt": "A Ferris wheel at an amusement park against a bright sky",
     "correct": {
       "subject": "a Ferris wheel at an amusement park",
-      "detail": "against a bright sky"
+      "detail_1": "against a bright sky",
+      "detail_2": "against a bright blue sky",
+      "detail_3": "against a bright blue sky full of light"
     },
     "distractors": [
       {
         "subject": "a windmill",
-        "detail": "in a field"
+        "detail_1": "in a field",
+        "detail_2": "in a green field",
+        "detail_3": "in a green field turning"
       },
       {
         "subject": "a lighthouse",
-        "detail": "by the sea"
+        "detail_1": "by the sea",
+        "detail_2": "by the calm sea",
+        "detail_3": "by the calm sea shining light"
       },
       {
         "subject": "a clock tower",
-        "detail": "downtown"
+        "detail_1": "downtown",
+        "detail_2": "downtown tall",
+        "detail_3": "downtown tall telling time"
       }
     ]
   },
@@ -136,20 +184,28 @@
     "alt": "Flowers growing around a pond in a calm garden",
     "correct": {
       "subject": "flowers growing around a pond",
-      "detail": "in a calm garden"
+      "detail_1": "in a calm garden",
+      "detail_2": "in a calm garden peaceful",
+      "detail_3": "in a calm garden peaceful and quiet"
     },
     "distractors": [
       {
         "subject": "trees",
-        "detail": "beside a sidewalk"
+        "detail_1": "beside a sidewalk",
+        "detail_2": "beside a paved sidewalk",
+        "detail_3": "beside a paved sidewalk downtown"
       },
       {
         "subject": "fish",
-        "detail": "in an aquarium"
+        "detail_1": "in an aquarium",
+        "detail_2": "in a glass aquarium",
+        "detail_3": "in a glass aquarium inside"
       },
       {
         "subject": "plants",
-        "detail": "in flower pots"
+        "detail_1": "in flower pots",
+        "detail_2": "in colorful flower pots",
+        "detail_3": "in colorful flower pots on shelves"
       }
     ]
   },
@@ -158,20 +214,28 @@
     "alt": "A cup of coffee with dark foam on a warm table",
     "correct": {
       "subject": "a cup of coffee with dark foam",
-      "detail": "on a warm table"
+      "detail_1": "on a warm table",
+      "detail_2": "on a warm wooden table",
+      "detail_3": "on a warm wooden table freshly brewed"
     },
     "distractors": [
       {
         "subject": "hot chocolate with marshmallows",
-        "detail": "on a tray"
+        "detail_1": "on a tray",
+        "detail_2": "on a wooden tray",
+        "detail_3": "on a wooden tray hot and steaming"
       },
       {
         "subject": "tea in a glass",
-        "detail": "on a counter"
+        "detail_1": "on a counter",
+        "detail_2": "on a kitchen counter",
+        "detail_3": "on a kitchen counter with steam rising"
       },
       {
         "subject": "water in a cup",
-        "detail": "on a desk"
+        "detail_1": "on a desk",
+        "detail_2": "on a white desk",
+        "detail_3": "on a white desk clear and cool"
       }
     ]
   },
@@ -180,20 +244,28 @@
     "alt": "A honeycomb pattern with repeating hexagons",
     "correct": {
       "subject": "a honeycomb pattern",
-      "detail": "with repeating hexagons"
+      "detail_1": "with repeating hexagons",
+      "detail_2": "with repeating hexagons golden",
+      "detail_3": "with repeating hexagons golden and precise"
     },
     "distractors": [
       {
         "subject": "a waffle",
-        "detail": "with syrup"
+        "detail_1": "with syrup",
+        "detail_2": "with sweet syrup",
+        "detail_3": "with sweet syrup dripping down"
       },
       {
         "subject": "a sponge",
-        "detail": "with holes"
+        "detail_1": "with holes",
+        "detail_2": "with small holes",
+        "detail_3": "with small holes for cleaning"
       },
       {
         "subject": "a brick wall",
-        "detail": "with neat rows"
+        "detail_1": "with neat rows",
+        "detail_2": "with neat rows of bricks",
+        "detail_3": "with neat rows of bricks stacked"
       }
     ]
   },
@@ -202,20 +274,28 @@
     "alt": "Jellyfish floating in water under soft light",
     "correct": {
       "subject": "jellyfish floating in water",
-      "detail": "under soft light"
+      "detail_1": "under soft light",
+      "detail_2": "under soft light glowing",
+      "detail_3": "under soft light glowing peacefully"
     },
     "distractors": [
       {
         "subject": "balloons",
-        "detail": "in the sky"
+        "detail_1": "in the sky",
+        "detail_2": "in the bright sky",
+        "detail_3": "in the bright sky floating"
       },
       {
         "subject": "umbrellas",
-        "detail": "in the rain"
+        "detail_1": "in the rain",
+        "detail_2": "in heavy rain",
+        "detail_3": "in heavy rain protecting"
       },
       {
         "subject": "mushrooms",
-        "detail": "in a forest"
+        "detail_1": "in a forest",
+        "detail_2": "in a damp forest",
+        "detail_3": "in a damp forest growing"
       }
     ]
   },
@@ -224,20 +304,28 @@
     "alt": "A friendly dog sitting outside in the sun",
     "correct": {
       "subject": "a friendly dog sitting outside",
-      "detail": "in the sun"
+      "detail_1": "in the sun",
+      "detail_2": "in the bright sun",
+      "detail_3": "in the bright sun happy"
     },
     "distractors": [
       {
         "subject": "a cat",
-        "detail": "on a porch"
+        "detail_1": "on a porch",
+        "detail_2": "on a wooden porch",
+        "detail_3": "on a wooden porch resting"
       },
       {
         "subject": "a horse",
-        "detail": "in a field"
+        "detail_1": "in a field",
+        "detail_2": "in a green field",
+        "detail_3": "in a green field grazing"
       },
       {
         "subject": "a rabbit",
-        "detail": "in a garden"
+        "detail_1": "in a garden",
+        "detail_2": "in a sunny garden",
+        "detail_3": "in a sunny garden hopping"
       }
     ]
   },
@@ -246,20 +334,28 @@
     "alt": "Sunglasses with earrings and rings on a tan background",
     "correct": {
       "subject": "sunglasses with earrings and rings",
-      "detail": "on a tan background"
+      "detail_1": "on a tan background",
+      "detail_2": "on a tan smooth background",
+      "detail_3": "on a tan smooth background arranged"
     },
     "distractors": [
       {
         "subject": "a headset and microphone",
-        "detail": "on a desk"
+        "detail_1": "on a desk",
+        "detail_2": "on a work desk",
+        "detail_3": "on a work desk ready"
       },
       {
         "subject": "binoculars",
-        "detail": "on a shelf"
+        "detail_1": "on a shelf",
+        "detail_2": "on a wooden shelf",
+        "detail_3": "on a wooden shelf displayed"
       },
       {
         "subject": "goggles and a mask",
-        "detail": "on a table"
+        "detail_1": "on a table",
+        "detail_2": "on a white table",
+        "detail_3": "on a white table protective"
       }
     ]
   },
@@ -268,20 +364,28 @@
     "alt": "People meeting around a conference table in a glass office",
     "correct": {
       "subject": "people meeting around a conference table",
-      "detail": "in a glass office"
+      "detail_1": "in a glass office",
+      "detail_2": "in a glass office modern",
+      "detail_3": "in a glass office modern and professional"
     },
     "distractors": [
       {
         "subject": "students sitting together",
-        "detail": "in a classroom"
+        "detail_1": "in a classroom",
+        "detail_2": "in a bright classroom",
+        "detail_3": "in a bright classroom learning"
       },
       {
         "subject": "shoppers standing together",
-        "detail": "in a store"
+        "detail_1": "in a store",
+        "detail_2": "in a busy store",
+        "detail_3": "in a busy store shopping"
       },
       {
         "subject": "readers sitting quietly",
-        "detail": "in a library"
+        "detail_1": "in a library",
+        "detail_2": "in a quiet library",
+        "detail_3": "in a quiet library focused"
       }
     ]
   },
@@ -290,20 +394,28 @@
     "alt": "A tall window with sunlight and a garden view inside a grand room",
     "correct": {
       "subject": "a tall window with sunlight and a garden view",
-      "detail": "inside a grand room"
+      "detail_1": "inside a grand room",
+      "detail_2": "inside a grand room elegant",
+      "detail_3": "inside a grand room elegant and spacious"
     },
     "distractors": [
       {
         "subject": "a mirror",
-        "detail": "in a hallway"
+        "detail_1": "in a hallway",
+        "detail_2": "in a long hallway",
+        "detail_3": "in a long hallway reflecting light"
       },
       {
         "subject": "a door",
-        "detail": "in a kitchen"
+        "detail_1": "in a kitchen",
+        "detail_2": "in a modern kitchen",
+        "detail_3": "in a modern kitchen opening"
       },
       {
         "subject": "a painting",
-        "detail": "on a wall"
+        "detail_1": "on a wall",
+        "detail_2": "on a white wall",
+        "detail_3": "on a white wall displayed"
       }
     ]
   },
@@ -312,20 +424,28 @@
     "alt": "A pile of oranges with bright orange peel",
     "correct": {
       "subject": "a pile of oranges",
-      "detail": "with bright orange peel"
+      "detail_1": "with bright orange peel",
+      "detail_2": "with bright orange peel fresh",
+      "detail_3": "with bright orange peel fresh and glossy"
     },
     "distractors": [
       {
         "subject": "a pile of apples",
-        "detail": "with red skin"
+        "detail_1": "with red skin",
+        "detail_2": "with shiny red skin",
+        "detail_3": "with shiny red skin polished"
       },
       {
         "subject": "a bowl of lemons",
-        "detail": "with yellow fruit"
+        "detail_1": "with yellow fruit",
+        "detail_2": "with bright yellow fruit",
+        "detail_3": "with bright yellow fruit juicy"
       },
       {
         "subject": "a basket of peaches",
-        "detail": "with soft fruit"
+        "detail_1": "with soft fruit",
+        "detail_2": "with fuzzy soft fruit",
+        "detail_3": "with fuzzy soft fruit delicate"
       }
     ]
   },
@@ -334,20 +454,28 @@
     "alt": "Paint strokes in pink, purple, and red on a light background",
     "correct": {
       "subject": "paint strokes in pink, purple, and red",
-      "detail": "on a light background"
+      "detail_1": "on a light background",
+      "detail_2": "on a light white background",
+      "detail_3": "on a light white background clean"
     },
     "distractors": [
       {
         "subject": "ribbons",
-        "detail": "in a gift box"
+        "detail_1": "in a gift box",
+        "detail_2": "in a fancy gift box",
+        "detail_3": "in a fancy gift box wrapped"
       },
       {
         "subject": "crayons",
-        "detail": "on paper"
+        "detail_1": "on paper",
+        "detail_2": "on white paper",
+        "detail_3": "on white paper ready"
       },
       {
         "subject": "flowers",
-        "detail": "on a card"
+        "detail_1": "on a card",
+        "detail_2": "on a greeting card",
+        "detail_3": "on a greeting card decorative"
       }
     ]
   },
@@ -356,20 +484,28 @@
     "alt": "A peacock showing its colorful feathers in a leafy area",
     "correct": {
       "subject": "a peacock showing its colorful feathers",
-      "detail": "in a leafy area"
+      "detail_1": "in a leafy area",
+      "detail_2": "in a leafy green area",
+      "detail_3": "in a leafy green area natural"
     },
     "distractors": [
       {
         "subject": "a parrot",
-        "detail": "on a branch"
+        "detail_1": "on a branch",
+        "detail_2": "on a wooden branch",
+        "detail_3": "on a wooden branch perched"
       },
       {
         "subject": "a turkey",
-        "detail": "in a yard"
+        "detail_1": "in a yard",
+        "detail_2": "in a farm yard",
+        "detail_3": "in a farm yard strutting"
       },
       {
         "subject": "a flamingo",
-        "detail": "by water"
+        "detail_1": "by water",
+        "detail_2": "by calm water",
+        "detail_3": "by calm water wading"
       }
     ]
   },
@@ -378,20 +514,28 @@
     "alt": "A purple room with simple furniture and soft light",
     "correct": {
       "subject": "a purple room with simple furniture",
-      "detail": "and soft light"
+      "detail_1": "and soft light",
+      "detail_2": "and soft warm light",
+      "detail_3": "and soft warm light inviting"
     },
     "distractors": [
       {
         "subject": "a kitchen with white cabinets",
-        "detail": "and a sink"
+        "detail_1": "and a sink",
+        "detail_2": "and stainless sink",
+        "detail_3": "and stainless sink gleaming"
       },
       {
         "subject": "a garage with tools",
-        "detail": "on shelves"
+        "detail_1": "on shelves",
+        "detail_2": "on metal shelves",
+        "detail_3": "on metal shelves organized"
       },
       {
         "subject": "a bathroom with tiles",
-        "detail": "and a tub"
+        "detail_1": "and a tub",
+        "detail_2": "and a white tub",
+        "detail_3": "and a white tub clean"
       }
     ]
   },
@@ -400,20 +544,28 @@
     "alt": "Seeded bread with a toasted crust close up",
     "correct": {
       "subject": "seeded bread with a toasted crust",
-      "detail": "close up"
+      "detail_1": "close up",
+      "detail_2": "close up detailed",
+      "detail_3": "close up detailed and appetizing"
     },
     "distractors": [
       {
         "subject": "a cake",
-        "detail": "with frosting"
+        "detail_1": "with frosting",
+        "detail_2": "with white frosting",
+        "detail_3": "with white frosting decorated"
       },
       {
         "subject": "crackers",
-        "detail": "on a plate"
+        "detail_1": "on a plate",
+        "detail_2": "on a ceramic plate",
+        "detail_3": "on a ceramic plate arranged"
       },
       {
         "subject": "pancakes",
-        "detail": "with syrup"
+        "detail_1": "with syrup",
+        "detail_2": "with golden syrup",
+        "detail_3": "with golden syrup dripping"
       }
     ]
   },
@@ -422,20 +574,28 @@
     "alt": "A space helmet on a light background",
     "correct": {
       "subject": "a space helmet",
-      "detail": "on a light background"
+      "detail_1": "on a light background",
+      "detail_2": "on a light white background",
+      "detail_3": "on a light white background isolated"
     },
     "distractors": [
       {
         "subject": "a bike helmet",
-        "detail": "on the ground"
+        "detail_1": "on the ground",
+        "detail_2": "on the grass ground",
+        "detail_3": "on the grass ground abandoned"
       },
       {
         "subject": "a football helmet",
-        "detail": "on a bench"
+        "detail_1": "on a bench",
+        "detail_2": "on a wooden bench",
+        "detail_3": "on a wooden bench waiting"
       },
       {
         "subject": "a diving mask",
-        "detail": "in water"
+        "detail_1": "in water",
+        "detail_2": "in blue water",
+        "detail_3": "in blue water submerged"
       }
     ]
   },
@@ -444,20 +604,28 @@
     "alt": "People meeting beside bright windows in sunset light",
     "correct": {
       "subject": "people meeting beside bright windows",
-      "detail": "in sunset light"
+      "detail_1": "in sunset light",
+      "detail_2": "in golden sunset light",
+      "detail_3": "in golden sunset light warm"
     },
     "distractors": [
       {
         "subject": "students sitting in a classroom",
-        "detail": "at noon"
+        "detail_1": "at noon",
+        "detail_2": "at bright noon",
+        "detail_3": "at bright noon studying"
       },
       {
         "subject": "diners eating together",
-        "detail": "at a restaurant"
+        "detail_1": "at a restaurant",
+        "detail_2": "at a nice restaurant",
+        "detail_3": "at a nice restaurant dining"
       },
       {
         "subject": "readers sitting quietly",
-        "detail": "in a library"
+        "detail_1": "in a library",
+        "detail_2": "in a quiet library",
+        "detail_3": "in a quiet library concentrating"
       }
     ]
   },
@@ -466,20 +634,28 @@
     "alt": "A surfer holding a surfboard on the beach",
     "correct": {
       "subject": "a surfer holding a surfboard",
-      "detail": "on the beach"
+      "detail_1": "on the beach",
+      "detail_2": "on the sandy beach",
+      "detail_3": "on the sandy beach ready"
     },
     "distractors": [
       {
         "subject": "a skateboarder",
-        "detail": "at a park"
+        "detail_1": "at a park",
+        "detail_2": "at a skate park",
+        "detail_3": "at a skate park performing"
       },
       {
         "subject": "a swimmer",
-        "detail": "in a pool"
+        "detail_1": "in a pool",
+        "detail_2": "in a swimming pool",
+        "detail_3": "in a swimming pool training"
       },
       {
         "subject": "a hiker",
-        "detail": "on a trail"
+        "detail_1": "on a trail",
+        "detail_2": "on a mountain trail",
+        "detail_3": "on a mountain trail exploring"
       }
     ]
   },
@@ -488,108 +664,28 @@
     "alt": "A tennis ball on a bright surface",
     "correct": {
       "subject": "a tennis ball",
-      "detail": "on a bright surface"
+      "detail_1": "on a bright surface",
+      "detail_2": "on a bright yellow surface",
+      "detail_3": "on a bright yellow surface clean"
     },
     "distractors": [
       {
         "subject": "a baseball",
-        "detail": "on dirt"
+        "detail_1": "on dirt",
+        "detail_2": "on red dirt",
+        "detail_3": "on red dirt dusty"
       },
       {
         "subject": "a golf ball",
-        "detail": "on grass"
+        "detail_1": "on grass",
+        "detail_2": "on green grass",
+        "detail_3": "on green grass ready"
       },
       {
-        "subject": "a ping-pong ball",
-        "detail": "on a table"
-      }
-    ]
-  },
-  {
-    "image": "images/threecats.jpg",
-    "alt": "Three cats sitting together on a couch",
-    "correct": {
-      "subject": "three cats sitting together",
-      "detail": "on a couch"
-    },
-    "distractors": [
-      {
-        "subject": "three dogs",
-        "detail": "in a yard"
-      },
-      {
-        "subject": "two cats and a bird",
-        "detail": "on a shelf"
-      },
-      {
-        "subject": "one cat",
-        "detail": "in a basket"
-      }
-    ]
-  },
-  {
-    "image": "images/traincarinside.jpg",
-    "alt": "The inside of a train car with empty seats",
-    "correct": {
-      "subject": "the inside of a train car",
-      "detail": "with empty seats"
-    },
-    "distractors": [
-      {
-        "subject": "the inside of an airplane cabin",
-        "detail": "with small windows"
-      },
-      {
-        "subject": "the inside of a bus",
-        "detail": "with rows of seats"
-      },
-      {
-        "subject": "the inside of an office",
-        "detail": "with desks"
-      }
-    ]
-  },
-  {
-    "image": "images/videomeeting.jpg",
-    "alt": "A video meeting on a computer screen in a home office",
-    "correct": {
-      "subject": "a video meeting on a computer screen",
-      "detail": "in a home office"
-    },
-    "distractors": [
-      {
-        "subject": "a movie playing on a TV",
-        "detail": "in a living room"
-      },
-      {
-        "subject": "a game on a tablet",
-        "detail": "at a desk"
-      },
-      {
-        "subject": "a phone call on a desk",
-        "detail": "beside a lamp"
-      }
-    ]
-  },
-  {
-    "image": "images/watermelon.jpg",
-    "alt": "A watermelon with green stripes",
-    "correct": {
-      "subject": "a watermelon",
-      "detail": "with green stripes"
-    },
-    "distractors": [
-      {
-        "subject": "a pumpkin",
-        "detail": "on a table"
-      },
-      {
-        "subject": "a pineapple",
-        "detail": "on a counter"
-      },
-      {
-        "subject": "a cantaloupe",
-        "detail": "in a bowl"
+        "subject": "a basketball",
+        "detail_1": "on a court",
+        "detail_2": "on a wooden court",
+        "detail_3": "on a wooden court bouncing"
       }
     ]
   }
