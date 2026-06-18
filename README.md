@@ -99,6 +99,12 @@ The focus will be on using AI to support educators, not replace teacher judgment
 
 ![App Architecture](./appArchitecture.png)
 
+### Hackathon Development Tools
+
+**GitHub Copilot** was utilized throughout the application development implementation to accelerate coding, provide code suggestions, and optimize the frontend architecture.
+
+**Azure Foundry Custom Agents** were created to enable multimodal image descriptions for image-based question types. These intelligent agents process visual content and generate contextual descriptions that support differentiated reading comprehension assessments across multiple grade levels.
+
 ### Future Exploration
 
 * LLM-powered response evaluation
