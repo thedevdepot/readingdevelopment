@@ -1,134 +1,2642 @@
 [
-  {
-    "grade_level": 1,
-    "passage": "Ben dropped his ice cream cone on the sidewalk and began to cry.",
-    "question": "How is Ben feeling?",
-    "correct_emotion": {
-      "emoji": "😢",
-      "label": "Sadness",
-      "description": "Feeling down, unhappy, or lonely."
+    {
+        "grade_level": 1,
+        "passage": "Ben dropped his big ice cream cone on the sidewalk and began to cry.",
+        "question": "How is Ben feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
     },
-    "distractor_emotions": [
-      {
-        "emoji": "😄",
-        "label": "Happiness",
-        "description": "Feeling joyful, glad, or full of positive energy."
-      },
-      {
-        "emoji": "😡",
-        "label": "Anger",
-        "description": "Feeling deeply annoyed, mad, or frustrated."
-      }
-    ]
-  },
-  {
-    "grade_level": 2,
-    "passage": "The lightning crashed loudly outside, and Lily hid far under her heavy blankets so nothing could see her.",
-    "question": "How is Lily feeling?",
-    "correct_emotion": {
-      "emoji": "😨",
-      "label": "Fear",
-      "description": "Feeling scared, startled, or unsafe."
+    {
+        "grade_level": 1,
+        "passage": "The sun is out and it is time to play in the park with friends.",
+        "question": "How does this make the children feel?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
     },
-    "distractor_emotions": [
-      {
-        "emoji": "😎",
-        "label": "Pride",
-        "description": "Feeling highly satisfied and confident in yourself."
-      },
-      {
-        "emoji": "😳",
-        "label": "Embarrassment",
-        "description": "Feeling self-conscious after a public mistake."
-      }
-    ]
-  },
-  {
-    "grade_level": 3,
-    "passage": "As the teacher announced that Sarah had won the spelling bee, she stood up straight with a massive smile, eager to hold up her shiny gold trophy.",
-    "question": "How is Sarah feeling?",
-    "correct_emotion": {
-      "emoji": "😎",
-      "label": "Pride",
-      "description": "Feeling highly satisfied and confident because of an achievement."
+    {
+        "grade_level": 1,
+        "passage": "A big dog barked very loudly, and Pam ran to hide behind her dad.",
+        "question": "How is Pam feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
     },
-    "distractor_emotions": [
-      {
-        "emoji": "😒",
-        "label": "Jealousy",
-        "description": "Feeling bitter because someone else has something you want."
-      },
-      {
-        "emoji": "😔",
-        "label": "Guilt",
-        "description": "Feeling deeply sorry because you did something wrong."
-      }
-    ]
-  },
-  {
-    "grade_level": 4,
-    "passage": "When Clara walked into the cafeteria, she accidentally tripped over a backpack, sending her entire tray sliding across the floor as the room went completely silent.",
-    "question": "Based on the passage, how is Clara most likely feeling?",
-    "correct_emotion": {
-      "emoji": "😳",
-      "label": "Embarrassment",
-      "description": "Feeling self-conscious or uncomfortable after an unexpected public mistake."
+    {
+        "grade_level": 1,
+        "passage": "Tom stomped his feet and yelled when his toy block tower fell down.",
+        "question": "How is Tom feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
     },
-    "distractor_emotions": [
-      {
-        "emoji": "😮‍💨",
-        "label": "Resignation",
-        "description": "Giving up hope and quietly accepting a bad situation."
-      },
-      {
-        "emoji": "😐",
-        "label": "Apathy",
-        "description": "Lacking interest, enthusiasm, or concern about your surroundings."
-      }
-    ]
-  },
-  {
-    "grade_level": 5,
-    "passage": "Sitting at his desk, Julian stared at the clock, his stomach twisting into tight knots. He kept tapping his pencil frantically, running through every single question that might appear on tomorrow's final exam over and over again until his hands began to sweat.",
-    "question": "Which emotion best describes Julian's state of mind?",
-    "correct_emotion": {
-      "emoji": "😰",
-      "label": "Anxiety",
-      "description": "Feeling intensely worried, uneasy, or fearful about what might happen in the future."
+    {
+        "grade_level": 1,
+        "passage": "Jan smiled when she got a cute little kitten for her birthday.",
+        "question": "How is Jan feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
     },
-    "distractor_emotions": [
-      {
-        "emoji": "😡",
-        "label": "Anger",
-        "description": "Feeling deeply annoyed, mad, or frustrated by an unfair situation."
-      },
-      {
-        "emoji": "🥹",
-        "label": "Empathy",
-        "description": "Understanding and deeply sharing the exact feelings of another person."
-      }
-    ]
-  },
-  {
-    "grade_level": 6,
-    "passage": "Elena watched from the doorway as her teammate struggled to pack her locker, tears streaming down her face after being cut from the varsity squad. Without a word, Elena walked over, sat down on the bench beside her, and gently placed a hand on her shoulder, feeling the heavy weight of her friend's heartbreak as if it were her own.",
-    "question": "Which nuanced emotional state is Elena demonstrating in this passage?",
-    "correct_emotion": {
-      "emoji": "🥹",
-      "label": "Empathy",
-      "description": "Understanding, absorbing, and deeply sharing the exact internal feelings of another person in their time of need."
+    {
+        "grade_level": 1,
+        "passage": "Sam sat by himself on the bench because no one would play tag with him.",
+        "question": "How is Sam feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
     },
-    "distractor_emotions": [
-      {
-        "emoji": "😮‍💨",
-        "label": "Resignation",
-        "description": "Giving up personal hope and quietly accepting a bad situation because it feels unchangeable."
-      },
-      {
-        "emoji": "😐",
-        "label": "Apathy",
-        "description": "Lacking any distinct interest, enthusiasm, or general concern about events occurring around you."
-      }
-    ]
-  }
+    {
+        "grade_level": 1,
+        "passage": "The lights went out in the room, and the house got very dark and quiet.",
+        "question": "How do the kids feel in the dark?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "Leo crossed his arms and frowned when he was told to stop playing video games.",
+        "question": "How is Leo feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "Meg clapped her hands when her mom brought out a warm plate of cookies.",
+        "question": "How is Meg feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "Ned cannot find his favorite toy car, and a tear runs down his face.",
+        "question": "How is Ned feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "A loud buzz came from the bush, and Kim jumped back away from it.",
+        "question": "How is Kim feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "Dan threw his hat on the floor because his brother took his red crayon.",
+        "question": "How is Dan feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "The little boy sang a happy song as he skipped down the path.",
+        "question": "How is the boy feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "Mia sighed and looked out the window as the heavy rain kept her inside all day.",
+        "question": "How is Mia feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "Bob heard a strange noise under his bed and pulled the covers over his eyes.",
+        "question": "How is Bob feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "Ann gritted her teeth and slammed her book shut when she could not find the right page.",
+        "question": "How is Ann feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "Tim saw his grandma walk through the front door and ran to give her a big hug.",
+        "question": "How is Tim feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "The old puppy walked slowly to his dog bed and let out a tiny whine.",
+        "question": "How does the puppy feel?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "A huge shadow moved across the wall, and the little girl froze in place.",
+        "question": "How is the little girl feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 1,
+        "passage": "Ron kicked a toy box because his dad said it was time to clean up and go to sleep.",
+        "question": "How is Ron feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "When Clara walked into the classroom, she accidentally tripped over a large backpack, sending her entire pencil box sliding across the floor as the whole room went quiet.",
+        "question": "How is Clara feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling self-conscious or uncomfortable after making a public mistake."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "As the teacher announced that Sarah won the first-place prize, she stood up straight with a massive smile, eager to show everyone her shiny gold medal.",
+        "question": "How is Sarah feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied and confident in yourself or your achievements."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful or bitter because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "Jake watched his best friend ride the brand-new bicycle down the sidewalk. He looked at his own old, broken bike and wished he could have a new one too.",
+        "question": "How is Jake feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because someone else has something you wish you had."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident in yourself."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "Lily accidentally broke her mother's favorite flower vase while playing ball in the house. She hid the pieces away, but her stomach felt very heavy and worried.",
+        "question": "How is Lily feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you did something wrong."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "The gray rain kept pouring down outside, and Maya sighed as she put her soccer ball back in the closet, realizing she had to stay inside all afternoon.",
+        "question": "How is Maya feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident in yourself."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "The thunder crashed loudly outside the window, and the little dog shook all over as it hid deep under the bed to stay safe.",
+        "question": "How is the dog feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "Ben stomped his feet and threw his red crayon into the toy box when his older sister refused to share the drawing paper.",
+        "question": "How is Ben feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "The school bell rang for summer vacation, and the children cheered loudly as they ran out the front doors into the warm sunshine.",
+        "question": "How are the children feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "Owen forgot his lines during the holiday play. He saw the large audience watching him, and his face quickly turned very bright red.",
+        "question": "How is Owen feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling self-conscious or uncomfortable after making a public mistake."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident in yourself."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "After practicing all week, Grace finally rode her two-wheel bike without any help, smiling wide as she waved to her parents.",
+        "question": "How is Grace feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied and confident in yourself or your achievements."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "Anna saw that her cousin got the largest piece of chocolate cake with the extra frosting, and she glared at his plate with a heavy frown.",
+        "question": "How is Anna feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because someone else has something you wish you had."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "Leo took his brother's favorite toy truck without asking. When he saw his brother searching for it and looking upset, Leo hid his face in his hands.",
+        "question": "How is Leo feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you did something wrong."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident in yourself."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "The little boy sat quietly on the front steps, watching his moving truck drive away with all of his toys and his old neighbors inside.",
+        "question": "How is the boy feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "A large, dark shadow flew quickly across the bedroom wall, and the little girl froze completely still in her bed without making a sound.",
+        "question": "How is the little girl feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else has something you want."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "Sam gritted his teeth and slammed his workbook shut when the computer program froze and erased all of his hard work.",
+        "question": "How is Sam feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident in yourself."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "The young girl clapped her hands and giggled excitedly when her grandmother brought out a large plate of warm chocolate chip cookies.",
+        "question": "How is the girl feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "During the spelling match, Tom accidentally spelled a very easy word wrong, and he wished he could disappear as the other students stared.",
+        "question": "How is Tom feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling self-conscious or uncomfortable after making a public mistake."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "David spent hours building a huge castle out of blocks, and he grinned happily when the teacher walked by and took a picture of his work.",
+        "question": "How is David feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied and confident in yourself or your achievements."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "Ruby watched her sister open a massive present filled with art supplies. She looked at her own tiny box and felt a cold frown cross her face.",
+        "question": "How is Ruby feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because someone else has something you wish you had."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 2,
+        "passage": "Mia accidentally ate her brother's special snack from the fridge. When he started crying because it was gone, her face fell and she apologized over and over.",
+        "question": "How is Mia feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you did something wrong."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident in yourself."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "Marcus sat in the principal's office, staring intently at his sneakers as his heart pounded against his ribs. When he heard his mother's familiar, hurried footsteps echoing down the hallway, he felt his stomach drop and wished he could magically sink right through the floorboards.",
+        "question": "Based on the passage, how is Marcus feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling self-conscious or uncomfortable after an unexpected public mistake or situation."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident because of an achievement."
+            },
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking interest, enthusiasm, or concern about your surroundings."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "Maya watched from the sidelines as the coach handed the shiny team MVP trophy to her teammate, Chloe. Although she clapped along with the crowd, Maya felt a sharp sting in her chest and found herself staring bitterly at the glittering award she had worked all season to win.",
+        "question": "Which emotion best describes Maya's reaction?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because someone else has something you wish you had."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry or anxious because you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "After spending three weeks sketching designs and carefully carving the wood, David stood back to view his completed birdhouse. As he watched a small bluebird fly inside, he smiled warmly to himself, completely satisfied with his creation.",
+        "question": "How is David feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied and confident because of your own achievements."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe when facing danger."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious or uncomfortable after a mistake."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "Lucas walked home from school with heavy steps, his hands shoved deep into his pockets. He couldn't stop thinking about how he had promised to feed his sister's pet hamster, but had completely forgotten, leaving the poor creature without food all day.",
+        "question": "How is Lucas feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you know you did something wrong."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated by a situation."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "Elena sat on her suitcase in the empty living room, listening to the echoes of her parents loading the final cardboard boxes into the moving truck outside. She held her old teddy bear tightly, staring at the blank spots on the walls where her pictures used to hang.",
+        "question": "How is Elena feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely when facing a difficult change."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident in your achievements."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling bitter because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "The sudden crack of thunder shook the entire house, causing the power to instantly cut out and plunge the room into absolute darkness. Toby gasped, dropping his flashlight, and scrambled backward until his spine was pressed firmly against the corner of the wall.",
+        "question": "How is Toby feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe when facing something unknown or dangerous."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "Austin slammed his laptop screen shut and threw his hands up in the air. He had spent the last hour typing his science report, but the internet connection suddenly dropped, completely erasing every single paragraph he had written.",
+        "question": "How is Austin feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated by an unfair or difficult situation."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "The final school bell of the year rang out through the speakers, and the hallway erupted into loud cheers. Sophia ran out the front doors into the warm afternoon sunshine, laughing with her friends as they planned their first trip to the pool.",
+        "question": "How is Sophia feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy when something good happens."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "During the class presentation, Liam stumbled over a long word and accidentally sprayed a bit of water from his mouth. He heard a couple of students snicker in the back row, and his ears instantly began to burn as he stared down at his notes.",
+        "question": "How is Liam feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling self-conscious or uncomfortable after making an unexpected public mistake."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident in yourself."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "After months of rigorous practice, Zoe finally completed a perfect backflip on the balance beam. When her teammates cheered, she stood tall with her chest out and a beaming smile, thrilled that all her dedication had finally paid off.",
+        "question": "How is Zoe feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied and confident because of your own achievements or hard work."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "Rachel looked over at her cousin's birthday pile, which was stacked high with electronic gadgets, video games, and dynamic art kits. She looked down at her own small, simple notebook and felt a heavy scowl cross her face.",
+        "question": "How is Rachel feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because someone else has something you wish you had."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after a public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "Jason realized he had accidentally stepped on his friend's fragile science project while rushing across the room. When he saw his friend's face drop at the sight of the ruined model, Jason felt a deep knot in his stomach and kept apologizing.",
+        "question": "How is Jason feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you know you did something wrong."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "The old dog sat quietly by the front door, staring at the empty hallway for hours. His family had left for a long trip without him, and he let out a low, miserable whine before resting his heavy chin on his paws.",
+        "question": "How does the dog feel?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "As they walked deeper into the dark cavern, the low ceiling seemed to press down on them, and strange scraping noises echoed from the shadows ahead. Clara stopped walking entirely, her breath coming in quick gasps as she gripped her brother's sleeve.",
+        "question": "How is Clara feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe when facing something dangerous or mysterious."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else has something you want."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "The group leader took credit for all of Ethan's excellent ideas during the presentation, receiving praise from the entire class. Ethan sat at his desk with his teeth clenched, glaring at the floor while his face flushed a deep, hot crimson.",
+        "question": "How is Ethan feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated by an unfair or aggravating situation."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "The young girl clapped her hands and jumped up and down excitedly when her father walked through the gate holding a basket with a tiny, fluffy puppy inside. She cheered and immediately reached out to hold her new pet.",
+        "question": "How is the girl feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy when something wonderful happens."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "When the music stopped for musical chairs, Samantha scrambled to sit down but missed the seat entirely, crashing loudly onto the gymnasium floor. Everyone stopped and looked over as she scrambled to her feet, wishing she could vanish.",
+        "question": "How is Samantha feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling self-conscious or uncomfortable after making a clumsy public mistake."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "After working diligently all weekend, Jordan successfully programmed his first basic computer game. He grinned broadly as he showed his older brother how the digital character could jump over obstacles on the screen.",
+        "question": "How is Jordan feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied and confident in yourself or your successful achievements."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "Victoria watched her brother open a massive, beautifully wrapped gift box that contained a brand-new game console. She slowly looked over at her own small package of socks and felt a cold, bitter feeling settle deep inside her.",
+        "question": "How is Victoria feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because someone else has achieved or received something you want."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 3,
+        "passage": "Olivia accidentally ate the final piece of her brother's special birthday cake from the refrigerator. When she saw him open the door later, look around, and start crying because it was missing, her face fell and she quickly admitted what she had done.",
+        "question": "How is Olivia feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you know you committed a mistake."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "When Clara walked into the crowded school cafeteria, she accidentally tripped over a bulky backpack left in the aisle, sending her entire lunch tray clattering across the floor while the room suddenly fell silent. Her ears instantly began to burn, and she desperately wished she could blend right into the linoleum tiles as everyone turned to look.",
+        "question": "Based on the passage, how is Clara feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling self-conscious or uncomfortable after an unexpected public mistake or lapse in coordination."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident because of an individual achievement."
+            },
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking any distinct interest, enthusiasm, or general concern about your surroundings."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "Maya watched from the sidelines as the coach presented the shiny team MVP trophy to her classmate, Chloe. Although she managed to force a polite smile and clap along with the cheering crowd, Maya felt a sharp twist in her chest and found herself staring bitterly at the glittering award she had worked so hard to achieve.",
+        "question": "Which emotion best describes Maya's reaction?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because someone else has achieved or received something you wish you had."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy when something good occurs."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry or anxious because you know you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "After spending nearly three weeks sketching blueprints and carefully assembling the wooden pieces, David stood back to review his completed birdhouse. As he watched a small bluebird confidently claim the tiny entrance, he smiled warmly to himself, completely satisfied with the results of his hard labor.",
+        "question": "How is David feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied and confident because of your own personal achievements or creations."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe when facing an unknown danger."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious or uncomfortable after a public blunder."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "Lucas walked home from school with unusually heavy steps, keeping his hands shoved deep into his pockets. He couldn't shake the persistent thought that he had promised to feed his sister's pet hamster before leaving, but had completely forgotten, leaving the helpless creature without sustenance all day.",
+        "question": "How is Lucas feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you know you have committed a mistake or let someone down."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated by an external obstacle."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "Elena sat quietly on her suitcase in the middle of the empty living room, listening to the echoing voices of her parents loading the final cardboard boxes into the moving truck outside. She clutched her old teddy bear tightly, staring blankly at the dark spots on the wallpaper where her photos used to hang.",
+        "question": "How is Elena feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely when experiencing a difficult transition or loss."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident in your own achievements."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling bitter because someone else possesses something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "An unexpected crack of thunder vibrated through the entire house, causing the power grid to instantly shut down and plunge the room into absolute darkness. Toby gasped, accidentally dropping his flashlight, and frantically scrambled backward until his spine was pressed firmly against the solid bedroom wall.",
+        "question": "How is Toby feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe when suddenly encountering a threatening or unknown situation."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making an awkward mistake in front of others."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "Austin slammed his laptop screen shut and threw his hands up in absolute frustration. He had spent the last hour typing the final draft of his science report, but the internet connection suddenly dropped without warning, completely erasing every single paragraph he had written.",
+        "question": "How is Austin feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated by an unfair or disruptive situation."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "The final school bell of the year rang out through the hallway speakers, and the entire building erupted into jubilant cheers. Sophia sprinted out the front double doors into the warm afternoon sunshine, laughing hysterically with her friends as they planned their first weekend trip to the neighborhood pool.",
+        "question": "How is Sophia feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy when celebrating a pleasant event."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "During his history presentation, Liam mispronounced a prominent historical name and accidentally sprayed a bit of water from his mouth. He heard a couple of students snicker audibly in the back row, and his ears instantly began to radiate heat as he fixed his eyes firmly on his notes.",
+        "question": "How is Liam feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling self-conscious or uncomfortable after drawing unwanted negative attention due to a public mistake."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident in yourself."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "After months of rigorous practice and repetitive drills, Zoe finally completed a flawless routine on the balance beam. When her teammates exploded into cheers, she stood entirely upright with a radiant smile, thrilled that all her personal discipline had translated into success.",
+        "question": "How is Zoe feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied and confident because of your own personal achievements or persistent hard work."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "Rachel glanced over at her cousin's birthday gift pile, which was stacked high with advanced electronic gadgets, popular video games, and dynamic art kits. She looked down at her own small, plain sketching pad and felt a cold scowl settle over her features.",
+        "question": "How is Rachel feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because someone else has acquired possessions you wish you had yourself."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after a public blunder."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "Jason realized he had unintentionally stepped on his friend's delicate science project while rushing across the busy room. When he witnessed his classmate's jaw drop at the sight of the collapsed cardboard model, Jason felt a severe knot form in his stomach and began apologizing profusely.",
+        "question": "How is Jason feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you know your actions have caused harm or damage to someone else."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "The elderly dog sat motionless by the front door, staring down the vacant hallway for hours. His family had departed for a lengthy summer vacation without including him, and he issued a low, mournful whine before resting his heavy chin directly on his paws.",
+        "question": "How does the dog feel?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely due to isolation or loss."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after a public mistake."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "As they ventured deeper into the subterranean cavern, the damp limestone ceiling appeared to press down on them, and unfamiliar scraping noises echoed from the shadows ahead. Clara halted completely, her breathing turning shallow as she gripped her brother's jacket sleeve.",
+        "question": "How is Clara feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe when facing something mysterious or potentially perilous."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else has something you want."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "The group leader took full credit for all of Ethan's excellent ideas during the final presentation, receiving enthusiastic praise from the entire class. Ethan sat at his desk with his jaw clenched, staring fixedly at the floor while a hot wave of crimson washed over his face.",
+        "question": "How is Ethan feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated by an unfair or highly aggravating circumstance."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "The young girl clapped her hands and jumped up and down frantically when her father walked through the garden gate holding a wicker basket with a tiny puppy inside. She cheered enthusiastically and immediately extended her arms to cradle her new pet.",
+        "question": "How is the girl feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy when something thoroughly delightful occurs."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "When the recorded music stopped during a game of musical chairs, Samantha scrambled to claim an empty seat but missed entirely, crashing loudly onto the gymnasium floor. The entire class stopped to observe, causing her to scramble upright while wishing she could instantly vanish.",
+        "question": "How is Samantha feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling self-conscious or uncomfortable after experiencing an awkward public mishap."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "After working diligently all weekend, Jordan successfully programmed his first functional video game application. He grinned broadly as he demonstrated to his older brother exactly how the digital avatar could leap over moving obstacles on the monitor.",
+        "question": "How is Jordan feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied and confident in yourself due to a successful independent creation."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "Victoria watched her brother open a massive, beautifully wrapped package that contained a brand-new home entertainment system. She slowly glanced down at her own small envelope of woolen socks and felt a cold, resentful sensation settle deep inside her.",
+        "question": "How is Victoria feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because a peer has received an item that you strongly desire for yourself."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 4,
+        "passage": "Olivia realized she had consumed the final slice of her brother's special birthday cake from the refrigerator shelf. When she observed him open the door later, look inside, and begin to weep because it was gone, her expression fell and she quickly confessed her mistake.",
+        "question": "How is Olivia feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you recognize that your actions have caused distress to another person."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "Sitting at his desk, Julian stared at the clock, his stomach twisting into tight knots. He kept tapping his pencil frantically against his textbook, running through every single question that might appear on tomorrow's final exam over and over again until his hands began to sweat and his breathing turned shallow.",
+        "question": "Which emotion best describes Julian's state of mind?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude30",
+            "label": "Anxiety",
+            "description": "Feeling intensely worried, uneasy, or fearful about what might happen in the future."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated by an unfair or restrictive situation."
+            },
+            {
+                "emoji": "\ud83e\udd79",
+                "label": "Empathy",
+                "description": "Understanding and deeply sharing the exact feelings of another person."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "Leo stared blankly at the mounting pile of missing assignments on his desk. When the teacher warned him that his grades were slipping rapidly, he simply shrugged his shoulders, leaned back in his chair, and gazed out the window, completely unbothered by the looming threat of summer school.",
+        "question": "Which emotional state is Leo demonstrating?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude10",
+            "label": "Apathy",
+            "description": "Lacking interest, enthusiasm, or concern about things that are happening around you."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious or uncomfortable after a public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry or regretful because you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "After years of continuous effort and countless hours spent practicing scales, Priya stood center stage as the auditorium erupted into a standing ovation. As the heavy red curtains began to close, she took a deep breath, standing entirely upright with a quiet, confident smile.",
+        "question": "Based on the passage, what is Priya experiencing?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied and confident because of your own personal achievements."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
+                "label": "Resignation",
+                "description": "Giving up hope and quietly accepting a bad situation."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling bitter because someone else possesses something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "Despite practicing the routine perfectly all week, Nathan blanked during his solo dance performance, stumbling directly into the prop table and sending plastic scenery crashing onto the stage. He heard a wave of murmurs ripple through the crowded auditorium, and his face instantly flushed an intense crimson as he scrambled to his feet.",
+        "question": "How is Nathan feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling self-conscious or uncomfortable after drawing unexpected negative attention from a public mistake."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "Marcus watched from the kitchen door as his brother unwrapped a brand-new, high-end mountain bike, surrounded by celebrating family members. Marcus looked down at his own rusted, hand-me-down bicycle resting against the garage wall and felt a cold, bitter resentment tighten in his throat.",
+        "question": "Which emotion best describes Marcus's reaction?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because someone else has achieved or received something you wish you had."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry or anxious because you did something wrong."
+            },
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking interest, enthusiasm, or concern about your surroundings."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "The afternoon downpour showed no signs of stopping, flooding the backyard and ruining any hope of the championship match. Tyler let out a long, heavy sigh, dropped his soccer cleats to the floor, and stared out at the grey puddles, quietly accepting that his weekend plans were completely over.",
+        "question": "How is Tyler feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
+            "label": "Resignation",
+            "description": "Giving up hope and quietly accepting a disappointing situation because you feel it cannot be changed."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated by an unfair situation."
+            },
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "As they navigated deeper into the abandoned subway tunnel, the ambient city sounds faded into absolute silence, broken only by the echo of dripping water. Suddenly, a metallic clatter echoed from the darkness ahead, causing Chloe to freeze instantly, her pulse racing as she gripped her guide's arm.",
+        "question": "How is Chloe feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe when suddenly encountering a potentially dangerous situation."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "Jordan realized he had unintentionally formatted the shared drive, deleting the digital presentation his group had spent three weeks preparing. When he heard his classmates talking enthusiastically about their upcoming presentation, a severe knot formed in his stomach and he struggled to look them in the eye.",
+        "question": "How is Jordan feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you recognize your actions have caused harm or trouble to others."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling bitter because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "The project leader completely omitted David's contributions during the assembly presentation, taking full credit for the structural model David spent weeks constructing. David sat with his jaw clenched tightly, his fists balling up under his desk as a hot wave of heat rushed to his face.",
+        "question": "How is David feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated by an unfair or deceptive situation."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            },
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking interest or concern about your surroundings."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "Elena watched her classmate sitting alone on the bench, crying quietly after failing to qualify for the regional tournament. Remembering how devastating it felt when she had missed the cut the previous year, Elena walked over, sat beside her without speaking, and shared the heavy weight of her grief.",
+        "question": "Which nuanced emotional state is Elena demonstrating?",
+        "correct_emotion": {
+            "emoji": "\ud83e\udd79",
+            "label": "Empathy",
+            "description": "Understanding, absorbing, and deeply sharing the exact internal feelings of another person in their time of need."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
+                "label": "Resignation",
+                "description": "Giving up hope and quietly accepting a bad situation."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling bitter because someone else has something you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "When the admission letter arrived in the mail, Sophia tore it open with trembling fingers. Scanning the page, she saw the word 'Accepted' highlighted in bold text and instantly began jumping around the kitchen, her laughter filling the house as she hugged her parents.",
+        "question": "How is Sophia feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling joyful, glad, or full of positive energy when celebrating a thoroughly wonderful event."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude30",
+                "label": "Anxiety",
+                "description": "Feeling intensely worried or fearful about the future."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "The elderly dog sat completely motionless at the foot of the vacant driveway, watching the moving truck disappear past the edge of the street. His long-time companion was heading to college across the country, and the dog let out a low, mournful whine before collapsing onto his paws.",
+        "question": "How does the dog feel?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely due to an emotional separation or loss."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after a public mistake."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "As the storm intensified, the cabin lights flickered rapidly before dying out completely, leaving only the sound of roaring wind against the windows. Isaac frantically checked his phone, but the signal bar was entirely vacant, causing his chest to tighten as the darkness closed in.",
+        "question": "How is Isaac feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or unsafe when facing an isolating or threatening environment."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking interest or concern about your surroundings."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling bitter because someone else has what you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "When the teacher announced the group projects, Liam realized his friends had already formed a team without him, leaving him to work with students he barely knew. He sloped his shoulders, staring blankly at his desk as the rest of the room bustled with excited chatter.",
+        "question": "How is Liam feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely due to rejection or isolation."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "Avery looked at the prompt on the screen, her thoughts spinning out of control as the countdown timer ticked lower. She couldn't focus on the sentences, convinced that a single bad score would ruin her chances of getting into the honors ELA track next semester.",
+        "question": "What emotion best matches Avery's current state?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude30",
+            "label": "Anxiety",
+            "description": "Feeling intensely worried, uneasy, or fearful about what might happen in the future."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after a public mistake."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "The principal announced that the annual school trip was officially cancelled due to budget reallocations. Instead of complaining like the other students, Rachel simply let out a slow sigh, closed her binder, and muttered that it didn't really matter since things like this always happened anyway.",
+        "question": "How is Rachel feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
+            "label": "Resignation",
+            "description": "Giving up hope and quietly accepting a disappointing situation because it feels completely unchangeable."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83e\udd79",
+                "label": "Empathy",
+                "description": "Understanding and deeply sharing the feelings of another."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "Sitting in the circle, Maya listened to her classmate describe the painful loss of his grandmother. Having gone through the exact same experience over the summer, Maya felt her own eyes tear up, sensing the heavy ache in his voice as if the grief were happening to her all over again.",
+        "question": "What emotional capacity is Maya displaying?",
+        "correct_emotion": {
+            "emoji": "\ud83e\udd79",
+            "label": "Empathy",
+            "description": "Understanding, absorbing, and deeply sharing the exact internal feelings of another person."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking any distinct interest, enthusiasm, or general concern."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "When the results were posted, Lucas saw his name at the very bottom of the roster, indicating he had been relegated to the junior varsity squad while all his friends made the elite team. He ground his teeth, threw his sports bag into his locker, and kicked the metal door shut with a loud bang.",
+        "question": "How is Lucas feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated by an unfavorable or aggravating outcome."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "Even though nobody was looking, Clara knew she had cheated on the vocabulary quiz by glancing at her neighbor's paper. As the teacher collected the answer sheets, Clara kept her eyes fixed firmly on her desk, her heart racing with a heavy, uncomfortable feeling of regret.",
+        "question": "How is Clara feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you recognize that you have done something wrong."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after a public mistake."
+            }
+        ]
+    },
+    {
+        "grade_level": 5,
+        "passage": "The club members debated fiercely about which charity to support with their fundraising money. Sitting at the back of the room, Zoe flipped through a magazine, completely detached from the argument and showing no preference or enthusiasm for whoever won the vote.",
+        "question": "Which word best characterizes Zoe's attitude?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude10",
+            "label": "Apathy",
+            "description": "Lacking distinct interest, enthusiasm, or general concern about events occurring around you."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude30",
+                "label": "Anxiety",
+                "description": "Feeling intensely worried or uneasy about the future."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling bitter because someone else has what you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "Elena watched from the doorway as her teammate struggled to pack her locker, tears streaming down her face after being cut from the varsity squad. Without a word, Elena walked over, sat down on the bench beside her, and gently placed a hand on her shoulder, absorbing the heavy weight of her friend's heartbreak as if it were her own.",
+        "question": "Which nuanced emotional state is Elena demonstrating in this passage?",
+        "correct_emotion": {
+            "emoji": "\ud83e\udd79",
+            "label": "Empathy",
+            "description": "Understanding, absorbing, and deeply sharing the exact internal feelings of another person in their time of need."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
+                "label": "Resignation",
+                "description": "Giving up personal hope and quietly accepting a bad situation because it feels unchangeable."
+            },
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking any distinct interest, enthusiasm, or general concern about events occurring around you."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "Gazing out over the thousands of spectators packed tightly into the stadium, Julian felt a cold sweat coat his palms. He adjusted his microphone with trembling fingers, completely fixated on the terrifying possibility of stammering over his opening lines or tripping over the massive audio cables winding across the main stage.",
+        "question": "Which psychological state best describes Julian's experience?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude30",
+            "label": "Anxiety",
+            "description": "Feeling intensely worried, uneasy, or fearful about an impending event or future outcome."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated by an unjust scenario."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling resentful because someone else possesses an advantage you desire."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "The department supervisor systematically erased Maya's name from the final project credit slide, attributing the core software code to a senior colleague instead. Maya sat in the brightly lit conference room with her teeth clenched, her nails digging into her palms as a suffocating wave of heat climbed up her neck.",
+        "question": "Based on the subtle textual clues, what is Maya experiencing?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated by a severe injustice or aggravating obstacle."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or isolated due to a personal loss."
+            },
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking distinct interest, enthusiasm, or general concern."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "After the fifth consecutive budget proposal was rejected by the board, Mr. Harrison stopped revising the spreadsheets entirely. He dropped his pen onto the desk, let out a slow, deflated sigh, and staring blankly at the rain sliding down the window pane, quietly accepted that the library project was permanently finished.",
+        "question": "Which term best characterizes Mr. Harrison's emotional state?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
+            "label": "Resignation",
+            "description": "Relinquishing hope and quietly accepting a disappointing reality because you feel powerless to alter it."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or fundamentally unsafe in your environment."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a visible public blunder."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "As the town hall debate escalated into a chaotic shouting match over the new parking ordinances, Clara remained slouched back in her plastic chair. She flipped idly through a grocery circular, completely detached from the anger surrounding her, utterly unconcerned with whichever faction won the final vote.",
+        "question": "Which internal disposition is Clara exhibiting?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude10",
+            "label": "Apathy",
+            "description": "Lacking any distinct interest, enthusiasm, or emotional investment in surrounding circumstances."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry or regretful because you recognize you did something wrong."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident because of an achievement."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "Knowing she had deliberately omitted her partner's data to make her own graph look more impressive, Chloe avoided eye contact during the peer review. Even though the instructor praised her presentation, a heavy, cold sensation settled deep in her stomach whenever her classmate quietly packed up his materials.",
+        "question": "How is Chloe feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful because you recognize your personal actions violated a moral boundary."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling bitter because someone else has something you desire."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "During the formal piano recital, David's fingers slipped on a complex arpeggio, causing a discordant, jarring note to echo through the silent hall. He perceived a wave of subtle shifting among the front-row judges, and his ears instantly radiated a fierce heat as he forced himself to finish the piece.",
+        "question": "How is David feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude33",
+            "label": "Embarrassment",
+            "description": "Feeling acutely self-conscious or uncomfortable due to a visible public mistake or perceived failure."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe when facing direct danger."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "Marcus observed from the shadow of the garage as his stepbrother unboxed a professional-grade camera drone, a luxury item his parents claimed the family could absolutely not afford. Marcus looked down at his own basic, plastic model and felt a cold, constricting resentment tighten across his chest.",
+        "question": "Which emotion best encapsulates Marcus's internal state?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude12",
+            "label": "Jealousy",
+            "description": "Feeling resentful or bitter because an equal has obtained an object or advantage that you passionately covet."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83e\udd79",
+                "label": "Empathy",
+                "description": "Understanding and deeply sharing the exact internal feelings of another person."
+            },
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident because of an achievement."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "After dedicating months to isolating variables and refining the automation scripts, Priya watched her customized program execute without a single line of error code. She stood back from the terminal, crossed her arms, and let out a small, confident smile as her team leads gathered to praise her work.",
+        "question": "What is Priya experiencing?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied, confident, and validated due to your own independent, hard-won achievements."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
+                "label": "Resignation",
+                "description": "Giving up hope and quietly accepting a bad situation."
+            },
+            {
+                "emoji": "\ud83d\ude22",
+                "label": "Sadness",
+                "description": "Feeling down, unhappy, or lonely."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "When the admission portal finally updated, Sophia read the confirmation letter with wide, disbelieving eyes. Realizing her full-tuition scholarship had been approved, she let out a sharp cry of delight, her laughter echoing off the walls as she spun around the room and gripped her mother in a fierce hug.",
+        "question": "How is Sophia feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude04",
+            "label": "Happiness",
+            "description": "Feeling intensely joyful, glad, or ecstatic when celebrating an exceptionally positive development."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude30",
+                "label": "Anxiety",
+                "description": "Feeling intensely worried or uneasy about what might happen in the future."
+            },
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking interest, enthusiasm, or general concern."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "The veteran therapy horse stood entirely motionless at the corner of the paddock, tracking the exhaust trail of the trailer moving toward the main highway. His companion of twelve years had been sold to a ranch out west, and the animal let out a low, vibrating whinny before lowering his head into the dirt.",
+        "question": "What emotional depth is conveyed through the horse's actions?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling profoundly down, unhappy, or isolated due to a painful separation or emotional loss."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after making a public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude21",
+                "label": "Anger",
+                "description": "Feeling deeply annoyed, mad, or frustrated."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "As the structural integrity of the old cellar gave way, a shower of ancient dust and mortar blanketed the staircase, plunging the underground vault into absolute pitch blackness. Isaac frantically reached for the heavy iron latch, but the handle sheared off completely in his hand, causing his chest to constrict violently.",
+        "question": "How is Isaac feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude28",
+            "label": "Fear",
+            "description": "Feeling scared, startled, or profoundly unsafe when suddenly trapped in an immediate, threatening environment."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling bitter because someone else has something you want."
+            },
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking distinct interest or concern about your surroundings."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "Listening to his classmate recount the details of losing her family's home in the recent flash floods, Liam felt a lump form in his own throat. Having endured an identical disaster during his childhood, he recognized the exact tremor in her voice, feeling the cold weight of her displacement as if it were happening to him again.",
+        "question": "What psychological capacity is Liam exhibiting?",
+        "correct_emotion": {
+            "emoji": "\ud83e\udd79",
+            "label": "Empathy",
+            "description": "Understanding, absorbing, and deeply sharing the exact internal grief or emotional state of another person."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            },
+            {
+                "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
+                "label": "Resignation",
+                "description": "Giving up hope and quietly accepting a bad situation."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "When the final tournament rosters were publicized, Lucas discovered his name had been moved entirely to the alternate listing, meaning he would remain on the bench while the rest of his cohort competed in the championships. He ground his teeth, threw his athletic gear into the back of his locker, and kicked the metal door closed.",
+        "question": "How is Lucas feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude21",
+            "label": "Anger",
+            "description": "Feeling deeply annoyed, mad, or frustrated by an unfavorable, aggravating, or seemingly unfair outcome."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude30",
+                "label": "Anxiety",
+                "description": "Feeling intensely worried or uneasy about future events."
+            },
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry because you did something wrong."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "Avery stared at the digital dashboard, her mind processing the rapid countdown as the standardized testing window began to close. She found herself unable to interpret the comprehension paragraphs, completely convinced that a single sub-par metric would irrevocably derail her placement in the advanced track.",
+        "question": "Which term best aligns with Avery's internal experience?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude30",
+            "label": "Anxiety",
+            "description": "Feeling intensely worried, uneasy, or fearful about an impending evaluation or future consequence."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking any distinct interest, enthusiasm, or concern."
+            },
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after a public mistake."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "The building superintendent announced that the laboratory renovations were officially suspended indefinitely due to corporate restructuring. Rather than registering a formal complaint like her colleagues, Rachel merely let out a dull sigh, shut her tablet, and remarked that it was completely expected given the firm's history.",
+        "question": "How is Rachel feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
+            "label": "Resignation",
+            "description": "Relinquishing personal agency and quietly accepting a discouraging event because it seems completely inevitable."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            },
+            {
+                "emoji": "\ud83e\udd79",
+                "label": "Empathy",
+                "description": "Understanding and deeply sharing the feelings of another."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "The sub-committee members clashed aggressively over how to distribute the remaining grant funds among the competing research proposals. Seated at the very end of the conference table, Zoe methodically updated her personal calendar, totally removed from the debate and demonstrating no preference for which side won.",
+        "question": "What word best characterizes Zoe's behavioral display?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude10",
+            "label": "Apathy",
+            "description": "Lacking distinct interest, enthusiasm, or general concern about events transpiring around you."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude14",
+                "label": "Guilt",
+                "description": "Feeling deeply sorry or regretful because you did something wrong."
+            },
+            {
+                "emoji": "\ud83d\ude12",
+                "label": "Jealousy",
+                "description": "Feeling bitter because someone else has what you want."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "Even though the error went entirely undetected by the grading system, Clara knew she had directly copied three complex formulas from her neighbor's reference card. As she submitted the final exam, she kept her gaze lowered, her heart hammering against her ribs with an uncomfortable wave of internal judgment.",
+        "question": "How is Clara feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude14",
+            "label": "Guilt",
+            "description": "Feeling deeply sorry, anxious, or regretful due to the internal recognition of a personal ethical transgression."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude0e",
+                "label": "Pride",
+                "description": "Feeling highly satisfied and confident."
+            },
+            {
+                "emoji": "\ud83d\ude04",
+                "label": "Happiness",
+                "description": "Feeling joyful, glad, or full of positive energy."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "When the district supervisor read out the list of scholarship recipients, Elena heard her own name echo through the speaker system. She stood up slowly, her shoulders back and her chin lifted, completely validating the thousands of solitary hours she had invested in the library archives.",
+        "question": "What emotion best matches Elena's current state?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude0e",
+            "label": "Pride",
+            "description": "Feeling highly satisfied, confident, and internally rewarded due to the validation of your independent efforts."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude33",
+                "label": "Embarrassment",
+                "description": "Feeling self-conscious after an awkward public mistake."
+            },
+            {
+                "emoji": "\ud83d\ude2e\u200d\ud83d\udca8",
+                "label": "Resignation",
+                "description": "Giving up hope and quietly accepting a bad situation."
+            }
+        ]
+    },
+    {
+        "grade_level": 6,
+        "passage": "As the train pulled away from the station, taking the final members of his extended family back to their home province, Tom stood on the empty platform for a long time. He turned back toward his quiet apartment, the sudden silence of the city streets weighing heavily on his shoulders as he walked.",
+        "question": "How is Tom feeling?",
+        "correct_emotion": {
+            "emoji": "\ud83d\ude22",
+            "label": "Sadness",
+            "description": "Feeling down, unhappy, or lonely when experiencing the departure or loss of loved ones."
+        },
+        "distractor_emotions": [
+            {
+                "emoji": "\ud83d\ude28",
+                "label": "Fear",
+                "description": "Feeling scared, startled, or unsafe."
+            },
+            {
+                "emoji": "\ud83d\ude10",
+                "label": "Apathy",
+                "description": "Lacking distinct interest or concern."
+            }
+        ]
+    }
 ]
