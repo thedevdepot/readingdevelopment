@@ -136,7 +136,7 @@ function normalizeWord(value) {
 
 function updateSelectionStatus(message = "") {
   const selectedCount = selectedPassageWords.size;
-  const baseMessage = `Select up to ${maxPassageSelections} words (${selectedCount}/${maxPassageSelections} selected).`;
+  const baseMessage = `Directions: Click the five most important words in the paragraph. You can select up to ${maxPassageSelections} words (${selectedCount}/${maxPassageSelections} selected).`;
   const finalMessage = message ? `${baseMessage} ${message}` : baseMessage;
 
   selectionStatusEl.textContent = finalMessage;
@@ -468,9 +468,14 @@ function showKeywordFeedback(result, isCorrect) {
   feedbackEl.classList.remove("hidden");
   selectionStatusEl.classList.add("hidden");
 
-  const percent = Math.round(result.weightedScore * 100);
-  const responseTone = isCorrect ? "Strong work." : "Good effort.";
-  feedbackEl.textContent = `${responseTone} You matched ${result.matchedCount} important words and earned ${percent}% credit on this question. Press Continue to move on.`;
+  if (result.matchedCount > 0) {
+    feedbackEl.textContent = "Good job finding important words. Press Continue to move on.";
+    return;
+  }
+
+  feedbackEl.textContent = isCorrect
+    ? "Nice work on this paragraph. Press Continue to move on."
+    : "Nice effort. Keep looking for words that carry the main idea. Press Continue to move on.";
 }
 
 function showResult() {

@@ -335,15 +335,24 @@ button:hover {
 
 .passage-word {
   appearance: none;
+  -webkit-appearance: none;
   border: none;
   background: transparent;
   color: inherit;
   cursor: pointer;
   border-radius: 7px;
-  padding: 0 2px;
+  padding: 0 1px;
   margin: 0;
   font: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
   line-height: inherit;
+  width: auto;
+  min-height: 0;
+  box-shadow: none;
+  display: inline;
+  text-align: left;
+  vertical-align: baseline;
 }
 
 .passage-word:hover {
