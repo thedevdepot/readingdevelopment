@@ -3,7 +3,8 @@ let allQuestionsByType = {
   'sentence-completion': [],
   'vocabulary-in-context': [],
   'image-description': [],
-  'keyword-highlight': []
+  'keyword-highlight': [],
+  'image-select': []
 };
 let currentQuestion = null;
 let currentQuestionType = null;
@@ -20,13 +21,14 @@ let usedQuestionTypes = new Set();
 let selectedPassageWords = new Set();
 const maxPassageSelections = 5;
 const questionCount = 10;
-const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context', 'image-description', 'keyword-highlight'];
+const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context', 'image-description', 'keyword-highlight', 'image-select'];
 const questionSources = {
   'multiple-choice': { file: 'multiple-choice-questions.csv', format: 'csv' },
   'sentence-completion': { file: 'sentence-completion-questions.csv', format: 'csv' },
   'vocabulary-in-context': { file: 'vocabulary-in-context-questions.csv', format: 'csv' },
   'image-description': { file: 'image-description-questions.json', format: 'json' },
-  'keyword-highlight': { file: 'keyword-highlight-questions.json', format: 'json' }
+  'keyword-highlight': { file: 'keyword-highlight-questions.json', format: 'json' },
+  'image-select': { file: 'image-select-questions.json', format: 'json' }
 };
 
 function parseCSV(text) {
@@ -77,6 +79,22 @@ function shuffle(array) {
   return copy;
 }
 
+function buildImageDescriptionDetail(entry, level) {
+  const primaryDetail = entry.detail_1 || entry.detail || "";
+  const secondaryDetail = entry.detail_2 || "";
+  const tertiaryDetail = entry.detail_3 || "";
+
+  if (level <= 3) {
+    return primaryDetail;
+  }
+
+  if (level === 4) {
+    return [primaryDetail, secondaryDetail].filter(Boolean).join(" ");
+  }
+
+  return [primaryDetail, secondaryDetail, tertiaryDetail].filter(Boolean).join(" ");
+}
+
 function buildImageDescriptionText(subject, detail, level) {
   const scene = detail ? `${subject} ${detail}` : subject;
 
@@ -104,11 +122,11 @@ function buildImageDescriptionQuestions(records) {
       const chosenDistractors = shuffle(record.distractors).slice(0, 2);
       const choices = shuffle([
         {
-          text: buildImageDescriptionText(record.correct.subject, record.correct.detail, level),
+          text: buildImageDescriptionText(record.correct.subject, buildImageDescriptionDetail(record.correct, level), level),
           isCorrect: true
         },
         ...chosenDistractors.map(distractor => ({
-          text: buildImageDescriptionText(distractor.subject, distractor.detail, level),
+          text: buildImageDescriptionText(distractor.subject, buildImageDescriptionDetail(distractor, level), level),
           isCorrect: false
         }))
       ]);
@@ -125,6 +143,86 @@ function buildImageDescriptionQuestions(records) {
       };
     });
   });
+}
+
+function buildImageSelectQuestions(records) {
+  return records.map((record, index) => {
+    const imageChoices = shuffle([
+      {
+        src: record.correct_image,
+        alt: record.correct_image_alt || record.description,
+        isCorrect: true
+      },
+      ...(record.distractor_images || []).map((src, distractorIndex) => ({
+        src,
+        alt: record.distractor_image_alts?.[distractorIndex] || `Distractor image ${distractorIndex + 1}`,
+        isCorrect: false
+      }))
+    ]);
+
+    return {
+      id: record.id || `image-select-${index}`,
+      type: 'image-select',
+      text: `Select the image that matches this description: ${record.description}`,
+      imageChoices,
+      choices: imageChoices.map((choice, choiceIndex) => `Image option ${choiceIndex + 1}`),
+      answer: imageChoices.findIndex(choice => choice.isCorrect),
+      level: Number(record.grade_level)
+    };
+  });
+}
+
+function renderImageSelectQuestion(question) {
+  const legend = document.createElement("legend");
+  legend.className = "sr-only";
+  legend.textContent = "Choose the image that matches the description";
+  choicesEl.appendChild(legend);
+
+  const imageGrid = document.createElement("div");
+  imageGrid.className = "image-choice-grid";
+
+  question.imageChoices.forEach((choice, index) => {
+    const radioId = `image-choice-${index}`;
+
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.id = radioId;
+    input.name = "answer";
+    input.value = index;
+    input.className = "image-choice-input";
+    input.setAttribute("aria-label", `Image option ${index + 1}: ${choice.alt}`);
+    input.onchange = () => {
+      if (answered) {
+        input.checked = false;
+        return;
+      }
+      selected = index;
+    };
+
+    const image = document.createElement("img");
+    image.src = choice.src;
+    image.alt = choice.alt;
+    image.loading = "lazy";
+
+    const label = document.createElement("label");
+    label.htmlFor = radioId;
+    label.className = "image-choice-label";
+    label.appendChild(image);
+
+    const caption = document.createElement("span");
+    caption.className = "image-choice-caption";
+    caption.textContent = `Option ${index + 1}`;
+    label.appendChild(caption);
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "image-choice-wrapper";
+    wrapper.appendChild(input);
+    wrapper.appendChild(label);
+
+    imageGrid.appendChild(wrapper);
+  });
+
+  choicesEl.appendChild(imageGrid);
 }
 
 function normalizeWord(value) {
@@ -281,6 +379,11 @@ function loadAllQuestions() {
           return;
         }
 
+        if (type === 'image-select') {
+          allQuestionsByType[type] = buildImageSelectQuestions(data);
+          return;
+        }
+
         allQuestionsByType[type] = parseCSV(data).map((row, index) => ({
           id: `${type}-${index}`,
           type: type,
@@ -415,6 +518,16 @@ function loadQuestion() {
     return;
   }
 
+  if (q.type === 'image-select') {
+    choicesEl.innerHTML = "";
+    renderImageSelectQuestion(q);
+    const firstImageChoice = choicesEl.querySelector('input[type="radio"]');
+    if (firstImageChoice) {
+      firstImageChoice.focus();
+    }
+    return;
+  }
+
   q.choices.forEach((choice, index) => {
     const radioId = `choice-${index}`;
     
@@ -455,7 +568,9 @@ function loadQuestion() {
 function showFeedback(isCorrect) {
   feedbackEl.classList.remove("hidden");
   selectionStatusEl.classList.add("hidden");
-  const correctText = currentQuestion.choices[currentQuestion.answer];
+  const correctText = currentQuestion.type === 'image-select'
+    ? 'the matching image'
+    : currentQuestion.choices[currentQuestion.answer];
 
   if (isCorrect) {
     feedbackEl.textContent = "Correct! Great job. Press Continue to move on.";

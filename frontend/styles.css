@@ -456,6 +456,70 @@ button:hover {
   background: #5a7af7;
 }
 
+.image-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.image-choice-wrapper {
+  position: relative;
+}
+
+.image-choice-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.image-choice-label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  min-height: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.image-choice-label:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+}
+
+.image-choice-label img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.image-choice-caption {
+  text-align: center;
+  color: #f7f9ff;
+  font-weight: 700;
+}
+
+.image-choice-wrapper:has(.image-choice-input:checked) .image-choice-label {
+  background: #4e78f8;
+  border-color: rgba(115, 159, 255, 0.65);
+}
+
+.image-choice-wrapper:has(.image-choice-input:focus-visible) .image-choice-label {
+  outline: 3px solid #6d8cff;
+  outline-offset: 2px;
+}
+
+.image-choice-wrapper:has(.image-choice-input:disabled) .image-choice-label {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 /* Focus visible for keyboard navigation */
 *:focus-visible {
   outline: 3px solid #6d8cff;
@@ -485,6 +549,12 @@ a:focus-visible {
   * {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .image-choice-grid {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -1,0 +1,92 @@
+[
+  {
+    "grade_level": 1,
+    "description": "A big dog sits in the sun.",
+    "correct_image": "images/nicedog.jpg",
+    "distractor_images": [
+      "images/threecats.jpg",
+      "images/watermelon.jpg"
+    ]
+  },
+  {
+    "grade_level": 1,
+    "description": "Three cats sit on a bed.",
+    "correct_image": "images/threecats.jpg",
+    "distractor_images": [
+      "images/catburrito.jpg",
+      "images/nicedog.jpg"
+    ]
+  },
+  {
+    "grade_level": 1,
+    "description": "A big ball is on the court.",
+    "correct_image": "images/basketballdrink.jpg",
+    "distractor_images": [
+      "images/tennisball.jpg",
+      "images/oranges.jpg"
+    ]
+  },
+  {
+    "grade_level": 1,
+    "description": "A big hat is on the table.",
+    "correct_image": "images/brushhat.jpg",
+    "distractor_images": [
+      "images/spacehelmet.jpg",
+      "images/niceglasses.jpg"
+    ]
+  },
+  {
+    "grade_level": 1,
+    "description": "Many sweet oranges are in a pile.",
+    "correct_image": "images/oranges.jpg",
+    "distractor_images": [
+      "images/watermelon.jpg",
+      "images/carrotsbeets.jpg"
+    ]
+  },
+  {
+    "grade_level": 1,
+    "description": "A green watermelon has dark lines.",
+    "correct_image": "images/watermelon.jpg",
+    "distractor_images": [
+      "images/oranges.jpg",
+      "images/honeycomb.jpg"
+    ]
+  },
+  {
+    "grade_level": 1,
+    "description": "A sad cat is in a white towel.",
+    "correct_image": "images/catburrito.jpg",
+    "distractor_images": [
+      "images/threecats.jpg",
+      "images/nicedog.jpg"
+    ]
+  },
+  {
+    "grade_level": 1,
+    "description": "A man holds a board on the sand.",
+    "correct_image": "images/surferdude.jpg",
+    "distractor_images": [
+      "images/nicemeetings.jpg",
+      "images/basketballdrink.jpg"
+    ]
+  },
+  {
+    "grade_level": 1,
+    "description": "A small yellow ball is on the floor.",
+    "correct_image": "images/tennisball.jpg",
+    "distractor_images": [
+      "images/basketballdrink.jpg",
+      "images/oranges.jpg"
+    ]
+  },
+  {
+    "grade_level": 1,
+    "description": "A big wheel is up in the sky.",
+    "correct_image": "images/ferriswheel.jpg",
+    "distractor_images": [
+      "images/coolsails.webp",
+      "images/nicewindow.webp"
+    ]
+  }
+]
