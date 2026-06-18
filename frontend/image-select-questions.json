@@ -1,92 +1,542 @@
 [
-  {
-    "grade_level": 1,
-    "description": "A big dog sits in the sun.",
-    "correct_image": "images/nicedog.jpg",
-    "distractor_images": [
-      "images/threecats.jpg",
-      "images/watermelon.jpg"
-    ]
-  },
-  {
-    "grade_level": 1,
-    "description": "Three cats sit on a bed.",
-    "correct_image": "images/threecats.jpg",
-    "distractor_images": [
-      "images/catburrito.jpg",
-      "images/nicedog.jpg"
-    ]
-  },
-  {
-    "grade_level": 1,
-    "description": "A big ball is on the court.",
-    "correct_image": "images/basketballdrink.jpg",
-    "distractor_images": [
-      "images/tennisball.jpg",
-      "images/oranges.jpg"
-    ]
-  },
-  {
-    "grade_level": 1,
-    "description": "A big hat is on the table.",
-    "correct_image": "images/brushhat.jpg",
-    "distractor_images": [
-      "images/spacehelmet.jpg",
-      "images/niceglasses.jpg"
-    ]
-  },
-  {
-    "grade_level": 1,
-    "description": "Many sweet oranges are in a pile.",
-    "correct_image": "images/oranges.jpg",
-    "distractor_images": [
-      "images/watermelon.jpg",
-      "images/carrotsbeets.jpg"
-    ]
-  },
-  {
-    "grade_level": 1,
-    "description": "A green watermelon has dark lines.",
-    "correct_image": "images/watermelon.jpg",
-    "distractor_images": [
-      "images/oranges.jpg",
-      "images/honeycomb.jpg"
-    ]
-  },
-  {
-    "grade_level": 1,
-    "description": "A sad cat is in a white towel.",
-    "correct_image": "images/catburrito.jpg",
-    "distractor_images": [
-      "images/threecats.jpg",
-      "images/nicedog.jpg"
-    ]
-  },
-  {
-    "grade_level": 1,
-    "description": "A man holds a board on the sand.",
-    "correct_image": "images/surferdude.jpg",
-    "distractor_images": [
-      "images/nicemeetings.jpg",
-      "images/basketballdrink.jpg"
-    ]
-  },
-  {
-    "grade_level": 1,
-    "description": "A small yellow ball is on the floor.",
-    "correct_image": "images/tennisball.jpg",
-    "distractor_images": [
-      "images/basketballdrink.jpg",
-      "images/oranges.jpg"
-    ]
-  },
-  {
-    "grade_level": 1,
-    "description": "A big wheel is up in the sky.",
-    "correct_image": "images/ferriswheel.jpg",
-    "distractor_images": [
-      "images/coolsails.webp",
-      "images/nicewindow.webp"
-    ]
-  }
+    {
+        "grade_level": 1,
+        "description": "A big dog sits in the sun.",
+        "correct_image": "images/nicedog.jpg",
+        "distractor_images": [
+            "images/threecats.jpg",
+            "images/watermelon.jpg"
+        ]
+    },
+    {
+        "grade_level": 1,
+        "description": "Three cats sit on a bed.",
+        "correct_image": "images/threecats.jpg",
+        "distractor_images": [
+            "images/catburrito.jpg",
+            "images/nicedog.jpg"
+        ]
+    },
+    {
+        "grade_level": 1,
+        "description": "A big ball is on the court.",
+        "correct_image": "images/basketballdrink.jpg",
+        "distractor_images": [
+            "images/tennisball.jpg",
+            "images/oranges.jpg"
+        ]
+    },
+    {
+        "grade_level": 1,
+        "description": "A big hat is on the table.",
+        "correct_image": "images/brushhat.jpg",
+        "distractor_images": [
+            "images/spacehelmet.jpg",
+            "images/niceglasses.jpg"
+        ]
+    },
+    {
+        "grade_level": 1,
+        "description": "Many sweet oranges are in a pile.",
+        "correct_image": "images/oranges.jpg",
+        "distractor_images": [
+            "images/watermelon.jpg",
+            "images/carrotsbeets.jpg"
+        ]
+    },
+    {
+        "grade_level": 1,
+        "description": "A green watermelon has dark lines.",
+        "correct_image": "images/watermelon.jpg",
+        "distractor_images": [
+            "images/oranges.jpg",
+            "images/honeycomb.jpg"
+        ]
+    },
+    {
+        "grade_level": 1,
+        "description": "A sad cat is in a white towel.",
+        "correct_image": "images/catburrito.jpg",
+        "distractor_images": [
+            "images/threecats.jpg",
+            "images/nicedog.jpg"
+        ]
+    },
+    {
+        "grade_level": 1,
+        "description": "A man holds a board on the sand.",
+        "correct_image": "images/surferdude.jpg",
+        "distractor_images": [
+            "images/nicemeetings.jpg",
+            "images/basketballdrink.jpg"
+        ]
+    },
+    {
+        "grade_level": 1,
+        "description": "A small yellow ball is on the floor.",
+        "correct_image": "images/tennisball.jpg",
+        "distractor_images": [
+            "images/basketballdrink.jpg",
+            "images/oranges.jpg"
+        ]
+    },
+    {
+        "grade_level": 1,
+        "description": "A big wheel is up in the sky.",
+        "correct_image": "images/ferriswheel.jpg",
+        "distractor_images": [
+            "images/coolsails.webp",
+            "images/nicewindow.webp"
+        ]
+    },
+    {
+        "grade_level": 2,
+        "description": "A wet orange cat is wrapped tightly in a soft white towel.",
+        "correct_image": "images/catburrito.jpg",
+        "distractor_images": [
+            "images/threecats.jpg",
+            "images/nicedog.jpg"
+        ]
+    },
+    {
+        "grade_level": 2,
+        "description": "A round watermelon has dark green stripes on its smooth skin.",
+        "correct_image": "images/watermelon.jpg",
+        "distractor_images": [
+            "images/oranges.jpg",
+            "images/carrotsbeets.jpg"
+        ]
+    },
+    {
+        "grade_level": 2,
+        "description": "Many people sit around a table for a meeting in a bright office.",
+        "correct_image": "images/nicemeetings.jpg",
+        "distractor_images": [
+            "images/traincarinside.jpg",
+            "images/videomeeting.jpg"
+        ]
+    },
+    {
+        "grade_level": 2,
+        "description": "Bright sailboats with large yellow and blue sails move on the water.",
+        "correct_image": "images/coolsails.webp",
+        "distractor_images": [
+            "images/jellys.webp",
+            "images/flowerpond.jpg"
+        ]
+    },
+    {
+        "grade_level": 2,
+        "description": "A hot cup of black coffee sits on a dark orange table.",
+        "correct_image": "images/goodcoffee.jpg",
+        "distractor_images": [
+            "images/basketballdrink.jpg",
+            "images/seedbread.jpg"
+        ]
+    },
+    {
+        "grade_level": 2,
+        "description": "A big white Ferris wheel stands tall against a clear blue sky.",
+        "correct_image": "images/ferriswheel.jpg",
+        "distractor_images": [
+            "images/nicewindow.webp",
+            "images/coolsails.webp"
+        ]
+    },
+    {
+        "grade_level": 2,
+        "description": "Pink flowers make pretty shapes as they float on the green water.",
+        "correct_image": "images/flowerpond.jpg",
+        "distractor_images": [
+            "images/paints.jpg",
+            "images/jellys.webp"
+        ]
+    },
+    {
+        "grade_level": 2,
+        "description": "A silver space helmet rests by itself on a clean white background.",
+        "correct_image": "images/spacehelmet.jpg",
+        "distractor_images": [
+            "images/brushhat.jpg",
+            "images/niceglasses.jpg"
+        ]
+    },
+    {
+        "grade_level": 2,
+        "description": "Dark purple paint and pink paint are brushed across a white paper.",
+        "correct_image": "images/paints.jpg",
+        "distractor_images": [
+            "images/flowerpond.jpg",
+            "images/purpleroom.webp"
+        ]
+    },
+    {
+        "grade_level": 2,
+        "description": "The inside of a long train car has empty rows of gray seats.",
+        "correct_image": "images/traincarinside.jpg",
+        "distractor_images": [
+            "images/nicemeetings.jpg",
+            "images/videomeeting.jpg"
+        ]
+    },
+    {
+        "grade_level": 3,
+        "description": "An orange water bottle and a basketball rest together on the concrete surface of an outdoor court.",
+        "correct_image": "images/basketballdrink.jpg",
+        "distractor_images": [
+            "images/tennisball.jpg",
+            "images/surferdude.jpg"
+        ]
+    },
+    {
+        "grade_level": 3,
+        "description": "Bright pink flowers make swirling reflections across the surface of the rippling green pond water.",
+        "correct_image": "images/flowerpond.jpg",
+        "distractor_images": [
+            "images/paints.jpg",
+            "images/jellys.webp"
+        ]
+    },
+    {
+        "grade_level": 3,
+        "description": "A beautiful peacock displays its colorful green and blue feathers while standing in a leafy area.",
+        "correct_image": "images/peacock.jpg",
+        "distractor_images": [
+            "images/nicedog.jpg",
+            "images/threecats.jpg"
+        ]
+    },
+    {
+        "grade_level": 3,
+        "description": "A large window allows bright sunlight to shine inside a grand room with a view of the garden.",
+        "correct_image": "images/nicewindow.webp",
+        "distractor_images": [
+            "images/purpleroom.webp",
+            "images/traincarinside.jpg"
+        ]
+    },
+    {
+        "grade_level": 3,
+        "description": "A close-up view shows a loaf of seeded bread with a dark, perfectly toasted outer crust.",
+        "correct_image": "images/seedbread.jpg",
+        "distractor_images": [
+            "images/carrotsbeets.jpg",
+            "images/honeycomb.jpg"
+        ]
+    },
+    {
+        "grade_level": 3,
+        "description": "A pair of sunglasses rests on a tan background next to gold earrings and shiny rings.",
+        "correct_image": "images/niceglasses.jpg",
+        "distractor_images": [
+            "images/brushhat.jpg",
+            "images/spacehelmet.jpg"
+        ]
+    },
+    {
+        "grade_level": 3,
+        "description": "People gather around a modern conference table for a business meeting inside a glass office room.",
+        "correct_image": "images/nicemeetings.jpg",
+        "distractor_images": [
+            "images/traincarinside.jpg",
+            "images/videomeeting.jpg"
+        ]
+    },
+    {
+        "grade_level": 3,
+        "description": "A video meeting with several participants is displayed on a computer screen in a home office.",
+        "correct_image": "images/videomeeting.jpg",
+        "distractor_images": [
+            "images/nicemeetings.jpg",
+            "images/purpleroom.webp"
+        ]
+    },
+    {
+        "grade_level": 3,
+        "description": "Golden pieces of honeycomb are stacked together and dripping with sweet, fresh honey.",
+        "correct_image": "images/honeycomb.jpg",
+        "distractor_images": [
+            "images/seedbread.jpg",
+            "images/carrotsbeets.jpg"
+        ]
+    },
+    {
+        "grade_level": 3,
+        "description": "Several business people hold a meeting next to large windows during a bright golden sunset.",
+        "correct_image": "images/sunmeetings.jpg",
+        "distractor_images": [
+            "images/nicemeetings.jpg",
+            "images/traincarinside.jpg"
+        ]
+    },
+    {
+        "grade_level": 4,
+        "description": "A straw sun hat rests on a neutral tan surface, completely surrounded by a wooden hairbrush, delicate jewelry pieces, and a woven tote bag.",
+        "correct_image": "images/brushhat.jpg",
+        "distractor_images": [
+            "images/niceglasses.jpg",
+            "images/spacehelmet.jpg"
+        ]
+    },
+    {
+        "grade_level": 4,
+        "description": "A magnificent white Ferris wheel featuring multi-colored passenger pods stands tall against a vibrant, turquoise-tinted amusement park sky.",
+        "correct_image": "images/ferriswheel.jpg",
+        "distractor_images": [
+            "images/coolsails.webp",
+            "images/nicewindow.webp"
+        ]
+    },
+    {
+        "grade_level": 4,
+        "description": "A lone surfer in swimwear stands on a sandy beach shore while firmly holding a surfboard under his arm as he looks out.",
+        "correct_image": "images/surferdude.jpg",
+        "distractor_images": [
+            "images/basketballdrink.jpg",
+            "images/tennisball.jpg"
+        ]
+    },
+    {
+        "grade_level": 4,
+        "description": "A single bright yellow tennis ball rests silently on a clean, vibrant surface that glows under intense studio lighting.",
+        "correct_image": "images/tennisball.jpg",
+        "distractor_images": [
+            "images/basketballdrink.jpg",
+            "images/oranges.jpg"
+        ]
+    },
+    {
+        "grade_level": 4,
+        "description": "An empty modern room features entirely purple walls and minimalist furniture bathed in soft, uniform lighting from an unseen source.",
+        "correct_image": "images/purpleroom.webp",
+        "distractor_images": [
+            "images/traincarinside.jpg",
+            "images/nicewindow.webp"
+        ]
+    },
+    {
+        "grade_level": 4,
+        "description": "A collection of textured artistic brushstrokes in shades of magenta, violet, and crimson are layered across a pale background canvas.",
+        "correct_image": "images/paints.jpg",
+        "distractor_images": [
+            "images/flowerpond.jpg",
+            "images/honeycomb.jpg"
+        ]
+    },
+    {
+        "grade_level": 4,
+        "description": "A clear overhead view captures a pristine white ceramic mug filled to the brim with dark coffee displaying an intricate layer of bubbly foam.",
+        "correct_image": "images/goodcoffee.jpg",
+        "distractor_images": [
+            "images/basketballdrink.jpg",
+            "images/seedbread.jpg"
+        ]
+    },
+    {
+        "grade_level": 4,
+        "description": "A large group of sleek corporate sailboats with prominent yellow and blue spinnaker sails navigate through the choppy waters of an expansive ocean.",
+        "correct_image": "images/coolsails.webp",
+        "distractor_images": [
+            "images/jellys.webp",
+            "images/flowerpond.jpg"
+        ]
+    },
+    {
+        "grade_level": 4,
+        "description": "A vintage glass window frame offers an unobstructed view of a manicured garden estate while channeling natural sunlight into a spacious gallery room.",
+        "correct_image": "images/nicewindow.webp",
+        "distractor_images": [
+            "images/purpleroom.webp",
+            "images/traincarinside.jpg"
+        ]
+    },
+    {
+        "grade_level": 4,
+        "description": "A close-up macro photograph reveals a loaf of freshly baked artisan bread covered in various seeds with a deeply browned, crunchy exterior.",
+        "correct_image": "images/seedbread.jpg",
+        "distractor_images": [
+            "images/carrotsbeets.jpg",
+            "images/honeycomb.jpg"
+        ]
+    },
+    {
+        "grade_level": 5,
+        "description": "Sliced roasted beets and whole seasoned carrots are arranged uniformly across a dark, metallic baking sheet, coated in a fine layer of oil and herbs.",
+        "correct_image": "images/carrotsbeets.jpg",
+        "distractor_images": [
+            "images/seedbread.jpg",
+            "images/oranges.jpg"
+        ]
+    },
+    {
+        "grade_level": 5,
+        "description": "Luminescent orange jellyfish drift effortlessly through dark aquatic depths, trailing an intricate network of delicate, threadlike stingers and tentacles.",
+        "correct_image": "images/jellys.webp",
+        "distractor_images": [
+            "images/coolsails.webp",
+            "images/flowerpond.jpg"
+        ]
+    },
+    {
+        "grade_level": 5,
+        "description": "An aerial perspective captures a glossy white porcelain mug filled with rich black coffee, displaying a dense layer of delicate crema foam.",
+        "correct_image": "images/goodcoffee.jpg",
+        "distractor_images": [
+            "images/basketballdrink.jpg",
+            "images/honeycomb.jpg"
+        ]
+    },
+    {
+        "grade_level": 5,
+        "description": "A wet, auburn-furred cat gazes outward with wide eyes while bundled firmly inside a thick white towel against a solid light-blue backdrop.",
+        "correct_image": "images/catburrito.jpg",
+        "distractor_images": [
+            "images/threecats.jpg",
+            "images/nicedog.jpg"
+        ]
+    },
+    {
+        "grade_level": 5,
+        "description": "A single textured basketball rests beside a translucent orange hydration bottle on the weathered concrete surface of an outdoor athletic court.",
+        "correct_image": "images/basketballdrink.jpg",
+        "distractor_images": [
+            "images/tennisball.jpg",
+            "images/surferdude.jpg"
+        ]
+    },
+    {
+        "grade_level": 5,
+        "description": "A collection of textured artistic brushstrokes in shades of magenta, violet, and crimson are layered across a pale canvas background.",
+        "correct_image": "images/paints.jpg",
+        "distractor_images": [
+            "images/flowerpond.jpg",
+            "images/honeycomb.jpg"
+        ]
+    },
+    {
+        "grade_level": 5,
+        "description": "A magnificent male peacock proudly displays its iridescent green and blue plumage while navigating a shaded, leafy forest landscape.",
+        "correct_image": "images/peacock.jpg",
+        "distractor_images": [
+            "images/nicedog.jpg",
+            "images/threecats.jpg"
+        ]
+    },
+    {
+        "grade_level": 5,
+        "description": "Vibrant pink blossoms create complex, swirling optical reflections across the surface of a gently rippling, deep green garden pond.",
+        "correct_image": "images/flowerpond.jpg",
+        "distractor_images": [
+            "images/paints.jpg",
+            "images/jellys.webp"
+        ]
+    },
+    {
+        "grade_level": 5,
+        "description": "A massive white Ferris wheel outfitted with individual passenger pods stands prominent against a striking, pastel turquoise amusement park sky.",
+        "correct_image": "images/ferriswheel.jpg",
+        "distractor_images": [
+            "images/coolsails.webp",
+            "images/nicewindow.webp"
+        ]
+    },
+    {
+        "grade_level": 5,
+        "description": "A spherical, ripe watermelon exhibiting distinct dark green longitudinal stripes rests flat against a clean, neutral surface.",
+        "correct_image": "images/watermelon.jpg",
+        "distractor_images": [
+            "images/oranges.jpg",
+            "images/carrotsbeets.jpg"
+        ]
+    },
+    {
+        "grade_level": 6,
+        "description": "Glistening clusters of geometric golden honeycomb gradually ooze viscous amber fluid into an accumulating pool of fresh honey below.",
+        "correct_image": "images/honeycomb.jpg",
+        "distractor_images": [
+            "images/seedbread.jpg",
+            "images/carrotsbeets.jpg"
+        ]
+    },
+    {
+        "grade_level": 6,
+        "description": "Luminescent orange jellyfish drift effortlessly through dark, subterranean oceanic depths, trailing an intricate network of delicate, threadlike tentacles.",
+        "correct_image": "images/jellys.webp",
+        "distractor_images": [
+            "images/coolsails.webp",
+            "images/flowerpond.jpg"
+        ]
+    },
+    {
+        "grade_level": 6,
+        "description": "An aerial perspective captures a minimalist white ceramic mug filled with rich black coffee, displaying a dense, immaculate layer of delicate crema foam.",
+        "correct_image": "images/goodcoffee.jpg",
+        "distractor_images": [
+            "images/basketballdrink.jpg",
+            "images/honeycomb.jpg"
+        ]
+    },
+    {
+        "grade_level": 6,
+        "description": "An ornate, arched glass window frame offers an unobstructed view of a manicured garden estate while diffusing natural sunlight throughout a spacious interior.",
+        "correct_image": "images/nicewindow.webp",
+        "distractor_images": [
+            "images/purpleroom.webp",
+            "images/traincarinside.jpg"
+        ]
+    },
+    {
+        "grade_level": 6,
+        "description": "A close-up macro photograph reveals a dense loaf of freshly baked artisan bread, generously encrusted with diverse seeds atop a deeply carmelized, crunchy crust.",
+        "correct_image": "images/seedbread.jpg",
+        "distractor_images": [
+            "images/carrotsbeets.jpg",
+            "images/honeycomb.jpg"
+        ]
+    },
+    {
+        "grade_level": 6,
+        "description": "A collection of heavily textured, abstract paint strokes in a palette of magenta, violet, and crimson are layered across a stark canvas background.",
+        "correct_image": "images/paints.jpg",
+        "distractor_images": [
+            "images/flowerpond.jpg",
+            "images/honeycomb.jpg"
+        ]
+    },
+    {
+        "grade_level": 6,
+        "description": "An empty, monochromatic domestic interior features entirely purple surfaces and minimalist architectural lines, bathed uniformly in soft, indirect lighting.",
+        "correct_image": "images/purpleroom.webp",
+        "distractor_images": [
+            "images/traincarinside.jpg",
+            "images/nicewindow.webp"
+        ]
+    },
+    {
+        "grade_level": 6,
+        "description": "A fleet of massive racing yachts outfitted with prominent yellow and blue spinnaker sails navigate parallel trajectories across the vast expanse of a choppy ocean.",
+        "correct_image": "images/coolsails.webp",
+        "distractor_images": [
+            "images/jellys.webp",
+            "images/flowerpond.jpg"
+        ]
+    },
+    {
+        "grade_level": 6,
+        "description": "Vibrant pink botanical specimens generate complex, undulating optical patterns as they reflect symmetrically across the surface of a murky, rippling garden pond.",
+        "correct_image": "images/flowerpond.jpg",
+        "distractor_images": [
+            "images/paints.jpg",
+            "images/jellys.webp"
+        ]
+    },
+    {
+        "grade_level": 6,
+        "description": "Sliced roasted beets and whole seasoned root vegetables are arranged uniformly across a dark, seasoned baking sheet, displaying a glossy layer of oil.",
+        "correct_image": "images/carrotsbeets.jpg",
+        "distractor_images": [
+            "images/seedbread.jpg",
+            "images/oranges.jpg"
+        ]
+    }
 ]
