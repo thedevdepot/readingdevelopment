@@ -163,7 +163,8 @@ function buildImageSelectQuestions(records) {
     return {
       id: record.id || `image-select-${index}`,
       type: 'image-select',
-      text: `Select the image that matches this description: ${record.description}`,
+      text: 'Select the image that matches this description:',
+      promptDetail: record.description,
       imageChoices,
       choices: imageChoices.map((choice, choiceIndex) => `Image option ${choiceIndex + 1}`),
       answer: imageChoices.findIndex(choice => choice.isCorrect),
@@ -490,7 +491,23 @@ function loadQuestion() {
   progressTypeEl.textContent = currentQuestionType.replace(/-/g, ' ');
   progressBarEl.style.width = `${Math.round((questionsAsked / questionCount) * 100)}%`;
   progressBarEl.setAttribute("aria-valuenow", Math.round((questionsAsked / questionCount) * 100));
-  questionEl.textContent = q.text;
+  if (q.type === 'image-select' && q.promptDetail) {
+    questionEl.innerHTML = '';
+
+    const directions = document.createElement('span');
+    directions.textContent = q.text;
+
+    const lineBreak = document.createElement('br');
+
+    const detail = document.createElement('span');
+    detail.textContent = q.promptDetail;
+
+    questionEl.appendChild(directions);
+    questionEl.appendChild(lineBreak);
+    questionEl.appendChild(detail);
+  } else {
+    questionEl.textContent = q.text;
+  }
   questionMediaEl.innerHTML = "";
   if (q.image) {
     const image = document.createElement("img");
