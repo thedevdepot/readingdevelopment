@@ -54,12 +54,19 @@ After completing an assessment, students receive recommended reading resources a
 
 Reading comprehension is more than selecting the correct answer from a list of choices. Future versions of this project will incorporate additional assessment types that allow students to demonstrate understanding in multiple ways.
 
-Planned question types include:
+Implemented question types (current app):
 
 * Multiple choice
 * Sentence completion
+* Vocabulary in context
+* Image description
+* Keyword highlight (evidence-style word selection)
+* Image selection
+* Character emotion identification
+
+Still planned question types:
+
 * Text annotation
-* Vocabulary-in-context responses
 * Written response evaluation
 * Author's purpose and intent analysis
 * Paragraph writing activities
@@ -147,27 +154,27 @@ The long-term vision for this project is to measure reading comprehension throug
 
 These activities can be evaluated with traditional scoring methods and are prioritized because they are easier to implement and provide valuable reading-level data.
 
-| Priority | Question Type                    | Coding Difficulty | Storage Format | Reading Skills Measured           | Reading-Level Value | Engagement |
-| -------- | -------------------------------- | ----------------- | -------------- | --------------------------------- | ------------------- | ---------- |
-| 1        | Multiple Choice                  | Very Easy         | CSV            | Literal comprehension, inference  | Medium              | Medium     |
-| 2        | Vocabulary in Context            | Easy              | CSV            | Vocabulary knowledge              | Very High           | Medium     |
-| 3        | Evidence Selection               | Easy              | CSV            | Text evidence usage               | High                | Medium     |
-| 4        | Character Emotion Identification | Easy              | CSV            | Inferencing, character analysis   | High                | High       |
-| 5        | Image Selection                  | Medium            | JSON           | Visualization, comprehension      | High                | Very High  |
-| 6        | Sequence Ordering                | Medium            | JSON           | Narrative structure, cause/effect | High                | High       |
-| 7        | Cause and Effect Match           | Medium            | JSON           | Logical comprehension             | High                | High       |
+| Priority | Question Type                    | Status      | Coding Difficulty | Storage Format | Reading Skills Measured           | Reading-Level Value | Engagement |
+| -------- | -------------------------------- | ----------- | ----------------- | -------------- | --------------------------------- | ------------------- | ---------- |
+| 1        | Multiple Choice                  | Implemented | Very Easy         | CSV            | Literal comprehension, inference  | Medium              | Medium     |
+| 2        | Vocabulary in Context            | Implemented | Easy              | CSV            | Vocabulary knowledge              | Very High           | Medium     |
+| 3        | Evidence Selection               | Implemented | Easy              | JSON           | Text evidence usage               | High                | Medium     |
+| 4        | Character Emotion Identification | Implemented | Easy              | JSON           | Inferencing, character analysis   | High                | High       |
+| 5        | Image Selection                  | Implemented | Medium            | JSON           | Visualization, comprehension      | High                | Very High  |
+| 6        | Sequence Ordering                | Planned     | Medium            | JSON           | Narrative structure, cause/effect | High                | High       |
+| 7        | Cause and Effect Match           | Planned     | Medium            | JSON           | Logical comprehension             | High                | High       |
 
 ### Phase 2: AI-Assisted Question Types
 
 These activities require evaluation by an LLM or agentic workflow and provide deeper insights into student comprehension.
 
-| Priority | Question Type               | Coding Difficulty | Storage Format | Reading Skills Measured                | Reading-Level Value | Engagement |
-| -------- | --------------------------- | ----------------- | -------------- | -------------------------------------- | ------------------- | ---------- |
-| 8        | Short Constructed Response  | Easy              | JSON           | Written comprehension, inference       | Very High           | Medium     |
-| 9        | Annotation                  | Medium            | JSON           | Evidence identification, close reading | Very High           | High       |
-| 10       | Summary Generation          | Easy              | JSON           | Main idea, synthesis                   | Extremely High      | Medium     |
-| 11       | Text-to-Image Description   | Medium            | JSON           | Mental visualization                   | High                | Very High  |
-| 12       | Conversation with Character | Medium            | JSON           | Perspective taking, comprehension      | High                | Very High  |
+| Priority | Question Type               | Status  | Coding Difficulty | Storage Format | Reading Skills Measured                | Reading-Level Value | Engagement |
+| -------- | --------------------------- | ------- | ----------------- | -------------- | -------------------------------------- | ------------------- | ---------- |
+| 8        | Short Constructed Response  | Planned | Easy              | JSON           | Written comprehension, inference       | Very High           | Medium     |
+| 9        | Annotation                  | Planned | Medium            | JSON           | Evidence identification, close reading | Very High           | High       |
+| 10       | Summary Generation          | Planned | Easy              | JSON           | Main idea, synthesis                   | Extremely High      | Medium     |
+| 11       | Text-to-Image Description   | Planned | Medium            | JSON           | Mental visualization                   | High                | Very High  |
+| 12       | Conversation with Character | Planned | Medium            | JSON           | Perspective taking, comprehension      | High                | Very High  |
 
 ### Why Multiple Modalities?
 
