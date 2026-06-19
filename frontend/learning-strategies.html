@@ -7,154 +7,89 @@
   <title>Learning Strategies — LaunchPad Reading Application</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    :root {
-      --paper: #f7f4ea;
-      --ink: #1f2933;
-      --teal: #0f766e;
-      --gold: #f59e0b;
-      --card: #fffdf8;
-      --line: #d6d3c9;
-    }
-
-    body {
-      background: radial-gradient(circle at 10% 10%, #fff7d6 0%, #f6efe2 45%, #e8f1f4 100%);
-      color: var(--ink);
-    }
-
-    .guide-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 250px;
-      gap: 1.5rem;
-      align-items: start;
-    }
-
-    .guide-main {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 252, 246, 0.96) 100%);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 1.25rem;
-      box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
-    }
-
     .guide-intro {
-      border-left: 6px solid var(--gold);
-      background: #fff8e8;
-      border-radius: 10px;
-      padding: 0.9rem 1rem;
-      margin-bottom: 1.2rem;
+      margin: 0 0 16px;
+      padding: 12px;
+      background: rgba(107, 91, 149, 0.15);
+      border-radius: 8px;
+      border-left: 3px solid #b0d4ff;
+      color: #f1f5ff;
     }
 
     .guide-section {
-      margin: 1rem 0 1.3rem;
+      margin: 20px 0;
       padding: 1rem;
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border-left: 4px solid rgba(107, 91, 149, 0.4);
+      border-radius: 8px;
     }
 
     .guide-section h3 {
       margin-top: 0;
-      color: var(--teal);
+      color: #b0d4ff;
+    }
+
+    .guide-section ul {
+      margin: 12px 0;
+      padding-left: 24px;
+    }
+
+    .guide-section li {
+      margin: 8px 0;
+      line-height: 1.6;
+      color: #f1f5ff;
     }
 
     .section-media {
-      margin: 0.75rem 0 0;
-      background: #ffffff;
-      border: 1px solid #e8e4d8;
-      border-radius: 10px;
+      margin: 12px 0 0;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 8px;
       overflow: hidden;
-      max-width: 520px;
+      max-width: 560px;
     }
 
     .section-media img {
       width: 100%;
-      height: 220px;
+      height: auto;
+      max-height: 250px;
       object-fit: cover;
       display: block;
     }
 
     .section-media figcaption {
-      padding: 0.5rem 0.65rem;
+      padding: 8px 10px;
       font-size: 0.86rem;
+      color: #a9c9ff;
     }
 
     .verse {
-      margin-top: 0.8rem;
-      border-left: 4px solid var(--teal);
-      background: #eef9f8;
-      padding: 0.7rem 0.9rem;
-      border-radius: 8px;
+      margin-top: 12px;
+      border-left: 3px solid #b0d4ff;
+      background: rgba(107, 91, 149, 0.15);
+      padding: 10px 12px;
+      border-radius: 6px;
       font-style: italic;
+      color: #f1f5ff;
     }
 
-    .guide-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-      gap: 0.8rem;
-      margin-top: 0.8rem;
+    .guide-section p {
+      color: #f1f5ff;
     }
 
-    .guide-figure {
-      margin: 0;
-      background: #ffffff;
-      border: 1px solid #e8e4d8;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .guide-figure img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .guide-figure figcaption {
-      padding: 0.45rem 0.55rem;
-      font-size: 0.84rem;
-    }
-
-    .side-jump-nav {
-      position: sticky;
-      top: 1rem;
-      background: #fefefe;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 0.9rem;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-    }
-
-    .side-jump-nav h3 {
-      margin: 0 0 0.65rem;
+    .jump-nav-title {
+      margin: 0 0 8px;
+      color: #b0d4ff;
       font-size: 1rem;
-      color: var(--teal);
     }
 
-    .jump-link {
-      display: block;
-      text-decoration: none;
-      text-align: center;
-      margin: 0.45rem 0;
-      padding: 0.55rem 0.65rem;
-      border-radius: 10px;
-      font-weight: 600;
-      background: linear-gradient(180deg, #0f766e 0%, #0b5d57 100%);
-      color: #ffffff;
-    }
-
-    .jump-link:hover,
-    .jump-link:focus {
-      background: linear-gradient(180deg, #145c57 0%, #0a4b47 100%);
-      outline: none;
+    .side-menu nav {
+      width: 100%;
     }
 
     @media (max-width: 900px) {
-      .guide-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .side-jump-nav {
-        position: static;
+      .section-media {
+        max-width: 100%;
       }
     }
   </style>
@@ -175,128 +110,91 @@
 
       <main class="main-content" id="main-content">
         <h2 id="top">Quick Guide: Cracking the Code to Getting Things Done!</h2>
+        <p class="guide-intro">Hey there! Studying can feel like climbing a mountain sometimes, but you do not have to do it all at once. Here is a simple game plan to help you beat distractions, stay encouraged, and win your day.</p>
 
-        <div class="guide-layout">
-          <div class="guide-main">
-            <p class="guide-intro">Hey there! Studying can feel like climbing a mountain sometimes, but you do not have to do it all at once. Here is a simple game plan to help you beat distractions, stay encouraged, and win your day.</p>
-            <figure class="section-media">
-              <img src="learning_methods_pics/bookshelf.jpg" alt="Books arranged on a bookshelf">
-              <figcaption>Build your learning foundation one shelf at a time.</figcaption>
-            </figure>
+        <section class="guide-section" id="pomodoro">
+          <h3>1. The Pomodoro Method (The "Sprint &amp; Rest" Trick)</h3>
+          <p>When a big task feels overwhelming, break it into tiny, bite-sized pieces of time.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Pick one thing to work on (just one).</li>
+            <li><strong>Step 2:</strong> Set a timer for <strong>25 minutes</strong> and focus only on that task.</li>
+            <li><strong>Step 3:</strong> When the timer goes off, stop and take a <strong>5-minute break</strong> to stretch, grab a snack, or walk around.</li>
+            <li><strong>Step 4:</strong> Repeat. After doing this 4 times, take a longer 20-minute break.</li>
+          </ul>
+          <figure class="section-media">
+            <img src="learning_methods_pics/coolbrain.png" alt="Illustration of a brain with colorful elements">
+            <figcaption>Focus in short sprints to keep your brain fresh and effective.</figcaption>
+          </figure>
+          <p class="verse"><strong>Word of Encouragement:</strong> "Commit to the Lord whatever you do, and he will establish your plans." — Proverbs 16:3</p>
+        </section>
 
-            <section class="guide-section" id="pomodoro">
-              <h3>1. The Pomodoro Method (The "Sprint &amp; Rest" Trick)</h3>
-              <p>When a big task feels overwhelming, break it into tiny, bite-sized pieces of time.</p>
-              <ul>
-                <li><strong>Step 1:</strong> Pick one thing to work on (just one).</li>
-                <li><strong>Step 2:</strong> Set a timer for <strong>25 minutes</strong> and focus only on that task.</li>
-                <li><strong>Step 3:</strong> When the timer goes off, stop and take a <strong>5-minute break</strong> to stretch, grab a snack, or walk around.</li>
-                <li><strong>Step 4:</strong> Repeat. After doing this 4 times, take a longer 20-minute break.</li>
-              </ul>
-              <figure class="section-media">
-                <img src="learning_methods_pics/coolbrain.png" alt="Illustration of a brain with colorful elements">
-                <figcaption>Focus in short sprints to keep your brain fresh and effective.</figcaption>
-              </figure>
-              <p class="verse"><strong>Word of Encouragement:</strong> "Commit to the Lord whatever you do, and he will establish your plans." — Proverbs 16:3</p>
-            </section>
+        <section class="guide-section" id="distractions">
+          <h3>2. Defeating Distractions</h3>
+          <p>Distractions happen to everyone. The secret is not being perfect. It is making a plan to protect your focus.</p>
+          <ul>
+            <li><strong>Clear the Desk:</strong> Keep only what you need for one task in front of you.</li>
+            <li><strong>Silence the Phone:</strong> Put your phone on Do Not Disturb and place it across the room.</li>
+            <li><strong>Noise Control:</strong> If noises bother you, try headphones with instrumentals or white noise.</li>
+          </ul>
+          <figure class="section-media">
+            <img src="learning_methods_pics/bookpages.jpg" alt="Open book pages in close view">
+            <figcaption>Turn one page at a time and protect your attention while you work.</figcaption>
+          </figure>
+        </section>
 
-            <section class="guide-section" id="distractions">
-              <h3>2. Defeating Distractions</h3>
-              <p>Distractions happen to everyone. The secret is not being perfect. It is making a plan to protect your focus.</p>
-              <ul>
-                <li><strong>Clear the Desk:</strong> Keep only what you need for one task in front of you.</li>
-                <li><strong>Silence the Phone:</strong> Put your phone on Do Not Disturb and place it across the room.</li>
-                <li><strong>Noise Control:</strong> If noises bother you, try headphones with instrumentals or white noise.</li>
-              </ul>
-              <figure class="section-media">
-                <img src="learning_methods_pics/bookpages.jpg" alt="Open book pages in close view">
-                <figcaption>Turn one page at a time and protect your attention while you work.</figcaption>
-              </figure>
-            </section>
+        <section class="guide-section" id="small-wins">
+          <h3>3. Small Wins = Big Victories</h3>
+          <p>Do not worry about finishing the whole project today. Focus on winning the next 15 minutes.</p>
+          <ul>
+            <li>Writing one sentence is a win.</li>
+            <li>Reading one page is a win.</li>
+            <li>Cleaning off your desk is a win.</li>
+          </ul>
+          <figure class="section-media">
+            <img src="learning_methods_pics/mathpic.jpg" alt="Math notes and symbols on a page">
+            <figcaption>One solved step at a time leads to bigger understanding.</figcaption>
+          </figure>
+          <p>Celebrate these small steps because they build the momentum you need to keep going.</p>
+          <p class="verse"><strong>Word of Encouragement:</strong> "Do not despise these small beginnings, for the Lord rejoices to see the work begin..." — Zechariah 4:10</p>
+        </section>
 
-            <section class="guide-section" id="small-wins">
-              <h3>3. Small Wins = Big Victories</h3>
-              <p>Do not worry about finishing the whole project today. Focus on winning the next 15 minutes.</p>
-              <ul>
-                <li>Writing one sentence is a win.</li>
-                <li>Reading one page is a win.</li>
-                <li>Cleaning off your desk is a win.</li>
-              </ul>
-              <figure class="section-media">
-                <img src="learning_methods_pics/mathpic.jpg" alt="Math notes and symbols on a page">
-                <figcaption>One solved step at a time leads to bigger understanding.</figcaption>
-              </figure>
-              <p>Celebrate these small steps because they build the momentum you need to keep going.</p>
-              <p class="verse"><strong>Word of Encouragement:</strong> "Do not despise these small beginnings, for the Lord rejoices to see the work begin..." — Zechariah 4:10</p>
-            </section>
+        <section class="guide-section" id="discouragement">
+          <h3>4. Overcoming Discouragement (When It Feels Too Hard)</h3>
+          <p>If you get stuck, confused, or feel like giving up, take a deep breath. Mistakes and slow days do not mean you are failing. They mean you are learning.</p>
+          <ul>
+            <li><strong>Change your self-talk:</strong> Instead of "I cannot do this," try "This is tough, but I can figure it out step-by-step."</li>
+            <li><strong>Ask for backup:</strong> There is no shame in asking a teacher, parent, or friend for help.</li>
+          </ul>
+          <figure class="section-media">
+            <img src="learning_methods_pics/kidsreading.jpg" alt="Kids reading together">
+            <figcaption>Learning gets lighter when you read with support and encouragement.</figcaption>
+          </figure>
+        </section>
 
-            <section class="guide-section" id="discouragement">
-              <h3>4. Overcoming Discouragement (When It Feels Too Hard)</h3>
-              <p>If you get stuck, confused, or feel like giving up, take a deep breath. Mistakes and slow days do not mean you are failing. They mean you are learning.</p>
-              <ul>
-                <li><strong>Change your self-talk:</strong> Instead of "I cannot do this," try "This is tough, but I can figure it out step-by-step."</li>
-                <li><strong>Ask for backup:</strong> There is no shame in asking a teacher, parent, or friend for help.</li>
-              </ul>
-              <figure class="section-media">
-                <img src="learning_methods_pics/kidsreading.jpg" alt="Kids reading together">
-                <figcaption>Learning gets lighter when you read with support and encouragement.</figcaption>
-              </figure>
-            </section>
-
-            <section class="guide-section" id="tools-resources">
-              <h3>Extra Tools &amp; Resources</h3>
-              <ul>
-                <li><strong>TomatoTimer:</strong> A simple, free online timer built for the Pomodoro method.</li>
-                <li><strong>Focusmate:</strong> A tool to find virtual study buddies for accountability.</li>
-                <li><strong>Forest App:</strong> A fun app where you grow a virtual tree by staying off your phone and focusing.</li>
-              </ul>
-            </section>
-
-            <section class="guide-section" id="visual-focus-wall">
-              <h3>Focus Inspiration Wall</h3>
-              <p>Use these visuals as quick reset cues: breathe, refocus, and return to your next small win.</p>
-              <div class="guide-grid">
-                <figure class="guide-figure"><img src="images/basketballdrink.jpg" alt="Basketball and drink on a table"><figcaption>Energy break, then back to work.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/brushhat.jpg" alt="Brush and hat arranged together"><figcaption>Set up your tools before you start.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/carrotsbeets.jpg" alt="Carrots and beets"><figcaption>Fuel your focus with healthy choices.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/catburrito.jpg" alt="Cat wrapped like a burrito"><figcaption>Stay cozy and keep going.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/coolsails.webp" alt="Sailboats on the water"><figcaption>Steady progress beats panic.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/ferriswheel.jpg" alt="Ferris wheel at a fair"><figcaption>Breaks help you come back stronger.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/flowerpond.jpg" alt="Flowers near a pond"><figcaption>Calm mind, clear work.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/goodcoffee.jpg" alt="Cup of coffee"><figcaption>Reset your energy intentionally.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/honeycomb.jpg" alt="Honeycomb pattern"><figcaption>Little cells build a strong whole.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/jellys.webp" alt="Colorful jellyfish"><figcaption>Flow through hard moments.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/nicedog.jpg" alt="Friendly dog"><figcaption>Encouragement keeps momentum alive.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/niceglasses.jpg" alt="Stylish glasses on a desk"><figcaption>See the next step clearly.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/nicemeetings.jpg" alt="People in a meeting"><figcaption>Ask for help when needed.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/nicewindow.webp" alt="Window with natural light"><figcaption>Good spaces support good focus.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/oranges.jpg" alt="Fresh oranges"><figcaption>Small healthy breaks count.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/paints.jpg" alt="Paint supplies"><figcaption>Creativity and structure can work together.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/peacock.jpg" alt="Peacock feathers"><figcaption>Show up with confidence.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/purpleroom.webp" alt="Purple room setup"><figcaption>Build a workspace you enjoy.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/seedbread.jpg" alt="Bread with seeds"><figcaption>Consistency feeds progress.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/spacehelmet.jpg" alt="Person with space helmet"><figcaption>Big goals start with small steps.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/sunmeetings.jpg" alt="Meeting room with sunlight"><figcaption>Bring light into your routine.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/surferdude.jpg" alt="Surfer near ocean"><figcaption>Ride each wave one at a time.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/tennisball.jpg" alt="Tennis ball on court"><figcaption>Practice builds skill.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/threecats.jpg" alt="Three cats together"><figcaption>Community helps you stay accountable.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/traincarinside.jpg" alt="Inside of a train car"><figcaption>Keep moving even if it is slow.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/videomeeting.jpg" alt="Video meeting on a screen"><figcaption>Use tools that keep you on track.</figcaption></figure>
-                <figure class="guide-figure"><img src="images/watermelon.jpg" alt="Watermelon slices"><figcaption>Refresh and restart your focus.</figcaption></figure>
-              </div>
-            </section>
-          </div>
-
-          <aside class="side-jump-nav" aria-label="Quick page navigation">
-            <h3>Jump To</h3>
-            <a class="jump-link" href="#pomodoro">Pomodoro</a>
-            <a class="jump-link" href="#distractions">Distractions</a>
-            <a class="jump-link" href="#small-wins">Small Wins</a>
-            <a class="jump-link" href="#discouragement">Discouragement</a>
-            <a class="jump-link" href="#tools-resources">Extra Tools</a>
-          </aside>
-        </div>
+        <section class="guide-section" id="tools-resources">
+          <h3>Extra Tools &amp; Resources</h3>
+          <ul>
+            <li><strong>TomatoTimer:</strong> A simple, free online timer built for the Pomodoro method.</li>
+            <li><strong>Focusmate:</strong> A tool to find virtual study buddies for accountability.</li>
+            <li><strong>Forest App:</strong> A fun app where you grow a virtual tree by staying off your phone and focusing.</li>
+          </ul>
+          <figure class="section-media">
+            <img src="learning_methods_pics/bookshelf.jpg" alt="Books arranged on a bookshelf">
+            <figcaption>Keep your learning tools close and your routine consistent.</figcaption>
+          </figure>
+        </section>
       </main>
+
+      <aside class="side-menu" aria-label="Quick page navigation">
+        <nav>
+          <h3 class="jump-nav-title">Jump To</h3>
+          <a class="side-menu-button" href="#pomodoro">Pomodoro</a>
+          <a class="side-menu-button" href="#distractions">Distractions</a>
+          <a class="side-menu-button" href="#small-wins">Small Wins</a>
+          <a class="side-menu-button" href="#discouragement">Discouragement</a>
+          <a class="side-menu-button" href="#tools-resources">Extra Tools</a>
+        </nav>
+      </aside>
 
       <footer class="small-footer" role="contentinfo">
         <a class="small-link" href="index.html">Back to Home</a>
