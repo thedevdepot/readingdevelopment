@@ -1,7 +1,151 @@
 text,choice1,choice2,choice3,answer,level
-"The puppy was very playful and wanted to chase the ball. What does playful mean?","Likes to have fun","Very sleepy","Very angry",1,1
-"Maya felt relieved when she found her lost notebook. What does relieved mean?","Still worried","No longer worried","Very confused",2,2
-"After the long hike, the hikers were exhausted. What does exhausted mean?","Very tired","Very excited","Very hungry",1,3
-"The scientist made a careful observation before writing her conclusion. What does observation mean?","A wild guess","A close look to notice details","A final decision",2,4
-"The manager asked for a concise summary of the report. What does concise mean?","Long and detailed","Short and clear","Hard to understand",2,5
-"The speaker gave a compelling argument that convinced the audience. What does compelling mean?","Boring and unclear","Forceful and convincing","Very confusing",2,6
+"The little bird sang a sweet song. What does sweet mean?","Nice and pleasant","Sour and loud","Very scary",1,1
+"Leo was upset when his toy broke. What does upset mean?","Happy and excited","Sad or angry","Very sleepy",2,1
+"The big box was heavy to lift. What does heavy mean?","Weighs a lot","Very light","Bright yellow",1,1
+"We walked fast to catch the bus. What does fast mean?","Slowly","Quickly","Quietly",2,1
+"The water in the pool was chilly. What does chilly mean?","Very hot","A little cold","Bright green",2,1
+"The tiny bug crawled on the leaf. What does tiny mean?","Very big","Very small","Loud",2,1
+"The street was quiet at night. What does quiet mean?","Making no noise","Very loud","Full of cars",1,1
+"Dad helped me fix the broken bike. What does fix mean?","To break more","To make whole again","To throw away",2,1
+"The sun is very bright today. What does bright mean?","Dark and cloudy","Giving lots of light","Cold",2,1
+"The puppy was glad to see us. What does glad mean?","Happy","Mad","Sad",1,1
+"The path was narrow, so we walked in a line. What does narrow mean?","Very wide","Thin and not wide","Short",2,1
+"Mom made a huge cake for my birthday. What does huge mean?","Very small","Very large","Tastes bad",2,1
+"The blanket felt cozy on the couch. What does cozy mean?","Warm and comfy","Cold and hard","Wet",1,1
+"The rock was rough when I touched it. What does rough mean?","Smooth and soft","Not smooth or bumpy","Blue",2,1
+"The room was messy with toys everywhere. What does messy mean?","Clean and neat","Not neat or untidy","Empty",2,1
+"The turtle is very slow. What does slow mean?","Moving fast","Not moving fast","Flying high",2,1
+"The test was simple and I got an A. What does simple mean?","Easy to do","Very hard","Long",1,1
+"I made a mistake on my drawing. What does mistake mean?","An error or wrong move","A perfect job","A new color",1,1
+"The kitchen was spotless after cleaning. What does spotless mean?","Very dirty","Perfectly clean","Smelly",2,1
+"The story was funny and made us laugh. What does funny mean?","Silly and making you laugh","Scary","Boring",1,1
+"The teacher gave us a brief recess. What does brief mean?","Very long","Short in time","Loud",2,1
+"We need to hurry or we will be late. What does hurry mean?","Move slowly","Move quickly","Sit down",2,1
+"The kitten was timid and hid under the bed. What does timid mean?","Shy or scared","Brave and loud","Hungry",1,1
+"The water was shallow, so we splashed our feet. What does shallow mean?","Not deep","Very deep","Cold",1,1
+"The task was difficult, but I did not give up. What does difficult mean?","Very easy","Hard to do","Fun",2,1
+"The brave firefighter rescued the cat from the tall tree. What does rescue mean?","To leave behind","To save from danger","To watch from far away",2,2
+"The children were eager to open their presents. What does eager mean?","Very excited and wanting to do something","Tired and ready for bed","Feeling bored",1,2
+"The artist used a blend of blue and yellow to make green. What does blend mean?","A mixture of different things","A clean paintbrush","A type of paper",1,2
+"The dark clouds made the sky look gloomy. What does gloomy mean?","Bright and sunny","Dark and sad","Warm and windy",2,2
+"We took a different route to school today. What does route mean?","A type of vehicle","A heavy backpack","A path or road to travel",3,2
+"The sudden loud noise startled the sleeping puppy. What does startle mean?","To make happy","To put to sleep","To surprise or scare",3,2
+"The instructions were clear, so it was easy to build the toy. What does clear mean?","Easy to understand","Very long and hard","Written in secret code",1,2
+"The old map was so fragile it tore when I touched it. What does fragile mean?","Very strong","Easily broken","Brightly colored",2,2
+"The cozy blanket kept me warm all night. What does cozy mean?","Cold and wet","Hard and bumpy","Comfortable and warm",3,2
+"The curious monkey wanted to see what was inside the box. What does curious mean?","Wanting to know or learn","Very sleepy","Scared of everything",1,2
+"The principal made an announcement over the loudspeaker. What does announcement mean?","A quiet whisper","An important message shared with everyone","A fun game",2,2
+"The runner felt weary after finishing the long race. What does weary mean?","Very excited","Full of energy","Tired or worn out",3,2
+"The visual map helped us find the hidden treasure. What does visual mean?","Something you can see","Something you hear","Something you taste",1,2
+"The small mouse hid in a cavity in the wall. What does cavity mean?","A large mountain","A hollow hole or space","A piece of wood",2,2
+"The store had an abundant supply of fresh apples. What does abundant mean?","Not enough","Having plenty or a lot","Spoiled and bad",2,2
+"The two friends had a dispute over who would play first. What does dispute mean?","An agreement","A shared toy","A disagreement or argument",3,2
+"The chef used a sharp knife to slice the ripe tomatoes. What does slice mean?","To cut into pieces","To mash up completely","To cook on the stove",1,2
+"The vast desert stretched out for miles and miles. What does vast mean?","Very small and tight","Extremely large","Cold and rainy",2,2
+"The creative student drew a beautiful picture. What does creative mean?","Having good or original ideas","Very lazy","Always on time",1,2
+"The continuous rain kept us inside all afternoon. What does continuous mean?","Stopping and starting","Going on without stopping","Just a tiny drop",2,2
+"The heavy coat is essential for the freezing weather. What does essential mean?","Not needed at all","Fun to wear","Completely necessary",3,2
+"The gentle stream flowed slowly through the woods. What does gentle mean?","Mild and peaceful","Wild and fast","Loud and scary",1,2
+"The team celebrated their victory after winning the game. What does victory mean?","A bad loss","A hard practice","A win or success",3,2
+"The sudden storm caused a delay in our travel plans. What does delay mean?","A time when things are slowed down","A fast trip","A clear sunny sky",1,2
+"The solid ice did not break when the rock hit it. What does solid mean?","Firm and hard","Soft and mushy","Completely melted",1,2
+"The agile gymnast easily flipped across the blue mat. What does agile mean?","Able to move quickly and easily","Feeling very tired","Heavy and slow",1,3
+"The dark, dense forest made it difficult to see the trail. What does dense mean?","Thick and closely packed","Open and sunny","Completely empty",1,3
+"The child tried to mimic the bird's chirping sound. What does mimic mean?","To ignore completely","To copy or imitate","To scare away",2,3
+"We need to conserve water by turning off the faucet while brushing our teeth. What does conserve mean?","To waste or throw away","To save or protect","To make dirty",2,3
+"The lost traveler was bewildered by the many different paths. What does bewildered mean?","Very confused","Excited and happy","Calm and relaxed",1,3
+"The bright sun will illuminate the dark room when you open the blinds. What does illuminate mean?","To hide from view","To make cold","To light up",3,3
+"She gave a vague answer because she did not remember the details. What does vague mean?","Not clear or specific","Very loud and noisy","Perfectly accurate",1,3
+"The solitary bear roamed the mountains all by itself. What does solitary mean?","Living in a large group","Living or being alone","Playful and friendly",2,3
+"The brave knight refused to retreat from the battle. What does retreat mean?","To move forward","To stay in one place","To withdraw or move back",3,3
+"The long drought left the soil dry and cracked. What does drought mean?","A long period of no rain","A sudden heavy flood","A very cold blizzard",1,3
+"The teacher praised the student for their remarkable progress. What does remarkable mean?","Unusual or extraordinary","Very poor or bad","Normal and expected",1,3
+"The delicious aroma of baking cookies filled the entire house. What does aroma mean?","A loud noise","A pleasant smell","A beautiful sight",2,3
+"The cat will conceal itself behind the curtain to hunt the toy. What does conceal mean?","To hide from sight","To show off","To make a loud noise",1,3
+"The medicine helped to alter his body temperature back to normal. What does alter mean?","To keep the same","To make worse","To change or modify",3,3
+"The grand palace had dozens of massive rooms. What does grand mean?","Small and plain","Impressive and magnificent","Dirty and old",2,3
+"The ancient coins were discovered deep underground. What does ancient mean?","Very, very old","Brand new","Shiny and clean",1,3
+"The persistent puppy kept barking until someone opened the door. What does persistent mean?","Giving up instantly","Refusing to give up","Very quiet",2,3
+"The principal wanted to clarify the rules so everyone understood. What does clarify mean?","To make confusing","To completely ignore","To make clear and plain",3,3
+"The soft cushion helped absorb the impact when he fell. What does absorb mean?","To throw back","To take in or soak up","To push away",2,3
+"The map was vital for finding our way out of the woods. What does vital mean?","Not important at all","Extremely important or necessary","Fun to look at",2,3
+"The sudden gust of wind caused the campfire to flicker. What does flicker mean?","To burn brightly and steadily","To go out completely","To shine unsteadily or blink",3,3
+"The vast ocean seemed to go on forever. What does vast mean?","An immense or huge area","A tiny puddle","A narrow river",1,3
+"The rowdy crowd made it hard to hear the speaker. What does rowdy mean?","Quiet and polite","Noisy and disorderly","Very sad",2,3
+"We watched the caterpillar transform into a butterfly. What does transform mean?","To stay exactly the same","To disappear completely","To change completely in form",3,3
+"The tiny seed will sprout after a few days of watering. What does sprout mean?","To begin to grow","To dry up and die","To turn into soil",1,3
+"The internal components of the computer were damaged when it dropped. What does internal mean?","On the outside","Located on the inside","Brand new",2,4
+"The historical museum contains artifacts from hundreds of years ago. What does historical mean?","Related to the past","Very futuristic","Completely imaginary",1,4
+"The dominant wolf led the pack through the snowy valley. What does dominant mean?","Weak and following others","Most powerful or influential","Very small and quiet",2,4
+"The structural integrity of the bridge was checked by engineers. What does structural mean?","Related to how something is built","Beautiful to look at","Made of cheap materials",1,4
+"The prompt arrival of the train ensured we weren't late. What does prompt mean?","Very slow or delayed","Happening on time or without delay","Completely unexpected",2,4
+"The intense heat of the desert made it hard to breathe. What does intense mean?","Very weak or mild","Pleasant and cool","Extremely strong or sharp",3,4
+"The initial step in solving the puzzle is finding the corner pieces. What does initial mean?","The final or last","First or at the beginning","The most difficult",2,4
+"The sharp thorns on the rose bush are a physical defense. What does physical mean?","Related to the body or material things","Existing only in thoughts","Spoken aloud",1,4
+"The math problem was so complex it took an hour to solve. What does complex mean?","Simple and easy","Short and quick","Not simple; complicated",3,4
+"The native plants grow naturally in this region without extra care. What does native mean?","Brought from another country","Belonging naturally to a place","Grown only in a greenhouse",2,4
+"The precise measurements ensured the shelves fit perfectly. What does precise mean?","Exact and accurate","Guessed or estimated","Incorrectly calculated",1,4
+"The driver had to shift gears to go up the steep hill. What does shift mean?","To keep exactly the same","To break into pieces","To change or move",3,4
+"The principal was an authority on school safety rules. What does authority mean?","An expert or person with power","Someone who is learning","A complete stranger",1,4
+"The chemical reaction caused the liquid to turn bright blue. What does chemical mean?","Related to substances and how they react","A type of natural rock","Pure clean water",1,4
+"The layer of ice on the lake was thin and dangerous. What does layer mean?","A deep dark hole","A single thickness or sheet","A fast-moving stream",2,4
+"The primary reason she ran was to get some exercise. What does primary mean?","Unimportant or secondary","The most important or main","The very last",2,4
+"The critical clue helped the detective solve the mystery. What does critical mean?","Extremely important","Silly and funny","Hard to see",1,4
+"The custom of sharing a meal brings the family together. What does custom mean?","A brand new law","A long-established tradition or habit","A mistake made by accident",2,4
+"The framework of the new house was made of strong wood. What does framework mean?","The decorative paint","The outer yard","The supporting structure",3,4
+"The dynamic dancer moved with incredible energy and change. What does dynamic mean?","Slow and lazy","Full of energy and constant change","Boring and repetitive",2,4
+"The secure lock kept the valuable items safe. What does secure mean?","Safe from danger or locked tightly","Broken and loose","Easy to open",1,4
+"The novel idea for the school project won first prize. What does novel mean?","Old and boring","New and original","Very difficult",2,4
+"The company decided to extract oil from deep beneath the ground. What does extract mean?","To bury deeply","To leave alone","To pull or take out",3,4
+"The external walls of the castle were made of thick stone. What does external mean?","On the outside","Hidden deep underground","Located on the inside",1,4
+"The estimate for the car repair was higher than expected. What does estimate mean?","A careful guess of cost or size","A final exact bill","A free item",1,4
+"The principal decided to abolish the outdated dress code rule. What does abolish mean?","To formally put an end to something","To make a rule stricter","To hide from the public",1,5
+"The dynamic climate of the region features unpredictable weather patterns. What does dynamic mean?","Completely unchanging","Constant change or activity","Extremely cold and snowy",2,5
+"The complex architecture of the ancient temple baffled the historians. What does architecture mean?","The design and structure of buildings","The natural environment surrounding a place","A collection of old books",1,5
+"The internal dialogue of the character revealed her true anxieties. What does internal mean?","Expressed loudly to others","Existing on the outside","Existing or occurring within the mind",3,5
+"The physical evidence at the scene confirmed the detective's theory. What does physical mean?","Having material existence or substance","Existing only as an idea","Completely imaginary",1,5
+"The precise calculation allowed the spacecraft to land safely. What does precise mean?","A rough estimate","Strictly accurate or exact","Incorrect or flawed",2,5
+"The primary objective of the mission was to collect soil samples. What does primary mean?","Of chief importance; principal","The very last step","Unimportant or minor",1,5
+"The structural stability of the skyscraper was tested during the earthquake. What does structural mean?","Beautifully decorated on the outside","Related to the arrangement of parts or building","Made of lightweight plastic",2,5
+"The sudden power outage caused a brief shift in the factory's production schedule. What does shift mean?","To remain completely still","To break into small pieces","A change in position or direction",3,5
+"A layer of dense fog covered the valley early in the morning. What does layer mean?","A deep, narrow canyon","A sheet or quantity of material coat","A fast-moving body of water",2,5
+"The initial reaction to the news was absolute disbelief. What does initial mean?","Occurring at the beginning; first","The final conclusion","The most logical response",1,5
+"The historic agreement brought peace to the two warring nations. What does historic mean?","Famous or important in history","Happening far in the future","Completely made up",1,5
+"The custom of lighting candles symbolized hope for the community. What does custom mean?","A standard legal law","An unexpected accident","A traditional way of behaving",3,5
+"The intense pressure caused the deep-sea pipe to crack. What does intense mean?","Very weak or mild","Of extreme force or strength","Pleasant and comfortable",2,5
+"The novel approach to recycling plastic won the environmental award. What does novel mean?","New, original, or unusual","Old-fashioned and traditional","Extremely difficult to do",1,5
+"The estimate for the building materials was well within our budget. What does estimate mean?","The final exact cost","An approximate calculation or judgment","A free sample",2,5
+"The team needed to extract information from the ancient scrolls carefully. What does extract mean?","To remove or pull out with effort","To bury deep underground","To leave completely alone",1,5
+"The external appearance of the building was modern, but the inside was historic. What does external mean?","Belonging to the outside","Hidden deep within the center","Located entirely indoors",1,5
+"The manager was the primary authority on safety protocols. What does authority mean?","The power or right to give orders","A person who is learning","A complete stranger to the job",1,5
+"The chemical composition of the water was tested for impurities. What does chemical mean?","Pure, untreated rain","A type of organic rock","Relating to chemistry or interactions of substances",3,5
+"The framework of the argument was built on solid facts. What does framework mean?","A decorative border","A supporting structure or baseline","An emotional outburst",2,5
+"The native wildlife thrived in the protected national park. What does native mean?","Brought from a distant continent","Grown only in controlled laboratories","Inherent or belonging naturally to a place",3,5
+"The prompt response from the paramedics saved the patient's life. What does prompt mean?","Done without delay; immediate","Very slow or hesitant","Completely unhelpful",1,5
+"The dominant species in the ecosystem controlled the food supply. What does dominant mean?","Weak and easily defeated","Most powerful, commanding, or influential","Extremely small and rare",2,5
+"The critical juncture of the game determined who would win the championship. What does critical mean?","Having decisive importance; crucial","Silly or unimportant","Extremely funny",1,5
+"The researcher had to accumulate data for six months before publishing the study. What does accumulate mean?","To gather or build up a stable amount","To lose or misplace entirely","To distribute to others",1,6
+"The loud construction noise outside began to diminish as the workers packed up. What does diminish mean?","To become louder and more intense","To stay exactly the same","To make or become less or smaller",3,6
+"The sudden power outage created an ambiguous situation for the security team. What does ambiguous mean?","Completely clear and obvious","Open to more than one interpretation; unclear","Extremely safe and secure",2,6
+"The dynamic shifts in the global economy surprised financial experts. What does dynamic mean?","Characterized by constant change or activity","Completely stagnant and still","Predictable and simple",1,6
+"The lawyer presented a concise argument that took only five minutes to deliver. What does concise mean?","Giving a lot of information clearly and briefly","Long, rambling, and confusing","Completely silent",1,6
+"The structural integrity of the spacecraft was verified before launch. What does structural mean?","Related to the arrangement of parts in a complex entity","Brightly painted on the exterior","Incredibly cheap to manufacture",1,6
+"The scientist noted that the precise mutation occurred on the third gene. What does precise mean?","Marked by exactness and accuracy","A random, uneducated guess","Flawed or incorrect",1,6
+"The text was full of obscure idioms that were difficult for the students to interpret. What does interpret mean?","To completely ignore","To explain the meaning of information or words","To rewrite in a different language",2,6
+"The primary objective of the experiment was to isolate the variable. What does primary mean?","Of chief importance; principal","The final or concluding part","Unimportant or minor",1,6
+"The author's unique style was the dominant factor in the book's success. What does dominant mean?","Weak and unnoticeable","Most important, powerful, or influential","Boring and repetitive",2,6
+"The initial phase of the construction project involved clearing the land. What does initial mean?","Occurring at the beginning; first","The final step before completion","The most expensive part",1,6
+"The dense internal layers of the planet consist of molten iron. What does internal mean?","Located on the exterior surface","Existing or situated on the inside","Completely cold and frozen",2,6
+"The custom of exchanging gifts at the summit reinforced the historic treaty. What does custom mean?","An unexpected accident or error","A traditional and widely accepted way of behaving","A newly passed federal law",2,6
+"The intense scrutiny from the media pressured the politician to resign. What does intense mean?","Of extreme force, degree, or strength","Very mild and unnoticeable","Pleasant and comforting",1,6
+"The engineer proposed a novel solution to the city's traffic problem. What does novel mean?","Old-fashioned and traditional","Extremely complicated to execute","New, original, or unusual",3,6
+"The accountant provided an accurate estimate of the project's total cost. What does estimate mean?","An approximate calculation or judgment","A final, binding invoice","A free promotional item",1,6
+"The archaeologists had to extract the delicate fossil from the rock matrix. What does extract mean?","To bury deep within the earth","To leave completely undisturbed","To remove or take out, especially by effort",3,6
+"The external facade of the museum was covered in reflective glass panels. What does external mean?","Belonging to or forming the outer surface","Deeply embedded within the core","Located entirely underground",1,6
+"The governing body has the sole authority to amend the constitution. What does authority mean?","The power or right to give orders and make decisions","A beginner who is learning the ropes","A completely neutral bystander",1,6
+"The chemical breakdown of the plastic takes hundreds of years in a landfill. What does chemical mean?","Pure, unadulterated spring water","Relating to chemistry or the interactions of substances","A physical breakdown by hand",2,6
+"The structural framework of the bridge was reinforced with carbon fiber. What does framework mean?","An essential supporting structure","A decorative outer border","A temporary wooden block",1,6
+"The physical properties of the new alloy make it perfect for aerospace engineering. What does physical mean?","Relating to things perceived through the senses as material","Existing purely as an abstract concept","Spoken aloud during a presentation",1,6
+"The native ecosystem was severely disrupted by the introduction of invasive vines. What does native mean?","Brought over from a foreign country","Grown exclusively in a laboratory","Inherent or belonging naturally to a place",3,6
+"The prompt intervention of the teacher stopped the argument before it escalated. What does prompt mean?","Done without delay; immediate","Hesitant, slow, and uncertain","Completely ineffective",1,6
+"The critical breakdown of the machine halted assembly lines nationwide. What does critical mean?","Having decisive or crucial importance","Amusing or highly entertaining","Unimportant and trivial",1,6
