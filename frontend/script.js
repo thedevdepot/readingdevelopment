@@ -21,6 +21,7 @@ let usedQuestionIds = new Set();
 let usedQuestionTypes = new Set();
 let selectedPassageWords = new Set();
 const maxPassageSelections = 5;
+const autoAdvanceDelayMs = 500;
 const questionCount = 10;
 const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context', 'image-description', 'keyword-highlight', 'image-select', 'character-emotion'];
 const questionSources = {
@@ -195,11 +196,7 @@ function renderImageSelectQuestion(question) {
     input.className = "image-choice-input";
     input.setAttribute("aria-label", `Image option ${index + 1}: ${choice.alt}`);
     input.onchange = () => {
-      if (answered) {
-        input.checked = false;
-        return;
-      }
-      selected = index;
+      handleChoiceSelection(index, input);
     };
 
     const image = document.createElement("img");
@@ -312,6 +309,10 @@ function togglePassageWordSelection(token) {
   selectedPassageWords.add(token);
   updateSelectionStatus();
   updatePassageWordStyles();
+
+  if (selectedPassageWords.size >= maxPassageSelections) {
+    finalizeKeywordQuestion();
+  }
 }
 
 function scoreKeywordSelections(question) {
@@ -344,6 +345,75 @@ function scoreKeywordSelections(question) {
     selectedCount: selectedWords.length,
     weightedRecall
   };
+}
+
+function advanceToNextQuestion() {
+  if (questionsAsked < questionCount) {
+    pickNextQuestion();
+  } else {
+    showResult();
+  }
+}
+
+function finalizeKeywordQuestion() {
+  if (answered) {
+    return;
+  }
+
+  answered = true;
+  const result = scoreKeywordSelections(currentQuestion);
+  const isCorrect = result.weightedScore >= 0.6;
+
+  score += currentQuestion.level * result.weightedScore;
+
+  if (isCorrect) {
+    correctCount += 1;
+    highestCorrectLevel = Math.max(highestCorrectLevel, currentLevel);
+    if (currentLevel < 6) {
+      currentLevel += 1;
+    }
+  } else if (result.weightedScore < 0.35 && currentLevel > 1) {
+    currentLevel -= 1;
+  }
+
+  choicesEl.querySelectorAll(".passage-word").forEach(button => {
+    button.disabled = true;
+  });
+
+  window.setTimeout(advanceToNextQuestion, autoAdvanceDelayMs);
+}
+
+function handleChoiceSelection(index, inputElement) {
+  if (answered) {
+    inputElement.checked = false;
+    return;
+  }
+
+  selected = index;
+  answered = true;
+
+  const isCorrect = selected === currentQuestion.answer;
+  if (isCorrect) {
+    score += currentQuestion.level;
+    correctCount += 1;
+    highestCorrectLevel = Math.max(highestCorrectLevel, currentLevel);
+    if (currentLevel < 6) {
+      currentLevel += 1;
+    }
+  } else if (currentLevel > 1) {
+    currentLevel -= 1;
+  }
+
+  document.querySelectorAll("input[name='answer']").forEach(input => {
+    input.disabled = true;
+  });
+
+  const selectedWrapper = inputElement.closest('.choice-wrapper, .image-choice-wrapper');
+  if (selectedWrapper) {
+    selectedWrapper.classList.add(isCorrect ? 'verdict-correct' : 'verdict-incorrect');
+  }
+
+  window.setTimeout(advanceToNextQuestion, autoAdvanceDelayMs);
 }
 
 function renderKeywordHighlightQuestion(question) {
@@ -527,8 +597,7 @@ function loadQuestion() {
   answered = false;
   feedbackEl.classList.add("hidden");
   feedbackEl.textContent = "";
-  nextBtn.textContent = "Submit Answer";
-  nextBtn.disabled = false;
+  nextBtn.classList.add("hidden");
   selectionStatusEl.classList.add("hidden");
   selectionStatusEl.classList.remove("limit-reached");
 
@@ -571,7 +640,6 @@ function loadQuestion() {
   choicesEl.classList.remove("hidden");
   questionEl.classList.remove("hidden");
   resultEl.classList.add("hidden");
-  nextBtn.classList.remove("hidden");
 
   if (q.type === 'keyword-highlight') {
     choicesEl.innerHTML = "";
@@ -603,11 +671,7 @@ function loadQuestion() {
     input.value = index;
     input.setAttribute("aria-label", choice);
     input.onchange = () => {
-      if (answered) {
-        input.checked = false;
-        return;
-      }
-      selected = index;
+      handleChoiceSelection(index, input);
     };
 
     const label = document.createElement("label");
@@ -628,34 +692,6 @@ function loadQuestion() {
   if (firstInput) {
     firstInput.focus();
   }
-}
-
-function showFeedback(isCorrect) {
-  feedbackEl.classList.remove("hidden");
-  selectionStatusEl.classList.add("hidden");
-  const correctText = currentQuestion.type === 'image-select'
-    ? 'the matching image'
-    : currentQuestion.choices[currentQuestion.answer];
-
-  if (isCorrect) {
-    feedbackEl.textContent = "Correct! Great job. Press Continue to move on.";
-  } else {
-    feedbackEl.textContent = `Incorrect. The right answer is: ${correctText}. Press Continue to move on.`;
-  }
-}
-
-function showKeywordFeedback(result, isCorrect) {
-  feedbackEl.classList.remove("hidden");
-  selectionStatusEl.classList.add("hidden");
-
-  if (result.matchedCount > 0) {
-    feedbackEl.textContent = "Good job finding important words. Press Continue to move on.";
-    return;
-  }
-
-  feedbackEl.textContent = isCorrect
-    ? "Nice work on this paragraph. Press Continue to move on."
-    : "Nice effort. Keep looking for words that carry the main idea. Press Continue to move on.";
 }
 
 function showResult() {
@@ -715,85 +751,8 @@ function showResult() {
 }
 
 nextBtn.onclick = () => {
-  if (currentQuestion.type === 'keyword-highlight') {
-    if (!answered && selectedPassageWords.size === 0) {
-      feedbackEl.classList.remove("hidden");
-      feedbackEl.textContent = "Select at least one word before continuing.";
-      feedbackEl.setAttribute("role", "alert");
-      return;
-    }
-
-    if (!answered) {
-      answered = true;
-      const result = scoreKeywordSelections(currentQuestion);
-      const isCorrect = result.weightedScore >= 0.6;
-
-      score += currentQuestion.level * result.weightedScore;
-
-      if (isCorrect) {
-        correctCount += 1;
-        highestCorrectLevel = Math.max(highestCorrectLevel, currentLevel);
-        if (currentLevel < 6) {
-          currentLevel += 1;
-        }
-      } else if (result.weightedScore < 0.35 && currentLevel > 1) {
-        currentLevel -= 1;
-      }
-
-      showKeywordFeedback(result, isCorrect);
-      nextBtn.textContent = questionsAsked < questionCount ? "Continue" : "See Score";
-      choicesEl.querySelectorAll(".passage-word").forEach(button => {
-        button.disabled = true;
-      });
-      return;
-    }
-
-    if (questionsAsked < questionCount) {
-      pickNextQuestion();
-    } else {
-      showResult();
-    }
-    return;
-  }
-
-  const selectedInput = document.querySelector('input[name="answer"]:checked');
-  if (!selectedInput) {
-    feedbackEl.classList.remove("hidden");
-    feedbackEl.textContent = "Please select an answer before continuing.";
-    feedbackEl.setAttribute("role", "alert");
-    return;
-  }
-
-  selected = parseInt(selectedInput.value);
-
-  if (!answered) {
-    answered = true;
-    const isCorrect = selected === currentQuestion.answer;
-    if (isCorrect) {
-      score += currentQuestion.level;
-      correctCount += 1;
-      highestCorrectLevel = Math.max(highestCorrectLevel, currentLevel);
-      if (currentLevel < 6) {
-        currentLevel += 1;
-      }
-    } else {
-      if (currentLevel > 1) {
-        currentLevel -= 1;
-      }
-    }
-    showFeedback(isCorrect);
-    nextBtn.textContent = questionsAsked < questionCount ? "Continue" : "See Score";
-    document.querySelectorAll("input[name='answer']").forEach(input => {
-      input.disabled = true;
-    });
-    return;
-  }
-
-  if (questionsAsked < questionCount) {
-    pickNextQuestion();
-  } else {
-    showResult();
-  }
+  // Manual submit flow is intentionally disabled in favor of auto-advance.
+  return;
 };
 
 restartBtn.onclick = (event) => {

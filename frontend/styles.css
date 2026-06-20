@@ -440,6 +440,8 @@ button:hover {
 .choice-wrapper {
   display: flex;
   align-items: flex-start;
+  position: relative;
+  overflow: hidden;
   margin: 8px 0;
   padding: 12px 16px;
   background: rgba(10, 88, 79, 0.78);
@@ -491,6 +493,35 @@ button:hover {
   background: #5a7af7;
 }
 
+.choice-wrapper.verdict-correct::after,
+.choice-wrapper.verdict-incorrect::after,
+.image-choice-wrapper.verdict-correct::after,
+.image-choice-wrapper.verdict-incorrect::after {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: clamp(1rem, 0.35vw + 0.9rem, 1.15rem);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.choice-wrapper.verdict-correct::after,
+.image-choice-wrapper.verdict-correct::after {
+  content: "Correct";
+  background: rgba(27, 128, 84, 0.9);
+}
+
+.choice-wrapper.verdict-incorrect::after,
+.image-choice-wrapper.verdict-incorrect::after {
+  content: "Incorrect";
+  background: rgba(179, 39, 39, 0.9);
+}
+
 .image-choice-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -499,6 +530,8 @@ button:hover {
 
 .image-choice-wrapper {
   position: relative;
+  overflow: hidden;
+  border-radius: 18px;
 }
 
 .image-choice-input {
@@ -614,6 +647,7 @@ a:focus-visible {
 }
 
 #feedback {
+  display: none !important;
   margin-top: 16px;
   padding: 16px;
   border-radius: 18px;
