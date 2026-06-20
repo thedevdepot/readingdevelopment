@@ -41,6 +41,10 @@ body {
   margin: 0 auto;
 }
 
+.quiz-layout {
+  grid-template-rows: auto 1fr;
+}
+
 .top {
   grid-column: 1 / 2;
   grid-row: 1;
@@ -121,7 +125,7 @@ li {
 }
 
 .side-menu-button,
-.side-menu a {
+.side-menu-link {
   background: linear-gradient(135deg, #ff8f2a 0%, #ffd86f 100%);
   color: #351b00;
   padding: 12px 14px;
@@ -147,7 +151,7 @@ li {
 }
 
 .side-menu-button:hover,
-.side-menu a:hover {
+.side-menu-link:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
   filter: brightness(1.07);
@@ -174,7 +178,7 @@ h1,
   font-size: 1rem;
 }
 
-.side-menu a:hover {
+.side-menu-link:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
   filter: brightness(1.07);
@@ -721,17 +725,36 @@ button.secondary:hover {
   line-height: 1.4;
 }
 
-.side-menu-quote {
-  margin-top: 10px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  background: rgba(7, 72, 65, 0.84);
-  border: 1px solid rgba(192, 244, 235, 0.28);
-  color: #f3fffd;
+.side-menu-text-link {
+  margin-top: 8px;
+  align-self: flex-start;
+  color: #1c5c56;
+  text-decoration: none;
+  font-size: clamp(0.88rem, 0.15vw + 0.84rem, 0.98rem);
+}
+
+.side-menu-text-link:hover {
+  text-decoration: underline;
+  filter: none;
+  box-shadow: none;
+  transform: none;
+}
+
+.side-menu-plain-quote {
+  margin-top: 6px;
+  color: #0f4f48;
+  font-size: clamp(0.92rem, 0.2vw + 0.86rem, 1rem);
+  line-height: 1.45;
 }
 
 .quote-footer p {
   margin: 0;
+}
+
+.quote-reference {
+  margin-top: 6px;
+  font-size: clamp(0.75rem, 0.12vw + 0.72rem, 0.84rem);
+  color: #2f6f69;
 }
 
 .quote-footer strong {
