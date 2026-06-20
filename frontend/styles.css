@@ -314,6 +314,10 @@ button:hover {
   margin: 0;
 }
 
+.choices-container:has(.image-choice-grid) {
+  margin-bottom: 8px;
+}
+
 .selection-status {
   margin: 6px 0 10px;
   color: #cfe0ff;
