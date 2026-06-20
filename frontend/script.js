@@ -318,9 +318,6 @@ function togglePassageWordSelection(token) {
 function scoreKeywordSelections(question) {
   const selectedWords = Array.from(selectedPassageWords);
   const keywordEntries = question.keywords || [];
-  const totalWeight = keywordEntries.reduce((sum, keyword) => sum + Number(keyword.weight || 0), 0) || 1;
-
-  let matchedWeight = 0;
   let matchedCount = 0;
 
   keywordEntries.forEach(keyword => {
@@ -330,20 +327,13 @@ function scoreKeywordSelections(question) {
     const isMatched = selectedWords.some(word => targets.includes(normalizeWord(word)));
 
     if (isMatched) {
-      matchedWeight += Number(keyword.weight || 0);
       matchedCount += 1;
     }
   });
 
-  const weightedRecall = Math.min(1, matchedWeight / totalWeight);
-  const precision = selectedWords.length > 0 ? matchedCount / selectedWords.length : 0;
-  const weightedScore = Math.min(1, weightedRecall * 0.85 + precision * 0.15);
-
   return {
-    weightedScore,
     matchedCount,
-    selectedCount: selectedWords.length,
-    weightedRecall
+    selectedCount: selectedWords.length
   };
 }
 
@@ -362,17 +352,16 @@ function finalizeKeywordQuestion() {
 
   answered = true;
   const result = scoreKeywordSelections(currentQuestion);
-  const isCorrect = result.weightedScore >= 0.6;
-
-  score += currentQuestion.level * result.weightedScore;
+  const isCorrect = result.matchedCount >= 2;
 
   if (isCorrect) {
+    score += currentQuestion.level;
     correctCount += 1;
     highestCorrectLevel = Math.max(highestCorrectLevel, currentLevel);
     if (currentLevel < 6) {
       currentLevel += 1;
     }
-  } else if (result.weightedScore < 0.35 && currentLevel > 1) {
+  } else if (currentLevel > 1) {
     currentLevel -= 1;
   }
 
