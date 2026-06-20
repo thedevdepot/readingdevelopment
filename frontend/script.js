@@ -524,6 +524,7 @@ function startNewQuiz() {
   usedQuestionIds = new Set();
   usedQuestionTypes = new Set();
   resultEl.classList.add("hidden");
+  updateProgressBars(0, currentLevel);
   progressBarEl.classList.add("shimmer");
   progressBarEl.addEventListener('animationend', () => progressBarEl.classList.remove('shimmer'), { once: true });
   pickNextQuestion();
@@ -572,6 +573,7 @@ function pickNextQuestion() {
 const questionEl = document.getElementById("question");
 const progressLabelEl = document.getElementById("progressLabel");
 const progressTypeEl = document.getElementById("progressType");
+const progressCompletedEl = document.getElementById("progressCompleted");
 const progressBarEl = document.getElementById("progressBar");
 const questionMediaEl = document.getElementById("questionMedia");
 const selectionStatusEl = document.getElementById("selectionStatus");
@@ -580,6 +582,19 @@ const nextBtn = document.getElementById("nextBtn");
 const restartBtn = document.getElementById("restartBtn");
 const feedbackEl = document.getElementById("feedback");
 const resultEl = document.getElementById("result");
+
+function updateProgressBars(completedQuestions, gradeLevel) {
+  const safeCompleted = Math.max(0, Math.min(questionCount, completedQuestions));
+  const safeGrade = Math.max(1, Math.min(6, gradeLevel));
+  const completedPercent = Math.round((safeCompleted / questionCount) * 100);
+  const gradePercent = Math.round((safeGrade / 6) * 100);
+
+  progressCompletedEl.style.width = `${completedPercent}%`;
+  progressCompletedEl.setAttribute("aria-valuenow", String(safeCompleted));
+
+  progressBarEl.style.width = `${gradePercent}%`;
+  progressBarEl.setAttribute("aria-valuenow", String(safeGrade));
+}
 
 function loadQuestion() {
   selected = null;
@@ -593,8 +608,7 @@ function loadQuestion() {
   const q = currentQuestion;
   progressLabelEl.textContent = `Question ${questionsAsked} of ${questionCount}`;
   progressTypeEl.textContent = currentQuestionType.replace(/-/g, ' ');
-  progressBarEl.style.width = `${Math.round((questionsAsked / questionCount) * 100)}%`;
-  progressBarEl.setAttribute("aria-valuenow", Math.round((questionsAsked / questionCount) * 100));
+  updateProgressBars(questionsAsked - 1, currentLevel);
   if ((q.type === 'image-select' || q.type === 'character-emotion') && q.promptDetail) {
     questionEl.innerHTML = '';
 
@@ -691,10 +705,10 @@ function showResult() {
   selectionStatusEl.classList.add("hidden");
   progressLabelEl.textContent = "Quiz complete";
   progressTypeEl.textContent = "";
-  progressBarEl.style.width = "100%";
 
   const weightedRatio = totalQuestionLevels > 0 ? score / totalQuestionLevels : 0;
   const grade = Math.max(1, Math.min(6, Math.round(1 + weightedRatio * 5)));
+  updateProgressBars(questionCount, grade);
 
   resultEl.classList.remove("hidden");
   resultEl.innerHTML = `
