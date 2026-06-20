@@ -795,7 +795,8 @@ nextBtn.onclick = () => {
   }
 };
 
-restartBtn.onclick = () => {
+restartBtn.onclick = (event) => {
+  event.preventDefault();
   startNewQuiz();
 };
 

@@ -721,6 +721,15 @@ button.secondary:hover {
   line-height: 1.4;
 }
 
+.side-menu-quote {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(7, 72, 65, 0.84);
+  border: 1px solid rgba(192, 244, 235, 0.28);
+  color: #f3fffd;
+}
+
 .quote-footer p {
   margin: 0;
 }
