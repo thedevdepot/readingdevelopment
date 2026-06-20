@@ -674,6 +674,7 @@ function showResult() {
   resultEl.classList.remove("hidden");
   resultEl.innerHTML = `
     <h2>Quiz Complete</h2>
+    <p>This short quiz estimates a student's reading level from Grade 1 up to Grade 6.</p>
     <p>Correct answers: ${correctCount} / ${questionsAsked}</p>
     <p>Highest grade level answered correctly: Grade ${highestCorrectLevel}</p>
     <p>Weighted estimated reading level: Grade ${grade}</p>
