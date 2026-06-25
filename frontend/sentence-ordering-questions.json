@@ -1,0 +1,86 @@
+[
+  {
+    "id": "sentence-ordering-1-1",
+    "level": 1,
+    "prompt": "Put these words in order to make a simple sentence.",
+    "text": "Build the best sentence.",
+    "segments": ["The cat", "is", "soft."]
+  },
+  {
+    "id": "sentence-ordering-1-2",
+    "level": 1,
+    "prompt": "Put these words in order to make a simple sentence.",
+    "text": "Build the best sentence.",
+    "segments": ["My mom", "reads", "books."]
+  },
+  {
+    "id": "sentence-ordering-2-1",
+    "level": 2,
+    "prompt": "Arrange the parts to make a complete sentence with a time phrase.",
+    "text": "Put the sentence in order.",
+    "segments": ["After school,", "we", "played outside."]
+  },
+  {
+    "id": "sentence-ordering-2-2",
+    "level": 2,
+    "prompt": "Arrange the parts to make a complete sentence.",
+    "text": "Put the sentence in order.",
+    "segments": ["On Saturday,", "Dad", "cooked pancakes."]
+  },
+  {
+    "id": "sentence-ordering-3-1",
+    "level": 3,
+    "prompt": "Order these parts to form a sentence with cause and effect.",
+    "text": "Arrange the sentence correctly.",
+    "segments": ["Because the rain stopped,", "the children", "ran to the playground."]
+  },
+  {
+    "id": "sentence-ordering-3-2",
+    "level": 3,
+    "prompt": "Order these parts to form a sentence with clear meaning.",
+    "text": "Arrange the sentence correctly.",
+    "segments": ["When the bell rang,", "our class", "lined up quietly."]
+  },
+  {
+    "id": "sentence-ordering-4-1",
+    "level": 4,
+    "prompt": "Arrange the parts to build a sentence with transition language.",
+    "text": "Put the sentence in the best order.",
+    "segments": ["Before we started the experiment,", "our team", "reviewed each safety step."]
+  },
+  {
+    "id": "sentence-ordering-4-2",
+    "level": 4,
+    "prompt": "Arrange the parts to build a sentence with transition language.",
+    "text": "Put the sentence in the best order.",
+    "segments": ["Although the map looked confusing,", "Mia", "found the shortest route home."]
+  },
+  {
+    "id": "sentence-ordering-5-1",
+    "level": 5,
+    "prompt": "Arrange the clauses to form a precise sentence.",
+    "text": "Construct the sentence in order.",
+    "segments": ["After comparing both articles,", "the students", "wrote a claim supported by evidence."]
+  },
+  {
+    "id": "sentence-ordering-5-2",
+    "level": 5,
+    "prompt": "Arrange the clauses to form a precise sentence.",
+    "text": "Construct the sentence in order.",
+    "segments": ["Even though the budget was limited,", "the club", "planned a successful community event."]
+  },
+  {
+    "id": "sentence-ordering-6-1",
+    "level": 6,
+    "prompt": "Reconstruct the sentence so the dependent clause and main clause flow logically.",
+    "text": "Order the sentence parts for formal writing.",
+    "segments": ["While the evidence appeared inconsistent at first,", "the researcher", "identified a pattern after a second analysis."]
+  },
+  {
+    "id": "sentence-ordering-6-2",
+    "level": 6,
+    "prompt": "Reconstruct the sentence so the dependent clause and main clause flow logically.",
+    "text": "Order the sentence parts for formal writing.",
+    "segments": ["Because the policy affects several departments,", "the committee", "requested additional feedback before voting."]
+  }
+]

@@ -1,6 +1,7 @@
 let allQuestionsByType = {
   'multiple-choice': [],
   'sentence-completion': [],
+  'sentence-ordering': [],
   'vocabulary-in-context': [],
   'image-description': [],
   'keyword-highlight': [],
@@ -20,13 +21,15 @@ let answered = false;
 let usedQuestionIds = new Set();
 let usedQuestionTypes = new Set();
 let selectedPassageWords = new Set();
+let selectedSentenceOrder = [];
 const maxPassageSelections = 5;
 const autoAdvanceDelayMs = 500;
 const questionCount = 10;
-const questionTypes = ['multiple-choice', 'sentence-completion', 'vocabulary-in-context', 'image-description', 'keyword-highlight', 'image-select', 'character-emotion'];
+const questionTypes = ['multiple-choice', 'sentence-completion', 'sentence-ordering', 'vocabulary-in-context', 'image-description', 'keyword-highlight', 'image-select', 'character-emotion'];
 const questionSources = {
   'multiple-choice': { file: 'multiple-choice-questions.csv', format: 'csv' },
   'sentence-completion': { file: 'sentence-completion-questions.csv', format: 'csv' },
+  'sentence-ordering': { file: 'sentence-ordering-questions.json', format: 'json' },
   'vocabulary-in-context': { file: 'vocabulary-in-context-questions.csv', format: 'csv' },
   'image-description': { file: 'image-description-questions.json', format: 'json' },
   'keyword-highlight': { file: 'keyword-highlight-questions.json', format: 'json' },
@@ -264,6 +267,27 @@ function buildCharacterEmotionQuestions(records) {
   });
 }
 
+function buildSentenceOrderingQuestions(records) {
+  return records
+    .filter(record => Array.isArray(record.segments) && record.segments.length >= 3)
+    .map((record, index) => {
+      const segmentItems = record.segments.map((segmentText, segmentIndex) => ({
+        id: `seg-${segmentIndex}`,
+        text: segmentText
+      }));
+
+      return {
+        id: record.id || `sentence-ordering-${index}`,
+        type: 'sentence-ordering',
+        text: record.text || 'Put the sentence parts in the best order.',
+        promptDetail: record.prompt || '',
+        level: Number(record.level) || 1,
+        segments: segmentItems,
+        answerOrder: segmentItems.map(segment => segment.id)
+      };
+    });
+}
+
 function normalizeWord(value) {
   return value
     .toLowerCase()
@@ -405,6 +429,170 @@ function handleChoiceSelection(index, inputElement) {
   window.setTimeout(advanceToNextQuestion, autoAdvanceDelayMs);
 }
 
+function renderSentenceOrderingQuestion(question) {
+  selectedSentenceOrder = [];
+
+  const legend = document.createElement('legend');
+  legend.className = 'sr-only';
+  legend.textContent = 'Arrange the sentence parts in order';
+  choicesEl.appendChild(legend);
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'sentence-ordering-wrapper';
+
+  const controls = document.createElement('div');
+  controls.className = 'sentence-ordering-controls';
+
+  const undoBtn = document.createElement('button');
+  undoBtn.type = 'button';
+  undoBtn.className = 'sentence-ordering-control';
+  undoBtn.textContent = 'Undo';
+
+  const clearBtn = document.createElement('button');
+  clearBtn.type = 'button';
+  clearBtn.className = 'sentence-ordering-control';
+  clearBtn.textContent = 'Clear';
+
+  controls.appendChild(undoBtn);
+  controls.appendChild(clearBtn);
+  wrapper.appendChild(controls);
+
+  const answerList = document.createElement('ol');
+  answerList.className = 'sentence-order-list';
+
+  const bank = document.createElement('div');
+  bank.className = 'sentence-order-bank';
+
+  const segmentsById = new Map(question.segments.map(segment => [segment.id, segment]));
+  const shuffledIds = shuffle(question.answerOrder);
+
+  function checkSentenceOrder() {
+    if (selectedSentenceOrder.length !== question.answerOrder.length || answered) {
+      return;
+    }
+
+    answered = true;
+    const isCorrect = selectedSentenceOrder.every((segmentId, index) => segmentId === question.answerOrder[index]);
+
+    if (isCorrect) {
+      score += currentQuestion.level;
+      correctCount += 1;
+      highestCorrectLevel = Math.max(highestCorrectLevel, currentLevel);
+      if (currentLevel < 6) {
+        currentLevel += 1;
+      }
+    } else if (currentLevel > 1) {
+      currentLevel -= 1;
+    }
+
+    wrapper.classList.add(isCorrect ? 'verdict-correct' : 'verdict-incorrect');
+    wrapper.querySelectorAll('button').forEach(button => {
+      button.disabled = true;
+    });
+
+    window.setTimeout(advanceToNextQuestion, autoAdvanceDelayMs);
+  }
+
+  function renderOrderUI() {
+    bank.innerHTML = '';
+    answerList.innerHTML = '';
+
+    const availableIds = shuffledIds.filter(id => !selectedSentenceOrder.includes(id));
+    availableIds.forEach(segmentId => {
+      const segment = segmentsById.get(segmentId);
+      if (!segment) {
+        return;
+      }
+
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'sentence-order-chip';
+      button.textContent = segment.text;
+      button.setAttribute('aria-label', `Add phrase: ${segment.text}`);
+      button.onclick = () => {
+        if (answered) {
+          return;
+        }
+
+        selectedSentenceOrder.push(segmentId);
+        renderOrderUI();
+        checkSentenceOrder();
+      };
+
+      bank.appendChild(button);
+    });
+
+    if (selectedSentenceOrder.length === 0) {
+      const placeholder = document.createElement('li');
+      placeholder.className = 'sentence-order-placeholder';
+      placeholder.textContent = 'Tap sentence parts below to build your answer.';
+      answerList.appendChild(placeholder);
+    } else {
+      selectedSentenceOrder.forEach((segmentId, orderIndex) => {
+        const segment = segmentsById.get(segmentId);
+        if (!segment) {
+          return;
+        }
+
+        const item = document.createElement('li');
+        item.className = 'sentence-order-item';
+
+        const removeBtn = document.createElement('button');
+        removeBtn.type = 'button';
+        removeBtn.className = 'sentence-order-remove';
+        removeBtn.textContent = `${orderIndex + 1}. ${segment.text}`;
+        removeBtn.setAttribute('aria-label', `Remove phrase ${orderIndex + 1}: ${segment.text}`);
+        removeBtn.onclick = () => {
+          if (answered) {
+            return;
+          }
+
+          selectedSentenceOrder = selectedSentenceOrder.filter((id, idx) => !(id === segmentId && idx === orderIndex));
+          renderOrderUI();
+        };
+
+        item.appendChild(removeBtn);
+        answerList.appendChild(item);
+      });
+    }
+
+    const complete = selectedSentenceOrder.length === question.answerOrder.length;
+    selectionStatusEl.textContent = complete
+      ? 'Answer complete. Checking order...'
+      : `Build the sentence by choosing all parts (${selectedSentenceOrder.length}/${question.answerOrder.length}).`;
+    selectionStatusEl.classList.remove('hidden');
+  }
+
+  undoBtn.onclick = () => {
+    if (answered || selectedSentenceOrder.length === 0) {
+      return;
+    }
+
+    selectedSentenceOrder.pop();
+    renderOrderUI();
+  };
+
+  clearBtn.onclick = () => {
+    if (answered || selectedSentenceOrder.length === 0) {
+      return;
+    }
+
+    selectedSentenceOrder = [];
+    renderOrderUI();
+  };
+
+  wrapper.appendChild(answerList);
+  wrapper.appendChild(bank);
+  choicesEl.appendChild(wrapper);
+
+  renderOrderUI();
+
+  const firstChip = choicesEl.querySelector('.sentence-order-chip');
+  if (firstChip) {
+    firstChip.focus();
+  }
+}
+
 function renderKeywordHighlightQuestion(question) {
   selectedPassageWords = new Set();
   selectionStatusEl.classList.remove("hidden");
@@ -485,6 +673,11 @@ function loadAllQuestions() {
           return;
         }
 
+        if (type === 'sentence-ordering') {
+          allQuestionsByType[type] = buildSentenceOrderingQuestions(data);
+          return;
+        }
+
         if (type === 'character-emotion') {
           allQuestionsByType[type] = buildCharacterEmotionQuestions(data);
           return;
@@ -521,6 +714,7 @@ function startNewQuiz() {
   selected = null;
   answered = false;
   selectedPassageWords = new Set();
+  selectedSentenceOrder = [];
   usedQuestionIds = new Set();
   usedQuestionTypes = new Set();
   resultEl.classList.add("hidden");
@@ -609,7 +803,7 @@ function loadQuestion() {
   progressLabelEl.textContent = `Question ${questionsAsked} of ${questionCount}`;
   progressTypeEl.textContent = currentQuestionType.replace(/-/g, ' ');
   updateProgressBars(questionsAsked - 1, currentLevel);
-  if ((q.type === 'image-select' || q.type === 'character-emotion') && q.promptDetail) {
+  if ((q.type === 'image-select' || q.type === 'character-emotion' || q.type === 'sentence-ordering') && q.promptDetail) {
     questionEl.innerHTML = '';
 
     const promptDetail = document.createElement('span');
@@ -661,6 +855,12 @@ function loadQuestion() {
     if (firstImageChoice) {
       firstImageChoice.focus();
     }
+    return;
+  }
+
+  if (q.type === 'sentence-ordering') {
+    choicesEl.innerHTML = "";
+    renderSentenceOrderingQuestion(q);
     return;
   }
 
