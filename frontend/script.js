@@ -2,6 +2,7 @@ let allQuestionsByType = {
   'multiple-choice': [],
   'sentence-completion': [],
   'sentence-ordering': [],
+  'word-matching': [],
   'vocabulary-in-context': [],
   'image-description': [],
   'keyword-highlight': [],
@@ -22,14 +23,18 @@ let usedQuestionIds = new Set();
 let usedQuestionTypes = new Set();
 let selectedPassageWords = new Set();
 let selectedSentenceOrder = [];
+let wordMatchSelectedLeftId = null;
+let wordMatchPairs = new Map();
+let wordMatchResizeHandler = null;
 const maxPassageSelections = 5;
 const autoAdvanceDelayMs = 500;
 const questionCount = 10;
-const questionTypes = ['multiple-choice', 'sentence-completion', 'sentence-ordering', 'vocabulary-in-context', 'image-description', 'keyword-highlight', 'image-select', 'character-emotion'];
+const questionTypes = ['multiple-choice', 'sentence-completion', 'sentence-ordering', 'word-matching', 'vocabulary-in-context', 'image-description', 'keyword-highlight', 'image-select', 'character-emotion'];
 const questionSources = {
   'multiple-choice': { file: 'multiple-choice-questions.csv', format: 'csv' },
   'sentence-completion': { file: 'sentence-completion-questions.csv', format: 'csv' },
   'sentence-ordering': { file: 'sentence-ordering-questions.json', format: 'json' },
+  'word-matching': { file: 'word-matching-questions.json', format: 'json' },
   'vocabulary-in-context': { file: 'vocabulary-in-context-questions.csv', format: 'csv' },
   'image-description': { file: 'image-description-questions.json', format: 'json' },
   'keyword-highlight': { file: 'keyword-highlight-questions.json', format: 'json' },
@@ -288,6 +293,59 @@ function buildSentenceOrderingQuestions(records) {
     });
 }
 
+function buildWordMatchingQuestions(records) {
+  return records
+    .filter(record => Array.isArray(record.pairs) && record.pairs.length >= 3)
+    .map((record, index) => {
+      const normalizedPairs = record.pairs
+        .filter(pair => pair && pair.left && pair.right)
+        .slice(0, 3)
+        .map((pair, pairIndex) => ({
+          leftId: `left-${pairIndex}`,
+          left: pair.left,
+          right: pair.right
+        }));
+
+      if (normalizedPairs.length < 3) {
+        return null;
+      }
+
+      const leftWords = normalizedPairs.map(pair => ({
+        id: pair.leftId,
+        text: pair.left
+      }));
+
+      const rightWords = shuffle(normalizedPairs.map((pair, pairIndex) => ({
+        id: `right-${pairIndex}`,
+        text: pair.right
+      })));
+
+      const correctMatches = {};
+      normalizedPairs.forEach(pair => {
+        correctMatches[pair.leftId] = pair.right;
+      });
+
+      return {
+        id: record.id || `word-matching-${index}`,
+        type: 'word-matching',
+        text: record.text || 'Match each word on the left with the similar word on the right.',
+        promptDetail: record.prompt || '',
+        level: Number(record.level) || 1,
+        leftWords,
+        rightWords,
+        correctMatches
+      };
+    })
+    .filter(Boolean);
+}
+
+function clearWordMatchResizeHandler() {
+  if (wordMatchResizeHandler) {
+    window.removeEventListener('resize', wordMatchResizeHandler);
+    wordMatchResizeHandler = null;
+  }
+}
+
 function normalizeWord(value) {
   return value
     .toLowerCase()
@@ -427,6 +485,190 @@ function handleChoiceSelection(index, inputElement) {
   }
 
   window.setTimeout(advanceToNextQuestion, autoAdvanceDelayMs);
+}
+
+function renderWordMatchingQuestion(question) {
+  wordMatchSelectedLeftId = null;
+  wordMatchPairs = new Map();
+
+  const legend = document.createElement('legend');
+  legend.className = 'sr-only';
+  legend.textContent = 'Match words on the left to similar words on the right';
+  choicesEl.appendChild(legend);
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'word-match-wrapper';
+
+  const board = document.createElement('div');
+  board.className = 'word-match-board';
+
+  const linesSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  linesSvg.classList.add('word-match-lines');
+  linesSvg.setAttribute('aria-hidden', 'true');
+
+  const columns = document.createElement('div');
+  columns.className = 'word-match-columns';
+
+  const leftColumn = document.createElement('div');
+  leftColumn.className = 'word-match-column left';
+
+  const rightColumn = document.createElement('div');
+  rightColumn.className = 'word-match-column right';
+
+  const leftButtons = new Map();
+  const rightButtons = new Map();
+  const rightTextById = new Map(question.rightWords.map(item => [item.id, item.text]));
+
+  function updateStatus() {
+    selectionStatusEl.textContent = `Match all pairs (${wordMatchPairs.size}/${question.leftWords.length} complete).`;
+    selectionStatusEl.classList.remove('hidden');
+  }
+
+  function drawLines() {
+    linesSvg.innerHTML = '';
+    const boardRect = board.getBoundingClientRect();
+    const width = Math.max(1, Math.round(boardRect.width));
+    const height = Math.max(1, Math.round(boardRect.height));
+    linesSvg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+
+    wordMatchPairs.forEach((rightId, leftId) => {
+      const leftButton = leftButtons.get(leftId);
+      const rightButton = rightButtons.get(rightId);
+      if (!leftButton || !rightButton) {
+        return;
+      }
+
+      const leftRect = leftButton.getBoundingClientRect();
+      const rightRect = rightButton.getBoundingClientRect();
+      const x1 = leftRect.right - boardRect.left;
+      const y1 = leftRect.top + (leftRect.height / 2) - boardRect.top;
+      const x2 = rightRect.left - boardRect.left;
+      const y2 = rightRect.top + (rightRect.height / 2) - boardRect.top;
+
+      const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      line.setAttribute('x1', String(x1));
+      line.setAttribute('y1', String(y1));
+      line.setAttribute('x2', String(x2));
+      line.setAttribute('y2', String(y2));
+      line.classList.add('word-match-line');
+      linesSvg.appendChild(line);
+    });
+  }
+
+  function updateButtonStyles() {
+    leftButtons.forEach((button, leftId) => {
+      button.classList.toggle('active', leftId === wordMatchSelectedLeftId);
+      button.classList.toggle('matched', wordMatchPairs.has(leftId));
+    });
+
+    const claimedRights = new Set(Array.from(wordMatchPairs.values()));
+    rightButtons.forEach((button, rightId) => {
+      button.classList.toggle('matched', claimedRights.has(rightId));
+    });
+  }
+
+  function applyMatchResult() {
+    if (wordMatchPairs.size !== question.leftWords.length || answered) {
+      return;
+    }
+
+    answered = true;
+    const isCorrect = question.leftWords.every(leftItem => {
+      const selectedRightId = wordMatchPairs.get(leftItem.id);
+      const selectedRightText = rightTextById.get(selectedRightId);
+      return selectedRightText === question.correctMatches[leftItem.id];
+    });
+
+    if (isCorrect) {
+      score += currentQuestion.level;
+      correctCount += 1;
+      highestCorrectLevel = Math.max(highestCorrectLevel, currentLevel);
+      if (currentLevel < 6) {
+        currentLevel += 1;
+      }
+    } else if (currentLevel > 1) {
+      currentLevel -= 1;
+    }
+
+    wrapper.classList.add(isCorrect ? 'verdict-correct' : 'verdict-incorrect');
+    wrapper.querySelectorAll('button').forEach(button => {
+      button.disabled = true;
+    });
+
+    window.setTimeout(advanceToNextQuestion, autoAdvanceDelayMs);
+  }
+
+  function selectLeft(leftId) {
+    if (answered) {
+      return;
+    }
+
+    wordMatchSelectedLeftId = leftId;
+    updateButtonStyles();
+  }
+
+  function connectToRight(rightId) {
+    if (answered || !wordMatchSelectedLeftId) {
+      return;
+    }
+
+    wordMatchPairs.forEach((claimedRightId, ownerLeftId) => {
+      if (claimedRightId === rightId && ownerLeftId !== wordMatchSelectedLeftId) {
+        wordMatchPairs.delete(ownerLeftId);
+      }
+    });
+
+    wordMatchPairs.set(wordMatchSelectedLeftId, rightId);
+    wordMatchSelectedLeftId = null;
+    updateStatus();
+    updateButtonStyles();
+    drawLines();
+    applyMatchResult();
+  }
+
+  question.leftWords.forEach(leftItem => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'word-match-item word-match-left-item';
+    button.textContent = leftItem.text;
+    button.setAttribute('aria-label', `Left word: ${leftItem.text}`);
+    button.onclick = () => selectLeft(leftItem.id);
+    leftButtons.set(leftItem.id, button);
+    leftColumn.appendChild(button);
+  });
+
+  question.rightWords.forEach(rightItem => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'word-match-item word-match-right-item';
+    button.textContent = rightItem.text;
+    button.setAttribute('aria-label', `Right word: ${rightItem.text}`);
+    button.onclick = () => connectToRight(rightItem.id);
+    rightButtons.set(rightItem.id, button);
+    rightColumn.appendChild(button);
+  });
+
+  columns.appendChild(leftColumn);
+  columns.appendChild(rightColumn);
+  board.appendChild(linesSvg);
+  board.appendChild(columns);
+  wrapper.appendChild(board);
+  choicesEl.appendChild(wrapper);
+
+  updateStatus();
+  updateButtonStyles();
+  drawLines();
+
+  wordMatchResizeHandler = () => drawLines();
+  window.addEventListener('resize', wordMatchResizeHandler);
+
+  // Draw again after layout settles to keep lines aligned with dynamic text wrapping.
+  window.requestAnimationFrame(() => drawLines());
+
+  const firstLeftButton = leftColumn.querySelector('button');
+  if (firstLeftButton) {
+    firstLeftButton.focus();
+  }
 }
 
 function renderSentenceOrderingQuestion(question) {
@@ -678,6 +920,11 @@ function loadAllQuestions() {
           return;
         }
 
+        if (type === 'word-matching') {
+          allQuestionsByType[type] = buildWordMatchingQuestions(data);
+          return;
+        }
+
         if (type === 'character-emotion') {
           allQuestionsByType[type] = buildCharacterEmotionQuestions(data);
           return;
@@ -793,6 +1040,7 @@ function updateProgressBars(completedQuestions, gradeLevel) {
 function loadQuestion() {
   selected = null;
   answered = false;
+  clearWordMatchResizeHandler();
   feedbackEl.classList.add("hidden");
   feedbackEl.textContent = "";
   nextBtn.classList.add("hidden");
@@ -803,7 +1051,7 @@ function loadQuestion() {
   progressLabelEl.textContent = `Question ${questionsAsked} of ${questionCount}`;
   progressTypeEl.textContent = currentQuestionType.replace(/-/g, ' ');
   updateProgressBars(questionsAsked - 1, currentLevel);
-  if ((q.type === 'image-select' || q.type === 'character-emotion' || q.type === 'sentence-ordering') && q.promptDetail) {
+  if ((q.type === 'image-select' || q.type === 'character-emotion' || q.type === 'sentence-ordering' || q.type === 'word-matching') && q.promptDetail) {
     questionEl.innerHTML = '';
 
     const promptDetail = document.createElement('span');
@@ -864,6 +1112,12 @@ function loadQuestion() {
     return;
   }
 
+  if (q.type === 'word-matching') {
+    choicesEl.innerHTML = "";
+    renderWordMatchingQuestion(q);
+    return;
+  }
+
   q.choices.forEach((choice, index) => {
     const radioId = `choice-${index}`;
     
@@ -898,6 +1152,7 @@ function loadQuestion() {
 }
 
 function showResult() {
+  clearWordMatchResizeHandler();
   questionEl.classList.add("hidden");
   choicesEl.classList.add("hidden");
   nextBtn.classList.add("hidden");

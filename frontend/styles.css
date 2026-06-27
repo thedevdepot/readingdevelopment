@@ -815,6 +815,99 @@ a:focus-visible {
   font-style: italic;
 }
 
+.word-match-wrapper {
+  position: relative;
+}
+
+.word-match-board {
+  position: relative;
+  border-radius: 16px;
+  background: rgba(8, 83, 75, 0.42);
+  border: 1px solid rgba(6, 69, 62, 0.88);
+  padding: 12px;
+}
+
+.word-match-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.word-match-line {
+  stroke: #ffd86f;
+  stroke-width: 3;
+  stroke-linecap: round;
+  opacity: 0.95;
+}
+
+.word-match-columns {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(24px, 6vw, 86px);
+}
+
+.word-match-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.word-match-item {
+  width: 100%;
+  margin-top: 0;
+  text-align: left;
+  border: 1px solid rgba(6, 69, 62, 0.88);
+  background: rgba(10, 88, 79, 0.92);
+  color: #f3fffd;
+  box-shadow: none;
+  min-height: 44px;
+  padding: 10px 12px;
+}
+
+.word-match-item:hover {
+  background: rgba(8, 102, 91, 0.98);
+}
+
+.word-match-left-item.active {
+  background: #4e78f8;
+  border-color: rgba(115, 159, 255, 0.75);
+}
+
+.word-match-item.matched {
+  background: rgba(38, 122, 88, 0.95);
+}
+
+.word-match-wrapper.verdict-correct::after,
+.word-match-wrapper.verdict-incorrect::after {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: clamp(1rem, 0.35vw + 0.9rem, 1.15rem);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  z-index: 4;
+  pointer-events: none;
+  border-radius: 16px;
+}
+
+.word-match-wrapper.verdict-correct::after {
+  content: "Correct";
+  background: rgba(27, 128, 84, 0.82);
+}
+
+.word-match-wrapper.verdict-incorrect::after {
+  content: "Incorrect";
+  background: rgba(179, 39, 39, 0.82);
+}
+
 .blank-zone {
   display: inline-block;
   min-width: 90px;
@@ -948,5 +1041,9 @@ button.secondary:hover {
 
   .main-content {
     padding-right: 0;
+  }
+
+  .word-match-columns {
+    gap: 16px;
   }
 }

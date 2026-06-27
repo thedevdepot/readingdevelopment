@@ -1,0 +1,134 @@
+[
+  {
+    "id": "word-matching-1-1",
+    "level": 1,
+    "prompt": "Match each word to a word that means almost the same thing.",
+    "text": "Tap a word on the left, then tap its matching word on the right.",
+    "pairs": [
+      { "left": "big", "right": "large" },
+      { "left": "fast", "right": "quick" },
+      { "left": "happy", "right": "glad" }
+    ]
+  },
+  {
+    "id": "word-matching-1-2",
+    "level": 1,
+    "prompt": "Match each word to a word that means almost the same thing.",
+    "text": "Tap a word on the left, then tap its matching word on the right.",
+    "pairs": [
+      { "left": "small", "right": "tiny" },
+      { "left": "smart", "right": "clever" },
+      { "left": "begin", "right": "start" }
+    ]
+  },
+  {
+    "id": "word-matching-2-1",
+    "level": 2,
+    "prompt": "Match each word to its similar meaning.",
+    "text": "Connect each left word to the best match on the right.",
+    "pairs": [
+      { "left": "brave", "right": "courageous" },
+      { "left": "quiet", "right": "silent" },
+      { "left": "finish", "right": "complete" }
+    ]
+  },
+  {
+    "id": "word-matching-2-2",
+    "level": 2,
+    "prompt": "Match each word to its similar meaning.",
+    "text": "Connect each left word to the best match on the right.",
+    "pairs": [
+      { "left": "angry", "right": "mad" },
+      { "left": "empty", "right": "vacant" },
+      { "left": "look", "right": "glance" }
+    ]
+  },
+  {
+    "id": "word-matching-3-1",
+    "level": 3,
+    "prompt": "Match each vocabulary word to a close synonym.",
+    "text": "Choose one word from each side to make correct pairs.",
+    "pairs": [
+      { "left": "ancient", "right": "old" },
+      { "left": "journey", "right": "trip" },
+      { "left": "observe", "right": "notice" }
+    ]
+  },
+  {
+    "id": "word-matching-3-2",
+    "level": 3,
+    "prompt": "Match each vocabulary word to a close synonym.",
+    "text": "Choose one word from each side to make correct pairs.",
+    "pairs": [
+      { "left": "rapid", "right": "swift" },
+      { "left": "fragile", "right": "delicate" },
+      { "left": "reply", "right": "respond" }
+    ]
+  },
+  {
+    "id": "word-matching-4-1",
+    "level": 4,
+    "prompt": "Match each academic word with a synonym that fits its meaning.",
+    "text": "Pair all words correctly.",
+    "pairs": [
+      { "left": "construct", "right": "build" },
+      { "left": "essential", "right": "necessary" },
+      { "left": "predict", "right": "forecast" }
+    ]
+  },
+  {
+    "id": "word-matching-4-2",
+    "level": 4,
+    "prompt": "Match each academic word with a synonym that fits its meaning.",
+    "text": "Pair all words correctly.",
+    "pairs": [
+      { "left": "analyze", "right": "examine" },
+      { "left": "assist", "right": "help" },
+      { "left": "vivid", "right": "bright" }
+    ]
+  },
+  {
+    "id": "word-matching-5-1",
+    "level": 5,
+    "prompt": "Match each advanced word to the closest synonym.",
+    "text": "Connect each pair before time runs out.",
+    "pairs": [
+      { "left": "abundant", "right": "plentiful" },
+      { "left": "justify", "right": "defend" },
+      { "left": "precise", "right": "exact" }
+    ]
+  },
+  {
+    "id": "word-matching-5-2",
+    "level": 5,
+    "prompt": "Match each advanced word to the closest synonym.",
+    "text": "Connect each pair before time runs out.",
+    "pairs": [
+      { "left": "reliable", "right": "dependable" },
+      { "left": "conclude", "right": "infer" },
+      { "left": "maintain", "right": "preserve" }
+    ]
+  },
+  {
+    "id": "word-matching-6-1",
+    "level": 6,
+    "prompt": "Match each domain word with its best synonym.",
+    "text": "Create all three correct pairs.",
+    "pairs": [
+      { "left": "meticulous", "right": "careful" },
+      { "left": "evaluate", "right": "assess" },
+      { "left": "coherent", "right": "logical" }
+    ]
+  },
+  {
+    "id": "word-matching-6-2",
+    "level": 6,
+    "prompt": "Match each domain word with its best synonym.",
+    "text": "Create all three correct pairs.",
+    "pairs": [
+      { "left": "substantial", "right": "considerable" },
+      { "left": "interpret", "right": "explain" },
+      { "left": "innovative", "right": "original" }
+    ]
+  }
+]
