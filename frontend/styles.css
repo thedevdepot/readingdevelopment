@@ -878,6 +878,24 @@ a:focus-visible {
   border-color: rgba(115, 159, 255, 0.75);
 }
 
+.word-match-left-label {
+  cursor: default;
+  user-select: none;
+  background: rgba(205, 238, 233, 0.75);
+  color: #0d3b37;
+  border: 1px dashed rgba(6, 69, 62, 0.45);
+}
+
+.word-match-left-label.active {
+  background: rgba(255, 216, 111, 0.9);
+  border-color: rgba(224, 164, 29, 0.8);
+}
+
+.word-match-left-label.matched {
+  background: rgba(157, 242, 196, 0.9);
+  border-color: rgba(27, 128, 84, 0.7);
+}
+
 .word-match-item.matched {
   background: rgba(38, 122, 88, 0.95);
 }
@@ -906,6 +924,18 @@ a:focus-visible {
 .word-match-wrapper.verdict-incorrect::after {
   content: "Incorrect";
   background: rgba(179, 39, 39, 0.82);
+}
+
+@media (max-width: 700px) {
+  .word-match-wrapper.mobile-guided-mode .word-match-left-label {
+    min-height: 38px;
+  }
+
+  .word-match-wrapper.mobile-guided-mode .word-match-left-label,
+  .word-match-wrapper.mobile-guided-mode .word-match-left-label:hover {
+    box-shadow: none;
+    transform: none;
+  }
 }
 
 .blank-zone {

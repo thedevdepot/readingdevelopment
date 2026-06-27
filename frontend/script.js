@@ -488,6 +488,7 @@ function handleChoiceSelection(index, inputElement) {
 }
 
 function renderWordMatchingQuestion(question) {
+  const isSmallScreen = window.matchMedia('(max-width: 700px)').matches;
   wordMatchSelectedLeftId = null;
   wordMatchPairs = new Map();
 
@@ -519,8 +520,19 @@ function renderWordMatchingQuestion(question) {
   const rightButtons = new Map();
   const rightTextById = new Map(question.rightWords.map(item => [item.id, item.text]));
 
+  function getNextUnmatchedLeftId() {
+    const unmatched = question.leftWords.find(leftItem => !wordMatchPairs.has(leftItem.id));
+    return unmatched ? unmatched.id : null;
+  }
+
   function updateStatus() {
-    selectionStatusEl.textContent = `Match all pairs (${wordMatchPairs.size}/${question.leftWords.length} complete).`;
+    if (isSmallScreen) {
+      const activeLeftWord = question.leftWords.find(item => item.id === wordMatchSelectedLeftId);
+      const activeText = activeLeftWord ? `Current word: ${activeLeftWord.text}.` : 'All left words matched.';
+      selectionStatusEl.textContent = `${activeText} Match all pairs (${wordMatchPairs.size}/${question.leftWords.length} complete).`;
+    } else {
+      selectionStatusEl.textContent = `Match all pairs (${wordMatchPairs.size}/${question.leftWords.length} complete).`;
+    }
     selectionStatusEl.classList.remove('hidden');
   }
 
@@ -599,16 +611,27 @@ function renderWordMatchingQuestion(question) {
   }
 
   function selectLeft(leftId) {
-    if (answered) {
+    if (answered || isSmallScreen) {
       return;
     }
 
     wordMatchSelectedLeftId = leftId;
+    updateStatus();
     updateButtonStyles();
   }
 
   function connectToRight(rightId) {
-    if (answered || !wordMatchSelectedLeftId) {
+    if (answered) {
+      return;
+    }
+
+    if (!wordMatchSelectedLeftId) {
+      if (isSmallScreen) {
+        wordMatchSelectedLeftId = getNextUnmatchedLeftId();
+      }
+    }
+
+    if (!wordMatchSelectedLeftId) {
       return;
     }
 
@@ -619,7 +642,7 @@ function renderWordMatchingQuestion(question) {
     });
 
     wordMatchPairs.set(wordMatchSelectedLeftId, rightId);
-    wordMatchSelectedLeftId = null;
+    wordMatchSelectedLeftId = isSmallScreen ? getNextUnmatchedLeftId() : null;
     updateStatus();
     updateButtonStyles();
     drawLines();
@@ -627,6 +650,16 @@ function renderWordMatchingQuestion(question) {
   }
 
   question.leftWords.forEach(leftItem => {
+    if (isSmallScreen) {
+      const label = document.createElement('div');
+      label.className = 'word-match-item word-match-left-label';
+      label.textContent = leftItem.text;
+      label.setAttribute('aria-hidden', 'true');
+      leftButtons.set(leftItem.id, label);
+      leftColumn.appendChild(label);
+      return;
+    }
+
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'word-match-item word-match-left-item';
@@ -655,6 +688,11 @@ function renderWordMatchingQuestion(question) {
   wrapper.appendChild(board);
   choicesEl.appendChild(wrapper);
 
+  if (isSmallScreen) {
+    wordMatchSelectedLeftId = getNextUnmatchedLeftId();
+    wrapper.classList.add('mobile-guided-mode');
+  }
+
   updateStatus();
   updateButtonStyles();
   drawLines();
@@ -665,9 +703,11 @@ function renderWordMatchingQuestion(question) {
   // Draw again after layout settles to keep lines aligned with dynamic text wrapping.
   window.requestAnimationFrame(() => drawLines());
 
-  const firstLeftButton = leftColumn.querySelector('button');
-  if (firstLeftButton) {
-    firstLeftButton.focus();
+  const firstFocusable = isSmallScreen
+    ? rightColumn.querySelector('button')
+    : leftColumn.querySelector('button');
+  if (firstFocusable) {
+    firstFocusable.focus();
   }
 }
 
