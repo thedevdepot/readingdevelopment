@@ -1,93 +1,82 @@
-
 # LaunchPad Reading Application
 
-LaunchPad Reading Application - Formativley find reading level to keep readers in the proximal learning zone & foster a love for reading.
+![Status](https://img.shields.io/badge/Status-Active%20Prototype-1f8f6a)
+![Focus](https://img.shields.io/badge/Focus-Adaptive%20Reading%20Assessment-2f6fed)
+![Audience](https://img.shields.io/badge/Audience-Students%20and%20Teachers-f59e0b)
 
-An adaptive reading assessment application designed to help educators better understand student reading comprehension through engaging, interactive activities.
+An adaptive reading assessment web application designed to estimate student reading level while keeping learners engaged through interactive question formats.
 
-**Live demo:** [https://happy-meadow-0c1a27010.7.azurestaticapps.net/](https://happy-meadow-0c1a27010.7.azurestaticapps.net/)
+Live demo:
+[https://happy-meadow-0c1a27010.7.azurestaticapps.net/](https://happy-meadow-0c1a27010.7.azurestaticapps.net/)
 
-This project is part of the Azure Innovation Studio Agents League hackathon.
+This project was built as part of the Azure Innovation Studio Agents League hackathon.
 
-Tonight is the deadline!
-- Thank you to my students who helped demo the app.  Results will be posted here soon.  You will find out if your teacher is a hacker.
-- Results will be posted June 30th.
-
-As a high school ELA teacher who works with special education students, I've seen how difficult it can be to gather meaningful assessment data when students are not genuinely engaged. This project is inspired by tools such as Pear Deck, Edpuzzle, Quizizz, Gimkit, and MagicSchool, with the goal of creating reading assessments that feel more interactive while providing actionable insights for teachers.
-
----
-
-## Current Features
-
-### Adaptive Reading Assessment
-
-Students complete a reading assessment that adjusts feedback based on performance and estimates an appropriate reading level.
-
-### Multiple Choice Questions
-
-The current application uses grade-level multiple-choice reading comprehension questions loaded from a CSV file.
-
-### Experimental Missing Word Activity
-
-An experimental drag-and-drop sentence completion activity allows students to select the best word to complete a sentence.
-
-Features include:
-
-* Grade-level question filtering
-* Randomized question selection
-* Drag-and-drop interactions
-* Consistent styling with the main assessment
-
-### Reading Recommendations
-
-After completing an assessment, students receive recommended reading resources aligned to their estimated reading level.
+As a high school ELA teacher working with special education students, I wanted to build an assessment experience that feels less like a static test and more like an interactive learning environment. The design is inspired by tools like Pear Deck, Edpuzzle, Quizizz, Gimkit, and MagicSchool, while focusing on actionable classroom insights.
 
 ---
 
-## Screenshot
+## Current Status
+
+LaunchPad is currently in active prototype development and includes a working adaptive quiz flow with grade-level progression from 1 to 6.
+
+What works now:
+
+- Adaptive level progression based on student performance
+- Mixed question-type assessment rotation
+- Visual and text-based prompt support
+- Progress tracking during assessment
+- Reading recommendations aligned to estimated level
+- Mobile-responsive experience with tailored interaction behavior for smaller screens
+
+Implemented question types in the current app:
+
+- Multiple choice
+- Sentence completion
+- Sentence ordering
+- Word matching
+- Vocabulary in context
+- Image description
+- Keyword highlight (evidence-style word selection)
+- Image selection
+- Character emotion identification
+
+---
+
+## Screenshots
 
 ![MVP Screenshot](./mvp.png)
+![Running App Screenshot](./mvp_running.png)
 
 ---
 
 ## Vision
 
-Reading comprehension is more than selecting the correct answer from a list of choices. Future versions of this project will incorporate additional assessment types that allow students to demonstrate understanding in multiple ways.
-
-Implemented question types (current app):
-
-* Multiple choice
-* Sentence completion
-* Vocabulary in context
-* Image description
-* Keyword highlight (evidence-style word selection)
-* Image selection
-* Character emotion identification
+Reading comprehension is more than selecting one correct answer from a list. This project is designed to grow into a multimodal assessment platform where students can demonstrate understanding in multiple ways.
 
 Still planned question types:
 
-* Text annotation
-* Written response evaluation
-* Author's purpose and intent analysis
-* Paragraph writing activities
-* Visual comprehension and drawing activities
+- Text annotation
+- Written response evaluation
+- Author's purpose and intent analysis
+- Paragraph writing activities
+- Visual comprehension and drawing activities
 
-The goal is to create a richer picture of student comprehension while maintaining high levels of engagement.
+The goal is to create a richer picture of student comprehension while maintaining strong engagement.
 
 ---
 
 ## Future AI Integration
 
-A future phase of this project will integrate Large Language Models (LLMs) through REST APIs to evaluate open-ended student responses.
+A future phase of this project will integrate Large Language Models through REST APIs to evaluate open-ended student responses.
 
 Potential use cases include:
 
-* Evaluating text annotations
-* Scoring written responses
-* Providing feedback on vocabulary usage in context
-* Assessing short paragraph responses
-* Analyzing student-generated visual descriptions and drawings
-* Generating personalized feedback and instructional recommendations
+- Evaluating text annotations
+- Scoring written responses
+- Providing feedback on vocabulary usage in context
+- Assessing short paragraph responses
+- Analyzing student-generated visual descriptions and drawings
+- Generating personalized feedback and instructional recommendations
 
 The focus will be on using AI to support educators, not replace teacher judgment.
 
@@ -95,29 +84,28 @@ The focus will be on using AI to support educators, not replace teacher judgment
 
 ## Technology Stack
 
-### Current Implementation
+Current implementation:
 
-* HTML
-* CSS
-* JavaScript
-* CSV-based question and recommendation data
-* CSV-based activity content
-* Azure Static Web Apps
+- HTML
+- CSS
+- JavaScript
+- CSV and JSON question banks
+- CSV recommendation data
+- Azure Static Web Apps
 
 ![App Architecture](./appArchitecture.png)
 
-### Hackathon Development Tools
+Hackathon development tools:
 
-**GitHub Copilot** was utilized throughout the application development implementation to accelerate coding, provide code suggestions, and optimize the frontend architecture.
+- GitHub Copilot for rapid front-end development and refactoring support
+- Azure Foundry Custom Agents for multimodal image description workflows tied to image-based question experiences
 
-**Azure Foundry Custom Agents** were created to enable multimodal image descriptions for image-based question types. These intelligent agents process visual content and generate contextual descriptions that support differentiated reading comprehension assessments across multiple grade levels.
+Future exploration:
 
-### Future Exploration
-
-* LLM-powered response evaluation
-* Agentic API workflows
-* Learning analytics and engagement insights
-* Expanded adaptive assessment models
+- LLM-powered response evaluation
+- Agentic API workflows
+- Learning analytics and engagement insights
+- Expanded adaptive assessment models
 
 ---
 
@@ -125,72 +113,78 @@ The focus will be on using AI to support educators, not replace teacher judgment
 
 ```text
 .
-├── frontend
+├── frontend/
 │   ├── index.html
-│   ├── missing-word.html
 │   ├── script.js
-│   ├── missing-word.js
 │   ├── styles.css
-│   ├── questions.csv
-│   ├── missing-word-questions.json
+│   ├── accessibility.html
+│   ├── learning-strategies.html
+│   ├── reading-resources.html
+│   ├── sign-in.html
+│   ├── multiple-choice-questions.csv
+│   ├── sentence-completion-questions.csv
+│   ├── vocabulary-in-context-questions.csv
+│   ├── sentence-ordering-questions.json
+│   ├── word-matching-questions.json
+│   ├── image-description-questions.json
+│   ├── image-select-questions.json
+│   ├── keyword-highlight-questions.json
+│   ├── character-emotion-questions.json
 │   ├── recommendations.csv
 │   └── staticwebapp.config.json
 ├── package.json
-├── README.md
-└── staticwebapp.config.json
+├── staticwebapp.config.json
+└── README.md
 ```
 
 ---
 
-## Project Status
-
-This project is currently an active prototype focused on reading assessment and student engagement. New activity types, AI-assisted evaluation, and additional adaptive learning features are planned for future development.
-
 ## Planned Assessment Types
 
-The long-term vision for this project is to measure reading comprehension through multiple modalities rather than relying exclusively on multiple-choice questions. Each assessment will eventually contain a mix of question types that measure different aspects of reading comprehension, inference, vocabulary, evidence gathering, visualization, and written response.
+The long-term vision is to evaluate reading comprehension across multiple modalities rather than relying only on multiple choice.
 
 ### Phase 1: Structured Question Types (No AI Required)
 
-These activities can be evaluated with traditional scoring methods and are prioritized because they are easier to implement and provide valuable reading-level data.
+These activities are scored with traditional logic and are prioritized for fast classroom usability.
 
-| Priority | Question Type                    | Status      | Coding Difficulty | Storage Format | Reading Skills Measured           | Reading-Level Value | Engagement |
-| -------- | -------------------------------- | ----------- | ----------------- | -------------- | --------------------------------- | ------------------- | ---------- |
-| 1        | Multiple Choice                  | Implemented | Very Easy         | CSV            | Literal comprehension, inference  | Medium              | Medium     |
-| 2        | Vocabulary in Context            | Implemented | Easy              | CSV            | Vocabulary knowledge              | Very High           | Medium     |
-| 3        | Evidence Selection               | Implemented | Easy              | JSON           | Text evidence usage               | High                | Medium     |
-| 4        | Character Emotion Identification | Implemented | Easy              | JSON           | Inferencing, character analysis   | High                | High       |
-| 5        | Image Selection                  | Implemented | Medium            | JSON           | Visualization, comprehension      | High                | Very High  |
-| 6        | Sequence Ordering                | Planned     | Medium            | JSON           | Narrative structure, cause/effect | High                | High       |
-| 7        | Cause and Effect Match           | Planned     | Medium            | JSON           | Logical comprehension             | High                | High       |
+| Priority | Question Type                    | Status      | Coding Difficulty | Storage Format | Reading Skills Measured                      | Reading-Level Value | Engagement |
+| -------- | -------------------------------- | ----------- | ----------------- | -------------- | -------------------------------------------- | ------------------- | ---------- |
+| 1        | Multiple Choice                  | Implemented | Very Easy         | CSV            | Literal comprehension, inference             | Medium              | Medium     |
+| 2        | Vocabulary in Context            | Implemented | Easy              | CSV            | Vocabulary knowledge                         | Very High           | Medium     |
+| 3        | Evidence Selection               | Implemented | Easy              | JSON           | Text evidence usage                          | High                | Medium     |
+| 4        | Character Emotion Identification | Implemented | Easy              | JSON           | Inferencing, character analysis              | High                | High       |
+| 5        | Image Selection                  | Implemented | Medium            | JSON           | Visualization, comprehension                 | High                | Very High  |
+| 6        | Sequence Ordering                | Implemented | Medium            | JSON           | Narrative structure, sequence logic          | High                | High       |
+| 7        | Word Matching                    | Implemented | Medium            | JSON           | Vocabulary depth, semantic relationship      | High                | High       |
+| 8        | Cause and Effect Match           | Planned     | Medium            | JSON           | Logical comprehension, relationship tracking | High                | High       |
 
 ### Phase 2: AI-Assisted Question Types
 
-These activities require evaluation by an LLM or agentic workflow and provide deeper insights into student comprehension.
+These activities require LLM or agentic scoring workflows and are planned for deeper comprehension analysis.
 
 | Priority | Question Type               | Status  | Coding Difficulty | Storage Format | Reading Skills Measured                | Reading-Level Value | Engagement |
 | -------- | --------------------------- | ------- | ----------------- | -------------- | -------------------------------------- | ------------------- | ---------- |
-| 8        | Short Constructed Response  | Planned | Easy              | JSON           | Written comprehension, inference       | Very High           | Medium     |
-| 9        | Annotation                  | Planned | Medium            | JSON           | Evidence identification, close reading | Very High           | High       |
-| 10       | Summary Generation          | Planned | Easy              | JSON           | Main idea, synthesis                   | Extremely High      | Medium     |
-| 11       | Text-to-Image Description   | Planned | Medium            | JSON           | Mental visualization                   | High                | Very High  |
-| 12       | Conversation with Character | Planned | Medium            | JSON           | Perspective taking, comprehension      | High                | Very High  |
+| 9        | Short Constructed Response  | Planned | Easy              | JSON           | Written comprehension, inference       | Very High           | Medium     |
+| 10       | Annotation                  | Planned | Medium            | JSON           | Evidence identification, close reading | Very High           | High       |
+| 11       | Summary Generation          | Planned | Easy              | JSON           | Main idea, synthesis                   | Extremely High      | Medium     |
+| 12       | Text-to-Image Description   | Planned | Medium            | JSON           | Mental visualization                   | High                | Very High  |
+| 13       | Conversation with Character | Planned | Medium            | JSON           | Perspective taking, comprehension      | High                | Very High  |
 
 ### Why Multiple Modalities?
 
-Research and modern reading assessments suggest that reading comprehension is best measured through a combination of:
+Research and classroom practice suggest that reading comprehension is better measured through a combination of:
 
-* Literal comprehension
-* Vocabulary knowledge
-* Inferencing
-* Evidence gathering
-* Main idea identification
-* Narrative understanding
-* Visualization
-* Written explanation
-* Metacognitive reasoning
+- Literal comprehension
+- Vocabulary knowledge
+- Inferencing
+- Evidence gathering
+- Main idea identification
+- Narrative understanding
+- Visualization
+- Written explanation
+- Metacognitive reasoning
 
-Rather than relying on a single assessment format, this project aims to collect evidence across multiple modalities to generate a more accurate estimate of a student's reading level and provide targeted instructional recommendations.
+Rather than relying on a single format, this project aims to gather evidence across modalities and generate a more accurate reading-level estimate with better instructional recommendations.
 
-> **James 1:5 (KJV)**
-> "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him."
+> James 1:5 (KJV)
+> If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.
