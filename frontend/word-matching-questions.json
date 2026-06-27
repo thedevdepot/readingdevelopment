@@ -5,9 +5,18 @@
     "prompt": "Match each word to a word that means almost the same thing.",
     "text": "Tap a word on the left, then tap its matching word on the right.",
     "pairs": [
-      { "left": "big", "right": "large" },
-      { "left": "fast", "right": "quick" },
-      { "left": "happy", "right": "glad" }
+      {
+        "left": "big",
+        "right": "large"
+      },
+      {
+        "left": "fast",
+        "right": "quick"
+      },
+      {
+        "left": "happy",
+        "right": "glad"
+      }
     ]
   },
   {
@@ -16,9 +25,18 @@
     "prompt": "Match each word to a word that means almost the same thing.",
     "text": "Tap a word on the left, then tap its matching word on the right.",
     "pairs": [
-      { "left": "small", "right": "tiny" },
-      { "left": "smart", "right": "clever" },
-      { "left": "begin", "right": "start" }
+      {
+        "left": "small",
+        "right": "tiny"
+      },
+      {
+        "left": "smart",
+        "right": "clever"
+      },
+      {
+        "left": "begin",
+        "right": "start"
+      }
     ]
   },
   {
@@ -27,9 +45,18 @@
     "prompt": "Match each word to its similar meaning.",
     "text": "Connect each left word to the best match on the right.",
     "pairs": [
-      { "left": "brave", "right": "courageous" },
-      { "left": "quiet", "right": "silent" },
-      { "left": "finish", "right": "complete" }
+      {
+        "left": "brave",
+        "right": "courageous"
+      },
+      {
+        "left": "quiet",
+        "right": "silent"
+      },
+      {
+        "left": "finish",
+        "right": "complete"
+      }
     ]
   },
   {
@@ -38,9 +65,18 @@
     "prompt": "Match each word to its similar meaning.",
     "text": "Connect each left word to the best match on the right.",
     "pairs": [
-      { "left": "angry", "right": "mad" },
-      { "left": "empty", "right": "vacant" },
-      { "left": "look", "right": "glance" }
+      {
+        "left": "angry",
+        "right": "mad"
+      },
+      {
+        "left": "empty",
+        "right": "vacant"
+      },
+      {
+        "left": "look",
+        "right": "glance"
+      }
     ]
   },
   {
@@ -49,9 +85,18 @@
     "prompt": "Match each vocabulary word to a close synonym.",
     "text": "Choose one word from each side to make correct pairs.",
     "pairs": [
-      { "left": "ancient", "right": "old" },
-      { "left": "journey", "right": "trip" },
-      { "left": "observe", "right": "notice" }
+      {
+        "left": "ancient",
+        "right": "old"
+      },
+      {
+        "left": "journey",
+        "right": "trip"
+      },
+      {
+        "left": "observe",
+        "right": "notice"
+      }
     ]
   },
   {
@@ -60,9 +105,18 @@
     "prompt": "Match each vocabulary word to a close synonym.",
     "text": "Choose one word from each side to make correct pairs.",
     "pairs": [
-      { "left": "rapid", "right": "swift" },
-      { "left": "fragile", "right": "delicate" },
-      { "left": "reply", "right": "respond" }
+      {
+        "left": "rapid",
+        "right": "swift"
+      },
+      {
+        "left": "fragile",
+        "right": "delicate"
+      },
+      {
+        "left": "reply",
+        "right": "respond"
+      }
     ]
   },
   {
@@ -71,9 +125,18 @@
     "prompt": "Match each academic word with a synonym that fits its meaning.",
     "text": "Pair all words correctly.",
     "pairs": [
-      { "left": "construct", "right": "build" },
-      { "left": "essential", "right": "necessary" },
-      { "left": "predict", "right": "forecast" }
+      {
+        "left": "construct",
+        "right": "build"
+      },
+      {
+        "left": "essential",
+        "right": "necessary"
+      },
+      {
+        "left": "predict",
+        "right": "forecast"
+      }
     ]
   },
   {
@@ -82,9 +145,18 @@
     "prompt": "Match each academic word with a synonym that fits its meaning.",
     "text": "Pair all words correctly.",
     "pairs": [
-      { "left": "analyze", "right": "examine" },
-      { "left": "assist", "right": "help" },
-      { "left": "vivid", "right": "bright" }
+      {
+        "left": "analyze",
+        "right": "examine"
+      },
+      {
+        "left": "assist",
+        "right": "help"
+      },
+      {
+        "left": "vivid",
+        "right": "bright"
+      }
     ]
   },
   {
@@ -93,9 +165,18 @@
     "prompt": "Match each advanced word to the closest synonym.",
     "text": "Connect each pair before time runs out.",
     "pairs": [
-      { "left": "abundant", "right": "plentiful" },
-      { "left": "justify", "right": "defend" },
-      { "left": "precise", "right": "exact" }
+      {
+        "left": "abundant",
+        "right": "plentiful"
+      },
+      {
+        "left": "justify",
+        "right": "defend"
+      },
+      {
+        "left": "precise",
+        "right": "exact"
+      }
     ]
   },
   {
@@ -104,9 +185,18 @@
     "prompt": "Match each advanced word to the closest synonym.",
     "text": "Connect each pair before time runs out.",
     "pairs": [
-      { "left": "reliable", "right": "dependable" },
-      { "left": "conclude", "right": "infer" },
-      { "left": "maintain", "right": "preserve" }
+      {
+        "left": "reliable",
+        "right": "dependable"
+      },
+      {
+        "left": "conclude",
+        "right": "infer"
+      },
+      {
+        "left": "maintain",
+        "right": "preserve"
+      }
     ]
   },
   {
@@ -115,9 +205,18 @@
     "prompt": "Match each domain word with its best synonym.",
     "text": "Create all three correct pairs.",
     "pairs": [
-      { "left": "meticulous", "right": "careful" },
-      { "left": "evaluate", "right": "assess" },
-      { "left": "coherent", "right": "logical" }
+      {
+        "left": "meticulous",
+        "right": "careful"
+      },
+      {
+        "left": "evaluate",
+        "right": "assess"
+      },
+      {
+        "left": "coherent",
+        "right": "logical"
+      }
     ]
   },
   {
@@ -126,9 +225,978 @@
     "prompt": "Match each domain word with its best synonym.",
     "text": "Create all three correct pairs.",
     "pairs": [
-      { "left": "substantial", "right": "considerable" },
-      { "left": "interpret", "right": "explain" },
-      { "left": "innovative", "right": "original" }
+      {
+        "left": "substantial",
+        "right": "considerable"
+      },
+      {
+        "left": "interpret",
+        "right": "explain"
+      },
+      {
+        "left": "innovative",
+        "right": "original"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-1-3",
+    "level": 1,
+    "prompt": "Match each word to a word that means almost the same thing.",
+    "text": "Tap a word on the left, then tap its matching word on the right.",
+    "pairs": [
+      {
+        "left": "hot",
+        "right": "warm"
+      },
+      {
+        "left": "cold",
+        "right": "chilly"
+      },
+      {
+        "left": "jump",
+        "right": "hop"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-1-4",
+    "level": 1,
+    "prompt": "Match each word to a word that means almost the same thing.",
+    "text": "Tap a word on the left, then tap its matching word on the right.",
+    "pairs": [
+      {
+        "left": "look",
+        "right": "see"
+      },
+      {
+        "left": "little",
+        "right": "small"
+      },
+      {
+        "left": "sick",
+        "right": "ill"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-1-5",
+    "level": 1,
+    "prompt": "Match each word to a word that means almost the same thing.",
+    "text": "Tap a word on the left, then tap its matching word on the right.",
+    "pairs": [
+      {
+        "left": "funny",
+        "right": "silly"
+      },
+      {
+        "left": "pretty",
+        "right": "nice"
+      },
+      {
+        "left": "close",
+        "right": "shut"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-1-6",
+    "level": 1,
+    "prompt": "Match each word to a word that means almost the same thing.",
+    "text": "Tap a word on the left, then tap its matching word on the right.",
+    "pairs": [
+      {
+        "left": "house",
+        "right": "home"
+      },
+      {
+        "left": "begin",
+        "right": "start"
+      },
+      {
+        "left": "end",
+        "right": "stop"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-1-7",
+    "level": 1,
+    "prompt": "Match each word to a word that means almost the same thing.",
+    "text": "Tap a word on the left, then tap its matching word on the right.",
+    "pairs": [
+      {
+        "left": "mad",
+        "right": "angry"
+      },
+      {
+        "left": "glad",
+        "right": "happy"
+      },
+      {
+        "left": "quick",
+        "right": "fast"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-1-8",
+    "level": 1,
+    "prompt": "Match each word to a word that means almost the same thing.",
+    "text": "Tap a word on the left, then tap its matching word on the right.",
+    "pairs": [
+      {
+        "left": "trash",
+        "right": "garbage"
+      },
+      {
+        "left": "gift",
+        "right": "present"
+      },
+      {
+        "left": "quiet",
+        "right": "calm"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-1-9",
+    "level": 1,
+    "prompt": "Match each word to a word that means almost the same thing.",
+    "text": "Tap a word on the left, then tap its matching word on the right.",
+    "pairs": [
+      {
+        "left": "friend",
+        "right": "pal"
+      },
+      {
+        "left": "tiny",
+        "right": "small"
+      },
+      {
+        "left": "yell",
+        "right": "shout"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-1-10",
+    "level": 1,
+    "prompt": "Match each word to a word that means almost the same thing.",
+    "text": "Tap a word on the left, then tap its matching word on the right.",
+    "pairs": [
+      {
+        "left": "fix",
+        "right": "mend"
+      },
+      {
+        "left": "child",
+        "right": "kid"
+      },
+      {
+        "left": "job",
+        "right": "work"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-2-3",
+    "level": 2,
+    "prompt": "Match each word to its similar meaning.",
+    "text": "Connect each left word to the best match on the right.",
+    "pairs": [
+      {
+        "left": "answer",
+        "right": "reply"
+      },
+      {
+        "left": "afraid",
+        "right": "scared"
+      },
+      {
+        "left": "choose",
+        "right": "pick"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-2-4",
+    "level": 2,
+    "prompt": "Match each word to its similar meaning.",
+    "text": "Connect each left word to the best match on the right.",
+    "pairs": [
+      {
+        "left": "clean",
+        "right": "tidy"
+      },
+      {
+        "left": "mistake",
+        "right": "error"
+      },
+      {
+        "left": "fair",
+        "right": "just"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-2-5",
+    "level": 2,
+    "prompt": "Match each word to its similar meaning.",
+    "text": "Connect each left word to the best match on the right.",
+    "pairs": [
+      {
+        "left": "gift",
+        "right": "present"
+      },
+      {
+        "left": "late",
+        "right": "tardy"
+      },
+      {
+        "left": "neat",
+        "right": "orderly"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-2-6",
+    "level": 2,
+    "prompt": "Match each word to its similar meaning.",
+    "text": "Connect each left word to the best match on the right.",
+    "pairs": [
+      {
+        "left": "near",
+        "right": "close"
+      },
+      {
+        "left": "rough",
+        "right": "bumpy"
+      },
+      {
+        "left": "simple",
+        "right": "easy"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-2-7",
+    "level": 2,
+    "prompt": "Match each word to its similar meaning.",
+    "text": "Connect each left word to the best match on the right.",
+    "pairs": [
+      {
+        "left": "strong",
+        "right": "powerful"
+      },
+      {
+        "left": "tiny",
+        "right": "miniature"
+      },
+      {
+        "left": "sudden",
+        "right": "quick"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-2-8",
+    "level": 2,
+    "prompt": "Match each word to its similar meaning.",
+    "text": "Connect each left word to the best match on the right.",
+    "pairs": [
+      {
+        "left": "truthful",
+        "right": "honest"
+      },
+      {
+        "left": "watch",
+        "right": "observe"
+      },
+      {
+        "left": "speak",
+        "right": "talk"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-2-9",
+    "level": 2,
+    "prompt": "Match each word to its similar meaning.",
+    "text": "Connect each left word to the best match on the right.",
+    "pairs": [
+      {
+        "left": "helpful",
+        "right": "useful"
+      },
+      {
+        "left": "laugh",
+        "right": "giggle"
+      },
+      {
+        "left": "safe",
+        "right": "secure"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-2-10",
+    "level": 2,
+    "prompt": "Match each word to its similar meaning.",
+    "text": "Connect each left word to the best match on the right.",
+    "pairs": [
+      {
+        "left": "follow",
+        "right": "trail"
+      },
+      {
+        "left": "cheap",
+        "right": "inexpensive"
+      },
+      {
+        "left": "quietly",
+        "right": "softly"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-3-3",
+    "level": 3,
+    "prompt": "Match each vocabulary word to a close synonym.",
+    "text": "Choose one word from each side to make correct pairs.",
+    "pairs": [
+      {
+        "left": "arrive",
+        "right": "reach"
+      },
+      {
+        "left": "brilliant",
+        "right": "bright"
+      },
+      {
+        "left": "careful",
+        "right": "cautious"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-3-4",
+    "level": 3,
+    "prompt": "Match each vocabulary word to a close synonym.",
+    "text": "Choose one word from each side to make correct pairs.",
+    "pairs": [
+      {
+        "left": "damage",
+        "right": "harm"
+      },
+      {
+        "left": "eager",
+        "right": "excited"
+      },
+      {
+        "left": "famous",
+        "right": "well-known"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-3-5",
+    "level": 3,
+    "prompt": "Match each vocabulary word to a close synonym.",
+    "text": "Choose one word from each side to make correct pairs.",
+    "pairs": [
+      {
+        "left": "gather",
+        "right": "collect"
+      },
+      {
+        "left": "humble",
+        "right": "modest"
+      },
+      {
+        "left": "increase",
+        "right": "grow"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-3-6",
+    "level": 3,
+    "prompt": "Match each vocabulary word to a close synonym.",
+    "text": "Choose one word from each side to make correct pairs.",
+    "pairs": [
+      {
+        "left": "jolly",
+        "right": "cheerful"
+      },
+      {
+        "left": "kind",
+        "right": "gentle"
+      },
+      {
+        "left": "locate",
+        "right": "find"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-3-7",
+    "level": 3,
+    "prompt": "Match each vocabulary word to a close synonym.",
+    "text": "Choose one word from each side to make correct pairs.",
+    "pairs": [
+      {
+        "left": "motion",
+        "right": "movement"
+      },
+      {
+        "left": "narrow",
+        "right": "slim"
+      },
+      {
+        "left": "polite",
+        "right": "courteous"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-3-8",
+    "level": 3,
+    "prompt": "Match each vocabulary word to a close synonym.",
+    "text": "Choose one word from each side to make correct pairs.",
+    "pairs": [
+      {
+        "left": "quiet",
+        "right": "silent"
+      },
+      {
+        "left": "repair",
+        "right": "fix"
+      },
+      {
+        "left": "sturdy",
+        "right": "strong"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-3-9",
+    "level": 3,
+    "prompt": "Match each vocabulary word to a close synonym.",
+    "text": "Choose one word from each side to make correct pairs.",
+    "pairs": [
+      {
+        "left": "travel",
+        "right": "journey"
+      },
+      {
+        "left": "urgent",
+        "right": "important"
+      },
+      {
+        "left": "value",
+        "right": "worth"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-3-10",
+    "level": 3,
+    "prompt": "Match each vocabulary word to a close synonym.",
+    "text": "Choose one word from each side to make correct pairs.",
+    "pairs": [
+      {
+        "left": "whisper",
+        "right": "murmur"
+      },
+      {
+        "left": "yield",
+        "right": "produce"
+      },
+      {
+        "left": "zeal",
+        "right": "enthusiasm"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-4-3",
+    "level": 4,
+    "prompt": "Match each academic word with a synonym that fits its meaning.",
+    "text": "Pair all words correctly.",
+    "pairs": [
+      {
+        "left": "accurate",
+        "right": "precise"
+      },
+      {
+        "left": "benefit",
+        "right": "advantage"
+      },
+      {
+        "left": "compare",
+        "right": "contrast"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-4-4",
+    "level": 4,
+    "prompt": "Match each academic word with a synonym that fits its meaning.",
+    "text": "Pair all words correctly.",
+    "pairs": [
+      {
+        "left": "conclude",
+        "right": "decide"
+      },
+      {
+        "left": "decline",
+        "right": "decrease"
+      },
+      {
+        "left": "expand",
+        "right": "enlarge"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-4-5",
+    "level": 4,
+    "prompt": "Match each academic word with a synonym that fits its meaning.",
+    "text": "Pair all words correctly.",
+    "pairs": [
+      {
+        "left": "frequent",
+        "right": "common"
+      },
+      {
+        "left": "improve",
+        "right": "enhance"
+      },
+      {
+        "left": "maintain",
+        "right": "preserve"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-4-6",
+    "level": 4,
+    "prompt": "Match each academic word with a synonym that fits its meaning.",
+    "text": "Pair all words correctly.",
+    "pairs": [
+      {
+        "left": "notion",
+        "right": "idea"
+      },
+      {
+        "left": "obvious",
+        "right": "clear"
+      },
+      {
+        "left": "permit",
+        "right": "allow"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-4-7",
+    "level": 4,
+    "prompt": "Match each academic word with a synonym that fits its meaning.",
+    "text": "Pair all words correctly.",
+    "pairs": [
+      {
+        "left": "require",
+        "right": "need"
+      },
+      {
+        "left": "select",
+        "right": "choose"
+      },
+      {
+        "left": "transfer",
+        "right": "move"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-4-8",
+    "level": 4,
+    "prompt": "Match each academic word with a synonym that fits its meaning.",
+    "text": "Pair all words correctly.",
+    "pairs": [
+      {
+        "left": "typical",
+        "right": "usual"
+      },
+      {
+        "left": "verify",
+        "right": "confirm"
+      },
+      {
+        "left": "visible",
+        "right": "seen"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-4-9",
+    "level": 4,
+    "prompt": "Match each academic word with a synonym that fits its meaning.",
+    "text": "Pair all words correctly.",
+    "pairs": [
+      {
+        "left": "achieve",
+        "right": "attain"
+      },
+      {
+        "left": "compose",
+        "right": "create"
+      },
+      {
+        "left": "detail",
+        "right": "specific"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-4-10",
+    "level": 4,
+    "prompt": "Match each academic word with a synonym that fits its meaning.",
+    "text": "Pair all words correctly.",
+    "pairs": [
+      {
+        "left": "method",
+        "right": "procedure"
+      },
+      {
+        "left": "region",
+        "right": "area"
+      },
+      {
+        "left": "support",
+        "right": "assist"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-5-3",
+    "level": 5,
+    "prompt": "Match each advanced word to the closest synonym.",
+    "text": "Connect each pair before time runs out.",
+    "pairs": [
+      {
+        "left": "adapt",
+        "right": "adjust"
+      },
+      {
+        "left": "analyze",
+        "right": "examine"
+      },
+      {
+        "left": "assume",
+        "right": "suppose"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-5-4",
+    "level": 5,
+    "prompt": "Match each advanced word to the closest synonym.",
+    "text": "Connect each pair before time runs out.",
+    "pairs": [
+      {
+        "left": "clarify",
+        "right": "explain"
+      },
+      {
+        "left": "complex",
+        "right": "complicated"
+      },
+      {
+        "left": "confirm",
+        "right": "verify"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-5-5",
+    "level": 5,
+    "prompt": "Match each advanced word to the closest synonym.",
+    "text": "Connect each pair before time runs out.",
+    "pairs": [
+      {
+        "left": "derive",
+        "right": "obtain"
+      },
+      {
+        "left": "eliminate",
+        "right": "remove"
+      },
+      {
+        "left": "emerge",
+        "right": "appear"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-5-6",
+    "level": 5,
+    "prompt": "Match each advanced word to the closest synonym.",
+    "text": "Connect each pair before time runs out.",
+    "pairs": [
+      {
+        "left": "evident",
+        "right": "apparent"
+      },
+      {
+        "left": "generate",
+        "right": "produce"
+      },
+      {
+        "left": "impact",
+        "right": "influence"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-5-7",
+    "level": 5,
+    "prompt": "Match each advanced word to the closest synonym.",
+    "text": "Connect each pair before time runs out.",
+    "pairs": [
+      {
+        "left": "indicate",
+        "right": "show"
+      },
+      {
+        "left": "justify",
+        "right": "support"
+      },
+      {
+        "left": "maintain",
+        "right": "sustain"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-5-8",
+    "level": 5,
+    "prompt": "Match each advanced word to the closest synonym.",
+    "text": "Connect each pair before time runs out.",
+    "pairs": [
+      {
+        "left": "notable",
+        "right": "remarkable"
+      },
+      {
+        "left": "occur",
+        "right": "happen"
+      },
+      {
+        "left": "relevant",
+        "right": "related"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-5-9",
+    "level": 5,
+    "prompt": "Match each advanced word to the closest synonym.",
+    "text": "Connect each pair before time runs out.",
+    "pairs": [
+      {
+        "left": "significant",
+        "right": "important"
+      },
+      {
+        "left": "strategy",
+        "right": "plan"
+      },
+      {
+        "left": "sufficient",
+        "right": "enough"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-5-10",
+    "level": 5,
+    "prompt": "Match each advanced word to the closest synonym.",
+    "text": "Connect each pair before time runs out.",
+    "pairs": [
+      {
+        "left": "ultimate",
+        "right": "final"
+      },
+      {
+        "left": "validate",
+        "right": "prove"
+      },
+      {
+        "left": "withstand",
+        "right": "endure"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-6-3",
+    "level": 6,
+    "prompt": "Match each domain word with its best synonym.",
+    "text": "Create all three correct pairs.",
+    "pairs": [
+      {
+        "left": "ambiguous",
+        "right": "unclear"
+      },
+      {
+        "left": "articulate",
+        "right": "expressive"
+      },
+      {
+        "left": "coherent",
+        "right": "logical"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-6-4",
+    "level": 6,
+    "prompt": "Match each domain word with its best synonym.",
+    "text": "Create all three correct pairs.",
+    "pairs": [
+      {
+        "left": "comprehensive",
+        "right": "thorough"
+      },
+      {
+        "left": "conventional",
+        "right": "traditional"
+      },
+      {
+        "left": "corroborate",
+        "right": "confirm"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-6-5",
+    "level": 6,
+    "prompt": "Match each domain word with its best synonym.",
+    "text": "Create all three correct pairs.",
+    "pairs": [
+      {
+        "left": "diminish",
+        "right": "lessen"
+      },
+      {
+        "left": "elucidate",
+        "right": "clarify"
+      },
+      {
+        "left": "feasible",
+        "right": "practical"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-6-6",
+    "level": 6,
+    "prompt": "Match each domain word with its best synonym.",
+    "text": "Create all three correct pairs.",
+    "pairs": [
+      {
+        "left": "hypothesis",
+        "right": "theory"
+      },
+      {
+        "left": "inferred",
+        "right": "deduced"
+      },
+      {
+        "left": "integrate",
+        "right": "combine"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-6-7",
+    "level": 6,
+    "prompt": "Match each domain word with its best synonym.",
+    "text": "Create all three correct pairs.",
+    "pairs": [
+      {
+        "left": "intricate",
+        "right": "complex"
+      },
+      {
+        "left": "legitimate",
+        "right": "valid"
+      },
+      {
+        "left": "meticulous",
+        "right": "careful"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-6-8",
+    "level": 6,
+    "prompt": "Match each domain word with its best synonym.",
+    "text": "Create all three correct pairs.",
+    "pairs": [
+      {
+        "left": "objective",
+        "right": "impartial"
+      },
+      {
+        "left": "plausible",
+        "right": "believable"
+      },
+      {
+        "left": "substantiate",
+        "right": "support"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-6-9",
+    "level": 6,
+    "prompt": "Match each domain word with its best synonym.",
+    "text": "Create all three correct pairs.",
+    "pairs": [
+      {
+        "left": "synthesize",
+        "right": "combine"
+      },
+      {
+        "left": "tentative",
+        "right": "uncertain"
+      },
+      {
+        "left": "viable",
+        "right": "workable"
+      }
+    ]
+  },
+  {
+    "id": "word-matching-6-10",
+    "level": 6,
+    "prompt": "Match each domain word with its best synonym.",
+    "text": "Create all three correct pairs.",
+    "pairs": [
+      {
+        "left": "anomaly",
+        "right": "irregularity"
+      },
+      {
+        "left": "discern",
+        "right": "detect"
+      },
+      {
+        "left": "rigorous",
+        "right": "strict"
+      }
     ]
   }
 ]
