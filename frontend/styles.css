@@ -93,8 +93,10 @@ body {
   white-space: nowrap;
   line-height: normal;
   font-family: inherit;
-  display: inline-block;
-  vertical-align: middle;
+  width: fit-content;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-self: center;
   margin: 0;
   box-sizing: border-box;
 }
