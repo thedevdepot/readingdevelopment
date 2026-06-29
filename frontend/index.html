@@ -20,8 +20,7 @@
 				<a href="reading-resources.html">Reading Resources</a>
 				<a href="accessibility.html">Accessibility</a>
 				<a href="sign-in.html">Sign In</a>
-				<a href="#" id="restartBtn" aria-label="Start the quiz over from the beginning">Start Over</a>
-			</nav>
+				<a href="#" id="restartBtn" aria-label="Start the quiz over from the beginning">Start Over</a>					<button id="filterBtn" class="filter-btn" type="button" aria-pressed="false" aria-label="Toggle yellow reading filter for dyslexia support">Filter</button>			</nav>
 		</header>
 
 		<main class="main-content" id="main-content">
@@ -71,6 +70,24 @@
 		</aside>
 
 	<script src="script.js"></script>
+	<div id="reading-filter-overlay" role="presentation" aria-hidden="true"></div>
+	<script>
+		(function () {
+			var overlay = document.getElementById('reading-filter-overlay');
+			var btn = document.getElementById('filterBtn');
+			var KEY = 'rlt-reading-filter';
+			function apply(on) {
+				if (on) { overlay.classList.add('active'); btn.classList.add('active'); btn.setAttribute('aria-pressed', 'true'); }
+				else { overlay.classList.remove('active'); btn.classList.remove('active'); btn.setAttribute('aria-pressed', 'false'); }
+			}
+			apply(localStorage.getItem(KEY) === '1');
+			btn.addEventListener('click', function () {
+				var next = localStorage.getItem(KEY) !== '1';
+				localStorage.setItem(KEY, next ? '1' : '0');
+				apply(next);
+			});
+		}());
+	</script>
 </body>
 
 </html>

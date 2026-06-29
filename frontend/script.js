@@ -1217,6 +1217,8 @@ function showResult() {
         <li><a href="story-reader.html?grade=${grade}&theme=fiction">Fiction Story</a></li>
         <li><a href="story-reader.html?grade=${grade}&theme=space">Space Adventure</a></li>
         <li><a href="story-reader.html?grade=${grade}&theme=adventure">Adventure Story</a></li>
+        <li><a href="story-reader.html?grade=${grade}&theme=mystery">Mystery</a></li>
+        <li><a href="story-reader.html?grade=${grade}&theme=arthurian">Arthurian Legend Fantasy</a></li>
       </ul>
       <p><a href="reading-resources.html#grade-story-links">Or choose another grade level first</a>.</p>
     </div>
