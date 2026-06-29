@@ -7,17 +7,30 @@ const storyChoicesEl = document.getElementById('storyChoices');
 const storyFeedbackEl = document.getElementById('storyFeedback');
 const storyCompleteEl = document.getElementById('storyComplete');
 const tryAnotherBtn = document.getElementById('tryAnotherBtn');
+const themePickerEl = document.getElementById('themePicker');
+const themeOptionsEl = document.getElementById('themeOptions');
 
 const TOTAL_STEPS = 5;
 const feedbackDelayMs = 500;
+
+const THEME_LABELS = {
+  fiction: 'Fiction',
+  space: 'Space Adventure',
+  adventure: 'Adventure Story'
+};
 
 let currentStory = null;
 let currentStep = 1;
 let currentPath = '';
 let storiesForGrade = [];
+let storiesForTheme = [];
+
+function getQueryParams() {
+  return new URLSearchParams(window.location.search);
+}
 
 function getGradeFromUrl() {
-  const params = new URLSearchParams(window.location.search);
+  const params = getQueryParams();
   const gradeValue = Number(params.get('grade'));
   if (!Number.isInteger(gradeValue) || gradeValue < 1 || gradeValue > 6) {
     return 3;
@@ -25,12 +38,27 @@ function getGradeFromUrl() {
   return gradeValue;
 }
 
-function pickStory(gradeStories) {
-  if (!Array.isArray(gradeStories) || gradeStories.length === 0) {
+function getThemeFromUrl() {
+  const params = getQueryParams();
+  const value = params.get('theme');
+  if (!value) {
     return null;
   }
-  const randomIndex = Math.floor(Math.random() * gradeStories.length);
-  return gradeStories[randomIndex];
+  return value.toLowerCase();
+}
+
+function setThemeInUrl(theme) {
+  const grade = getGradeFromUrl();
+  const target = `story-reader.html?grade=${grade}&theme=${encodeURIComponent(theme)}`;
+  window.location.href = target;
+}
+
+function pickStory(storyList) {
+  if (!Array.isArray(storyList) || storyList.length === 0) {
+    return null;
+  }
+  const randomIndex = Math.floor(Math.random() * storyList.length);
+  return storyList[randomIndex];
 }
 
 function getPathKey() {
@@ -90,7 +118,35 @@ function clearFeedback() {
   storyFeedbackEl.className = 'story-feedback hidden';
 }
 
+function hideThemePicker() {
+  themePickerEl.classList.add('hidden');
+}
+
+function showThemePicker(themes) {
+  storyTitleEl.textContent = `Grade ${getGradeFromUrl()} Story Adventure`;
+  storyMetaEl.textContent = 'Choose a theme to begin.';
+  storyStepLabelEl.textContent = '';
+  storyParagraphEl.textContent = '';
+  storyPromptEl.textContent = '';
+  storyChoicesEl.innerHTML = '';
+  storyCompleteEl.classList.add('hidden');
+  clearFeedback();
+
+  themeOptionsEl.innerHTML = '';
+  themes.forEach(theme => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'side-menu-button theme-option-btn';
+    button.textContent = THEME_LABELS[theme] || theme;
+    button.onclick = () => setThemeInUrl(theme);
+    themeOptionsEl.appendChild(button);
+  });
+
+  themePickerEl.classList.remove('hidden');
+}
+
 function updateStoryStepUI() {
+  hideThemePicker();
   clearFeedback();
   storyStepLabelEl.textContent = `Paragraph ${currentStep} of ${TOTAL_STEPS}`;
   storyParagraphEl.textContent = getParagraphForStep(currentStep);
@@ -151,14 +207,15 @@ function startStory(story) {
   currentStep = 1;
   currentPath = '';
   storyCompleteEl.classList.add('hidden');
+  const themeLabel = THEME_LABELS[story.theme] || 'Story';
   storyTitleEl.textContent = story.title;
-  storyMetaEl.textContent = `Grade ${getGradeFromUrl()} interactive story`;
+  storyMetaEl.textContent = `Grade ${getGradeFromUrl()} • ${themeLabel}`;
   updateStoryStepUI();
 }
 
 function setupTryAnotherStory() {
   tryAnotherBtn.addEventListener('click', () => {
-    const nextStory = pickStory(storiesForGrade);
+    const nextStory = pickStory(storiesForTheme);
     if (!nextStory) {
       return;
     }
@@ -179,8 +236,23 @@ function initStoryPage(storyData) {
     return;
   }
 
+  const themes = Array.from(new Set(storiesForGrade.map(story => (story.theme || 'fiction').toLowerCase())));
+  const selectedTheme = getThemeFromUrl();
+
+  if (!selectedTheme || !themes.includes(selectedTheme)) {
+    showThemePicker(themes);
+    return;
+  }
+
+  storiesForTheme = storiesForGrade.filter(story => ((story.theme || 'fiction').toLowerCase() === selectedTheme));
+
+  if (storiesForTheme.length === 0) {
+    showThemePicker(themes);
+    return;
+  }
+
   setupTryAnotherStory();
-  startStory(pickStory(storiesForGrade));
+  startStory(pickStory(storiesForTheme));
 }
 
 fetch('story-data.json')

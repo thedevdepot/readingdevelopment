@@ -1078,6 +1078,24 @@ button.secondary:hover {
   font-size: clamp(0.96rem, 0.2vw + 0.92rem, 1.06rem);
 }
 
+.theme-picker {
+  margin: 8px 0 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(10, 88, 79, 0.2);
+  border: 1px solid rgba(6, 69, 62, 0.3);
+}
+
+.theme-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.theme-option-btn {
+  margin-top: 0;
+}
+
 .story-progress {
   margin: 10px 0 8px;
   padding: 6px 10px;
@@ -1202,6 +1220,10 @@ button.secondary:hover {
   }
 
   .grade-story-links {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-options {
     grid-template-columns: 1fr;
   }
 }
