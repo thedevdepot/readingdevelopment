@@ -6,26 +6,26 @@
         "theme": "fiction",
         "title": "The Park Map",
         "paragraphs": {
-          "step1": "Mia found a folded map under the big oak tree at Sunny Park. A tiny red star was drawn near the pond. She smiled and said, \"This looks like a treasure clue!\"",
+          "step1": "Mia arrived at Sunny Park near the big oak tree and found a folded map with a bright red star. The clue pointed toward a hidden explorer card. Mia promised to solve it before the day ended.",
           "step2": {
-            "choiceA": "Mia tiptoed to the pond and looked behind a smooth gray rock. She found a small blue box with a sticker of a duck.",
-            "choiceB": "Mia ran to the playground and checked under the slide. She found a small blue box with a sticker of a duck."
+            "choiceA": "Mia chose go to the pond and followed the first trail sign. She counted duck statues beside the pond and noticed one stone that looked freshly moved. This choice revealed an important clue for the next step.",
+            "choiceB": "Mia chose go to the playground and followed the first trail sign. She followed chalk circles around the slide and spotted a ribbon tucked under a bench. This choice revealed an important clue for the next step."
           },
           "step3": {
-            "choiceA": "Inside the box was a note that said, \"Follow the arrows painted on the path.\" Mia looked up and saw two arrows on a signpost.",
-            "choiceB": "Inside the box was a note that said, \"Follow the arrows painted on the path.\" Mia looked up and saw two arrows on a signpost."
+            "choiceA": "A new marker appeared with two choices: follow the garden arrow or follow the bridge arrow. Mia read both signs and remembered the earlier clue. Mia took a breath and prepared to choose wisely.",
+            "choiceB": "A new marker appeared with two choices: follow the garden arrow or follow the bridge arrow. Mia read both signs and remembered the earlier clue. Mia took a breath and prepared to choose wisely."
           },
           "step4": {
-            "choiceA_branchA": "Mia followed the first arrow and found a ribbon tied to a tiny bell behind a watering can.",
-            "choiceA_branchB": "Mia followed the second arrow and found a ribbon tied to a tiny bell under a short bridge plank.",
-            "choiceB_branchA": "Mia followed the first arrow and found a ribbon tied to a tiny bell behind a watering can.",
-            "choiceB_branchB": "Mia followed the second arrow and found a ribbon tied to a tiny bell under a short bridge plank."
+            "choiceA_branchA": "Mia continued from go to the pond and followed follow the garden arrow. The garden path ended at a tiny bell tied to a watering can. The route uncovered a final note with her name written in glitter pencil.",
+            "choiceA_branchB": "Mia continued from go to the pond and followed follow the bridge arrow. The bridge path ended at a tiny bell tucked under a wooden plank. The route uncovered a final note with her name written in glitter pencil.",
+            "choiceB_branchA": "Mia continued from go to the playground and followed follow the garden arrow. The garden path ended at a tiny bell tied to a watering can. The route uncovered a final note with her name written in glitter pencil.",
+            "choiceB_branchB": "Mia continued from go to the playground and followed follow the bridge arrow. The bridge path ended at a tiny bell tucked under a wooden plank. The route uncovered a final note with her name written in glitter pencil."
           },
           "step5": {
-            "choiceA_branchA": "At the end of the ribbon, Mia found a card that read, \"You are a careful explorer!\" She waved and laughed as the little bell jingled.",
-            "choiceA_branchB": "At the end of the ribbon, Mia found a card that read, \"You are a careful explorer!\" She waved and laughed as the little bell jingled.",
-            "choiceB_branchA": "At the end of the ribbon, Mia found a card that read, \"You are a careful explorer!\" She waved and laughed as the little bell jingled.",
-            "choiceB_branchB": "At the end of the ribbon, Mia found a card that read, \"You are a careful explorer!\" She waved and laughed as the little bell jingled."
+            "choiceA_branchA": "With clues from go to the pond and follow the garden arrow, Mia reached the park picnic table. Mia solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceA_branchB": "With clues from go to the pond and follow the bridge arrow, Mia reached the park picnic table. Mia solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchA": "With clues from go to the playground and follow the garden arrow, Mia reached the park picnic table. Mia solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchB": "With clues from go to the playground and follow the bridge arrow, Mia reached the park picnic table. Mia solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices."
           }
         },
         "interactions": {
@@ -266,26 +266,26 @@
         "theme": "space",
         "title": "Luna and the Moon Radio",
         "paragraphs": {
-          "step1": "Luna looked through her telescope and noticed a blinking light near the moon. A tiny radio on her desk crackled with a message: \"Pilot, choose your launch path.\"",
+          "step1": "Luna arrived at her rooftop telescope station and found a radio signal from the moon dock. The clue pointed toward to relight the moon beacon. Luna promised to solve it before the day ended.",
           "step2": {
-            "choiceA": "Luna selected the silver flight path and steered around calm clouds toward the moon station.",
-            "choiceB": "Luna selected the blue flight path and glided past floating ice crystals toward the moon station."
+            "choiceA": "Luna chose silver path and followed the first trail sign. She glided through silver clouds and mapped blinking stars on her tablet. This choice revealed an important clue for the next step.",
+            "choiceB": "Luna chose blue path and followed the first trail sign. She glided through blue ice mist and mapped blinking stars on her tablet. This choice revealed an important clue for the next step."
           },
           "step3": {
-            "choiceA": "At the station dock, a robot handed Luna a map with two symbols: a star tunnel and a crater ramp.",
-            "choiceB": "At the station dock, a robot handed Luna a map with two symbols: a star tunnel and a crater ramp."
+            "choiceA": "A new marker appeared with two choices: star tunnel or crater ramp. Luna read both signs and remembered the earlier clue. Luna took a breath and prepared to choose wisely.",
+            "choiceB": "A new marker appeared with two choices: star tunnel or crater ramp. Luna read both signs and remembered the earlier clue. Luna took a breath and prepared to choose wisely."
           },
           "step4": {
-            "choiceA_branchA": "Luna entered the star tunnel and followed glowing arrows to a control room full of humming lights.",
-            "choiceA_branchB": "Luna rode the crater ramp and followed glowing arrows to a control room full of humming lights.",
-            "choiceB_branchA": "Luna entered the star tunnel and followed glowing arrows to a control room full of humming lights.",
-            "choiceB_branchB": "Luna rode the crater ramp and followed glowing arrows to a control room full of humming lights."
+            "choiceA_branchA": "Luna continued from silver path and followed star tunnel. The star tunnel hummed while tiny helper bots lit her path. The route uncovered the beacon switch glowing green.",
+            "choiceA_branchB": "Luna continued from silver path and followed crater ramp. The crater ramp rumbled while tiny helper bots lit her path. The route uncovered the beacon switch glowing green.",
+            "choiceB_branchA": "Luna continued from blue path and followed star tunnel. The star tunnel hummed while tiny helper bots lit her path. The route uncovered the beacon switch glowing green.",
+            "choiceB_branchB": "Luna continued from blue path and followed crater ramp. The crater ramp rumbled while tiny helper bots lit her path. The route uncovered the beacon switch glowing green."
           },
           "step5": {
-            "choiceA_branchA": "Luna reset the beacon, and the moon station shined again. Her radio cheered, \"Mission complete, pilot!\"",
-            "choiceA_branchB": "Luna reset the beacon, and the moon station shined again. Her radio cheered, \"Mission complete, pilot!\"",
-            "choiceB_branchA": "Luna reset the beacon, and the moon station shined again. Her radio cheered, \"Mission complete, pilot!\"",
-            "choiceB_branchB": "Luna reset the beacon, and the moon station shined again. Her radio cheered, \"Mission complete, pilot!\""
+            "choiceA_branchA": "With clues from silver path and star tunnel, Luna reached the moon control deck. Luna solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceA_branchB": "With clues from silver path and crater ramp, Luna reached the moon control deck. Luna solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchA": "With clues from blue path and star tunnel, Luna reached the moon control deck. Luna solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchB": "With clues from blue path and crater ramp, Luna reached the moon control deck. Luna solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices."
           }
         },
         "interactions": {
@@ -526,26 +526,26 @@
         "theme": "adventure",
         "title": "The Forest Trail Badge",
         "paragraphs": {
-          "step1": "Theo found a ranger note at the forest gate: \"Choose your trail and earn the explorer badge.\" He packed water and stepped onto the path.",
+          "step1": "Theo arrived at the forest gate at Pine Ridge and found a ranger card with badge clues. The clue pointed toward the explorer badge case. Theo promised to solve it before the day ended.",
           "step2": {
-            "choiceA": "Theo took the river trail and marked each clue symbol on his notebook as he walked.",
-            "choiceB": "Theo took the hill trail and marked each clue symbol on his notebook as he walked."
+            "choiceA": "Theo chose river trail and followed the first trail sign. He followed river stones and copied each trail symbol into his notebook. This choice revealed an important clue for the next step.",
+            "choiceB": "Theo chose hill trail and followed the first trail sign. He followed hill markers and copied each trail symbol into his notebook. This choice revealed an important clue for the next step."
           },
           "step3": {
-            "choiceA": "Near a wooden sign, Theo found two trail markers: one pointed to a waterfall and one pointed to a lookout rock.",
-            "choiceB": "Near a wooden sign, Theo found two trail markers: one pointed to a waterfall and one pointed to a lookout rock."
+            "choiceA": "A new marker appeared with two choices: waterfall marker or lookout marker. Theo read both signs and remembered the earlier clue. Theo took a breath and prepared to choose wisely.",
+            "choiceB": "A new marker appeared with two choices: waterfall marker or lookout marker. Theo read both signs and remembered the earlier clue. Theo took a breath and prepared to choose wisely."
           },
           "step4": {
-            "choiceA_branchA": "Theo followed the waterfall marker and found a metal badge case under a mossy log.",
-            "choiceA_branchB": "Theo followed the lookout marker and found a metal badge case beside a tall pine tree.",
-            "choiceB_branchA": "Theo followed the waterfall marker and found a metal badge case under a mossy log.",
-            "choiceB_branchB": "Theo followed the lookout marker and found a metal badge case beside a tall pine tree."
+            "choiceA_branchA": "Theo continued from river trail and followed waterfall marker. The waterfall marker led to a mossy log with a locked tin. The route uncovered a badge stamped with a silver compass.",
+            "choiceA_branchB": "Theo continued from river trail and followed lookout marker. The lookout marker led to a pine stump with a locked tin. The route uncovered a badge stamped with a silver compass.",
+            "choiceB_branchA": "Theo continued from hill trail and followed waterfall marker. The waterfall marker led to a mossy log with a locked tin. The route uncovered a badge stamped with a silver compass.",
+            "choiceB_branchB": "Theo continued from hill trail and followed lookout marker. The lookout marker led to a pine stump with a locked tin. The route uncovered a badge stamped with a silver compass."
           },
           "step5": {
-            "choiceA_branchA": "Inside the case was an explorer badge and a note: \"Great job reading the trail!\" Theo pinned the badge to his jacket.",
-            "choiceA_branchB": "Inside the case was an explorer badge and a note: \"Great job reading the trail!\" Theo pinned the badge to his jacket.",
-            "choiceB_branchA": "Inside the case was an explorer badge and a note: \"Great job reading the trail!\" Theo pinned the badge to his jacket.",
-            "choiceB_branchB": "Inside the case was an explorer badge and a note: \"Great job reading the trail!\" Theo pinned the badge to his jacket."
+            "choiceA_branchA": "With clues from river trail and waterfall marker, Theo reached the ranger station porch. Theo solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceA_branchB": "With clues from river trail and lookout marker, Theo reached the ranger station porch. Theo solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchA": "With clues from hill trail and waterfall marker, Theo reached the ranger station porch. Theo solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchB": "With clues from hill trail and lookout marker, Theo reached the ranger station porch. Theo solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices."
           }
         },
         "interactions": {
@@ -788,26 +788,26 @@
         "theme": "fiction",
         "title": "The Library Key",
         "paragraphs": {
-          "step1": "Jalen helped the school librarian return books after class. Under a stack of atlases, he found a brass key engraved with the word \"Story.\"",
+          "step1": "Jalen arrived at the school library after classes and found a brass key engraved with the word Story. The clue pointed toward this week's reading quest. Jalen promised to solve it before the day ended.",
           "step2": {
-            "choiceA": "Jalen showed the key to Ms. Perez at the front desk, and she pointed to a locked reading challenge box.",
-            "choiceB": "Jalen checked the rolling book cart first and discovered the locked reading challenge box beside it."
+            "choiceA": "Jalen chose ask at the front desk and followed the first trail sign. At the desk, Librarian Perez pointed him to a puzzle box hidden behind atlas shelves. This choice revealed an important clue for the next step.",
+            "choiceB": "Jalen chose check the book cart and followed the first trail sign. At the cart, he spotted a puzzle box hidden behind atlas shelves. This choice revealed an important clue for the next step."
           },
           "step3": {
-            "choiceA": "The box opened with a click and revealed a clue card: \"Find the shelf where adventures begin.\" Two signs pointed toward Fantasy and Mystery.",
-            "choiceB": "The box opened with a click and revealed a clue card: \"Find the shelf where adventures begin.\" Two signs pointed toward Fantasy and Mystery."
+            "choiceA": "A new marker appeared with two choices: fantasy shelf or mystery shelf. Jalen read both signs and remembered the earlier clue. Jalen took a breath and prepared to choose wisely.",
+            "choiceB": "A new marker appeared with two choices: fantasy shelf or mystery shelf. Jalen read both signs and remembered the earlier clue. Jalen took a breath and prepared to choose wisely."
           },
           "step4": {
-            "choiceA_branchA": "On the Fantasy shelf, Jalen found a bookmark with a gold star tucked inside a dragon novel.",
-            "choiceA_branchB": "On the Mystery shelf, Jalen found a bookmark with a gold star tucked inside a detective story.",
-            "choiceB_branchA": "On the Fantasy shelf, Jalen found a bookmark with a gold star tucked inside a dragon novel.",
-            "choiceB_branchB": "On the Mystery shelf, Jalen found a bookmark with a gold star tucked inside a detective story."
+            "choiceA_branchA": "Jalen continued from ask at the front desk and followed fantasy shelf. The fantasy aisle revealed a star bookmark inside a dragon chapter. The route uncovered a challenge code for a new checkout prize.",
+            "choiceA_branchB": "Jalen continued from ask at the front desk and followed mystery shelf. The mystery aisle revealed a star bookmark inside a detective chapter. The route uncovered a challenge code for a new checkout prize.",
+            "choiceB_branchA": "Jalen continued from check the book cart and followed fantasy shelf. The fantasy aisle revealed a star bookmark inside a dragon chapter. The route uncovered a challenge code for a new checkout prize.",
+            "choiceB_branchB": "Jalen continued from check the book cart and followed mystery shelf. The mystery aisle revealed a star bookmark inside a detective chapter. The route uncovered a challenge code for a new checkout prize."
           },
           "step5": {
-            "choiceA_branchA": "The bookmark said, \"You unlocked this week's reading quest.\" Jalen grinned and checked out his next book.",
-            "choiceA_branchB": "The bookmark said, \"You unlocked this week's reading quest.\" Jalen grinned and checked out his next book.",
-            "choiceB_branchA": "The bookmark said, \"You unlocked this week's reading quest.\" Jalen grinned and checked out his next book.",
-            "choiceB_branchB": "The bookmark said, \"You unlocked this week's reading quest.\" Jalen grinned and checked out his next book."
+            "choiceA_branchA": "With clues from ask at the front desk and fantasy shelf, Jalen reached the checkout counter. Jalen solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceA_branchB": "With clues from ask at the front desk and mystery shelf, Jalen reached the checkout counter. Jalen solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchA": "With clues from check the book cart and fantasy shelf, Jalen reached the checkout counter. Jalen solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchB": "With clues from check the book cart and mystery shelf, Jalen reached the checkout counter. Jalen solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices."
           }
         },
         "interactions": {
@@ -1048,26 +1048,26 @@
         "theme": "space",
         "title": "Orbit School Rescue",
         "paragraphs": {
-          "step1": "Ari arrived at Orbit School and heard an alert: \"Solar panel signal lost.\" The captain said, \"Choose your route to the control deck.\"",
+          "step1": "Ari arrived at Orbit School in low gravity and found an alert that the solar power link was failing. The clue pointed toward restore station power before lessons began. Ari promised to solve it before the day ended.",
           "step2": {
-            "choiceA": "Ari took the hallway route and checked each blinking panel along the way.",
-            "choiceB": "Ari floated through the tube route and checked each blinking panel along the way."
+            "choiceA": "Ari chose hallway route and followed the first trail sign. He crossed the hallway deck and logged each blinking panel. This choice revealed an important clue for the next step.",
+            "choiceB": "Ari chose tube route and followed the first trail sign. He floated through service tubes and logged each blinking panel. This choice revealed an important clue for the next step."
           },
           "step3": {
-            "choiceA": "At the control deck door, Ari saw two tools available: a light scanner and a wiring map.",
-            "choiceB": "At the control deck door, Ari saw two tools available: a light scanner and a wiring map."
+            "choiceA": "A new marker appeared with two choices: light scanner or wiring map. Ari read both signs and remembered the earlier clue. Ari took a breath and prepared to choose wisely.",
+            "choiceB": "A new marker appeared with two choices: light scanner or wiring map. Ari read both signs and remembered the earlier clue. Ari took a breath and prepared to choose wisely."
           },
           "step4": {
-            "choiceA_branchA": "Using the scanner, Ari located a loose connector behind panel seven and snapped it back in place.",
-            "choiceA_branchB": "Using the wiring map, Ari traced a loose connector behind panel seven and snapped it back in place.",
-            "choiceB_branchA": "Using the scanner, Ari located a loose connector behind panel seven and snapped it back in place.",
-            "choiceB_branchB": "Using the wiring map, Ari traced a loose connector behind panel seven and snapped it back in place."
+            "choiceA_branchA": "Ari continued from hallway route and followed light scanner. The scanner route exposed a loose connector behind panel seven. The route uncovered steady green lights across the classroom ring.",
+            "choiceA_branchB": "Ari continued from hallway route and followed wiring map. The wiring map route exposed a loose connector behind panel seven. The route uncovered steady green lights across the classroom ring.",
+            "choiceB_branchA": "Ari continued from tube route and followed light scanner. The scanner route exposed a loose connector behind panel seven. The route uncovered steady green lights across the classroom ring.",
+            "choiceB_branchB": "Ari continued from tube route and followed wiring map. The wiring map route exposed a loose connector behind panel seven. The route uncovered steady green lights across the classroom ring."
           },
           "step5": {
-            "choiceA_branchA": "Power returned to Orbit School, and the captain announced, \"Excellent repair work, Ari!\"",
-            "choiceA_branchB": "Power returned to Orbit School, and the captain announced, \"Excellent repair work, Ari!\"",
-            "choiceB_branchA": "Power returned to Orbit School, and the captain announced, \"Excellent repair work, Ari!\"",
-            "choiceB_branchB": "Power returned to Orbit School, and the captain announced, \"Excellent repair work, Ari!\""
+            "choiceA_branchA": "With clues from hallway route and light scanner, Ari reached the central command platform. Ari solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceA_branchB": "With clues from hallway route and wiring map, Ari reached the central command platform. Ari solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchA": "With clues from tube route and light scanner, Ari reached the central command platform. Ari solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchB": "With clues from tube route and wiring map, Ari reached the central command platform. Ari solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices."
           }
         },
         "interactions": {
@@ -1308,26 +1308,26 @@
         "theme": "adventure",
         "title": "Signal at Red Canyon",
         "paragraphs": {
-          "step1": "Kira spotted a flashing signal tower while hiking in Red Canyon. Her trail card said, \"Choose a path and restore the beacon.\"",
+          "step1": "Kira arrived at Red Canyon trailhead and found a flashing tower and a trail instruction card. The clue pointed toward reactivate the canyon signal beacon. Kira promised to solve it before the day ended.",
           "step2": {
-            "choiceA": "Kira followed the creek path and tracked marker symbols carved on stones.",
-            "choiceB": "Kira followed the ridge path and tracked marker symbols carved on stones."
+            "choiceA": "Kira chose creek path and followed the first trail sign. She followed the creek trail and matched carved symbols to her card. This choice revealed an important clue for the next step.",
+            "choiceB": "Kira chose ridge path and followed the first trail sign. She followed the ridge trail and matched carved symbols to her card. This choice revealed an important clue for the next step."
           },
           "step3": {
-            "choiceA": "At the tower base, she found two ways up: a ladder route and a ramp route.",
-            "choiceB": "At the tower base, she found two ways up: a ladder route and a ramp route."
+            "choiceA": "A new marker appeared with two choices: ladder route or ramp route. Kira read both signs and remembered the earlier clue. Kira took a breath and prepared to choose wisely.",
+            "choiceB": "A new marker appeared with two choices: ladder route or ramp route. Kira read both signs and remembered the earlier clue. Kira took a breath and prepared to choose wisely."
           },
           "step4": {
-            "choiceA_branchA": "Kira climbed the ladder route and reached the control box where a switch was stuck halfway.",
-            "choiceA_branchB": "Kira used the ramp route and reached the control box where a switch was stuck halfway.",
-            "choiceB_branchA": "Kira climbed the ladder route and reached the control box where a switch was stuck halfway.",
-            "choiceB_branchB": "Kira used the ramp route and reached the control box where a switch was stuck halfway."
+            "choiceA_branchA": "Kira continued from creek path and followed ladder route. The ladder path reached a control box with a stuck switch. The route uncovered a bright beam sweeping across the canyon walls.",
+            "choiceA_branchB": "Kira continued from creek path and followed ramp route. The ramp path reached a control box with a stuck switch. The route uncovered a bright beam sweeping across the canyon walls.",
+            "choiceB_branchA": "Kira continued from ridge path and followed ladder route. The ladder path reached a control box with a stuck switch. The route uncovered a bright beam sweeping across the canyon walls.",
+            "choiceB_branchB": "Kira continued from ridge path and followed ramp route. The ramp path reached a control box with a stuck switch. The route uncovered a bright beam sweeping across the canyon walls."
           },
           "step5": {
-            "choiceA_branchA": "Kira reset the switch, and the signal beacon lit up across the canyon.",
-            "choiceA_branchB": "Kira reset the switch, and the signal beacon lit up across the canyon.",
-            "choiceB_branchA": "Kira reset the switch, and the signal beacon lit up across the canyon.",
-            "choiceB_branchB": "Kira reset the switch, and the signal beacon lit up across the canyon."
+            "choiceA_branchA": "With clues from creek path and ladder route, Kira reached the tower observation deck. Kira solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceA_branchB": "With clues from creek path and ramp route, Kira reached the tower observation deck. Kira solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchA": "With clues from ridge path and ladder route, Kira reached the tower observation deck. Kira solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchB": "With clues from ridge path and ramp route, Kira reached the tower observation deck. Kira solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices."
           }
         },
         "interactions": {
@@ -1570,26 +1570,26 @@
         "theme": "fiction",
         "title": "Message by the River",
         "paragraphs": {
-          "step1": "During a class field trip, Nia found a glass jar between river stones. Inside was a note: \"Follow the painted arrows to continue.\"",
+          "step1": "Nia arrived at the river study trail during a class field trip and found a jar note that promised a hidden student logbook. The clue pointed toward trace the arrow clues safely with her partner. Nia promised to solve it before the day ended.",
           "step2": {
-            "choiceA": "Nia showed the note to her teacher and was reminded to stay with a partner while exploring.",
-            "choiceB": "Nia read the note with Theo, and they agreed to follow every safety rule together."
+            "choiceA": "Nia chose show the note to the teacher and followed the first trail sign. She checked in with her teacher, then compared the note to the posted trail map. This choice revealed an important clue for the next step.",
+            "choiceB": "Nia chose read it with theo and followed the first trail sign. She reviewed the note with Theo, then compared it to the posted trail map. This choice revealed an important clue for the next step."
           },
           "step3": {
-            "choiceA": "The arrows led to a fork in the trail with two choices: a hill overlook and a shaded grove.",
-            "choiceB": "The arrows led to a fork in the trail with two choices: a hill overlook and a shaded grove."
+            "choiceA": "A new marker appeared with two choices: hill overlook or shaded grove. Nia read both signs and remembered the earlier clue. Nia took a breath and prepared to choose wisely.",
+            "choiceB": "A new marker appeared with two choices: hill overlook or shaded grove. Nia read both signs and remembered the earlier clue. Nia took a breath and prepared to choose wisely."
           },
           "step4": {
-            "choiceA_branchA": "At the hill overlook, they discovered a post pointing to a notebook hidden beneath a bench.",
-            "choiceA_branchB": "In the shaded grove, they discovered a post pointing to a notebook hidden beneath a bench.",
-            "choiceB_branchA": "At the hill overlook, they discovered a post pointing to a notebook hidden beneath a bench.",
-            "choiceB_branchB": "In the shaded grove, they discovered a post pointing to a notebook hidden beneath a bench."
+            "choiceA_branchA": "Nia continued from show the note to the teacher and followed hill overlook. The hill overlook revealed a marker post and a weatherproof notebook. The route uncovered entries from earlier student explorers.",
+            "choiceA_branchB": "Nia continued from show the note to the teacher and followed shaded grove. The shaded grove revealed a marker post and a weatherproof notebook. The route uncovered entries from earlier student explorers.",
+            "choiceB_branchA": "Nia continued from read it with theo and followed hill overlook. The hill overlook revealed a marker post and a weatherproof notebook. The route uncovered entries from earlier student explorers.",
+            "choiceB_branchB": "Nia continued from read it with theo and followed shaded grove. The shaded grove revealed a marker post and a weatherproof notebook. The route uncovered entries from earlier student explorers."
           },
           "step5": {
-            "choiceA_branchA": "The notebook belonged to past student explorers, so Nia wrote a new entry about teamwork and careful clues.",
-            "choiceA_branchB": "The notebook belonged to past student explorers, so Nia wrote a new entry about teamwork and careful clues.",
-            "choiceB_branchA": "The notebook belonged to past student explorers, so Nia wrote a new entry about teamwork and careful clues.",
-            "choiceB_branchB": "The notebook belonged to past student explorers, so Nia wrote a new entry about teamwork and careful clues."
+            "choiceA_branchA": "With clues from show the note to the teacher and hill overlook, Nia reached the field trip meeting bench. Nia solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceA_branchB": "With clues from show the note to the teacher and shaded grove, Nia reached the field trip meeting bench. Nia solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchA": "With clues from read it with theo and hill overlook, Nia reached the field trip meeting bench. Nia solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchB": "With clues from read it with theo and shaded grove, Nia reached the field trip meeting bench. Nia solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices."
           }
         },
         "interactions": {
@@ -1830,26 +1830,26 @@
         "theme": "space",
         "title": "The Comet Clock",
         "paragraphs": {
-          "step1": "At the junior observatory, Sol noticed the comet clock was drifting off schedule. A note read, \"Choose your first diagnostic route.\"",
+          "step1": "Sol arrived at the junior observatory lab and found a comet clock drifting off schedule. The clue pointed toward realign the timing system before observation hour. Sol promised to solve it before the day ended.",
           "step2": {
-            "choiceA": "Sol checked the telescope deck and logged the clock pulse each minute.",
-            "choiceB": "Sol checked the timing server and logged the clock pulse each minute."
+            "choiceA": "Sol chose telescope deck and followed the first trail sign. On the telescope deck, Sol tracked pulse intervals and compared them to baseline values. This choice revealed an important clue for the next step.",
+            "choiceB": "Sol chose timing server and followed the first trail sign. At the timing server, Sol tracked pulse intervals and compared them to baseline values. This choice revealed an important clue for the next step."
           },
           "step3": {
-            "choiceA": "The logs pointed to two possible causes: a weak battery line or delayed signal relay.",
-            "choiceB": "The logs pointed to two possible causes: a weak battery line or delayed signal relay."
+            "choiceA": "A new marker appeared with two choices: weak battery line or signal relay delay. Sol read both signs and remembered the earlier clue. Sol took a breath and prepared to choose wisely.",
+            "choiceB": "A new marker appeared with two choices: weak battery line or signal relay delay. Sol read both signs and remembered the earlier clue. Sol took a breath and prepared to choose wisely."
           },
           "step4": {
-            "choiceA_branchA": "Sol tested the battery line and found a loose connector near the backup panel.",
-            "choiceA_branchB": "Sol tested the relay path and found a delay at a junction switch near the antenna.",
-            "choiceB_branchA": "Sol tested the battery line and found a loose connector near the backup panel.",
-            "choiceB_branchB": "Sol tested the relay path and found a delay at a junction switch near the antenna."
+            "choiceA_branchA": "Sol continued from telescope deck and followed weak battery line. Testing the battery line uncovered a loose connector near backup power. The route uncovered a clean synchronization chart with no skipped beats.",
+            "choiceA_branchB": "Sol continued from telescope deck and followed signal relay delay. Testing the relay path uncovered a lagging switch near the antenna hub. The route uncovered a clean synchronization chart with no skipped beats.",
+            "choiceB_branchA": "Sol continued from timing server and followed weak battery line. Testing the battery line uncovered a loose connector near backup power. The route uncovered a clean synchronization chart with no skipped beats.",
+            "choiceB_branchB": "Sol continued from timing server and followed signal relay delay. Testing the relay path uncovered a lagging switch near the antenna hub. The route uncovered a clean synchronization chart with no skipped beats."
           },
           "step5": {
-            "choiceA_branchA": "After the repair, the comet clock aligned perfectly and the observatory team applauded Sol's careful process.",
-            "choiceA_branchB": "After the repair, the comet clock aligned perfectly and the observatory team applauded Sol's careful process.",
-            "choiceB_branchA": "After the repair, the comet clock aligned perfectly and the observatory team applauded Sol's careful process.",
-            "choiceB_branchB": "After the repair, the comet clock aligned perfectly and the observatory team applauded Sol's careful process."
+            "choiceA_branchA": "With clues from telescope deck and weak battery line, Sol reached the observatory control table. Sol solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceA_branchB": "With clues from telescope deck and signal relay delay, Sol reached the observatory control table. Sol solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchA": "With clues from timing server and weak battery line, Sol reached the observatory control table. Sol solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchB": "With clues from timing server and signal relay delay, Sol reached the observatory control table. Sol solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices."
           }
         },
         "interactions": {
@@ -2090,26 +2090,26 @@
         "theme": "adventure",
         "title": "Cliff Camp Code",
         "paragraphs": {
-          "step1": "Rae reached Cliff Camp and found a carved message on the ranger board: \"Decode the route before sunset.\"",
+          "step1": "Rae arrived at Cliff Camp challenge course and found a carved message that required decoding before sunset. The clue pointed toward unlock the camp lockbox. Rae promised to solve it before the day ended.",
           "step2": {
-            "choiceA": "Rae took the pine trail and copied each carved symbol onto a map card.",
-            "choiceB": "Rae took the stone trail and copied each carved symbol onto a map card."
+            "choiceA": "Rae chose pine trail and followed the first trail sign. She copied pine trail symbols and translated them using the camp legend card. This choice revealed an important clue for the next step.",
+            "choiceB": "Rae chose stone trail and followed the first trail sign. She copied stone trail symbols and translated them using the camp legend card. This choice revealed an important clue for the next step."
           },
           "step3": {
-            "choiceA": "The symbols translated into two route options: canyon stairs or rope bridge crossing.",
-            "choiceB": "The symbols translated into two route options: canyon stairs or rope bridge crossing."
+            "choiceA": "A new marker appeared with two choices: canyon stairs or rope bridge. Rae read both signs and remembered the earlier clue. Rae took a breath and prepared to choose wisely.",
+            "choiceB": "A new marker appeared with two choices: canyon stairs or rope bridge. Rae read both signs and remembered the earlier clue. Rae took a breath and prepared to choose wisely."
           },
           "step4": {
-            "choiceA_branchA": "Rae descended the canyon stairs and found the coded lockbox hidden in a rock alcove.",
-            "choiceA_branchB": "Rae crossed the rope bridge and found the coded lockbox hidden in a rock alcove.",
-            "choiceB_branchA": "Rae descended the canyon stairs and found the coded lockbox hidden in a rock alcove.",
-            "choiceB_branchB": "Rae crossed the rope bridge and found the coded lockbox hidden in a rock alcove."
+            "choiceA_branchA": "Rae continued from pine trail and followed canyon stairs. The canyon stairs led to a rock alcove where the coded lockbox was hidden. The route uncovered a badge and note praising careful decoding.",
+            "choiceA_branchB": "Rae continued from pine trail and followed rope bridge. The rope bridge led to a rock alcove where the coded lockbox was hidden. The route uncovered a badge and note praising careful decoding.",
+            "choiceB_branchA": "Rae continued from stone trail and followed canyon stairs. The canyon stairs led to a rock alcove where the coded lockbox was hidden. The route uncovered a badge and note praising careful decoding.",
+            "choiceB_branchB": "Rae continued from stone trail and followed rope bridge. The rope bridge led to a rock alcove where the coded lockbox was hidden. The route uncovered a badge and note praising careful decoding."
           },
           "step5": {
-            "choiceA_branchA": "When Rae opened the lockbox, a camp badge and note appeared: \"Great decoding and route planning!\"",
-            "choiceA_branchB": "When Rae opened the lockbox, a camp badge and note appeared: \"Great decoding and route planning!\"",
-            "choiceB_branchA": "When Rae opened the lockbox, a camp badge and note appeared: \"Great decoding and route planning!\"",
-            "choiceB_branchB": "When Rae opened the lockbox, a camp badge and note appeared: \"Great decoding and route planning!\""
+            "choiceA_branchA": "With clues from pine trail and canyon stairs, Rae reached the sunset campfire circle. Rae solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceA_branchB": "With clues from pine trail and rope bridge, Rae reached the sunset campfire circle. Rae solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchA": "With clues from stone trail and canyon stairs, Rae reached the sunset campfire circle. Rae solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices.",
+            "choiceB_branchB": "With clues from stone trail and rope bridge, Rae reached the sunset campfire circle. Rae solved the final puzzle and smiled with relief. The adventure ended with a lesson about careful reading and brave choices."
           }
         },
         "interactions": {
@@ -2352,26 +2352,26 @@
         "theme": "fiction",
         "title": "The Storm Journal",
         "paragraphs": {
-          "step1": "On a rainy Saturday, Elena discovered her grandfather's weather journal with a challenge: \"Choose your observation point and defend your conclusion.\"",
+          "step1": "Elena began work at her neighborhood weather station during a fast-moving storm after discovering her grandfather's journal with a challenge to justify a forecast. The opening evidence suggested a clear objective: predict the storm shift using evidence. Elena outlined a plan that balanced curiosity with careful verification. Each next decision would be measured against the clues rather than guesswork. With the stakes understood, the investigation moved forward.",
           "step2": {
-            "choiceA": "Elena observed from the upstairs window and recorded cloud color, wind speed, and rain direction.",
-            "choiceB": "Elena observed from the covered porch and recorded cloud color, wind speed, and rain direction."
+            "choiceA": "Elena selected upstairs window as the primary route for the next phase of the investigation. From the upstairs window, she recorded cloud layers, gust rhythm, and rainfall angle in timed intervals. The observations from this path were logged and compared against the initial objective. Instead of rushing, Elena paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision.",
+            "choiceB": "Elena selected covered porch as the primary route for the next phase of the investigation. From the covered porch, she recorded cloud layers, gust rhythm, and rainfall angle in timed intervals. The observations from this path were logged and compared against the initial objective. Instead of rushing, Elena paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision."
           },
           "step3": {
-            "choiceA": "A second note asked her to compare two signs: lightning over the field or puddle flow by the curb.",
-            "choiceB": "A second note asked her to compare two signs: lightning over the field or puddle flow by the curb."
+            "choiceA": "At the next checkpoint, the route divided into two competing options: lightning timing and puddle flow. Elena reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Elena cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified.",
+            "choiceB": "At the next checkpoint, the route divided into two competing options: lightning timing and puddle flow. Elena reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Elena cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified."
           },
           "step4": {
-            "choiceA_branchA": "Elena analyzed lightning timing and concluded the storm was shifting east while gradually weakening.",
-            "choiceA_branchB": "Elena analyzed puddle flow and concluded the storm was shifting east while gradually weakening.",
-            "choiceB_branchA": "Elena analyzed lightning timing and concluded the storm was shifting east while gradually weakening.",
-            "choiceB_branchB": "Elena analyzed puddle flow and concluded the storm was shifting east while gradually weakening."
+            "choiceA_branchA": "Elena advanced from upstairs window and committed to lightning timing for deeper verification. Analyzing lightning intervals showed the storm core sliding east while weakening at the edges. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Elena corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed matching changes across her three observation logs.",
+            "choiceA_branchB": "Elena advanced from upstairs window and committed to puddle flow for deeper verification. Analyzing curb-flow patterns showed the storm core sliding east while weakening at the edges. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Elena corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed matching changes across her three observation logs.",
+            "choiceB_branchA": "Elena advanced from covered porch and committed to lightning timing for deeper verification. Analyzing lightning intervals showed the storm core sliding east while weakening at the edges. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Elena corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed matching changes across her three observation logs.",
+            "choiceB_branchB": "Elena advanced from covered porch and committed to puddle flow for deeper verification. Analyzing curb-flow patterns showed the storm core sliding east while weakening at the edges. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Elena corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed matching changes across her three observation logs."
           },
           "step5": {
-            "choiceA_branchA": "She wrote, \"Careful observation turns noise into patterns,\" then closed the journal with confidence.",
-            "choiceA_branchB": "She wrote, \"Careful observation turns noise into patterns,\" then closed the journal with confidence.",
-            "choiceB_branchA": "She wrote, \"Careful observation turns noise into patterns,\" then closed the journal with confidence.",
-            "choiceB_branchB": "She wrote, \"Careful observation turns noise into patterns,\" then closed the journal with confidence."
+            "choiceA_branchA": "Using evidence gathered through upstairs window and lightning timing, Elena arrived at the desk where she wrote her final forecast. The final outcome validated the strongest clues while ruling out weaker assumptions. Elena documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceA_branchB": "Using evidence gathered through upstairs window and puddle flow, Elena arrived at the desk where she wrote her final forecast. The final outcome validated the strongest clues while ruling out weaker assumptions. Elena documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchA": "Using evidence gathered through covered porch and lightning timing, Elena arrived at the desk where she wrote her final forecast. The final outcome validated the strongest clues while ruling out weaker assumptions. Elena documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchB": "Using evidence gathered through covered porch and puddle flow, Elena arrived at the desk where she wrote her final forecast. The final outcome validated the strongest clues while ruling out weaker assumptions. Elena documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking."
           }
         },
         "interactions": {
@@ -2612,26 +2612,26 @@
         "theme": "space",
         "title": "Satellite Array Drift",
         "paragraphs": {
-          "step1": "At the orbital training lab, Miko noticed the satellite array was drifting off alignment. A prompt appeared: \"Choose your first calibration station.\"",
+          "step1": "Miko began work at an orbital engineering simulator after discovering an alert that the satellite array had begun to drift. The opening evidence suggested a clear objective: restore alignment before the communications window closed. Miko outlined a plan that balanced curiosity with careful verification. Each next decision would be measured against the clues rather than guesswork. With the stakes understood, the investigation moved forward.",
           "step2": {
-            "choiceA": "Miko started at the optics station and measured mirror offsets against baseline values.",
-            "choiceB": "Miko started at the navigation station and measured orientation offsets against baseline values."
+            "choiceA": "Miko selected optics station as the primary route for the next phase of the investigation. At the optics station, Miko compared mirror offsets to baseline calibration data and flagged abnormal values. The observations from this path were logged and compared against the initial objective. Instead of rushing, Miko paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision.",
+            "choiceB": "Miko selected navigation station as the primary route for the next phase of the investigation. At the navigation station, Miko compared orientation offsets to baseline calibration data and flagged abnormal values. The observations from this path were logged and compared against the initial objective. Instead of rushing, Miko paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision."
           },
           "step3": {
-            "choiceA": "The measurements suggested two explanations: a sensor drift issue or a software timing lag.",
-            "choiceB": "The measurements suggested two explanations: a sensor drift issue or a software timing lag."
+            "choiceA": "At the next checkpoint, the route divided into two competing options: sensor drift and software timing lag. Miko reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Miko cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified.",
+            "choiceB": "At the next checkpoint, the route divided into two competing options: sensor drift and software timing lag. Miko reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Miko cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified."
           },
           "step4": {
-            "choiceA_branchA": "Miko tested the sensor drift hypothesis and recalibrated the affected module to stabilize readings.",
-            "choiceA_branchB": "Miko tested the timing lag hypothesis and patched the synchronization cycle to stabilize readings.",
-            "choiceB_branchA": "Miko tested the sensor drift hypothesis and recalibrated the affected module to stabilize readings.",
-            "choiceB_branchB": "Miko tested the timing lag hypothesis and patched the synchronization cycle to stabilize readings."
+            "choiceA_branchA": "Miko advanced from optics station and committed to sensor drift for deeper verification. Sensor-drift testing isolated a failing module that required recalibration and phased verification. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Miko corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed stabilized telemetry with consistent alignment error near zero.",
+            "choiceA_branchB": "Miko advanced from optics station and committed to software timing lag for deeper verification. Timing-lag testing isolated a delayed control loop that required patching and phased verification. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Miko corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed stabilized telemetry with consistent alignment error near zero.",
+            "choiceB_branchA": "Miko advanced from navigation station and committed to sensor drift for deeper verification. Sensor-drift testing isolated a failing module that required recalibration and phased verification. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Miko corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed stabilized telemetry with consistent alignment error near zero.",
+            "choiceB_branchB": "Miko advanced from navigation station and committed to software timing lag for deeper verification. Timing-lag testing isolated a delayed control loop that required patching and phased verification. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Miko corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed stabilized telemetry with consistent alignment error near zero."
           },
           "step5": {
-            "choiceA_branchA": "With alignment restored, Miko documented each test and recommendation for the next engineering team.",
-            "choiceA_branchB": "With alignment restored, Miko documented each test and recommendation for the next engineering team.",
-            "choiceB_branchA": "With alignment restored, Miko documented each test and recommendation for the next engineering team.",
-            "choiceB_branchB": "With alignment restored, Miko documented each test and recommendation for the next engineering team."
+            "choiceA_branchA": "Using evidence gathered through optics station and sensor drift, Miko arrived at the mission review console. The final outcome validated the strongest clues while ruling out weaker assumptions. Miko documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceA_branchB": "Using evidence gathered through optics station and software timing lag, Miko arrived at the mission review console. The final outcome validated the strongest clues while ruling out weaker assumptions. Miko documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchA": "Using evidence gathered through navigation station and sensor drift, Miko arrived at the mission review console. The final outcome validated the strongest clues while ruling out weaker assumptions. Miko documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchB": "Using evidence gathered through navigation station and software timing lag, Miko arrived at the mission review console. The final outcome validated the strongest clues while ruling out weaker assumptions. Miko documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking."
           }
         },
         "interactions": {
@@ -2872,26 +2872,26 @@
         "theme": "adventure",
         "title": "The Summit Ledger",
         "paragraphs": {
-          "step1": "At Base Camp Summit, Imani found a ledger with a note: \"Choose your route and recover the missing entry seal.\"",
+          "step1": "Imani began work at Summit Base Camp and the upper ridge routes after discovering a ledger note requesting recovery of the missing expedition seal. The opening evidence suggested a clear objective: return the seal and complete the official log. Imani outlined a plan that balanced curiosity with careful verification. Each next decision would be measured against the clues rather than guesswork. With the stakes understood, the investigation moved forward.",
           "step2": {
-            "choiceA": "Imani climbed the ridge trail and recorded landmarks in sequence on the ledger margin.",
-            "choiceB": "Imani climbed the valley trail and recorded landmarks in sequence on the ledger margin."
+            "choiceA": "Imani selected ridge trail as the primary route for the next phase of the investigation. On the ridge trail, Imani logged landmark order, elevation shifts, and weather notes to track route reliability. The observations from this path were logged and compared against the initial objective. Instead of rushing, Imani paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision.",
+            "choiceB": "Imani selected valley trail as the primary route for the next phase of the investigation. On the valley trail, Imani logged landmark order, elevation shifts, and weather notes to track route reliability. The observations from this path were logged and compared against the initial objective. Instead of rushing, Imani paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision."
           },
           "step3": {
-            "choiceA": "At a marker post, two options appeared: a cave pass route or a waterfall ledge route.",
-            "choiceB": "At a marker post, two options appeared: a cave pass route or a waterfall ledge route."
+            "choiceA": "At the next checkpoint, the route divided into two competing options: cave pass and waterfall ledge. Imani reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Imani cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified.",
+            "choiceB": "At the next checkpoint, the route divided into two competing options: cave pass and waterfall ledge. Imani reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Imani cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified."
           },
           "step4": {
-            "choiceA_branchA": "Imani followed the cave pass and found the seal case tucked behind a rope anchor.",
-            "choiceA_branchB": "Imani followed the waterfall ledge and found the seal case tucked behind a rope anchor.",
-            "choiceB_branchA": "Imani followed the cave pass and found the seal case tucked behind a rope anchor.",
-            "choiceB_branchB": "Imani followed the waterfall ledge and found the seal case tucked behind a rope anchor."
+            "choiceA_branchA": "Imani advanced from ridge trail and committed to cave pass for deeper verification. The cave-pass route led to an anchor point hiding the seal case behind secured rope loops. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Imani corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed the recovered seal matching the ledger imprint exactly.",
+            "choiceA_branchB": "Imani advanced from ridge trail and committed to waterfall ledge for deeper verification. The waterfall-ledge route led to an anchor point hiding the seal case behind secured rope loops. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Imani corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed the recovered seal matching the ledger imprint exactly.",
+            "choiceB_branchA": "Imani advanced from valley trail and committed to cave pass for deeper verification. The cave-pass route led to an anchor point hiding the seal case behind secured rope loops. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Imani corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed the recovered seal matching the ledger imprint exactly.",
+            "choiceB_branchB": "Imani advanced from valley trail and committed to waterfall ledge for deeper verification. The waterfall-ledge route led to an anchor point hiding the seal case behind secured rope loops. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Imani corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed the recovered seal matching the ledger imprint exactly."
           },
           "step5": {
-            "choiceA_branchA": "Imani returned the seal to the ledger and signed the final page as an official summit explorer.",
-            "choiceA_branchB": "Imani returned the seal to the ledger and signed the final page as an official summit explorer.",
-            "choiceB_branchA": "Imani returned the seal to the ledger and signed the final page as an official summit explorer.",
-            "choiceB_branchB": "Imani returned the seal to the ledger and signed the final page as an official summit explorer."
+            "choiceA_branchA": "Using evidence gathered through ridge trail and cave pass, Imani arrived at the camp records table. The final outcome validated the strongest clues while ruling out weaker assumptions. Imani documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceA_branchB": "Using evidence gathered through ridge trail and waterfall ledge, Imani arrived at the camp records table. The final outcome validated the strongest clues while ruling out weaker assumptions. Imani documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchA": "Using evidence gathered through valley trail and cave pass, Imani arrived at the camp records table. The final outcome validated the strongest clues while ruling out weaker assumptions. Imani documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchB": "Using evidence gathered through valley trail and waterfall ledge, Imani arrived at the camp records table. The final outcome validated the strongest clues while ruling out weaker assumptions. Imani documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking."
           }
         },
         "interactions": {
@@ -3134,26 +3134,26 @@
         "theme": "fiction",
         "title": "The Midnight Code",
         "paragraphs": {
-          "step1": "At the student journalism lab, Amir found a draft article with every third word highlighted and a note: \"Decode this before deadline.\"",
+          "step1": "Amir began work at the student journalism lab before deadline after discovering a draft article encoded with hidden prompts every third line. The opening evidence suggested a clear objective: publish a verified story before midnight. Amir outlined a plan that balanced curiosity with careful verification. Each next decision would be measured against the clues rather than guesswork. With the stakes understood, the investigation moved forward.",
           "step2": {
-            "choiceA": "Amir consulted the student editor first and confirmed that every claim needed source verification.",
-            "choiceB": "Amir searched the digital archive first and bookmarked repeated phrasing patterns from past editions."
+            "choiceA": "Amir selected consult the editor as the primary route for the next phase of the investigation. Consulting the editor first, Amir established source standards, identified weak claims, and prioritized verifiable leads. The observations from this path were logged and compared against the initial objective. Instead of rushing, Amir paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision.",
+            "choiceB": "Amir selected search the archive as the primary route for the next phase of the investigation. Mining the archive first, Amir tracked repeated language patterns, identified missing context, and prioritized verifiable leads. The observations from this path were logged and compared against the initial objective. Instead of rushing, Amir paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision."
           },
           "step3": {
-            "choiceA": "His findings pointed to two leads: interview a key source or analyze survey data charts.",
-            "choiceB": "His findings pointed to two leads: interview a key source or analyze survey data charts."
+            "choiceA": "At the next checkpoint, the route divided into two competing options: interview key source and analyze survey charts. Amir reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Amir cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified.",
+            "choiceB": "At the next checkpoint, the route divided into two competing options: interview key source and analyze survey charts. Amir reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Amir cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified."
           },
           "step4": {
-            "choiceA_branchA": "Amir conducted the interview and resolved missing context in the article timeline with direct quotes.",
-            "choiceA_branchB": "Amir analyzed chart labels and resolved missing context in the article timeline with corrected data.",
-            "choiceB_branchA": "Amir conducted the interview and resolved missing context in the article timeline with direct quotes.",
-            "choiceB_branchB": "Amir analyzed chart labels and resolved missing context in the article timeline with corrected data."
+            "choiceA_branchA": "Amir advanced from consult the editor and committed to interview key source for deeper verification. The interview path produced direct testimony that repaired timeline gaps and clarified key motivations. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Amir corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a revision log linking each claim to a documented source.",
+            "choiceA_branchB": "Amir advanced from consult the editor and committed to analyze survey charts for deeper verification. The survey-analysis path produced corrected labels that repaired timeline gaps and clarified key motivations. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Amir corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a revision log linking each claim to a documented source.",
+            "choiceB_branchA": "Amir advanced from search the archive and committed to interview key source for deeper verification. The interview path produced direct testimony that repaired timeline gaps and clarified key motivations. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Amir corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a revision log linking each claim to a documented source.",
+            "choiceB_branchB": "Amir advanced from search the archive and committed to analyze survey charts for deeper verification. The survey-analysis path produced corrected labels that repaired timeline gaps and clarified key motivations. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Amir corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a revision log linking each claim to a documented source."
           },
           "step5": {
-            "choiceA_branchA": "Before midnight, Amir submitted a stronger article supported by clear evidence, sequence, and sourcing.",
-            "choiceA_branchB": "Before midnight, Amir submitted a stronger article supported by clear evidence, sequence, and sourcing.",
-            "choiceB_branchA": "Before midnight, Amir submitted a stronger article supported by clear evidence, sequence, and sourcing.",
-            "choiceB_branchB": "Before midnight, Amir submitted a stronger article supported by clear evidence, sequence, and sourcing."
+            "choiceA_branchA": "Using evidence gathered through consult the editor and interview key source, Amir arrived at the press-ready submission portal. The final outcome validated the strongest clues while ruling out weaker assumptions. Amir documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceA_branchB": "Using evidence gathered through consult the editor and analyze survey charts, Amir arrived at the press-ready submission portal. The final outcome validated the strongest clues while ruling out weaker assumptions. Amir documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchA": "Using evidence gathered through search the archive and interview key source, Amir arrived at the press-ready submission portal. The final outcome validated the strongest clues while ruling out weaker assumptions. Amir documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchB": "Using evidence gathered through search the archive and analyze survey charts, Amir arrived at the press-ready submission portal. The final outcome validated the strongest clues while ruling out weaker assumptions. Amir documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking."
           }
         },
         "interactions": {
@@ -3394,26 +3394,26 @@
         "theme": "space",
         "title": "Mars Briefing Signal",
         "paragraphs": {
-          "step1": "During mission briefing, Talia detected conflicting telemetry from the Mars relay probe. The console asked her to choose the first analysis stream.",
+          "step1": "Talia began work at a Mars relay briefing center after discovering conflicting telemetry just before launch authorization. The opening evidence suggested a clear objective: resolve the conflict and protect mission safety margins. Talia outlined a plan that balanced curiosity with careful verification. Each next decision would be measured against the clues rather than guesswork. With the stakes understood, the investigation moved forward.",
           "step2": {
-            "choiceA": "Talia started with propulsion telemetry and compared thrust variance across the last three cycles.",
-            "choiceB": "Talia started with communications telemetry and compared packet delay across the last three cycles."
+            "choiceA": "Talia selected propulsion telemetry as the primary route for the next phase of the investigation. By opening propulsion streams first, Talia compared thrust variance trends, checked anomaly timing, and isolated suspect windows. The observations from this path were logged and compared against the initial objective. Instead of rushing, Talia paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision.",
+            "choiceB": "Talia selected communications telemetry as the primary route for the next phase of the investigation. By opening communications streams first, Talia compared packet delay trends, checked anomaly timing, and isolated suspect windows. The observations from this path were logged and compared against the initial objective. Instead of rushing, Talia paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision."
           },
           "step3": {
-            "choiceA": "Her analysis suggested two causes: sensor calibration drift or intermittent relay interference.",
-            "choiceB": "Her analysis suggested two causes: sensor calibration drift or intermittent relay interference."
+            "choiceA": "At the next checkpoint, the route divided into two competing options: calibration drift and relay interference. Talia reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Talia cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified.",
+            "choiceB": "At the next checkpoint, the route divided into two competing options: calibration drift and relay interference. Talia reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Talia cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified."
           },
           "step4": {
-            "choiceA_branchA": "Talia tested calibration records and corrected a drift offset that stabilized incoming telemetry.",
-            "choiceA_branchB": "Talia tested relay interference windows and rerouted timing cycles that stabilized incoming telemetry.",
-            "choiceB_branchA": "Talia tested calibration records and corrected a drift offset that stabilized incoming telemetry.",
-            "choiceB_branchB": "Talia tested relay interference windows and rerouted timing cycles that stabilized incoming telemetry."
+            "choiceA_branchA": "Talia advanced from propulsion telemetry and committed to calibration drift for deeper verification. Calibration testing revealed offset drift in a critical sensor chain, so she corrected coefficients and reran diagnostics. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Talia corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed converging telemetry traces across independent validation tools.",
+            "choiceA_branchB": "Talia advanced from propulsion telemetry and committed to relay interference for deeper verification. Interference testing revealed timed relay collisions, so she rerouted cycles and reran diagnostics. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Talia corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed converging telemetry traces across independent validation tools.",
+            "choiceB_branchA": "Talia advanced from communications telemetry and committed to calibration drift for deeper verification. Calibration testing revealed offset drift in a critical sensor chain, so she corrected coefficients and reran diagnostics. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Talia corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed converging telemetry traces across independent validation tools.",
+            "choiceB_branchB": "Talia advanced from communications telemetry and committed to relay interference for deeper verification. Interference testing revealed timed relay collisions, so she rerouted cycles and reran diagnostics. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Talia corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed converging telemetry traces across independent validation tools."
           },
           "step5": {
-            "choiceA_branchA": "Talia delivered a concise mission update showing evidence, method, and recommended safeguards for launch day.",
-            "choiceA_branchB": "Talia delivered a concise mission update showing evidence, method, and recommended safeguards for launch day.",
-            "choiceB_branchA": "Talia delivered a concise mission update showing evidence, method, and recommended safeguards for launch day.",
-            "choiceB_branchB": "Talia delivered a concise mission update showing evidence, method, and recommended safeguards for launch day."
+            "choiceA_branchA": "Using evidence gathered through propulsion telemetry and calibration drift, Talia arrived at the mission readiness boardroom. The final outcome validated the strongest clues while ruling out weaker assumptions. Talia documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceA_branchB": "Using evidence gathered through propulsion telemetry and relay interference, Talia arrived at the mission readiness boardroom. The final outcome validated the strongest clues while ruling out weaker assumptions. Talia documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchA": "Using evidence gathered through communications telemetry and calibration drift, Talia arrived at the mission readiness boardroom. The final outcome validated the strongest clues while ruling out weaker assumptions. Talia documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchB": "Using evidence gathered through communications telemetry and relay interference, Talia arrived at the mission readiness boardroom. The final outcome validated the strongest clues while ruling out weaker assumptions. Talia documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking."
           }
         },
         "interactions": {
@@ -3654,26 +3654,26 @@
         "theme": "adventure",
         "title": "Cipher Expedition",
         "paragraphs": {
-          "step1": "On expedition day, Jonah found a cipher map pinned to the camp board: \"Choose your route and decode the final gate.\"",
+          "step1": "Jonah began work at an expedition corridor lined with coded markers after discovering a cipher map leading to a locked summit gate. The opening evidence suggested a clear objective: decode the route and open the gate chest. Jonah outlined a plan that balanced curiosity with careful verification. Each next decision would be measured against the clues rather than guesswork. With the stakes understood, the investigation moved forward.",
           "step2": {
-            "choiceA": "Jonah took the canyon route and annotated each cipher mark in order with estimated meanings.",
-            "choiceB": "Jonah took the ridge route and annotated each cipher mark in order with estimated meanings."
+            "choiceA": "Jonah selected canyon route as the primary route for the next phase of the investigation. Along the canyon route, Jonah annotated each symbol sequence, compared pattern frequency, and tested likely substitutions. The observations from this path were logged and compared against the initial objective. Instead of rushing, Jonah paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision.",
+            "choiceB": "Jonah selected ridge route as the primary route for the next phase of the investigation. Along the ridge route, Jonah annotated each symbol sequence, compared pattern frequency, and tested likely substitutions. The observations from this path were logged and compared against the initial objective. Instead of rushing, Jonah paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision."
           },
           "step3": {
-            "choiceA": "At checkpoint three, two decoding paths emerged: substitute symbol key or pattern frequency key.",
-            "choiceB": "At checkpoint three, two decoding paths emerged: substitute symbol key or pattern frequency key."
+            "choiceA": "At the next checkpoint, the route divided into two competing options: substitute symbol key and pattern frequency key. Jonah reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Jonah cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified.",
+            "choiceB": "At the next checkpoint, the route divided into two competing options: substitute symbol key and pattern frequency key. Jonah reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Jonah cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified."
           },
           "step4": {
-            "choiceA_branchA": "Jonah applied the symbol key and unlocked half the message, revealing coordinates to the final gate.",
-            "choiceA_branchB": "Jonah applied the frequency key and unlocked half the message, revealing coordinates to the final gate.",
-            "choiceB_branchA": "Jonah applied the symbol key and unlocked half the message, revealing coordinates to the final gate.",
-            "choiceB_branchB": "Jonah applied the frequency key and unlocked half the message, revealing coordinates to the final gate."
+            "choiceA_branchA": "Jonah advanced from canyon route and committed to substitute symbol key for deeper verification. Structural substitution unlocked coordinate fragments that narrowed the search to one final chamber. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Jonah corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a complete translation key with all symbols resolved.",
+            "choiceA_branchB": "Jonah advanced from canyon route and committed to pattern frequency key for deeper verification. Frequency mapping unlocked coordinate fragments that narrowed the search to one final chamber. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Jonah corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a complete translation key with all symbols resolved.",
+            "choiceB_branchA": "Jonah advanced from ridge route and committed to substitute symbol key for deeper verification. Structural substitution unlocked coordinate fragments that narrowed the search to one final chamber. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Jonah corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a complete translation key with all symbols resolved.",
+            "choiceB_branchB": "Jonah advanced from ridge route and committed to pattern frequency key for deeper verification. Frequency mapping unlocked coordinate fragments that narrowed the search to one final chamber. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Jonah corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a complete translation key with all symbols resolved."
           },
           "step5": {
-            "choiceA_branchA": "At sunset, Jonah decoded the final line and opened the gate chest, documenting each step for future teams.",
-            "choiceA_branchB": "At sunset, Jonah decoded the final line and opened the gate chest, documenting each step for future teams.",
-            "choiceB_branchA": "At sunset, Jonah decoded the final line and opened the gate chest, documenting each step for future teams.",
-            "choiceB_branchB": "At sunset, Jonah decoded the final line and opened the gate chest, documenting each step for future teams."
+            "choiceA_branchA": "Using evidence gathered through canyon route and substitute symbol key, Jonah arrived at the final gate platform. The final outcome validated the strongest clues while ruling out weaker assumptions. Jonah documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceA_branchB": "Using evidence gathered through canyon route and pattern frequency key, Jonah arrived at the final gate platform. The final outcome validated the strongest clues while ruling out weaker assumptions. Jonah documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchA": "Using evidence gathered through ridge route and substitute symbol key, Jonah arrived at the final gate platform. The final outcome validated the strongest clues while ruling out weaker assumptions. Jonah documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchB": "Using evidence gathered through ridge route and pattern frequency key, Jonah arrived at the final gate platform. The final outcome validated the strongest clues while ruling out weaker assumptions. Jonah documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking."
           }
         },
         "interactions": {
@@ -3916,26 +3916,26 @@
         "theme": "fiction",
         "title": "The Observatory Log",
         "paragraphs": {
-          "step1": "At an enrichment program, Priya opened an old observatory log and found a challenge: \"Trace the anomaly and defend your conclusion.\"",
+          "step1": "Priya began work at an advanced observatory research lab after discovering an anomaly challenge embedded in archived observation logs. The opening evidence suggested a clear objective: defend the most plausible explanation with corroborating evidence. Priya outlined a plan that balanced curiosity with careful verification. Each next decision would be measured against the clues rather than guesswork. With the stakes understood, the investigation moved forward.",
           "step2": {
-            "choiceA": "Priya began with spectral intensity records and compared deviations against historical baselines.",
-            "choiceB": "Priya began with coordinate position tables and compared deviations against historical baselines."
+            "choiceA": "Priya selected spectral records as the primary route for the next phase of the investigation. Prioritizing spectral records, Priya quantified intensity deviations, normalized baseline variance, and documented confidence bounds across intervals. The observations from this path were logged and compared against the initial objective. Instead of rushing, Priya paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision.",
+            "choiceB": "Priya selected coordinate tables as the primary route for the next phase of the investigation. Prioritizing coordinate tables, Priya quantified positional deviations, normalized baseline variance, and documented confidence bounds across intervals. The observations from this path were logged and compared against the initial objective. Instead of rushing, Priya paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision."
           },
           "step3": {
-            "choiceA": "Her notes produced two hypotheses: calibration timestamp mismatch or a short-duration event near the horizon.",
-            "choiceB": "Her notes produced two hypotheses: calibration timestamp mismatch or a short-duration event near the horizon."
+            "choiceA": "At the next checkpoint, the route divided into two competing options: calibration mismatch and short-duration event. Priya reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Priya cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified.",
+            "choiceB": "At the next checkpoint, the route divided into two competing options: calibration mismatch and short-duration event. Priya reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Priya cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified."
           },
           "step4": {
-            "choiceA_branchA": "Priya audited calibration logs and identified a timestamp mismatch that required data correction.",
-            "choiceA_branchB": "Priya compared external feeds and confirmed matching spikes consistent with a short-duration event.",
-            "choiceB_branchA": "Priya audited calibration logs and identified a timestamp mismatch that required data correction.",
-            "choiceB_branchB": "Priya compared external feeds and confirmed matching spikes consistent with a short-duration event."
+            "choiceA_branchA": "Priya advanced from spectral records and committed to calibration mismatch for deeper verification. Calibration audit exposed timestamp drift that contaminated downstream comparisons, requiring correction and methodical revalidation. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Priya corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a defensible report that separated confirmed findings from uncertainty limits.",
+            "choiceA_branchB": "Priya advanced from spectral records and committed to short-duration event for deeper verification. Cross-feed analysis confirmed synchronized spikes across external instruments, supporting an authentic short-duration event. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Priya corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a defensible report that separated confirmed findings from uncertainty limits.",
+            "choiceB_branchA": "Priya advanced from coordinate tables and committed to calibration mismatch for deeper verification. Calibration audit exposed timestamp drift that contaminated downstream comparisons, requiring correction and methodical revalidation. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Priya corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a defensible report that separated confirmed findings from uncertainty limits.",
+            "choiceB_branchB": "Priya advanced from coordinate tables and committed to short-duration event for deeper verification. Cross-feed analysis confirmed synchronized spikes across external instruments, supporting an authentic short-duration event. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Priya corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a defensible report that separated confirmed findings from uncertainty limits."
           },
           "step5": {
-            "choiceA_branchA": "In her conclusion, Priya justified the selected hypothesis with corroborating evidence and acknowledged data limits.",
-            "choiceA_branchB": "In her conclusion, Priya justified the selected hypothesis with corroborating evidence and acknowledged data limits.",
-            "choiceB_branchA": "In her conclusion, Priya justified the selected hypothesis with corroborating evidence and acknowledged data limits.",
-            "choiceB_branchB": "In her conclusion, Priya justified the selected hypothesis with corroborating evidence and acknowledged data limits."
+            "choiceA_branchA": "Using evidence gathered through spectral records and calibration mismatch, Priya arrived at the symposium review panel. The final outcome validated the strongest clues while ruling out weaker assumptions. Priya documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceA_branchB": "Using evidence gathered through spectral records and short-duration event, Priya arrived at the symposium review panel. The final outcome validated the strongest clues while ruling out weaker assumptions. Priya documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchA": "Using evidence gathered through coordinate tables and calibration mismatch, Priya arrived at the symposium review panel. The final outcome validated the strongest clues while ruling out weaker assumptions. Priya documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchB": "Using evidence gathered through coordinate tables and short-duration event, Priya arrived at the symposium review panel. The final outcome validated the strongest clues while ruling out weaker assumptions. Priya documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking."
           }
         },
         "interactions": {
@@ -4176,26 +4176,26 @@
         "theme": "space",
         "title": "Quantum Drift Protocol",
         "paragraphs": {
-          "step1": "During orbital simulation, Zane detected quantum drift in the navigation lattice. A protocol card instructed: \"Select your primary diagnostics pathway.\"",
+          "step1": "Zane began work at a deep-space navigation simulation array after discovering a quantum drift warning inside the lattice control model. The opening evidence suggested a clear objective: stabilize the field while preserving mission integrity assumptions. Zane outlined a plan that balanced curiosity with careful verification. Each next decision would be measured against the clues rather than guesswork. With the stakes understood, the investigation moved forward.",
           "step2": {
-            "choiceA": "Zane initiated particle-field diagnostics and measured variance over synchronized intervals.",
-            "choiceB": "Zane initiated inertial-frame diagnostics and measured variance over synchronized intervals."
+            "choiceA": "Zane selected particle-field diagnostics as the primary route for the next phase of the investigation. Through particle-field diagnostics, Zane modeled variance behavior, measured harmonic instability, and tagged repeatable error signatures. The observations from this path were logged and compared against the initial objective. Instead of rushing, Zane paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision.",
+            "choiceB": "Zane selected inertial-frame diagnostics as the primary route for the next phase of the investigation. Through inertial-frame diagnostics, Zane modeled variance behavior, measured harmonic instability, and tagged repeatable error signatures. The observations from this path were logged and compared against the initial objective. Instead of rushing, Zane paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision."
           },
           "step3": {
-            "choiceA": "The model output suggested two plausible causes: lattice noise contamination or delayed correction loops.",
-            "choiceB": "The model output suggested two plausible causes: lattice noise contamination or delayed correction loops."
+            "choiceA": "At the next checkpoint, the route divided into two competing options: noise contamination and correction-loop delays. Zane reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Zane cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified.",
+            "choiceB": "At the next checkpoint, the route divided into two competing options: noise contamination and correction-loop delays. Zane reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Zane cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified."
           },
           "step4": {
-            "choiceA_branchA": "Zane isolated noise contamination and recalibrated filter thresholds to stabilize field behavior.",
-            "choiceA_branchB": "Zane isolated correction-loop delays and optimized response timing to stabilize field behavior.",
-            "choiceB_branchA": "Zane isolated noise contamination and recalibrated filter thresholds to stabilize field behavior.",
-            "choiceB_branchB": "Zane isolated correction-loop delays and optimized response timing to stabilize field behavior."
+            "choiceA_branchA": "Zane advanced from particle-field diagnostics and committed to noise contamination for deeper verification. Noise-isolation experiments identified contamination vectors in the filter chain, so he recalibrated thresholds and revalidated outputs. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Zane corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed post-fix traces showing stable behavior under stress conditions.",
+            "choiceA_branchB": "Zane advanced from particle-field diagnostics and committed to correction-loop delays for deeper verification. Loop-latency experiments identified delayed correction timing, so he optimized response sequencing and revalidated outputs. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Zane corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed post-fix traces showing stable behavior under stress conditions.",
+            "choiceB_branchA": "Zane advanced from inertial-frame diagnostics and committed to noise contamination for deeper verification. Noise-isolation experiments identified contamination vectors in the filter chain, so he recalibrated thresholds and revalidated outputs. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Zane corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed post-fix traces showing stable behavior under stress conditions.",
+            "choiceB_branchB": "Zane advanced from inertial-frame diagnostics and committed to correction-loop delays for deeper verification. Loop-latency experiments identified delayed correction timing, so he optimized response sequencing and revalidated outputs. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Zane corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed post-fix traces showing stable behavior under stress conditions."
           },
           "step5": {
-            "choiceA_branchA": "The mission board accepted Zane's report because he linked evidence, reasoning, and limitations with clarity.",
-            "choiceA_branchB": "The mission board accepted Zane's report because he linked evidence, reasoning, and limitations with clarity.",
-            "choiceB_branchA": "The mission board accepted Zane's report because he linked evidence, reasoning, and limitations with clarity.",
-            "choiceB_branchB": "The mission board accepted Zane's report because he linked evidence, reasoning, and limitations with clarity."
+            "choiceA_branchA": "Using evidence gathered through particle-field diagnostics and noise contamination, Zane arrived at the mission certification hearing. The final outcome validated the strongest clues while ruling out weaker assumptions. Zane documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceA_branchB": "Using evidence gathered through particle-field diagnostics and correction-loop delays, Zane arrived at the mission certification hearing. The final outcome validated the strongest clues while ruling out weaker assumptions. Zane documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchA": "Using evidence gathered through inertial-frame diagnostics and noise contamination, Zane arrived at the mission certification hearing. The final outcome validated the strongest clues while ruling out weaker assumptions. Zane documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchB": "Using evidence gathered through inertial-frame diagnostics and correction-loop delays, Zane arrived at the mission certification hearing. The final outcome validated the strongest clues while ruling out weaker assumptions. Zane documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking."
           }
         },
         "interactions": {
@@ -4436,26 +4436,26 @@
         "theme": "adventure",
         "title": "The Summit Codex",
         "paragraphs": {
-          "step1": "At the edge of the ancient range, Liora discovered a codex entry: \"Choose your ascent route and reconstruct the missing theorem.\"",
+          "step1": "Liora began work at the ancient summit archive and its approach routes after discovering a codex theorem with missing proof segments. The opening evidence suggested a clear objective: reconstruct the theorem with rigorous supporting logic. Liora outlined a plan that balanced curiosity with careful verification. Each next decision would be measured against the clues rather than guesswork. With the stakes understood, the investigation moved forward.",
           "step2": {
-            "choiceA": "Liora selected the glacier ascent and mapped each encoded symbol against prior expedition notes.",
-            "choiceB": "Liora selected the basalt ascent and mapped each encoded symbol against prior expedition notes."
+            "choiceA": "Liora selected glacier ascent as the primary route for the next phase of the investigation. On the glacier ascent, Liora aligned encoded fragments with expedition notes, tested structural consistency, and rejected weak matches. The observations from this path were logged and compared against the initial objective. Instead of rushing, Liora paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision.",
+            "choiceB": "Liora selected basalt ascent as the primary route for the next phase of the investigation. On the basalt ascent, Liora aligned encoded fragments with expedition notes, tested structural consistency, and rejected weak matches. The observations from this path were logged and compared against the initial objective. Instead of rushing, Liora paused to test whether the evidence stayed consistent. That disciplined approach produced a stronger foundation for the following decision."
           },
           "step3": {
-            "choiceA": "At the archive cairn, she identified two decoding strategies: structural pattern mapping or semantic context mapping.",
-            "choiceB": "At the archive cairn, she identified two decoding strategies: structural pattern mapping or semantic context mapping."
+            "choiceA": "At the next checkpoint, the route divided into two competing options: structural pattern mapping and semantic context mapping. Liora reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Liora cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified.",
+            "choiceB": "At the next checkpoint, the route divided into two competing options: structural pattern mapping and semantic context mapping. Liora reviewed prior notes to determine which option fit the strongest evidence pattern. Both paths looked plausible at first glance, which made careful reasoning essential. Rather than relying on instinct alone, Liora cross-checked context from earlier findings. Only after this comparison did the next branch decision feel justified."
           },
           "step4": {
-            "choiceA_branchA": "Using structural mapping, Liora reconstructed core logic steps that aligned with the codex fragments.",
-            "choiceA_branchB": "Using semantic mapping, Liora reconstructed core logic steps that aligned with the codex fragments.",
-            "choiceB_branchA": "Using structural mapping, Liora reconstructed core logic steps that aligned with the codex fragments.",
-            "choiceB_branchB": "Using semantic mapping, Liora reconstructed core logic steps that aligned with the codex fragments."
+            "choiceA_branchA": "Liora advanced from glacier ascent and committed to structural pattern mapping for deeper verification. Structural mapping rebuilt the theorem skeleton, then linked each clause to evidence from verified fragments. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Liora corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a complete proof trail that auditors could independently reproduce.",
+            "choiceA_branchB": "Liora advanced from glacier ascent and committed to semantic context mapping for deeper verification. Semantic mapping rebuilt the theorem skeleton, then linked each clause to evidence from verified fragments. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Liora corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a complete proof trail that auditors could independently reproduce.",
+            "choiceB_branchA": "Liora advanced from basalt ascent and committed to structural pattern mapping for deeper verification. Structural mapping rebuilt the theorem skeleton, then linked each clause to evidence from verified fragments. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Liora corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a complete proof trail that auditors could independently reproduce.",
+            "choiceB_branchB": "Liora advanced from basalt ascent and committed to semantic context mapping for deeper verification. Semantic mapping rebuilt the theorem skeleton, then linked each clause to evidence from verified fragments. The result was tested against earlier assumptions to confirm that the pattern still held. When minor inconsistencies appeared, Liora corrected the interpretation instead of forcing a conclusion. That revision process ultimately exposed a complete proof trail that auditors could independently reproduce."
           },
           "step5": {
-            "choiceA_branchA": "At the summit chamber, Liora restored the theorem and documented a rigorous justification for the expedition archive.",
-            "choiceA_branchB": "At the summit chamber, Liora restored the theorem and documented a rigorous justification for the expedition archive.",
-            "choiceB_branchA": "At the summit chamber, Liora restored the theorem and documented a rigorous justification for the expedition archive.",
-            "choiceB_branchB": "At the summit chamber, Liora restored the theorem and documented a rigorous justification for the expedition archive."
+            "choiceA_branchA": "Using evidence gathered through glacier ascent and structural pattern mapping, Liora arrived at the summit chamber archive. The final outcome validated the strongest clues while ruling out weaker assumptions. Liora documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceA_branchB": "Using evidence gathered through glacier ascent and semantic context mapping, Liora arrived at the summit chamber archive. The final outcome validated the strongest clues while ruling out weaker assumptions. Liora documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchA": "Using evidence gathered through basalt ascent and structural pattern mapping, Liora arrived at the summit chamber archive. The final outcome validated the strongest clues while ruling out weaker assumptions. Liora documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking.",
+            "choiceB_branchB": "Using evidence gathered through basalt ascent and semantic context mapping, Liora arrived at the summit chamber archive. The final outcome validated the strongest clues while ruling out weaker assumptions. Liora documented the reasoning chain so another reader could follow each step logically. The story closed with both accomplishment and reflection on what made the process successful. More importantly, the experience reinforced that sound conclusions come from patient analysis and adaptive thinking."
           }
         },
         "interactions": {
