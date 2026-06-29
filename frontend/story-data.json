@@ -1,0 +1,922 @@
+{
+  "grades": {
+    "1": [
+      {
+        "id": "g1-park-map",
+        "title": "The Park Map",
+        "paragraphs": {
+          "step1": "Mia found a folded map under the big oak tree at Sunny Park. A tiny red star was drawn near the pond. She smiled and said, \"This looks like a treasure clue!\"",
+          "step2": {
+            "pond": "Mia tiptoed to the pond and looked behind a smooth gray rock. She found a small blue box with a sticker of a duck.",
+            "playground": "Mia ran to the playground and checked under the slide. She found a small blue box with a sticker of a duck."
+          },
+          "step3": {
+            "pond": "Inside the box was a note that said, \"Follow the arrows painted on the path.\" Mia looked up and saw two arrows on a signpost.",
+            "playground": "Inside the box was a note that said, \"Follow the arrows painted on the path.\" Mia looked up and saw two arrows on a signpost."
+          },
+          "step4": {
+            "pond_garden": "Mia followed the arrow to the flower garden. Behind a watering can, she found a ribbon tied to a tiny bell.",
+            "pond_bridge": "Mia followed the arrow to the little bridge. Under a wooden plank, she found a ribbon tied to a tiny bell.",
+            "playground_garden": "Mia followed the arrow to the flower garden. Behind a watering can, she found a ribbon tied to a tiny bell.",
+            "playground_bridge": "Mia followed the arrow to the little bridge. Under a wooden plank, she found a ribbon tied to a tiny bell."
+          },
+          "step5": {
+            "pond_garden": "At the end of the ribbon, Mia found a card that read, \"You are a careful explorer!\" She waved to her dad and laughed as the tiny bell jingled.",
+            "pond_bridge": "At the end of the ribbon, Mia found a card that read, \"You are a careful explorer!\" She waved to her dad and laughed as the tiny bell jingled.",
+            "playground_garden": "At the end of the ribbon, Mia found a card that read, \"You are a careful explorer!\" She waved to her dad and laughed as the tiny bell jingled.",
+            "playground_bridge": "At the end of the ribbon, Mia found a card that read, \"You are a careful explorer!\" She waved to her dad and laughed as the tiny bell jingled."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Where should Mia look first?",
+            "options": [
+              { "id": "pond", "text": "Go to the pond" },
+              { "id": "playground", "text": "Go to the playground" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "pond": "What did Mia find near the pond?",
+              "playground": "What did Mia find near the slide?"
+            },
+            "optionsByPath": {
+              "pond": [
+                { "id": "a", "text": "A blue box" },
+                { "id": "b", "text": "A red kite" },
+                { "id": "c", "text": "A soccer ball" }
+              ],
+              "playground": [
+                { "id": "a", "text": "A blue box" },
+                { "id": "b", "text": "A red kite" },
+                { "id": "c", "text": "A soccer ball" }
+              ]
+            },
+            "correctByPath": {
+              "pond": "a",
+              "playground": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "pond": "Which arrow should Mia follow?",
+              "playground": "Which arrow should Mia follow?"
+            },
+            "optionsByPath": {
+              "pond": [
+                { "id": "garden", "text": "Arrow to the flower garden" },
+                { "id": "bridge", "text": "Arrow to the little bridge" }
+              ],
+              "playground": [
+                { "id": "garden", "text": "Arrow to the flower garden" },
+                { "id": "bridge", "text": "Arrow to the little bridge" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "pond_garden": "Where did Mia find the ribbon?",
+              "pond_bridge": "Where did Mia find the ribbon?",
+              "playground_garden": "Where did Mia find the ribbon?",
+              "playground_bridge": "Where did Mia find the ribbon?"
+            },
+            "optionsByPath": {
+              "pond_garden": [
+                { "id": "a", "text": "In the flower garden" },
+                { "id": "b", "text": "Inside a bus" },
+                { "id": "c", "text": "On a roof" }
+              ],
+              "pond_bridge": [
+                { "id": "a", "text": "At the little bridge" },
+                { "id": "b", "text": "Inside a bus" },
+                { "id": "c", "text": "On a roof" }
+              ],
+              "playground_garden": [
+                { "id": "a", "text": "In the flower garden" },
+                { "id": "b", "text": "Inside a bus" },
+                { "id": "c", "text": "On a roof" }
+              ],
+              "playground_bridge": [
+                { "id": "a", "text": "At the little bridge" },
+                { "id": "b", "text": "Inside a bus" },
+                { "id": "c", "text": "On a roof" }
+              ]
+            },
+            "correctByPath": {
+              "pond_garden": "a",
+              "pond_bridge": "a",
+              "playground_garden": "a",
+              "playground_bridge": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "pond_garden": "Which sentence best summarizes the story?",
+              "pond_bridge": "Which sentence best summarizes the story?",
+              "playground_garden": "Which sentence best summarizes the story?",
+              "playground_bridge": "Which sentence best summarizes the story?"
+            },
+            "optionsByPath": {
+              "pond_garden": [
+                { "id": "a", "text": "Mia followed clues and found a cheerful explorer card." },
+                { "id": "b", "text": "Mia stayed home and watched TV all day." },
+                { "id": "c", "text": "Mia lost the map and went to sleep." }
+              ],
+              "pond_bridge": [
+                { "id": "a", "text": "Mia followed clues and found a cheerful explorer card." },
+                { "id": "b", "text": "Mia stayed home and watched TV all day." },
+                { "id": "c", "text": "Mia lost the map and went to sleep." }
+              ],
+              "playground_garden": [
+                { "id": "a", "text": "Mia followed clues and found a cheerful explorer card." },
+                { "id": "b", "text": "Mia stayed home and watched TV all day." },
+                { "id": "c", "text": "Mia lost the map and went to sleep." }
+              ],
+              "playground_bridge": [
+                { "id": "a", "text": "Mia followed clues and found a cheerful explorer card." },
+                { "id": "b", "text": "Mia stayed home and watched TV all day." },
+                { "id": "c", "text": "Mia lost the map and went to sleep." }
+              ]
+            },
+            "correctByPath": {
+              "pond_garden": "a",
+              "pond_bridge": "a",
+              "playground_garden": "a",
+              "playground_bridge": "a"
+            }
+          }
+        }
+      }
+    ],
+    "2": [
+      {
+        "id": "g2-library-key",
+        "title": "The Library Key",
+        "paragraphs": {
+          "step1": "Jalen helped the school librarian return books after class. Under a stack of atlases, he found a brass key with the word \"Story\" engraved on it.",
+          "step2": {
+            "frontdesk": "Jalen showed the key to Ms. Perez at the front desk. She smiled and pointed to a locked wooden box labeled \"Reading Challenge.\"",
+            "bookcart": "Jalen checked the rolling book cart and found a locked wooden box labeled \"Reading Challenge.\" He called Ms. Perez to show her the key."
+          },
+          "step3": {
+            "frontdesk": "The box opened with a click and revealed a clue card: \"Find the shelf where adventures begin.\" Jalen saw signs for Fantasy and Mystery.",
+            "bookcart": "The box opened with a click and revealed a clue card: \"Find the shelf where adventures begin.\" Jalen saw signs for Fantasy and Mystery."
+          },
+          "step4": {
+            "frontdesk_fantasy": "At the Fantasy shelf, Jalen found a bookmark tucked inside a dragon story. The bookmark had a gold star stamped on it.",
+            "frontdesk_mystery": "At the Mystery shelf, Jalen found a bookmark tucked inside a detective story. The bookmark had a gold star stamped on it.",
+            "bookcart_fantasy": "At the Fantasy shelf, Jalen found a bookmark tucked inside a dragon story. The bookmark had a gold star stamped on it.",
+            "bookcart_mystery": "At the Mystery shelf, Jalen found a bookmark tucked inside a detective story. The bookmark had a gold star stamped on it."
+          },
+          "step5": {
+            "frontdesk_fantasy": "On the back of the bookmark, Jalen read: \"You unlocked this week's reading quest.\" He grinned and picked his next book before the bell rang.",
+            "frontdesk_mystery": "On the back of the bookmark, Jalen read: \"You unlocked this week's reading quest.\" He grinned and picked his next book before the bell rang.",
+            "bookcart_fantasy": "On the back of the bookmark, Jalen read: \"You unlocked this week's reading quest.\" He grinned and picked his next book before the bell rang.",
+            "bookcart_mystery": "On the back of the bookmark, Jalen read: \"You unlocked this week's reading quest.\" He grinned and picked his next book before the bell rang."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Where should Jalen check first with the key?",
+            "options": [
+              { "id": "frontdesk", "text": "Ask at the front desk" },
+              { "id": "bookcart", "text": "Search the book cart" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "frontdesk": "What did Jalen find?",
+              "bookcart": "What did Jalen find?"
+            },
+            "optionsByPath": {
+              "frontdesk": [
+                { "id": "a", "text": "A locked reading challenge box" },
+                { "id": "b", "text": "A soccer trophy" },
+                { "id": "c", "text": "A broken tablet" }
+              ],
+              "bookcart": [
+                { "id": "a", "text": "A locked reading challenge box" },
+                { "id": "b", "text": "A soccer trophy" },
+                { "id": "c", "text": "A broken tablet" }
+              ]
+            },
+            "correctByPath": {
+              "frontdesk": "a",
+              "bookcart": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "frontdesk": "Which shelf should Jalen visit?",
+              "bookcart": "Which shelf should Jalen visit?"
+            },
+            "optionsByPath": {
+              "frontdesk": [
+                { "id": "fantasy", "text": "Fantasy shelf" },
+                { "id": "mystery", "text": "Mystery shelf" }
+              ],
+              "bookcart": [
+                { "id": "fantasy", "text": "Fantasy shelf" },
+                { "id": "mystery", "text": "Mystery shelf" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "frontdesk_fantasy": "What did Jalen discover on the shelf?",
+              "frontdesk_mystery": "What did Jalen discover on the shelf?",
+              "bookcart_fantasy": "What did Jalen discover on the shelf?",
+              "bookcart_mystery": "What did Jalen discover on the shelf?"
+            },
+            "optionsByPath": {
+              "frontdesk_fantasy": [
+                { "id": "a", "text": "A bookmark with a gold star" },
+                { "id": "b", "text": "A video game controller" },
+                { "id": "c", "text": "A paintbrush" }
+              ],
+              "frontdesk_mystery": [
+                { "id": "a", "text": "A bookmark with a gold star" },
+                { "id": "b", "text": "A video game controller" },
+                { "id": "c", "text": "A paintbrush" }
+              ],
+              "bookcart_fantasy": [
+                { "id": "a", "text": "A bookmark with a gold star" },
+                { "id": "b", "text": "A video game controller" },
+                { "id": "c", "text": "A paintbrush" }
+              ],
+              "bookcart_mystery": [
+                { "id": "a", "text": "A bookmark with a gold star" },
+                { "id": "b", "text": "A video game controller" },
+                { "id": "c", "text": "A paintbrush" }
+              ]
+            },
+            "correctByPath": {
+              "frontdesk_fantasy": "a",
+              "frontdesk_mystery": "a",
+              "bookcart_fantasy": "a",
+              "bookcart_mystery": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "frontdesk_fantasy": "Which summary best matches this story?",
+              "frontdesk_mystery": "Which summary best matches this story?",
+              "bookcart_fantasy": "Which summary best matches this story?",
+              "bookcart_mystery": "Which summary best matches this story?"
+            },
+            "optionsByPath": {
+              "frontdesk_fantasy": [
+                { "id": "a", "text": "Jalen used clues in the library and unlocked a reading quest." },
+                { "id": "b", "text": "Jalen forgot his homework and went home." },
+                { "id": "c", "text": "Jalen fixed a bicycle in the parking lot." }
+              ],
+              "frontdesk_mystery": [
+                { "id": "a", "text": "Jalen used clues in the library and unlocked a reading quest." },
+                { "id": "b", "text": "Jalen forgot his homework and went home." },
+                { "id": "c", "text": "Jalen fixed a bicycle in the parking lot." }
+              ],
+              "bookcart_fantasy": [
+                { "id": "a", "text": "Jalen used clues in the library and unlocked a reading quest." },
+                { "id": "b", "text": "Jalen forgot his homework and went home." },
+                { "id": "c", "text": "Jalen fixed a bicycle in the parking lot." }
+              ],
+              "bookcart_mystery": [
+                { "id": "a", "text": "Jalen used clues in the library and unlocked a reading quest." },
+                { "id": "b", "text": "Jalen forgot his homework and went home." },
+                { "id": "c", "text": "Jalen fixed a bicycle in the parking lot." }
+              ]
+            },
+            "correctByPath": {
+              "frontdesk_fantasy": "a",
+              "frontdesk_mystery": "a",
+              "bookcart_fantasy": "a",
+              "bookcart_mystery": "a"
+            }
+          }
+        }
+      }
+    ],
+    "3": [
+      {
+        "id": "g3-river-message",
+        "title": "Message by the River",
+        "paragraphs": {
+          "step1": "During a class field trip, Nia spotted a glass jar wedged between river stones. Inside was a folded note that read, \"Follow the trail of painted arrows.\"",
+          "step2": {
+            "teacher": "Nia showed the note to her teacher first. The teacher nodded and reminded her to stay with a partner.",
+            "partner": "Nia asked her partner, Theo, to read the note with her. They agreed to follow every safety rule as they explored."
+          },
+          "step3": {
+            "teacher": "The arrows led them to a fork in the path: one toward a hill overlook and one toward a shaded grove.",
+            "partner": "The arrows led them to a fork in the path: one toward a hill overlook and one toward a shaded grove."
+          },
+          "step4": {
+            "teacher_hill": "At the hill overlook, they found a wooden post with carved initials and a fresh arrow pointing to a notebook hidden under a bench.",
+            "teacher_grove": "In the shaded grove, they found a wooden post with carved initials and a fresh arrow pointing to a notebook hidden under a bench.",
+            "partner_hill": "At the hill overlook, they found a wooden post with carved initials and a fresh arrow pointing to a notebook hidden under a bench.",
+            "partner_grove": "In the shaded grove, they found a wooden post with carved initials and a fresh arrow pointing to a notebook hidden under a bench."
+          },
+          "step5": {
+            "teacher_hill": "The notebook belonged to past student explorers. Nia wrote a new entry: \"We solved the trail by reading clues, staying safe, and thinking together.\"",
+            "teacher_grove": "The notebook belonged to past student explorers. Nia wrote a new entry: \"We solved the trail by reading clues, staying safe, and thinking together.\"",
+            "partner_hill": "The notebook belonged to past student explorers. Nia wrote a new entry: \"We solved the trail by reading clues, staying safe, and thinking together.\"",
+            "partner_grove": "The notebook belonged to past student explorers. Nia wrote a new entry: \"We solved the trail by reading clues, staying safe, and thinking together.\""
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "What should Nia do first?",
+            "options": [
+              { "id": "teacher", "text": "Show the note to the teacher" },
+              { "id": "partner", "text": "Read it with her partner" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "teacher": "Why was this a smart move?",
+              "partner": "Why was this a smart move?"
+            },
+            "optionsByPath": {
+              "teacher": [
+                { "id": "a", "text": "They followed safety rules before exploring." },
+                { "id": "b", "text": "They ignored all directions." },
+                { "id": "c", "text": "They threw the note away." }
+              ],
+              "partner": [
+                { "id": "a", "text": "They followed safety rules before exploring." },
+                { "id": "b", "text": "They ignored all directions." },
+                { "id": "c", "text": "They threw the note away." }
+              ]
+            },
+            "correctByPath": {
+              "teacher": "a",
+              "partner": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "teacher": "Which path should they follow?",
+              "partner": "Which path should they follow?"
+            },
+            "optionsByPath": {
+              "teacher": [
+                { "id": "hill", "text": "Go to the hill overlook" },
+                { "id": "grove", "text": "Go to the shaded grove" }
+              ],
+              "partner": [
+                { "id": "hill", "text": "Go to the hill overlook" },
+                { "id": "grove", "text": "Go to the shaded grove" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "teacher_hill": "What clue did they find next?",
+              "teacher_grove": "What clue did they find next?",
+              "partner_hill": "What clue did they find next?",
+              "partner_grove": "What clue did they find next?"
+            },
+            "optionsByPath": {
+              "teacher_hill": [
+                { "id": "a", "text": "A notebook hidden under a bench" },
+                { "id": "b", "text": "A broken camera" },
+                { "id": "c", "text": "A bag of marbles" }
+              ],
+              "teacher_grove": [
+                { "id": "a", "text": "A notebook hidden under a bench" },
+                { "id": "b", "text": "A broken camera" },
+                { "id": "c", "text": "A bag of marbles" }
+              ],
+              "partner_hill": [
+                { "id": "a", "text": "A notebook hidden under a bench" },
+                { "id": "b", "text": "A broken camera" },
+                { "id": "c", "text": "A bag of marbles" }
+              ],
+              "partner_grove": [
+                { "id": "a", "text": "A notebook hidden under a bench" },
+                { "id": "b", "text": "A broken camera" },
+                { "id": "c", "text": "A bag of marbles" }
+              ]
+            },
+            "correctByPath": {
+              "teacher_hill": "a",
+              "teacher_grove": "a",
+              "partner_hill": "a",
+              "partner_grove": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "teacher_hill": "Which summary best fits the story?",
+              "teacher_grove": "Which summary best fits the story?",
+              "partner_hill": "Which summary best fits the story?",
+              "partner_grove": "Which summary best fits the story?"
+            },
+            "optionsByPath": {
+              "teacher_hill": [
+                { "id": "a", "text": "Nia and Theo solved clues safely and recorded their discovery." },
+                { "id": "b", "text": "Nia lost the note and ended the trip." },
+                { "id": "c", "text": "Theo refused to help and went home." }
+              ],
+              "teacher_grove": [
+                { "id": "a", "text": "Nia and Theo solved clues safely and recorded their discovery." },
+                { "id": "b", "text": "Nia lost the note and ended the trip." },
+                { "id": "c", "text": "Theo refused to help and went home." }
+              ],
+              "partner_hill": [
+                { "id": "a", "text": "Nia and Theo solved clues safely and recorded their discovery." },
+                { "id": "b", "text": "Nia lost the note and ended the trip." },
+                { "id": "c", "text": "Theo refused to help and went home." }
+              ],
+              "partner_grove": [
+                { "id": "a", "text": "Nia and Theo solved clues safely and recorded their discovery." },
+                { "id": "b", "text": "Nia lost the note and ended the trip." },
+                { "id": "c", "text": "Theo refused to help and went home." }
+              ]
+            },
+            "correctByPath": {
+              "teacher_hill": "a",
+              "teacher_grove": "a",
+              "partner_hill": "a",
+              "partner_grove": "a"
+            }
+          }
+        }
+      }
+    ],
+    "4": [
+      {
+        "id": "g4-storm-journal",
+        "title": "The Storm Journal",
+        "paragraphs": {
+          "step1": "On a rainy Saturday, Elena discovered her grandfather's weather journal in the attic. A note on the first page said, \"Track the storm and choose your best observation point.\"",
+          "step2": {
+            "window": "Elena chose the upstairs window and recorded cloud color, wind speed, and the direction of the rain.",
+            "porch": "Elena chose the covered porch and recorded cloud color, wind speed, and the direction of the rain."
+          },
+          "step3": {
+            "window": "A second note in the journal asked her to compare two signs: lightning flashes over the field or the way puddles formed by the curb.",
+            "porch": "A second note in the journal asked her to compare two signs: lightning flashes over the field or the way puddles formed by the curb."
+          },
+          "step4": {
+            "window_lightning": "After ten minutes, Elena concluded the storm was moving east and likely weakening. She underlined evidence from both sound and light patterns.",
+            "window_puddles": "After ten minutes, Elena concluded the storm was moving east and likely weakening. She underlined evidence from both water flow and wind patterns.",
+            "porch_lightning": "After ten minutes, Elena concluded the storm was moving east and likely weakening. She underlined evidence from both sound and light patterns.",
+            "porch_puddles": "After ten minutes, Elena concluded the storm was moving east and likely weakening. She underlined evidence from both water flow and wind patterns."
+          },
+          "step5": {
+            "window_lightning": "When the rain slowed, Elena added a final entry: \"Careful observation turns noise into patterns.\" She closed the journal, ready for the next storm.",
+            "window_puddles": "When the rain slowed, Elena added a final entry: \"Careful observation turns noise into patterns.\" She closed the journal, ready for the next storm.",
+            "porch_lightning": "When the rain slowed, Elena added a final entry: \"Careful observation turns noise into patterns.\" She closed the journal, ready for the next storm.",
+            "porch_puddles": "When the rain slowed, Elena added a final entry: \"Careful observation turns noise into patterns.\" She closed the journal, ready for the next storm."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Where should Elena observe the storm first?",
+            "options": [
+              { "id": "window", "text": "From the upstairs window" },
+              { "id": "porch", "text": "From the covered porch" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "window": "Which detail was part of Elena's notes?",
+              "porch": "Which detail was part of Elena's notes?"
+            },
+            "optionsByPath": {
+              "window": [
+                { "id": "a", "text": "Cloud color and wind direction" },
+                { "id": "b", "text": "Movie ratings" },
+                { "id": "c", "text": "Bus schedules" }
+              ],
+              "porch": [
+                { "id": "a", "text": "Cloud color and wind direction" },
+                { "id": "b", "text": "Movie ratings" },
+                { "id": "c", "text": "Bus schedules" }
+              ]
+            },
+            "correctByPath": {
+              "window": "a",
+              "porch": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "window": "Which sign should Elena focus on next?",
+              "porch": "Which sign should Elena focus on next?"
+            },
+            "optionsByPath": {
+              "window": [
+                { "id": "lightning", "text": "Lightning flashes" },
+                { "id": "puddles", "text": "Puddle patterns" }
+              ],
+              "porch": [
+                { "id": "lightning", "text": "Lightning flashes" },
+                { "id": "puddles", "text": "Puddle patterns" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "window_lightning": "What did Elena conclude about the storm?",
+              "window_puddles": "What did Elena conclude about the storm?",
+              "porch_lightning": "What did Elena conclude about the storm?",
+              "porch_puddles": "What did Elena conclude about the storm?"
+            },
+            "optionsByPath": {
+              "window_lightning": [
+                { "id": "a", "text": "It was moving east and weakening." },
+                { "id": "b", "text": "It was getting stronger every minute." },
+                { "id": "c", "text": "It had already ended before she looked." }
+              ],
+              "window_puddles": [
+                { "id": "a", "text": "It was moving east and weakening." },
+                { "id": "b", "text": "It was getting stronger every minute." },
+                { "id": "c", "text": "It had already ended before she looked." }
+              ],
+              "porch_lightning": [
+                { "id": "a", "text": "It was moving east and weakening." },
+                { "id": "b", "text": "It was getting stronger every minute." },
+                { "id": "c", "text": "It had already ended before she looked." }
+              ],
+              "porch_puddles": [
+                { "id": "a", "text": "It was moving east and weakening." },
+                { "id": "b", "text": "It was getting stronger every minute." },
+                { "id": "c", "text": "It had already ended before she looked." }
+              ]
+            },
+            "correctByPath": {
+              "window_lightning": "a",
+              "window_puddles": "a",
+              "porch_lightning": "a",
+              "porch_puddles": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "window_lightning": "Which summary captures Elena's experience best?",
+              "window_puddles": "Which summary captures Elena's experience best?",
+              "porch_lightning": "Which summary captures Elena's experience best?",
+              "porch_puddles": "Which summary captures Elena's experience best?"
+            },
+            "optionsByPath": {
+              "window_lightning": [
+                { "id": "a", "text": "Elena used evidence to understand the storm and recorded her reasoning." },
+                { "id": "b", "text": "Elena ignored the journal and watched cartoons." },
+                { "id": "c", "text": "Elena canceled the weather report before observing." }
+              ],
+              "window_puddles": [
+                { "id": "a", "text": "Elena used evidence to understand the storm and recorded her reasoning." },
+                { "id": "b", "text": "Elena ignored the journal and watched cartoons." },
+                { "id": "c", "text": "Elena canceled the weather report before observing." }
+              ],
+              "porch_lightning": [
+                { "id": "a", "text": "Elena used evidence to understand the storm and recorded her reasoning." },
+                { "id": "b", "text": "Elena ignored the journal and watched cartoons." },
+                { "id": "c", "text": "Elena canceled the weather report before observing." }
+              ],
+              "porch_puddles": [
+                { "id": "a", "text": "Elena used evidence to understand the storm and recorded her reasoning." },
+                { "id": "b", "text": "Elena ignored the journal and watched cartoons." },
+                { "id": "c", "text": "Elena canceled the weather report before observing." }
+              ]
+            },
+            "correctByPath": {
+              "window_lightning": "a",
+              "window_puddles": "a",
+              "porch_lightning": "a",
+              "porch_puddles": "a"
+            }
+          }
+        }
+      }
+    ],
+    "5": [
+      {
+        "id": "g5-midnight-code",
+        "title": "The Midnight Code",
+        "paragraphs": {
+          "step1": "At the student journalism lab, Amir discovered a draft article with every third word highlighted. In the margin, someone had written: \"Decode this before tomorrow's deadline.\"",
+          "step2": {
+            "editor": "Amir asked the student editor for permission to investigate. She agreed and reminded him to verify every claim with evidence.",
+            "archive": "Amir started in the digital archive and searched old editions for repeated phrases. He bookmarked anything that matched the highlighted pattern."
+          },
+          "step3": {
+            "editor": "The pattern pointed to two leads: interview the science club president or cross-check data from last month's survey charts.",
+            "archive": "The pattern pointed to two leads: interview the science club president or cross-check data from last month's survey charts."
+          },
+          "step4": {
+            "editor_interview": "The interview revealed a scheduling conflict that explained the missing context in the draft. Amir revised the timeline and added direct quotations.",
+            "editor_data": "The chart analysis revealed a labeling error that explained the missing context in the draft. Amir revised the timeline and added corrected data labels.",
+            "archive_interview": "The interview revealed a scheduling conflict that explained the missing context in the draft. Amir revised the timeline and added direct quotations.",
+            "archive_data": "The chart analysis revealed a labeling error that explained the missing context in the draft. Amir revised the timeline and added corrected data labels."
+          },
+          "step5": {
+            "editor_interview": "By midnight, Amir submitted a stronger article that connected evidence, sources, and sequence clearly. The editor approved it for the morning issue.",
+            "editor_data": "By midnight, Amir submitted a stronger article that connected evidence, sources, and sequence clearly. The editor approved it for the morning issue.",
+            "archive_interview": "By midnight, Amir submitted a stronger article that connected evidence, sources, and sequence clearly. The editor approved it for the morning issue.",
+            "archive_data": "By midnight, Amir submitted a stronger article that connected evidence, sources, and sequence clearly. The editor approved it for the morning issue."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "What is Amir's first move?",
+            "options": [
+              { "id": "editor", "text": "Consult the student editor" },
+              { "id": "archive", "text": "Search the digital archive" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "editor": "Which research habit is emphasized here?",
+              "archive": "Which research habit is emphasized here?"
+            },
+            "optionsByPath": {
+              "editor": [
+                { "id": "a", "text": "Verify claims with evidence." },
+                { "id": "b", "text": "Publish without checking." },
+                { "id": "c", "text": "Ignore source reliability." }
+              ],
+              "archive": [
+                { "id": "a", "text": "Verify claims with evidence." },
+                { "id": "b", "text": "Publish without checking." },
+                { "id": "c", "text": "Ignore source reliability." }
+              ]
+            },
+            "correctByPath": {
+              "editor": "a",
+              "archive": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "editor": "Which lead should Amir pursue next?",
+              "archive": "Which lead should Amir pursue next?"
+            },
+            "optionsByPath": {
+              "editor": [
+                { "id": "interview", "text": "Interview the science club president" },
+                { "id": "data", "text": "Analyze the survey charts" }
+              ],
+              "archive": [
+                { "id": "interview", "text": "Interview the science club president" },
+                { "id": "data", "text": "Analyze the survey charts" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "editor_interview": "What improved in Amir's revised article?",
+              "editor_data": "What improved in Amir's revised article?",
+              "archive_interview": "What improved in Amir's revised article?",
+              "archive_data": "What improved in Amir's revised article?"
+            },
+            "optionsByPath": {
+              "editor_interview": [
+                { "id": "a", "text": "He clarified missing context with verified details." },
+                { "id": "b", "text": "He removed all evidence and shortened it." },
+                { "id": "c", "text": "He deleted the headline and byline." }
+              ],
+              "editor_data": [
+                { "id": "a", "text": "He clarified missing context with verified details." },
+                { "id": "b", "text": "He removed all evidence and shortened it." },
+                { "id": "c", "text": "He deleted the headline and byline." }
+              ],
+              "archive_interview": [
+                { "id": "a", "text": "He clarified missing context with verified details." },
+                { "id": "b", "text": "He removed all evidence and shortened it." },
+                { "id": "c", "text": "He deleted the headline and byline." }
+              ],
+              "archive_data": [
+                { "id": "a", "text": "He clarified missing context with verified details." },
+                { "id": "b", "text": "He removed all evidence and shortened it." },
+                { "id": "c", "text": "He deleted the headline and byline." }
+              ]
+            },
+            "correctByPath": {
+              "editor_interview": "a",
+              "editor_data": "a",
+              "archive_interview": "a",
+              "archive_data": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "editor_interview": "Which summary best explains the complete story?",
+              "editor_data": "Which summary best explains the complete story?",
+              "archive_interview": "Which summary best explains the complete story?",
+              "archive_data": "Which summary best explains the complete story?"
+            },
+            "optionsByPath": {
+              "editor_interview": [
+                { "id": "a", "text": "Amir decoded clues, verified evidence, and improved an article before deadline." },
+                { "id": "b", "text": "Amir skipped research and submitted a blank page." },
+                { "id": "c", "text": "Amir postponed the story for the next semester." }
+              ],
+              "editor_data": [
+                { "id": "a", "text": "Amir decoded clues, verified evidence, and improved an article before deadline." },
+                { "id": "b", "text": "Amir skipped research and submitted a blank page." },
+                { "id": "c", "text": "Amir postponed the story for the next semester." }
+              ],
+              "archive_interview": [
+                { "id": "a", "text": "Amir decoded clues, verified evidence, and improved an article before deadline." },
+                { "id": "b", "text": "Amir skipped research and submitted a blank page." },
+                { "id": "c", "text": "Amir postponed the story for the next semester." }
+              ],
+              "archive_data": [
+                { "id": "a", "text": "Amir decoded clues, verified evidence, and improved an article before deadline." },
+                { "id": "b", "text": "Amir skipped research and submitted a blank page." },
+                { "id": "c", "text": "Amir postponed the story for the next semester." }
+              ]
+            },
+            "correctByPath": {
+              "editor_interview": "a",
+              "editor_data": "a",
+              "archive_interview": "a",
+              "archive_data": "a"
+            }
+          }
+        }
+      }
+    ],
+    "6": [
+      {
+        "id": "g6-observatory-log",
+        "title": "The Observatory Log",
+        "paragraphs": {
+          "step1": "During a weekend enrichment program, Priya opened an old observatory logbook and found a handwritten challenge: \"Trace the anomaly in tonight's sky map and defend your conclusion.\"",
+          "step2": {
+            "spectra": "Priya began by reviewing spectral color bands from prior observations and noting where intensity values diverged from the baseline.",
+            "coordinates": "Priya began by comparing coordinate tables from prior observations and noting where position values diverged from the baseline."
+          },
+          "step3": {
+            "spectra": "Her notes suggested two possible explanations: an instrument calibration issue or a short-duration celestial event near the horizon line.",
+            "coordinates": "Her notes suggested two possible explanations: an instrument calibration issue or a short-duration celestial event near the horizon line."
+          },
+          "step4": {
+            "spectra_calibration": "Priya inspected calibration records and discovered a timestamp mismatch in the sensor log. She corrected the data set and reran the model.",
+            "spectra_event": "Priya compared independent telescope feeds and found matching spikes across two stations, supporting a short-duration event hypothesis.",
+            "coordinates_calibration": "Priya inspected calibration records and discovered a timestamp mismatch in the sensor log. She corrected the data set and reran the model.",
+            "coordinates_event": "Priya compared independent telescope feeds and found matching spikes across two stations, supporting a short-duration event hypothesis."
+          },
+          "step5": {
+            "spectra_calibration": "In her final entry, Priya justified her conclusion with corroborating evidence and acknowledged limitations in the original data capture process.",
+            "spectra_event": "In her final entry, Priya justified her conclusion with corroborating evidence and acknowledged limitations in the original data capture process.",
+            "coordinates_calibration": "In her final entry, Priya justified her conclusion with corroborating evidence and acknowledged limitations in the original data capture process.",
+            "coordinates_event": "In her final entry, Priya justified her conclusion with corroborating evidence and acknowledged limitations in the original data capture process."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which data source should Priya prioritize first?",
+            "options": [
+              { "id": "spectra", "text": "Spectral intensity records" },
+              { "id": "coordinates", "text": "Coordinate position tables" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "spectra": "What is Priya doing in this paragraph?",
+              "coordinates": "What is Priya doing in this paragraph?"
+            },
+            "optionsByPath": {
+              "spectra": [
+                { "id": "a", "text": "Comparing current data with a baseline to identify anomalies." },
+                { "id": "b", "text": "Guessing without reviewing evidence." },
+                { "id": "c", "text": "Discarding every previous observation." }
+              ],
+              "coordinates": [
+                { "id": "a", "text": "Comparing current data with a baseline to identify anomalies." },
+                { "id": "b", "text": "Guessing without reviewing evidence." },
+                { "id": "c", "text": "Discarding every previous observation." }
+              ]
+            },
+            "correctByPath": {
+              "spectra": "a",
+              "coordinates": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "spectra": "Which hypothesis should Priya test next?",
+              "coordinates": "Which hypothesis should Priya test next?"
+            },
+            "optionsByPath": {
+              "spectra": [
+                { "id": "calibration", "text": "Potential calibration issue" },
+                { "id": "event", "text": "Potential short-duration celestial event" }
+              ],
+              "coordinates": [
+                { "id": "calibration", "text": "Potential calibration issue" },
+                { "id": "event", "text": "Potential short-duration celestial event" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "spectra_calibration": "What kind of reasoning is Priya using?",
+              "spectra_event": "What kind of reasoning is Priya using?",
+              "coordinates_calibration": "What kind of reasoning is Priya using?",
+              "coordinates_event": "What kind of reasoning is Priya using?"
+            },
+            "optionsByPath": {
+              "spectra_calibration": [
+                { "id": "a", "text": "Evidence-based revision after testing a hypothesis." },
+                { "id": "b", "text": "Ignoring conflicting results." },
+                { "id": "c", "text": "Replacing data with opinions." }
+              ],
+              "spectra_event": [
+                { "id": "a", "text": "Evidence-based revision after testing a hypothesis." },
+                { "id": "b", "text": "Ignoring conflicting results." },
+                { "id": "c", "text": "Replacing data with opinions." }
+              ],
+              "coordinates_calibration": [
+                { "id": "a", "text": "Evidence-based revision after testing a hypothesis." },
+                { "id": "b", "text": "Ignoring conflicting results." },
+                { "id": "c", "text": "Replacing data with opinions." }
+              ],
+              "coordinates_event": [
+                { "id": "a", "text": "Evidence-based revision after testing a hypothesis." },
+                { "id": "b", "text": "Ignoring conflicting results." },
+                { "id": "c", "text": "Replacing data with opinions." }
+              ]
+            },
+            "correctByPath": {
+              "spectra_calibration": "a",
+              "spectra_event": "a",
+              "coordinates_calibration": "a",
+              "coordinates_event": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "spectra_calibration": "Which option best summarizes Priya's full process?",
+              "spectra_event": "Which option best summarizes Priya's full process?",
+              "coordinates_calibration": "Which option best summarizes Priya's full process?",
+              "coordinates_event": "Which option best summarizes Priya's full process?"
+            },
+            "optionsByPath": {
+              "spectra_calibration": [
+                { "id": "a", "text": "Priya evaluated data, tested hypotheses, and justified a conclusion with evidence." },
+                { "id": "b", "text": "Priya skipped analysis and wrote a random ending." },
+                { "id": "c", "text": "Priya refused to compare any observations." }
+              ],
+              "spectra_event": [
+                { "id": "a", "text": "Priya evaluated data, tested hypotheses, and justified a conclusion with evidence." },
+                { "id": "b", "text": "Priya skipped analysis and wrote a random ending." },
+                { "id": "c", "text": "Priya refused to compare any observations." }
+              ],
+              "coordinates_calibration": [
+                { "id": "a", "text": "Priya evaluated data, tested hypotheses, and justified a conclusion with evidence." },
+                { "id": "b", "text": "Priya skipped analysis and wrote a random ending." },
+                { "id": "c", "text": "Priya refused to compare any observations." }
+              ],
+              "coordinates_event": [
+                { "id": "a", "text": "Priya evaluated data, tested hypotheses, and justified a conclusion with evidence." },
+                { "id": "b", "text": "Priya skipped analysis and wrote a random ending." },
+                { "id": "c", "text": "Priya refused to compare any observations." }
+              ]
+            },
+            "correctByPath": {
+              "spectra_calibration": "a",
+              "spectra_event": "a",
+              "coordinates_calibration": "a",
+              "coordinates_event": "a"
+            }
+          }
+          }
+        }
+      ]
+    }
+}

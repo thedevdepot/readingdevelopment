@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive grade-level story adventures with branching paths and comprehension checks.">
+  <title>Story Adventure — LaunchPad Reading Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="wrapper">
+    <div class="container quiz-layout">
+      <header class="top">
+        <h1>LaunchPad Reading Application</h1>
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="index.html">Reading Level Quiz</a>
+          <a href="reading-resources.html">Reading Resources</a>
+          <a href="learning-strategies.html">Learning Strategies</a>
+          <a href="accessibility.html">Accessibility</a>
+        </nav>
+      </header>
+
+      <main class="main-content" id="main-content">
+        <h2 id="storyTitle">Story Adventure</h2>
+        <p id="storyMeta" class="story-meta"></p>
+
+        <div class="story-progress" role="status" aria-live="polite">
+          <span id="storyStepLabel">Paragraph 1 of 5</span>
+        </div>
+
+        <article id="storyParagraph" class="story-paragraph" aria-live="polite" tabindex="-1"></article>
+
+        <section class="story-question" aria-label="Story interaction">
+          <h3 id="storyPrompt">Choose what happens next.</h3>
+          <div id="storyChoices" class="story-choices"></div>
+          <p id="storyFeedback" class="story-feedback hidden" aria-live="assertive"></p>
+        </section>
+
+        <section id="storyComplete" class="story-complete hidden" aria-label="Story complete">
+          <h3>Story Complete</h3>
+          <p>You reached the end of this path. Try another story in this grade level or choose a different grade.</p>
+          <div class="story-complete-actions">
+            <button id="tryAnotherBtn" type="button">Try Another Story</button>
+            <a class="side-menu-link" href="reading-resources.html">Back to Reading Resources</a>
+          </div>
+        </section>
+      </main>
+
+      <aside class="side-menu" aria-label="Story links">
+        <a class="side-menu-button" href="story-reader.html?grade=1">Grade 1 Story</a>
+        <a class="side-menu-button" href="story-reader.html?grade=2">Grade 2 Story</a>
+        <a class="side-menu-button" href="story-reader.html?grade=3">Grade 3 Story</a>
+        <a class="side-menu-button" href="story-reader.html?grade=4">Grade 4 Story</a>
+        <a class="side-menu-button" href="story-reader.html?grade=5">Grade 5 Story</a>
+        <a class="side-menu-button" href="story-reader.html?grade=6">Grade 6 Story</a>
+      </aside>
+    </div>
+  </div>
+
+  <script src="story-reader.js"></script>
+</body>
+</html>
