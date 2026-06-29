@@ -215,11 +215,8 @@ function startStory(story) {
 
 function setupTryAnotherStory() {
   tryAnotherBtn.addEventListener('click', () => {
-    const nextStory = pickStory(storiesForTheme);
-    if (!nextStory) {
-      return;
-    }
-    startStory(nextStory);
+    const grade = getGradeFromUrl();
+    window.location.href = `reading-resources.html?grade=${grade}#grade-story-links`;
   });
 }
 
