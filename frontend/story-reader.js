@@ -16,7 +16,9 @@ const feedbackDelayMs = 500;
 const THEME_LABELS = {
   fiction: 'Fiction',
   space: 'Space Adventure',
-  adventure: 'Adventure Story'
+  adventure: 'Adventure Story',
+  mystery: 'Mystery',
+  arthurian: 'Arthurian Legend Fantasy'
 };
 
 let currentStory = null;

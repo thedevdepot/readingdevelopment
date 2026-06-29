@@ -660,6 +660,446 @@
             }
           }
         }
+      },
+      {
+        "id": "g1-mystery-bell",
+        "theme": "mystery",
+        "title": "The Missing Turtle Bell",
+        "paragraphs": {
+          "step1": "Milo finds the class turtle's silver bell missing before pet parade day. He must solve the mystery before the principal announces the parade lineup. If he picks the wrong clues, the turtle stays hidden and his class loses points.",
+          "step2": {
+            "choiceA": "He checks the art table and finds green glitter next to a tiny paw print. He writes both clues in his notebook and marks art table first. His first clue choice changes where he can search fastest.",
+            "choiceB": "He checks the reading corner and finds a chewed bookmark and a wet trail. He writes both clues in his notebook and marks reading corner first. His first clue choice changes where he can search fastest."
+          },
+          "step3": {
+            "choiceA": "At the hallway split, Milo must inspect the fish tank stand or the coat closet. One place has water and one place has soft hiding spots. Milo picks one route and runs with his notebook open.",
+            "choiceB": "At the hallway split, Milo must inspect the fish tank stand or the coat closet. One place has water and one place has soft hiding spots. Milo picks one route and runs with his notebook open."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing check the art table first and then inspect the fish tank stand, Milo reaches a turning point. The fish tank stand has the missing bell tied to a straw and the turtle asleep behind the filter box. Now the final reveal depends on whether his clues truly connect.",
+            "choiceA_branchB": "After choosing check the art table first and then inspect the coat closet, Milo reaches a turning point. The coat closet has glittery shoes but no turtle, and Milo loses minutes chasing a false lead. Now the final reveal depends on whether his clues truly connect.",
+            "choiceB_branchA": "After choosing check the reading corner first and then inspect the fish tank stand, Milo reaches a turning point. At the fish tank stand, the wet trail ends at a tipped bowl and a note from the janitor. Now the final reveal depends on whether his clues truly connect.",
+            "choiceB_branchB": "After choosing check the reading corner first and then inspect the coat closet, Milo reaches a turning point. In the coat closet, Milo finds the chewed bookmark but the turtle has already crawled to another room. Now the final reveal depends on whether his clues truly connect."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on check the art table first and inspect the fish tank stand, Milo reaches the final result. Milo returns the turtle in time and his class wins the parade kindness ribbon. He closes the case with a clear explanation to his class.",
+            "choiceA_branchB": "By ending on check the art table first and inspect the coat closet, Milo reaches the final result. He finds the turtle late and misses judging, but still protects it before dismissal. He closes the case with a clear explanation to his class.",
+            "choiceB_branchA": "By ending on check the reading corner first and inspect the fish tank stand, Milo reaches the final result. Milo follows the note to the nurse room and rescues the turtle just before lineup closes. He closes the case with a clear explanation to his class.",
+            "choiceB_branchB": "By ending on check the reading corner first and inspect the coat closet, Milo reaches the final result. He reports the clues to staff, and they recover the turtle after parade time. He closes the case with a clear explanation to his class."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which investigation starting point should the main detective choose?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Check the art table first"
+              },
+              {
+                "id": "choiceB",
+                "text": "Check the reading corner first"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first investigation choice affect the case?",
+              "choiceB": "How did that first investigation choice affect the case?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Milo's first clue choice changed where he could search next."
+                },
+                {
+                  "id": "b",
+                  "text": "Milo's first clue choice did not affect the search at all."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Milo's first clue choice changed where he could search next."
+                },
+                {
+                  "id": "b",
+                  "text": "Milo's first clue choice did not affect the search at all."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second lead should be pursued now?",
+              "choiceB": "Which second lead should be pursued now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Inspect the fish tank stand"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Inspect the coat closet"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Inspect the fish tank stand"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Inspect the coat closet"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that lead change the investigation outcome?",
+              "choiceA_branchB": "How did that lead change the investigation outcome?",
+              "choiceB_branchA": "How did that lead change the investigation outcome?",
+              "choiceB_branchB": "How did that lead change the investigation outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Milo's second location choice changed whether he solved the case in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Milo's second location choice never changed the case result."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Milo's second location choice changed whether he solved the case in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Milo's second location choice never changed the case result."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Milo's second location choice changed whether he solved the case in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Milo's second location choice never changed the case result."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Milo's second location choice changed whether he solved the case in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Milo's second location choice never changed the case result."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this mystery path?",
+              "choiceA_branchB": "Which summary best matches this mystery path?",
+              "choiceB_branchA": "Which summary best matches this mystery path?",
+              "choiceB_branchB": "Which summary best matches this mystery path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Milo followed clues, made meaningful choices, and reached an outcome shaped by his decisions."
+                },
+                {
+                  "id": "b",
+                  "text": "Milo got the same ending no matter which clues he followed."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Milo followed clues, made meaningful choices, and reached an outcome shaped by his decisions."
+                },
+                {
+                  "id": "b",
+                  "text": "Milo got the same ending no matter which clues he followed."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Milo followed clues, made meaningful choices, and reached an outcome shaped by his decisions."
+                },
+                {
+                  "id": "b",
+                  "text": "Milo got the same ending no matter which clues he followed."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Milo followed clues, made meaningful choices, and reached an outcome shaped by his decisions."
+                },
+                {
+                  "id": "b",
+                  "text": "Milo got the same ending no matter which clues he followed."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      },
+      {
+        "id": "g1-arthurian-lantern",
+        "theme": "arthurian",
+        "title": "Ava and the Dawn Lantern",
+        "paragraphs": {
+          "step1": "Ava, a new castle page, is asked to carry the Dawn Lantern before sunrise. She must light the round tower so Camelot's gates open for market wagons. If she chooses the wrong route, the lantern oil runs out and the gates stay shut.",
+          "step2": {
+            "choiceA": "She crosses the apple court and finds chalk arrows shaped like tiny shields. She records the arrows and saves her oil by walking in calm wind. Her first route changes both her oil level and her timing.",
+            "choiceB": "She passes the horse yard and finds hoof prints circling a side stair. She follows the prints and spends extra oil shielding the flame from gusts. Her first route changes both her oil level and her timing."
+          },
+          "step3": {
+            "choiceA": "At the keep wall, Ava must choose the ivy stair or the bell corridor. One is shorter but steep, while the other is longer and safer. Ava steadies her hands and chooses one final climb.",
+            "choiceB": "At the keep wall, Ava must choose the ivy stair or the bell corridor. One is shorter but steep, while the other is longer and safer. Ava steadies her hands and chooses one final climb."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing cross the apple court and then climb the ivy stair, Ava reaches a turning point. The ivy stair rises fast and Ava reaches the brazier with enough oil for one strong flame. The tower outcome now depends on flame and time.",
+            "choiceA_branchB": "After choosing cross the apple court and then take the bell corridor, Ava reaches a turning point. The bell corridor is safe but long, and Ava arrives as the last oil drop flickers. The tower outcome now depends on flame and time.",
+            "choiceB_branchA": "After choosing pass through the horse yard and then climb the ivy stair, Ava reaches a turning point. The ivy stair sways in wind, but Ava shields the flame with her cloak and keeps climbing. The tower outcome now depends on flame and time.",
+            "choiceB_branchB": "After choosing pass through the horse yard and then take the bell corridor, Ava reaches a turning point. The bell corridor loops past storage halls and costs too much time with low oil. The tower outcome now depends on flame and time."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on cross the apple court and climb the ivy stair, Ava reaches the final result. She lights the Dawn Lantern on time and earns a silver page clasp from the gate captain. Camelot remembers the page who kept the light alive.",
+            "choiceA_branchB": "By ending on cross the apple court and take the bell corridor, Ava reaches the final result. She lights only half the signal, so one gate opens while the other stays closed. Camelot remembers the page who kept the light alive.",
+            "choiceB_branchA": "By ending on pass through the horse yard and climb the ivy stair, Ava reaches the final result. She lights the full tower and is invited to train with the junior squires. Camelot remembers the page who kept the light alive.",
+            "choiceB_branchB": "By ending on pass through the horse yard and take the bell corridor, Ava reaches the final result. The sunrise horn sounds before she lights the brazier, and market wagons wait until late morning. Camelot remembers the page who kept the light alive."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which route should the Camelot hero choose first?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Cross the apple court"
+              },
+              {
+                "id": "choiceB",
+                "text": "Pass through the horse yard"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first route affect the mission?",
+              "choiceB": "How did that first route affect the mission?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Ava's first route changed her lantern oil and timing."
+                },
+                {
+                  "id": "b",
+                  "text": "Ava's first route did not change anything important."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Ava's first route changed her lantern oil and timing."
+                },
+                {
+                  "id": "b",
+                  "text": "Ava's first route did not change anything important."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second route should be chosen now?",
+              "choiceB": "Which second route should be chosen now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Climb the ivy stair"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the bell corridor"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Climb the ivy stair"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the bell corridor"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that second route change the kingdom outcome?",
+              "choiceA_branchB": "How did that second route change the kingdom outcome?",
+              "choiceB_branchA": "How did that second route change the kingdom outcome?",
+              "choiceB_branchB": "How did that second route change the kingdom outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Ava's second route determined whether Camelot's signal lit fully."
+                },
+                {
+                  "id": "b",
+                  "text": "Ava's second route never changed the signal outcome."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Ava's second route determined whether Camelot's signal lit fully."
+                },
+                {
+                  "id": "b",
+                  "text": "Ava's second route never changed the signal outcome."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Ava's second route determined whether Camelot's signal lit fully."
+                },
+                {
+                  "id": "b",
+                  "text": "Ava's second route never changed the signal outcome."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Ava's second route determined whether Camelot's signal lit fully."
+                },
+                {
+                  "id": "b",
+                  "text": "Ava's second route never changed the signal outcome."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this Camelot path?",
+              "choiceA_branchB": "Which summary best matches this Camelot path?",
+              "choiceB_branchA": "Which summary best matches this Camelot path?",
+              "choiceB_branchB": "Which summary best matches this Camelot path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Ava's route choices directly shaped Camelot's sunrise signal outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Ava got the same Camelot ending no matter her route."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Ava's route choices directly shaped Camelot's sunrise signal outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Ava got the same Camelot ending no matter her route."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Ava's route choices directly shaped Camelot's sunrise signal outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Ava got the same Camelot ending no matter her route."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Ava's route choices directly shaped Camelot's sunrise signal outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Ava got the same Camelot ending no matter her route."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
       }
     ],
     "2": [
@@ -1311,6 +1751,446 @@
                 {
                   "id": "b",
                   "text": "Kira got the same result no matter what she picked."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      },
+      {
+        "id": "g2-mystery-ribbon",
+        "theme": "mystery",
+        "title": "The Vanishing Science Ribbon",
+        "paragraphs": {
+          "step1": "Nora discovers the science fair blue ribbon missing one hour before judging. She must solve who moved it so her team can present correctly. If she fails, her team is disqualified for an incomplete display.",
+          "step2": {
+            "choiceA": "She investigates the gym stage and finds fresh tape marks shaped like a rectangle. She logs stage clues and notices one cart wheel print near the curtain. Her first investigation area changes what timeline she can build.",
+            "choiceB": "She investigates the cafeteria entry and finds spilled glitter and a folded schedule. She logs entry clues and spots a name circled on the schedule. Her first investigation area changes what timeline she can build."
+          },
+          "step3": {
+            "choiceA": "Nora must next question the stage crew captain or the volunteer check-in desk. One witness saw movement while the other logged arrivals. Nora chooses one source and tests it against her first clues.",
+            "choiceB": "Nora must next question the stage crew captain or the volunteer check-in desk. One witness saw movement while the other logged arrivals. Nora chooses one source and tests it against her first clues."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing investigate the gym stage and then question stage crew captain, Nora reaches a turning point. The stage captain confirms a cleanup cart moved the ribbon board to storage during a drill. The timeline now either locks in or falls apart.",
+            "choiceA_branchB": "After choosing investigate the gym stage and then question volunteer check-in desk, Nora reaches a turning point. The check-in desk log lacks the drill note, sending Nora to a wrong hallway search. The timeline now either locks in or falls apart.",
+            "choiceB_branchA": "After choosing investigate the cafeteria entry and then question stage crew captain, Nora reaches a turning point. The stage captain remembers a volunteer matching the circled schedule name and points to storage. The timeline now either locks in or falls apart.",
+            "choiceB_branchB": "After choosing investigate the cafeteria entry and then question volunteer check-in desk, Nora reaches a turning point. The check-in desk identifies the volunteer but reveals the ribbon was moved offsite for photos. The timeline now either locks in or falls apart."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on investigate the gym stage and question stage crew captain, Nora reaches the final result. Nora recovers the ribbon before judging and her team wins second place honestly. The final call affects both the ribbon and her team's trust.",
+            "choiceA_branchB": "By ending on investigate the gym stage and question volunteer check-in desk, Nora reaches the final result. She returns late, and judges score her project but remove presentation bonus points. The final call affects both the ribbon and her team's trust.",
+            "choiceB_branchA": "By ending on investigate the cafeteria entry and question stage crew captain, Nora reaches the final result. Nora finds the ribbon in time and earns a commendation for calm leadership under pressure. The final call affects both the ribbon and her team's trust.",
+            "choiceB_branchB": "By ending on investigate the cafeteria entry and question volunteer check-in desk, Nora reaches the final result. Nora proves no theft occurred, yet the ribbon returns after judging ends. The final call affects both the ribbon and her team's trust."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which investigation starting point should the main detective choose?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Investigate the gym stage"
+              },
+              {
+                "id": "choiceB",
+                "text": "Investigate the cafeteria entry"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first investigation choice affect the case?",
+              "choiceB": "How did that first investigation choice affect the case?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Nora's first location changed the timeline clues she could collect."
+                },
+                {
+                  "id": "b",
+                  "text": "Nora's first location gave the same clues either way."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Nora's first location changed the timeline clues she could collect."
+                },
+                {
+                  "id": "b",
+                  "text": "Nora's first location gave the same clues either way."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second lead should be pursued now?",
+              "choiceB": "Which second lead should be pursued now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Question stage crew captain"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Question volunteer check-in desk"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Question stage crew captain"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Question volunteer check-in desk"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that lead change the investigation outcome?",
+              "choiceA_branchB": "How did that lead change the investigation outcome?",
+              "choiceB_branchA": "How did that lead change the investigation outcome?",
+              "choiceB_branchB": "How did that lead change the investigation outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Nora's second source choice changed whether she recovered the ribbon in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Nora's second source choice never changed the result."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Nora's second source choice changed whether she recovered the ribbon in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Nora's second source choice never changed the result."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Nora's second source choice changed whether she recovered the ribbon in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Nora's second source choice never changed the result."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Nora's second source choice changed whether she recovered the ribbon in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Nora's second source choice never changed the result."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this mystery path?",
+              "choiceA_branchB": "Which summary best matches this mystery path?",
+              "choiceB_branchA": "Which summary best matches this mystery path?",
+              "choiceB_branchB": "Which summary best matches this mystery path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Nora's evidence choices determined both fairness and outcome in the mystery."
+                },
+                {
+                  "id": "b",
+                  "text": "Nora reached the same result regardless of her evidence choices."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Nora's evidence choices determined both fairness and outcome in the mystery."
+                },
+                {
+                  "id": "b",
+                  "text": "Nora reached the same result regardless of her evidence choices."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Nora's evidence choices determined both fairness and outcome in the mystery."
+                },
+                {
+                  "id": "b",
+                  "text": "Nora reached the same result regardless of her evidence choices."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Nora's evidence choices determined both fairness and outcome in the mystery."
+                },
+                {
+                  "id": "b",
+                  "text": "Nora reached the same result regardless of her evidence choices."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      },
+      {
+        "id": "g2-arthurian-bell",
+        "theme": "arthurian",
+        "title": "Rowan and the Council Bell",
+        "paragraphs": {
+          "step1": "Rowan, a junior page, is ordered to ring Camelot's Council Bell before the treaty riders leave. He must carry the bell key to the high hall and unlock the bell chain. If he arrives late, the riders depart without peace terms.",
+          "step2": {
+            "choiceA": "He takes the shield gallery and finds polished floor symbols matching the training map. He moves fast and keeps the key secure in a leather pouch. His first route choice changes speed and situational awareness.",
+            "choiceB": "He takes the market stair and finds stable hands hauling grain through side arches. He moves slower but hears that the high hall door is jammed. His first route choice changes speed and situational awareness."
+          },
+          "step3": {
+            "choiceA": "At the upper keep, Rowan chooses the guard ramp or the servant bridge. The guard ramp is direct, while the servant bridge bypasses the jammed door. Rowan commits and grips the key as the horn countdown starts.",
+            "choiceB": "At the upper keep, Rowan chooses the guard ramp or the servant bridge. The guard ramp is direct, while the servant bridge bypasses the jammed door. Rowan commits and grips the key as the horn countdown starts."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing take the shield gallery route and then use the guard ramp, Rowan reaches a turning point. The guard ramp reaches the hall quickly, but ceremony guards block the final door for protocol checks. The treaty now depends on timing at the bell chain.",
+            "choiceA_branchB": "After choosing take the shield gallery route and then use the servant bridge, Rowan reaches a turning point. The servant bridge bypasses the jam, and Rowan slips into the chain room through a side hatch. The treaty now depends on timing at the bell chain.",
+            "choiceB_branchA": "After choosing take the market stair route and then use the guard ramp, Rowan reaches a turning point. The guard ramp is clear thanks to the jam warning, and Rowan uses the right side gate key first try. The treaty now depends on timing at the bell chain.",
+            "choiceB_branchB": "After choosing take the market stair route and then use the servant bridge, Rowan reaches a turning point. The servant bridge narrows under cart traffic and Rowan must stop while wagons pass. The treaty now depends on timing at the bell chain."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on take the shield gallery route and use the guard ramp, Rowan reaches the final result. Rowan rings the bell moments late and treaty riders wait, yet negotiations begin with delay. The bell's sound determines whether peace talks begin today.",
+            "choiceA_branchB": "By ending on take the shield gallery route and use the servant bridge, Rowan reaches the final result. He rings on time and the treaty riders stay, giving Camelot a full peace hearing. The bell's sound determines whether peace talks begin today.",
+            "choiceB_branchA": "By ending on take the market stair route and use the guard ramp, Rowan reaches the final result. He rings early and the high hall opens to cheering riders and scribes. The bell's sound determines whether peace talks begin today.",
+            "choiceB_branchB": "By ending on take the market stair route and use the servant bridge, Rowan reaches the final result. He reaches the bell too late and the riders depart until next moon cycle. The bell's sound determines whether peace talks begin today."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which route should the Camelot hero choose first?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Take the shield gallery route"
+              },
+              {
+                "id": "choiceB",
+                "text": "Take the market stair route"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first route affect the mission?",
+              "choiceB": "How did that first route affect the mission?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Rowan's first route changed what he knew about timing hazards."
+                },
+                {
+                  "id": "b",
+                  "text": "Rowan's first route gave no useful timing information."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Rowan's first route changed what he knew about timing hazards."
+                },
+                {
+                  "id": "b",
+                  "text": "Rowan's first route gave no useful timing information."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second route should be chosen now?",
+              "choiceB": "Which second route should be chosen now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Use the guard ramp"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Use the servant bridge"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Use the guard ramp"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Use the servant bridge"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that second route change the kingdom outcome?",
+              "choiceA_branchB": "How did that second route change the kingdom outcome?",
+              "choiceB_branchA": "How did that second route change the kingdom outcome?",
+              "choiceB_branchB": "How did that second route change the kingdom outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Rowan's second route determined whether the treaty bell rang on time."
+                },
+                {
+                  "id": "b",
+                  "text": "Rowan's second route did not affect treaty timing."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Rowan's second route determined whether the treaty bell rang on time."
+                },
+                {
+                  "id": "b",
+                  "text": "Rowan's second route did not affect treaty timing."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Rowan's second route determined whether the treaty bell rang on time."
+                },
+                {
+                  "id": "b",
+                  "text": "Rowan's second route did not affect treaty timing."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Rowan's second route determined whether the treaty bell rang on time."
+                },
+                {
+                  "id": "b",
+                  "text": "Rowan's second route did not affect treaty timing."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this Camelot path?",
+              "choiceA_branchB": "Which summary best matches this Camelot path?",
+              "choiceB_branchA": "Which summary best matches this Camelot path?",
+              "choiceB_branchB": "Which summary best matches this Camelot path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Rowan's route choices directly shaped Camelot's treaty outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Rowan got the same treaty result no matter his choices."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Rowan's route choices directly shaped Camelot's treaty outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Rowan got the same treaty result no matter his choices."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Rowan's route choices directly shaped Camelot's treaty outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Rowan got the same treaty result no matter his choices."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Rowan's route choices directly shaped Camelot's treaty outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Rowan got the same treaty result no matter his choices."
                 }
               ]
             },
@@ -1984,6 +2864,446 @@
             }
           }
         }
+      },
+      {
+        "id": "g3-mystery-fragment",
+        "theme": "mystery",
+        "title": "The Missing Museum Fragment",
+        "paragraphs": {
+          "step1": "Sienna finds that the museum's map fragment vanished before the student history tour. She must recover the fragment so the exhibit puzzle can be completed. Without the fragment, the class loses access to the secret gallery challenge.",
+          "step2": {
+            "choiceA": "She starts at the fossil wing and finds shoe dust matching the old quarry floor. She logs quarry dust and a torn admission sticker. Her first clue set changes which wing she can search efficiently.",
+            "choiceB": "She starts at the gift kiosk and finds a receipt with a hand-drawn compass symbol. She logs receipt time and a name initial scribbled in pencil. Her first clue set changes which wing she can search efficiently."
+          },
+          "step3": {
+            "choiceA": "She next chooses to inspect the restoration hallway or the rooftop overlook stairs. One path follows dust trails while the other matches compass signage. Sienna chooses one route and tests it against time stamps.",
+            "choiceB": "She next chooses to inspect the restoration hallway or the rooftop overlook stairs. One path follows dust trails while the other matches compass signage. Sienna chooses one route and tests it against time stamps."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing search the fossil wing first and then inspect restoration hallway, Sienna reaches a turning point. The restoration hallway contains a dropped curator glove wrapped around the missing fragment sleeve. The final exhibit access now hangs on her branch accuracy.",
+            "choiceA_branchB": "After choosing search the fossil wing first and then inspect rooftop stairs, Sienna reaches a turning point. The rooftop stairs lead to a compass mural but no fragment, and she loses ten minutes backtracking. The final exhibit access now hangs on her branch accuracy.",
+            "choiceB_branchA": "After choosing search the gift kiosk first and then inspect restoration hallway, Sienna reaches a turning point. The restoration hallway logbook matches the receipt initials and points to a mislabeled archive cart. The final exhibit access now hangs on her branch accuracy.",
+            "choiceB_branchB": "After choosing search the gift kiosk first and then inspect rooftop stairs, Sienna reaches a turning point. The rooftop clue reveals who moved the fragment for cleaning, but not where it was stored. The final exhibit access now hangs on her branch accuracy."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on search the fossil wing first and inspect restoration hallway, Sienna reaches the final result. Sienna returns the fragment in time and her class unlocks the secret gallery challenge. Her class inherits the outcome of her reasoning chain.",
+            "choiceA_branchB": "By ending on search the fossil wing first and inspect rooftop stairs, Sienna reaches the final result. She finds the fragment after lockout and the class misses the challenge window. Her class inherits the outcome of her reasoning chain.",
+            "choiceB_branchA": "By ending on search the gift kiosk first and inspect restoration hallway, Sienna reaches the final result. Sienna recovers the fragment and earns a museum junior investigator certificate. Her class inherits the outcome of her reasoning chain.",
+            "choiceB_branchB": "By ending on search the gift kiosk first and inspect rooftop stairs, Sienna reaches the final result. She clears the suspect but cannot restore the puzzle before tour end. Her class inherits the outcome of her reasoning chain."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which investigation starting point should the main detective choose?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Search the fossil wing first"
+              },
+              {
+                "id": "choiceB",
+                "text": "Search the gift kiosk first"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first investigation choice affect the case?",
+              "choiceB": "How did that first investigation choice affect the case?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Sienna's first investigation area changed her strongest evidence path."
+                },
+                {
+                  "id": "b",
+                  "text": "Sienna's first investigation area made no difference."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Sienna's first investigation area changed her strongest evidence path."
+                },
+                {
+                  "id": "b",
+                  "text": "Sienna's first investigation area made no difference."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second lead should be pursued now?",
+              "choiceB": "Which second lead should be pursued now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Inspect restoration hallway"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Inspect rooftop stairs"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Inspect restoration hallway"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Inspect rooftop stairs"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that lead change the investigation outcome?",
+              "choiceA_branchB": "How did that lead change the investigation outcome?",
+              "choiceB_branchA": "How did that lead change the investigation outcome?",
+              "choiceB_branchB": "How did that lead change the investigation outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Sienna's branch choice changed whether she recovered the fragment in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Sienna's branch choice never changed the recovery outcome."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Sienna's branch choice changed whether she recovered the fragment in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Sienna's branch choice never changed the recovery outcome."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Sienna's branch choice changed whether she recovered the fragment in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Sienna's branch choice never changed the recovery outcome."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Sienna's branch choice changed whether she recovered the fragment in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Sienna's branch choice never changed the recovery outcome."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this mystery path?",
+              "choiceA_branchB": "Which summary best matches this mystery path?",
+              "choiceB_branchA": "Which summary best matches this mystery path?",
+              "choiceB_branchB": "Which summary best matches this mystery path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Sienna's evidence and branch decisions directly shaped the museum mystery ending."
+                },
+                {
+                  "id": "b",
+                  "text": "Sienna reached the same museum outcome in every branch."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Sienna's evidence and branch decisions directly shaped the museum mystery ending."
+                },
+                {
+                  "id": "b",
+                  "text": "Sienna reached the same museum outcome in every branch."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Sienna's evidence and branch decisions directly shaped the museum mystery ending."
+                },
+                {
+                  "id": "b",
+                  "text": "Sienna reached the same museum outcome in every branch."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Sienna's evidence and branch decisions directly shaped the museum mystery ending."
+                },
+                {
+                  "id": "b",
+                  "text": "Sienna reached the same museum outcome in every branch."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      },
+      {
+        "id": "g3-arthurian-ward",
+        "theme": "arthurian",
+        "title": "Eli and the River Ward",
+        "paragraphs": {
+          "step1": "Eli receives a lake-sealed message saying Camelot's river gate ward is failing. He must deliver the silver seal to the ward stone before flood tide rises. If the ward fails, low villages flood and supply roads close.",
+          "step2": {
+            "choiceA": "He follows the abbey road and finds carved dragon knots pointing downstream. He moves quickly and keeps the seal dry in a wax sleeve. His first route changes both arrival time and flood awareness.",
+            "choiceB": "He follows mill footpaths and finds fresh reed bundles tied in ward-sign pattern. He moves slower but learns tide levels from mill workers. His first route changes both arrival time and flood awareness."
+          },
+          "step3": {
+            "choiceA": "At the floodplain split, Eli chooses the stone arch ford or the willow bridge. The ford is direct in low tide, while the bridge is stable in high tide. Eli chooses and moves as warning bells echo from the river.",
+            "choiceB": "At the floodplain split, Eli chooses the stone arch ford or the willow bridge. The ford is direct in low tide, while the bridge is stable in high tide. Eli chooses and moves as warning bells echo from the river."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing follow the abbey road and then cross the stone arch ford, Eli reaches a turning point. The stone arch ford stays shallow just long enough for Eli to cross and place the seal. Now the ward's fate depends on route and tide timing.",
+            "choiceA_branchB": "After choosing follow the abbey road and then cross the willow bridge, Eli reaches a turning point. The willow bridge route is safe but adds delay while tide climbs around the ward base. Now the ward's fate depends on route and tide timing.",
+            "choiceB_branchA": "After choosing follow the mill footpaths and then cross the stone arch ford, Eli reaches a turning point. Mill tide data shows the ford closing, so Eli times a narrow crossing and reaches the stone at sunset. Now the ward's fate depends on route and tide timing.",
+            "choiceB_branchB": "After choosing follow the mill footpaths and then cross the willow bridge, Eli reaches a turning point. The willow bridge sways under debris and forces Eli to wait while tide overtops the lower steps. Now the ward's fate depends on route and tide timing."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on follow the abbey road and cross the stone arch ford, Eli reaches the final result. The ward reignites before crest tide and the villages remain dry. The villages downstream live with the result of his choices.",
+            "choiceA_branchB": "By ending on follow the abbey road and cross the willow bridge, Eli reaches the final result. Eli restores a partial ward that protects Camelot but floods two outer farms. The villages downstream live with the result of his choices.",
+            "choiceB_branchA": "By ending on follow the mill footpaths and cross the stone arch ford, Eli reaches the final result. He restores full ward strength and is thanked by both millers and knights. The villages downstream live with the result of his choices.",
+            "choiceB_branchB": "By ending on follow the mill footpaths and cross the willow bridge, Eli reaches the final result. He seals the ward too late and emergency boats evacuate flooded fields overnight. The villages downstream live with the result of his choices."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which route should the Camelot hero choose first?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Follow the abbey road"
+              },
+              {
+                "id": "choiceB",
+                "text": "Follow the mill footpaths"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first route affect the mission?",
+              "choiceB": "How did that first route affect the mission?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Eli's first route changed what he knew about flood timing."
+                },
+                {
+                  "id": "b",
+                  "text": "Eli's first route gave no useful timing information."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Eli's first route changed what he knew about flood timing."
+                },
+                {
+                  "id": "b",
+                  "text": "Eli's first route gave no useful timing information."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second route should be chosen now?",
+              "choiceB": "Which second route should be chosen now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Cross the stone arch ford"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Cross the willow bridge"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Cross the stone arch ford"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Cross the willow bridge"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that second route change the kingdom outcome?",
+              "choiceA_branchB": "How did that second route change the kingdom outcome?",
+              "choiceB_branchA": "How did that second route change the kingdom outcome?",
+              "choiceB_branchB": "How did that second route change the kingdom outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Eli's branch choice changed how much flood damage was prevented."
+                },
+                {
+                  "id": "b",
+                  "text": "Eli's branch choice never changed flood outcomes."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Eli's branch choice changed how much flood damage was prevented."
+                },
+                {
+                  "id": "b",
+                  "text": "Eli's branch choice never changed flood outcomes."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Eli's branch choice changed how much flood damage was prevented."
+                },
+                {
+                  "id": "b",
+                  "text": "Eli's branch choice never changed flood outcomes."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Eli's branch choice changed how much flood damage was prevented."
+                },
+                {
+                  "id": "b",
+                  "text": "Eli's branch choice never changed flood outcomes."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this Camelot path?",
+              "choiceA_branchB": "Which summary best matches this Camelot path?",
+              "choiceB_branchA": "Which summary best matches this Camelot path?",
+              "choiceB_branchB": "Which summary best matches this Camelot path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Eli's route and tide decisions directly shaped the ward and village outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Eli got the same flood outcome regardless of route."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Eli's route and tide decisions directly shaped the ward and village outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Eli got the same flood outcome regardless of route."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Eli's route and tide decisions directly shaped the ward and village outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Eli got the same flood outcome regardless of route."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Eli's route and tide decisions directly shaped the ward and village outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Eli got the same flood outcome regardless of route."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
       }
     ],
     "4": [
@@ -2635,6 +3955,446 @@
                 {
                   "id": "b",
                   "text": "The ledger always closed the same way regardless of choices."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      },
+      {
+        "id": "g4-mystery-keycard",
+        "theme": "mystery",
+        "title": "The Case of the Missing Keycard",
+        "paragraphs": {
+          "step1": "Jada discovers the school power keycard missing during district robotics showcase prep. She must identify where the keycard went before the main arena test window closes. Without the card, half the robotics systems cannot be powered or scored. Jada decides to build a movement timeline from logs, sensors, and witness notes. She commits to proving each claim with at least two sources.",
+          "step2": {
+            "choiceA": "She begins in the control booth and extracts door-scan logs around the last confirmed keycard use. She identifies three potential transfer moments and one suspicious manual override entry. Booth logs offer precise times but limited physical context in crowded zones. Manual overrides can be legitimate during equipment resets, so false suspicion is possible. Her opening source choice shifts whether she optimizes timing precision or movement context.",
+            "choiceB": "She begins in the pit lane and reviews camera angles near charging stations and tool crates. She spots one volunteer carrying a card lanyard toward storage after a battery alarm. Video gives movement context but partial visibility in blind corners. If she over-trusts a single angle, she may misread routine transfers as theft. Her opening source choice shifts whether she optimizes timing precision or movement context."
+          },
+          "step3": {
+            "choiceA": "Jada now chooses to verify with security dispatch records or mentor check-in sheets. Dispatch records track emergency requests while mentor sheets track authorized possession changes. Emergency records are objective but narrow, check-in sheets are broad but manually entered. Choosing the wrong second source could lock her into an incorrect narrative. She commits to one verification path and aligns it against her first evidence set.",
+            "choiceB": "Jada now chooses to verify with security dispatch records or mentor check-in sheets. Dispatch records track emergency requests while mentor sheets track authorized possession changes. Emergency records are objective but narrow, check-in sheets are broad but manually entered. Choosing the wrong second source could lock her into an incorrect narrative. She commits to one verification path and aligns it against her first evidence set."
+          },
+          "step4": {
+            "choiceA_branchA": "After selecting start with control booth logs and then verify with security dispatch, Jada reaches a decisive turning point. Security dispatch confirms a battery hazard call moved the keycard to emergency storage under protocol. She reconciles timestamps, personnel roles, and location transitions before concluding. This branch reveals whether operational logs or human handoff records carried decisive weight. The case now depends on whether her evidence chain remains internally consistent.",
+            "choiceA_branchB": "After selecting start with control booth logs and then verify with mentor check-in sheets, Jada reaches a decisive turning point. Mentor sheets conflict on one handoff signature, forcing Jada into a manual interview loop. She reconciles timestamps, personnel roles, and location transitions before concluding. This branch reveals whether operational logs or human handoff records carried decisive weight. The case now depends on whether her evidence chain remains internally consistent.",
+            "choiceB_branchA": "After selecting start with pit lane cameras and then verify with security dispatch, Jada reaches a decisive turning point. Security dispatch logs match the camera route and reveal the volunteer acted under supervisor instruction. She reconciles timestamps, personnel roles, and location transitions before concluding. This branch reveals whether operational logs or human handoff records carried decisive weight. The case now depends on whether her evidence chain remains internally consistent.",
+            "choiceB_branchB": "After selecting start with pit lane cameras and then verify with mentor check-in sheets, Jada reaches a decisive turning point. Mentor sheets identify the correct carrier but omit final storage location, creating a costly search delay. She reconciles timestamps, personnel roles, and location transitions before concluding. This branch reveals whether operational logs or human handoff records carried decisive weight. The case now depends on whether her evidence chain remains internally consistent."
+          },
+          "step5": {
+            "choiceA_branchA": "The final path of start with control booth logs followed by verify with security dispatch determines the mission outcome. Jada recovers the keycard with minutes left, and the robotics showcase launches on full schedule. Jada documents how each decision impacted both fairness and technical readiness. She learns robust mystery solving requires triangulation, not single-point certainty. The showcase schedule and team confidence depend on her final call.",
+            "choiceA_branchB": "The final path of start with control booth logs followed by verify with mentor check-in sheets determines the mission outcome. She clears the false suspect but restores power too late for one qualifying run. Jada documents how each decision impacted both fairness and technical readiness. She learns robust mystery solving requires triangulation, not single-point certainty. The showcase schedule and team confidence depend on her final call.",
+            "choiceB_branchA": "The final path of start with pit lane cameras followed by verify with security dispatch determines the mission outcome. Jada recovers the card quickly and receives recognition for evidence-first leadership. Jada documents how each decision impacted both fairness and technical readiness. She learns robust mystery solving requires triangulation, not single-point certainty. The showcase schedule and team confidence depend on her final call.",
+            "choiceB_branchB": "The final path of start with pit lane cameras followed by verify with mentor check-in sheets determines the mission outcome. Power returns after schedule lock, and her team is moved to a consolation bracket. Jada documents how each decision impacted both fairness and technical readiness. She learns robust mystery solving requires triangulation, not single-point certainty. The showcase schedule and team confidence depend on her final call."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which investigation starting point should the main detective choose?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Start with control booth logs"
+              },
+              {
+                "id": "choiceB",
+                "text": "Start with pit lane cameras"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first investigation choice affect the case?",
+              "choiceB": "How did that first investigation choice affect the case?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Jada's first evidence source changed the strength and limits of her timeline."
+                },
+                {
+                  "id": "b",
+                  "text": "Jada's first evidence source had no impact on the investigation."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Jada's first evidence source changed the strength and limits of her timeline."
+                },
+                {
+                  "id": "b",
+                  "text": "Jada's first evidence source had no impact on the investigation."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second lead should be pursued now?",
+              "choiceB": "Which second lead should be pursued now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Verify with security dispatch"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Verify with mentor check-in sheets"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Verify with security dispatch"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Verify with mentor check-in sheets"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that lead change the investigation outcome?",
+              "choiceA_branchB": "How did that lead change the investigation outcome?",
+              "choiceB_branchA": "How did that lead change the investigation outcome?",
+              "choiceB_branchB": "How did that lead change the investigation outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Jada's second verification path changed whether she recovered the keycard in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Jada's second verification path never changed the outcome."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Jada's second verification path changed whether she recovered the keycard in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Jada's second verification path never changed the outcome."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Jada's second verification path changed whether she recovered the keycard in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Jada's second verification path never changed the outcome."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Jada's second verification path changed whether she recovered the keycard in time."
+                },
+                {
+                  "id": "b",
+                  "text": "Jada's second verification path never changed the outcome."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this mystery path?",
+              "choiceA_branchB": "Which summary best matches this mystery path?",
+              "choiceB_branchA": "Which summary best matches this mystery path?",
+              "choiceB_branchB": "Which summary best matches this mystery path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Jada's evidence decisions directly shaped both fairness and showcase readiness."
+                },
+                {
+                  "id": "b",
+                  "text": "Jada got the same showcase result regardless of evidence choices."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Jada's evidence decisions directly shaped both fairness and showcase readiness."
+                },
+                {
+                  "id": "b",
+                  "text": "Jada got the same showcase result regardless of evidence choices."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Jada's evidence decisions directly shaped both fairness and showcase readiness."
+                },
+                {
+                  "id": "b",
+                  "text": "Jada got the same showcase result regardless of evidence choices."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Jada's evidence decisions directly shaped both fairness and showcase readiness."
+                },
+                {
+                  "id": "b",
+                  "text": "Jada got the same showcase result regardless of evidence choices."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      },
+      {
+        "id": "g4-arthurian-beacons",
+        "theme": "arthurian",
+        "title": "Cedric and the Border Beacons",
+        "paragraphs": {
+          "step1": "Cedric is tasked with relighting Camelot's border beacons before a treaty caravan reaches the north pass. He must carry the king's seal through two frontier routes and activate the correct signal tower. If he relights the wrong beacon chain, allies may mistake friend for foe at the pass. Cedric chooses to combine knight maps with current scout reports. He commits to prioritizing signal accuracy over personal glory.",
+          "step2": {
+            "choiceA": "He rides the ridge road and finds intact stone markers from Arthur's original patrol network. He gains rapid progress and clear map alignment to old tower IDs. Historic markers are precise but may not reflect recent tower reassignments. Using outdated IDs could trigger the wrong diplomatic signal. His first route determines whether he anchors on legacy certainty or live intelligence.",
+            "choiceB": "He rides the river road and meets scouts carrying this week's revised beacon codes. He moves slower but gains current call signs and pass visibility updates. Fresh scout intelligence improves relevance but increases complexity under time pressure. Extra code handling can cause mismatch errors if rushed. His first route determines whether he anchors on legacy certainty or live intelligence."
+          },
+          "step3": {
+            "choiceA": "At the frontier split, Cedric chooses the Falcon Tower chain or the Lion Tower chain. One chain matches old maps while the other matches revised scout notices. Legacy alignment offers speed, revised alignment offers current correctness. A wrong chain could compromise treaty reception at the pass. Cedric chooses one chain and calibrates the beacon seal sequence.",
+            "choiceB": "At the frontier split, Cedric chooses the Falcon Tower chain or the Lion Tower chain. One chain matches old maps while the other matches revised scout notices. Legacy alignment offers speed, revised alignment offers current correctness. A wrong chain could compromise treaty reception at the pass. Cedric chooses one chain and calibrates the beacon seal sequence."
+          },
+          "step4": {
+            "choiceA_branchA": "After selecting ride the ridge road and then light the falcon tower chain, Cedric reaches a decisive turning point. Legacy markers plus Falcon chain align physically, but one tower now broadcasts a retired code set. He verifies chain IDs against route evidence before ignition. This branch reveals whether historical authority or updated field data was decisive. The diplomatic outcome now depends on signal correctness and timing.",
+            "choiceA_branchB": "After selecting ride the ridge road and then light the lion tower chain, Cedric reaches a decisive turning point. Legacy route with Lion chain creates an index mismatch that he catches only after first ignition. He verifies chain IDs against route evidence before ignition. This branch reveals whether historical authority or updated field data was decisive. The diplomatic outcome now depends on signal correctness and timing.",
+            "choiceB_branchA": "After selecting ride the river road and then light the falcon tower chain, Cedric reaches a decisive turning point. Scout updates plus Falcon chain reveal a rerouted relay and Cedric rekeys all towers correctly. He verifies chain IDs against route evidence before ignition. This branch reveals whether historical authority or updated field data was decisive. The diplomatic outcome now depends on signal correctness and timing.",
+            "choiceB_branchB": "After selecting ride the river road and then light the lion tower chain, Cedric reaches a decisive turning point. Scout updates plus Lion chain overload one relay because the revised map omitted a damaged node. He verifies chain IDs against route evidence before ignition. This branch reveals whether historical authority or updated field data was decisive. The diplomatic outcome now depends on signal correctness and timing."
+          },
+          "step5": {
+            "choiceA_branchA": "The final path of ride the ridge road followed by light the falcon tower chain determines the mission outcome. Cedric lights the chain on time yet causes a guarded delay while allies verify identity manually. Cedric records why his chosen evidence hierarchy succeeded or failed. He learns Arthurian command demands adaptive judgment, not rigid tradition. The treaty caravan enters the pass under the signal he sets.",
+            "choiceA_branchB": "The final path of ride the ridge road followed by light the lion tower chain determines the mission outcome. He corrects the signal, but the caravan halts overnight before entering the pass. Cedric records why his chosen evidence hierarchy succeeded or failed. He learns Arthurian command demands adaptive judgment, not rigid tradition. The treaty caravan enters the pass under the signal he sets.",
+            "choiceB_branchA": "The final path of ride the river road followed by light the falcon tower chain determines the mission outcome. The caravan receives perfect recognition and treaty talks begin without delay. Cedric records why his chosen evidence hierarchy succeeded or failed. He learns Arthurian command demands adaptive judgment, not rigid tradition. The treaty caravan enters the pass under the signal he sets.",
+            "choiceB_branchB": "The final path of ride the river road followed by light the lion tower chain determines the mission outcome. Cedric preserves safety but only partial signal reaches the pass, delaying negotiations by a day. Cedric records why his chosen evidence hierarchy succeeded or failed. He learns Arthurian command demands adaptive judgment, not rigid tradition. The treaty caravan enters the pass under the signal he sets."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which route should the Camelot hero choose first?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Ride the ridge road"
+              },
+              {
+                "id": "choiceB",
+                "text": "Ride the river road"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first route affect the mission?",
+              "choiceB": "How did that first route affect the mission?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Cedric's first route changed whether he used legacy markers or live scout intelligence."
+                },
+                {
+                  "id": "b",
+                  "text": "Cedric's first route made no difference in signal planning."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Cedric's first route changed whether he used legacy markers or live scout intelligence."
+                },
+                {
+                  "id": "b",
+                  "text": "Cedric's first route made no difference in signal planning."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second route should be chosen now?",
+              "choiceB": "Which second route should be chosen now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Light the Falcon Tower chain"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Light the Lion Tower chain"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Light the Falcon Tower chain"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Light the Lion Tower chain"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that second route change the kingdom outcome?",
+              "choiceA_branchB": "How did that second route change the kingdom outcome?",
+              "choiceB_branchA": "How did that second route change the kingdom outcome?",
+              "choiceB_branchB": "How did that second route change the kingdom outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Cedric's beacon chain choice changed treaty timing and trust at the pass."
+                },
+                {
+                  "id": "b",
+                  "text": "Cedric's beacon chain choice never changed treaty outcomes."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Cedric's beacon chain choice changed treaty timing and trust at the pass."
+                },
+                {
+                  "id": "b",
+                  "text": "Cedric's beacon chain choice never changed treaty outcomes."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Cedric's beacon chain choice changed treaty timing and trust at the pass."
+                },
+                {
+                  "id": "b",
+                  "text": "Cedric's beacon chain choice never changed treaty outcomes."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Cedric's beacon chain choice changed treaty timing and trust at the pass."
+                },
+                {
+                  "id": "b",
+                  "text": "Cedric's beacon chain choice never changed treaty outcomes."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this Camelot path?",
+              "choiceA_branchB": "Which summary best matches this Camelot path?",
+              "choiceB_branchA": "Which summary best matches this Camelot path?",
+              "choiceB_branchB": "Which summary best matches this Camelot path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Cedric's route and chain choices directly shaped Camelot's diplomatic signal outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Cedric got the same diplomatic outcome no matter his choices."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Cedric's route and chain choices directly shaped Camelot's diplomatic signal outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Cedric got the same diplomatic outcome no matter his choices."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Cedric's route and chain choices directly shaped Camelot's diplomatic signal outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Cedric got the same diplomatic outcome no matter his choices."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Cedric's route and chain choices directly shaped Camelot's diplomatic signal outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Cedric got the same diplomatic outcome no matter his choices."
                 }
               ]
             },
@@ -3308,6 +5068,446 @@
             }
           }
         }
+      },
+      {
+        "id": "g5-mystery-cornerstone",
+        "theme": "mystery",
+        "title": "The Cornerstone Document Mystery",
+        "paragraphs": {
+          "step1": "Imani finds the town archive's cornerstone document missing before civic history night. She must recover it and prove a reliable chain of custody before public presentation. If she fails, the event is canceled and trust in the archive team drops. Imani applies investigative protocol: source ranking, timeline reconstruction, and corroboration. She commits to conclusions only after cross-source consistency checks.",
+          "step2": {
+            "choiceA": "She starts with access logs and badge scans from secure archive rooms. She isolates a narrow access window and two authorized badge IDs. Log precision is high, but shared credentials can blur individual accountability. Assuming badge owner equals actor may produce false attribution. Her initial source set changes whether she leads with access certainty or movement context.",
+            "choiceB": "She starts with restoration lab notes and courier receipts from the same day. She identifies an unscheduled transfer note and one unsigned handoff receipt. Physical transfer records reveal movement context but can contain clerical gaps. An unsigned receipt can indicate error, not intent. Her initial source set changes whether she leads with access certainty or movement context."
+          },
+          "step3": {
+            "choiceA": "Imani now chooses to audit surveillance metadata or interview the restoration supervisor. Metadata may verify movement timing, while interview context may explain procedural exceptions. System metadata is objective but narrow, supervisor context is rich but potentially biased. A weak second source could undermine final chain-of-custody proof. She commits to one path and stress-tests it against her first evidence set.",
+            "choiceB": "Imani now chooses to audit surveillance metadata or interview the restoration supervisor. Metadata may verify movement timing, while interview context may explain procedural exceptions. System metadata is objective but narrow, supervisor context is rich but potentially biased. A weak second source could undermine final chain-of-custody proof. She commits to one path and stress-tests it against her first evidence set."
+          },
+          "step4": {
+            "choiceA_branchA": "After selecting begin with access logs and then audit surveillance metadata, Imani reaches a decisive turning point. Surveillance metadata links one authorized badge to a lawful emergency transfer into climate vault C. She tests every claim against timestamps, signatures, and storage locations. This branch reveals whether technical traces or procedural context closed the gap. The case now hinges on whether her custody chain can withstand review.",
+            "choiceA_branchB": "After selecting begin with access logs and then interview restoration supervisor, Imani reaches a decisive turning point. Supervisor interview confirms transfer intent but lacks precise timestamp proof for one handoff. She tests every claim against timestamps, signatures, and storage locations. This branch reveals whether technical traces or procedural context closed the gap. The case now hinges on whether her custody chain can withstand review.",
+            "choiceB_branchA": "After selecting begin with transfer receipts and then audit surveillance metadata, Imani reaches a decisive turning point. Metadata reconciles the unsigned receipt by matching courier route telemetry and vault entry time. She tests every claim against timestamps, signatures, and storage locations. This branch reveals whether technical traces or procedural context closed the gap. The case now hinges on whether her custody chain can withstand review.",
+            "choiceB_branchB": "After selecting begin with transfer receipts and then interview restoration supervisor, Imani reaches a decisive turning point. Supervisor testimony reveals a procedural shortcut that moved the document to a temporary workbench off log. She tests every claim against timestamps, signatures, and storage locations. This branch reveals whether technical traces or procedural context closed the gap. The case now hinges on whether her custody chain can withstand review."
+          },
+          "step5": {
+            "choiceA_branchA": "The final path of begin with access logs followed by audit surveillance metadata determines the mission outcome. Imani restores the document, proves chain integrity, and history night proceeds with full public trust. Imani documents not just what happened, but why her conclusion is defensible. She learns high-stakes mysteries require both rigor and restraint. The archive's public credibility depends on her final report.",
+            "choiceA_branchB": "The final path of begin with access logs followed by interview restoration supervisor determines the mission outcome. The document is recovered, yet presentation is postponed pending formal verification. Imani documents not just what happened, but why her conclusion is defensible. She learns high-stakes mysteries require both rigor and restraint. The archive's public credibility depends on her final report.",
+            "choiceB_branchA": "The final path of begin with transfer receipts followed by audit surveillance metadata determines the mission outcome. Imani closes the case definitively and is appointed student liaison to the archive board. Imani documents not just what happened, but why her conclusion is defensible. She learns high-stakes mysteries require both rigor and restraint. The archive's public credibility depends on her final report.",
+            "choiceB_branchB": "The final path of begin with transfer receipts followed by interview restoration supervisor determines the mission outcome. Imani recovers the document but issues a critical process-failure report before event approval. Imani documents not just what happened, but why her conclusion is defensible. She learns high-stakes mysteries require both rigor and restraint. The archive's public credibility depends on her final report."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which investigation starting point should the main detective choose?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Begin with access logs"
+              },
+              {
+                "id": "choiceB",
+                "text": "Begin with transfer receipts"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first investigation choice affect the case?",
+              "choiceB": "How did that first investigation choice affect the case?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Imani's first source strategy changed the reliability profile of her investigation."
+                },
+                {
+                  "id": "b",
+                  "text": "Imani's first source strategy had no effect on case reliability."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Imani's first source strategy changed the reliability profile of her investigation."
+                },
+                {
+                  "id": "b",
+                  "text": "Imani's first source strategy had no effect on case reliability."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second lead should be pursued now?",
+              "choiceB": "Which second lead should be pursued now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Audit surveillance metadata"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Interview restoration supervisor"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Audit surveillance metadata"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Interview restoration supervisor"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that lead change the investigation outcome?",
+              "choiceA_branchB": "How did that lead change the investigation outcome?",
+              "choiceB_branchA": "How did that lead change the investigation outcome?",
+              "choiceB_branchB": "How did that lead change the investigation outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Imani's second verification choice changed whether chain-of-custody proof was complete."
+                },
+                {
+                  "id": "b",
+                  "text": "Imani's second verification choice never changed proof quality."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Imani's second verification choice changed whether chain-of-custody proof was complete."
+                },
+                {
+                  "id": "b",
+                  "text": "Imani's second verification choice never changed proof quality."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Imani's second verification choice changed whether chain-of-custody proof was complete."
+                },
+                {
+                  "id": "b",
+                  "text": "Imani's second verification choice never changed proof quality."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Imani's second verification choice changed whether chain-of-custody proof was complete."
+                },
+                {
+                  "id": "b",
+                  "text": "Imani's second verification choice never changed proof quality."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this mystery path?",
+              "choiceA_branchB": "Which summary best matches this mystery path?",
+              "choiceB_branchA": "Which summary best matches this mystery path?",
+              "choiceB_branchB": "Which summary best matches this mystery path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Imani's evidence hierarchy and verification choices determined both recovery and public trust outcomes."
+                },
+                {
+                  "id": "b",
+                  "text": "Imani reached the same archive outcome no matter her verification choices."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Imani's evidence hierarchy and verification choices determined both recovery and public trust outcomes."
+                },
+                {
+                  "id": "b",
+                  "text": "Imani reached the same archive outcome no matter her verification choices."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Imani's evidence hierarchy and verification choices determined both recovery and public trust outcomes."
+                },
+                {
+                  "id": "b",
+                  "text": "Imani reached the same archive outcome no matter her verification choices."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Imani's evidence hierarchy and verification choices determined both recovery and public trust outcomes."
+                },
+                {
+                  "id": "b",
+                  "text": "Imani reached the same archive outcome no matter her verification choices."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      },
+      {
+        "id": "g5-arthurian-charter",
+        "theme": "arthurian",
+        "title": "Leona and the Sealed Charter",
+        "paragraphs": {
+          "step1": "Leona is sent from Camelot with a sealed Arthurian charter to secure alliance terms at the border hall. She must deliver and authenticate the charter through contested territory before moonrise. If authentication fails, the alliance dissolves and frontier defenses fracture. Leona uses both royal protocol and local intelligence to protect diplomatic integrity. She commits to preserving charter validity even if it costs speed.",
+          "step2": {
+            "choiceA": "She takes the old king's road and follows codified milestone seals from Arthur's era. She gains distance quickly and keeps the charter secure in uninterrupted custody. Protocol roads favor speed but may miss recent geopolitical shifts. Outdated assumptions could trigger authentication mismatch at the border hall. Her first route sets the balance between continuity of custody and update relevance.",
+            "choiceB": "She takes the valley envoy route and consults allied wardens at each checkpoint. She loses time but receives fresh cipher updates for this season's hall verification. Current ciphers improve acceptance probability under shifting alliances. More handoffs increase exposure to delay and interception risk. Her first route sets the balance between continuity of custody and update relevance."
+          },
+          "step3": {
+            "choiceA": "At the final approach, Leona chooses the Iron Gate protocol chamber or the River Oath chamber. One chamber validates legacy seals, while the other validates current alliance ciphers. Legacy validation is quick for old codes, current validation is robust for modern treaties. Selecting the wrong chamber can invalidate a legitimate charter under technicality. Leona commits and aligns her evidence packet to chamber requirements.",
+            "choiceB": "At the final approach, Leona chooses the Iron Gate protocol chamber or the River Oath chamber. One chamber validates legacy seals, while the other validates current alliance ciphers. Legacy validation is quick for old codes, current validation is robust for modern treaties. Selecting the wrong chamber can invalidate a legitimate charter under technicality. Leona commits and aligns her evidence packet to chamber requirements."
+          },
+          "step4": {
+            "choiceA_branchA": "After selecting travel the old king's road and then enter iron gate chamber, Leona reaches a decisive turning point. Old-road continuity and Iron Gate checks validate seal integrity but flag missing seasonal cipher appendix. She tests chamber criteria against route-acquired credentials before submission. This branch reveals whether continuity or adaptability carried greater diplomatic power. Treaty fate now depends on procedural fit and timing.",
+            "choiceA_branchB": "After selecting travel the old king's road and then enter river oath chamber, Leona reaches a decisive turning point. Old-road credentials mismatch River Oath requirements, forcing a rapid supplemental verification attempt. She tests chamber criteria against route-acquired credentials before submission. This branch reveals whether continuity or adaptability carried greater diplomatic power. Treaty fate now depends on procedural fit and timing.",
+            "choiceB_branchA": "After selecting travel the valley envoy route and then enter iron gate chamber, Leona reaches a decisive turning point. Valley updates align perfectly with River Oath checks and authenticate both charter and seasonal ciphers. She tests chamber criteria against route-acquired credentials before submission. This branch reveals whether continuity or adaptability carried greater diplomatic power. Treaty fate now depends on procedural fit and timing.",
+            "choiceB_branchB": "After selecting travel the valley envoy route and then enter river oath chamber, Leona reaches a decisive turning point. Valley route updates do not map cleanly to Iron Gate legacy checks, creating a legal ambiguity dispute. She tests chamber criteria against route-acquired credentials before submission. This branch reveals whether continuity or adaptability carried greater diplomatic power. Treaty fate now depends on procedural fit and timing."
+          },
+          "step5": {
+            "choiceA_branchA": "The final path of travel the old king's road followed by enter iron gate chamber determines the mission outcome. Leona secures provisional alliance status while full defense pact activation is delayed. Leona records how procedural design can shape geopolitical outcomes. She learns that Arthurian leadership requires legal precision and situational intelligence. The frontier alliance stands or falls on her final validation path.",
+            "choiceA_branchB": "The final path of travel the old king's road followed by enter river oath chamber determines the mission outcome. She preserves diplomacy but misses the moonrise deadline, shifting talks to emergency terms. Leona records how procedural design can shape geopolitical outcomes. She learns that Arthurian leadership requires legal precision and situational intelligence. The frontier alliance stands or falls on her final validation path.",
+            "choiceB_branchA": "The final path of travel the valley envoy route followed by enter iron gate chamber determines the mission outcome. Leona finalizes the alliance at full strength, stabilizing frontier defense before dawn. Leona records how procedural design can shape geopolitical outcomes. She learns that Arthurian leadership requires legal precision and situational intelligence. The frontier alliance stands or falls on her final validation path.",
+            "choiceB_branchB": "The final path of travel the valley envoy route followed by enter river oath chamber determines the mission outcome. The alliance holds temporarily under observer status while legal councils reconvene. Leona records how procedural design can shape geopolitical outcomes. She learns that Arthurian leadership requires legal precision and situational intelligence. The frontier alliance stands or falls on her final validation path."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which route should the Camelot hero choose first?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Travel the old king's road"
+              },
+              {
+                "id": "choiceB",
+                "text": "Travel the valley envoy route"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first route affect the mission?",
+              "choiceB": "How did that first route affect the mission?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Leona's first route changed whether she prioritized custody continuity or current cipher relevance."
+                },
+                {
+                  "id": "b",
+                  "text": "Leona's first route did not affect diplomatic validation strategy."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Leona's first route changed whether she prioritized custody continuity or current cipher relevance."
+                },
+                {
+                  "id": "b",
+                  "text": "Leona's first route did not affect diplomatic validation strategy."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second route should be chosen now?",
+              "choiceB": "Which second route should be chosen now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Enter Iron Gate chamber"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Enter River Oath chamber"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Enter Iron Gate chamber"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Enter River Oath chamber"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that second route change the kingdom outcome?",
+              "choiceA_branchB": "How did that second route change the kingdom outcome?",
+              "choiceB_branchA": "How did that second route change the kingdom outcome?",
+              "choiceB_branchB": "How did that second route change the kingdom outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Leona's chamber choice changed whether the alliance was finalized or delayed."
+                },
+                {
+                  "id": "b",
+                  "text": "Leona's chamber choice never changed alliance outcomes."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Leona's chamber choice changed whether the alliance was finalized or delayed."
+                },
+                {
+                  "id": "b",
+                  "text": "Leona's chamber choice never changed alliance outcomes."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Leona's chamber choice changed whether the alliance was finalized or delayed."
+                },
+                {
+                  "id": "b",
+                  "text": "Leona's chamber choice never changed alliance outcomes."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Leona's chamber choice changed whether the alliance was finalized or delayed."
+                },
+                {
+                  "id": "b",
+                  "text": "Leona's chamber choice never changed alliance outcomes."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this Camelot path?",
+              "choiceA_branchB": "Which summary best matches this Camelot path?",
+              "choiceB_branchA": "Which summary best matches this Camelot path?",
+              "choiceB_branchB": "Which summary best matches this Camelot path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Leona's route and validation decisions directly shaped Camelot's alliance result."
+                },
+                {
+                  "id": "b",
+                  "text": "Leona reached the same alliance outcome regardless of her choices."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Leona's route and validation decisions directly shaped Camelot's alliance result."
+                },
+                {
+                  "id": "b",
+                  "text": "Leona reached the same alliance outcome regardless of her choices."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Leona's route and validation decisions directly shaped Camelot's alliance result."
+                },
+                {
+                  "id": "b",
+                  "text": "Leona reached the same alliance outcome regardless of her choices."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Leona's route and validation decisions directly shaped Camelot's alliance result."
+                },
+                {
+                  "id": "b",
+                  "text": "Leona reached the same alliance outcome regardless of her choices."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
       }
     ],
     "6": [
@@ -3959,6 +6159,446 @@
                 {
                   "id": "b",
                   "text": "Codex archival status was identical across all decision paths."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      },
+      {
+        "id": "g6-mystery-dataset",
+        "theme": "mystery",
+        "title": "The Tribunal Data Disappearance",
+        "paragraphs": {
+          "step1": "Tariq is assigned to investigate a missing exoplanet dataset hours before a regional science tribunal. He must recover the dataset and establish a defensible forensic timeline for review. If unresolved, his lab loses submission rights and years of research credibility. Tariq designs a layered inquiry combining digital forensics with physical chain-of-custody checks. He commits to evidentiary rigor over speed even under tribunal pressure.",
+          "step2": {
+            "choiceA": "He begins with server audit trails and reconstructs file access signatures across mirrored nodes. He narrows the breach window to a single synchronization interval with anomalous key rotation. Digital traces provide temporal precision but can be obscured by automated service accounts. Misattributing service events to human actors could compromise tribunal integrity. His initial forensic layer determines whether he optimizes temporal certainty or operational context.",
+            "choiceB": "He begins with lab workstation imaging and storage locker logs tied to data-export devices. He identifies an unregistered transfer drive and a mislabeled locker handoff event. Physical evidence clarifies intent pathways but may underdetermine exact extraction timing. Without synchronized timestamp corroboration, motive narratives can overreach the data. His initial forensic layer determines whether he optimizes temporal certainty or operational context."
+          },
+          "step3": {
+            "choiceA": "Tariq now chooses memory-forensic recovery on the compute cluster or witness re-interview under protocol oath. Memory recovery may expose transient process traces, while oath interviews may resolve authorization anomalies. Machine traces are objective but brittle, interviews are contextual but reliability-weighted. Choosing weak corroboration could render findings inadmissible at tribunal review. He selects one path and pressure-tests every inference against evidentiary standards.",
+            "choiceB": "Tariq now chooses memory-forensic recovery on the compute cluster or witness re-interview under protocol oath. Memory recovery may expose transient process traces, while oath interviews may resolve authorization anomalies. Machine traces are objective but brittle, interviews are contextual but reliability-weighted. Choosing weak corroboration could render findings inadmissible at tribunal review. He selects one path and pressure-tests every inference against evidentiary standards."
+          },
+          "step4": {
+            "choiceA_branchA": "After selecting start with server audit trails and then run memory-forensic recovery, Tariq reaches a decisive turning point. Cluster memory forensics recovers transient encryption residues linking the export to an authorized backup script misconfiguration. He reconciles process artifacts, authorization scope, and custody continuity before filing conclusions. This branch reveals whether computational residue or procedural testimony closes the case stronger. The case now turns on admissibility as much as truth.",
+            "choiceA_branchB": "After selecting start with server audit trails and then run oath witness re-interviews, Tariq reaches a decisive turning point. Oath interviews reveal probable intent but cannot resolve whether extraction occurred before or after key rotation. He reconciles process artifacts, authorization scope, and custody continuity before filing conclusions. This branch reveals whether computational residue or procedural testimony closes the case stronger. The case now turns on admissibility as much as truth.",
+            "choiceB_branchA": "After selecting start with workstation imaging and then run memory-forensic recovery, Tariq reaches a decisive turning point. Memory recovery reconciles locker anomalies with process-level evidence, proving a procedural failure rather than theft. He reconciles process artifacts, authorization scope, and custody continuity before filing conclusions. This branch reveals whether computational residue or procedural testimony closes the case stronger. The case now turns on admissibility as much as truth.",
+            "choiceB_branchB": "After selecting start with workstation imaging and then run oath witness re-interviews, Tariq reaches a decisive turning point. Oath interviews identify conflicting authorization claims and expose governance gaps without technical closure. He reconciles process artifacts, authorization scope, and custody continuity before filing conclusions. This branch reveals whether computational residue or procedural testimony closes the case stronger. The case now turns on admissibility as much as truth."
+          },
+          "step5": {
+            "choiceA_branchA": "The final path of start with server audit trails followed by run memory-forensic recovery determines the mission outcome. Tariq restores the dataset, clears human misconduct claims, and preserves full tribunal standing for the lab. Tariq frames not only what happened, but why his proof survives adversarial scrutiny. He learns advanced mysteries demand methodological humility and evidentiary discipline. The tribunal decision hinges on the robustness of his selected proof architecture.",
+            "choiceA_branchB": "The final path of start with server audit trails followed by run oath witness re-interviews determines the mission outcome. The dataset is recovered, yet the tribunal imposes conditional probation pending deeper technical review. Tariq frames not only what happened, but why his proof survives adversarial scrutiny. He learns advanced mysteries demand methodological humility and evidentiary discipline. The tribunal decision hinges on the robustness of his selected proof architecture.",
+            "choiceB_branchA": "The final path of start with workstation imaging followed by run memory-forensic recovery determines the mission outcome. Tariq submits a definitive report and earns appointment to the institute's data integrity council. Tariq frames not only what happened, but why his proof survives adversarial scrutiny. He learns advanced mysteries demand methodological humility and evidentiary discipline. The tribunal decision hinges on the robustness of his selected proof architecture.",
+            "choiceB_branchB": "The final path of start with workstation imaging followed by run oath witness re-interviews determines the mission outcome. Tribunal defers judgment, allowing temporary submission rights while mandating independent forensic audit. Tariq frames not only what happened, but why his proof survives adversarial scrutiny. He learns advanced mysteries demand methodological humility and evidentiary discipline. The tribunal decision hinges on the robustness of his selected proof architecture."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which investigation starting point should the main detective choose?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Start with server audit trails"
+              },
+              {
+                "id": "choiceB",
+                "text": "Start with workstation imaging"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first investigation choice affect the case?",
+              "choiceB": "How did that first investigation choice affect the case?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Tariq's first forensic layer changed the evidentiary strengths and blind spots of the case."
+                },
+                {
+                  "id": "b",
+                  "text": "Tariq's first forensic layer had no effect on case quality."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Tariq's first forensic layer changed the evidentiary strengths and blind spots of the case."
+                },
+                {
+                  "id": "b",
+                  "text": "Tariq's first forensic layer had no effect on case quality."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second lead should be pursued now?",
+              "choiceB": "Which second lead should be pursued now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Run memory-forensic recovery"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Run oath witness re-interviews"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Run memory-forensic recovery"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Run oath witness re-interviews"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that lead change the investigation outcome?",
+              "choiceA_branchB": "How did that lead change the investigation outcome?",
+              "choiceB_branchA": "How did that lead change the investigation outcome?",
+              "choiceB_branchB": "How did that lead change the investigation outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Tariq's second corroboration path changed admissibility and tribunal confidence."
+                },
+                {
+                  "id": "b",
+                  "text": "Tariq's second corroboration path never changed tribunal outcomes."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Tariq's second corroboration path changed admissibility and tribunal confidence."
+                },
+                {
+                  "id": "b",
+                  "text": "Tariq's second corroboration path never changed tribunal outcomes."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Tariq's second corroboration path changed admissibility and tribunal confidence."
+                },
+                {
+                  "id": "b",
+                  "text": "Tariq's second corroboration path never changed tribunal outcomes."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Tariq's second corroboration path changed admissibility and tribunal confidence."
+                },
+                {
+                  "id": "b",
+                  "text": "Tariq's second corroboration path never changed tribunal outcomes."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this mystery path?",
+              "choiceA_branchB": "Which summary best matches this mystery path?",
+              "choiceB_branchA": "Which summary best matches this mystery path?",
+              "choiceB_branchB": "Which summary best matches this mystery path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Tariq's forensic architecture and corroboration choices directly shaped the tribunal result."
+                },
+                {
+                  "id": "b",
+                  "text": "Tariq reached the same tribunal outcome regardless of his forensic choices."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Tariq's forensic architecture and corroboration choices directly shaped the tribunal result."
+                },
+                {
+                  "id": "b",
+                  "text": "Tariq reached the same tribunal outcome regardless of his forensic choices."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Tariq's forensic architecture and corroboration choices directly shaped the tribunal result."
+                },
+                {
+                  "id": "b",
+                  "text": "Tariq reached the same tribunal outcome regardless of his forensic choices."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Tariq's forensic architecture and corroboration choices directly shaped the tribunal result."
+                },
+                {
+                  "id": "b",
+                  "text": "Tariq reached the same tribunal outcome regardless of his forensic choices."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      },
+      {
+        "id": "g6-arthurian-succession",
+        "theme": "arthurian",
+        "title": "Seren and the Succession Codex",
+        "paragraphs": {
+          "step1": "Seren is entrusted with a sealed succession codex to prevent a civil split among Arthurian border houses. She must authenticate the codex through the correct legal-ritual path before dawn council convenes. Failure risks rival claims, fractured command, and immediate frontier instability. Seren integrates historical precedent, current law, and real-time intelligence to protect legitimacy. She commits to constitutional fidelity even under intense political pressure.",
+          "step2": {
+            "choiceA": "She follows the Crown Archive route and validates precedent clauses against original round-table statutes. She gains doctrinal certainty and a tightly indexed legal chain supporting codex authority. Precedent strength is high, but modern amendment compatibility remains partially unconstrained. A legally elegant but obsolete chain may fail contemporary ratification tests. Her opening route sets whether she leads with historical authority or present legitimacy.",
+            "choiceB": "She follows the Warden Circuit route and gathers current oaths, amendment seals, and regional compliance attestations. She gains live legitimacy signals and amendment alignment across contested houses. Contemporary alignment is strong, but deep precedent anchoring may be thinner. Without robust precedent scaffolding, rivals can challenge interpretive continuity. Her opening route sets whether she leads with historical authority or present legitimacy."
+          },
+          "step3": {
+            "choiceA": "At council hall she chooses the High Seal Chamber or the Oathfire Tribunal Chamber. High Seal privileges statutory continuity, while Oathfire privileges amendment-era consent verification. Continuity pathways maximize legal lineage, consent pathways maximize current enforceability. Selecting the wrong chamber could trigger procedural invalidation despite substantive legitimacy. Seren commits and structures her evidentiary submission to the chamber's burden of proof.",
+            "choiceB": "At council hall she chooses the High Seal Chamber or the Oathfire Tribunal Chamber. High Seal privileges statutory continuity, while Oathfire privileges amendment-era consent verification. Continuity pathways maximize legal lineage, consent pathways maximize current enforceability. Selecting the wrong chamber could trigger procedural invalidation despite substantive legitimacy. Seren commits and structures her evidentiary submission to the chamber's burden of proof."
+          },
+          "step4": {
+            "choiceA_branchA": "After selecting follow crown archive route and then submit in high seal chamber, Seren reaches a decisive turning point. Archive precedent and High Seal review produce airtight lineage proof but trigger one amendment-era compliance challenge. She stress-tests codex clauses against chamber criteria and adversarial objections. This branch reveals whether constitutional continuity or consent architecture carries decisive authority. State stability now depends on legal fit, timing, and procedural legitimacy.",
+            "choiceA_branchB": "After selecting follow crown archive route and then submit in oathfire chamber, Seren reaches a decisive turning point. Archive-heavy evidence in Oathfire chamber underweights consent attestations, extending deliberation under emergency governance. She stress-tests codex clauses against chamber criteria and adversarial objections. This branch reveals whether constitutional continuity or consent architecture carries decisive authority. State stability now depends on legal fit, timing, and procedural legitimacy.",
+            "choiceB_branchA": "After selecting follow warden circuit route and then submit in high seal chamber, Seren reaches a decisive turning point. Warden attestations and Oathfire standards align fully, validating both codex legitimacy and current house consent. She stress-tests codex clauses against chamber criteria and adversarial objections. This branch reveals whether constitutional continuity or consent architecture carries decisive authority. State stability now depends on legal fit, timing, and procedural legitimacy.",
+            "choiceB_branchB": "After selecting follow warden circuit route and then submit in oathfire chamber, Seren reaches a decisive turning point. Warden evidence in High Seal chamber faces continuity objections that cannot be fully resolved in session. She stress-tests codex clauses against chamber criteria and adversarial objections. This branch reveals whether constitutional continuity or consent architecture carries decisive authority. State stability now depends on legal fit, timing, and procedural legitimacy."
+          },
+          "step5": {
+            "choiceA_branchA": "The final path of follow crown archive route followed by submit in high seal chamber determines the mission outcome. Seren secures conditional succession ratification, stabilizing command while requiring follow-on legislative harmonization. Seren documents how governance outcomes emerge from procedural design choices. She learns Arthurian stewardship requires reconciling tradition with living law. The kingdom's constitutional future follows the pathway she validates.",
+            "choiceA_branchB": "The final path of follow crown archive route followed by submit in oathfire chamber determines the mission outcome. Civil split is averted, yet full ratification is delayed until supplemental oaths are verified. Seren documents how governance outcomes emerge from procedural design choices. She learns Arthurian stewardship requires reconciling tradition with living law. The kingdom's constitutional future follows the pathway she validates.",
+            "choiceB_branchA": "The final path of follow warden circuit route followed by submit in high seal chamber determines the mission outcome. Seren secures definitive succession ratification before dawn, preventing factional fracture across the frontier. Seren documents how governance outcomes emerge from procedural design choices. She learns Arthurian stewardship requires reconciling tradition with living law. The kingdom's constitutional future follows the pathway she validates.",
+            "choiceB_branchB": "The final path of follow warden circuit route followed by submit in oathfire chamber determines the mission outcome. A temporary regency is enacted, preserving peace but postponing permanent succession settlement. Seren documents how governance outcomes emerge from procedural design choices. She learns Arthurian stewardship requires reconciling tradition with living law. The kingdom's constitutional future follows the pathway she validates."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "Which route should the Camelot hero choose first?",
+            "options": [
+              {
+                "id": "choiceA",
+                "text": "Follow Crown Archive route"
+              },
+              {
+                "id": "choiceB",
+                "text": "Follow Warden Circuit route"
+              }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "How did that first route affect the mission?",
+              "choiceB": "How did that first route affect the mission?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "a",
+                  "text": "Seren's first legal route changed whether her case emphasized precedent or contemporary legitimacy."
+                },
+                {
+                  "id": "b",
+                  "text": "Seren's first legal route made no difference to succession proof strategy."
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "a",
+                  "text": "Seren's first legal route changed whether her case emphasized precedent or contemporary legitimacy."
+                },
+                {
+                  "id": "b",
+                  "text": "Seren's first legal route made no difference to succession proof strategy."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Which second route should be chosen now?",
+              "choiceB": "Which second route should be chosen now?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                {
+                  "id": "branchA",
+                  "text": "Submit in High Seal chamber"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Submit in Oathfire chamber"
+                }
+              ],
+              "choiceB": [
+                {
+                  "id": "branchA",
+                  "text": "Submit in High Seal chamber"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Submit in Oathfire chamber"
+                }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "How did that second route change the kingdom outcome?",
+              "choiceA_branchB": "How did that second route change the kingdom outcome?",
+              "choiceB_branchA": "How did that second route change the kingdom outcome?",
+              "choiceB_branchB": "How did that second route change the kingdom outcome?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Seren's chamber choice changed whether ratification was definitive, conditional, or delayed."
+                },
+                {
+                  "id": "b",
+                  "text": "Seren's chamber choice never changed ratification outcomes."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Seren's chamber choice changed whether ratification was definitive, conditional, or delayed."
+                },
+                {
+                  "id": "b",
+                  "text": "Seren's chamber choice never changed ratification outcomes."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Seren's chamber choice changed whether ratification was definitive, conditional, or delayed."
+                },
+                {
+                  "id": "b",
+                  "text": "Seren's chamber choice never changed ratification outcomes."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Seren's chamber choice changed whether ratification was definitive, conditional, or delayed."
+                },
+                {
+                  "id": "b",
+                  "text": "Seren's chamber choice never changed ratification outcomes."
+                }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which summary best matches this Camelot path?",
+              "choiceA_branchB": "Which summary best matches this Camelot path?",
+              "choiceB_branchA": "Which summary best matches this Camelot path?",
+              "choiceB_branchB": "Which summary best matches this Camelot path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                {
+                  "id": "a",
+                  "text": "Seren's legal pathway and chamber decisions directly shaped Camelot's constitutional outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Seren reached the same constitutional outcome regardless of her legal choices."
+                }
+              ],
+              "choiceA_branchB": [
+                {
+                  "id": "a",
+                  "text": "Seren's legal pathway and chamber decisions directly shaped Camelot's constitutional outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Seren reached the same constitutional outcome regardless of her legal choices."
+                }
+              ],
+              "choiceB_branchA": [
+                {
+                  "id": "a",
+                  "text": "Seren's legal pathway and chamber decisions directly shaped Camelot's constitutional outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Seren reached the same constitutional outcome regardless of her legal choices."
+                }
+              ],
+              "choiceB_branchB": [
+                {
+                  "id": "a",
+                  "text": "Seren's legal pathway and chamber decisions directly shaped Camelot's constitutional outcome."
+                },
+                {
+                  "id": "b",
+                  "text": "Seren reached the same constitutional outcome regardless of her legal choices."
                 }
               ]
             },
