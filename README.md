@@ -1,4 +1,4 @@
-# LaunchPad Reading Application
+# Reading Time Warp
 
 ![Status](https://img.shields.io/badge/Status-Active%20Prototype-1f8f6a)
 ![Focus](https://img.shields.io/badge/Focus-Adaptive%20Reading%20Assessment-2f6fed)
@@ -17,7 +17,7 @@ As a high school ELA teacher working with special education students, I wanted t
 
 ## Current Status
 
-LaunchPad is currently in active prototype development and includes a working adaptive quiz flow with grade-level progression from 1 to 6.
+Reading Time Warp is currently in active prototype development and includes a working adaptive quiz flow with grade-level progression from 1 to 6.
 
 What works now:
 

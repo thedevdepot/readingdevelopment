@@ -1,5 +1,5 @@
 {
-  "name": "reading_level_tracker",
+  "name": "reading-time-warp",
   "version": "1.0.0",
   "description": "Welcome to the Reading Development Web Application! This platform helps students track and improve their reading level.",
   "main": "index.js",
