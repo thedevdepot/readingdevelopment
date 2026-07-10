@@ -28,6 +28,10 @@ What works now:
 - Reading recommendations aligned to estimated level
 - Mobile-responsive experience with tailored interaction behavior for smaller screens
 
+Planned soon:
+
+- User authentication with Azure will be added in an upcoming update
+
 Implemented question types in the current app:
 
 - Multiple choice
