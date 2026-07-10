@@ -190,5 +190,16 @@ Research and classroom practice suggest that reading comprehension is better mea
 
 Rather than relying on a single format, this project aims to gather evidence across modalities and generate a more accurate reading-level estimate with better instructional recommendations.
 
+Multiple modalities reduce false positives and false negatives in reading-level placement. For example, a student may struggle with multi-step written responses but still show strong comprehension through sequencing, vocabulary-in-context, and evidence selection. Another student may perform well on multiple choice while revealing gaps in inferencing when asked to justify answers or identify emotional nuance in character-focused prompts.
+
+In practice, this section of the system is intended to support:
+
+- Skill triangulation across question types before recommending a level change
+- Better distinction between decoding, comprehension, and expressive language challenges
+- More targeted instructional next steps (for example: vocabulary intervention, inferencing mini-lessons, or evidence-based response practice)
+- Higher student engagement by offering diverse ways to demonstrate understanding
+
+As the platform evolves, modality-level performance will be used to generate a profile that is more instruction-ready than a single composite score, helping teachers quickly identify both strengths and priority growth areas.
+
 > James 1:5 (KJV)
 > If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.
