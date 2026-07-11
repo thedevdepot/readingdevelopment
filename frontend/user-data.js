@@ -1,7 +1,11 @@
 (function () {
   const restEntityPaths = [
     "/data-api/rest/UserProfile",
-    "/rest/UserProfile"
+    "/data-api/rest/userprofile",
+    "/data-api/rest/UserProfiles",
+    "/data-api/rest/userprofiles",
+    "/rest/UserProfile",
+    "/rest/userprofile"
   ];
 
   function sanitizeName(value) {
@@ -85,7 +89,19 @@
       return null;
     }
 
-    return response.json();
+    const text = await response.text();
+    if (!text) {
+      return null;
+    }
+
+    try {
+      return JSON.parse(text);
+    } catch (error) {
+      const parseError = new Error("Response was not valid JSON");
+      parseError.status = response.status;
+      parseError.body = text.slice(0, 400);
+      throw parseError;
+    }
   }
 
   async function getCurrentUser() {
