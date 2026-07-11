@@ -121,6 +121,15 @@
         };
       }
 
+      function escapeHtml(value) {
+        return String(value || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
       function renderAuthActions(isAuthenticated) {
         if (isAuthenticated) {
           authActionsEl.innerHTML = '' +
@@ -164,19 +173,21 @@
       }
 
       function renderFirstTime(user) {
+        var safeName = escapeHtml(user.first_name || 'Reader');
         dashboardCardEl.innerHTML = '' +
-          '<h3>Welcome, ' + user.first_name + '</h3>' +
+          '<h3>Welcome, ' + safeName + '</h3>' +
           '<p>You are signed in, but you have not taken a saved quiz yet.</p>' +
           '<p><a class="inline-link" href="index.html">Start your first reading quiz</a> to generate your chart and reading path.</p>';
       }
 
       function renderDashboard(user, scores) {
+        var safeName = escapeHtml(user.first_name || 'Reader');
         var suggestion = getSuggestion(scores);
         var recentAverage = average(scores.slice(-10));
         var averageGrade = Math.max(1, Math.min(6, Math.round(recentAverage || 1)));
 
         dashboardCardEl.innerHTML = '' +
-          '<h3>Welcome back, ' + user.first_name + '</h3>' +
+          '<h3>Welcome back, ' + safeName + '</h3>' +
           '<p class="dashboard-meta">Showing your most recent 10 quizzes from Cosmos DB.</p>' +
           renderChart(scores) +
           '<p class="dashboard-metric">Recent average: <strong>Grade ' + averageGrade + '</strong></p>' +
