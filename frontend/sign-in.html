@@ -23,8 +23,16 @@
       </header>
 
       <main class="main-content" id="main-content">
-        <h2>Sign In (placeholder)</h2>
-        <p>This is a placeholder page for the sign-in flow. Integration with authentication can be added later.</p>
+        <section class="signin-hero" aria-labelledby="signin-title">
+          <p class="signin-kicker">Progress Hub</p>
+          <h2 id="signin-title">Sign In and Track Your Reading Growth</h2>
+          <p class="signin-intro">Use Azure Static Web Apps authentication to save quiz scores and unlock your personalized reading path.</p>
+          <div id="authActions" class="auth-actions"></div>
+        </section>
+
+        <section id="dashboardCard" class="dashboard-card" aria-live="polite" aria-atomic="true">
+          <p>Loading account data...</p>
+        </section>
       </main>
 
       <footer class="small-footer" role="contentinfo">
@@ -33,6 +41,7 @@
     </div>
   </div>
   <div id="reading-filter-overlay" role="presentation" aria-hidden="true"></div>
+  <script src="user-data.js"></script>
   <script>
     (function () {
       var overlay = document.getElementById('reading-filter-overlay');
@@ -48,6 +57,174 @@
         localStorage.setItem(KEY, next ? '1' : '0');
         apply(next);
       });
+    }());
+
+    (function () {
+      var authActionsEl = document.getElementById('authActions');
+      var dashboardCardEl = document.getElementById('dashboardCard');
+      var userDataApi = window.readingAppUserData;
+      var loginAad = '/.auth/login/aad?post_login_redirect_uri=/sign-in.html';
+      var logoutUrl = '/.auth/logout?post_logout_redirect_uri=/sign-in.html';
+
+      function average(values) {
+        if (!values.length) {
+          return 0;
+        }
+        return values.reduce(function (sum, current) { return sum + current; }, 0) / values.length;
+      }
+
+      function getTrend(values) {
+        if (values.length < 3) {
+          return 'steady';
+        }
+
+        var recent = average(values.slice(-3));
+        var baseline = average(values.slice(0, Math.max(1, values.length - 3)));
+        if (recent - baseline >= 0.45) {
+          return 'up';
+        }
+        if (baseline - recent >= 0.45) {
+          return 'down';
+        }
+        return 'steady';
+      }
+
+      function getSuggestion(scores) {
+        var recentScores = scores.slice(-5);
+        var avg = average(recentScores);
+        var grade = Math.max(1, Math.min(6, Math.round(avg || 1)));
+        var trend = getTrend(scores);
+
+        if (trend === 'up') {
+          return {
+            title: 'You are climbing quickly',
+            text: 'Your recent quizzes are trending upward. Try one challenge theme above your average and one comfort-level story each day.',
+            link: 'story-reader.html?grade=' + Math.min(6, grade + 1) + '&theme=space',
+            linkLabel: 'Try a stretch story'
+          };
+        }
+
+        if (trend === 'down') {
+          return {
+            title: 'Build momentum with consistency',
+            text: 'Scores dipped recently. Focus on short daily practice at your current level, then retest in 2 days.',
+            link: 'story-reader.html?grade=' + grade + '&theme=fiction',
+            linkLabel: 'Practice at your level'
+          };
+        }
+
+        return {
+          title: 'Steady foundation',
+          text: 'You are holding a stable reading level. Alternate between fiction and mystery to grow comprehension range.',
+          link: 'story-reader.html?grade=' + grade + '&theme=mystery',
+          linkLabel: 'Open your next story'
+        };
+      }
+
+      function renderAuthActions(isAuthenticated) {
+        if (isAuthenticated) {
+          authActionsEl.innerHTML = '' +
+            '<a class="auth-btn auth-btn-primary" href="index.html">Take Reading Quiz</a>' +
+            '<a class="auth-btn auth-btn-secondary" href="' + logoutUrl + '">Log Out</a>';
+          return;
+        }
+
+        authActionsEl.innerHTML = '' +
+          '<a class="auth-btn auth-btn-primary" href="' + loginAad + '">Sign In With Microsoft</a>' +
+          '<a class="auth-btn auth-btn-secondary" href="index.html">Try Quiz Without Sign-In</a>';
+      }
+
+      function renderChart(scores) {
+        var lastTen = scores.slice(-10);
+        if (!lastTen.length) {
+          return '<p class="empty-state">No saved scores yet.</p>';
+        }
+
+        var bars = lastTen.map(function (score, idx) {
+          var safeScore = Math.max(1, Math.min(6, Number(score) || 1));
+          var height = Math.max(14, Math.round((safeScore / 6) * 100));
+          return '' +
+            '<div class="score-bar-wrap" aria-label="Quiz ' + (idx + 1) + ': Grade ' + safeScore + '">' +
+              '<div class="score-bar" style="height:' + height + '%;"><span>G' + safeScore + '</span></div>' +
+            '</div>';
+        }).join('');
+
+        return '' +
+          '<div class="score-chart-shell">' +
+            '<div class="score-chart-grid" aria-hidden="true"></div>' +
+            '<div class="score-bars" role="img" aria-label="Bar chart of your last ten quiz grades">' + bars + '</div>' +
+          '</div>';
+      }
+
+      function renderLoggedOut() {
+        dashboardCardEl.innerHTML = '' +
+          '<h3>Account Status: Signed Out</h3>' +
+          '<p>Sign in to store quiz history in Cosmos DB and get reading path suggestions from your results.</p>' +
+          '<p><a class="inline-link" href="index.html">Go to the quiz</a> whenever you are ready.</p>';
+      }
+
+      function renderFirstTime(user) {
+        dashboardCardEl.innerHTML = '' +
+          '<h3>Welcome, ' + user.first_name + '</h3>' +
+          '<p>You are signed in, but you have not taken a saved quiz yet.</p>' +
+          '<p><a class="inline-link" href="index.html">Start your first reading quiz</a> to generate your chart and reading path.</p>';
+      }
+
+      function renderDashboard(user, scores) {
+        var suggestion = getSuggestion(scores);
+        var recentAverage = average(scores.slice(-10));
+        var averageGrade = Math.max(1, Math.min(6, Math.round(recentAverage || 1)));
+
+        dashboardCardEl.innerHTML = '' +
+          '<h3>Welcome back, ' + user.first_name + '</h3>' +
+          '<p class="dashboard-meta">Showing your most recent 10 quizzes from Cosmos DB.</p>' +
+          renderChart(scores) +
+          '<p class="dashboard-metric">Recent average: <strong>Grade ' + averageGrade + '</strong></p>' +
+          '<div class="reading-path-card">' +
+            '<h4>' + suggestion.title + '</h4>' +
+            '<p>' + suggestion.text + '</p>' +
+            '<a class="inline-link" href="' + suggestion.link + '">' + suggestion.linkLabel + '</a>' +
+          '</div>' +
+          '<p><a class="inline-link" href="index.html">Take another quiz now</a></p>';
+      }
+
+      function renderError() {
+        dashboardCardEl.innerHTML = '' +
+          '<h3>We could not load your dashboard</h3>' +
+          '<p>Authentication or database access is not available at the moment.</p>' +
+          '<p><a class="inline-link" href="index.html">Go to quiz page</a> and try again later.</p>';
+      }
+
+      async function initializeDashboard() {
+        if (!userDataApi || typeof userDataApi.getCurrentUserProfileWithScores !== 'function') {
+          renderAuthActions(false);
+          renderError();
+          return;
+        }
+
+        try {
+          var session = await userDataApi.getCurrentUserProfileWithScores();
+          renderAuthActions(session.authenticated);
+
+          if (!session.authenticated || !session.user) {
+            renderLoggedOut();
+            return;
+          }
+
+          if (!session.scores || session.scores.length === 0) {
+            renderFirstTime(session.user);
+            return;
+          }
+
+          renderDashboard(session.user, session.scores);
+        } catch (error) {
+          console.error('Failed to initialize sign-in dashboard', error);
+          renderAuthActions(false);
+          renderError();
+        }
+      }
+
+      initializeDashboard();
     }());
   </script>
 </body>

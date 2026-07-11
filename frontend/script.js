@@ -1210,6 +1210,7 @@ function showResult() {
     <h2>Quiz Complete</h2>
     <p>This short quiz estimates a student's reading level from Grade 1 up to Grade 6.</p>
     <p>Weighted estimated reading level: Grade ${grade}</p>
+    <p id="saveStatus" class="save-status">Saving your score...</p>
     <div class="recommendations">
       <h3>Choose a Story Theme for Grade ${grade}</h3>
       <p>Pick a story type to continue reading at your estimated level:</p>
@@ -1223,6 +1224,39 @@ function showResult() {
       <p><a href="reading-resources.html#grade-story-links">Or choose another grade level first</a>.</p>
     </div>
   `;
+
+  saveQuizResultForCurrentUser(grade);
+}
+
+async function saveQuizResultForCurrentUser(grade) {
+  const statusEl = document.getElementById("saveStatus");
+  if (!statusEl) {
+    return;
+  }
+
+  const userDataApi = window.readingAppUserData;
+  if (!userDataApi || typeof userDataApi.saveQuizGradeForCurrentUser !== "function") {
+    statusEl.textContent = "Sign in on the Sign In page to save quiz history.";
+    return;
+  }
+
+  try {
+    const saveResult = await userDataApi.saveQuizGradeForCurrentUser(grade);
+    if (saveResult.saved) {
+      statusEl.innerHTML = "Saved to your profile. <a href=\"sign-in.html\">View your latest chart and reading path</a>.";
+      return;
+    }
+
+    if (saveResult.reason === "not-authenticated") {
+      statusEl.innerHTML = "You are not signed in. <a href=\"sign-in.html\">Sign in to store quiz history</a>.";
+      return;
+    }
+
+    statusEl.innerHTML = "We could not save right now. You can still continue reading, then <a href=\"sign-in.html\">check account status</a>.";
+  } catch (error) {
+    console.error("Failed to save quiz result", error);
+    statusEl.innerHTML = "We could not save right now. You can still continue reading, then <a href=\"sign-in.html\">check account status</a>.";
+  }
 }
 
 nextBtn.onclick = () => {
