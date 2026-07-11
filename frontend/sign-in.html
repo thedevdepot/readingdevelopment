@@ -34,7 +34,7 @@
           <p>Loading account data...</p>
         </section>
 
-        <section class="share-card" aria-labelledby="share-title">
+        <section id="shareCard" class="share-card hidden" aria-labelledby="share-title">
           <h3 id="share-title">Share Progress With Parent or Teacher</h3>
           <p class="share-intro">Enter an email address and we will open a premade message celebrating progress and sharing recent quiz results.</p>
           <form id="shareForm" class="share-form" novalidate>
@@ -79,6 +79,7 @@
       var shareFormEl = document.getElementById('shareForm');
       var shareEmailEl = document.getElementById('shareEmail');
       var shareStatusEl = document.getElementById('shareStatus');
+      var shareCardEl = document.getElementById('shareCard');
       var dashboardSnapshot = {
         authenticated: false,
         user: null,
@@ -290,6 +291,14 @@
         });
       }
 
+      function updateShareCardVisibility() {
+        var canShare = !!(dashboardSnapshot.authenticated && dashboardSnapshot.user && Array.isArray(dashboardSnapshot.scores) && dashboardSnapshot.scores.length > 0);
+        shareCardEl.classList.toggle('hidden', !canShare);
+        if (!canShare) {
+          shareStatusEl.textContent = '';
+        }
+      }
+
       async function initializeDashboard() {
         if (!userDataApi || typeof userDataApi.getCurrentUserProfileWithScores !== 'function') {
           renderAuthActions(false);
@@ -304,6 +313,7 @@
             user: session.user || null,
             scores: Array.isArray(session.scores) ? session.scores : []
           };
+          updateShareCardVisibility();
           renderAuthActions(session.authenticated);
 
           if (!session.authenticated || !session.user) {
@@ -324,6 +334,7 @@
             user: null,
             scores: []
           };
+          updateShareCardVisibility();
           renderAuthActions(false);
           renderError();
         }
