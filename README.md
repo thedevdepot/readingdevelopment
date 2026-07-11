@@ -27,10 +27,14 @@ What works now:
 - Progress tracking during assessment
 - Reading recommendations aligned to estimated level
 - Mobile-responsive experience with tailored interaction behavior for smaller screens
+- Azure Static Web Apps sign-in integration (Microsoft/Azure AD)
+- Quiz score persistence to Cosmos DB (NoSQL) through Static Web Apps Data API
+- Personalized sign-in dashboard with recent quiz chart and reading path suggestions
+- Parent/teacher progress sharing via prefilled email from the sign-in page
 
 Planned soon:
 
-- User authentication with Azure will be added in an upcoming update
+- Expanded analytics and teacher-facing reporting views
 
 Implemented question types in the current app:
 
@@ -96,6 +100,8 @@ Current implementation:
 - CSV and JSON question banks
 - CSV recommendation data
 - Azure Static Web Apps
+- Azure Static Web Apps Authentication (`/.auth/*`)
+- Azure Static Web Apps Data API Builder + Cosmos DB NoSQL
 
 ![App Architecture](./appArchitecture.png)
 
@@ -125,6 +131,7 @@ Future exploration:
 │   ├── learning-strategies.html
 │   ├── reading-resources.html
 │   ├── sign-in.html
+│   ├── user-data.js
 │   ├── multiple-choice-questions.csv
 │   ├── sentence-completion-questions.csv
 │   ├── vocabulary-in-context-questions.csv
@@ -136,10 +143,30 @@ Future exploration:
 │   ├── character-emotion-questions.json
 │   ├── recommendations.csv
 │   └── staticwebapp.config.json
+├── swa-db-connections/
+│   ├── staticwebapp.database.schema.gql
+│   └── staticwebapp.database.config.json
 ├── package.json
 ├── staticwebapp.config.json
 └── README.md
 ```
+
+---
+
+## Authentication and Data Flow
+
+- Sign-in/out uses Azure Static Web Apps auth endpoints on the sign-in page.
+- The app reads the authenticated user identity from `/.auth/me`.
+- On quiz completion, grade results are stored in the user profile record in Cosmos DB.
+- User profile fields currently include:
+	- `id`
+	- `first_name`
+	- `email`
+	- `quiz_scores` (integer array)
+- The sign-in dashboard displays the most recent quiz results and a suggestion path for next reading practice.
+- Users can generate a prewritten progress email to a parent or teacher from the sign-in page.
+
+Data API configuration is defined in `swa-db-connections/staticwebapp.database.config.json` and schema in `swa-db-connections/staticwebapp.database.schema.gql`.
 
 ---
 
