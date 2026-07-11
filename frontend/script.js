@@ -1252,7 +1252,8 @@ async function saveQuizResultForCurrentUser(grade) {
       return;
     }
 
-    statusEl.innerHTML = "We could not save right now. You can still continue reading, then <a href=\"sign-in.html\">check account status</a>.";
+    const codeText = saveResult && saveResult.errorStatus ? ` (error ${saveResult.errorStatus})` : "";
+    statusEl.innerHTML = `We could not save right now${codeText}. You can still continue reading, then <a href=\"sign-in.html\">check account status</a>.`;
   } catch (error) {
     console.error("Failed to save quiz result", error);
     statusEl.innerHTML = "We could not save right now. You can still continue reading, then <a href=\"sign-in.html\">check account status</a>.";

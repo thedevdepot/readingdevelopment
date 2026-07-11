@@ -199,18 +199,60 @@
     });
   }
 
-  async function updateProfile(basePath, id, profile) {
-    try {
-      return await fetchJson(basePath + "/id/" + encodeURIComponent(id), {
-        method: "PATCH",
-        body: JSON.stringify(profile)
-      });
-    } catch (patchError) {
-      return fetchJson(basePath + "/id/" + encodeURIComponent(id), {
-        method: "PUT",
-        body: JSON.stringify(profile)
-      });
+  async function requestProfileWrite(url, method, profile) {
+    return fetchJson(url, {
+      method,
+      body: JSON.stringify(profile)
+    });
+  }
+
+  async function writeProfile(basePath, id, profile, preferUpdate) {
+    const encodedId = encodeURIComponent(id);
+    const idPath = basePath + "/id/" + encodedId;
+    const plainIdPath = basePath + "/" + encodedId;
+
+    const plans = preferUpdate ? [
+      { method: "PATCH", url: idPath },
+      { method: "PUT", url: idPath },
+      { method: "PUT", url: plainIdPath },
+      { method: "PATCH", url: plainIdPath },
+      { method: "POST", url: basePath }
+    ] : [
+      { method: "POST", url: basePath },
+      { method: "PUT", url: idPath },
+      { method: "PATCH", url: idPath },
+      { method: "PUT", url: plainIdPath },
+      { method: "PATCH", url: plainIdPath }
+    ];
+
+    let lastError = null;
+    const failures = [];
+
+    for (let i = 0; i < plans.length; i += 1) {
+      const plan = plans[i];
+      try {
+        const payload = await requestProfileWrite(plan.url, plan.method, profile);
+        return {
+          ok: true,
+          payload,
+          failures
+        };
+      } catch (error) {
+        lastError = error;
+        failures.push({
+          method: plan.method,
+          url: plan.url,
+          status: error && error.status ? error.status : null,
+          body: error && error.body ? String(error.body).slice(0, 240) : ""
+        });
+      }
     }
+
+    return {
+      ok: false,
+      error: lastError,
+      failures
+    };
   }
 
   async function saveQuizGradeForCurrentUser(grade) {
@@ -238,12 +280,12 @@
     let lastError = null;
     for (let i = 0; i < restEntityPaths.length; i += 1) {
       const basePath = restEntityPaths[i];
-      try {
-        if (existing) {
-          await updateProfile(basePath, record.id, record);
-        } else {
-          await createProfile(basePath, record);
-        }
+        try {
+          const writeResult = await writeProfile(basePath, record.id, record, !!existing);
+          if (!writeResult.ok) {
+            lastError = writeResult.error || lastError;
+            continue;
+          }
 
         return {
           saved: true,
@@ -260,6 +302,8 @@
       saved: false,
       reason: "save-failed",
       error: lastError,
+      errorStatus: lastError && lastError.status ? lastError.status : null,
+      errorBody: lastError && lastError.body ? String(lastError.body).slice(0, 300) : "",
       user
     };
   }
