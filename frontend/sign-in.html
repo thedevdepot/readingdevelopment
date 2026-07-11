@@ -33,6 +33,17 @@
         <section id="dashboardCard" class="dashboard-card" aria-live="polite" aria-atomic="true">
           <p>Loading account data...</p>
         </section>
+
+        <section class="share-card" aria-labelledby="share-title">
+          <h3 id="share-title">Share Progress With Parent or Teacher</h3>
+          <p class="share-intro">Enter an email address and we will open a premade message celebrating progress and sharing recent quiz results.</p>
+          <form id="shareForm" class="share-form" novalidate>
+            <label for="shareEmail">Parent or teacher email</label>
+            <input id="shareEmail" name="shareEmail" type="email" autocomplete="email" placeholder="name@example.com" required>
+            <button type="submit" class="auth-btn auth-btn-primary">Create Email</button>
+          </form>
+          <p id="shareStatus" class="share-status" aria-live="polite"></p>
+        </section>
       </main>
 
       <footer class="small-footer" role="contentinfo">
@@ -65,6 +76,14 @@
       var userDataApi = window.readingAppUserData;
       var loginAad = '/.auth/login/aad?post_login_redirect_uri=/sign-in.html';
       var logoutUrl = '/.auth/logout?post_logout_redirect_uri=/sign-in.html';
+      var shareFormEl = document.getElementById('shareForm');
+      var shareEmailEl = document.getElementById('shareEmail');
+      var shareStatusEl = document.getElementById('shareStatus');
+      var dashboardSnapshot = {
+        authenticated: false,
+        user: null,
+        scores: []
+      };
 
       function average(values) {
         if (!values.length) {
@@ -206,6 +225,71 @@
           '<p><a class="inline-link" href="index.html">Go to quiz page</a> and try again later.</p>';
       }
 
+      function isValidEmail(value) {
+        var email = String(value || '').trim();
+        if (!email) {
+          return false;
+        }
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      function getQuickAdText() {
+        return 'Reading Time Warp is a fun and supportive reading app that helps students discover their current reading level and grow with targeted stories and resources.';
+      }
+
+      function getScoreSummary(scores) {
+        if (!scores || !scores.length) {
+          return 'No completed quizzes are saved yet.';
+        }
+
+        var lastTen = scores.slice(-10);
+        var averageScore = Math.max(1, Math.min(6, Math.round(average(lastTen))));
+        return 'Recent quiz grades (latest up to 10): ' + lastTen.join(', ') + '. Average grade estimate: ' + averageScore + '.';
+      }
+
+      function buildEmailBody() {
+        var name = dashboardSnapshot.user && dashboardSnapshot.user.first_name ? dashboardSnapshot.user.first_name : 'This student';
+        var safeName = String(name);
+        var summary = getScoreSummary(dashboardSnapshot.scores || []);
+
+        return [
+          'Hello Parent/Teacher,',
+          '',
+          'Joyful update: ' + safeName + ' just completed reading quiz practice on Reading Time Warp!',
+          '',
+          summary,
+          '',
+          getQuickAdText(),
+          '',
+          'You can explore the app here: ' + window.location.origin + '/index.html',
+          '',
+          'Thank you for supporting this reading journey!'
+        ].join('\n');
+      }
+
+      function initShareForm() {
+        shareFormEl.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          var toEmail = String(shareEmailEl.value || '').trim();
+          if (!isValidEmail(toEmail)) {
+            shareStatusEl.textContent = 'Please enter a valid email address.';
+            return;
+          }
+
+          if (!dashboardSnapshot.authenticated || !dashboardSnapshot.user) {
+            shareStatusEl.textContent = 'Sign in first to include personalized quiz progress.';
+            return;
+          }
+
+          var subject = encodeURIComponent('Joyful Reading Progress Update from Reading Time Warp');
+          var body = encodeURIComponent(buildEmailBody());
+          var mailto = 'mailto:' + encodeURIComponent(toEmail) + '?subject=' + subject + '&body=' + body;
+          window.location.href = mailto;
+          shareStatusEl.textContent = 'Your email app should open with a premade message.';
+        });
+      }
+
       async function initializeDashboard() {
         if (!userDataApi || typeof userDataApi.getCurrentUserProfileWithScores !== 'function') {
           renderAuthActions(false);
@@ -215,6 +299,11 @@
 
         try {
           var session = await userDataApi.getCurrentUserProfileWithScores();
+          dashboardSnapshot = {
+            authenticated: !!session.authenticated,
+            user: session.user || null,
+            scores: Array.isArray(session.scores) ? session.scores : []
+          };
           renderAuthActions(session.authenticated);
 
           if (!session.authenticated || !session.user) {
@@ -230,11 +319,17 @@
           renderDashboard(session.user, session.scores);
         } catch (error) {
           console.error('Failed to initialize sign-in dashboard', error);
+          dashboardSnapshot = {
+            authenticated: false,
+            user: null,
+            scores: []
+          };
           renderAuthActions(false);
           renderError();
         }
       }
 
+      initShareForm();
       initializeDashboard();
     }());
   </script>

@@ -1418,6 +1418,59 @@ button.secondary:hover {
   border: 1px solid rgba(20, 103, 94, 0.35);
 }
 
+.share-card {
+  margin-top: 14px;
+  padding: clamp(14px, 2.2vw, 22px);
+  border-radius: 18px;
+  border: 1px solid rgba(19, 94, 85, 0.33);
+  background: linear-gradient(170deg, rgba(255, 252, 237, 0.88) 0%, rgba(214, 244, 239, 0.86) 100%);
+}
+
+.share-intro {
+  margin-top: 0;
+  color: #124f49;
+}
+
+.share-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.share-form label {
+  grid-column: 1 / -1;
+  font-weight: 700;
+  color: #11433e;
+}
+
+.share-form input {
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(12, 88, 79, 0.45);
+  padding: 0 12px;
+  font-size: 0.95rem;
+  background: #ffffff;
+  color: #0d3d39;
+}
+
+.share-form input:focus-visible {
+  outline: 3px solid rgba(19, 116, 104, 0.28);
+  outline-offset: 1px;
+}
+
+.share-form button {
+  margin: 0;
+  min-height: 44px;
+}
+
+.share-status {
+  min-height: 24px;
+  margin: 10px 0 0;
+  color: #0f4e48;
+  font-weight: 600;
+}
+
 @media (max-width: 720px) {
   .score-bars {
     gap: 6px;
@@ -1430,6 +1483,10 @@ button.secondary:hover {
 
   .score-bar {
     max-width: 28px;
+  }
+
+  .share-form {
+    grid-template-columns: 1fr;
   }
 }
 
