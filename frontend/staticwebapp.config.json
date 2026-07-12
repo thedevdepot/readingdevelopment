@@ -7,6 +7,6 @@
   },
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/assets/*", "/images/*", "/favicon.png"]
+    "exclude": ["/assets/*", "/images/*", "/favicon.png", "/api/*", "/data-api/*", "/.auth/*"]
   }
 }
