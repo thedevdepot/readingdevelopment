@@ -1253,7 +1253,14 @@ async function saveQuizResultForCurrentUser(grade) {
     }
 
     const codeText = saveResult && saveResult.errorStatus ? ` (error ${saveResult.errorStatus})` : "";
+    const bodyText = saveResult && saveResult.errorBody ? ` Response: ${saveResult.errorBody}` : "";
     statusEl.innerHTML = `We could not save right now${codeText}. You can still continue reading, then <a href=\"sign-in.html\">check account status</a>.`;
+    if (bodyText) {
+      console.error("Save failed response body", bodyText);
+    }
+    if (saveResult && Array.isArray(saveResult.failures) && saveResult.failures.length > 0) {
+      console.error("Save attempt details", saveResult.failures);
+    }
   } catch (error) {
     console.error("Failed to save quiz result", error);
     statusEl.innerHTML = "We could not save right now. You can still continue reading, then <a href=\"sign-in.html\">check account status</a>.";

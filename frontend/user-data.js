@@ -75,7 +75,8 @@
 
     if (!response.ok) {
       const text = await response.text();
-      const error = new Error("Request failed: " + response.status + " " + response.statusText);
+      const detail = text ? " Response body: " + text.slice(0, 400) : "";
+      const error = new Error("Request failed: " + response.status + " " + response.statusText + detail);
       error.status = response.status;
       error.body = text;
       throw error;
@@ -274,14 +275,16 @@
     };
 
     let lastError = null;
+    let lastFailures = [];
     for (let i = 0; i < restEntityPaths.length; i += 1) {
       const basePath = restEntityPaths[i];
-        try {
-          const writeResult = await writeProfile(basePath, record.id, record, !!existing);
-          if (!writeResult.ok) {
-            lastError = writeResult.error || lastError;
-            continue;
-          }
+      try {
+        const writeResult = await writeProfile(basePath, record.id, record, !!existing);
+        if (!writeResult.ok) {
+          lastError = writeResult.error || lastError;
+          lastFailures = writeResult.failures || lastFailures;
+          continue;
+        }
 
         return {
           saved: true,
@@ -300,6 +303,7 @@
       error: lastError,
       errorStatus: lastError && lastError.status ? lastError.status : null,
       errorBody: lastError && lastError.body ? String(lastError.body).slice(0, 300) : "",
+      failures: lastFailures,
       user
     };
   }
