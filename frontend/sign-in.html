@@ -44,6 +44,13 @@
           </form>
           <p id="shareStatus" class="share-status" aria-live="polite"></p>
         </section>
+
+        <section class="share-card" aria-labelledby="auth-debug-title">
+          <h3 id="auth-debug-title">Azure Auth Debug</h3>
+          <p class="share-intro">This panel shows what the Azure Static Web Apps auth endpoint returns for this browser session.</p>
+          <p id="authDebugStatus" class="share-status" aria-live="polite">Checking Azure sign-in status...</p>
+          <pre id="authDebugPayload" class="auth-debug-payload" aria-label="Azure auth payload">Loading...</pre>
+        </section>
       </main>
 
       <footer class="small-footer" role="contentinfo">
@@ -80,6 +87,8 @@
       var shareEmailEl = document.getElementById('shareEmail');
       var shareStatusEl = document.getElementById('shareStatus');
       var shareCardEl = document.getElementById('shareCard');
+      var authDebugStatusEl = document.getElementById('authDebugStatus');
+      var authDebugPayloadEl = document.getElementById('authDebugPayload');
       var dashboardSnapshot = {
         authenticated: false,
         user: null,
@@ -268,6 +277,25 @@
         ].join('\n');
       }
 
+      async function loadAuthDebug() {
+        try {
+          var response = await fetch('/.auth/me', { credentials: 'same-origin' });
+          var payload = await response.json();
+          authDebugPayloadEl.textContent = JSON.stringify(payload, null, 2);
+
+          var principal = payload && payload.clientPrincipal;
+          if (principal && principal.userId) {
+            authDebugStatusEl.textContent = 'Signed in to Azure Static Web Apps auth as ' + (principal.userDetails || principal.userId) + '.';
+            return;
+          }
+
+          authDebugStatusEl.textContent = 'No Azure login session is active in this browser.';
+        } catch (error) {
+          authDebugStatusEl.textContent = 'Could not read Azure auth state.';
+          authDebugPayloadEl.textContent = String(error && error.message ? error.message : error);
+        }
+      }
+
       function initShareForm() {
         shareFormEl.addEventListener('submit', function (event) {
           event.preventDefault();
@@ -341,6 +369,7 @@
       }
 
       initShareForm();
+      loadAuthDebug();
       initializeDashboard();
     }());
   </script>
