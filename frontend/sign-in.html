@@ -51,6 +51,13 @@
           <p id="authDebugStatus" class="share-status" aria-live="polite">Checking Azure sign-in status...</p>
           <pre id="authDebugPayload" class="auth-debug-payload" aria-label="Azure auth payload">Loading...</pre>
         </section>
+
+        <section class="share-card" aria-labelledby="env-debug-title">
+          <h3 id="env-debug-title">Cosmos App Setting Debug</h3>
+          <p class="share-intro">This checks whether the deployed app can see <code>COSMOSDB_CONNECTION_STRING</code> without exposing the secret itself.</p>
+          <p id="envDebugStatus" class="share-status" aria-live="polite">Checking app setting...</p>
+          <pre id="envDebugPayload" class="auth-debug-payload" aria-label="Cosmos app setting debug payload">Loading...</pre>
+        </section>
       </main>
 
       <footer class="small-footer" role="contentinfo">
@@ -89,6 +96,8 @@
       var shareCardEl = document.getElementById('shareCard');
       var authDebugStatusEl = document.getElementById('authDebugStatus');
       var authDebugPayloadEl = document.getElementById('authDebugPayload');
+      var envDebugStatusEl = document.getElementById('envDebugStatus');
+      var envDebugPayloadEl = document.getElementById('envDebugPayload');
       var dashboardSnapshot = {
         authenticated: false,
         user: null,
@@ -296,6 +305,25 @@
         }
       }
 
+      async function loadEnvDebug() {
+        try {
+          var response = await fetch('/api/env-debug', { credentials: 'same-origin' });
+          var payload = await response.json();
+          envDebugPayloadEl.textContent = JSON.stringify(payload, null, 2);
+          console.log('COSMOSDB_CONNECTION_STRING debug', payload);
+
+          if (payload && payload.present) {
+            envDebugStatusEl.textContent = 'The deployed app can read COSMOSDB_CONNECTION_STRING.';
+            return;
+          }
+
+          envDebugStatusEl.textContent = 'COSMOSDB_CONNECTION_STRING is missing from the deployed app.';
+        } catch (error) {
+          envDebugStatusEl.textContent = 'Could not read COSMOSDB_CONNECTION_STRING debug state.';
+          envDebugPayloadEl.textContent = String(error && error.message ? error.message : error);
+        }
+      }
+
       function initShareForm() {
         shareFormEl.addEventListener('submit', function (event) {
           event.preventDefault();
@@ -370,6 +398,7 @@
 
       initShareForm();
       loadAuthDebug();
+      loadEnvDebug();
       initializeDashboard();
     }());
   </script>
