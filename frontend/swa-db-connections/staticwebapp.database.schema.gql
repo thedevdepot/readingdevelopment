@@ -1,0 +1,6 @@
+type UserProfile {
+  id: ID!
+  first_name: String!
+  email: String!
+  quiz_scores: [Int]
+}

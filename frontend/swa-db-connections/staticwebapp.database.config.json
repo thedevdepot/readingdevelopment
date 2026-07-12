@@ -1,0 +1,48 @@
+{
+  "$schema": "https://aka.ms/azure-static-web-apps-database-config-schema",
+  "data-source": {
+    "database-type": "cosmosdb_nosql",
+    "options": {
+      "database": "quizdatabase",
+      "schema": "./staticwebapp.database.schema.gql"
+    }
+  },
+  "runtime": {
+    "graphql": {
+      "enabled": true,
+      "path": "/graphql"
+    }
+  },
+  "entities": {
+    "UserProfile": {
+      "source": {
+        "type": "container",
+        "object": "Users",
+        "partitionKeyPath": "/email"
+      },
+      "permissions": [
+        {
+          "role": "authenticated",
+          "actions": [
+            {
+              "action": "read",
+              "policy": "@item.email eq @claims.email or @item.email eq @claims.preferred_username or @item.email eq @claims.upn or @item.email eq @claims.name"
+            },
+            {
+              "action": "create",
+              "policy": "@item.email eq @claims.email or @item.email eq @claims.preferred_username or @item.email eq @claims.upn or @item.email eq @claims.name"
+            },
+            {
+              "action": "update",
+              "policy": "@item.email eq @claims.email or @item.email eq @claims.preferred_username or @item.email eq @claims.upn or @item.email eq @claims.name"
+            },
+            {
+              "action": "delete",
+              "policy": "@item.email eq @claims.email or @item.email eq @claims.preferred_username or @item.email eq @claims.upn or @item.email eq @claims.name"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

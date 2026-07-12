@@ -1,11 +1,7 @@
 (function () {
   const restEntityPaths = [
     "/data-api/rest/UserProfile",
-    "/data-api/rest/userprofile",
-    "/data-api/rest/UserProfiles",
-    "/data-api/rest/userprofiles",
-    "/rest/UserProfile",
-    "/rest/userprofile"
+    "/data-api/rest/userprofile"
   ];
 
   function sanitizeName(value) {
