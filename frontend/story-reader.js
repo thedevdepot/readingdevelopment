@@ -268,5 +268,4 @@ fetch('story-data.json')
     storyParagraphEl.textContent = 'Unable to load stories right now. Please refresh the page.';
     storyPromptEl.textContent = '';
     storyChoicesEl.innerHTML = '';
-    console.error(error);
   });

@@ -117,7 +117,6 @@
         provider: principal.identityProvider || "unknown"
       };
     } catch (error) {
-      console.warn("Unable to read auth state", error);
       return { authenticated: false, error };
     }
   }
@@ -145,7 +144,6 @@
         scores
       };
     } catch (error) {
-      console.error("Unable to load profile via backend API", error);
       return {
         authenticated: true,
         user,
@@ -188,7 +186,6 @@
         errorBody: payload && payload.message ? String(payload.message).slice(0, 300) : ""
       };
     } catch (error) {
-      console.error("Unable to save quiz grade", error);
       return {
         saved: false,
         reason: "save-failed",
