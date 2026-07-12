@@ -28,9 +28,34 @@ What works now:
 - Reading recommendations aligned to estimated level
 - Mobile-responsive experience with tailored interaction behavior for smaller screens
 - Azure Static Web Apps sign-in integration (Microsoft/Azure AD)
-- Quiz score persistence to Cosmos DB (NoSQL) through Static Web Apps Data API
+- Quiz score persistence to Cosmos DB (NoSQL) through authenticated backend API endpoints
 - Personalized sign-in dashboard with recent quiz chart and reading path suggestions
 - Parent/teacher progress sharing via prefilled email from the sign-in page
+
+---
+
+## Incident Update (2026-07-12)
+
+### Problem observed today
+
+- Signed-in users could occasionally fail to save or retrieve profile/quiz data reliably.
+- Troubleshooting introduced temporary debug output and debug panels that were useful short-term but not production-safe.
+
+### Key fixes attempted during troubleshooting
+
+- Verified Azure auth session payload behavior via `/.auth/me`.
+- Added a temporary environment debug endpoint to confirm server visibility of `COSMOSDB_CONNECTION_STRING`.
+- Compared client-side persistence behavior versus server-side persistence behavior.
+
+### What finally fixed it
+
+- Moved persistence into authenticated backend API functions (`/api/profile`, `/api/score`) so writes/reads happen server-side.
+- Normalized authenticated principal claims server-side to handle provider claim differences consistently.
+- Added safe first-user handling when a profile does not exist yet (404 -> initialize flow).
+- Added input hardening (`grade` clamping) and bounded score history to avoid invalid/oversized records.
+- Removed temporary debug endpoint, debug UI panels, and extra console diagnostics from app code.
+
+Result: authorization and database access are now handled in a cleaner, more secure, production-oriented flow.
 
 Planned soon:
 
@@ -101,7 +126,8 @@ Current implementation:
 - CSV recommendation data
 - Azure Static Web Apps
 - Azure Static Web Apps Authentication (`/.auth/*`)
-- Azure Static Web Apps Data API Builder + Cosmos DB NoSQL
+- Azure Functions API (`api/profile`, `api/score`) for authenticated profile and score operations
+- Azure Cosmos DB NoSQL via `@azure/cosmos`
 
 ![App Architecture](./appArchitecture.png)
 
@@ -153,11 +179,30 @@ Future exploration:
 
 ---
 
+## Authorization and Database (Installed)
+
+Authorization and database integration are now installed and active.
+
+Authorization features:
+
+- Azure Static Web Apps authentication with Microsoft/Azure AD sign-in and sign-out.
+- Authenticated user identity read from `/.auth/me` and normalized for consistent user mapping.
+- Backend authorization checks on API endpoints before profile read/write operations.
+
+Database features:
+
+- Cosmos DB connection via `COSMOSDB_CONNECTION_STRING` using server-side API code.
+- User profile storage keyed by email with fields: `id`, `first_name`, `email`, `quiz_scores`.
+- Profile read endpoint for dashboard/chart hydration.
+- Score write endpoint with grade validation (1-6) and rolling history cap for stability.
+
 ## Authentication and Data Flow
 
 - Sign-in/out uses Azure Static Web Apps auth endpoints on the sign-in page.
 - The app reads the authenticated user identity from `/.auth/me`.
-- On quiz completion, grade results are stored in the user profile record in Cosmos DB.
+- On quiz completion, the frontend sends grade results to the authenticated backend API (`/api/score`).
+- The backend API validates identity and input, then upserts profile data in Cosmos DB.
+- The sign-in dashboard loads profile and scores from `/api/profile`.
 - User profile fields currently include:
 	- `id`
 	- `first_name`
@@ -166,9 +211,7 @@ Future exploration:
 - The sign-in dashboard displays the most recent quiz results and a suggestion path for next reading practice.
 - Users can generate a prewritten progress email to a parent or teacher from the sign-in page.
 
-Data API configuration is defined in `swa-db-connections/staticwebapp.database.config.json` and schema in `swa-db-connections/staticwebapp.database.schema.gql`.
-
-When configuring Azure Static Web Apps, set `COSMOSDB_CONNECTION_STRING` to the full Cosmos DB connection string. A primary key or primary connection key by itself is not enough for the Data API connection.
+When configuring Azure Static Web Apps, set `COSMOSDB_CONNECTION_STRING` to the full Cosmos DB connection string. A key by itself is not enough.
 
 ---
 
