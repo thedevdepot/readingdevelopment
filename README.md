@@ -168,6 +168,8 @@ Future exploration:
 
 Data API configuration is defined in `swa-db-connections/staticwebapp.database.config.json` and schema in `swa-db-connections/staticwebapp.database.schema.gql`.
 
+When configuring Azure Static Web Apps, set `COSMOSDB_CONNECTION_STRING` to the full Cosmos DB connection string. A primary key or primary connection key by itself is not enough for the Data API connection.
+
 ---
 
 ## Planned Assessment Types
