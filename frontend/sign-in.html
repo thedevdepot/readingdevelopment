@@ -292,11 +292,20 @@
       }
 
       function updateShareCardVisibility() {
-        var canShare = !!(dashboardSnapshot.authenticated && dashboardSnapshot.user && Array.isArray(dashboardSnapshot.scores) && dashboardSnapshot.scores.length > 0);
-        shareCardEl.classList.toggle('hidden', !canShare);
-        if (!canShare) {
+        var isSignedIn = !!(dashboardSnapshot.authenticated && dashboardSnapshot.user);
+        shareCardEl.classList.toggle('hidden', !isSignedIn);
+
+        if (!isSignedIn) {
           shareStatusEl.textContent = '';
+          return;
         }
+
+        if (!Array.isArray(dashboardSnapshot.scores) || dashboardSnapshot.scores.length === 0) {
+          shareStatusEl.textContent = 'Take your first quiz to include progress details in the email.';
+          return;
+        }
+
+        shareStatusEl.textContent = '';
       }
 
       async function initializeDashboard() {
