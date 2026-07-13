@@ -268,8 +268,34 @@
         ].join('\n');
       }
 
+      async function sendProgressEmail(payload) {
+        var response = await fetch('/api/share-progress', {
+          method: 'POST',
+          credentials: 'same-origin',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        var bodyText = await response.text();
+        var body = null;
+        if (bodyText) {
+          try {
+            body = JSON.parse(bodyText);
+          } catch (_error) {
+            body = null;
+          }
+        }
+
+        if (!response.ok || !(body && body.sent)) {
+          var message = body && body.message ? String(body.message) : 'Email could not be sent right now.';
+          throw new Error(message);
+        }
+      }
+
       function initShareForm() {
-        shareFormEl.addEventListener('submit', function (event) {
+        shareFormEl.addEventListener('submit', async function (event) {
           event.preventDefault();
 
           var toEmail = String(shareEmailEl.value || '').trim();
@@ -283,11 +309,26 @@
             return;
           }
 
-          var subject = encodeURIComponent('Joyful Reading Progress Update from Reading Time Warp');
-          var body = encodeURIComponent(buildEmailBody());
-          var mailto = 'mailto:' + encodeURIComponent(toEmail) + '?subject=' + subject + '&body=' + body;
-          window.location.href = mailto;
-          shareStatusEl.textContent = 'Your email app should open with a premade message.';
+          var senderEmail = dashboardSnapshot.user && dashboardSnapshot.user.email ? String(dashboardSnapshot.user.email).trim() : '';
+          if (!isValidEmail(senderEmail)) {
+            shareStatusEl.textContent = 'Your signed-in account email is unavailable. Please sign out and sign in again.';
+            return;
+          }
+
+          shareStatusEl.textContent = 'Sending email...';
+
+          try {
+            await sendProgressEmail({
+              to: toEmail,
+              cc: senderEmail,
+              subject: 'Joyful Reading Progress Update from Reading Time Warp',
+              body: buildEmailBody()
+            });
+
+            shareStatusEl.textContent = 'Email sent.';
+          } catch (error) {
+            shareStatusEl.textContent = String(error && error.message ? error.message : 'Email could not be sent right now.');
+          }
         });
       }
 
