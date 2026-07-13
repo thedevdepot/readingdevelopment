@@ -72,6 +72,8 @@
 
     (function () {
       var authActionsEl = document.getElementById('authActions');
+      var signinTitleEl = document.getElementById('signin-title');
+      var signinIntroEl = document.querySelector('.signin-intro');
       var dashboardCardEl = document.getElementById('dashboardCard');
       var userDataApi = window.readingAppUserData;
       var loginAad = '/.auth/login/aad?post_login_redirect_uri=/sign-in.html';
@@ -148,6 +150,22 @@
           .replace(/>/g, '&gt;')
           .replace(/"/g, '&quot;')
           .replace(/'/g, '&#39;');
+      }
+
+      function renderHero(isAuthenticated, user) {
+        if (!signinTitleEl || !signinIntroEl) {
+          return;
+        }
+
+        if (isAuthenticated && user) {
+          var safeName = escapeHtml(user.first_name || 'Reader');
+          signinTitleEl.innerHTML = 'Welcome Back, ' + safeName;
+          signinIntroEl.textContent = 'Your progress dashboard is ready. Review your growth chart and continue your next reading challenge.';
+          return;
+        }
+
+        signinTitleEl.textContent = 'Sign In and Track Your Reading Growth';
+        signinIntroEl.textContent = 'Sign in to track your quiz progress, see your growth chart, and get reading suggestions matched to your level.';
       }
 
       function renderAuthActions(isAuthenticated) {
@@ -351,6 +369,7 @@
 
       async function initializeDashboard() {
         if (!userDataApi || typeof userDataApi.getCurrentUserProfileWithScores !== 'function') {
+          renderHero(false, null);
           renderAuthActions(false);
           renderError();
           return;
@@ -363,6 +382,7 @@
             user: session.user || null,
             scores: Array.isArray(session.scores) ? session.scores : []
           };
+          renderHero(session.authenticated, session.user || null);
           updateShareCardVisibility();
           renderAuthActions(session.authenticated);
 
@@ -383,6 +403,7 @@
             user: null,
             scores: []
           };
+          renderHero(false, null);
           updateShareCardVisibility();
           renderAuthActions(false);
           renderError();
