@@ -14,6 +14,39 @@ function parsePrincipalHeader(req) {
   }
 }
 
+function parseRequestOrigin(req) {
+  const proto = String(req.headers['x-forwarded-proto'] || 'https').split(',')[0].trim() || 'https';
+  const host = String(req.headers['x-forwarded-host'] || req.headers.host || '').split(',')[0].trim();
+  if (!host) {
+    return '';
+  }
+
+  return `${proto}://${host}`;
+}
+
+function isSameOriginRequest(req) {
+  const expectedOrigin = parseRequestOrigin(req);
+  if (!expectedOrigin) {
+    return false;
+  }
+
+  const originHeader = String(req.headers.origin || '').trim();
+  if (originHeader) {
+    return originHeader === expectedOrigin;
+  }
+
+  const refererHeader = String(req.headers.referer || '').trim();
+  if (!refererHeader) {
+    return false;
+  }
+
+  try {
+    return new URL(refererHeader).origin === expectedOrigin;
+  } catch (_error) {
+    return false;
+  }
+}
+
 function getClaim(claims, types) {
   if (!Array.isArray(claims)) {
     return '';
@@ -100,5 +133,6 @@ function getContainer() {
 module.exports = {
   getContainer,
   normalizePrincipal,
-  parsePrincipalHeader
+  parsePrincipalHeader,
+  isSameOriginRequest
 };

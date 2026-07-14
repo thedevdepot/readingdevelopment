@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const { normalizePrincipal, parsePrincipalHeader } = require('../_shared/cosmos-auth');
+const { normalizePrincipal, parsePrincipalHeader, isSameOriginRequest } = require('../_shared/cosmos-auth');
 
 function isValidEmail(value) {
   const email = String(value || '').trim();
@@ -54,12 +54,24 @@ module.exports = async function (context, req) {
     return;
   }
 
+  if (!isSameOriginRequest(req)) {
+    context.res = {
+      status: 403,
+      body: {
+        sent: false,
+        reason: 'csrf-blocked',
+        message: 'Request origin is not allowed.'
+      }
+    };
+    return;
+  }
+
   try {
     const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
     const to = String(body.to || '').trim();
-    const cc = String(body.cc || '').trim();
     const subject = String(body.subject || '').trim();
     const text = String(body.body || '').trim();
+    const cc = auth.user.email;
 
     if (!isValidEmail(to)) {
       context.res = {

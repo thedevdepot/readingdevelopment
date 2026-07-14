@@ -1,4 +1,4 @@
-const { getContainer, normalizePrincipal, parsePrincipalHeader } = require('../_shared/cosmos-auth');
+const { getContainer, normalizePrincipal, parsePrincipalHeader, isSameOriginRequest } = require('../_shared/cosmos-auth');
 
 function clampGrade(value) {
   const numeric = Number(value);
@@ -18,6 +18,18 @@ module.exports = async function (context, req) {
         authenticated: false,
         saved: false,
         reason: 'not-authenticated'
+      }
+    };
+    return;
+  }
+
+  if (!isSameOriginRequest(req)) {
+    context.res = {
+      status: 403,
+      body: {
+        authenticated: true,
+        saved: false,
+        reason: 'csrf-blocked'
       }
     };
     return;
