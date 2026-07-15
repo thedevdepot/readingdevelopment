@@ -78,6 +78,28 @@ Implemented question types in the current app:
 ## Screenshots
 
 ![MVP Screenshot](./mvp.png)
+
+### Multimodal Quiz Types and Learning Types
+
+This assessment is designed as a multimodal quiz experience so students can show comprehension in different ways, not only through traditional multiple choice.
+
+Implemented multimodal quiz types include:
+
+- Text-based response logic: multiple choice, sentence completion, vocabulary in context
+- Sequence and structure logic: sentence ordering
+- Concept and relationship matching: word matching
+- Visual comprehension: image description and image selection
+- Evidence and interpretation: keyword highlight and character emotion identification
+
+These quiz formats map to a range of learning types and strengths:
+
+- Linguistic learners: vocabulary, sentence, and passage-based items
+- Visual learners: image-supported prompts and visual decision tasks
+- Analytical/sequential learners: ordering and matching activities
+- Inferential learners: evidence selection and emotion interpretation
+
+By rotating across modalities, the app captures a broader picture of reading ability while keeping engagement high for students with different learning preferences.
+
 ![Running App Screenshot](./mvp_running.png)
 
 ---
