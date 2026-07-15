@@ -4,6 +4,6 @@
   "private": true,
   "dependencies": {
     "@azure/cosmos": "^4.2.0",
-    "nodemailer": "^6.10.0"
+    "nodemailer": "^9.0.3"
   }
 }
