@@ -1209,7 +1209,7 @@ function showResult() {
     <h2>Quiz Complete</h2>
     <p>This short quiz estimates a student's reading level from Grade 1 up to Grade 6.</p>
     <p>Weighted estimated reading level: Grade ${grade}</p>
-    <p id="saveStatus" class="save-status">Saving your score...</p>
+    <p id="saveStatus" class="save-status">Checking sign-in status...</p>
     <div class="recommendations">
       <h3>Choose a Story Theme for Grade ${grade}</h3>
       <p>Pick a story type to continue reading at your estimated level:</p>
@@ -1235,7 +1235,7 @@ async function saveQuizResultForCurrentUser(grade) {
 
   const userDataApi = window.readingAppUserData;
   if (!userDataApi || typeof userDataApi.saveQuizGradeForCurrentUser !== "function") {
-    statusEl.textContent = "Sign in on the Sign In page to save quiz history.";
+    statusEl.innerHTML = "<a href=\"sign-in.html\">Sign in to save and track your scores!</a>";
     return;
   }
 
@@ -1247,7 +1247,7 @@ async function saveQuizResultForCurrentUser(grade) {
     }
 
     if (saveResult.reason === "not-authenticated") {
-      statusEl.innerHTML = "You are not signed in. <a href=\"sign-in.html\">Sign in to store quiz history</a>.";
+      statusEl.innerHTML = "<a href=\"sign-in.html\">Sign in to save and track your scores!</a>";
       return;
     }
 
