@@ -26,32 +26,42 @@
 		</header>
 
 		<main class="main-content" id="main-content">
-<div class="progress-wrapper" role="region" aria-label="Quiz progress">
-				<div class="progress-topline">
-					<span id="progressLabel" aria-live="polite" aria-atomic="true">Question 1 of 10</span>
-					<span id="progressType" aria-live="polite">multiple choice</span>
+			<section id="quizIntro" class="page-intro intro-panel" aria-labelledby="quizIntroTitle">
+				<p class="intro-eyebrow">Before you start</p>
+				<h2 id="quizIntroTitle">This quiz gives a reading estimate</h2>
+				<p>Reading levels can change from day to day, and different tests can give different answers. This is a helpful estimate, not an official score.</p>
+				<p>Reading depends on the text, the questions, and what you already know, so the best result is the one that helps you find books you enjoy.</p>
+				<button id="startTestBtn" type="button">Start test</button>
+			</section>
+
+			<div id="quizContent" class="hidden">
+				<div class="progress-wrapper" role="region" aria-label="Quiz progress">
+					<div class="progress-topline">
+						<span id="progressLabel" aria-live="polite" aria-atomic="true">Question 1 of 10</span>
+						<span id="progressType" aria-live="polite">multiple choice</span>
+					</div>
+					<div class="progress-bar-bg">
+						<div id="progressCompleted" class="progress-bar-completed" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" aria-label="Questions completed"></div>
+						<div id="progressBar" class="progress-bar-fill" role="progressbar" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1" aria-label="Current grade level"></div>
+					</div>
 				</div>
-				<div class="progress-bar-bg">
-					<div id="progressCompleted" class="progress-bar-completed" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" aria-label="Questions completed"></div>
-					<div id="progressBar" class="progress-bar-fill" role="progressbar" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1" aria-label="Current grade level"></div>
+
+				<div role="region" aria-label="Current question" aria-live="polite" aria-atomic="true">
+					<div id="questionMedia" class="question-media hidden"></div>
+					<p id="question" tabindex="-1"></p>
+					<p id="selectionStatus" class="selection-status hidden" aria-live="polite"></p>
+
+					<fieldset id="choices" class="choices-container">
+						<legend class="sr-only">Choose the correct answer</legend>
+					</fieldset>
 				</div>
+
+				<div id="feedback" class="hidden" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+				<button id="nextBtn" aria-label="Submit answer or continue to next question">Submit Answer</button>
+
+				<div id="result" class="hidden" role="region" aria-label="Quiz results" aria-live="polite" aria-atomic="true"></div>
 			</div>
-
-			<div role="region" aria-label="Current question" aria-live="polite" aria-atomic="true">
-				<div id="questionMedia" class="question-media hidden"></div>
-				<p id="question" tabindex="-1"></p>
-				<p id="selectionStatus" class="selection-status hidden" aria-live="polite"></p>
-
-				<fieldset id="choices" class="choices-container">
-					<legend class="sr-only">Choose the correct answer</legend>
-				</fieldset>
-			</div>
-
-			<div id="feedback" class="hidden" role="alert" aria-live="assertive" aria-atomic="true"></div>
-
-			<button id="nextBtn" aria-label="Submit answer or continue to next question">Submit Answer</button>
-
-			<div id="result" class="hidden" role="region" aria-label="Quiz results" aria-live="polite" aria-atomic="true"></div>
 
 		</main>
 

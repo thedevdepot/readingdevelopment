@@ -26,6 +26,7 @@ let selectedSentenceOrder = [];
 let wordMatchSelectedLeftId = null;
 let wordMatchPairs = new Map();
 let wordMatchResizeHandler = null;
+let quizReady = false;
 const maxPassageSelections = 5;
 const autoAdvanceDelayMs = 500;
 const questionCount = 10;
@@ -986,8 +987,15 @@ function loadAllQuestions() {
   });
 
   Promise.all(loadPromises)
-    .then(() => startNewQuiz())
-    .catch(() => {});
+    .then(() => {
+      quizReady = true;
+      startTestBtn.disabled = false;
+      startTestBtn.textContent = "Start test";
+    })
+    .catch(() => {
+      startTestBtn.disabled = true;
+      startTestBtn.textContent = "Test unavailable";
+    });
 }
 
 function startNewQuiz() {
@@ -1008,6 +1016,16 @@ function startNewQuiz() {
   progressBarEl.classList.add("shimmer");
   progressBarEl.addEventListener('animationend', () => progressBarEl.classList.remove('shimmer'), { once: true });
   pickNextQuestion();
+}
+
+function startQuizFromIntro() {
+  if (!quizReady) {
+    return;
+  }
+
+  quizIntroEl.classList.add("hidden");
+  quizContentEl.classList.remove("hidden");
+  startNewQuiz();
 }
 
 function pickNextQuestion() {
@@ -1062,6 +1080,9 @@ const nextBtn = document.getElementById("nextBtn");
 const restartBtn = document.getElementById("restartBtn");
 const feedbackEl = document.getElementById("feedback");
 const resultEl = document.getElementById("result");
+const quizIntroEl = document.getElementById("quizIntro");
+const quizContentEl = document.getElementById("quizContent");
+const startTestBtn = document.getElementById("startTestBtn");
 
 function updateProgressBars(completedQuestions, gradeLevel) {
   const safeCompleted = Math.max(0, Math.min(questionCount, completedQuestions));
@@ -1207,8 +1228,8 @@ function showResult() {
   resultEl.classList.remove("hidden");
   resultEl.innerHTML = `
     <h2>Quiz Complete</h2>
-    <p>This short quiz estimates a student's reading level from Grade 1 up to Grade 6.</p>
-    <p>Weighted estimated reading level: Grade ${grade}</p>
+    <p>This quiz gives a reading estimate from Grade 1 up to Grade 6. It is not an official measure.</p>
+    <p>Estimated reading level: Grade ${grade}</p>
     <p id="saveStatus" class="save-status">Checking sign-in status...</p>
     <div class="recommendations">
       <h3>Choose a Story Theme for Grade ${grade}</h3>
@@ -1262,6 +1283,10 @@ nextBtn.onclick = () => {
   // Manual submit flow is intentionally disabled in favor of auto-advance.
   return;
 };
+
+startTestBtn.disabled = true;
+startTestBtn.textContent = "Loading test...";
+startTestBtn.addEventListener("click", startQuizFromIntro);
 
 restartBtn.onclick = (event) => {
   event.preventDefault();

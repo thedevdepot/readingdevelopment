@@ -366,6 +366,36 @@ button:hover {
   margin-bottom: 18px;
 }
 
+.intro-panel {
+  padding: 18px 18px 20px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(240, 248, 247, 0.92) 100%);
+  border: 1px solid rgba(35, 111, 103, 0.22);
+  box-shadow: 0 16px 36px rgba(17, 58, 55, 0.12);
+}
+
+.intro-panel h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.intro-eyebrow {
+  margin: 0 0 8px;
+  color: #1f5e58;
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.intro-panel p:last-of-type {
+  margin-bottom: 0;
+}
+
+.intro-panel button {
+  max-width: 220px;
+}
+
 @media (max-width: 700px) {
   html,
   body {
