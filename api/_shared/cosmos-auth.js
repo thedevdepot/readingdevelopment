@@ -1,7 +1,19 @@
 const { CosmosClient } = require('@azure/cosmos');
 
+function getHeader(req, name) {
+  const headers = req && req.headers ? req.headers : {};
+  const direct = headers[name];
+  if (direct !== undefined && direct !== null) {
+    return direct;
+  }
+
+  const lowerName = String(name || '').toLowerCase();
+  const match = Object.keys(headers).find((key) => String(key).toLowerCase() === lowerName);
+  return match ? headers[match] : undefined;
+}
+
 function parsePrincipalHeader(req) {
-  const header = req.headers['x-ms-client-principal'];
+  const header = getHeader(req, 'x-ms-client-principal');
   if (!header) {
     return null;
   }
@@ -15,8 +27,8 @@ function parsePrincipalHeader(req) {
 }
 
 function parseRequestOrigin(req) {
-  const proto = String(req.headers['x-forwarded-proto'] || 'https').split(',')[0].trim() || 'https';
-  const host = String(req.headers['x-forwarded-host'] || req.headers.host || '').split(',')[0].trim();
+  const proto = String(getHeader(req, 'x-forwarded-proto') || 'https').split(',')[0].trim() || 'https';
+  const host = String(getHeader(req, 'x-forwarded-host') || getHeader(req, 'host') || '').split(',')[0].trim();
   if (!host) {
     return '';
   }
@@ -24,27 +36,69 @@ function parseRequestOrigin(req) {
   return `${proto}://${host}`;
 }
 
-function isSameOriginRequest(req) {
-  const expectedOrigin = parseRequestOrigin(req);
-  if (!expectedOrigin) {
-    return false;
-  }
-
-  const originHeader = String(req.headers.origin || '').trim();
-  if (originHeader) {
-    return originHeader === expectedOrigin;
-  }
-
-  const refererHeader = String(req.headers.referer || '').trim();
-  if (!refererHeader) {
-    return false;
+function parseOriginHost(originValue) {
+  if (!originValue) {
+    return '';
   }
 
   try {
-    return new URL(refererHeader).origin === expectedOrigin;
+    return new URL(String(originValue).trim()).host.toLowerCase();
   } catch (_error) {
+    return '';
+  }
+}
+
+function parseExpectedHosts(req) {
+  const hosts = [
+    getHeader(req, 'x-forwarded-host'),
+    getHeader(req, 'x-original-host'),
+    getHeader(req, 'host')
+  ];
+
+  const parsedHosts = hosts
+    .map((value) => String(value || '').split(',')[0].trim().toLowerCase())
+    .filter(Boolean);
+
+  return Array.from(new Set(parsedHosts));
+}
+
+function isSameOriginRequest(req) {
+  const expectedHosts = parseExpectedHosts(req);
+  const expectedOrigin = parseRequestOrigin(req);
+  if (!expectedOrigin && expectedHosts.length === 0) {
     return false;
   }
+
+  const originHeader = String(getHeader(req, 'origin') || '').trim();
+  if (originHeader) {
+    if (originHeader === expectedOrigin) {
+      return true;
+    }
+
+    const originHost = parseOriginHost(originHeader);
+    return !!originHost && expectedHosts.includes(originHost);
+  }
+
+  const refererHeader = String(getHeader(req, 'referer') || '').trim();
+  if (refererHeader) {
+    try {
+      if (new URL(refererHeader).origin === expectedOrigin) {
+        return true;
+      }
+    } catch (_error) {
+      return false;
+    }
+
+    const refererHost = parseOriginHost(refererHeader);
+    return !!refererHost && expectedHosts.includes(refererHost);
+  }
+
+  const secFetchSite = String(getHeader(req, 'sec-fetch-site') || '').toLowerCase().trim();
+  if (!secFetchSite) {
+    return false;
+  }
+
+  return secFetchSite === 'same-origin' || secFetchSite === 'none';
 }
 
 function getClaim(claims, types) {
