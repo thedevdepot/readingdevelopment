@@ -49,17 +49,32 @@ function parseOriginHost(originValue) {
 }
 
 function parseExpectedHosts(req) {
+  const originalUrl = String(getHeader(req, 'x-ms-original-url') || '').trim();
+  const originalUrlHost = parseOriginHost(originalUrl);
   const hosts = [
     getHeader(req, 'x-forwarded-host'),
     getHeader(req, 'x-original-host'),
+    getHeader(req, 'x-ms-original-host'),
+    getHeader(req, 'x-arr-original-host'),
+    originalUrlHost,
     getHeader(req, 'host')
   ];
 
   const parsedHosts = hosts
-    .map((value) => String(value || '').split(',')[0].trim().toLowerCase())
+    .flatMap((value) => String(value || '').split(','))
+    .map((value) => value.trim().toLowerCase())
     .filter(Boolean);
 
   return Array.from(new Set(parsedHosts));
+}
+
+function isTrustedFetchSite(req) {
+  const secFetchSite = String(getHeader(req, 'sec-fetch-site') || '').toLowerCase().trim();
+  if (!secFetchSite) {
+    return false;
+  }
+
+  return secFetchSite === 'same-origin' || secFetchSite === 'same-site' || secFetchSite === 'none';
 }
 
 function isSameOriginRequest(req) {
@@ -76,7 +91,11 @@ function isSameOriginRequest(req) {
     }
 
     const originHost = parseOriginHost(originHeader);
-    return !!originHost && expectedHosts.includes(originHost);
+    if (!!originHost && expectedHosts.includes(originHost)) {
+      return true;
+    }
+
+    return isTrustedFetchSite(req);
   }
 
   const refererHeader = String(getHeader(req, 'referer') || '').trim();
@@ -90,15 +109,14 @@ function isSameOriginRequest(req) {
     }
 
     const refererHost = parseOriginHost(refererHeader);
-    return !!refererHost && expectedHosts.includes(refererHost);
+    if (!!refererHost && expectedHosts.includes(refererHost)) {
+      return true;
+    }
+
+    return isTrustedFetchSite(req);
   }
 
-  const secFetchSite = String(getHeader(req, 'sec-fetch-site') || '').toLowerCase().trim();
-  if (!secFetchSite) {
-    return false;
-  }
-
-  return secFetchSite === 'same-origin' || secFetchSite === 'none';
+  return isTrustedFetchSite(req);
 }
 
 function getClaim(claims, types) {
