@@ -392,6 +392,17 @@ button:hover {
   margin-bottom: 0;
 }
 
+.intro-image {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 12px auto 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(35, 111, 103, 0.18);
+  box-shadow: 0 10px 24px rgba(17, 58, 55, 0.12);
+  object-fit: cover;
+}
+
 .intro-panel button {
   max-width: 220px;
 }
