@@ -297,3 +297,57 @@ As the platform evolves, modality-level performance will be used to generate a p
 
 > James 1:5 (KJV)
 > If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.
+
+---
+
+## User Stories (Added 2026-07-27)
+
+1. As a student, I want the quiz to adapt to my performance across multiple question styles so that my reading level estimate reflects how I actually understand text.
+2. As a student, I want to sign in and view my recent quiz history so that I can see whether my reading level is improving over time.
+3. As a teacher, I want a quick dashboard view of a learner's recent scores and trend direction so that I can plan targeted reading support.
+4. As a parent or teacher, I want progress updates emailed in a clear summary so that I can stay informed and encourage reading practice at home.
+5. As a learner who needs accessibility support, I want mobile-friendly and readability-focused controls so that I can complete the assessment comfortably.
+
+## Critical Improvements To Prioritize
+
+Based on analysis of the current app structure (`frontend/script.js`, `frontend/user-data.js`, `frontend/sign-in.html`, and API endpoints under `api/`), these are the most important next improvements.
+
+### 1) Strengthen API abuse protection and service safety (High)
+
+- Add rate limiting and abuse throttling to `/api/score` and especially `/api/share-progress` to prevent spam/cost spikes.
+- Add request size limits and stricter payload validation (email length, subject/body length, explicit schema).
+- Add anti-automation protections for email sending (per-user quotas, cooldowns, and provider-side guardrails).
+
+Why critical: these endpoints can be repeatedly hit by automated traffic, creating operational risk and potential sender reputation issues.
+
+### 2) Improve assessment reliability and score validity (High)
+
+- Refine adaptation logic so question difficulty progression is less random and more evidence-driven.
+- Avoid fallback behavior that can mix levels too aggressively when level-specific items are exhausted.
+- Store richer scoring telemetry (question type, level, correctness, timestamp) to support psychometric tuning and calibration.
+
+Why critical: the current random selection and short-session scoring can produce noisy level estimates that reduce instructional trust.
+
+### 3) Add automated test coverage for core flows (High)
+
+- Add unit tests for grade clamping, score rollup, and user normalization logic in API shared code.
+- Add integration tests for authenticated profile/score endpoints and error paths.
+- Add end-to-end smoke tests for quiz completion, sign-in dashboard rendering, and share-progress submission.
+
+Why critical: key learning and data flows are currently vulnerable to regressions because there are no automated tests in the repository.
+
+### 4) Increase observability and incident response readiness (Medium-High)
+
+- Add structured logging with correlation IDs across frontend requests and Azure Functions.
+- Add application monitoring dashboards and alerts for API failures, auth failures, and email send failures.
+- Track business metrics (quiz completion rate, save success rate, share-progress success rate) to spot drift quickly.
+
+Why critical: when production issues occur, diagnosis currently depends heavily on manual investigation.
+
+### 5) Evolve profile schema for educator value (Medium)
+
+- Move beyond `quiz_scores` integer arrays to attempt-level records (`grade`, `timestamp`, `question_mix`, `modality_breakdown`).
+- Enable trend views by time window and skill area, not only recent grade averages.
+- Prepare schema for future teacher-facing analytics and intervention recommendations.
+
+Why critical: richer progress data is required for actionable classroom decisions and meaningful reporting.
