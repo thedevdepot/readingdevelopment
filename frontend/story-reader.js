@@ -18,7 +18,8 @@ const THEME_LABELS = {
   space: 'Space Adventure',
   adventure: 'Adventure Story',
   mystery: 'Mystery',
-  arthurian: 'Arthurian Legend Fantasy'
+  arthurian: 'Arthurian Legend Fantasy',
+  fable: 'Fable'
 };
 
 let currentStory = null;
@@ -254,18 +255,38 @@ function initStoryPage(storyData) {
   startStory(pickStory(storiesForTheme));
 }
 
-fetch('story-data.json')
-  .then(response => {
-    if (!response.ok) {
+function mergeStoryData(baseStoryData, extraStoryData) {
+  const mergedGrades = { ...(baseStoryData.grades || {}) };
+
+  if (extraStoryData && extraStoryData.grades) {
+    Object.entries(extraStoryData.grades).forEach(([grade, stories]) => {
+      mergedGrades[grade] = [...(mergedGrades[grade] || []), ...stories];
+    });
+  }
+
+  return { ...baseStoryData, grades: mergedGrades };
+}
+
+Promise.all([
+  fetch('story-data.json'),
+  fetch('fable-story-data.json')
+])
+  .then(async ([storyResponse, fableResponse]) => {
+    if (!storyResponse.ok || !fableResponse.ok) {
       throw new Error('Unable to load story data.');
     }
-    return response.json();
+
+    const [storyData, fableStoryData] = await Promise.all([
+      storyResponse.json(),
+      fableResponse.json()
+    ]);
+
+    initStoryPage(mergeStoryData(storyData, fableStoryData));
   })
-  .then(data => initStoryPage(data))
   .catch(error => {
     storyTitleEl.textContent = 'Story Adventure';
-    storyMetaEl.textContent = 'Data load error';
-    storyParagraphEl.textContent = 'Unable to load stories right now. Please refresh the page.';
+    storyMetaEl.textContent = 'Unable to load story data';
+    storyParagraphEl.textContent = error.message;
     storyPromptEl.textContent = '';
     storyChoicesEl.innerHTML = '';
   });

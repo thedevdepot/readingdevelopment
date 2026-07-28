@@ -1,0 +1,850 @@
+{
+  "grades": {
+    "1": [
+      {
+        "id": "g1-fable-seed-bell",
+        "theme": "fable",
+        "title": "The Sparrow and the Seed Bell",
+        "paragraphs": {
+          "step1": "At the start of this adventure, Pip the sparrow sees a seed bell outside the garden gate. He must bring it home before rain hides the path. If he chooses badly, the seeds may spill and the flock will go hungry. The choices ahead will change what Pip learns and how the day ends.",
+          "step2": {
+            "choiceA": "He follows the fence line and notices fresh paw prints near the herb bed. Pip keeps the clue in mind before moving on. This first decision could help or hurt the final outcome.",
+            "choiceB": "He crosses the pebble path and spots a torn ribbon on the bean pole. Pip keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
+          },
+          "step3": {
+            "choiceA": "At the next turn, Pip must choose the willow arch or the rain barrel ramp. Pip knows this next choice will decide how much of the first clue still matters. With little time left, Pip commits and moves.",
+            "choiceB": "At the next turn, Pip must choose the willow arch or the rain barrel ramp. Pip knows this next choice will decide how much of the first clue still matters. With little time left, Pip commits and moves."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing follow the fence line and then take the willow arch, the plan changes. The paw prints lead to the seed bell, and Pip reaches it before the rain starts. The consequence is immediate and changes what Pip can do next.",
+            "choiceA_branchB": "After choosing follow the fence line and then take the rain barrel ramp, the plan changes. The ramp is slippery, and Pip loses time helping a trapped beetle. The consequence is immediate and changes what Pip can do next.",
+            "choiceB_branchA": "After choosing cross the pebble path and then take the willow arch, the plan changes. The torn ribbon matches the bell hook, and Pip can lift the seeds without spilling them. The consequence is immediate and changes what Pip can do next.",
+            "choiceB_branchB": "After choosing cross the pebble path and then take the rain barrel ramp, the plan changes. The ramp wobbles, the seed bell tilts, and a few grains fall to the ground. The consequence is immediate and changes what Pip can do next."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on follow the fence line plus take the willow arch, Pip reaches the final result. Pip saves the seed bell and learns that careful steps and helping others can still lead to success. Pip leaves with a new plan for the next adventure. Lesson: kindness and patience can open the best path.",
+            "choiceA_branchB": "By ending on follow the fence line plus take the rain barrel ramp, Pip reaches the final result. He arrives late, but he still shares a few seeds with the smaller birds. Pip leaves with a new plan for the next adventure. Lesson: even when a plan fails, choosing to help still matters.",
+            "choiceB_branchA": "By ending on cross the pebble path plus take the willow arch, Pip reaches the final result. Pip lifts the seed bell safely and the flock sings at the first raindrop. Pip leaves with a new plan for the next adventure. Lesson: small clues can matter when you stay calm and think ahead.",
+            "choiceB_branchB": "By ending on cross the pebble path plus take the rain barrel ramp, Pip reaches the final result. Some seeds spill, but Pip gathers them and learns to slow down next time. Pip leaves with a new plan for the next adventure. Lesson: rushing can lead to mistakes, but honest reflection builds growth."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "With the stakes already rising, should Pip follow the fence line or cross the pebble path to begin?",
+            "options": [
+              { "id": "choiceA", "text": "Follow the fence line" },
+              { "id": "choiceB", "text": "Cross the pebble path" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "What changed because of Pip's first choice?",
+              "choiceB": "What changed because of Pip's first choice?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "a", "text": "Pip's first choice gave him useful clues for later." },
+                { "id": "b", "text": "Pip's first choice ended the story right away." }
+              ],
+              "choiceB": [
+                { "id": "a", "text": "Pip's first choice gave him useful clues for later." },
+                { "id": "b", "text": "Pip's first choice ended the story right away." }
+              ]
+            },
+            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Now the consequences are clearer. Should Pip take the willow arch or take the rain barrel ramp next?",
+              "choiceB": "Now the consequences are clearer. Should Pip take the willow arch or take the rain barrel ramp next?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "branchA", "text": "Take the willow arch" },
+                { "id": "branchB", "text": "Take the rain barrel ramp" }
+              ],
+              "choiceB": [
+                { "id": "branchA", "text": "Take the willow arch" },
+                { "id": "branchB", "text": "Take the rain barrel ramp" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "What was the result of Pip's route?",
+              "choiceA_branchB": "What was the result of Pip's route?",
+              "choiceB_branchA": "What was the result of Pip's route?",
+              "choiceB_branchB": "What was the result of Pip's route?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Pip's second choice changed how safely he could carry the seeds." },
+                { "id": "b", "text": "Pip's second choice had no effect on the ending." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Pip's second choice changed how safely he could carry the seeds." },
+                { "id": "b", "text": "Pip's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Pip's second choice changed how safely he could carry the seeds." },
+                { "id": "b", "text": "Pip's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Pip's second choice changed how safely he could carry the seeds." },
+                { "id": "b", "text": "Pip's second choice had no effect on the ending." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which ending best matches Pip's path?",
+              "choiceA_branchB": "Which ending best matches Pip's path?",
+              "choiceB_branchA": "Which ending best matches Pip's path?",
+              "choiceB_branchB": "Which ending best matches Pip's path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Pip's choices showed that kindness and patience can save the day." },
+                { "id": "b", "text": "Pip got the same ending no matter what he did." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Pip's choices showed that kindness and patience can save the day." },
+                { "id": "b", "text": "Pip got the same ending no matter what he did." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Pip's choices showed that kindness and patience can save the day." },
+                { "id": "b", "text": "Pip got the same ending no matter what he did." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Pip's choices showed that kindness and patience can save the day." },
+                { "id": "b", "text": "Pip got the same ending no matter what he did." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      }
+    ],
+    "2": [
+      {
+        "id": "g2-fable-orchard-shared-apple",
+        "theme": "fable",
+        "title": "The Fox and the Shared Orchard",
+        "paragraphs": {
+          "step1": "At the start of this adventure, Mira the fox spots the last ripe apples in the orchard before a cold wind arrives. She must help her friend Otis the otter carry the fruit home before the basket tips. If she chooses badly, the apples will bruise and the picnic will fail. The choices ahead will change what Mira learns and how the day ends.",
+          "step2": {
+            "choiceA": "She asks the orchard keeper for a wagon and gets a note about the safest route. Mira keeps the clue in mind before moving on. This first decision could help or hurt the final outcome.",
+            "choiceB": "She climbs the fence to save time and notices a loose board near the shed. Mira keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
+          },
+          "step3": {
+            "choiceA": "At the next turn, Mira must choose the stone lane or the creek lane. Mira knows this next choice will decide how much of the first clue still matters. With little time left, Mira commits and moves.",
+            "choiceB": "At the next turn, Mira must choose the stone lane or the creek lane. Mira knows this next choice will decide how much of the first clue still matters. With little time left, Mira commits and moves."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing ask the orchard keeper for help and then take the stone lane, the plan changes. The wagon rolls smoothly, and Mira and Otis arrive with every apple still bright. The consequence is immediate and changes what Mira can do next.",
+            "choiceA_branchB": "After choosing ask the orchard keeper for help and then take the creek lane, the plan changes. The path is slippery, and Mira spends time rescuing a basket from the mud. The consequence is immediate and changes what Mira can do next.",
+            "choiceB_branchA": "After choosing climb the fence first and then take the stone lane, the plan changes. The loose board becomes a shortcut that helps Mira steady the basket. The consequence is immediate and changes what Mira can do next.",
+            "choiceB_branchB": "After choosing climb the fence first and then take the creek lane, the plan changes. The shortcut saves time, but a splash of water softens the apples. The consequence is immediate and changes what Mira can do next."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on ask the orchard keeper for help plus take the stone lane, Mira reaches the final result. Mira shares the apples and learns that teamwork can make a small harvest feel big. Mira leaves with a new plan for the next adventure. Lesson: sharing with others can make success sweeter.",
+            "choiceA_branchB": "By ending on ask the orchard keeper for help plus take the creek lane, Mira reaches the final result. The apples still arrive, but the muddy trip teaches her to slow down and listen. Mira leaves with a new plan for the next adventure. Lesson: even a bumpy plan can teach a better way.",
+            "choiceB_branchA": "By ending on climb the fence first plus take the stone lane, Mira reaches the final result. She delivers the apples on time and promises to ask for help sooner next time. Mira leaves with a new plan for the next adventure. Lesson: quick thinking works best when it stays fair.",
+            "choiceB_branchB": "By ending on climb the fence first plus take the creek lane, Mira reaches the final result. Some apples bruise, but Mira admits the mistake and helps fix the picnic anyway. Mira leaves with a new plan for the next adventure. Lesson: honesty and care matter more than rushing alone."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "With the stakes already rising, should Mira ask the orchard keeper for help or climb the fence first?",
+            "options": [
+              { "id": "choiceA", "text": "Ask the orchard keeper for help" },
+              { "id": "choiceB", "text": "Climb the fence first" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "What changed because of Mira's first choice?",
+              "choiceB": "What changed because of Mira's first choice?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "a", "text": "Mira's first choice gave her a useful clue for later." },
+                { "id": "b", "text": "Mira's first choice ended the adventure right away." }
+              ],
+              "choiceB": [
+                { "id": "a", "text": "Mira's first choice gave her a useful clue for later." },
+                { "id": "b", "text": "Mira's first choice ended the adventure right away." }
+              ]
+            },
+            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Now the consequences are clearer. Should Mira take the stone lane or take the creek lane next?",
+              "choiceB": "Now the consequences are clearer. Should Mira take the stone lane or take the creek lane next?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "branchA", "text": "Take the stone lane" },
+                { "id": "branchB", "text": "Take the creek lane" }
+              ],
+              "choiceB": [
+                { "id": "branchA", "text": "Take the stone lane" },
+                { "id": "branchB", "text": "Take the creek lane" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "What was the result of Mira's route?",
+              "choiceA_branchB": "What was the result of Mira's route?",
+              "choiceB_branchA": "What was the result of Mira's route?",
+              "choiceB_branchB": "What was the result of Mira's route?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Mira's second choice changed how safely she could carry the apples." },
+                { "id": "b", "text": "Mira's second choice had no effect on the ending." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Mira's second choice changed how safely she could carry the apples." },
+                { "id": "b", "text": "Mira's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Mira's second choice changed how safely she could carry the apples." },
+                { "id": "b", "text": "Mira's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Mira's second choice changed how safely she could carry the apples." },
+                { "id": "b", "text": "Mira's second choice had no effect on the ending." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which ending best matches Mira's path?",
+              "choiceA_branchB": "Which ending best matches Mira's path?",
+              "choiceB_branchA": "Which ending best matches Mira's path?",
+              "choiceB_branchB": "Which ending best matches Mira's path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Mira learned that sharing and teamwork can make a hard job easier." },
+                { "id": "b", "text": "Mira got the same ending no matter what she did." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Mira learned that sharing and teamwork can make a hard job easier." },
+                { "id": "b", "text": "Mira got the same ending no matter what she did." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Mira learned that sharing and teamwork can make a hard job easier." },
+                { "id": "b", "text": "Mira got the same ending no matter what she did." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Mira learned that sharing and teamwork can make a hard job easier." },
+                { "id": "b", "text": "Mira got the same ending no matter what she did." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      }
+    ],
+    "3": [
+      {
+        "id": "g3-fable-river-bridge",
+        "theme": "fable",
+        "title": "The Hare and the River Bridge",
+        "paragraphs": {
+          "step1": "At the start of this adventure, Toma the hare finds a broken bridge over the river before the market bell rings. He must guide Lila the beaver and the berry cart across without losing the last basket. If he chooses poorly, the cart may tip and the town feast will be smaller. The choices ahead will change what Toma learns and how the day ends.",
+          "step2": {
+            "choiceA": "He asks the bridge keeper about the safest boards and gets a trail note. Toma keeps the clue in mind before moving on. This first decision could help or hurt the final outcome.",
+            "choiceB": "He races ahead alone and spots a shortcut marked with chalk by the river stones. Toma keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
+          },
+          "step3": {
+            "choiceA": "At the next turn, Toma must choose the low plank or the hill path. Toma knows this next choice will decide how much of the first clue still matters. With little time left, Toma commits and moves.",
+            "choiceB": "At the next turn, Toma must choose the low plank or the hill path. Toma knows this next choice will decide how much of the first clue still matters. With little time left, Toma commits and moves."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing ask the bridge keeper for help and then take the low plank, the plan changes. The bridge keeper steadies the cart, and the berries cross the river safely. The consequence is immediate and changes what Toma can do next.",
+            "choiceA_branchB": "After choosing ask the bridge keeper for help and then take the hill path, the plan changes. The hill path is longer, and Toma loses time but learns a calmer pace. The consequence is immediate and changes what Toma can do next.",
+            "choiceB_branchA": "After choosing race ahead alone and then take the low plank, the plan changes. Toma hurries, but the chalk note helps him balance the cart at the last moment. The consequence is immediate and changes what Toma can do next.",
+            "choiceB_branchB": "After choosing race ahead alone and then take the hill path, the plan changes. The detour is safe, yet the cart arrives just as the bell starts. The consequence is immediate and changes what Toma can do next."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on ask the bridge keeper for help plus take the low plank, Toma reaches the final result. The feast is saved, and Toma learns that patience and advice can be as useful as speed. Toma leaves with a new plan for the next adventure. Lesson: listening carefully can turn a risky path into a safe one.",
+            "choiceA_branchB": "By ending on ask the bridge keeper for help plus take the hill path, Toma reaches the final result. The cart arrives late, but the town still shares the berries with gratitude. Toma leaves with a new plan for the next adventure. Lesson: a slower choice can still be a wise choice.",
+            "choiceB_branchA": "By ending on race ahead alone plus take the low plank, Toma reaches the final result. He crosses in time and learns that a good clue can support a hurried start. Toma leaves with a new plan for the next adventure. Lesson: speed works best when it is guided by good information.",
+            "choiceB_branchB": "By ending on race ahead alone plus take the hill path, Toma reaches the final result. He arrives safely, but he realizes that rushing alone wastes energy. Toma leaves with a new plan for the next adventure. Lesson: haste can be useful only when it leaves room for care."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "With the stakes already rising, should Toma ask the bridge keeper for help or race ahead alone?",
+            "options": [
+              { "id": "choiceA", "text": "Ask the bridge keeper for help" },
+              { "id": "choiceB", "text": "Race ahead alone" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "What changed because of Toma's first choice?",
+              "choiceB": "What changed because of Toma's first choice?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "a", "text": "Toma's first choice gave him useful clues for later." },
+                { "id": "b", "text": "Toma's first choice ended the adventure right away." }
+              ],
+              "choiceB": [
+                { "id": "a", "text": "Toma's first choice gave him useful clues for later." },
+                { "id": "b", "text": "Toma's first choice ended the adventure right away." }
+              ]
+            },
+            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Now the consequences are clearer. Should Toma take the low plank or take the hill path next?",
+              "choiceB": "Now the consequences are clearer. Should Toma take the low plank or take the hill path next?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "branchA", "text": "Take the low plank" },
+                { "id": "branchB", "text": "Take the hill path" }
+              ],
+              "choiceB": [
+                { "id": "branchA", "text": "Take the low plank" },
+                { "id": "branchB", "text": "Take the hill path" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "What was the result of Toma's route?",
+              "choiceA_branchB": "What was the result of Toma's route?",
+              "choiceB_branchA": "What was the result of Toma's route?",
+              "choiceB_branchB": "What was the result of Toma's route?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Toma's second choice changed how safely he could carry the cart." },
+                { "id": "b", "text": "Toma's second choice had no effect on the ending." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Toma's second choice changed how safely he could carry the cart." },
+                { "id": "b", "text": "Toma's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Toma's second choice changed how safely he could carry the cart." },
+                { "id": "b", "text": "Toma's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Toma's second choice changed how safely he could carry the cart." },
+                { "id": "b", "text": "Toma's second choice had no effect on the ending." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which ending best matches Toma's path?",
+              "choiceA_branchB": "Which ending best matches Toma's path?",
+              "choiceB_branchA": "Which ending best matches Toma's path?",
+              "choiceB_branchB": "Which ending best matches Toma's path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Toma learned that patience and advice can be as useful as speed." },
+                { "id": "b", "text": "Toma got the same ending no matter what he did." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Toma learned that patience and advice can be as useful as speed." },
+                { "id": "b", "text": "Toma got the same ending no matter what he did." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Toma learned that patience and advice can be as useful as speed." },
+                { "id": "b", "text": "Toma got the same ending no matter what he did." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Toma learned that patience and advice can be as useful as speed." },
+                { "id": "b", "text": "Toma got the same ending no matter what he did." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      }
+    ],
+    "4": [
+      {
+        "id": "g4-fable-owl-ledger",
+        "theme": "fable",
+        "title": "The Owl and the Seed Ledger",
+        "paragraphs": {
+          "step1": "At the start of this adventure, Ora the owl finds a seed ledger that lists every garden plot before winter. She must match the right seeds to each family before the first frost. If she chooses poorly, some beds will stay empty and the harvest promise will fail. The choices ahead will change what Ora learns and how the day ends.",
+          "step2": {
+            "choiceA": "She checks the north stacks and finds notes about the oldest plots. Ora keeps the clue in mind before moving on. This first decision could help or hurt the final outcome.",
+            "choiceB": "She checks the south shed and finds labels tied to empty baskets. Ora keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
+          },
+          "step3": {
+            "choiceA": "At the next turn, Ora must choose the trail lamp path or the root cellar path. Ora knows this next choice will decide how much of the first clue still matters. With little time left, Ora commits and moves.",
+            "choiceB": "At the next turn, Ora must choose the trail lamp path or the root cellar path. Ora knows this next choice will decide how much of the first clue still matters. With little time left, Ora commits and moves."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing check the north stacks and then take the trail lamp path, the plan changes. Ora finds the exact seed map and marks the beds before dusk. The consequence is immediate and changes what Ora can do next.",
+            "choiceA_branchB": "After choosing check the north stacks and then take the root cellar path, the plan changes. The cellar is dark, but Ora discovers a hidden tag that corrects one line in the ledger. The consequence is immediate and changes what Ora can do next.",
+            "choiceB_branchA": "After choosing check the south shed and then take the trail lamp path, the plan changes. The labels line up with the ledger, and Ora sends the right seeds to each family. The consequence is immediate and changes what Ora can do next.",
+            "choiceB_branchB": "After choosing check the south shed and then take the root cellar path, the plan changes. Ora finds a torn list and has to repair the record before she can continue. The consequence is immediate and changes what Ora can do next."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on check the north stacks plus take the trail lamp path, Ora reaches the final result. The garden beds are filled on time, and Ora learns that careful records protect everyone. Ora leaves with a new plan for the next adventure. Lesson: honesty and planning can grow trust.",
+            "choiceA_branchB": "By ending on check the north stacks plus take the root cellar path, Ora reaches the final result. One bed is late, but Ora fixes the ledger and keeps the families informed. Ora leaves with a new plan for the next adventure. Lesson: even a mistake can be repaired with responsibility.",
+            "choiceB_branchA": "By ending on check the south shed plus take the trail lamp path, Ora reaches the final result. The right seeds reach the right hands, and Ora earns the trust of the whole village. Ora leaves with a new plan for the next adventure. Lesson: clear thinking helps everyone move forward.",
+            "choiceB_branchB": "By ending on check the south shed plus take the root cellar path, Ora reaches the final result. The ledger needs a correction, but Ora finishes the job and learns to slow down before deciding. Ora leaves with a new plan for the next adventure. Lesson: careful work beats guessing in the dark."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "With the stakes already rising, should Ora check the north stacks or check the south shed to begin?",
+            "options": [
+              { "id": "choiceA", "text": "Check the north stacks" },
+              { "id": "choiceB", "text": "Check the south shed" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "What changed because of Ora's first choice?",
+              "choiceB": "What changed because of Ora's first choice?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "a", "text": "Ora's first choice gave her useful clues for later." },
+                { "id": "b", "text": "Ora's first choice ended the adventure right away." }
+              ],
+              "choiceB": [
+                { "id": "a", "text": "Ora's first choice gave her useful clues for later." },
+                { "id": "b", "text": "Ora's first choice ended the adventure right away." }
+              ]
+            },
+            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Now the consequences are clearer. Should Ora take the trail lamp path or take the root cellar path next?",
+              "choiceB": "Now the consequences are clearer. Should Ora take the trail lamp path or take the root cellar path next?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "branchA", "text": "Take the trail lamp path" },
+                { "id": "branchB", "text": "Take the root cellar path" }
+              ],
+              "choiceB": [
+                { "id": "branchA", "text": "Take the trail lamp path" },
+                { "id": "branchB", "text": "Take the root cellar path" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "What was the result of Ora's route?",
+              "choiceA_branchB": "What was the result of Ora's route?",
+              "choiceB_branchA": "What was the result of Ora's route?",
+              "choiceB_branchB": "What was the result of Ora's route?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Ora's second choice changed how safely she could finish the ledger." },
+                { "id": "b", "text": "Ora's second choice had no effect on the ending." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Ora's second choice changed how safely she could finish the ledger." },
+                { "id": "b", "text": "Ora's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Ora's second choice changed how safely she could finish the ledger." },
+                { "id": "b", "text": "Ora's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Ora's second choice changed how safely she could finish the ledger." },
+                { "id": "b", "text": "Ora's second choice had no effect on the ending." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which ending best matches Ora's path?",
+              "choiceA_branchB": "Which ending best matches Ora's path?",
+              "choiceB_branchA": "Which ending best matches Ora's path?",
+              "choiceB_branchB": "Which ending best matches Ora's path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Ora learned that honesty and planning can protect a whole community." },
+                { "id": "b", "text": "Ora got the same ending no matter what she did." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Ora learned that honesty and planning can protect a whole community." },
+                { "id": "b", "text": "Ora got the same ending no matter what she did." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Ora learned that honesty and planning can protect a whole community." },
+                { "id": "b", "text": "Ora got the same ending no matter what she did." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Ora learned that honesty and planning can protect a whole community." },
+                { "id": "b", "text": "Ora got the same ending no matter what she did." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      }
+    ],
+    "5": [
+      {
+        "id": "g5-fable-lantern-path",
+        "theme": "fable",
+        "title": "The Deer and the Lantern Path",
+        "paragraphs": {
+          "step1": "At the start of this adventure, Sena the deer carries a lantern map for the village festival before the fog rolls in. She must guide her friend Bram the badger across the hill path and keep the lights steady. If she chooses badly, the lanterns may go out and the parade will lose its way. The choices ahead will change what Sena learns and how the day ends.",
+          "step2": {
+            "choiceA": "She asks the lantern maker for the safest route and gets a note about the wind. Sena keeps the clue in mind before moving on. This first decision could help or hurt the final outcome.",
+            "choiceB": "She follows the music from the festival and spots a side trail near the pine trees. Sena keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
+          },
+          "step3": {
+            "choiceA": "At the next turn, Sena must choose the stone steps or the meadow curve. Sena knows this next choice will decide how much of the first clue still matters. With little time left, Sena commits and moves.",
+            "choiceB": "At the next turn, Sena must choose the stone steps or the meadow curve. Sena knows this next choice will decide how much of the first clue still matters. With little time left, Sena commits and moves."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing ask the lantern maker for help and then take the stone steps, the plan changes. The wind note keeps the flame steady, and the pair reach the festival gate in time. The consequence is immediate and changes what Sena can do next.",
+            "choiceA_branchB": "After choosing ask the lantern maker for help and then take the meadow curve, the plan changes. The curve is longer, but Sena protects the lantern and the flame stays bright. The consequence is immediate and changes what Sena can do next.",
+            "choiceB_branchA": "After choosing follow the music trail and then take the stone steps, the plan changes. The side trail leads to a shortcut that helps Bram carry the heavier lantern. The consequence is immediate and changes what Sena can do next.",
+            "choiceB_branchB": "After choosing follow the music trail and then take the meadow curve, the plan changes. The fog thickens, but the quiet path keeps the lanterns from shaking loose. The consequence is immediate and changes what Sena can do next."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on ask the lantern maker for help plus take the stone steps, Sena reaches the final result. The parade shines across the hill, and Sena learns that planning with others keeps a big job manageable. Sena leaves with a new plan for the next adventure. Lesson: teamwork and preparation can brighten any path.",
+            "choiceA_branchB": "By ending on ask the lantern maker for help plus take the meadow curve, Sena reaches the final result. The festival starts a little late, but the lanterns stay lit and the village smiles. Sena leaves with a new plan for the next adventure. Lesson: slow steps can still lead to a strong finish.",
+            "choiceB_branchA": "By ending on follow the music trail plus take the stone steps, Sena reaches the final result. The shortcut helps the parade begin on time, and Sena sees how clues can guide courage. Sena leaves with a new plan for the next adventure. Lesson: listening closely can make a brave choice wiser.",
+            "choiceB_branchB": "By ending on follow the music trail plus take the meadow curve, Sena reaches the final result. The lanterns wobble, but Sena steadies them and finishes the route. Sena leaves with a new plan for the next adventure. Lesson: calm thinking can keep small problems from growing bigger."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "With the stakes already rising, should Sena ask the lantern maker for help or follow the music trail to begin?",
+            "options": [
+              { "id": "choiceA", "text": "Ask the lantern maker for help" },
+              { "id": "choiceB", "text": "Follow the music trail" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "What changed because of Sena's first choice?",
+              "choiceB": "What changed because of Sena's first choice?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "a", "text": "Sena's first choice gave her a useful clue for later." },
+                { "id": "b", "text": "Sena's first choice ended the adventure right away." }
+              ],
+              "choiceB": [
+                { "id": "a", "text": "Sena's first choice gave her a useful clue for later." },
+                { "id": "b", "text": "Sena's first choice ended the adventure right away." }
+              ]
+            },
+            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Now the consequences are clearer. Should Sena take the stone steps or take the meadow curve next?",
+              "choiceB": "Now the consequences are clearer. Should Sena take the stone steps or take the meadow curve next?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "branchA", "text": "Take the stone steps" },
+                { "id": "branchB", "text": "Take the meadow curve" }
+              ],
+              "choiceB": [
+                { "id": "branchA", "text": "Take the stone steps" },
+                { "id": "branchB", "text": "Take the meadow curve" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "What was the result of Sena's route?",
+              "choiceA_branchB": "What was the result of Sena's route?",
+              "choiceB_branchA": "What was the result of Sena's route?",
+              "choiceB_branchB": "What was the result of Sena's route?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Sena's second choice changed how safely she could carry the lanterns." },
+                { "id": "b", "text": "Sena's second choice had no effect on the ending." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Sena's second choice changed how safely she could carry the lanterns." },
+                { "id": "b", "text": "Sena's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Sena's second choice changed how safely she could carry the lanterns." },
+                { "id": "b", "text": "Sena's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Sena's second choice changed how safely she could carry the lanterns." },
+                { "id": "b", "text": "Sena's second choice had no effect on the ending." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which ending best matches Sena's path?",
+              "choiceA_branchB": "Which ending best matches Sena's path?",
+              "choiceB_branchA": "Which ending best matches Sena's path?",
+              "choiceB_branchB": "Which ending best matches Sena's path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Sena learned that teamwork and preparation can brighten any path." },
+                { "id": "b", "text": "Sena got the same ending no matter what she did." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Sena learned that teamwork and preparation can brighten any path." },
+                { "id": "b", "text": "Sena got the same ending no matter what she did." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Sena learned that teamwork and preparation can brighten any path." },
+                { "id": "b", "text": "Sena got the same ending no matter what she did." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Sena learned that teamwork and preparation can brighten any path." },
+                { "id": "b", "text": "Sena got the same ending no matter what she did." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      }
+    ],
+    "6": [
+      {
+        "id": "g6-fable-council-bell",
+        "theme": "fable",
+        "title": "The Wolf and the Council Bell",
+        "paragraphs": {
+          "step1": "At the start of this adventure, Rhea the wolf hears the council bell before the mountain village meeting begins. She must deliver a warning about the old trail before the road crew leaves. If she chooses poorly, the village may lose trust and miss the safe path. The choices ahead will change what Rhea learns and how the day ends.",
+          "step2": {
+            "choiceA": "She speaks with the bell keeper first and gets a written note about the meeting order. Rhea keeps the clue in mind before moving on. This first decision could help or hurt the final outcome.",
+            "choiceB": "She follows the ridge road first and sees fresh marks near the storm fence. Rhea keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
+          },
+          "step3": {
+            "choiceA": "At the next turn, Rhea must choose the lantern stairs or the creek path. Rhea knows this next choice will decide how much of the first clue still matters. With little time left, Rhea commits and moves.",
+            "choiceB": "At the next turn, Rhea must choose the lantern stairs or the creek path. Rhea knows this next choice will decide how much of the first clue still matters. With little time left, Rhea commits and moves."
+          },
+          "step4": {
+            "choiceA_branchA": "After choosing speak with the bell keeper first and then take the lantern stairs, the plan changes. The note proves the warning is urgent, and the council opens the safe trail gate. The consequence is immediate and changes what Rhea can do next.",
+            "choiceA_branchB": "After choosing speak with the bell keeper first and then take the creek path, the plan changes. The creek is rough, but Rhea reaches the council with proof of the danger. The consequence is immediate and changes what Rhea can do next.",
+            "choiceB_branchA": "After choosing follow the ridge road first and then take the lantern stairs, the plan changes. The storm marks match the warning, and Rhea can explain the risk clearly. The consequence is immediate and changes what Rhea can do next.",
+            "choiceB_branchB": "After choosing follow the ridge road first and then take the creek path, the plan changes. The path takes longer, but it helps Rhea avoid a crowd and speak directly to the leaders. The consequence is immediate and changes what Rhea can do next."
+          },
+          "step5": {
+            "choiceA_branchA": "By ending on speak with the bell keeper first plus take the lantern stairs, Rhea reaches the final result. The village trusts her warning, and the old trail is closed before danger arrives. Rhea leaves with a new plan for the next adventure. Lesson: honest words and steady leadership can protect many people.",
+            "choiceA_branchB": "By ending on speak with the bell keeper first plus take the creek path, Rhea reaches the final result. The warning arrives late, but Rhea still helps the village make a safer plan. Rhea leaves with a new plan for the next adventure. Lesson: doing the right thing still matters even when the timing is hard.",
+            "choiceB_branchA": "By ending on follow the ridge road first plus take the lantern stairs, Rhea reaches the final result. The leaders listen because she brings clear proof, and the team changes course. Rhea leaves with a new plan for the next adventure. Lesson: careful evidence can build trust faster than force.",
+            "choiceB_branchB": "By ending on follow the ridge road first plus take the creek path, Rhea reaches the final result. She reaches the meeting tired, but she still speaks clearly and saves the day. Rhea leaves with a new plan for the next adventure. Lesson: courage grows when action and honesty work together."
+          }
+        },
+        "interactions": {
+          "step1": {
+            "type": "choice",
+            "prompt": "With the stakes already rising, should Rhea speak with the bell keeper or follow the ridge road first?",
+            "options": [
+              { "id": "choiceA", "text": "Speak with the bell keeper" },
+              { "id": "choiceB", "text": "Follow the ridge road" }
+            ]
+          },
+          "step2": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA": "What changed because of Rhea's first choice?",
+              "choiceB": "What changed because of Rhea's first choice?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "a", "text": "Rhea's first choice gave her useful clues for later." },
+                { "id": "b", "text": "Rhea's first choice ended the adventure right away." }
+              ],
+              "choiceB": [
+                { "id": "a", "text": "Rhea's first choice gave her useful clues for later." },
+                { "id": "b", "text": "Rhea's first choice ended the adventure right away." }
+              ]
+            },
+            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+          },
+          "step3": {
+            "type": "choice",
+            "promptByPath": {
+              "choiceA": "Now the consequences are clearer. Should Rhea take the lantern stairs or take the creek path next?",
+              "choiceB": "Now the consequences are clearer. Should Rhea take the lantern stairs or take the creek path next?"
+            },
+            "optionsByPath": {
+              "choiceA": [
+                { "id": "branchA", "text": "Take the lantern stairs" },
+                { "id": "branchB", "text": "Take the creek path" }
+              ],
+              "choiceB": [
+                { "id": "branchA", "text": "Take the lantern stairs" },
+                { "id": "branchB", "text": "Take the creek path" }
+              ]
+            }
+          },
+          "step4": {
+            "type": "check",
+            "promptByPath": {
+              "choiceA_branchA": "What was the result of Rhea's route?",
+              "choiceA_branchB": "What was the result of Rhea's route?",
+              "choiceB_branchA": "What was the result of Rhea's route?",
+              "choiceB_branchB": "What was the result of Rhea's route?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Rhea's second choice changed how clearly she could deliver the warning." },
+                { "id": "b", "text": "Rhea's second choice had no effect on the ending." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Rhea's second choice changed how clearly she could deliver the warning." },
+                { "id": "b", "text": "Rhea's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Rhea's second choice changed how clearly she could deliver the warning." },
+                { "id": "b", "text": "Rhea's second choice had no effect on the ending." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Rhea's second choice changed how clearly she could deliver the warning." },
+                { "id": "b", "text": "Rhea's second choice had no effect on the ending." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          },
+          "step5": {
+            "type": "summary",
+            "promptByPath": {
+              "choiceA_branchA": "Which ending best matches Rhea's path?",
+              "choiceA_branchB": "Which ending best matches Rhea's path?",
+              "choiceB_branchA": "Which ending best matches Rhea's path?",
+              "choiceB_branchB": "Which ending best matches Rhea's path?"
+            },
+            "optionsByPath": {
+              "choiceA_branchA": [
+                { "id": "a", "text": "Rhea learned that honest leadership and trust can protect a community." },
+                { "id": "b", "text": "Rhea got the same ending no matter what she did." }
+              ],
+              "choiceA_branchB": [
+                { "id": "a", "text": "Rhea learned that honest leadership and trust can protect a community." },
+                { "id": "b", "text": "Rhea got the same ending no matter what she did." }
+              ],
+              "choiceB_branchA": [
+                { "id": "a", "text": "Rhea learned that honest leadership and trust can protect a community." },
+                { "id": "b", "text": "Rhea got the same ending no matter what she did." }
+              ],
+              "choiceB_branchB": [
+                { "id": "a", "text": "Rhea learned that honest leadership and trust can protect a community." },
+                { "id": "b", "text": "Rhea got the same ending no matter what she did." }
+              ]
+            },
+            "correctByPath": {
+              "choiceA_branchA": "a",
+              "choiceA_branchB": "a",
+              "choiceB_branchA": "a",
+              "choiceB_branchB": "a"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
