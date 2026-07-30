@@ -12,8 +12,8 @@
             "choiceB": "He crosses the pebble path and spots a torn ribbon on the bean pole. Pip keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At the next turn, Pip must choose the willow arch or the rain barrel ramp. Pip knows this next choice will decide how much of the first clue still matters. With little time left, Pip commits and moves.",
-            "choiceB": "At the next turn, Pip must choose the willow arch or the rain barrel ramp. Pip knows this next choice will decide how much of the first clue still matters. With little time left, Pip commits and moves."
+            "choiceA": "Because the story began with follow the fence line, the setting changes right away. New clues appear, and the hero must choose take the willow arch or take the rain barrel ramp. This choice changes the ending and what the character learns.",
+            "choiceB": "Because the story began with cross the pebble path, the setting changes right away. New clues appear, and the hero must choose take the willow arch or take the rain barrel ramp. This choice changes the ending and what the character learns."
           },
           "step4": {
             "choiceA_branchA": "After choosing follow the fence line and then take the willow arch, the plan changes. The paw prints lead to the seed bell, and Pip reaches it before the rain starts. The consequence is immediate and changes what Pip can do next.",
@@ -33,8 +33,14 @@
             "type": "choice",
             "prompt": "With the stakes already rising, should Pip follow the fence line or cross the pebble path to begin?",
             "options": [
-              { "id": "choiceA", "text": "Follow the fence line" },
-              { "id": "choiceB", "text": "Cross the pebble path" }
+              {
+                "id": "choiceA",
+                "text": "Follow the fence line"
+              },
+              {
+                "id": "choiceB",
+                "text": "Cross the pebble path"
+              }
             ]
           },
           "step2": {
@@ -45,30 +51,57 @@
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "a", "text": "Pip's first choice gave him useful clues for later." },
-                { "id": "b", "text": "Pip's first choice ended the story right away." }
+                {
+                  "id": "a",
+                  "text": "Pip's first choice gave him useful clues for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Pip's first choice ended the story right away."
+                }
               ],
               "choiceB": [
-                { "id": "a", "text": "Pip's first choice gave him useful clues for later." },
-                { "id": "b", "text": "Pip's first choice ended the story right away." }
+                {
+                  "id": "a",
+                  "text": "Pip's first choice gave him useful clues for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Pip's first choice ended the story right away."
+                }
               ]
             },
-            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
           },
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Pip take the willow arch or take the rain barrel ramp next?",
-              "choiceB": "Now the consequences are clearer. Should Pip take the willow arch or take the rain barrel ramp next?"
+              "choiceA": "Because follow the fence line changed the clues, should the character take the willow arch or take the rain barrel ramp next?",
+              "choiceB": "Because cross the pebble path changed the clues, should the character take the willow arch or take the rain barrel ramp next?"
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "branchA", "text": "Take the willow arch" },
-                { "id": "branchB", "text": "Take the rain barrel ramp" }
+                {
+                  "id": "branchA",
+                  "text": "Take the willow arch"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the rain barrel ramp"
+                }
               ],
               "choiceB": [
-                { "id": "branchA", "text": "Take the willow arch" },
-                { "id": "branchB", "text": "Take the rain barrel ramp" }
+                {
+                  "id": "branchA",
+                  "text": "Take the willow arch"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the rain barrel ramp"
+                }
               ]
             }
           },
@@ -82,20 +115,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Pip's second choice changed how safely he could carry the seeds." },
-                { "id": "b", "text": "Pip's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Pip's second choice changed how safely he could carry the seeds."
+                },
+                {
+                  "id": "b",
+                  "text": "Pip's second choice had no effect on the ending."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Pip's second choice changed how safely he could carry the seeds." },
-                { "id": "b", "text": "Pip's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Pip's second choice changed how safely he could carry the seeds."
+                },
+                {
+                  "id": "b",
+                  "text": "Pip's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Pip's second choice changed how safely he could carry the seeds." },
-                { "id": "b", "text": "Pip's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Pip's second choice changed how safely he could carry the seeds."
+                },
+                {
+                  "id": "b",
+                  "text": "Pip's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Pip's second choice changed how safely he could carry the seeds." },
-                { "id": "b", "text": "Pip's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Pip's second choice changed how safely he could carry the seeds."
+                },
+                {
+                  "id": "b",
+                  "text": "Pip's second choice had no effect on the ending."
+                }
               ]
             },
             "correctByPath": {
@@ -115,20 +172,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Pip's choices showed that kindness and patience can save the day." },
-                { "id": "b", "text": "Pip got the same ending no matter what he did." }
+                {
+                  "id": "a",
+                  "text": "Pip's choices showed that kindness and patience can save the day."
+                },
+                {
+                  "id": "b",
+                  "text": "Pip got the same ending no matter what he did."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Pip's choices showed that kindness and patience can save the day." },
-                { "id": "b", "text": "Pip got the same ending no matter what he did." }
+                {
+                  "id": "a",
+                  "text": "Pip's choices showed that kindness and patience can save the day."
+                },
+                {
+                  "id": "b",
+                  "text": "Pip got the same ending no matter what he did."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Pip's choices showed that kindness and patience can save the day." },
-                { "id": "b", "text": "Pip got the same ending no matter what he did." }
+                {
+                  "id": "a",
+                  "text": "Pip's choices showed that kindness and patience can save the day."
+                },
+                {
+                  "id": "b",
+                  "text": "Pip got the same ending no matter what he did."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Pip's choices showed that kindness and patience can save the day." },
-                { "id": "b", "text": "Pip got the same ending no matter what he did." }
+                {
+                  "id": "a",
+                  "text": "Pip's choices showed that kindness and patience can save the day."
+                },
+                {
+                  "id": "b",
+                  "text": "Pip got the same ending no matter what he did."
+                }
               ]
             },
             "correctByPath": {
@@ -153,8 +234,8 @@
             "choiceB": "She climbs the fence to save time and notices a loose board near the shed. Mira keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At the next turn, Mira must choose the stone lane or the creek lane. Mira knows this next choice will decide how much of the first clue still matters. With little time left, Mira commits and moves.",
-            "choiceB": "At the next turn, Mira must choose the stone lane or the creek lane. Mira knows this next choice will decide how much of the first clue still matters. With little time left, Mira commits and moves."
+            "choiceA": "After choosing ask the orchard keeper for help, the character reaches a new part of the setting with different clues. Next comes a choice between take the stone lane and take the creek lane. That decision changes the plot and the final lesson.",
+            "choiceB": "After choosing climb the fence first, the character reaches a new part of the setting with different clues. Next comes a choice between take the stone lane and take the creek lane. That decision changes the plot and the final lesson."
           },
           "step4": {
             "choiceA_branchA": "After choosing ask the orchard keeper for help and then take the stone lane, the plan changes. The wagon rolls smoothly, and Mira and Otis arrive with every apple still bright. The consequence is immediate and changes what Mira can do next.",
@@ -174,8 +255,14 @@
             "type": "choice",
             "prompt": "With the stakes already rising, should Mira ask the orchard keeper for help or climb the fence first?",
             "options": [
-              { "id": "choiceA", "text": "Ask the orchard keeper for help" },
-              { "id": "choiceB", "text": "Climb the fence first" }
+              {
+                "id": "choiceA",
+                "text": "Ask the orchard keeper for help"
+              },
+              {
+                "id": "choiceB",
+                "text": "Climb the fence first"
+              }
             ]
           },
           "step2": {
@@ -186,30 +273,57 @@
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "a", "text": "Mira's first choice gave her a useful clue for later." },
-                { "id": "b", "text": "Mira's first choice ended the adventure right away." }
+                {
+                  "id": "a",
+                  "text": "Mira's first choice gave her a useful clue for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Mira's first choice ended the adventure right away."
+                }
               ],
               "choiceB": [
-                { "id": "a", "text": "Mira's first choice gave her a useful clue for later." },
-                { "id": "b", "text": "Mira's first choice ended the adventure right away." }
+                {
+                  "id": "a",
+                  "text": "Mira's first choice gave her a useful clue for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Mira's first choice ended the adventure right away."
+                }
               ]
             },
-            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
           },
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Mira take the stone lane or take the creek lane next?",
-              "choiceB": "Now the consequences are clearer. Should Mira take the stone lane or take the creek lane next?"
+              "choiceA": "Because ask the orchard keeper for help changed the clues, should the character take the stone lane or take the creek lane next?",
+              "choiceB": "Because climb the fence first changed the clues, should the character take the stone lane or take the creek lane next?"
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "branchA", "text": "Take the stone lane" },
-                { "id": "branchB", "text": "Take the creek lane" }
+                {
+                  "id": "branchA",
+                  "text": "Take the stone lane"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the creek lane"
+                }
               ],
               "choiceB": [
-                { "id": "branchA", "text": "Take the stone lane" },
-                { "id": "branchB", "text": "Take the creek lane" }
+                {
+                  "id": "branchA",
+                  "text": "Take the stone lane"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the creek lane"
+                }
               ]
             }
           },
@@ -223,20 +337,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Mira's second choice changed how safely she could carry the apples." },
-                { "id": "b", "text": "Mira's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Mira's second choice changed how safely she could carry the apples."
+                },
+                {
+                  "id": "b",
+                  "text": "Mira's second choice had no effect on the ending."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Mira's second choice changed how safely she could carry the apples." },
-                { "id": "b", "text": "Mira's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Mira's second choice changed how safely she could carry the apples."
+                },
+                {
+                  "id": "b",
+                  "text": "Mira's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Mira's second choice changed how safely she could carry the apples." },
-                { "id": "b", "text": "Mira's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Mira's second choice changed how safely she could carry the apples."
+                },
+                {
+                  "id": "b",
+                  "text": "Mira's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Mira's second choice changed how safely she could carry the apples." },
-                { "id": "b", "text": "Mira's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Mira's second choice changed how safely she could carry the apples."
+                },
+                {
+                  "id": "b",
+                  "text": "Mira's second choice had no effect on the ending."
+                }
               ]
             },
             "correctByPath": {
@@ -256,20 +394,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Mira learned that sharing and teamwork can make a hard job easier." },
-                { "id": "b", "text": "Mira got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Mira learned that sharing and teamwork can make a hard job easier."
+                },
+                {
+                  "id": "b",
+                  "text": "Mira got the same ending no matter what she did."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Mira learned that sharing and teamwork can make a hard job easier." },
-                { "id": "b", "text": "Mira got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Mira learned that sharing and teamwork can make a hard job easier."
+                },
+                {
+                  "id": "b",
+                  "text": "Mira got the same ending no matter what she did."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Mira learned that sharing and teamwork can make a hard job easier." },
-                { "id": "b", "text": "Mira got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Mira learned that sharing and teamwork can make a hard job easier."
+                },
+                {
+                  "id": "b",
+                  "text": "Mira got the same ending no matter what she did."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Mira learned that sharing and teamwork can make a hard job easier." },
-                { "id": "b", "text": "Mira got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Mira learned that sharing and teamwork can make a hard job easier."
+                },
+                {
+                  "id": "b",
+                  "text": "Mira got the same ending no matter what she did."
+                }
               ]
             },
             "correctByPath": {
@@ -294,8 +456,8 @@
             "choiceB": "He races ahead alone and spots a shortcut marked with chalk by the river stones. Toma keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At the next turn, Toma must choose the low plank or the hill path. Toma knows this next choice will decide how much of the first clue still matters. With little time left, Toma commits and moves.",
-            "choiceB": "At the next turn, Toma must choose the low plank or the hill path. Toma knows this next choice will decide how much of the first clue still matters. With little time left, Toma commits and moves."
+            "choiceA": "Choosing ask the bridge keeper for help reshapes the setting and raises a new problem. The character now weighs take the low plank against take the hill path, and each path builds different consequences. This is where character growth begins to show.",
+            "choiceB": "Choosing race ahead alone reshapes the setting and raises a new problem. The character now weighs take the low plank against take the hill path, and each path builds different consequences. This is where character growth begins to show."
           },
           "step4": {
             "choiceA_branchA": "After choosing ask the bridge keeper for help and then take the low plank, the plan changes. The bridge keeper steadies the cart, and the berries cross the river safely. The consequence is immediate and changes what Toma can do next.",
@@ -315,8 +477,14 @@
             "type": "choice",
             "prompt": "With the stakes already rising, should Toma ask the bridge keeper for help or race ahead alone?",
             "options": [
-              { "id": "choiceA", "text": "Ask the bridge keeper for help" },
-              { "id": "choiceB", "text": "Race ahead alone" }
+              {
+                "id": "choiceA",
+                "text": "Ask the bridge keeper for help"
+              },
+              {
+                "id": "choiceB",
+                "text": "Race ahead alone"
+              }
             ]
           },
           "step2": {
@@ -327,30 +495,57 @@
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "a", "text": "Toma's first choice gave him useful clues for later." },
-                { "id": "b", "text": "Toma's first choice ended the adventure right away." }
+                {
+                  "id": "a",
+                  "text": "Toma's first choice gave him useful clues for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Toma's first choice ended the adventure right away."
+                }
               ],
               "choiceB": [
-                { "id": "a", "text": "Toma's first choice gave him useful clues for later." },
-                { "id": "b", "text": "Toma's first choice ended the adventure right away." }
+                {
+                  "id": "a",
+                  "text": "Toma's first choice gave him useful clues for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Toma's first choice ended the adventure right away."
+                }
               ]
             },
-            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
           },
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Toma take the low plank or take the hill path next?",
-              "choiceB": "Now the consequences are clearer. Should Toma take the low plank or take the hill path next?"
+              "choiceA": "Because ask the bridge keeper for help changed the setting and evidence, should the character take the low plank or take the hill path next?",
+              "choiceB": "Because race ahead alone changed the setting and evidence, should the character take the low plank or take the hill path next?"
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "branchA", "text": "Take the low plank" },
-                { "id": "branchB", "text": "Take the hill path" }
+                {
+                  "id": "branchA",
+                  "text": "Take the low plank"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the hill path"
+                }
               ],
               "choiceB": [
-                { "id": "branchA", "text": "Take the low plank" },
-                { "id": "branchB", "text": "Take the hill path" }
+                {
+                  "id": "branchA",
+                  "text": "Take the low plank"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the hill path"
+                }
               ]
             }
           },
@@ -364,20 +559,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Toma's second choice changed how safely he could carry the cart." },
-                { "id": "b", "text": "Toma's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Toma's second choice changed how safely he could carry the cart."
+                },
+                {
+                  "id": "b",
+                  "text": "Toma's second choice had no effect on the ending."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Toma's second choice changed how safely he could carry the cart." },
-                { "id": "b", "text": "Toma's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Toma's second choice changed how safely he could carry the cart."
+                },
+                {
+                  "id": "b",
+                  "text": "Toma's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Toma's second choice changed how safely he could carry the cart." },
-                { "id": "b", "text": "Toma's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Toma's second choice changed how safely he could carry the cart."
+                },
+                {
+                  "id": "b",
+                  "text": "Toma's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Toma's second choice changed how safely he could carry the cart." },
-                { "id": "b", "text": "Toma's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Toma's second choice changed how safely he could carry the cart."
+                },
+                {
+                  "id": "b",
+                  "text": "Toma's second choice had no effect on the ending."
+                }
               ]
             },
             "correctByPath": {
@@ -397,20 +616,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Toma learned that patience and advice can be as useful as speed." },
-                { "id": "b", "text": "Toma got the same ending no matter what he did." }
+                {
+                  "id": "a",
+                  "text": "Toma learned that patience and advice can be as useful as speed."
+                },
+                {
+                  "id": "b",
+                  "text": "Toma got the same ending no matter what he did."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Toma learned that patience and advice can be as useful as speed." },
-                { "id": "b", "text": "Toma got the same ending no matter what he did." }
+                {
+                  "id": "a",
+                  "text": "Toma learned that patience and advice can be as useful as speed."
+                },
+                {
+                  "id": "b",
+                  "text": "Toma got the same ending no matter what he did."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Toma learned that patience and advice can be as useful as speed." },
-                { "id": "b", "text": "Toma got the same ending no matter what he did." }
+                {
+                  "id": "a",
+                  "text": "Toma learned that patience and advice can be as useful as speed."
+                },
+                {
+                  "id": "b",
+                  "text": "Toma got the same ending no matter what he did."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Toma learned that patience and advice can be as useful as speed." },
-                { "id": "b", "text": "Toma got the same ending no matter what he did." }
+                {
+                  "id": "a",
+                  "text": "Toma learned that patience and advice can be as useful as speed."
+                },
+                {
+                  "id": "b",
+                  "text": "Toma got the same ending no matter what he did."
+                }
               ]
             },
             "correctByPath": {
@@ -435,8 +678,8 @@
             "choiceB": "She checks the south shed and finds labels tied to empty baskets. Ora keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At the next turn, Ora must choose the trail lamp path or the root cellar path. Ora knows this next choice will decide how much of the first clue still matters. With little time left, Ora commits and moves.",
-            "choiceB": "At the next turn, Ora must choose the trail lamp path or the root cellar path. Ora knows this next choice will decide how much of the first clue still matters. With little time left, Ora commits and moves."
+            "choiceA": "The earlier decision to check the north stacks shifts both setting details and available evidence. At this turning point, the character must choose between take the trail lamp path and take the root cellar path. The decision drives plot development and reveals how the character handles pressure.",
+            "choiceB": "The earlier decision to check the south shed shifts both setting details and available evidence. At this turning point, the character must choose between take the trail lamp path and take the root cellar path. The decision drives plot development and reveals how the character handles pressure."
           },
           "step4": {
             "choiceA_branchA": "After choosing check the north stacks and then take the trail lamp path, the plan changes. Ora finds the exact seed map and marks the beds before dusk. The consequence is immediate and changes what Ora can do next.",
@@ -456,8 +699,14 @@
             "type": "choice",
             "prompt": "With the stakes already rising, should Ora check the north stacks or check the south shed to begin?",
             "options": [
-              { "id": "choiceA", "text": "Check the north stacks" },
-              { "id": "choiceB", "text": "Check the south shed" }
+              {
+                "id": "choiceA",
+                "text": "Check the north stacks"
+              },
+              {
+                "id": "choiceB",
+                "text": "Check the south shed"
+              }
             ]
           },
           "step2": {
@@ -468,30 +717,57 @@
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "a", "text": "Ora's first choice gave her useful clues for later." },
-                { "id": "b", "text": "Ora's first choice ended the adventure right away." }
+                {
+                  "id": "a",
+                  "text": "Ora's first choice gave her useful clues for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Ora's first choice ended the adventure right away."
+                }
               ],
               "choiceB": [
-                { "id": "a", "text": "Ora's first choice gave her useful clues for later." },
-                { "id": "b", "text": "Ora's first choice ended the adventure right away." }
+                {
+                  "id": "a",
+                  "text": "Ora's first choice gave her useful clues for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Ora's first choice ended the adventure right away."
+                }
               ]
             },
-            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
           },
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Ora take the trail lamp path or take the root cellar path next?",
-              "choiceB": "Now the consequences are clearer. Should Ora take the trail lamp path or take the root cellar path next?"
+              "choiceA": "Because check the north stacks changed the setting and evidence, should the character take the trail lamp path or take the root cellar path next?",
+              "choiceB": "Because check the south shed changed the setting and evidence, should the character take the trail lamp path or take the root cellar path next?"
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "branchA", "text": "Take the trail lamp path" },
-                { "id": "branchB", "text": "Take the root cellar path" }
+                {
+                  "id": "branchA",
+                  "text": "Take the trail lamp path"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the root cellar path"
+                }
               ],
               "choiceB": [
-                { "id": "branchA", "text": "Take the trail lamp path" },
-                { "id": "branchB", "text": "Take the root cellar path" }
+                {
+                  "id": "branchA",
+                  "text": "Take the trail lamp path"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the root cellar path"
+                }
               ]
             }
           },
@@ -505,20 +781,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Ora's second choice changed how safely she could finish the ledger." },
-                { "id": "b", "text": "Ora's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Ora's second choice changed how safely she could finish the ledger."
+                },
+                {
+                  "id": "b",
+                  "text": "Ora's second choice had no effect on the ending."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Ora's second choice changed how safely she could finish the ledger." },
-                { "id": "b", "text": "Ora's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Ora's second choice changed how safely she could finish the ledger."
+                },
+                {
+                  "id": "b",
+                  "text": "Ora's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Ora's second choice changed how safely she could finish the ledger." },
-                { "id": "b", "text": "Ora's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Ora's second choice changed how safely she could finish the ledger."
+                },
+                {
+                  "id": "b",
+                  "text": "Ora's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Ora's second choice changed how safely she could finish the ledger." },
-                { "id": "b", "text": "Ora's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Ora's second choice changed how safely she could finish the ledger."
+                },
+                {
+                  "id": "b",
+                  "text": "Ora's second choice had no effect on the ending."
+                }
               ]
             },
             "correctByPath": {
@@ -538,20 +838,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Ora learned that honesty and planning can protect a whole community." },
-                { "id": "b", "text": "Ora got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Ora learned that honesty and planning can protect a whole community."
+                },
+                {
+                  "id": "b",
+                  "text": "Ora got the same ending no matter what she did."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Ora learned that honesty and planning can protect a whole community." },
-                { "id": "b", "text": "Ora got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Ora learned that honesty and planning can protect a whole community."
+                },
+                {
+                  "id": "b",
+                  "text": "Ora got the same ending no matter what she did."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Ora learned that honesty and planning can protect a whole community." },
-                { "id": "b", "text": "Ora got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Ora learned that honesty and planning can protect a whole community."
+                },
+                {
+                  "id": "b",
+                  "text": "Ora got the same ending no matter what she did."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Ora learned that honesty and planning can protect a whole community." },
-                { "id": "b", "text": "Ora got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Ora learned that honesty and planning can protect a whole community."
+                },
+                {
+                  "id": "b",
+                  "text": "Ora got the same ending no matter what she did."
+                }
               ]
             },
             "correctByPath": {
@@ -576,8 +900,8 @@
             "choiceB": "She follows the music from the festival and spots a side trail near the pine trees. Sena keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At the next turn, Sena must choose the stone steps or the meadow curve. Sena knows this next choice will decide how much of the first clue still matters. With little time left, Sena commits and moves.",
-            "choiceB": "At the next turn, Sena must choose the stone steps or the meadow curve. Sena knows this next choice will decide how much of the first clue still matters. With little time left, Sena commits and moves."
+            "choiceA": "Because the narrative moved forward with ask the lantern maker for help, the conflict now appears in a different setting context. The character evaluates take the stone steps versus take the meadow curve, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development.",
+            "choiceB": "Because the narrative moved forward with follow the music trail, the conflict now appears in a different setting context. The character evaluates take the stone steps versus take the meadow curve, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development."
           },
           "step4": {
             "choiceA_branchA": "After choosing ask the lantern maker for help and then take the stone steps, the plan changes. The wind note keeps the flame steady, and the pair reach the festival gate in time. The consequence is immediate and changes what Sena can do next.",
@@ -597,8 +921,14 @@
             "type": "choice",
             "prompt": "With the stakes already rising, should Sena ask the lantern maker for help or follow the music trail to begin?",
             "options": [
-              { "id": "choiceA", "text": "Ask the lantern maker for help" },
-              { "id": "choiceB", "text": "Follow the music trail" }
+              {
+                "id": "choiceA",
+                "text": "Ask the lantern maker for help"
+              },
+              {
+                "id": "choiceB",
+                "text": "Follow the music trail"
+              }
             ]
           },
           "step2": {
@@ -609,30 +939,57 @@
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "a", "text": "Sena's first choice gave her a useful clue for later." },
-                { "id": "b", "text": "Sena's first choice ended the adventure right away." }
+                {
+                  "id": "a",
+                  "text": "Sena's first choice gave her a useful clue for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Sena's first choice ended the adventure right away."
+                }
               ],
               "choiceB": [
-                { "id": "a", "text": "Sena's first choice gave her a useful clue for later." },
-                { "id": "b", "text": "Sena's first choice ended the adventure right away." }
+                {
+                  "id": "a",
+                  "text": "Sena's first choice gave her a useful clue for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Sena's first choice ended the adventure right away."
+                }
               ]
             },
-            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
           },
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Sena take the stone steps or take the meadow curve next?",
-              "choiceB": "Now the consequences are clearer. Should Sena take the stone steps or take the meadow curve next?"
+              "choiceA": "Given how ask the lantern maker for help changed the conflict, should the character take the stone steps or take the meadow curve to shape the final outcome?",
+              "choiceB": "Given how follow the music trail changed the conflict, should the character take the stone steps or take the meadow curve to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "branchA", "text": "Take the stone steps" },
-                { "id": "branchB", "text": "Take the meadow curve" }
+                {
+                  "id": "branchA",
+                  "text": "Take the stone steps"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the meadow curve"
+                }
               ],
               "choiceB": [
-                { "id": "branchA", "text": "Take the stone steps" },
-                { "id": "branchB", "text": "Take the meadow curve" }
+                {
+                  "id": "branchA",
+                  "text": "Take the stone steps"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the meadow curve"
+                }
               ]
             }
           },
@@ -646,20 +1003,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Sena's second choice changed how safely she could carry the lanterns." },
-                { "id": "b", "text": "Sena's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Sena's second choice changed how safely she could carry the lanterns."
+                },
+                {
+                  "id": "b",
+                  "text": "Sena's second choice had no effect on the ending."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Sena's second choice changed how safely she could carry the lanterns." },
-                { "id": "b", "text": "Sena's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Sena's second choice changed how safely she could carry the lanterns."
+                },
+                {
+                  "id": "b",
+                  "text": "Sena's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Sena's second choice changed how safely she could carry the lanterns." },
-                { "id": "b", "text": "Sena's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Sena's second choice changed how safely she could carry the lanterns."
+                },
+                {
+                  "id": "b",
+                  "text": "Sena's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Sena's second choice changed how safely she could carry the lanterns." },
-                { "id": "b", "text": "Sena's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Sena's second choice changed how safely she could carry the lanterns."
+                },
+                {
+                  "id": "b",
+                  "text": "Sena's second choice had no effect on the ending."
+                }
               ]
             },
             "correctByPath": {
@@ -679,20 +1060,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Sena learned that teamwork and preparation can brighten any path." },
-                { "id": "b", "text": "Sena got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Sena learned that teamwork and preparation can brighten any path."
+                },
+                {
+                  "id": "b",
+                  "text": "Sena got the same ending no matter what she did."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Sena learned that teamwork and preparation can brighten any path." },
-                { "id": "b", "text": "Sena got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Sena learned that teamwork and preparation can brighten any path."
+                },
+                {
+                  "id": "b",
+                  "text": "Sena got the same ending no matter what she did."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Sena learned that teamwork and preparation can brighten any path." },
-                { "id": "b", "text": "Sena got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Sena learned that teamwork and preparation can brighten any path."
+                },
+                {
+                  "id": "b",
+                  "text": "Sena got the same ending no matter what she did."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Sena learned that teamwork and preparation can brighten any path." },
-                { "id": "b", "text": "Sena got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Sena learned that teamwork and preparation can brighten any path."
+                },
+                {
+                  "id": "b",
+                  "text": "Sena got the same ending no matter what she did."
+                }
               ]
             },
             "correctByPath": {
@@ -717,8 +1122,8 @@
             "choiceB": "She follows the ridge road first and sees fresh marks near the storm fence. Rhea keeps the clue in mind before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At the next turn, Rhea must choose the lantern stairs or the creek path. Rhea knows this next choice will decide how much of the first clue still matters. With little time left, Rhea commits and moves.",
-            "choiceB": "At the next turn, Rhea must choose the lantern stairs or the creek path. Rhea knows this next choice will decide how much of the first clue still matters. With little time left, Rhea commits and moves."
+            "choiceA": "The initial move to speak with the bell keeper has now altered the narrative conditions, including setting constraints and available evidence. Faced with take the lantern stairs or take the creek path, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc.",
+            "choiceB": "The initial move to follow the ridge road has now altered the narrative conditions, including setting constraints and available evidence. Faced with take the lantern stairs or take the creek path, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc."
           },
           "step4": {
             "choiceA_branchA": "After choosing speak with the bell keeper first and then take the lantern stairs, the plan changes. The note proves the warning is urgent, and the council opens the safe trail gate. The consequence is immediate and changes what Rhea can do next.",
@@ -738,8 +1143,14 @@
             "type": "choice",
             "prompt": "With the stakes already rising, should Rhea speak with the bell keeper or follow the ridge road first?",
             "options": [
-              { "id": "choiceA", "text": "Speak with the bell keeper" },
-              { "id": "choiceB", "text": "Follow the ridge road" }
+              {
+                "id": "choiceA",
+                "text": "Speak with the bell keeper"
+              },
+              {
+                "id": "choiceB",
+                "text": "Follow the ridge road"
+              }
             ]
           },
           "step2": {
@@ -750,30 +1161,57 @@
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "a", "text": "Rhea's first choice gave her useful clues for later." },
-                { "id": "b", "text": "Rhea's first choice ended the adventure right away." }
+                {
+                  "id": "a",
+                  "text": "Rhea's first choice gave her useful clues for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Rhea's first choice ended the adventure right away."
+                }
               ],
               "choiceB": [
-                { "id": "a", "text": "Rhea's first choice gave her useful clues for later." },
-                { "id": "b", "text": "Rhea's first choice ended the adventure right away." }
+                {
+                  "id": "a",
+                  "text": "Rhea's first choice gave her useful clues for later."
+                },
+                {
+                  "id": "b",
+                  "text": "Rhea's first choice ended the adventure right away."
+                }
               ]
             },
-            "correctByPath": { "choiceA": "a", "choiceB": "a" }
+            "correctByPath": {
+              "choiceA": "a",
+              "choiceB": "a"
+            }
           },
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Rhea take the lantern stairs or take the creek path next?",
-              "choiceB": "Now the consequences are clearer. Should Rhea take the lantern stairs or take the creek path next?"
+              "choiceA": "Given how speak with the bell keeper changed the conflict, should the character take the lantern stairs or take the creek path to shape the final outcome?",
+              "choiceB": "Given how follow the ridge road changed the conflict, should the character take the lantern stairs or take the creek path to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
-                { "id": "branchA", "text": "Take the lantern stairs" },
-                { "id": "branchB", "text": "Take the creek path" }
+                {
+                  "id": "branchA",
+                  "text": "Take the lantern stairs"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the creek path"
+                }
               ],
               "choiceB": [
-                { "id": "branchA", "text": "Take the lantern stairs" },
-                { "id": "branchB", "text": "Take the creek path" }
+                {
+                  "id": "branchA",
+                  "text": "Take the lantern stairs"
+                },
+                {
+                  "id": "branchB",
+                  "text": "Take the creek path"
+                }
               ]
             }
           },
@@ -787,20 +1225,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Rhea's second choice changed how clearly she could deliver the warning." },
-                { "id": "b", "text": "Rhea's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Rhea's second choice changed how clearly she could deliver the warning."
+                },
+                {
+                  "id": "b",
+                  "text": "Rhea's second choice had no effect on the ending."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Rhea's second choice changed how clearly she could deliver the warning." },
-                { "id": "b", "text": "Rhea's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Rhea's second choice changed how clearly she could deliver the warning."
+                },
+                {
+                  "id": "b",
+                  "text": "Rhea's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Rhea's second choice changed how clearly she could deliver the warning." },
-                { "id": "b", "text": "Rhea's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Rhea's second choice changed how clearly she could deliver the warning."
+                },
+                {
+                  "id": "b",
+                  "text": "Rhea's second choice had no effect on the ending."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Rhea's second choice changed how clearly she could deliver the warning." },
-                { "id": "b", "text": "Rhea's second choice had no effect on the ending." }
+                {
+                  "id": "a",
+                  "text": "Rhea's second choice changed how clearly she could deliver the warning."
+                },
+                {
+                  "id": "b",
+                  "text": "Rhea's second choice had no effect on the ending."
+                }
               ]
             },
             "correctByPath": {
@@ -820,20 +1282,44 @@
             },
             "optionsByPath": {
               "choiceA_branchA": [
-                { "id": "a", "text": "Rhea learned that honest leadership and trust can protect a community." },
-                { "id": "b", "text": "Rhea got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Rhea learned that honest leadership and trust can protect a community."
+                },
+                {
+                  "id": "b",
+                  "text": "Rhea got the same ending no matter what she did."
+                }
               ],
               "choiceA_branchB": [
-                { "id": "a", "text": "Rhea learned that honest leadership and trust can protect a community." },
-                { "id": "b", "text": "Rhea got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Rhea learned that honest leadership and trust can protect a community."
+                },
+                {
+                  "id": "b",
+                  "text": "Rhea got the same ending no matter what she did."
+                }
               ],
               "choiceB_branchA": [
-                { "id": "a", "text": "Rhea learned that honest leadership and trust can protect a community." },
-                { "id": "b", "text": "Rhea got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Rhea learned that honest leadership and trust can protect a community."
+                },
+                {
+                  "id": "b",
+                  "text": "Rhea got the same ending no matter what she did."
+                }
               ],
               "choiceB_branchB": [
-                { "id": "a", "text": "Rhea learned that honest leadership and trust can protect a community." },
-                { "id": "b", "text": "Rhea got the same ending no matter what she did." }
+                {
+                  "id": "a",
+                  "text": "Rhea learned that honest leadership and trust can protect a community."
+                },
+                {
+                  "id": "b",
+                  "text": "Rhea got the same ending no matter what she did."
+                }
               ]
             },
             "correctByPath": {

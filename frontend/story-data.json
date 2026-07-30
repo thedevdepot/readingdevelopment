@@ -12,8 +12,8 @@
             "choiceB": "She chooses the playground path and spots chalk arrows looping under the slide. Mia writes the clue down before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At the signpost, Mia must choose between the garden arrow and the bridge arrow. Mia knows this next choice will decide how much of the first clue still matters. With little time left, Mia commits and moves.",
-            "choiceB": "At the signpost, Mia must choose between the garden arrow and the bridge arrow. Mia knows this next choice will decide how much of the first clue still matters. With little time left, Mia commits and moves."
+            "choiceA": "Because the story began with follow the pond trail, the setting changes right away. New clues appear, and the hero must choose take the bridge shortcut or take the flower maze path. This choice changes the ending and what the character learns.",
+            "choiceB": "Because the story began with follow the playground trail, the setting changes right away. New clues appear, and the hero must choose take the bridge shortcut or take the flower maze path. This choice changes the ending and what the character learns."
           },
           "step4": {
             "choiceA_branchA": "After choosing follow the pond trail and then take the bridge shortcut, the mission shifts. The garden path leads to a locked birdhouse, but the wet footprints match the key hidden in her map pocket. The consequence is immediate and changes what Mia can do next.",
@@ -79,8 +79,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Mia take the bridge shortcut or take the flower maze path next?",
-              "choiceB": "Now the consequences are clearer. Should Mia take the bridge shortcut or take the flower maze path next?"
+              "choiceA": "Because follow the pond trail changed the clues, should the character take the bridge shortcut or take the flower maze path next?",
+              "choiceB": "Because follow the playground trail changed the clues, should the character take the bridge shortcut or take the flower maze path next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -232,20 +232,20 @@
             "choiceB": "She picks the blue flight lane and dodges crystal storms that scratch her hull. Luna writes the clue down before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "Inside the station, Luna chooses between the star tunnel and the crater ramp. Luna knows this next choice will decide how much of the first clue still matters. With little time left, Luna commits and moves.",
-            "choiceB": "Inside the station, Luna chooses between the star tunnel and the crater ramp. Luna knows this next choice will decide how much of the first clue still matters. With little time left, Luna commits and moves."
+            "choiceA": "Because the story began with land on the storm moon now, the setting changes right away. New clues appear, and the hero must choose enter the crystal canyon or enter the light-tower tunnel. This choice changes the ending and what the character learns.",
+            "choiceB": "Because the story began with use warp to reach the calm moon, the setting changes right away. New clues appear, and the hero must choose enter the crystal canyon or enter the light-tower tunnel. This choice changes the ending and what the character learns."
           },
           "step4": {
             "choiceA_branchA": "After choosing land on the storm moon now and then enter the crystal canyon, the mission shifts. The star tunnel takes her straight to the control core, and her ship remains fully powered for departure. The consequence is immediate and changes what Luna can do next.",
-            "choiceA_branchB": "After choosing land on the storm moon now and then enter the light-tower tunnel, the mission shifts. The crater ramp collapses under debris and ruptures a fuel line while she escapes. The consequence is immediate and changes what Luna can do next.",
+            "choiceA_branchB": "After choosing land on the storm moon now and then enter the light-tower tunnel, the mission shifts. The crater ramp gives way under debris and forces an emergency reroute while she escapes. The consequence is immediate and changes what Luna can do next.",
             "choiceB_branchA": "After choosing use warp to reach the calm moon and then enter the crystal canyon, the mission shifts. Because her hull is damaged, the star tunnel magnets pull hard and tear off one thruster wing. The consequence is immediate and changes what Luna can do next.",
             "choiceB_branchB": "After choosing use warp to reach the calm moon and then enter the light-tower tunnel, the mission shifts. She risks the crater ramp and finds an abandoned warp ring hidden under the ramp floor. The consequence is immediate and changes what Luna can do next."
           },
           "step5": {
             "choiceA_branchA": "By ending on land on the storm moon now plus enter the crystal canyon, Luna reaches the final result. Luna restarts the garden lights, launches safely, and receives a hero badge from mission control. Luna leaves with a new plan for the next adventure. Lesson: paying attention and acting with courage can open the best path.",
-            "choiceA_branchB": "By ending on land on the storm moon now plus enter the light-tower tunnel, Luna reaches the final result. Luna saves the seeds but her ship explodes on liftoff, so she must wait for a rescue shuttle. Luna leaves with a new plan for the next adventure. Lesson: even when a plan fails, careful thinking helps next time.",
+            "choiceA_branchB": "By ending on land on the storm moon now plus enter the light-tower tunnel, Luna reaches the final result. Luna saves the seeds, but her ship stalls on liftoff, so she must wait for a rescue shuttle. Luna leaves with a new plan for the next adventure. Lesson: even when a plan fails, careful thinking helps next time.",
             "choiceB_branchA": "By ending on use warp to reach the calm moon plus enter the crystal canyon, Luna reaches the final result. She fixes the oxygen system, yet can only glide to a nearby moon outpost for repairs. Luna leaves with a new plan for the next adventure. Lesson: creativity and persistence can turn small clues into success.",
-            "choiceB_branchB": "By ending on use warp to reach the calm moon plus enter the light-tower tunnel, Luna reaches the final result. Luna activates warp, escapes the station blast zone, and discovers a bright paradise planet beyond the nebula. Luna leaves with a new plan for the next adventure. Lesson: rushing can lead to mistakes, but honest reflection builds growth."
+            "choiceB_branchB": "By ending on use warp to reach the calm moon plus enter the light-tower tunnel, Luna reaches the final result. Luna activates warp, escapes the station hazard zone, and discovers a bright paradise planet beyond the nebula. Luna leaves with a new plan for the next adventure. Lesson: rushing can lead to mistakes, but honest reflection builds growth."
           }
         },
         "interactions": {
@@ -299,8 +299,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Luna enter the crystal canyon or enter the light-tower tunnel next?",
-              "choiceB": "Now the consequences are clearer. Should Luna enter the crystal canyon or enter the light-tower tunnel next?"
+              "choiceA": "Because land on the storm moon now changed the clues, should the character enter the crystal canyon or enter the light-tower tunnel next?",
+              "choiceB": "Because use warp to reach the calm moon changed the clues, should the character enter the crystal canyon or enter the light-tower tunnel next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -452,8 +452,8 @@
             "choiceB": "He takes the hill trail and finds wind chimes that ring near every clue marker. Theo writes the clue down before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At the fork, Theo must choose the waterfall marker or the lookout marker. Theo knows this next choice will decide how much of the first clue still matters. With little time left, Theo commits and moves.",
-            "choiceB": "At the fork, Theo must choose the waterfall marker or the lookout marker. Theo knows this next choice will decide how much of the first clue still matters. With little time left, Theo commits and moves."
+            "choiceA": "Because the story began with take the river trail, the setting changes right away. New clues appear, and the hero must choose follow owl markers or follow fox markers. This choice changes the ending and what the character learns.",
+            "choiceB": "Because the story began with take the hill trail, the setting changes right away. New clues appear, and the hero must choose follow owl markers or follow fox markers. This choice changes the ending and what the character learns."
           },
           "step4": {
             "choiceA_branchA": "After choosing take the river trail and then follow owl markers, the mission shifts. At the waterfall cave, the otter prints lead to a dry ledge with the badge case. The consequence is immediate and changes what Theo can do next.",
@@ -519,8 +519,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Theo follow owl markers or follow fox markers next?",
-              "choiceB": "Now the consequences are clearer. Should Theo follow owl markers or follow fox markers next?"
+              "choiceA": "Because take the river trail changed the clues, should the character follow owl markers or follow fox markers next?",
+              "choiceB": "Because take the hill trail changed the clues, should the character follow owl markers or follow fox markers next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -672,8 +672,8 @@
             "choiceB": "He checks the reading corner and finds a chewed bookmark and a wet trail. He writes both clues in his notebook and marks reading corner first. His first clue choice changes where he can search fastest."
           },
           "step3": {
-            "choiceA": "At the hallway split, Milo must inspect the fish tank stand or the coat closet. One place has water and one place has soft hiding spots. Milo picks one route and runs with his notebook open.",
-            "choiceB": "At the hallway split, Milo must inspect the fish tank stand or the coat closet. One place has water and one place has soft hiding spots. Milo picks one route and runs with his notebook open."
+            "choiceA": "Because the story began with check the art table first, the setting changes right away. New clues appear, and the hero must choose inspect the fish tank stand or inspect the coat closet. This choice changes the ending and what the character learns.",
+            "choiceB": "Because the story began with check the reading corner first, the setting changes right away. New clues appear, and the hero must choose inspect the fish tank stand or inspect the coat closet. This choice changes the ending and what the character learns."
           },
           "step4": {
             "choiceA_branchA": "After choosing check the art table first and then inspect the fish tank stand, Milo reaches a turning point. The fish tank stand has the missing bell tied to a straw and the turtle asleep behind the filter box. Now the final reveal depends on whether his clues truly connect.",
@@ -739,8 +739,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Milo inspect the fish tank stand or inspect the coat closet next?",
-              "choiceB": "Now the consequences are clearer. Should Milo inspect the fish tank stand or inspect the coat closet next?"
+              "choiceA": "Because check the art table first changed the clues, should the character inspect the fish tank stand or inspect the coat closet next?",
+              "choiceB": "Because check the reading corner first changed the clues, should the character inspect the fish tank stand or inspect the coat closet next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -892,8 +892,8 @@
             "choiceB": "She passes the horse yard and finds hoof prints circling a side stair. She follows the prints and spends extra oil shielding the flame from gusts. Her first route changes both her oil level and her timing."
           },
           "step3": {
-            "choiceA": "At the keep wall, Ava must choose the ivy stair or the bell corridor. One is shorter but steep, while the other is longer and safer. Ava steadies her hands and chooses one final climb.",
-            "choiceB": "At the keep wall, Ava must choose the ivy stair or the bell corridor. One is shorter but steep, while the other is longer and safer. Ava steadies her hands and chooses one final climb."
+            "choiceA": "Because the story began with cross the apple court, the setting changes right away. New clues appear, and the hero must choose climb the ivy stair or take the bell corridor. This choice changes the ending and what the character learns.",
+            "choiceB": "Because the story began with pass through the horse yard, the setting changes right away. New clues appear, and the hero must choose climb the ivy stair or take the bell corridor. This choice changes the ending and what the character learns."
           },
           "step4": {
             "choiceA_branchA": "After choosing cross the apple court and then climb the ivy stair, Ava reaches a turning point. The ivy stair rises fast and Ava reaches the brazier with enough oil for one strong flame. The tower outcome now depends on flame and time.",
@@ -959,8 +959,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Ava climb the ivy stair or take the bell corridor next?",
-              "choiceB": "Now the consequences are clearer. Should Ava climb the ivy stair or take the bell corridor next?"
+              "choiceA": "Because cross the apple court changed the clues, should the character climb the ivy stair or take the bell corridor next?",
+              "choiceB": "Because pass through the horse yard changed the clues, should the character climb the ivy stair or take the bell corridor next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -1114,8 +1114,8 @@
             "choiceB": "He checks the rolling cart and finds coded stickers with missing numbers. Jalen writes the clue down before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At the final aisle, he must choose the fantasy shelf or the mystery shelf. Jalen knows this next choice will decide how much of the first clue still matters. With little time left, Jalen commits and moves.",
-            "choiceB": "At the final aisle, he must choose the fantasy shelf or the mystery shelf. Jalen knows this next choice will decide how much of the first clue still matters. With little time left, Jalen commits and moves."
+            "choiceA": "After choosing ask Librarian Perez first, the character reaches a new part of the setting with different clues. Next comes a choice between search the fantasy shelf and search the mystery shelf. That decision changes the plot and the final lesson.",
+            "choiceB": "After choosing investigate alone first, the character reaches a new part of the setting with different clues. Next comes a choice between search the fantasy shelf and search the mystery shelf. That decision changes the plot and the final lesson."
           },
           "step4": {
             "choiceA_branchA": "After choosing ask librarian perez first and then search the fantasy shelf, the mission shifts. The fantasy shelf code matches Perez's clue, and the vault drawer opens on the first try. The consequence is immediate and changes what Jalen can do next.",
@@ -1181,8 +1181,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Jalen search the fantasy shelf or search the mystery shelf next?",
-              "choiceB": "Now the consequences are clearer. Should Jalen search the fantasy shelf or search the mystery shelf next?"
+              "choiceA": "Because ask Librarian Perez first changed the clues, should the character search the fantasy shelf or search the mystery shelf next?",
+              "choiceB": "Because investigate alone first changed the clues, should the character search the fantasy shelf or search the mystery shelf next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -1334,12 +1334,12 @@
             "choiceB": "He takes the tube route and saves time but drains one battery pack. Ari writes the clue down before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At control deck doors, Ari chooses the light scanner or the wiring map. Ari knows this next choice will decide how much of the first clue still matters. With little time left, Ari commits and moves.",
-            "choiceB": "At control deck doors, Ari chooses the light scanner or the wiring map. Ari knows this next choice will decide how much of the first clue still matters. With little time left, Ari commits and moves."
+            "choiceA": "After choosing take the fast maintenance tube, the character reaches a new part of the setting with different clues. Next comes a choice between run a quick patch and run a full systems recalibration. That decision changes the plot and the final lesson.",
+            "choiceB": "After choosing take the full checklist corridor, the character reaches a new part of the setting with different clues. Next comes a choice between run a quick patch and run a full systems recalibration. That decision changes the plot and the final lesson."
           },
           "step4": {
             "choiceA_branchA": "After choosing take the fast maintenance tube and then run a quick patch, the mission shifts. The scanner quickly reveals a loose connector and Ari seals it before the ring drops power. The consequence is immediate and changes what Ari can do next.",
-            "choiceA_branchB": "After choosing take the fast maintenance tube and then run a full systems recalibration, the mission shifts. The wiring map is outdated in one corridor and sends Ari to a dead circuit. The consequence is immediate and changes what Ari can do next.",
+            "choiceA_branchB": "After choosing take the fast maintenance tube and then run a full systems recalibration, the mission shifts. The wiring map is outdated in one corridor and sends Ari to a empty circuit. The consequence is immediate and changes what Ari can do next.",
             "choiceB_branchA": "After choosing take the full checklist corridor and then run a quick patch, the mission shifts. With low battery left, the scanner shuts off mid-scan and Ari must restart from memory. The consequence is immediate and changes what Ari can do next.",
             "choiceB_branchB": "After choosing take the full checklist corridor and then run a full systems recalibration, the mission shifts. The map route reveals an emergency bypass no one used before, and Ari reroutes safely. The consequence is immediate and changes what Ari can do next."
           },
@@ -1401,8 +1401,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Ari run a quick patch or run a full systems recalibration next?",
-              "choiceB": "Now the consequences are clearer. Should Ari run a quick patch or run a full systems recalibration next?"
+              "choiceA": "Because take the fast maintenance tube changed the clues, should the character run a quick patch or run a full systems recalibration next?",
+              "choiceB": "Because take the full checklist corridor changed the clues, should the character run a quick patch or run a full systems recalibration next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -1554,8 +1554,8 @@
             "choiceB": "She follows the ridge path and finds wind flags showing storm direction. Kira writes the clue down before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At the tower base, she chooses the ladder route or the ramp route. Kira knows this next choice will decide how much of the first clue still matters. With little time left, Kira commits and moves.",
-            "choiceB": "At the tower base, she chooses the ladder route or the ramp route. Kira knows this next choice will decide how much of the first clue still matters. With little time left, Kira commits and moves."
+            "choiceA": "After choosing follow the creek path, the character reaches a new part of the setting with different clues. Next comes a choice between climb the ladder side and take the ramp side. That decision changes the plot and the final lesson.",
+            "choiceB": "After choosing follow the ridge path, the character reaches a new part of the setting with different clues. Next comes a choice between climb the ladder side and take the ramp side. That decision changes the plot and the final lesson."
           },
           "step4": {
             "choiceA_branchA": "After choosing follow the creek path and then climb the ladder side, the mission shifts. The ladder gets her above floodwater, and the rescue symbols match the control code. The consequence is immediate and changes what Kira can do next.",
@@ -1621,8 +1621,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Kira climb the ladder side or take the ramp side next?",
-              "choiceB": "Now the consequences are clearer. Should Kira climb the ladder side or take the ramp side next?"
+              "choiceA": "Because follow the creek path changed the clues, should the character climb the ladder side or take the ramp side next?",
+              "choiceB": "Because follow the ridge path changed the clues, should the character climb the ladder side or take the ramp side next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -1774,8 +1774,8 @@
             "choiceB": "She investigates the cafeteria entry and finds spilled glitter and a folded schedule. She logs entry clues and spots a name circled on the schedule. Her first investigation area changes what timeline she can build."
           },
           "step3": {
-            "choiceA": "Nora must next question the stage crew captain or the volunteer check-in desk. One witness saw movement while the other logged arrivals. Nora chooses one source and tests it against her first clues.",
-            "choiceB": "Nora must next question the stage crew captain or the volunteer check-in desk. One witness saw movement while the other logged arrivals. Nora chooses one source and tests it against her first clues."
+            "choiceA": "After choosing investigate the gym stage, the character reaches a new part of the setting with different clues. Next comes a choice between question stage crew captain and question volunteer check-in desk. That decision changes the plot and the final lesson.",
+            "choiceB": "After choosing investigate the cafeteria entry, the character reaches a new part of the setting with different clues. Next comes a choice between question stage crew captain and question volunteer check-in desk. That decision changes the plot and the final lesson."
           },
           "step4": {
             "choiceA_branchA": "After choosing investigate the gym stage and then question stage crew captain, Nora reaches a turning point. The stage captain confirms a cleanup cart moved the ribbon board to storage during a drill. The timeline now either locks in or falls apart.",
@@ -1841,8 +1841,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Nora question stage crew captain or question volunteer check-in desk next?",
-              "choiceB": "Now the consequences are clearer. Should Nora question stage crew captain or question volunteer check-in desk next?"
+              "choiceA": "Because investigate the gym stage changed the clues, should the character question stage crew captain or question volunteer check-in desk next?",
+              "choiceB": "Because investigate the cafeteria entry changed the clues, should the character question stage crew captain or question volunteer check-in desk next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -1994,8 +1994,8 @@
             "choiceB": "He takes the market stair and finds stable hands hauling grain through side arches. He moves slower but hears that the high hall door is jammed. His first route choice changes speed and situational awareness."
           },
           "step3": {
-            "choiceA": "At the upper keep, Rowan chooses the guard ramp or the servant bridge. The guard ramp is direct, while the servant bridge bypasses the jammed door. Rowan commits and grips the key as the horn countdown starts.",
-            "choiceB": "At the upper keep, Rowan chooses the guard ramp or the servant bridge. The guard ramp is direct, while the servant bridge bypasses the jammed door. Rowan commits and grips the key as the horn countdown starts."
+            "choiceA": "After choosing take the shield gallery route, the character reaches a new part of the setting with different clues. Next comes a choice between use the guard ramp and use the servant bridge. That decision changes the plot and the final lesson.",
+            "choiceB": "After choosing take the market stair route, the character reaches a new part of the setting with different clues. Next comes a choice between use the guard ramp and use the servant bridge. That decision changes the plot and the final lesson."
           },
           "step4": {
             "choiceA_branchA": "After choosing take the shield gallery route and then use the guard ramp, Rowan reaches a turning point. The guard ramp reaches the hall quickly, but ceremony guards block the final door for protocol checks. The treaty now depends on timing at the bell chain.",
@@ -2061,8 +2061,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Rowan use the guard ramp or use the servant bridge next?",
-              "choiceB": "Now the consequences are clearer. Should Rowan use the guard ramp or use the servant bridge next?"
+              "choiceA": "Because take the shield gallery route changed the clues, should the character use the guard ramp or use the servant bridge next?",
+              "choiceB": "Because take the market stair route changed the clues, should the character use the guard ramp or use the servant bridge next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -2216,8 +2216,8 @@
             "choiceB": "Nia studies the jar note with Theo first and discovers a rhyme pattern in the clues. Nia writes the clue down before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At a split path, they choose the hill overlook or the shaded grove. Nia knows this next choice will decide how much of the first clue still matters. With little time left, Nia commits and moves.",
-            "choiceB": "At a split path, they choose the hill overlook or the shaded grove. Nia knows this next choice will decide how much of the first clue still matters. With little time left, Nia commits and moves."
+            "choiceA": "Choosing report the note to the teacher first reshapes the setting and raises a new problem. The character now weighs take the overlook path against take the grove path, and each path builds different consequences. This is where character growth begins to show.",
+            "choiceB": "Choosing decode the note with Theo first reshapes the setting and raises a new problem. The character now weighs take the overlook path against take the grove path, and each path builds different consequences. This is where character growth begins to show."
           },
           "step4": {
             "choiceA_branchA": "After choosing report the note to the teacher first and then take the overlook path, the mission shifts. The map overlay matches stone arrows on the hill and leads straight to a weatherproof logbox. The consequence is immediate and changes what Nia can do next.",
@@ -2283,8 +2283,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Nia take the overlook path or take the grove path next?",
-              "choiceB": "Now the consequences are clearer. Should Nia take the overlook path or take the grove path next?"
+              "choiceA": "Because report the note to the teacher first changed the setting and evidence, should the character take the overlook path or take the grove path next?",
+              "choiceB": "Because decode the note with Theo first changed the setting and evidence, should the character take the overlook path or take the grove path next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -2436,8 +2436,8 @@
             "choiceB": "He begins at the timing server and records packet delays against baseline charts. Sol writes the clue down before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "Next he chooses to test the battery line or the relay path. Sol knows this next choice will decide how much of the first clue still matters. With little time left, Sol commits and moves.",
-            "choiceB": "Next he chooses to test the battery line or the relay path. Sol knows this next choice will decide how much of the first clue still matters. With little time left, Sol commits and moves."
+            "choiceA": "Choosing start at the telescope deck reshapes the setting and raises a new problem. The character now weighs test the battery line against test the relay path, and each path builds different consequences. This is where character growth begins to show.",
+            "choiceB": "Choosing start at the timing server reshapes the setting and raises a new problem. The character now weighs test the battery line against test the relay path, and each path builds different consequences. This is where character growth begins to show."
           },
           "step4": {
             "choiceA_branchA": "After choosing start at the telescope deck and then test the battery line, the mission shifts. Deck data and battery testing expose a loose connector that he secures in minutes. The consequence is immediate and changes what Sol can do next.",
@@ -2503,8 +2503,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Sol test the battery line or test the relay path next?",
-              "choiceB": "Now the consequences are clearer. Should Sol test the battery line or test the relay path next?"
+              "choiceA": "Because start at the telescope deck changed the setting and evidence, should the character test the battery line or test the relay path next?",
+              "choiceB": "Because start at the timing server changed the setting and evidence, should the character test the battery line or test the relay path next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -2656,8 +2656,8 @@
             "choiceB": "She starts on the stone trail and records symbol pairs from cliff markers. Rae writes the clue down before moving on. This first decision could help or hurt the final outcome."
           },
           "step3": {
-            "choiceA": "At checkpoint three, Rae chooses canyon stairs or rope bridge. Rae knows this next choice will decide how much of the first clue still matters. With little time left, Rae commits and moves.",
-            "choiceB": "At checkpoint three, Rae chooses canyon stairs or rope bridge. Rae knows this next choice will decide how much of the first clue still matters. With little time left, Rae commits and moves."
+            "choiceA": "Choosing start on the pine trail reshapes the setting and raises a new problem. The character now weighs take canyon stairs against cross the rope bridge, and each path builds different consequences. This is where character growth begins to show.",
+            "choiceB": "Choosing start on the stone trail reshapes the setting and raises a new problem. The character now weighs take canyon stairs against cross the rope bridge, and each path builds different consequences. This is where character growth begins to show."
           },
           "step4": {
             "choiceA_branchA": "After choosing start on the pine trail and then take canyon stairs, the mission shifts. Pine symbols match stair carvings and guide Rae to the true lockbox alcove. The consequence is immediate and changes what Rae can do next.",
@@ -2723,8 +2723,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Rae take canyon stairs or cross the rope bridge next?",
-              "choiceB": "Now the consequences are clearer. Should Rae take canyon stairs or cross the rope bridge next?"
+              "choiceA": "Because start on the pine trail changed the setting and evidence, should the character take canyon stairs or cross the rope bridge next?",
+              "choiceB": "Because start on the stone trail changed the setting and evidence, should the character take canyon stairs or cross the rope bridge next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -2876,8 +2876,8 @@
             "choiceB": "She starts at the gift kiosk and finds a receipt with a hand-drawn compass symbol. She logs receipt time and a name initial scribbled in pencil. Her first clue set changes which wing she can search efficiently."
           },
           "step3": {
-            "choiceA": "She next chooses to inspect the restoration hallway or the rooftop overlook stairs. One path follows dust trails while the other matches compass signage. Sienna chooses one route and tests it against time stamps.",
-            "choiceB": "She next chooses to inspect the restoration hallway or the rooftop overlook stairs. One path follows dust trails while the other matches compass signage. Sienna chooses one route and tests it against time stamps."
+            "choiceA": "Choosing search the fossil wing first reshapes the setting and raises a new problem. The character now weighs inspect restoration hallway against inspect rooftop stairs, and each path builds different consequences. This is where character growth begins to show.",
+            "choiceB": "Choosing search the gift kiosk first reshapes the setting and raises a new problem. The character now weighs inspect restoration hallway against inspect rooftop stairs, and each path builds different consequences. This is where character growth begins to show."
           },
           "step4": {
             "choiceA_branchA": "After choosing search the fossil wing first and then inspect restoration hallway, Sienna reaches a turning point. The restoration hallway contains a dropped curator glove wrapped around the missing fragment sleeve. The final exhibit access now hangs on her branch accuracy.",
@@ -2943,8 +2943,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Sienna inspect restoration hallway or inspect rooftop stairs next?",
-              "choiceB": "Now the consequences are clearer. Should Sienna inspect restoration hallway or inspect rooftop stairs next?"
+              "choiceA": "Because search the fossil wing first changed the setting and evidence, should the character inspect restoration hallway or inspect rooftop stairs next?",
+              "choiceB": "Because search the gift kiosk first changed the setting and evidence, should the character inspect restoration hallway or inspect rooftop stairs next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -3096,8 +3096,8 @@
             "choiceB": "He follows mill footpaths and finds fresh reed bundles tied in ward-sign pattern. He moves slower but learns tide levels from mill workers. His first route changes both arrival time and flood awareness."
           },
           "step3": {
-            "choiceA": "At the floodplain split, Eli chooses the stone arch ford or the willow bridge. The ford is direct in low tide, while the bridge is stable in high tide. Eli chooses and moves as warning bells echo from the river.",
-            "choiceB": "At the floodplain split, Eli chooses the stone arch ford or the willow bridge. The ford is direct in low tide, while the bridge is stable in high tide. Eli chooses and moves as warning bells echo from the river."
+            "choiceA": "Choosing follow the abbey road reshapes the setting and raises a new problem. The character now weighs cross the stone arch ford against cross the willow bridge, and each path builds different consequences. This is where character growth begins to show.",
+            "choiceB": "Choosing follow the mill footpaths reshapes the setting and raises a new problem. The character now weighs cross the stone arch ford against cross the willow bridge, and each path builds different consequences. This is where character growth begins to show."
           },
           "step4": {
             "choiceA_branchA": "After choosing follow the abbey road and then cross the stone arch ford, Eli reaches a turning point. The stone arch ford stays shallow just long enough for Eli to cross and place the seal. Now the ward's fate depends on route and tide timing.",
@@ -3163,8 +3163,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Eli cross the stone arch ford or cross the willow bridge next?",
-              "choiceB": "Now the consequences are clearer. Should Eli cross the stone arch ford or cross the willow bridge next?"
+              "choiceA": "Because follow the abbey road changed the setting and evidence, should the character cross the stone arch ford or cross the willow bridge next?",
+              "choiceB": "Because follow the mill footpaths changed the setting and evidence, should the character cross the stone arch ford or cross the willow bridge next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -3318,8 +3318,8 @@
             "choiceB": "She observes from the covered porch, logging cloud bands, wind shifts, and runoff speed by minute. Elena compares what this path reveals against the mission objective. Some signals look promising, but others hint at hidden risk. Elena preserves the evidence anyway because later choices may depend on it. The mission now advances with both opportunity and uncertainty."
           },
           "step3": {
-            "choiceA": "For final analysis, Elena chooses lightning timing or curb-flow mapping. Elena reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Elena accepts that a wrong branch could force a reduced or delayed ending. After one final check, Elena commits to a path.",
-            "choiceB": "For final analysis, Elena chooses lightning timing or curb-flow mapping. Elena reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Elena accepts that a wrong branch could force a reduced or delayed ending. After one final check, Elena commits to a path."
+            "choiceA": "The earlier decision to observe from the upstairs window station shifts both setting details and available evidence. At this turning point, the character must choose between analyze lightning intervals and analyze runoff flow patterns. The decision drives plot development and reveals how the character handles pressure.",
+            "choiceB": "The earlier decision to observe from the covered porch station shifts both setting details and available evidence. At this turning point, the character must choose between analyze lightning intervals and analyze runoff flow patterns. The decision drives plot development and reveals how the character handles pressure."
           },
           "step4": {
             "choiceA_branchA": "After selecting observe from the upstairs window station followed by analyze lightning intervals, Elena reaches a critical inflection point. Window data paired with lightning timing reveals the storm core veering east and weakening at the edge. Elena tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
@@ -3385,8 +3385,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Elena analyze lightning intervals or analyze runoff flow patterns next?",
-              "choiceB": "Now the consequences are clearer. Should Elena analyze lightning intervals or analyze runoff flow patterns next?"
+              "choiceA": "Because observe from the upstairs window station changed the setting and evidence, should the character analyze lightning intervals or analyze runoff flow patterns next?",
+              "choiceB": "Because observe from the covered porch station changed the setting and evidence, should the character analyze lightning intervals or analyze runoff flow patterns next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -3538,8 +3538,8 @@
             "choiceB": "She starts in navigation, measuring attitude drift and orientation lag against calibrated baselines. Miko compares what this path reveals against the mission objective. Some signals look promising, but others hint at hidden risk. Miko preserves the evidence anyway because later choices may depend on it. The mission now advances with both opportunity and uncertainty."
           },
           "step3": {
-            "choiceA": "Miko must prioritize testing sensor drift or software timing lag. Miko reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Miko accepts that a wrong branch could force a reduced or delayed ending. After one final check, Miko commits to a path.",
-            "choiceB": "Miko must prioritize testing sensor drift or software timing lag. Miko reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Miko accepts that a wrong branch could force a reduced or delayed ending. After one final check, Miko commits to a path."
+            "choiceA": "The earlier decision to begin at optics calibration shifts both setting details and available evidence. At this turning point, the character must choose between test sensor drift hypothesis and test timing-lag hypothesis. The decision drives plot development and reveals how the character handles pressure.",
+            "choiceB": "The earlier decision to begin at navigation calibration shifts both setting details and available evidence. At this turning point, the character must choose between test sensor drift hypothesis and test timing-lag hypothesis. The decision drives plot development and reveals how the character handles pressure."
           },
           "step4": {
             "choiceA_branchA": "After selecting begin at optics calibration followed by test sensor drift hypothesis, Miko reaches a critical inflection point. Optics evidence plus drift testing isolates a failing module, and recalibration restores beam coherence quickly. Miko tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
@@ -3605,8 +3605,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Miko test sensor drift hypothesis or test timing-lag hypothesis next?",
-              "choiceB": "Now the consequences are clearer. Should Miko test sensor drift hypothesis or test timing-lag hypothesis next?"
+              "choiceA": "Because begin at optics calibration changed the setting and evidence, should the character test sensor drift hypothesis or test timing-lag hypothesis next?",
+              "choiceB": "Because begin at navigation calibration changed the setting and evidence, should the character test sensor drift hypothesis or test timing-lag hypothesis next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -3758,8 +3758,8 @@
             "choiceB": "She takes the valley trail and records landmark sequence, moisture patterns, and rope anchor notes. Imani compares what this path reveals against the mission objective. Some signals look promising, but others hint at hidden risk. Imani preserves the evidence anyway because later choices may depend on it. The mission now advances with both opportunity and uncertainty."
           },
           "step3": {
-            "choiceA": "At the upper split she chooses cave pass or waterfall ledge. Imani reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Imani accepts that a wrong branch could force a reduced or delayed ending. After one final check, Imani commits to a path.",
-            "choiceB": "At the upper split she chooses cave pass or waterfall ledge. Imani reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Imani accepts that a wrong branch could force a reduced or delayed ending. After one final check, Imani commits to a path."
+            "choiceA": "The earlier decision to start on the ridge route shifts both setting details and available evidence. At this turning point, the character must choose between take the cave pass and take the waterfall ledge. The decision drives plot development and reveals how the character handles pressure.",
+            "choiceB": "The earlier decision to start on the valley route shifts both setting details and available evidence. At this turning point, the character must choose between take the cave pass and take the waterfall ledge. The decision drives plot development and reveals how the character handles pressure."
           },
           "step4": {
             "choiceA_branchA": "After selecting start on the ridge route followed by take the cave pass, Imani reaches a critical inflection point. Ridge evidence aligns with cave anchor markings and leads directly to the sealed case cache. Imani tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
@@ -3825,8 +3825,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Imani take the cave pass or take the waterfall ledge next?",
-              "choiceB": "Now the consequences are clearer. Should Imani take the cave pass or take the waterfall ledge next?"
+              "choiceA": "Because start on the ridge route changed the setting and evidence, should the character take the cave pass or take the waterfall ledge next?",
+              "choiceB": "Because start on the valley route changed the setting and evidence, should the character take the cave pass or take the waterfall ledge next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -3978,8 +3978,8 @@
             "choiceB": "She begins in the pit lane and reviews camera angles near charging stations and tool crates. She spots one volunteer carrying a card lanyard toward storage after a battery alarm. Video gives movement context but partial visibility in blind corners. If she over-trusts a single angle, she may misread routine transfers as theft. Her opening source choice shifts whether she optimizes timing precision or movement context."
           },
           "step3": {
-            "choiceA": "Jada now chooses to verify with security dispatch records or mentor check-in sheets. Dispatch records track emergency requests while mentor sheets track authorized possession changes. Emergency records are objective but narrow, check-in sheets are broad but manually entered. Choosing the wrong second source could lock her into an incorrect narrative. She commits to one verification path and aligns it against her first evidence set.",
-            "choiceB": "Jada now chooses to verify with security dispatch records or mentor check-in sheets. Dispatch records track emergency requests while mentor sheets track authorized possession changes. Emergency records are objective but narrow, check-in sheets are broad but manually entered. Choosing the wrong second source could lock her into an incorrect narrative. She commits to one verification path and aligns it against her first evidence set."
+            "choiceA": "The earlier decision to start with control booth logs shifts both setting details and available evidence. At this turning point, the character must choose between verify with security dispatch and verify with mentor check-in sheets. The decision drives plot development and reveals how the character handles pressure.",
+            "choiceB": "The earlier decision to start with pit lane cameras shifts both setting details and available evidence. At this turning point, the character must choose between verify with security dispatch and verify with mentor check-in sheets. The decision drives plot development and reveals how the character handles pressure."
           },
           "step4": {
             "choiceA_branchA": "After selecting start with control booth logs and then verify with security dispatch, Jada reaches a decisive turning point. Security dispatch confirms a battery hazard call moved the keycard to emergency storage under protocol. She reconciles timestamps, personnel roles, and location transitions before concluding. This branch reveals whether operational logs or human handoff records carried decisive weight. The case now depends on whether her evidence chain remains internally consistent.",
@@ -4045,8 +4045,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Jada verify with security dispatch or verify with mentor check-in sheets next?",
-              "choiceB": "Now the consequences are clearer. Should Jada verify with security dispatch or verify with mentor check-in sheets next?"
+              "choiceA": "Because start with control booth logs changed the setting and evidence, should the character verify with security dispatch or verify with mentor check-in sheets next?",
+              "choiceB": "Because start with pit lane cameras changed the setting and evidence, should the character verify with security dispatch or verify with mentor check-in sheets next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -4198,8 +4198,8 @@
             "choiceB": "He rides the river road and meets scouts carrying this week's revised beacon codes. He moves slower but gains current call signs and pass visibility updates. Fresh scout intelligence improves relevance but increases complexity under time pressure. Extra code handling can cause mismatch errors if rushed. His first route determines whether he anchors on legacy certainty or live intelligence."
           },
           "step3": {
-            "choiceA": "At the frontier split, Cedric chooses the Falcon Tower chain or the Lion Tower chain. One chain matches old maps while the other matches revised scout notices. Legacy alignment offers speed, revised alignment offers current correctness. A wrong chain could compromise treaty reception at the pass. Cedric chooses one chain and calibrates the beacon seal sequence.",
-            "choiceB": "At the frontier split, Cedric chooses the Falcon Tower chain or the Lion Tower chain. One chain matches old maps while the other matches revised scout notices. Legacy alignment offers speed, revised alignment offers current correctness. A wrong chain could compromise treaty reception at the pass. Cedric chooses one chain and calibrates the beacon seal sequence."
+            "choiceA": "The earlier decision to ride the ridge road shifts both setting details and available evidence. At this turning point, the character must choose between light the Falcon Tower chain and light the Lion Tower chain. The decision drives plot development and reveals how the character handles pressure.",
+            "choiceB": "The earlier decision to ride the river road shifts both setting details and available evidence. At this turning point, the character must choose between light the Falcon Tower chain and light the Lion Tower chain. The decision drives plot development and reveals how the character handles pressure."
           },
           "step4": {
             "choiceA_branchA": "After selecting ride the ridge road and then light the falcon tower chain, Cedric reaches a decisive turning point. Legacy markers plus Falcon chain align physically, but one tower now broadcasts a retired code set. He verifies chain IDs against route evidence before ignition. This branch reveals whether historical authority or updated field data was decisive. The diplomatic outcome now depends on signal correctness and timing.",
@@ -4265,8 +4265,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Cedric light the Falcon Tower chain or light the Lion Tower chain next?",
-              "choiceB": "Now the consequences are clearer. Should Cedric light the Falcon Tower chain or light the Lion Tower chain next?"
+              "choiceA": "Because ride the ridge road changed the setting and evidence, should the character light the Falcon Tower chain or light the Lion Tower chain next?",
+              "choiceB": "Because ride the river road changed the setting and evidence, should the character light the Falcon Tower chain or light the Lion Tower chain next?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -4420,8 +4420,8 @@
             "choiceB": "He mines the archive first, extracting phrase patterns and timeline gaps from prior reports. Amir compares what this path reveals against the mission objective. Some signals look promising, but others hint at hidden risk. Amir preserves the evidence anyway because later choices may depend on it. The mission now advances with both opportunity and uncertainty."
           },
           "step3": {
-            "choiceA": "For the decisive pass he chooses key-source interview or survey-data analysis. Amir reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Amir accepts that a wrong branch could force a reduced or delayed ending. After one final check, Amir commits to a path.",
-            "choiceB": "For the decisive pass he chooses key-source interview or survey-data analysis. Amir reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Amir accepts that a wrong branch could force a reduced or delayed ending. After one final check, Amir commits to a path."
+            "choiceA": "Because the narrative moved forward with consult the editor immediately, the conflict now appears in a different setting context. The character evaluates interview the key witness versus analyze survey data patterns, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development.",
+            "choiceB": "Because the narrative moved forward with mine archives independently first, the conflict now appears in a different setting context. The character evaluates interview the key witness versus analyze survey data patterns, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development."
           },
           "step4": {
             "choiceA_branchA": "After selecting consult the editor immediately followed by interview the key witness, Amir reaches a critical inflection point. Editor matrix plus interview evidence closes context gaps and confirms motive chronology with direct testimony. Amir tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
@@ -4487,8 +4487,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Amir interview the key witness or analyze survey data patterns next?",
-              "choiceB": "Now the consequences are clearer. Should Amir interview the key witness or analyze survey data patterns next?"
+              "choiceA": "Given how consult the editor immediately changed the conflict, should the character interview the key witness or analyze survey data patterns to shape the final outcome?",
+              "choiceB": "Given how mine archives independently first changed the conflict, should the character interview the key witness or analyze survey data patterns to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -4640,8 +4640,8 @@
             "choiceB": "She opens communications streams first, tracing packet latency and anomaly timing over three cycles. Talia compares what this path reveals against the mission objective. Some signals look promising, but others hint at hidden risk. Talia preserves the evidence anyway because later choices may depend on it. The mission now advances with both opportunity and uncertainty."
           },
           "step3": {
-            "choiceA": "For root-cause testing she chooses calibration drift or relay interference. Talia reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Talia accepts that a wrong branch could force a reduced or delayed ending. After one final check, Talia commits to a path.",
-            "choiceB": "For root-cause testing she chooses calibration drift or relay interference. Talia reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Talia accepts that a wrong branch could force a reduced or delayed ending. After one final check, Talia commits to a path."
+            "choiceA": "Because the narrative moved forward with begin with propulsion telemetry, the conflict now appears in a different setting context. The character evaluates test calibration drift versus test relay interference, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development.",
+            "choiceB": "Because the narrative moved forward with begin with communications telemetry, the conflict now appears in a different setting context. The character evaluates test calibration drift versus test relay interference, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development."
           },
           "step4": {
             "choiceA_branchA": "After selecting begin with propulsion telemetry followed by test calibration drift, Talia reaches a critical inflection point. Propulsion evidence plus drift testing isolates a sensor coefficient error and restores stable burn predictions. Talia tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
@@ -4707,8 +4707,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Talia test calibration drift or test relay interference next?",
-              "choiceB": "Now the consequences are clearer. Should Talia test calibration drift or test relay interference next?"
+              "choiceA": "Given how begin with propulsion telemetry changed the conflict, should the character test calibration drift or test relay interference to shape the final outcome?",
+              "choiceB": "Given how begin with communications telemetry changed the conflict, should the character test calibration drift or test relay interference to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -4860,12 +4860,12 @@
             "choiceB": "He takes the ridge route, annotating symbol frequency and context transitions on each marker wall. Jonah compares what this path reveals against the mission objective. Some signals look promising, but others hint at hidden risk. Jonah preserves the evidence anyway because later choices may depend on it. The mission now advances with both opportunity and uncertainty."
           },
           "step3": {
-            "choiceA": "At checkpoint three he chooses substitution-key decoding or pattern-frequency decoding. Jonah reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Jonah accepts that a wrong branch could force a reduced or delayed ending. After one final check, Jonah commits to a path.",
-            "choiceB": "At checkpoint three he chooses substitution-key decoding or pattern-frequency decoding. Jonah reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Jonah accepts that a wrong branch could force a reduced or delayed ending. After one final check, Jonah commits to a path."
+            "choiceA": "Because the narrative moved forward with start on the canyon route, the conflict now appears in a different setting context. The character evaluates use substitution mapping versus use frequency-pattern mapping, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development.",
+            "choiceB": "Because the narrative moved forward with start on the ridge route, the conflict now appears in a different setting context. The character evaluates use substitution mapping versus use frequency-pattern mapping, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development."
           },
           "step4": {
             "choiceA_branchA": "After selecting start on the canyon route followed by use substitution mapping, Jonah reaches a critical inflection point. Canyon context plus substitution logic yields a clean coordinate chain to the true gate chamber. Jonah tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
-            "choiceA_branchB": "After selecting start on the canyon route followed by use frequency-pattern mapping, Jonah reaches a critical inflection point. Frequency decoding from canyon notes misreads one repeated symbol and diverts him to a dead annex. Jonah tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
+            "choiceA_branchB": "After selecting start on the canyon route followed by use frequency-pattern mapping, Jonah reaches a critical inflection point. Frequency decoding from canyon notes misreads one repeated symbol and diverts him to a sealed annex. Jonah tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
             "choiceB_branchA": "After selecting start on the ridge route followed by use substitution mapping, Jonah reaches a critical inflection point. Ridge context reveals missing symbol spacing, and substitution decoding resolves the final theorem lock. Jonah tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
             "choiceB_branchB": "After selecting start on the ridge route followed by use frequency-pattern mapping, Jonah reaches a critical inflection point. Ridge noise and frequency decoding amplify an early assumption error that cascades through the key. Jonah tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled."
           },
@@ -4927,8 +4927,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Jonah use substitution mapping or use frequency-pattern mapping next?",
-              "choiceB": "Now the consequences are clearer. Should Jonah use substitution mapping or use frequency-pattern mapping next?"
+              "choiceA": "Given how start on the canyon route changed the conflict, should the character use substitution mapping or use frequency-pattern mapping to shape the final outcome?",
+              "choiceB": "Given how start on the ridge route changed the conflict, should the character use substitution mapping or use frequency-pattern mapping to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -5080,8 +5080,8 @@
             "choiceB": "She starts with restoration lab notes and courier receipts from the same day. She identifies an unscheduled transfer note and one unsigned handoff receipt. Physical transfer records reveal movement context but can contain clerical gaps. An unsigned receipt can indicate error, not intent. Her initial source set changes whether she leads with access certainty or movement context."
           },
           "step3": {
-            "choiceA": "Imani now chooses to audit surveillance metadata or interview the restoration supervisor. Metadata may verify movement timing, while interview context may explain procedural exceptions. System metadata is objective but narrow, supervisor context is rich but potentially biased. A weak second source could undermine final chain-of-custody proof. She commits to one path and stress-tests it against her first evidence set.",
-            "choiceB": "Imani now chooses to audit surveillance metadata or interview the restoration supervisor. Metadata may verify movement timing, while interview context may explain procedural exceptions. System metadata is objective but narrow, supervisor context is rich but potentially biased. A weak second source could undermine final chain-of-custody proof. She commits to one path and stress-tests it against her first evidence set."
+            "choiceA": "Because the narrative moved forward with begin with access logs, the conflict now appears in a different setting context. The character evaluates audit surveillance metadata versus interview restoration supervisor, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development.",
+            "choiceB": "Because the narrative moved forward with begin with transfer receipts, the conflict now appears in a different setting context. The character evaluates audit surveillance metadata versus interview restoration supervisor, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development."
           },
           "step4": {
             "choiceA_branchA": "After selecting begin with access logs and then audit surveillance metadata, Imani reaches a decisive turning point. Surveillance metadata links one authorized badge to a lawful emergency transfer into climate vault C. She tests every claim against timestamps, signatures, and storage locations. This branch reveals whether technical traces or procedural context closed the gap. The case now hinges on whether her custody chain can withstand review.",
@@ -5147,8 +5147,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Imani audit surveillance metadata or interview restoration supervisor next?",
-              "choiceB": "Now the consequences are clearer. Should Imani audit surveillance metadata or interview restoration supervisor next?"
+              "choiceA": "Given how begin with access logs changed the conflict, should the character audit surveillance metadata or interview restoration supervisor to shape the final outcome?",
+              "choiceB": "Given how begin with transfer receipts changed the conflict, should the character audit surveillance metadata or interview restoration supervisor to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -5300,8 +5300,8 @@
             "choiceB": "She takes the valley envoy route and consults allied wardens at each checkpoint. She loses time but receives fresh cipher updates for this season's hall verification. Current ciphers improve acceptance probability under shifting alliances. More handoffs increase exposure to delay and interception risk. Her first route sets the balance between continuity of custody and update relevance."
           },
           "step3": {
-            "choiceA": "At the final approach, Leona chooses the Iron Gate protocol chamber or the River Oath chamber. One chamber validates legacy seals, while the other validates current alliance ciphers. Legacy validation is quick for old codes, current validation is robust for modern treaties. Selecting the wrong chamber can invalidate a legitimate charter under technicality. Leona commits and aligns her evidence packet to chamber requirements.",
-            "choiceB": "At the final approach, Leona chooses the Iron Gate protocol chamber or the River Oath chamber. One chamber validates legacy seals, while the other validates current alliance ciphers. Legacy validation is quick for old codes, current validation is robust for modern treaties. Selecting the wrong chamber can invalidate a legitimate charter under technicality. Leona commits and aligns her evidence packet to chamber requirements."
+            "choiceA": "Because the narrative moved forward with travel the old king's road, the conflict now appears in a different setting context. The character evaluates enter Iron Gate chamber versus enter River Oath chamber, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development.",
+            "choiceB": "Because the narrative moved forward with travel the valley envoy route, the conflict now appears in a different setting context. The character evaluates enter Iron Gate chamber versus enter River Oath chamber, knowing each option carries distinct risks and opportunities. This pivot influences both plot trajectory and character development."
           },
           "step4": {
             "choiceA_branchA": "After selecting travel the old king's road and then enter iron gate chamber, Leona reaches a decisive turning point. Old-road continuity and Iron Gate checks validate seal integrity but flag missing seasonal cipher appendix. She tests chamber criteria against route-acquired credentials before submission. This branch reveals whether continuity or adaptability carried greater diplomatic power. Treaty fate now depends on procedural fit and timing.",
@@ -5367,8 +5367,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Leona enter Iron Gate chamber or enter River Oath chamber next?",
-              "choiceB": "Now the consequences are clearer. Should Leona enter Iron Gate chamber or enter River Oath chamber next?"
+              "choiceA": "Given how travel the old king's road changed the conflict, should the character enter Iron Gate chamber or enter River Oath chamber to shape the final outcome?",
+              "choiceB": "Given how travel the valley envoy route changed the conflict, should the character enter Iron Gate chamber or enter River Oath chamber to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -5522,8 +5522,8 @@
             "choiceB": "She prioritizes coordinate tables, quantifying positional drift and uncertainty intervals over time. Priya compares what this path reveals against the mission objective. Some signals look promising, but others hint at hidden risk. Priya preserves the evidence anyway because later choices may depend on it. The mission now advances with both opportunity and uncertainty."
           },
           "step3": {
-            "choiceA": "For hypothesis testing she chooses calibration mismatch audit or short-duration event validation. Priya reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Priya accepts that a wrong branch could force a reduced or delayed ending. After one final check, Priya commits to a path.",
-            "choiceB": "For hypothesis testing she chooses calibration mismatch audit or short-duration event validation. Priya reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Priya accepts that a wrong branch could force a reduced or delayed ending. After one final check, Priya commits to a path."
+            "choiceA": "The initial move to prioritize spectral intensity records has now altered the narrative conditions, including setting constraints and available evidence. Faced with test calibration mismatch hypothesis or test short-duration event hypothesis, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc.",
+            "choiceB": "The initial move to prioritize coordinate position tables has now altered the narrative conditions, including setting constraints and available evidence. Faced with test calibration mismatch hypothesis or test short-duration event hypothesis, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc."
           },
           "step4": {
             "choiceA_branchA": "After selecting prioritize spectral intensity records followed by test calibration mismatch hypothesis, Priya reaches a critical inflection point. Spectral evidence plus calibration audit exposes timestamp contamination and supports a corrected baseline reconstruction. Priya tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
@@ -5589,8 +5589,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Priya test calibration mismatch hypothesis or test short-duration event hypothesis next?",
-              "choiceB": "Now the consequences are clearer. Should Priya test calibration mismatch hypothesis or test short-duration event hypothesis next?"
+              "choiceA": "Given how prioritize spectral intensity records changed the conflict, should the character test calibration mismatch hypothesis or test short-duration event hypothesis to shape the final outcome?",
+              "choiceB": "Given how prioritize coordinate position tables changed the conflict, should the character test calibration mismatch hypothesis or test short-duration event hypothesis to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -5742,8 +5742,8 @@
             "choiceB": "He begins with inertial-frame diagnostics, modeling harmonic instability and recurrent error signatures. Zane compares what this path reveals against the mission objective. Some signals look promising, but others hint at hidden risk. Zane preserves the evidence anyway because later choices may depend on it. The mission now advances with both opportunity and uncertainty."
           },
           "step3": {
-            "choiceA": "He then chooses noise-contamination isolation or correction-loop latency testing. Zane reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Zane accepts that a wrong branch could force a reduced or delayed ending. After one final check, Zane commits to a path.",
-            "choiceB": "He then chooses noise-contamination isolation or correction-loop latency testing. Zane reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Zane accepts that a wrong branch could force a reduced or delayed ending. After one final check, Zane commits to a path."
+            "choiceA": "The initial move to run particle-field diagnostics first has now altered the narrative conditions, including setting constraints and available evidence. Faced with test noise-contamination mechanism or test correction-loop latency mechanism, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc.",
+            "choiceB": "The initial move to run inertial-frame diagnostics first has now altered the narrative conditions, including setting constraints and available evidence. Faced with test noise-contamination mechanism or test correction-loop latency mechanism, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc."
           },
           "step4": {
             "choiceA_branchA": "After selecting run particle-field diagnostics first followed by test noise-contamination mechanism, Zane reaches a critical inflection point. Particle evidence plus contamination isolation identifies filter-chain leakage and enables threshold recalibration. Zane tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
@@ -5809,8 +5809,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Zane test noise-contamination mechanism or test correction-loop latency mechanism next?",
-              "choiceB": "Now the consequences are clearer. Should Zane test noise-contamination mechanism or test correction-loop latency mechanism next?"
+              "choiceA": "Given how run particle-field diagnostics first changed the conflict, should the character test noise-contamination mechanism or test correction-loop latency mechanism to shape the final outcome?",
+              "choiceB": "Given how run inertial-frame diagnostics first changed the conflict, should the character test noise-contamination mechanism or test correction-loop latency mechanism to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -5962,8 +5962,8 @@
             "choiceB": "She takes the basalt ascent, aligning encoded fragments with expedition notes and structural constraints. Liora compares what this path reveals against the mission objective. Some signals look promising, but others hint at hidden risk. Liora preserves the evidence anyway because later choices may depend on it. The mission now advances with both opportunity and uncertainty."
           },
           "step3": {
-            "choiceA": "For reconstruction she chooses structural pattern mapping or semantic context mapping. Liora reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Liora accepts that a wrong branch could force a reduced or delayed ending. After one final check, Liora commits to a path.",
-            "choiceB": "For reconstruction she chooses structural pattern mapping or semantic context mapping. Liora reviews earlier notes to estimate which branch carries the best payoff. Both options remain plausible, so the decision depends on evidence quality, not confidence. Liora accepts that a wrong branch could force a reduced or delayed ending. After one final check, Liora commits to a path."
+            "choiceA": "The initial move to begin with glacier ascent evidence chain has now altered the narrative conditions, including setting constraints and available evidence. Faced with apply structural pattern mapping or apply semantic context mapping, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc.",
+            "choiceB": "The initial move to begin with basalt ascent evidence chain has now altered the narrative conditions, including setting constraints and available evidence. Faced with apply structural pattern mapping or apply semantic context mapping, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc."
           },
           "step4": {
             "choiceA_branchA": "After selecting begin with glacier ascent evidence chain followed by apply structural pattern mapping, Liora reaches a critical inflection point. Glacier evidence plus structural mapping rebuilds the theorem spine with traceable clause dependencies. Liora tests whether the new condition still supports the original objective. The branch now reveals clear tradeoffs between speed, safety, and mission success. From here, the final outcome depends on how well those tradeoffs were handled.",
@@ -6029,8 +6029,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Liora apply structural pattern mapping or apply semantic context mapping next?",
-              "choiceB": "Now the consequences are clearer. Should Liora apply structural pattern mapping or apply semantic context mapping next?"
+              "choiceA": "Given how begin with glacier ascent evidence chain changed the conflict, should the character apply structural pattern mapping or apply semantic context mapping to shape the final outcome?",
+              "choiceB": "Given how begin with basalt ascent evidence chain changed the conflict, should the character apply structural pattern mapping or apply semantic context mapping to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -6182,8 +6182,8 @@
             "choiceB": "He begins with lab workstation imaging and storage locker logs tied to data-export devices. He identifies an unregistered transfer drive and a mislabeled locker handoff event. Physical evidence clarifies intent pathways but may underdetermine exact extraction timing. Without synchronized timestamp corroboration, motive narratives can overreach the data. His initial forensic layer determines whether he optimizes temporal certainty or operational context."
           },
           "step3": {
-            "choiceA": "Tariq now chooses memory-forensic recovery on the compute cluster or witness re-interview under protocol oath. Memory recovery may expose transient process traces, while oath interviews may resolve authorization anomalies. Machine traces are objective but brittle, interviews are contextual but reliability-weighted. Choosing weak corroboration could render findings inadmissible at tribunal review. He selects one path and pressure-tests every inference against evidentiary standards.",
-            "choiceB": "Tariq now chooses memory-forensic recovery on the compute cluster or witness re-interview under protocol oath. Memory recovery may expose transient process traces, while oath interviews may resolve authorization anomalies. Machine traces are objective but brittle, interviews are contextual but reliability-weighted. Choosing weak corroboration could render findings inadmissible at tribunal review. He selects one path and pressure-tests every inference against evidentiary standards."
+            "choiceA": "The initial move to start with server audit trails has now altered the narrative conditions, including setting constraints and available evidence. Faced with run memory-forensic recovery or run oath witness re-interviews, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc.",
+            "choiceB": "The initial move to start with workstation imaging has now altered the narrative conditions, including setting constraints and available evidence. Faced with run memory-forensic recovery or run oath witness re-interviews, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc."
           },
           "step4": {
             "choiceA_branchA": "After selecting start with server audit trails and then run memory-forensic recovery, Tariq reaches a decisive turning point. Cluster memory forensics recovers transient encryption residues linking the export to an authorized backup script misconfiguration. He reconciles process artifacts, authorization scope, and custody continuity before filing conclusions. This branch reveals whether computational residue or procedural testimony closes the case stronger. The case now turns on admissibility as much as truth.",
@@ -6249,8 +6249,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Tariq run memory-forensic recovery or run oath witness re-interviews next?",
-              "choiceB": "Now the consequences are clearer. Should Tariq run memory-forensic recovery or run oath witness re-interviews next?"
+              "choiceA": "Given how start with server audit trails changed the conflict, should the character run memory-forensic recovery or run oath witness re-interviews to shape the final outcome?",
+              "choiceB": "Given how start with workstation imaging changed the conflict, should the character run memory-forensic recovery or run oath witness re-interviews to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
@@ -6402,8 +6402,8 @@
             "choiceB": "She follows the Warden Circuit route and gathers current oaths, amendment seals, and regional compliance attestations. She gains live legitimacy signals and amendment alignment across contested houses. Contemporary alignment is strong, but deep precedent anchoring may be thinner. Without robust precedent scaffolding, rivals can challenge interpretive continuity. Her opening route sets whether she leads with historical authority or present legitimacy."
           },
           "step3": {
-            "choiceA": "At council hall she chooses the High Seal Chamber or the Oathfire Tribunal Chamber. High Seal privileges statutory continuity, while Oathfire privileges amendment-era consent verification. Continuity pathways maximize legal lineage, consent pathways maximize current enforceability. Selecting the wrong chamber could trigger procedural invalidation despite substantive legitimacy. Seren commits and structures her evidentiary submission to the chamber's burden of proof.",
-            "choiceB": "At council hall she chooses the High Seal Chamber or the Oathfire Tribunal Chamber. High Seal privileges statutory continuity, while Oathfire privileges amendment-era consent verification. Continuity pathways maximize legal lineage, consent pathways maximize current enforceability. Selecting the wrong chamber could trigger procedural invalidation despite substantive legitimacy. Seren commits and structures her evidentiary submission to the chamber's burden of proof."
+            "choiceA": "The initial move to follow Crown Archive route has now altered the narrative conditions, including setting constraints and available evidence. Faced with submit in High Seal chamber or submit in Oathfire chamber, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc.",
+            "choiceB": "The initial move to follow Warden Circuit route has now altered the narrative conditions, including setting constraints and available evidence. Faced with submit in High Seal chamber or submit in Oathfire chamber, the protagonist must prioritize strategy, ethics, and long-term impact. That choice will determine the resolution and clarify the character's growth arc."
           },
           "step4": {
             "choiceA_branchA": "After selecting follow crown archive route and then submit in high seal chamber, Seren reaches a decisive turning point. Archive precedent and High Seal review produce airtight lineage proof but trigger one amendment-era compliance challenge. She stress-tests codex clauses against chamber criteria and adversarial objections. This branch reveals whether constitutional continuity or consent architecture carries decisive authority. State stability now depends on legal fit, timing, and procedural legitimacy.",
@@ -6469,8 +6469,8 @@
           "step3": {
             "type": "choice",
             "promptByPath": {
-              "choiceA": "Now the consequences are clearer. Should Seren submit in High Seal chamber or submit in Oathfire chamber next?",
-              "choiceB": "Now the consequences are clearer. Should Seren submit in High Seal chamber or submit in Oathfire chamber next?"
+              "choiceA": "Given how follow Crown Archive route changed the conflict, should the character submit in High Seal chamber or submit in Oathfire chamber to shape the final outcome?",
+              "choiceB": "Given how follow Warden Circuit route changed the conflict, should the character submit in High Seal chamber or submit in Oathfire chamber to shape the final outcome?"
             },
             "optionsByPath": {
               "choiceA": [
