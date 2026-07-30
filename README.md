@@ -1,353 +1,122 @@
 # Reading Time Warp
 
 ![Status](https://img.shields.io/badge/Status-Active%20Prototype-1f8f6a)
-![Focus](https://img.shields.io/badge/Focus-Adaptive%20Reading%20Assessment-2f6fed)
-![Audience](https://img.shields.io/badge/Audience-Students%20and%20Teachers-f59e0b)
+![Cloud](https://img.shields.io/badge/Cloud-Azure%20Static%20Web%20Apps-2f6fed)
+![Security](https://img.shields.io/badge/Security-Auth%20%2B%20Server--Side%20Data%20Flow-f59e0b)
 
-An adaptive reading assessment web application designed to estimate student reading level while keeping learners engaged through interactive question formats.
+Reading Time Warp is an adaptive reading assessment platform that combines a browser-based quiz experience with authenticated cloud APIs and Cosmos DB persistence.
 
 Live demo:
 [https://happy-meadow-0c1a27010.7.azurestaticapps.net/](https://happy-meadow-0c1a27010.7.azurestaticapps.net/)
 
-This project was built as part of the Azure Innovation Studio Agents League hackathon.
+## Why This Project Matters For My Portfolio
 
-As a high school ELA teacher working with special education students, I wanted to build an assessment experience that feels less like a static test and more like an interactive learning environment. The design is inspired by tools like Pear Deck, Edpuzzle, Quizizz, Gimkit, and MagicSchool, while focusing on actionable classroom insights.
+I am building this as my primary portfolio project while transitioning toward network engineering and cybersecurity analyst roles.
 
----
+This project demonstrates practical skills in:
 
-## Current Status
+- Identity-aware application design
+- Secure client/server separation
+- API hardening and input validation
+- Cloud deployment and troubleshooting
+- Incident response and root-cause analysis
 
-Reading Time Warp is currently in active prototype development and includes a working adaptive quiz flow with grade-level progression from 1 to 6.
+## What It Does Today
 
-What works now:
+- Adaptive reading-level quiz flow for grades 1 to 6
+- Mixed question bank (CSV and JSON formats)
+- Choose-your-own-adventure reading stories by grade and theme
+- Microsoft/Azure sign-in through Azure Static Web Apps auth
+- Authenticated profile and score storage in Cosmos DB through backend APIs
+- Sign-in dashboard with recent score history and progress sharing workflow
 
-- Adaptive level progression based on student performance
-- Mixed question-type assessment rotation
-- Visual and text-based prompt support
-- Progress tracking during assessment
-- Reading recommendations aligned to estimated level
-- Mobile-responsive experience with tailored interaction behavior for smaller screens
-- Azure Static Web Apps sign-in integration (Microsoft/Azure AD)
-- Quiz score persistence to Cosmos DB (NoSQL) through authenticated backend API endpoints
-- Personalized sign-in dashboard with recent quiz chart and reading path suggestions
-- Parent/teacher progress sharing via prefilled email from the sign-in page
+## Architecture Snapshot
 
----
+Frontend and backend responsibilities are intentionally separated.
 
-## Incident Update (2026-07-12)
+- Frontend: renders quiz, stories, and dashboard UI
+- Auth boundary: Azure Static Web Apps authentication (`/.auth/*`)
+- API layer: Azure Functions endpoints for profile, score, and sharing operations
+- Data layer: Cosmos DB records tied to authenticated users
 
-### Problem observed today
+Security-oriented design choice:
 
-- Signed-in users could occasionally fail to save or retrieve profile/quiz data reliably.
-- Troubleshooting introduced temporary debug output and debug panels that were useful short-term but not production-safe.
+- Data writes happen server-side through authenticated APIs, not direct browser-to-database calls
 
-### Key fixes attempted during troubleshooting
+## Security And Reliability Work Already Completed
 
-- Verified Azure auth session payload behavior via `/.auth/me`.
-- Added a temporary environment debug endpoint to confirm server visibility of `COSMOSDB_CONNECTION_STRING`.
-- Compared client-side persistence behavior versus server-side persistence behavior.
+Recent changes that improved production safety:
 
-### What finally fixed it
+- Moved profile and score persistence into authenticated backend endpoints
+- Added server-side normalization for auth principal claims
+- Added grade input hardening and bounded score history
+- Removed temporary debug endpoint and debug UI after incident troubleshooting
+- Hardened route handling so platform and API paths are not rewritten by SPA fallback
 
-- Moved persistence into authenticated backend API functions (`/api/profile`, `/api/score`) so writes/reads happen server-side.
-- Normalized authenticated principal claims server-side to handle provider claim differences consistently.
-- Added safe first-user handling when a profile does not exist yet (404 -> initialize flow).
-- Added input hardening (`grade` clamping) and bounded score history to avoid invalid/oversized records.
-- Removed temporary debug endpoint, debug UI panels, and extra console diagnostics from app code.
+## Technology Stack
 
-Result: authorization and database access are now handled in a cleaner, more secure, production-oriented flow.
+- HTML, CSS, JavaScript
+- Azure Static Web Apps
+- Azure Functions (Node.js)
+- Azure Static Web Apps Authentication
+- Azure Cosmos DB (`@azure/cosmos`)
+- JSON and CSV content banks
 
-Planned soon:
+## Project Layout
 
-- Expanded analytics and teacher-facing reporting views
-
-Implemented question types in the current app:
-
-- Multiple choice
-- Sentence completion
-- Sentence ordering
-- Word matching
-- Vocabulary in context
-- Image description
-- Keyword highlight (evidence-style word selection)
-- Image selection
-- Character emotion identification
-
----
+```text
+frontend/                 UI, quiz logic, story reader, content banks
+api/                      Azure Functions endpoints and shared auth helpers
+swa-db-connections/       SWA database config and GraphQL schema files
+staticwebapp.config.json  SWA routing and navigation fallback config
+README.md                 Project overview and roadmap
+```
 
 ## Screenshots
 
 ![MVP Screenshot](./mvp.png)
-
-### Multimodal Quiz Types and Learning Types
-
-This assessment is designed as a multimodal quiz experience so students can show comprehension in different ways, not only through traditional multiple choice.
-
-Implemented multimodal quiz types include:
-
-- Text-based response logic: multiple choice, sentence completion, vocabulary in context
-- Sequence and structure logic: sentence ordering
-- Concept and relationship matching: word matching
-- Visual comprehension: image description and image selection
-- Evidence and interpretation: keyword highlight and character emotion identification
-
-These quiz formats map to a range of learning types and strengths:
-
-- Linguistic learners: vocabulary, sentence, and passage-based items
-- Visual learners: image-supported prompts and visual decision tasks
-- Analytical/sequential learners: ordering and matching activities
-- Inferential learners: evidence selection and emotion interpretation
-
-By rotating across modalities, the app captures a broader picture of reading ability while keeping engagement high for students with different learning preferences.
-
 ![Running App Screenshot](./mvp_running.png)
-
----
-
-## Vision
-
-Reading comprehension is more than selecting one correct answer from a list. This project is designed to grow into a multimodal assessment platform where students can demonstrate understanding in multiple ways.
-
-Still planned question types:
-
-- Text annotation
-- Written response evaluation
-- Author's purpose and intent analysis
-- Paragraph writing activities
-- Visual comprehension and drawing activities
-
-The goal is to create a richer picture of student comprehension while maintaining strong engagement.
-
----
-
-## Future AI Integration
-
-A future phase of this project will integrate Large Language Models through REST APIs to evaluate open-ended student responses.
-
-Potential use cases include:
-
-- Evaluating text annotations
-- Scoring written responses
-- Providing feedback on vocabulary usage in context
-- Assessing short paragraph responses
-- Analyzing student-generated visual descriptions and drawings
-- Generating personalized feedback and instructional recommendations
-
-The focus will be on using AI to support educators, not replace teacher judgment.
-
----
-
-## Technology Stack
-
-Current implementation:
-
-- HTML
-- CSS
-- JavaScript
-- CSV and JSON question banks
-- CSV recommendation data
-- Azure Static Web Apps
-- Azure Static Web Apps Authentication (`/.auth/*`)
-- Azure Functions API (`api/profile`, `api/score`) for authenticated profile and score operations
-- Azure Cosmos DB NoSQL via `@azure/cosmos`
-
 ![App Architecture](./appArchitecture.png)
 
-Hackathon development tools:
+## Portfolio Roadmap: Network + Cybersecurity Alignment
 
-- GitHub Copilot for rapid front-end development and refactoring support
-- Azure Foundry Custom Agents for multimodal image description workflows tied to image-based question experiences
+Next milestones are selected to better demonstrate SOC-style and infrastructure-focused skills.
 
-Future exploration:
+1. API Abuse Controls
+- Add per-endpoint rate limiting and cooldowns, especially for share-progress email routes
+- Add stricter request schema validation and payload limits
 
-- LLM-powered response evaluation
-- Agentic API workflows
-- Learning analytics and engagement insights
-- Expanded adaptive assessment models
+2. Observability And Telemetry
+- Add structured logs with correlation IDs
+- Track auth failures, API failures, and write/read latency
+- Document an incident-response playbook in the repo
 
----
+3. Security Testing Baseline
+- Add automated tests for auth checks, input validation, and edge-case failures
+- Add dependency and secret scanning checks in CI
 
-## Project Structure
+4. Data Governance Improvements
+- Evolve profile schema from simple score arrays to timestamped attempt records
+- Add retention/cleanup strategy and privacy-focused data handling notes
 
-```text
-.
-├── frontend/
-│   ├── index.html
-│   ├── script.js
-│   ├── styles.css
-│   ├── accessibility.html
-│   ├── learning-strategies.html
-│   ├── reading-resources.html
-│   ├── sign-in.html
-│   ├── user-data.js
-│   ├── multiple-choice-questions.csv
-│   ├── sentence-completion-questions.csv
-│   ├── vocabulary-in-context-questions.csv
-│   ├── sentence-ordering-questions.json
-│   ├── word-matching-questions.json
-│   ├── image-description-questions.json
-│   ├── image-select-questions.json
-│   ├── keyword-highlight-questions.json
-│   ├── character-emotion-questions.json
-│   ├── recommendations.csv
-│   └── staticwebapp.config.json
-├── swa-db-connections/
-│   ├── staticwebapp.database.schema.gql
-│   └── staticwebapp.database.config.json
-├── package.json
-├── staticwebapp.config.json
-└── README.md
+5. Network And Threat Modeling Artifacts
+- Add a network/data-flow diagram with trust boundaries
+- Add a lightweight threat model (entry points, abuse paths, mitigations)
+
+## Quick Start
+
+1. Install dependencies:
+
+```bash
+npm install
+cd api && npm install
 ```
 
----
+2. Run locally with Azure Static Web Apps CLI (recommended for auth + API emulation).
 
-## Authorization and Database (Installed)
+3. Configure required environment settings in Azure for deployed runs:
+- `COSMOSDB_CONNECTION_STRING` must be the full connection string
 
-Authorization and database integration are now installed and active.
+## Current Focus
 
-Authorization features:
-
-- Azure Static Web Apps authentication with Microsoft/Azure AD sign-in and sign-out.
-- Authenticated user identity read from `/.auth/me` and normalized for consistent user mapping.
-- Backend authorization checks on API endpoints before profile read/write operations.
-
-Database features:
-
-- Cosmos DB connection via `COSMOSDB_CONNECTION_STRING` using server-side API code.
-- User profile storage keyed by email with fields: `id`, `first_name`, `email`, `quiz_scores`.
-- Profile read endpoint for dashboard/chart hydration.
-- Score write endpoint with grade validation (1-6) and rolling history cap for stability.
-
-## Authentication and Data Flow
-
-- Sign-in/out uses Azure Static Web Apps auth endpoints on the sign-in page.
-- The app reads the authenticated user identity from `/.auth/me`.
-- On quiz completion, the frontend sends grade results to the authenticated backend API (`/api/score`).
-- The backend API validates identity and input, then upserts profile data in Cosmos DB.
-- The sign-in dashboard loads profile and scores from `/api/profile`.
-- User profile fields currently include:
-	- `id`
-	- `first_name`
-	- `email`
-	- `quiz_scores` (integer array)
-- The sign-in dashboard displays the most recent quiz results and a suggestion path for next reading practice.
-- Users can generate a prewritten progress email to a parent or teacher from the sign-in page.
-
-When configuring Azure Static Web Apps, set `COSMOSDB_CONNECTION_STRING` to the full Cosmos DB connection string. A key by itself is not enough.
-
----
-
-## Planned Assessment Types
-
-The long-term vision is to evaluate reading comprehension across multiple modalities rather than relying only on multiple choice.
-
-### Phase 1: Structured Question Types (No AI Required)
-
-These activities are scored with traditional logic and are prioritized for fast classroom usability.
-
-| Priority | Question Type                    | Status      | Coding Difficulty | Storage Format | Reading Skills Measured                      | Reading-Level Value | Engagement |
-| -------- | -------------------------------- | ----------- | ----------------- | -------------- | -------------------------------------------- | ------------------- | ---------- |
-| 1        | Multiple Choice                  | Implemented | Very Easy         | CSV            | Literal comprehension, inference             | Medium              | Medium     |
-| 2        | Vocabulary in Context            | Implemented | Easy              | CSV            | Vocabulary knowledge                         | Very High           | Medium     |
-| 3        | Evidence Selection               | Implemented | Easy              | JSON           | Text evidence usage                          | High                | Medium     |
-| 4        | Character Emotion Identification | Implemented | Easy              | JSON           | Inferencing, character analysis              | High                | High       |
-| 5        | Image Selection                  | Implemented | Medium            | JSON           | Visualization, comprehension                 | High                | Very High  |
-| 6        | Sequence Ordering                | Implemented | Medium            | JSON           | Narrative structure, sequence logic          | High                | High       |
-| 7        | Word Matching                    | Implemented | Medium            | JSON           | Vocabulary depth, semantic relationship      | High                | High       |
-| 8        | Cause and Effect Match           | Planned     | Medium            | JSON           | Logical comprehension, relationship tracking | High                | High       |
-
-### Phase 2: AI-Assisted Question Types
-
-These activities require LLM or agentic scoring workflows and are planned for deeper comprehension analysis.
-
-| Priority | Question Type               | Status  | Coding Difficulty | Storage Format | Reading Skills Measured                | Reading-Level Value | Engagement |
-| -------- | --------------------------- | ------- | ----------------- | -------------- | -------------------------------------- | ------------------- | ---------- |
-| 9        | Short Constructed Response  | Planned | Easy              | JSON           | Written comprehension, inference       | Very High           | Medium     |
-| 10       | Annotation                  | Planned | Medium            | JSON           | Evidence identification, close reading | Very High           | High       |
-| 11       | Summary Generation          | Planned | Easy              | JSON           | Main idea, synthesis                   | Extremely High      | Medium     |
-| 12       | Text-to-Image Description   | Planned | Medium            | JSON           | Mental visualization                   | High                | Very High  |
-| 13       | Conversation with Character | Planned | Medium            | JSON           | Perspective taking, comprehension      | High                | Very High  |
-
-### Why Multiple Modalities?
-
-Research and classroom practice suggest that reading comprehension is better measured through a combination of:
-
-- Literal comprehension
-- Vocabulary knowledge
-- Inferencing
-- Evidence gathering
-- Main idea identification
-- Narrative understanding
-- Visualization
-- Written explanation
-- Metacognitive reasoning
-
-Rather than relying on a single format, this project aims to gather evidence across modalities and generate a more accurate reading-level estimate with better instructional recommendations.
-
-Multiple modalities reduce false positives and false negatives in reading-level placement. For example, a student may struggle with multi-step written responses but still show strong comprehension through sequencing, vocabulary-in-context, and evidence selection. Another student may perform well on multiple choice while revealing gaps in inferencing when asked to justify answers or identify emotional nuance in character-focused prompts.
-
-In practice, this section of the system is intended to support:
-
-- Skill triangulation across question types before recommending a level change
-- Better distinction between decoding, comprehension, and expressive language challenges
-- More targeted instructional next steps (for example: vocabulary intervention, inferencing mini-lessons, or evidence-based response practice)
-- Higher student engagement by offering diverse ways to demonstrate understanding
-
-As the platform evolves, modality-level performance will be used to generate a profile that is more instruction-ready than a single composite score, helping teachers quickly identify both strengths and priority growth areas.
-
-> James 1:5 (KJV)
-> If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.
-
----
-
-## User Stories (Added 2026-07-27)
-
-1. As a student, I want the quiz to adapt to my performance across multiple question styles so that my reading level estimate reflects how I actually understand text.
-2. As a student, I want to sign in and view my recent quiz history so that I can see whether my reading level is improving over time.
-3. As a teacher, I want a quick dashboard view of a learner's recent scores and trend direction so that I can plan targeted reading support.
-4. As a parent or teacher, I want progress updates emailed in a clear summary so that I can stay informed and encourage reading practice at home.
-5. As a learner who needs accessibility support, I want mobile-friendly and readability-focused controls so that I can complete the assessment comfortably.
-
-## Critical Improvements To Prioritize
-
-Based on analysis of the current app structure (`frontend/script.js`, `frontend/user-data.js`, `frontend/sign-in.html`, and API endpoints under `api/`), these are the most important next improvements.
-
-### 1) Strengthen API abuse protection and service safety (High)
-
-- Add rate limiting and abuse throttling to `/api/score` and especially `/api/share-progress` to prevent spam/cost spikes.
-- Add request size limits and stricter payload validation (email length, subject/body length, explicit schema).
-- Add anti-automation protections for email sending (per-user quotas, cooldowns, and provider-side guardrails).
-
-Why critical: these endpoints can be repeatedly hit by automated traffic, creating operational risk and potential sender reputation issues.
-
-### 2) Improve assessment reliability and score validity (High)
-
-- Refine adaptation logic so question difficulty progression is less random and more evidence-driven.
-- Avoid fallback behavior that can mix levels too aggressively when level-specific items are exhausted.
-- Store richer scoring telemetry (question type, level, correctness, timestamp) to support psychometric tuning and calibration.
-
-Why critical: the current random selection and short-session scoring can produce noisy level estimates that reduce instructional trust.
-
-### 3) Add automated test coverage for core flows (High)
-
-- Add unit tests for grade clamping, score rollup, and user normalization logic in API shared code.
-- Add integration tests for authenticated profile/score endpoints and error paths.
-- Add end-to-end smoke tests for quiz completion, sign-in dashboard rendering, and share-progress submission.
-
-Why critical: key learning and data flows are currently vulnerable to regressions because there are no automated tests in the repository.
-
-### 4) Increase observability and incident response readiness (Medium-High)
-
-- Add structured logging with correlation IDs across frontend requests and Azure Functions.
-- Add application monitoring dashboards and alerts for API failures, auth failures, and email send failures.
-- Track business metrics (quiz completion rate, save success rate, share-progress success rate) to spot drift quickly.
-
-Why critical: when production issues occur, diagnosis currently depends heavily on manual investigation.
-
-### 5) Evolve profile schema for educator value (Medium)
-
-- Move beyond `quiz_scores` integer arrays to attempt-level records (`grade`, `timestamp`, `question_mix`, `modality_breakdown`).
-- Enable trend views by time window and skill area, not only recent grade averages.
-- Prepare schema for future teacher-facing analytics and intervention recommendations.
-
-Why critical: richer progress data is required for actionable classroom decisions and meaningful reporting.
+This repository is actively maintained. Priority work is security hardening, observability, and measurable reliability improvements while expanding classroom value.
