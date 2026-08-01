@@ -7,7 +7,8 @@
     "dev": "[ -f frontend/package.json ] && (cd frontend && npm run dev) || echo \"No frontend dev script (frontend/package.json missing)\"",
     "build": "[ -f frontend/package.json ] && (cd frontend && npm run build) || echo \"No frontend build (frontend/package.json missing)\"",
     "preview": "[ -f frontend/package.json ] && (cd frontend && npm run preview) || echo \"No frontend preview (frontend/package.json missing)\"",
-    "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "test": "node scripts/test-story-content.js"
   },
   "repository": {
     "type": "git",
